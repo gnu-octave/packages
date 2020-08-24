@@ -1,0 +1,37 @@
+.package
+{
+  border-radius: 5px;
+  box-shadow: 0 .5rem 1rem -.25rem gray;
+  align-items: center;
+  margin: 1em auto 2em auto;
+  max-width: 42rem;
+}
+
+.package div
+{
+  padding: 10px;
+  overflow: hidden;
+}
+
+.package div h3
+{
+  margin-block-start: 0em;
+  border-top: 2px solid #427cbd;
+  border-bottom: 2px solid #427cbd;
+  text-align: center;
+  line-height: 30px;
+}
+
+.package div h3 a
+{
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.package img
+{
+  width: 100px;
+  float: left;
+  margin: 10px;
+}

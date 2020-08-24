@@ -1,0 +1,70 @@
+---
+- name: "io"
+  description: "Input/Output in external formats."
+  image: "https://octave.sourceforge.io/pkg_icon/io.png"
+  license: "GPLv3+, simplified BSD"
+  repository: "https://octave.sourceforge.io/pkg-repository/io/"
+  url: "https://octave.sourceforge.io/io"
+  versions:
+    - "2.6.1":
+        date: 2020-04-15
+        sha256: "83253561f883c96ca3021a771223d23795122dc4cb800766e9cb893c6f8262dd"
+        url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/io-2.6.1.tar.gz"
+        depends:
+          "octave":
+            min: "4.2.0"
+    - "2.6.0":
+        date: 2020-02-25
+        sha256: "27f26273ced0b42c098e900136bb0ab2e542baf98d02bc0176cf47edbd0e6d7f"
+        url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/io-2.6.0.tar.gz"
+        depends:
+          "octave":
+            min: "4.2.0"
+- name: "optim"
+  description: "Non-linear optimization toolkit."
+  image: "https://octave.sourceforge.io/pkg_icon/optim.png"
+  license: "GPLv3+, modified BSD, public domain"
+  repository: "https://octave.sourceforge.io/pkg-repository/optim/"
+  url: "https://octave.sourceforge.io/optim"
+  versions:
+    - "1.6.0":
+        date: 2019-03-12
+        sha256: "f910c8d5992af42c51269d023ce95c34c7b6455542e41171819dbe94fc4350fc"
+        url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/optim-1.6.0.tar.gz"
+        depends:
+          "octave":
+            min: "4.0.0"
+          "statistics":
+            min: "1.4.0"
+          "struct":
+            min: "1.0.12"
+- name: "statistics"
+  description: "Additional statistics functions for Octave."
+  image: "https://octave.sourceforge.io/pkg_icon/statistics.png"
+  license: "GPLv3+, public domain"
+  repository: "https://octave.sourceforge.io/pkg-repository/statistics/"
+  url: "https://octave.sourceforge.io/statistics"
+  versions:
+    - "1.4.2":
+        date: 2020-03-23
+        sha256: "7976814f837508e70367548bfb0a6d30aa9e447d4e3a66914d069efb07876247"
+        url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/statistics-1.4.2.tar.gz"
+        depends:
+          "octave":
+            min: "4.0.0"
+          "io":
+            min: "1.0.18"
+- name: "struct"
+  description: "Additional structure manipulation functions."
+  image: "https://octave.sourceforge.io/pkg_icon/struct.png"
+  license: "GPLv3+"
+  repository: "https://octave.sourceforge.io/pkg-repository/struct/"
+  url: "https://octave.sourceforge.io/struct"
+  versions:
+    - "1.0.16":
+        date: 2019-03-12
+        sha256: "f56dc248aff469562bd82e74a60874e89e13fb10e852e709650c38234206a23f"
+        url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/struct-1.0.16.tar.gz"
+        depends:
+          "octave":
+            min: "4.0.0"
