@@ -1,16 +1,23 @@
+---
+---
+
+body {
+  background-color: white;
+}
+
 .package
 {
   border-radius: 5px;
   box-shadow: 0 .5rem 1rem -.25rem gray;
   align-items: center;
   margin: 1em auto 2em auto;
-  max-width: 42rem;
+  max-width: 52rem;
 }
 
 .package div
 {
   padding: 10px;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .package div h3
@@ -29,9 +36,25 @@
   text-decoration: none;
 }
 
+a, .package div a
+{
+  color: darkblue;
+  text-decoration: none;
+}
+
 .package img
 {
-  width: 100px;
+  width: 150px;
   float: left;
   margin: 10px;
+}
+
+.package ul li
+{
+  margin: 1em 0 1em 0;
+}
+
+table#package-index img
+{
+  width: 50px;
 }

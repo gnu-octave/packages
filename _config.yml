@@ -1,0 +1,7 @@
+title: GNU Octave package extensions
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md

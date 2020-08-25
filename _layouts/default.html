@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    {%- if page.layout == "package_index" -%}
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.7/css/fixedHeader.dataTables.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+    <script
+      src="https://cdn.datatables.net/fixedheader/3.1.7/js/dataTables.fixedHeader.min.js"></script>
+    {%- endif -%}
+    <title>{{ page.title | default: site.title }}</title>
+  </head>
+  <body>
+    <h1>{{ page.title | default: site.title }}</h1>
+    {{ content }}
+    {%- if page.layout == "package_index" -%}
+    <script>
+    $(document).ready( function () {
+      $('#package-index').DataTable( {
+        fixedHeader: true,
+        lengthMenu: [[50, 100, -1], [50, 100, "All"]],
+        order: [[ 1, "asc" ]],
+        columnDefs: [
+            {
+                targets: [0, 3],
+                className: 'dt-body-center'
+            },
+            {
+                targets: 0,
+                orderable: false
+            }
+          ]
+        } );
+    } );
+    </script>
+    {%- endif -%}
+  </body>
+</html>

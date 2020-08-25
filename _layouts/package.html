@@ -1,0 +1,67 @@
+---
+layout: default
+---
+
+<p><a href="/">Back to the package index</a></p><br>
+
+{%- assign pkg_name = page.name | remove: '.md' -%}
+
+<div class="package">
+  <img src="{{ page.image }}" alt="{{ pkg_name }}">
+  <div>
+  <h3>
+    <a href="{{ page.homepage }}">{{ pkg_name }}</a>
+  </h3>
+  <p><b>Description:</b> {{ page.description }}</p>
+  <p><b>License:</b> {{ page.license }}</p>
+  <p>
+    <b>Repository:</b>
+    <a href="{{ page.repository }}">{{ page.repository }}</a>
+  </p>
+  <p>
+    <b>Versions:</b>
+  </p>
+  <ul>
+  {%- for ver in page.versions -%}
+    <li>
+      {%- for v in ver -%}
+      <b>{{ v[0] }} ({{ v[1].date }})</b>
+      <ul>
+        <li>
+          <a href="{{ v[1].url }}"><b>Download</b></a><br>
+          (SHA256: {{ v[1].sha256 }})
+        </li>
+        <li>
+          <b>Dependencies:</b>
+          <ul>
+          {%- for dep in v[1].depends -%}
+            {%- for pkg in site.pages -%}
+              {%- if pkg.layout == "package" -%}
+                {%- assign other_pkg_name = pkg.name | remove: '.md' -%}
+                {%- if other_pkg_name == dep[0] -%}
+                  {%- assign link_other_pkg = true -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+            <li>
+              {%- if link_other_pkg == true -%}
+                <a href="/package/{{ dep[0] }}">{{ dep[0] }}</a>
+              {%- else -%}
+                {{ dep[0] }}
+              {%- endif -%}
+              &nbsp;{{ dep[1] }}
+            </li>
+          {%- endfor -%}
+          </ul>
+        </li>
+      </ul>
+      {%- endfor -%}
+    </li>
+  {%- endfor -%}
+  </ul>
+  </div>
+</div>
+
+<!--
+package.name = "{{ pkg_name }}";
+-->

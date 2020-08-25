@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<h2>List of all packages</h2>
+
+<table id="package-index" class="display">
+  <thead>
+    <tr>
+      <th>Icon</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Last update</th>
+    </tr>
+  </thead>
+  <tbody>
+  {%- for pkg in site.pages -%}
+  {%- if pkg.layout == "package" -%}
+    <tr>
+      <td><img src="{{ pkg.image }}"></td>
+      <td><a href="/{{ pkg.name | remove: ".md" |  prepend: 'package/' }}">{{ pkg.name | remove: ".md" }}</a></td>
+      <td>{{ pkg.description }}</td>
+      <td>
+        {%- for ver in pkg.versions[0] -%}
+          {{ ver[1].date }}
+        {%- endfor -%}
+      </td>
+    </tr>
+  {%- endif -%}
+  {%- endfor -%}
+  </tbody>
+</table>
