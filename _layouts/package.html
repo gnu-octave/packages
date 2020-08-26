@@ -2,12 +2,16 @@
 layout: default
 ---
 
-<p><a href="/">Back to the package index</a></p><br>
+<h2>The "{{ page.name | remove: '.md' }}" package</h2>
+
+<ul>
+  <li><a href="{{ '/' | relative_url }}">Back to the package index</a></li>
+</ul>
 
 {%- assign pkg_name = page.name | remove: '.md' -%}
 
 <div class="package">
-  <img src="{{ page.image }}" alt="{{ pkg_name }}">
+  <img src="{{ pkg.image | default: site.default_image | relative_url }}" alt="{{ pkg_name }}">
   <div>
   <h3>
     <a href="{{ page.homepage }}">{{ pkg_name }}</a>
@@ -63,5 +67,24 @@ layout: default
 </div>
 
 <!--
-package.name = "{{ pkg_name }}";
+__pkg_version__ = "{{ site.pkg_version }}";
+__pkg__.("{{ pkg_name }}").description = "{{ page.description }}";
+__pkg__.("{{ pkg_name }}").homepage = "{{ page.homepage }}";
+__pkg__.("{{ pkg_name }}").license = "{{ page.license }}";
+__pkg__.("{{ pkg_name }}").repository = "{{ page.repository }}";
+{% for ver in page.versions %}
+{%- assign i = forloop.index -%}
+{% for v in ver %}
+__pkg__.("{{ pkg_name }}").versions({{ i }}).id = "{{ v[0] }}";
+__pkg__.("{{ pkg_name }}").versions({{ i }}).date = "{{ v[1].date }}";
+__pkg__.("{{ pkg_name }}").versions({{ i }}).sha256 = "{{ v[1].sha256 }}";
+__pkg__.("{{ pkg_name }}").versions({{ i }}).url = "{{ v[1].url }}";
+{% for dep in v[1].depends %}
+{%- assign j = forloop.index -%}
+__pkg__.("{{ pkg_name }}").versions({{ i }}).depends({{ j }}).name = "{{ dep[0] }}";
+__pkg__.("{{ pkg_name }}").versions({{ i }}).depends({{ j }}).min = "{{ dep[1].min }}";
+__pkg__.("{{ pkg_name }}").versions({{ i }}).depends({{ j }}).max = "{{ dep[1].max }}";
+{% endfor %}
+{% endfor %}
+{% endfor %}
 -->

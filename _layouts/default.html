@@ -17,7 +17,16 @@
     <title>{{ page.title | default: site.title }}</title>
   </head>
   <body>
-    <h1>{{ page.title | default: site.title }}</h1>
+    <h1>
+      <img src="{{ '/assets/octave-logo.svg' | relative_url }}"
+           alt="GNU Octave"
+           id="logo">
+      {{ page.title | default: site.title }}
+    </h1>
+    <ul>
+      <li><a href="https://github.com/gnu-octave/pkg-index/blob/master/CONTRIBUTING.md">Add your package</a></li>
+      <li><a href="https://github.com/gnu-octave/pkg-index/blob/master/README.md">About this index</a></li>
+    </ul>
     {{ content }}
     {%- if page.layout == "package_index" -%}
     <script>

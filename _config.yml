@@ -1,4 +1,8 @@
-title: GNU Octave package extensions
+title: "GNU Octave - Package extensions index"
+
+pkg_version: 0.0.1
+
+default_image: /assets/pkg.png
 
 exclude:
   - Gemfile
