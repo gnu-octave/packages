@@ -4,7 +4,6 @@ description: "Additional statistics functions for Octave."
 homepage: "https://octave.sourceforge.io/statistics"
 image: "https://octave.sourceforge.io/pkg_icon/statistics.png"
 license: "GPLv3+, public domain"
-repository: "https://octave.sourceforge.io/pkg-repository/statistics/"
 versions:
   - "1.4.2":
       date: 2020-03-23

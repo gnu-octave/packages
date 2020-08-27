@@ -4,7 +4,6 @@ description: "Additional structure manipulation functions."
 homepage: "https://octave.sourceforge.io/struct"
 image: "https://octave.sourceforge.io/pkg_icon/struct.png"
 license: "GPLv3+"
-repository: "https://octave.sourceforge.io/pkg-repository/struct/"
 versions:
   - "1.0.16":
       date: 2019-03-12
