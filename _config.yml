@@ -7,5 +7,6 @@ default_image: /assets/pkg.png
 exclude:
   - Gemfile
   - Gemfile.lock
+  - CONTRIBUTING.md
   - LICENSE
   - README.md
