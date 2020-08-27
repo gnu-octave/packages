@@ -18,7 +18,7 @@ body
 .package div
 {
   padding: 10px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .package div h3
@@ -43,11 +43,35 @@ a, .package div a
   text-decoration: none;
 }
 
+.package div code a
+{
+  color: GhostWhite;
+}
+
 .package img
 {
   width: 150px;
   float: left;
   margin: 10px;
+}
+
+.package code
+{
+  white-space: nowrap;
+  padding: 5px;
+  font-size: 120%;
+  font-weight: bold;
+  color: GhostWhite;
+  background-color: SteelBlue;
+  width: 90%;
+  overflow-x: scroll;
+  float: left;
+}
+
+.package img.copy
+{
+  width: 25px;
+  margin: 2px;
 }
 
 img#logo

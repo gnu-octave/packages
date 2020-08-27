@@ -11,7 +11,7 @@ layout: default
 {%- assign pkg_name = page.name | remove: '.md' -%}
 
 <div class="package">
-  <img src="{{ pkg.image | default: site.default_image | relative_url }}" alt="{{ pkg_name }}">
+  <img src="{{ page.image | default: site.default_pkg_image | relative_url }}" alt="{{ pkg_name }}">
   <div>
   <h3>
     <a href="{{ page.homepage }}">{{ pkg_name }}</a>
@@ -25,11 +25,19 @@ layout: default
   {%- for ver in page.versions -%}
     <li>
       {%- for v in ver -%}
-      <b>{{ v[0] }} ({{ v[1].date }})</b>
+      <p>
+        <b>{{ v[0] }} ({{ v[1].date }})</b>
+      </p>
+      <p>
+        <code>pkg install <a href="{{ v[1].url }}">{{ v[1].url }}</a></code>
+        <button type="button" onclick="doCopy('pkg install {{ v[1].url }}')">
+          <img src="{{ '/assets/copy.svg' | relative_url }}"
+                alt="copy" class="copy">
+        </button>
+      </p>
       <ul>
         <li>
-          <a href="{{ v[1].url }}"><b>Download</b></a><br>
-          (SHA256: {{ v[1].sha256 }})
+          <b>SHA256:</b> {{ v[1].sha256 }}
         </li>
         <li>
           <b>Dependencies:</b>
@@ -61,6 +69,17 @@ layout: default
   </ul>
   </div>
 </div>
+
+<script>
+function doCopy(txt) {
+  var input = document.createElement ('input');
+  document.body.appendChild (input);
+  input.value = txt;
+  input.select();
+  document.execCommand ('copy', false);
+  input.remove ();
+}
+</script>
 
 <!--
 __pkg_version__ = "{{ site.pkg_version }}";
