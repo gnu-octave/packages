@@ -3,7 +3,7 @@ layout: package
 description: "Common Gateway Interface for Octave."
 homepage: "https://octave.sourceforge.io/cgi"
 image: "https://octave.sourceforge.io/pkg_icon/cgi.png"
-license: "GPLv3+"
+license: "GPLv2+"
 versions:
   - "0.1.2":
       date: 2016-09-07
