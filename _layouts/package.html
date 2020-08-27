@@ -17,6 +17,7 @@ layout: default
     <a href="{{ page.homepage }}">{{ pkg_name }}</a>
   </h3>
   <p><b>Description:</b> {{ page.description }}</p>
+  <p><b>Homepage:</b> <a href="{{ page.homepage }}">{{ page.homepage }}</a></p>
   <p><b>License:</b> {{ page.license }}</p>
   <p>
     <b>Versions:</b>
@@ -86,7 +87,6 @@ __pkg_version__ = "{{ site.pkg_version }}";
 __pkg__.("{{ pkg_name }}").description = "{{ page.description }}";
 __pkg__.("{{ pkg_name }}").homepage = "{{ page.homepage }}";
 __pkg__.("{{ pkg_name }}").license = "{{ page.license }}";
-__pkg__.("{{ pkg_name }}").repository = "{{ page.repository }}";
 {% for ver in page.versions %}
 {%- assign i = forloop.index -%}
 {% for v in ver %}
