@@ -10,7 +10,8 @@ layout: default
       <th>Icon</th>
       <th>Name</th>
       <th>Description</th>
-      <th>Last update</th>
+      <th>Latest update</th>
+      <th>Latest version</th>
     </tr>
   </thead>
   <tbody>
@@ -20,11 +21,10 @@ layout: default
       <td><img src="{{ pkg.image | default: site.default_pkg_image | relative_url }}" alt="icon"></td>
       <td><a href="{{ '/package/' | relative_url }}{{ pkg.name | remove: ".md" }}">{{ pkg.name | remove: ".md" }}</a></td>
       <td>{{ pkg.description }}</td>
-      <td>
         {%- for ver in pkg.versions[0] -%}
-          {{ ver[1].date }}
+          <td>{{ ver[1].date }}</td>
+          <td>{{ ver[0] }}</td>
         {%- endfor -%}
-      </td>
     </tr>
   {%- endif -%}
   {%- endfor -%}

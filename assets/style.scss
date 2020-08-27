@@ -6,12 +6,17 @@ body
   background-color: white;
 }
 
+h2
+{
+  margin-top: 2em;
+}
+
 .package
 {
   border-radius: 5px;
   box-shadow: 0 .5rem 1rem -.25rem gray;
   align-items: center;
-  margin: 1em auto 2em auto;
+  margin: 4em auto 2em auto;
   max-width: 60rem;
 }
 
@@ -45,7 +50,7 @@ a, .package div a
 
 .package div code a
 {
-  color: GhostWhite;
+  color: black;
 }
 
 .package img
@@ -59,10 +64,8 @@ a, .package div a
 {
   white-space: nowrap;
   padding: 5px;
-  font-size: 120%;
-  font-weight: bold;
-  color: GhostWhite;
-  background-color: SteelBlue;
+  color: black;
+  background-color: lavender;
   width: 90%;
   overflow-x: scroll;
   float: left;
