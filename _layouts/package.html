@@ -54,7 +54,7 @@ layout: default
             {%- endfor -%}
             <li>
               {%- if link_other_pkg == true -%}
-                <a href="/package/{{ dep[0] }}">{{ dep[0] }}</a>
+                <a href="{{ '/package/' | relative_url }}{{ dep[0] }}">{{ dep[0] }}</a>
               {%- else -%}
                 {{ dep[0] }}
               {%- endif -%}
