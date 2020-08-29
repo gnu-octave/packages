@@ -2,23 +2,28 @@
 layout: default
 ---
 
-<h2>The "{{ page.name | remove: '.md' }}" package</h2>
-
-<ul>
-  <li><a href="{{ '/' | relative_url }}">Back to the package index</a></li>
-</ul>
-
 {%- assign pkg_name = page.name | remove: '.md' -%}
 
 <div class="package">
   <img src="{{ page.image | default: site.default_pkg_image | relative_url }}" alt="{{ pkg_name }}">
   <div>
+  <p>
+    <a href="{{ '/' | relative_url }}">&lt;&nbsp; Back to the package index</a>
+  </p>
   <h3>
     <a href="{{ page.homepage }}">{{ pkg_name }}</a>
   </h3>
-  <p><b>Description:</b> {{ page.description }}</p>
+  <p><b>Description:</b> {{ page.description | escape }}</p>
   <p><b>Homepage:</b> <a href="{{ page.homepage }}">{{ page.homepage }}</a></p>
   <p><b>License:</b> {{ page.license }}</p>
+  <p>
+    <b>Maintainer:</b>
+    <ul>
+      {%- for m in page.maintainer -%}
+        <li>{{ m | escape }}</li>
+      {%- endfor -%}
+    </ul>
+  </p>
   <p>
     <b>Versions:</b>
   </p>

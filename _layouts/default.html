@@ -17,7 +17,7 @@
     <title>{{ page.title | default: site.title }}</title>
 
     <!-- Facebook Open Graph -->
-    <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <meta property="og:description" content="{{ page.description | escape | default: site.description }} | escape">
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:title" content="
       {%- if page.layout == "package" -%}
@@ -44,7 +44,7 @@
         {{ site.title }}
       {%- endif -%}
       ">
-    <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+    <meta name="twitter:description" content="{{ page.description | escape | default: site.description | escape }}">
     <meta name="twitter:url" content="{{ page.url | absolute_url }}">
     <meta name="twitter:image" content="{{ page.image | default: site.logo | absolute_url }}">
   </head>

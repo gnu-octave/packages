@@ -18,6 +18,7 @@ h2
   align-items: center;
   margin: 4em auto 2em auto;
   max-width: 60rem;
+  padding: 30px;
 }
 
 .package div
@@ -28,11 +29,11 @@ h2
 
 .package div h3
 {
-  margin-block-start: 0em;
   border-top: 2px solid #427cbd;
   border-bottom: 2px solid #427cbd;
   text-align: center;
   line-height: 30px;
+  margin-top: 1.5em;
 }
 
 .package div h3 a
@@ -57,7 +58,8 @@ a, .package div a
 {
   width: 150px;
   float: left;
-  margin: 10px;
+  margin: 20px;
+  margin-top: 5em;
 }
 
 .package code
