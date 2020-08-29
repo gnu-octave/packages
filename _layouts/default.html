@@ -15,6 +15,32 @@
       src="https://cdn.datatables.net/fixedheader/3.1.7/js/dataTables.fixedHeader.min.js"></script>
     {%- endif -%}
     <title>{{ page.title | default: site.title }}</title>
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:title" content="
+      {%- if page.layout == "package" -%}
+        {{ page.name | remove: '.md' }} package
+      {%- else -%}
+        {{ site.title }}
+      {%- endif -%}
+      ">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{{ page.image | default: site.logo | absolute_url }}">
+    {%- if page.date -%}
+    <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
+    {%- endif -%}
+    {%- if page.modified_date -%}
+    <meta property="article:modified_time" content="{{ page.modified_date | date_to_xmlschema }}" />
+    {%- endif -%}
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+    <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+    <meta name="twitter:url" content="{{ page.url | absolute_url }}">
+    <meta name="twitter:image" content="{{ page.image | default: site.logo | absolute_url }}">
   </head>
   <body>
     <h1>
