@@ -4,6 +4,8 @@ description: "Non-linear optimization toolkit."
 homepage: "https://octave.sourceforge.io/optim"
 image: "https://octave.sourceforge.io/pkg_icon/optim.png"
 license: "GPLv3+, modified BSD, public domain"
+maintainer:
+  - "Olaf Till <i7tiol@t-online.de>"
 versions:
   - "1.6.0":
       date: 2019-03-12

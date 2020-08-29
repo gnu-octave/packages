@@ -4,6 +4,8 @@ description: "Common Gateway Interface for Octave."
 homepage: "https://octave.sourceforge.io/cgi"
 image: "https://octave.sourceforge.io/pkg_icon/cgi.png"
 license: "GPLv2+"
+maintainer:
+  - "Alexander Barth <barth.alexander@gmail.com>"
 versions:
   - "0.1.2":
       date: 2016-09-07

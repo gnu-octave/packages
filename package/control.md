@@ -4,6 +4,10 @@ description: "Computer-Aided Control System Design (CACSD) Tools for GNU Octave,
 homepage: "https://octave.sourceforge.io/control"
 image: "https://octave.sourceforge.io/pkg_icon/control.png"
 license: "GPLv3+"
+maintainer:
+  - "Lukas Reichlin <lukas.reichlin@gmail.com>"
+  - "Alexander Wilms <f.alexander.wilms@gmail.com>"
+  - "Doug Stewart <doug.dastew@gmail.com>"
 versions:
   - "3.2.0":
       date: 2019-04-01

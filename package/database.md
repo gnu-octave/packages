@@ -4,6 +4,8 @@ description: "Interface to SQL databases, currently only postgresql using libpq.
 homepage: "https://octave.sourceforge.io/database"
 image: "https://octave.sourceforge.io/pkg_icon/database.png"
 license: "GPLv3+"
+maintainer:
+  - "Olaf Till <i7tiol@t-online.de>"
 versions:
   - "2.4.4":
       date: 2019-03-13

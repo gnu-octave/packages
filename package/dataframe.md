@@ -4,6 +4,9 @@ description: "Data manipulation toolbox similar to R data.frame."
 homepage: "https://octave.sourceforge.io/dataframe"
 image: "https://octave.sourceforge.io/pkg_icon/dataframe.png"
 license: "GPLv3+"
+maintainer:
+  - "Pascal Dupuis"
+  - "The Octave Community"
 versions:
   - "1.2.0":
       date: 2017-08-14

@@ -4,6 +4,8 @@ description: "Enhanced package manager for GNU Octave."
 homepage: "https://github.com/apjanke/octave-packajoozle"
 image: ""
 license: "GPLv3+"
+maintainer:
+  - "Andrew Janke <andrew@apjanke.net>"
 versions:
   - "0.0.0+":
       date: 2019-03-25

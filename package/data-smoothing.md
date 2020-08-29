@@ -4,6 +4,8 @@ description: "Algorithms for smoothing noisy data."
 homepage: "https://octave.sourceforge.io/data-smoothing"
 image: "https://octave.sourceforge.io/pkg_icon/data-smoothing.png"
 license: "GPLv3+"
+maintainer:
+  - "Jonathan Stickel <jonathan.stickel@nrel.gov>"
 versions:
   - "1.3.0":
       date: 2012-03-01

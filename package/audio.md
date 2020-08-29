@@ -4,6 +4,8 @@ description: "Audio and MIDI Toolbox for GNU Octave."
 homepage: "https://octave.sourceforge.io/audio"
 image: "https://octave.sourceforge.io/pkg_icon/audio.png"
 license: "GPLv3+"
+maintainer:
+  - "John Donoghue <john.donoghue@ieee.org>"
 versions:
   - "2.0.1":
       date: 2020-05-08

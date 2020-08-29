@@ -4,6 +4,8 @@ description: "Digital Communications, Error Correcting Codes (Channel Code), Sou
 homepage: "https://octave.sourceforge.io/communications"
 image: "https://octave.sourceforge.io/pkg_icon/communications.png"
 license: "GPLv3+"
+maintainer:
+  - "Nir Krakauer <mail@nirkrakauer.net>"
 versions:
   - "1.2.2":
       date: 2019-12-22

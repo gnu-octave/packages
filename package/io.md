@@ -4,6 +4,8 @@ description: "Input/Output in external formats."
 homepage: "https://octave.sourceforge.io/io"
 image: "https://octave.sourceforge.io/pkg_icon/io.png"
 license: "GPLv3+, simplified BSD"
+maintainer:
+  - "Philip Nienhuis <prnienhuis@users.sf.net>"
 versions:
   - "2.6.1":
       date: 2020-04-15
