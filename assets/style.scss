@@ -6,11 +6,6 @@ body
   background-color: white;
 }
 
-h2
-{
-  margin-top: 2em;
-}
-
 .package
 {
   border-radius: 5px;
@@ -90,7 +85,6 @@ a, .package div a
   margin-left: 1em;
 }
 
-
 img#logo
 {
   width: 38px;
@@ -103,7 +97,36 @@ ul li
   margin: 0.5em 0 0.5em 0;
 }
 
-table#package-index img
+#package-index_wrapper
+{
+  margin-top: 2em;
+}
+
+#package-index img
 {
   width: 50px;
+}
+
+#package-index_length,
+#package-index_length select,
+#package-index_filter,
+#package-index_filter input
+{
+  font-size: large;
+}
+
+#package-index_filter
+{
+  width: 50%;
+  margin-bottom: 1.5em;
+}
+
+#package-index_filter label
+{
+  width: 100%;
+}
+
+#package-index_filter input
+{
+  width: 80%;
 }
