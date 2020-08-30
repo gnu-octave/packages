@@ -27,62 +27,61 @@ layout: default
   <p>
     <b>Versions:</b>
   </p>
-  <ul>
+  {%- assign details_open = ' open' -%}
   {%- for v in page.versions -%}
-    <li>
-      <p>
-        <b>{{ v.id }} ({{ v.date }})</b>
-      </p>
-      <p>
-        <code>pkg install <a href="{{ v.url }}">{{ v.url }}</a></code>
-        <button type="button" onclick="doCopy('pkg install {{ v.url }}')">
-          <img src="{{ '/assets/copy.svg' | relative_url }}"
-                alt="copy" class="copy">
-        </button>
-      </p>
-      <ul>
-        <li>
-          <b>SHA256:</b> {{ v.sha256 | default: '-' }}
-        </li>
-        <li>
-          <b>Dependencies:</b>
-          <ul>
-          {%- for dep in v.depends -%}
-            {%- for pkg in site.pages -%}
-              {%- if pkg.layout == "package" -%}
-                {%- assign other_pkg_name = pkg.name | remove: '.md' -%}
-                {%- if other_pkg_name == dep.name -%}
-                  {%- assign link_other_pkg = true -%}
-                {%- endif -%}
+
+  <details{{ details_open }}>
+  {%- assign details_open = '' -%}
+    <summary><b>{{ v.id }} ({{ v.date }})</b></summary>
+    <p>
+      <code>pkg install <a href="{{ v.url }}">{{ v.url }}</a></code>
+      <button type="button" onclick="doCopy('pkg install {{ v.url }}')">
+        <img src="{{ '/assets/copy.svg' | relative_url }}"
+              alt="copy" class="copy">
+      </button>
+    </p>
+    <ul>
+      <li>
+        <b>SHA256:</b> {{ v.sha256 | default: '-' }}
+      </li>
+      <li>
+        <b>Dependencies:</b>
+        <ul>
+        {%- for dep in v.depends -%}
+          {%- for pkg in site.pages -%}
+            {%- if pkg.layout == "package" -%}
+              {%- assign other_pkg_name = pkg.name | remove: '.md' -%}
+              {%- if other_pkg_name == dep.name -%}
+                {%- assign link_other_pkg = true -%}
               {%- endif -%}
-            {%- endfor -%}
-            <li>
-              {%- if link_other_pkg == true -%}
-                <a href="{{ '/package/' | relative_url }}{{ dep.name }}">{{ dep.name }}</a>
-              {%- else -%}
-                {{ dep.name }}
-              {%- endif -%}
-              {%- if dep.min or dep.max -%}
-              &nbsp;(
-                {%- if dep.min -%}
-                &geq; {{ dep.min }}
-                {%- endif -%}
-                {%- if dep.min and dep.max -%}
-                  &nbsp;and&nbsp;
-                {%- endif -%}
-                {%- if dep.max -%}
-                &leq; {{ dep.max }}
-                {%- endif -%}
-              )
-              {%- endif -%}
-            </li>
+            {%- endif -%}
           {%- endfor -%}
-          </ul>
-        </li>
-      </ul>
-    </li>
+          <li>
+            {%- if link_other_pkg == true -%}
+              <a href="{{ '/package/' | relative_url }}{{ dep.name }}">{{ dep.name }}</a>
+            {%- else -%}
+              {{ dep.name }}
+            {%- endif -%}
+            {%- if dep.min or dep.max -%}
+            &nbsp;(
+              {%- if dep.min -%}
+              &geq; {{ dep.min }}
+              {%- endif -%}
+              {%- if dep.min and dep.max -%}
+                &nbsp;and&nbsp;
+              {%- endif -%}
+              {%- if dep.max -%}
+              &leq; {{ dep.max }}
+              {%- endif -%}
+            )
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+        </ul>
+      </li>
+    </ul>
+  </details>
   {%- endfor -%}
-  </ul>
   </div>
 </div>
 
