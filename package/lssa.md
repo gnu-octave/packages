@@ -1,6 +1,6 @@
 ---
 layout: "package"
-description: "Tools to compute spectral decompositions of irregularly-spaced time series. Functions based on the Lomb-Scargle periodogram and Adolf Mathias' implementation for R and C ."
+description: "Tools to compute spectral decompositions of irregularly-spaced time series. Functions based on the Lomb-Scargle periodogram and Adolf Mathias' implementation for R and C."
 homepage: "https://octave.sourceforge.io/lssa"
 icon: "https://octave.sourceforge.io/pkg_icon/lssa.png"
 license: "GPLv3+"
