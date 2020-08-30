@@ -1,10 +1,9 @@
 title: "GNU Octave - Package extensions index"
 description : "An index for GNU Octave packages."
-logo: /assets/octave-logo-512.png
+logo: "/assets/octave-logo-512.png"
 
-pkg_version: 0.0.1
-
-default_pkg_image: /assets/pkg.png
+pkg_version: "0.0.1"
+pkg_icon: "/assets/pkg.png"
 
 exclude:
   - Gemfile

@@ -18,13 +18,11 @@ layout: default
   {%- for pkg in site.pages -%}
   {%- if pkg.layout == "package" -%}
     <tr>
-      <td><img src="{{ pkg.image | default: site.default_pkg_image | relative_url }}" alt="icon"></td>
+      <td><img src="{{ pkg.icon | default: site.pkg_icon | relative_url }}" alt="icon"></td>
       <td><a href="{{ '/package/' | relative_url }}{{ pkg.name | remove: ".md" }}">{{ pkg.name | remove: ".md" }}</a></td>
-      <td>{{ pkg.description }}</td>
-        {%- for ver in pkg.versions[0] -%}
-          <td>{{ ver[1].date }}</td>
-          <td>{{ ver[0] }}</td>
-        {%- endfor -%}
+      <td>{{ pkg.description | escape }}</td>
+      <td>{{ pkg.versions[0].date }}</td>
+      <td>{{ pkg.versions[0].id }}</td>
     </tr>
   {%- endif -%}
   {%- endfor -%}

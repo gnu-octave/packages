@@ -5,7 +5,7 @@ layout: default
 {%- assign pkg_name = page.name | remove: '.md' -%}
 
 <div class="package">
-  <img src="{{ page.image | default: site.default_pkg_image | relative_url }}" alt="{{ pkg_name }}">
+  <img src="{{ page.icon | default: site.pkg_icon | relative_url }}" alt="{{ pkg_name }}">
   <div>
   <p>
     <a href="{{ '/' | relative_url }}">&lt;&nbsp; Back to the package index</a>
@@ -17,10 +17,10 @@ layout: default
   <p><b>Homepage:</b> <a href="{{ page.homepage }}">{{ page.homepage }}</a></p>
   <p><b>License:</b> {{ page.license }}</p>
   <p>
-    <b>Maintainer:</b>
+    <b>Maintainer{%- if page.maintainers.size > 1 -%}s{%- endif -%}:</b>
     <ul>
-      {%- for m in page.maintainer -%}
-        <li>{{ m | escape }}</li>
+      {%- for m in page.maintainers -%}
+        <li>{{ m.name | escape }} &lt;{{ m.contact | escape }}&gt;</li>
       {%- endfor -%}
     </ul>
   </p>
@@ -28,48 +28,58 @@ layout: default
     <b>Versions:</b>
   </p>
   <ul>
-  {%- for ver in page.versions -%}
+  {%- for v in page.versions -%}
     <li>
-      {%- for v in ver -%}
       <p>
-        <b>{{ v[0] }} ({{ v[1].date }})</b>
+        <b>{{ v.id }} ({{ v.date }})</b>
       </p>
       <p>
-        <code>pkg install <a href="{{ v[1].url }}">{{ v[1].url }}</a></code>
-        <button type="button" onclick="doCopy('pkg install {{ v[1].url }}')">
+        <code>pkg install <a href="{{ v.url }}">{{ v.url }}</a></code>
+        <button type="button" onclick="doCopy('pkg install {{ v.url }}')">
           <img src="{{ '/assets/copy.svg' | relative_url }}"
                 alt="copy" class="copy">
         </button>
       </p>
       <ul>
         <li>
-          <b>SHA256:</b> {{ v[1].sha256 }}
+          <b>SHA256:</b> {{ v.sha256 | default: '-' }}
         </li>
         <li>
           <b>Dependencies:</b>
           <ul>
-          {%- for dep in v[1].depends -%}
+          {%- for dep in v.depends -%}
             {%- for pkg in site.pages -%}
               {%- if pkg.layout == "package" -%}
                 {%- assign other_pkg_name = pkg.name | remove: '.md' -%}
-                {%- if other_pkg_name == dep[0] -%}
+                {%- if other_pkg_name == dep.name -%}
                   {%- assign link_other_pkg = true -%}
                 {%- endif -%}
               {%- endif -%}
             {%- endfor -%}
             <li>
               {%- if link_other_pkg == true -%}
-                <a href="{{ '/package/' | relative_url }}{{ dep[0] }}">{{ dep[0] }}</a>
+                <a href="{{ '/package/' | relative_url }}{{ dep.name }}">{{ dep.name }}</a>
               {%- else -%}
-                {{ dep[0] }}
+                {{ dep.name }}
               {%- endif -%}
-              &nbsp;{{ dep[1] }}
+              {%- if dep.min or dep.max -%}
+              &nbsp;(
+                {%- if dep.min -%}
+                &geq; {{ dep.min }}
+                {%- endif -%}
+                {%- if dep.min and dep.max -%}
+                  &nbsp;and&nbsp;
+                {%- endif -%}
+                {%- if dep.max -%}
+                &leq; {{ dep.max }}
+                {%- endif -%}
+              )
+              {%- endif -%}
             </li>
           {%- endfor -%}
           </ul>
         </li>
       </ul>
-      {%- endfor -%}
     </li>
   {%- endfor -%}
   </ul>
@@ -89,22 +99,26 @@ function doCopy(txt) {
 
 <!--
 __pkg_version__ = "{{ site.pkg_version }}";
-__pkg__.("{{ pkg_name }}").description = "{{ page.description }}";
+__pkg__.("{{ pkg_name }}").description = "{{ page.description | escape }}";
 __pkg__.("{{ pkg_name }}").homepage = "{{ page.homepage }}";
+__pkg__.("{{ pkg_name }}").icon = "{{ page.icon }}";
 __pkg__.("{{ pkg_name }}").license = "{{ page.license }}";
-{% for ver in page.versions %}
+{% for m in page.maintainers %}
 {%- assign i = forloop.index -%}
-{% for v in ver %}
-__pkg__.("{{ pkg_name }}").versions({{ i }}).id = "{{ v[0] }}";
-__pkg__.("{{ pkg_name }}").versions({{ i }}).date = "{{ v[1].date }}";
-__pkg__.("{{ pkg_name }}").versions({{ i }}).sha256 = "{{ v[1].sha256 }}";
-__pkg__.("{{ pkg_name }}").versions({{ i }}).url = "{{ v[1].url }}";
-{% for dep in v[1].depends %}
-{%- assign j = forloop.index -%}
-__pkg__.("{{ pkg_name }}").versions({{ i }}).depends({{ j }}).name = "{{ dep[0] }}";
-__pkg__.("{{ pkg_name }}").versions({{ i }}).depends({{ j }}).min = "{{ dep[1].min }}";
-__pkg__.("{{ pkg_name }}").versions({{ i }}).depends({{ j }}).max = "{{ dep[1].max }}";
+__pkg__.("{{ pkg_name }}").maintainers({{ i }}).name = "{{ m.name | escape }}";
+__pkg__.("{{ pkg_name }}").maintainers({{ i }}).contact = "{{ m.contact | escape }}";
 {% endfor %}
+{% for v in page.versions %}
+{%- assign i = forloop.index -%}
+__pkg__.("{{ pkg_name }}").versions({{ i }}).id = "{{ v.id }}";
+__pkg__.("{{ pkg_name }}").versions({{ i }}).date = "{{ v.date }}";
+__pkg__.("{{ pkg_name }}").versions({{ i }}).sha256 = "{{ v.sha256 }}";
+__pkg__.("{{ pkg_name }}").versions({{ i }}).url = "{{ v.url }}";
+{% for dep in v.depends %}
+{%- assign j = forloop.index -%}
+__pkg__.("{{ pkg_name }}").versions({{ i }}).depends({{ j }}).name = "{{ dep.name }}";
+__pkg__.("{{ pkg_name }}").versions({{ i }}).depends({{ j }}).min = "{{ dep.min }}";
+__pkg__.("{{ pkg_name }}").versions({{ i }}).depends({{ j }}).max = "{{ dep.max }}";
 {% endfor %}
 {% endfor %}
 -->
