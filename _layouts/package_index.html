@@ -34,7 +34,7 @@ __pkg_version__ = "{{ site.pkg_version }}";
 {%- capture _ -%}{%- increment i -%}{%- endcapture -%}
 {%- for pkg in site.pages -%}
 {% if pkg.layout == "package" %}
-__pkg__.index({% increment i %},:) = {"{{ pkg.name | remove: ".md" }}", "{{ pkg.description }}"};
+__pkg__.index({% increment i %},:) = {"{{ pkg.name | remove: ".md" }}", "{{ pkg.description | escape }}"};
 {% endif %}
 {%- endfor -%}
 -->
