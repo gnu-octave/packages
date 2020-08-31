@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Library for extending MatGeom functionality."
+description: >-
+  Library for extending MatGeom functionality.
 homepage: "https://octave.sourceforge.io/geometry"
 icon: "https://octave.sourceforge.io/pkg_icon/geometry.png"
 license: "GPLv3+, Boost v1.0"

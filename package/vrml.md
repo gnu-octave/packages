@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "3D graphics using VRML."
+description: >-
+  3D graphics using VRML.
 homepage: "https://octave.sourceforge.io/vrml"
 icon: "https://octave.sourceforge.io/pkg_icon/vrml.png"
 license: "GPLv3+, GFDL"

@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Additional functions for manipulation and analysis of strings."
+description: >-
+  Additional functions for manipulation and analysis of strings.
 homepage: "https://octave.sourceforge.io/strings"
 icon: "https://octave.sourceforge.io/pkg_icon/strings.png"
 license: "GPLv3+, FreeBSD"

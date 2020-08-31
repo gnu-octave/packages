@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Econometrics."
+description: >-
+  Econometrics.
 homepage: "https://octave.sourceforge.io/econometrics"
 icon: "https://octave.sourceforge.io/pkg_icon/econometrics.png"
 license: "GPLv3+"

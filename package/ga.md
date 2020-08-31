@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Genetic optimization code."
+description: >-
+  Genetic optimization code.
 homepage: "https://octave.sourceforge.io/ga"
 icon: "https://octave.sourceforge.io/pkg_icon/ga.png"
 license: "GPLv3+"

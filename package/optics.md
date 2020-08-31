@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Functions covering various aspects of optics."
+description: >-
+  Functions covering various aspects of optics.
 homepage: "https://octave.sourceforge.io/optics"
 icon: "https://octave.sourceforge.io/pkg_icon/optics.png"
 license: "GPLv3+"

@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "General tools for Octave."
+description: >-
+  General tools for Octave.
 homepage: "https://octave.sourceforge.io/general"
 icon: "https://octave.sourceforge.io/pkg_icon/general.png"
 license: "GPLv3+, modified BSD, public domain"

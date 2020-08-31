@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Simple mapping and GIS .shp .dxf and raster file functions."
+description: >-
+  Simple mapping and GIS .shp .dxf and raster file functions.
 homepage: "https://octave.sourceforge.io/mapping"
 icon: "https://octave.sourceforge.io/pkg_icon/mapping.png"
 license: "GPLv3+"

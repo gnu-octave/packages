@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "ZeroMQ bindings for GNU Octave."
+description: >-
+  ZeroMQ bindings for GNU Octave.
 homepage: "https://octave.sourceforge.io/zeromq"
 icon:
 license: "GPLv3+"

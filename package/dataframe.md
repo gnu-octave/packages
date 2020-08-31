@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Data manipulation toolbox similar to R data.frame."
+description: >-
+  Data manipulation toolbox similar to R data.frame.
 homepage: "https://octave.sourceforge.io/dataframe"
 icon: "https://octave.sourceforge.io/pkg_icon/dataframe.png"
 license: "GPLv3+"

@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Common Gateway Interface for Octave."
+description: >-
+  Common Gateway Interface for Octave.
 homepage: "https://octave.sourceforge.io/cgi"
 icon: "https://octave.sourceforge.io/pkg_icon/cgi.png"
 license: "GPLv2+"

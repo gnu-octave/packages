@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "A mostly MATLAB-compatible fuzzy logic toolkit for Octave."
+description: >-
+  A mostly MATLAB-compatible fuzzy logic toolkit for Octave.
 homepage: "https://octave.sourceforge.io/fuzzy-logic-toolkit"
 icon: "https://octave.sourceforge.io/pkg_icon/fuzzy-logic-toolkit.png"
 license: "GPLv3+"

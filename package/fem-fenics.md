@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Resolution of partial differential equations based on fenics."
+description: >-
+  Resolution of partial differential equations based on fenics.
 homepage: "https://octave.sourceforge.io/fem-fenics"
 icon: "https://octave.sourceforge.io/pkg_icon/fem-fenics.png"
 license: "GPLv3+"

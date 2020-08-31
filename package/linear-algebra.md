@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Additional linear algebra code, including matrix functions."
+description: >-
+  Additional linear algebra code, including matrix functions.
 homepage: "https://octave.sourceforge.io/linear-algebra"
 icon: "https://octave.sourceforge.io/pkg_icon/linear-algebra.png"
 license: "GPLv3+, LGPLv3+, FreeBSD"

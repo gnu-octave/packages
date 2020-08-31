@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "File io for medical images and other data."
+description: >-
+  File io for medical images and other data.
 homepage: "https://octave.sourceforge.io/dicom"
 icon: "https://octave.sourceforge.io/pkg_icon/dicom.png"
 license: "GPLv3+"

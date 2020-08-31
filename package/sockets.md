@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Socket functions for networking from within Octave."
+description: >-
+  Socket functions for networking from within Octave.
 homepage: "https://octave.sourceforge.io/sockets"
 icon: "https://octave.sourceforge.io/pkg_icon/sockets.png"
 license: "GPLv3+"

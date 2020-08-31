@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Additional structure manipulation functions."
+description: >-
+  Additional structure manipulation functions.
 homepage: "https://octave.sourceforge.io/struct"
 icon: "https://octave.sourceforge.io/pkg_icon/struct.png"
 license: "GPLv3+"

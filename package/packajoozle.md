@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Enhanced package manager for GNU Octave."
+description: >-
+  Enhanced package manager for GNU Octave.
 homepage: "https://github.com/apjanke/octave-packajoozle"
 icon:
 license: "GPLv3+"

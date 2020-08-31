@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Algorithms for smoothing noisy data."
+description: >-
+  Algorithms for smoothing noisy data.
 homepage: "https://octave.sourceforge.io/data-smoothing"
 icon: "https://octave.sourceforge.io/pkg_icon/data-smoothing.png"
 license: "GPLv3+"

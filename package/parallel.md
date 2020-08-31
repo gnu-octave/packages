@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Parallel execution package."
+description: >-
+  Parallel execution package.
 homepage: "https://octave.sourceforge.io/parallel"
 icon: "https://octave.sourceforge.io/pkg_icon/parallel.png"
 license: "GPLv3+"

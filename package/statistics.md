@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Additional statistics functions for Octave."
+description: >-
+  Additional statistics functions for Octave.
 homepage: "https://octave.sourceforge.io/statistics"
 icon: "https://octave.sourceforge.io/pkg_icon/statistics.png"
 license: "GPLv3+, public domain"

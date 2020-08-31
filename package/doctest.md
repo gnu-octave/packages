@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Documentation tests."
+description: >-
+  Documentation tests.
 homepage: "https://octave.sourceforge.io/doctest"
 icon: "https://octave.sourceforge.io/pkg_icon/doctest.png"
 license: "BSD-3-Clause"

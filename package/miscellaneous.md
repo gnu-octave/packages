@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Miscellaneous tools that don't fit somewhere else."
+description: >-
+  Miscellaneous tools that don't fit somewhere else.
 homepage: "https://octave.sourceforge.io/miscellaneous"
 icon: "https://octave.sourceforge.io/pkg_icon/miscellaneous.png"
 license: "GPLv3+"

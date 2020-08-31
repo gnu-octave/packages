@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "A wrapper for OpenCV's CvCapture_FFMPEG and CvVideoWriter_FFMPEG."
+description: >-
+  A wrapper for OpenCV's CvCapture_FFMPEG and CvVideoWriter_FFMPEG.
 homepage: "https://octave.sourceforge.io/video"
 icon: "https://octave.sourceforge.io/pkg_icon/video.png"
 license: "GPLv3+ and 3-clause BSD"

@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "A NetCDF interface for Octave."
+description: >-
+  A NetCDF interface for Octave.
 homepage: "https://octave.sourceforge.io/netcdf"
 icon: "https://octave.sourceforge.io/pkg_icon/netcdf.png"
 license: "GPLv2+"

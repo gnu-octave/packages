@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Non-linear optimization toolkit."
+description: >-
+  Non-linear optimization toolkit.
 homepage: "https://octave.sourceforge.io/optim"
 icon: "https://octave.sourceforge.io/pkg_icon/optim.png"
 license: "GPLv3+, modified BSD, public domain"

@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Octave bindings to the GNU Scientific Library."
+description: >-
+  Octave bindings to the GNU Scientific Library.
 homepage: "https://octave.sourceforge.io/gsl"
 icon:
 license: "GPLv2+"

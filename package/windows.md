@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Provides COM interface and additional functionality on Windows."
+description: >-
+  Provides COM interface and additional functionality on Windows.
 homepage: "https://octave.sourceforge.io/windows"
 icon: "https://octave.sourceforge.io/pkg_icon/windows.png"
 license: "GPLv3+"

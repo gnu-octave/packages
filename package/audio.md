@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Audio and MIDI Toolbox for GNU Octave."
+description: >-
+  Audio and MIDI Toolbox for GNU Octave.
 homepage: "https://octave.sourceforge.io/audio"
 icon: "https://octave.sourceforge.io/pkg_icon/audio.png"
 license: "GPLv3+"

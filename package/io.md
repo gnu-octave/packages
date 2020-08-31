@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Input/Output in external formats."
+description: >-
+  Input/Output in external formats.
 homepage: "https://octave.sourceforge.io/io"
 icon: "https://octave.sourceforge.io/pkg_icon/io.png"
 license: "GPLv3+, simplified BSD"

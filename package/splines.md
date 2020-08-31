@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Additional spline functions."
+description: >-
+  Additional spline functions
 homepage: "https://octave.sourceforge.io/splines"
 icon: "https://octave.sourceforge.io/pkg_icon/splines.png"
 license: "GPLv3+, public domain"
