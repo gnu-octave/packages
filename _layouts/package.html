@@ -21,7 +21,9 @@ layout: default
     <b>Maintainer{%- if page.maintainers.size > 1 -%}s{%- endif -%}:</b>
     <ul>
       {%- for m in page.maintainers -%}
-        <li>{{ m.name | escape }} &lt;{{ m.contact | escape }}&gt;</li>
+        <li>
+          {{ m.name | escape }} &nbsp;
+          &lt;{{ m.contact | escape | default: '<a href="https://octave.discourse.group/">https://octave.discourse.group/</a>' }}&gt;</li>
       {%- endfor -%}
     </ul>
   </p>
