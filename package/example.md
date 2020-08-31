@@ -1,10 +1,3 @@
-# Package contribution guidelines
-
-This guide explains how to add a package to this package index.
-
-## The package YAML file format
-
-```yaml
 ---
 layout: "package"
 description: >-
@@ -38,10 +31,3 @@ versions:
     min: "5.2.0"
     max:
 ---
-```
-
-```
-# sha256sum pkg-example-0.0.1.tar.gz
-
-0b0bf67b45a20e95c89960b09a06e282c49e6d34a8fa22acac68452e4bd61d7d  pkg-example-0.0.1.tar.gz
-```
