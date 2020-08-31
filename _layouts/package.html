@@ -2,14 +2,15 @@
 layout: default
 ---
 
+<p>
+  <a href="{{ '/' | relative_url }}">&lt;&nbsp; Back to the index</a>
+</p>
+
 {%- assign pkg_name = page.name | remove: '.md' -%}
 
 <div class="package">
   <img src="{{ page.icon | default: site.pkg_icon | relative_url }}" alt="{{ pkg_name }}">
   <div>
-  <p>
-    <a href="{{ '/' | relative_url }}">&lt;&nbsp; Back to the package index</a>
-  </p>
   <h3>
     <a href="{{ page.homepage }}">{{ pkg_name }}</a>
   </h3>

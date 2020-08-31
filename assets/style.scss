@@ -3,7 +3,75 @@
 
 body
 {
+  font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
   background-color: white;
+  margin: 0px;
+}
+
+h1, h2, h3
+{
+  margin: 0px;
+}
+
+div#header
+{
+  background-color: #333;
+  display: flex;
+  font-size: 100%;
+  line-height: 1.5;
+  padding: .5rem;
+}
+
+div#header a
+{
+  color: #fff;
+  display: block;
+}
+
+div.menu_item a
+{
+  font-size: 110%;
+  padding: .7rem 1rem;
+}
+
+div.menu_item a:hover
+{
+  background-color: #585858;
+}
+
+div#logo
+{
+  min-width: 350px;
+}
+
+div#logo h1
+{
+  font-size: 120%;
+  font-weight: bold;
+}
+
+div#logo h2
+{
+  font-size: inherit;
+  font-weight: normal;
+}
+
+div#logo img
+{
+  width: 38px;
+  float: left;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+div#content
+{
+  padding: 1em;
+}
+
+.package ul li
+{
+  margin: 0.5em 0 0.5em 0;
 }
 
 .package
@@ -28,7 +96,7 @@ body
   border-bottom: 2px solid #427cbd;
   text-align: center;
   line-height: 30px;
-  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .package div h3 a
@@ -54,7 +122,15 @@ a, .package div a
   width: 150px;
   float: left;
   margin: 20px;
-  margin-top: 5em;
+}
+
+@media screen and (max-width: 600px) {
+  .package img
+  {
+    display: block;
+    float: none;
+    margin: auto;
+  }
 }
 
 .package code
@@ -85,21 +161,9 @@ a, .package div a
   margin-left: 1em;
 }
 
-img#logo
-{
-  width: 38px;
-  float: left;
-  margin-right: 10px;
-}
-
-ul li
-{
-  margin: 0.5em 0 0.5em 0;
-}
-
 #package-index_wrapper
 {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 #package-index img

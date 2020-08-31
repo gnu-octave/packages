@@ -49,38 +49,43 @@
     <meta name="twitter:image" content="{{ page.image | default: site.logo | absolute_url }}">
   </head>
   <body>
-    <a href="{{ '/' | relative_url }}">
-    <h1>
-      <img src="{{ '/assets/octave-logo.svg' | relative_url }}"
-           alt="GNU Octave"
-           id="logo">
-      {{ page.title | default: site.title }}
-    </h1>
-    </a>
-    <ul>
-      <li><a href="https://github.com/gnu-octave/pkg-index/blob/master/CONTRIBUTING.md">Add your package</a></li>
-      <li><a href="https://github.com/gnu-octave/pkg-index/blob/master/README.md">About this index</a></li>
-    </ul>
+    <div id="header">
+      <div id="logo">
+        <a href="{{ '/' | relative_url }}">
+          <img src="{{ '/assets/octave-logo.svg' | relative_url }}"
+              alt="GNU Octave">
+          <h1>GNU Octave</h1>
+          <h2>Package extensions index</h2>
+        </a>
+      </div>
+      <div class="menu_item">
+        <a href="https://github.com/gnu-octave/pkg-index/blob/master/CONTRIBUTING.md">Add your package</a>
+      </div>
+      <div class="menu_item">
+        <a href="https://github.com/gnu-octave/pkg-index/blob/master/README.md">About this index</a>
+      </div>
+    </div>
+
+    <div id="content">
     {{ content }}
+    </div>
+
     {%- if page.layout == "package_index" -%}
     <script>
     $(document).ready( function () {
       $('#package-index').DataTable( {
         fixedHeader: true,
-        lengthMenu: [[50, 100, -1], [50, 100, "All"]],
+        lengthMenu: [[25, 50, 100, -1], [25, 50, 100, "All"]],
         order: [[ 1, "asc" ]],
         columnDefs: [
             {
                 targets: [0, 3, 4],
-                className: 'dt-body-center'
+                className: 'dt-body-center',
+                width: '150px'
             },
             {
                 targets: 0,
                 orderable: false
-            },
-            {
-                targets: 2,
-                width: '55%'
             }
           ]
         } );
