@@ -1,0 +1,34 @@
+---
+
+yaml-files:
+  - '*.md'
+
+rules:
+  braces: enable
+  brackets: enable
+  colons: enable
+  commas: enable
+  comments: enable
+  comments-indentation: enable
+  document-end: disable
+  document-start: enable
+  empty-lines: enable
+  empty-values: disable
+  hyphens: enable
+  indentation:
+    spaces: 0
+  key-duplicates: enable
+  key-ordering: disable
+  line-length:
+    max: 80
+    allow-non-breakable-words: true
+    allow-non-breakable-inline-mappings: true
+  new-line-at-end-of-file: enable
+  new-lines:
+    type: unix
+  octal-values: disable
+  quoted-strings:
+    quote-type: double
+    required: true
+  trailing-spaces: enable
+  truthy: enable

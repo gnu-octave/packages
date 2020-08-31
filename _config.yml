@@ -11,3 +11,4 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE
   - README.md
+  - assets/travis
