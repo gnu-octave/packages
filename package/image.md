@@ -1,6 +1,9 @@
 ---
 layout: "package"
-description: "Functions for image processing, feature extraction, image statistics, spatial and geometric transformations, morphological operations, linear filtering, and much more."
+description: >-
+  Functions for image processing, feature extraction, image statistics, spatial
+  and geometric transformations, morphological operations, linear filtering,
+  and much more.
 homepage: "https://octave.sourceforge.io/image"
 icon: "https://octave.sourceforge.io/pkg_icon/image.png"
 license: "GPLv3+"

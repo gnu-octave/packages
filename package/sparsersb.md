@@ -1,6 +1,8 @@
 ---
 layout: "package"
-description: "Interface to the librsb package implementing the RSB sparse matrix format for fast shared-memory sparse matrix computations."
+description: >-
+  Interface to the librsb package implementing the RSB sparse matrix format for
+  fast shared-memory sparse matrix computations.
 homepage: "https://octave.sourceforge.io/sparsersb"
 icon: "https://octave.sourceforge.io/pkg_icon/sparsersb.png"
 license: "GPLv3+"

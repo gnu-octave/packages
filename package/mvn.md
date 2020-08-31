@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Multivariate normal distribution clustering and utility functions."
+description: >-
+  Multivariate normal distribution clustering and utility functions.
 homepage: "https://octave.sourceforge.io/mvn"
 icon: "https://octave.sourceforge.io/pkg_icon/mvn.png"
 license: "GPLv3+"

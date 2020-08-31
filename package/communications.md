@@ -1,6 +1,8 @@
 ---
 layout: "package"
-description: "Digital Communications, Error Correcting Codes (Channel Code), Source Code functions, Modulation and Galois Fields."
+description: >-
+  Digital Communications, Error Correcting Codes (Channel Code), Source Code
+  functions, Modulation and Galois Fields.
 homepage: "https://octave.sourceforge.io/communications"
 icon: "https://octave.sourceforge.io/pkg_icon/communications.png"
 license: "GPLv3+"

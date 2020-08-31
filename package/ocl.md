@@ -1,6 +1,9 @@
 ---
 layout: "package"
-description: "Package using OpenCL for parallelization, mostly suitable to Single-Instruction-Multiple-Data (SIMD) computations, selectively using available OpenCL hardware and drivers."
+description: >-
+  Package using OpenCL for parallelization, mostly suitable to
+  Single-Instruction-Multiple-Data (SIMD) computations, selectively using
+  available OpenCL hardware and drivers.
 homepage: "https://octave.sourceforge.io/ocl"
 icon:
 license: "GPLv3+"

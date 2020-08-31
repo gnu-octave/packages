@@ -1,6 +1,9 @@
 ---
 layout: "package"
-description: "Real-valued interval arithmetic. Handle uncertainties, estimate arithmetic errors, computer-assisted proofs, constraint programming, and verified computing."
+description: >-
+  Real-valued interval arithmetic. Handle uncertainties, estimate arithmetic
+  errors, computer-assisted proofs, constraint programming, and verified
+  computing.
 homepage: "https://octave.sourceforge.io/interval"
 icon: "https://octave.sourceforge.io/pkg_icon/interval.png"
 license: "GPLv3+"

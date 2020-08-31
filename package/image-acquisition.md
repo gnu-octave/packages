@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Functions to capture images from connected devices using Video4Linux (v4l)."
+description: >-
+  Functions to capture images from connected devices using Video4Linux (v4l).
 homepage: "https://octave.sourceforge.io/image-acquisition"
 icon: "https://octave.sourceforge.io/pkg_icon/image-acquisition.png"
 license: "GPLv3+"

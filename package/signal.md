@@ -1,6 +1,8 @@
 ---
 layout: "package"
-description: "Signal processing tools, including filtering, windowing and display functions."
+description: >-
+  Signal processing tools, including filtering, windowing and display
+  functions.
 homepage: "https://octave.sourceforge.io/signal"
 icon: "https://octave.sourceforge.io/pkg_icon/signal.png"
 license: "GPLv3+, public domain"

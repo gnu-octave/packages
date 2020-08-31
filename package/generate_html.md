@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Functions for generating HTML pages with help texts for a set of package functions."
+description: >-
+  Generating HTML pages with help texts for a set of package functions.
 homepage: "https://octave.sourceforge.io/generate_html"
 icon: "https://octave.sourceforge.io/pkg_icon/generate_html.png"
 license: "GPLv3+"

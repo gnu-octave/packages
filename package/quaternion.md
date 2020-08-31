@@ -1,6 +1,8 @@
 ---
 layout: "package"
-description: "Quaternion package for GNU Octave, includes a quaternion class with overloaded operators."
+description: >-
+  Quaternion package for GNU Octave, includes a quaternion class with
+  overloaded operators.
 homepage: "https://octave.sourceforge.io/quaternion"
 icon: "https://octave.sourceforge.io/pkg_icon/quaternion.png"
 license: "GPLv3+"

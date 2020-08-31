@@ -1,6 +1,8 @@
 ---
 layout: "package"
-description: "Routines for calculating the time-evolution of the level-set equation and extracting geometric information from the level-set function."
+description: >-
+  Routines for calculating the time-evolution of the level-set equation and
+  extracting geometric information from the level-set function.
 homepage: "https://octave.sourceforge.io/level-set"
 icon: "https://octave.sourceforge.io/pkg_icon/level-set.png"
 license: "GPLv3+"

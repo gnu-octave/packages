@@ -1,6 +1,8 @@
 ---
 layout: "package"
-description: "Low level I/O functions for serial, i2c, parallel, tcp, gpib, vxi11, udp and usbtmc interfaces."
+description: >-
+  Low level I/O functions for serial, i2c, parallel, tcp, gpib, vxi11, udp and
+  usbtmc interfaces.
 homepage: "https://octave.sourceforge.io/instrument-control"
 icon: "https://octave.sourceforge.io/pkg_icon/instrument-control.png"
 license: "GPLv3+"

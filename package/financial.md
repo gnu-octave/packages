@@ -1,6 +1,8 @@
 ---
 layout: "package"
-description: "Monte Carlo simulation, options pricing routines, financial manipulation, plotting functions and additional date manipulation tools."
+description: >-
+  Monte Carlo simulation, options pricing routines, financial manipulation,
+  plotting functions and additional date manipulation tools.
 homepage: "https://octave.sourceforge.io/financial"
 icon: "https://octave.sourceforge.io/pkg_icon/financial.png"
 license: "GPLv3+"

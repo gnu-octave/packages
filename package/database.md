@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Interface to SQL databases, currently only postgresql using libpq."
+description: >-
+  Interface to SQL databases, currently only postgresql using libpq.
 homepage: "https://octave.sourceforge.io/database"
 icon: "https://octave.sourceforge.io/pkg_icon/database.png"
 license: "GPLv3+"

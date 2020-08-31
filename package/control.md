@@ -1,6 +1,8 @@
 ---
 layout: "package"
-description: "Computer-Aided Control System Design (CACSD) Tools for GNU Octave, based on the proven SLICOT Library."
+description: >-
+  Computer-Aided Control System Design (CACSD) Tools for GNU Octave, based on
+  the proven SLICOT Library.
 homepage: "https://octave.sourceforge.io/control"
 icon: "https://octave.sourceforge.io/pkg_icon/control.png"
 license: "GPLv3+"

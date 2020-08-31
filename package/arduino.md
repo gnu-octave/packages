@@ -1,6 +1,7 @@
 ---
 layout: "package"
-description: "Allow communication to a programmed arduino board to control its hardware."
+description: >-
+  Allow communication to a programmed arduino board to control its hardware.
 homepage: "https://octave.sourceforge.io/arduino"
 icon: "https://octave.sourceforge.io/pkg_icon/arduino.png"
 license: "GPLv3+"
