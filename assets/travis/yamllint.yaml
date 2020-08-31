@@ -47,7 +47,6 @@ rules:
   new-line-at-end-of-file: enable
   new-lines:
     type: unix
-  octal-values: disable
   quoted-strings:
     quote-type: double
     required: true
