@@ -14,19 +14,17 @@ layout: default
   <h3>
     <a href="{{ page.homepage }}">{{ pkg_name }}</a>
   </h3>
-  <p><b>Description:</b> {{ page.description | escape }}</p>
+  <p class="indent"><b>Description:</b> {{ page.description | escape }}</p>
   <p><b>Homepage:</b> <a href="{{ page.homepage }}">{{ page.homepage }}</a></p>
   <p><b>License:</b> {{ page.license }}</p>
-  <p>
-    <b>Maintainer{%- if page.maintainers.size > 1 -%}s{%- endif -%}:</b>
-    <ul>
-      {%- for m in page.maintainers -%}
-        <li>
-          {{ m.name | escape }} &nbsp;
-          &lt;{{ m.contact | escape | default: '<a href="https://octave.discourse.group/">https://octave.discourse.group/</a>' }}&gt;</li>
-      {%- endfor -%}
-    </ul>
-  </p>
+  <p><b>Maintainer{%- if page.maintainers.size > 1 -%}s{%- endif -%}:</b></p>
+  <ul>
+    {%- for m in page.maintainers -%}
+      <li>
+        {{ m.name | escape }} &nbsp;
+        &lt;{{ m.contact | escape | default: '<a href="https://octave.discourse.group/">https://octave.discourse.group/</a>' }}&gt;</li>
+    {%- endfor -%}
+  </ul>
   <p>
     <b>Versions:</b>
   </p>
@@ -35,7 +33,9 @@ layout: default
 
   <details{{ details_open }}>
   {%- assign details_open = '' -%}
-    <summary><b>{{ v.id }} ({{ v.date }})</b></summary>
+    <summary>
+      <b>{{ v.id }}{%- if v.date -%}&nbsp;({{ v.date }}){%- endif -%}</b>
+    </summary>
     <p>
       <code>pkg install <a href="{{ v.url }}">{{ v.url }}</a></code>
       <button type="button" onclick="doCopy('pkg install {{ v.url }}')">

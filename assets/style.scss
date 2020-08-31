@@ -90,6 +90,12 @@ div#content
   overflow: hidden;
 }
 
+.package p.indent
+{
+  text-indent: -2em;
+  padding-left: 2em;
+}
+
 .package div h3
 {
   border-top: 3px solid #427cbd;
