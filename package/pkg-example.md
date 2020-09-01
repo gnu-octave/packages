@@ -2,9 +2,12 @@
 layout: "package"
 description: >-
   Example package to demonstrate the creation process of an Octave package.
-  Keep the description brief and tell about features of your package.
-  Multiple lines are allowed, but each line no longer than 80 characters.
-  Exceptions are URLs.  Line breaks are replaced by spaces later.
+  Keep this description brief.  Describe the major features in the first two
+  lines (160 characters).
+
+  Multiple lines are allowed.  Each line may have maximal 80 characters.
+  Exceptions are URLs.  Paragraphs, blank lines, and line breaks are ignored
+  and replaced by spaces.
 homepage: "https://github.com/gnu-octave/pkg-example"
 icon: "https://raw.githubusercontent.com/gnu-octave/pkg-example/master/doc/icon.png"
 license: "GPLv3+"
