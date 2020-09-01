@@ -5,6 +5,10 @@ This guide explains how to add a package to this package index.
 
 ## Quick info
 
+- Your package must follow the
+  [Octave package format](https://octave.org/doc/v5.2.0/Creating-Packages.html).
+  For a minimal example see <https://github.com/gnu-octave/pkg-example>.
+
 - A package entry in this index is managed by a single file,
   `package/pkg-example.md`, for an example package called "pkg-example".
   The content is [Markdown](https://en.wikipedia.org/wiki/Markdown)
@@ -200,7 +204,8 @@ request:
   lint the package file using the `yamllint` tool with
   [this configuration](https://github.com/gnu-octave/pkg-index/blob/master/assets/travis/yamllint.yaml).
 - [`assets/travis/run_on_pull_request.sh`](https://github.com/gnu-octave/pkg-index/blob/master/assets/travis/run_on_pull_requests.sh):
-  empty test, not yet implemented.
+  empty test, not yet implemented.  In future updates minimal installation
+  checks will be performed.
 
 You can run these test on Linux before starting a pull request to avoid
 failures.
