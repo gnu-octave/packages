@@ -17,7 +17,7 @@ This guide explains how to add a package to this package index.
   and has to be approved and merged manually by a member of the
   [GitHub "gnu-octave" organization](https://github.com/orgs/gnu-octave/people).
   If the automatic review fails, it is less likely that your contribution will
-  be accepted.
+  be accepted.  See below for more information on automatic reviews.
 
 
 ## Add your package
@@ -167,6 +167,14 @@ versions:
 
   - `url`: URL string of the release archive (tarball or zip file).
 
+    > **Tip:** For package development it can be handy to use the automatic
+    > archive generation feature of many source code hosting services, such as
+    > GitHub, GitLab, ...
+    >
+    > See the *example package index* entry above for installing the current
+    > "master" branch of the package development repository without creating
+    > a release.
+
   - `depends`: list containing three fields.
 
     - `name`: identifier string for the dependency.  For example `"octave"` or
@@ -177,7 +185,22 @@ versions:
       > and makes this package "uninstallable".
 
     - `min`: identifier string for the minimal supported version or blank if not
-      applicable
+      applicable.
 
     - `max`: identifier string for the maximal supported version or blank if not
-      applicable
+      applicable.
+
+
+## Automatic reviews
+
+Automatic reviews happen by TravisCI running the following scripts on a pull
+request:
+
+- [`assets/travis/run_yamllint.sh`](https://github.com/gnu-octave/pkg-index/blob/master/assets/travis/run_yamllint.sh):
+  lint the package file using the `yamllint` tool with
+  [this configuration](https://github.com/gnu-octave/pkg-index/blob/master/assets/travis/yamllint.yaml).
+- [`assets/travis/run_on_pull_request.sh`](https://github.com/gnu-octave/pkg-index/blob/master/assets/travis/run_on_pull_requests.sh):
+  empty test, not yet implemented.
+
+You can run these test on Linux before starting a pull request to avoid
+failures.
