@@ -18,7 +18,7 @@ layout: default
     <tr>
       <td><img src="{{ pkg.icon | default: site.pkg_icon | relative_url }}" alt="icon"></td>
       <td><a href="{{ '/package/' | relative_url }}{{ pkg.name | remove: ".md" }}">{{ pkg.name | remove: ".md" }}</a></td>
-      <td>{{ pkg.description | escape }}</td>
+      <td>{{ pkg.description | truncate: 160 | escape }}</td>
       <td>{{ pkg.versions[0].date }}</td>
       <td>{{ pkg.versions[0].id }}</td>
     </tr>
@@ -32,7 +32,7 @@ __pkg_version__ = "{{ site.pkg_version }}";
 {%- capture _ -%}{%- increment i -%}{%- endcapture -%}
 {%- for pkg in site.pages -%}
 {% if pkg.layout == "package" %}
-__pkg__.index({% increment i %},:) = {"{{ pkg.name | remove: ".md" }}", "{{ pkg.description | escape }}"};
+__pkg__.index({% increment i %},:) = {"{{ pkg.name | remove: ".md" }}", "{{ pkg.description | truncate: 160 | escape }}"};
 {% endif %}
 {%- endfor -%}
 -->
