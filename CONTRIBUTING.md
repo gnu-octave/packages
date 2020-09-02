@@ -79,21 +79,21 @@ description: >-
   and replaced by spaces.
 homepage: "https://github.com/gnu-octave/pkg-example"
 icon: "https://raw.githubusercontent.com/gnu-octave/pkg-example/master/doc/icon.png"
-license: "GPLv3+"
+license: "GPL-3.0-or-later"
 maintainers:
 - name: "Kai T. Ohlhus"
   contact: "k.ohlhus@gmail.com"
 - name: "Another Contactless Developer"
   contact:
 versions:
-- id: "0.0.1"
-  date: "2020-08-31"
-  sha256: "0b0bf67b45a20e95c89960b09a06e282c49e6d34a8fa22acac68452e4bd61d7d"
-  url: "https://github.com/gnu-octave/pkg-example/archive/0.0.1.tar.gz"
+- id: "1.0.0"
+  date: "2020-09-02"
+  sha256: "6b7e4b6bef5a681cb8026af55c401cee139b088480f0da60143e02ec8880cb51"
+  url: "https://github.com/gnu-octave/pkg-example/archive/1.0.0.tar.gz"
   depends:
   - name: "octave"
     min: "4.2.0"
-    max: "5.1.0"
+    max:
 - id: "dev"
   date:
   sha256:
@@ -158,15 +158,15 @@ versions:
 
     The hash string can be obtained on many systems by the `sha256sum` command:
     ```
-    # sha256sum pkg-example-0.0.1.tar.gz
+    # sha256sum pkg-example-1.0.0.tar.gz
 
-    0b0bf67b45a20e95c89960b09a06e282c49e6d34a8fa22acac68452e4bd61d7d  pkg-example-0.0.1.tar.gz
+    6b7e4b6bef5a681cb8026af55c401cee139b088480f0da60143e02ec8880cb51  pkg-example-1.0.0.tar.gz
     ```
     or using Octave
     ```
-    >> urlwrite ("https://github.com/gnu-octave/pkg-example/archive/0.0.1.tar.gz", "pkg-example-0.0.1.tar.gz");
-    >> hash ("sha256", fileread ("pkg-example-0.0.1.tar.gz"))
-    ans = 0b0bf67b45a20e95c89960b09a06e282c49e6d34a8fa22acac68452e4bd61d7d
+    >> urlwrite ("https://github.com/gnu-octave/pkg-example/archive/1.0.0.tar.gz", "pkg-example-1.0.0.tar.gz");
+    >> hash ("sha256", fileread ("pkg-example-1.0.0.tar.gz"))
+    ans = 6b7e4b6bef5a681cb8026af55c401cee139b088480f0da60143e02ec8880cb51
     ```
 
   - `url`: URL string of the release archive (tarball or zip file).
