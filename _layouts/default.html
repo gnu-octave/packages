@@ -17,7 +17,7 @@
     <title>{{ page.title | default: site.title }}</title>
 
     <!-- Facebook Open Graph -->
-    <meta property="og:description" content="{{ page.description | escape | default: site.description }} | escape">
+    <meta property="og:description" content="{{ page.description | escape | default: site.description | escape }}">
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:title" content="
       {%- if page.layout == "package" -%}
