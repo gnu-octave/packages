@@ -14,7 +14,11 @@
 
 - **Easily share your code** (Octave, C/C++, or FORTRAN) as package.
 
-  > [**Learn how and add your package today!**](CONTRIBUTING.md)
+  > [**Learn how and add your package today**](CONTRIBUTING.md)
+  
+- Want to use this index for your own package manager?
+
+  > [**Learn how**](assets/DEVELOPMENT.md)
 
 - This is a **superset of**
   [**Octave Forge**](https://octave.sourceforge.io/).
