@@ -28,7 +28,7 @@
       ">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="{{ page.image | default: site.logo | absolute_url }}">
+    <meta property="og:image" content="{{ page.icon | default: site.logo | absolute_url }}">
     {%- if page.date -%}
     <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
     {%- endif -%}
@@ -46,7 +46,7 @@
       ">
     <meta name="twitter:description" content="{{ page.description | escape | default: site.description | escape }}">
     <meta name="twitter:url" content="{{ page.url | absolute_url }}">
-    <meta name="twitter:image" content="{{ page.image | default: site.logo | absolute_url }}">
+    <meta name="twitter:image" content="{{ page.icon | default: site.logo | absolute_url }}">
   </head>
   <body>
     <div id="header">
