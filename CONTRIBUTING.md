@@ -162,18 +162,18 @@ versions:
     integrity of your package archive or blank if integrity validation is not
     applicable.
 
-    The hash string can be obtained on many systems by the `sha256sum` command:
-    ```
-    # sha256sum pkg-example-1.0.0.tar.gz
-
-    6b7e4b6bef5a681cb8026af55c401cee139b088480f0da60143e02ec8880cb51  pkg-example-1.0.0.tar.gz
-    ```
-    or using Octave
-    ```
-    >> urlwrite ("https://github.com/gnu-octave/pkg-example/archive/1.0.0.tar.gz", "pkg-example-1.0.0.tar.gz");
-    >> hash ("sha256", fileread ("pkg-example-1.0.0.tar.gz"))
-    ans = 6b7e4b6bef5a681cb8026af55c401cee139b088480f0da60143e02ec8880cb51
-    ```
+    > The hash string can be obtained on many systems by the `sha256sum` command:
+    > ```
+    > # sha256sum pkg-example-1.0.0.tar.gz
+    >
+    > 6b7e4b6bef5a681cb8026af55c401cee139b088480f0da60143e02ec8880cb51  pkg-example-1.0.0.tar.gz
+    > ```
+    > or using Octave
+    > ```
+    > >> urlwrite ("https://github.com/gnu-octave/pkg-example/archive/1.0.0.tar.gz", "pkg-example-1.0.0.tar.gz");
+    > >> hash ("sha256", fileread ("pkg-example-1.0.0.tar.gz"))
+    > ans = 6b7e4b6bef5a681cb8026af55c401cee139b088480f0da60143e02ec8880cb51
+    > ```
 
   - `url`: URL string of the release archive (tarball or zip file).
 
