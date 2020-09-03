@@ -147,7 +147,13 @@ versions:
 
 - `versions`: list containing five fields.
 
-  - `id`: unique identifier string for this version, e.g. `"1.0.1"`, `"dev"`.
+  > **Note:** The first version in this list is regarded as recommended for
+  > installation.  Avoid listing an unstable development version at the first
+  > position.  It is recommended, not necessary, to sort your releases from
+  > the newest (top) to the oldest (bottom).
+
+  - `id`: unique identifier string for this version, e.g. `"1.0.1"`, `"dev"`,
+    ...
 
   - `date`: date string in the format `"YYYY-MM-DD"` or blank if a date does
     not apply for the release type.
@@ -184,7 +190,7 @@ versions:
     - `name`: identifier string for the dependency.  For example `"octave"` or
       another package in this index.
 
-      > Refrain from adding Linux system libraries here, for example.
+      > **Note:** Refrain from adding Linux system libraries here, for example.
       > The used package tool might not be able to resolve the dependency
       > and makes this package "uninstallable".
 
