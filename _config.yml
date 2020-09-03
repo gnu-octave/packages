@@ -3,7 +3,6 @@ description: >-
   Extend GNU Octave's functionality by packages. Find many of them here.
 logo: "/assets/octave-logo-512.png"
 
-pkg_version: "0.0.1"
 pkg_icon: "/assets/pkg.png"
 
 exclude:

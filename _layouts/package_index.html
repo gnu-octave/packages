@@ -28,7 +28,6 @@ layout: default
 </table>
 
 <!--PKG
-__pkg_version__ = "{{ site.pkg_version }}";
 {%- capture _ -%}{%- increment i -%}{%- endcapture -%}
 {%- for pkg in site.pages -%}
 {% if pkg.layout == "package" %}
