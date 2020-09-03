@@ -162,7 +162,8 @@ versions:
     integrity of your package archive or blank if integrity validation is not
     applicable.
 
-    > The hash string can be obtained on many systems by the `sha256sum` command:
+    > **Tip:** The hash string can be obtained on many systems by the
+    > `sha256sum` command:
     > ```
     > # sha256sum pkg-example-1.0.0.tar.gz
     >
