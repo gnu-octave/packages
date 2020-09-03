@@ -14,7 +14,10 @@ layout: default
   <h3>
     <a href="{{ page.homepage }}">{{ pkg_name }}</a>
   </h3>
-  <p class="indent"><b>Description:</b> {{ page.description | escape }}</p>
+  <p class="indent">
+    <b>Description:</b>
+    {{ page.description | escape | strip_newlines }}
+  </p>
   <p><b>Homepage:</b> <a href="{{ page.homepage }}">{{ page.homepage }}</a></p>
   <p><b>License:</b> {{ page.license }}</p>
   <p><b>Maintainer{%- if page.maintainers.size > 1 -%}s{%- endif -%}:</b></p>
@@ -100,7 +103,7 @@ function doCopy(txt) {
 </script>
 
 <!--PKG
-__pkg__.("{{ pkg_name }}").description = "{{ page.description | escape }}";
+__pkg__.("{{ pkg_name }}").description = "{{ page.description | escape | strip_newlines }}";
 __pkg__.("{{ pkg_name }}").homepage = "{{ page.homepage }}";
 __pkg__.("{{ pkg_name }}").icon = "{{ page.icon }}";
 __pkg__.("{{ pkg_name }}").license = "{{ page.license }}";
