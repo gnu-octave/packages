@@ -18,9 +18,8 @@ data = regexp (data, "<!--PKG(.*)-->", "tokens"){1}{1};
 eval (data);
 ```
 
-This defines the struct array `__pkg__` in your current scope with the field
-`index` (in the following example we only display three items `1:3` for
-brevity):
+This defines in your current scope a struct `__pkg__` with the field `index`.
+In the following example we only display three items `1:3` for brevity:
 
 ```
 >> __pkg__.index(1:3,1)
@@ -40,7 +39,7 @@ ans =
 }
 ```
 
-That is it.  The "magic" is done by including literal Octave code inside HTML
+That is it.  The "magic" is done by embedding literal Octave code inside HTML
 comments within the website.
 
 ```
@@ -56,7 +55,8 @@ __pkg__.index(3,:) = {"bim", "Solving Diffusion Advection Reaction (DAR) Partial
 -->
 ```
 
-This strategy avoids error prone parsing HTML files.
+This strategy avoids error prone parsing of HTML files.  A layout change does
+not mess up the parsing of the package management tool.
 
 
 ### Read package details
@@ -69,3 +69,53 @@ data = urlread ("https://gnu-octave.github.io/pkg-index/package/pkg-example");
 data = regexp (data, "<!--PKG(.*)-->", "tokens"){1}{1};
 eval (data);
 ```
+
+This defines another field within the `__pkg__` struct:
+
+```
+>> __pkg__.("pkg-example")
+ans =
+
+  scalar structure containing the fields:
+
+    description = Example package to demonstrate the creation process of an Octave package. Keep this description brief.  Describe the major features in the first two lines (160 characters). Multiple lines are allowed.Each line may have maximal 80 characters. Exceptions are URLs.  Paragraphs, blank lines, and line breaks are ignored and replaced by spaces.
+    homepage = https://github.com/gnu-octave/pkg-example
+    icon = https://raw.githubusercontent.com/gnu-octave/pkg-example/master/doc/icon.png
+    license = GPL-3.0-or-later
+    maintainers =
+
+      1x2 struct array containing the fields:
+
+        name
+        contact
+
+    versions =
+
+      1x2 struct array containing the fields:
+
+        id
+        date
+        sha256
+        url
+        depends
+
+>> __pkg__.("pkg-example").versions(1)
+ans =
+
+  scalar structure containing the fields:
+
+    id = 1.0.0
+    date = 2020-09-02
+    sha256 = 6b7e4b6bef5a681cb8026af55c401cee139b088480f0da60143e02ec8880cb51
+    url = https://github.com/gnu-octave/pkg-example/archive/1.0.0.tar.gz
+    depends =
+
+      scalar structure containing the fields:
+
+        name = octave
+        min = 4.2.0
+        max =
+```
+
+Note, that we use a special named indexing with the package name as string in
+brackets.
