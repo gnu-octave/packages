@@ -16,7 +16,7 @@ layout: default
   </h3>
   <p class="indent">
     <b>Description:</b>
-    {{ page.description | escape | strip_newlines }}
+    {{ page.description | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | escape }}
   </p>
   <p><b>Homepage:</b> <a href="{{ page.homepage }}">{{ page.homepage }}</a></p>
   <p><b>License:</b> {{ page.license }}</p>
@@ -103,7 +103,7 @@ function doCopy(txt) {
 </script>
 
 <!--PKG
-__pkg__.("{{ pkg_name }}").description = "{{ page.description | escape | strip_newlines }}";
+__pkg__.("{{ pkg_name }}").description = "{{ page.description | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | escape }}";
 __pkg__.("{{ pkg_name }}").homepage = "{{ page.homepage }}";
 __pkg__.("{{ pkg_name }}").icon = "{{ page.icon }}";
 __pkg__.("{{ pkg_name }}").license = "{{ page.license }}";
