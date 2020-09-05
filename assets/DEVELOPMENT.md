@@ -153,7 +153,7 @@ ans =
 ### Compatibility with Octave's `pkg` tool
 
 In case you want to stay compatible with
-Octave's builtin package management tool [`pkg`](https://www.octave.org/doc/v5.2.0/XREFpkg.html)
+[Octave's builtin package management tool `pkg`](https://www.octave.org/doc/v5.2.0/XREFpkg.html)
 you should care about the following default settings:
 
 - `pkg prefix` (default: `~/octave`): directory new packages are installed to.
