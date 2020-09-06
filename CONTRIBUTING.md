@@ -7,7 +7,8 @@ This guide explains how to add a package to this package index.
 
 - Your package must follow the
   [Octave package format](https://octave.org/doc/v5.2.0/Creating-Packages.html).
-  For a minimal example see <https://github.com/gnu-octave/pkg-example>.
+  For a minimal example demonstrating **Octave/C/C++/FORTRAN code** see
+  <https://github.com/gnu-octave/pkg-example>.
 
 - A package entry in this index is managed by a single file,
   `package/pkg-example.md`, for an example package called "pkg-example".
