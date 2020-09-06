@@ -1,6 +1,7 @@
 # Package contribution guidelines
 
-This guide explains how to add a package to this package index.
+This guide explains how to add a package the
+[GNU Octave - Package extensions index](https://gnu-octave.github.io/pkg-index/).
 
 
 ## Quick info
