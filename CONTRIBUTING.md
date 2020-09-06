@@ -11,7 +11,7 @@ This guide explains how to add a package to this package index.
   <https://github.com/gnu-octave/pkg-example>.
 
 - A package entry in this index is managed by a single file,
-  [`package/pkg-example.md`](package/pkg-example.md),
+  [`package/pkg-example.md`](#pkg-example),
   for an example package called "pkg-example".
   The content is [Markdown](https://en.wikipedia.org/wiki/Markdown)
   embedding [YAML](https://en.wikipedia.org/wiki/YAML) data.
@@ -68,6 +68,7 @@ This guide explains how to add a package to this package index.
 An example package index entry `package/pkg-example.md`
 (see [output](https://gnu-octave.github.io/pkg-index/package/pkg-example)):
 
+<a id="pkg-example">
 ```yaml
 ---
 layout: "package"
