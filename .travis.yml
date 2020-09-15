@@ -4,40 +4,13 @@ notifications:
 jobs:
   include:
     - os: linux
-      dist: xenial  # 16.04 LTS, Octave 4.0.0
+      dist: bionic  # 18.04 LTS, Octave 4.2.2 (native), Octave 5.2.0 (snap)
       before_install:
-      - sudo apt-get -y install octave liboctave-dev libopenblas-dev
-      addons:
-        apt:
-          update: true
-      script:
-        - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./assets/travis/run_on_pull_requests.sh; fi'
-    - os: linux
-      dist: bionic  # 18.04 LTS, Octave 4.2.2
-      before_install:
-      - sudo apt-get -y install octave liboctave-dev libopenblas-dev yamllint
-      addons:
-        apt:
-          update: true
-      script:
-        - 'bash ./assets/travis/run_yamllint.sh'
-        - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./assets/travis/run_on_pull_requests.sh; fi'
-    - os: linux
-      dist: bionic  # 18.04 LTS, Octave 5.2.0 (snap)
-      before_install:
-      - sudo apt-get -y install snapd
+      - sudo apt-get -y install snapd yamllint
       - sudo snap install octave
       addons:
         apt:
           update: true
       script:
-        - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./assets/travis/run_on_pull_requests.sh; fi'
-    - os: osx
-      before_install:
-      - brew unlink python@2
-      - brew install octave
-      addons:
-        homebrew:
-          update: true
-      script:
+        - 'bash ./assets/travis/run_yamllint.sh'
         - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./assets/travis/run_on_pull_requests.sh; fi'
