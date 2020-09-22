@@ -12,7 +12,7 @@ maintainers:
 versions:
 - id: "3.1.0"
   date: "2019-03-07"
-  sha256:
+  sha256: "71180ec682f0c59f86bc40b937bb2c42aab50759867eac2723a972c70ad83bb9"
   url: "https://github.com/carlodefalco/octave-mpi/releases/download/v3.1.0/mpi-3.1.0.tar.gz"
   depends:
   - name: "octave"
