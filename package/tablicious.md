@@ -4,7 +4,7 @@ description: >-
   Matlab-compatible Octave table class for storing tabular/relational data.
   Similar to R and Python Pandas DataFrames.
 homepage: "https://github.com/apjanke/octave-tablicious"
-icon:
+icon: "https://github.com/apjanke/octave-tablicious/blob/master/assets/Tablicious-640.png"
 license: "GPL-3.0-or-later"
 maintainers:
 - name: "Andrew Janke"
