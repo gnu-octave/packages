@@ -4,7 +4,7 @@ description: >-
   Simple implementation of the Websockets protocol for GNU Octave.
 homepage: "https://gnuoctave.gitlab.io/octave-websockets/websockets/"
 icon:
-license: "GPLv2"
+license: "GPL-3.0-or-later"
 maintainers:
 - name: "Marco Miretti"
   contact: "marco.miretti@gmail.com"
