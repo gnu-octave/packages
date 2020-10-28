@@ -17,7 +17,7 @@ maintainers:
   contact:
 versions:
 - id: "2.3.1"
-  date: "2018-6-21"
+  date: "2018-06-21"
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/ltfat-2.3.1.tar.gz"
   depends:
