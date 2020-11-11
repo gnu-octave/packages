@@ -17,7 +17,6 @@ versions:
   - name: "octave"
     min: "3.6.0"
     max:
-versions:
 - id: "1.2.0"
   date: "2014-12-03"
   sha256: "02bbdb055faddc7e4067a51a940742d04fa79c8ea22f12d1a8e875460dc38fa8"
