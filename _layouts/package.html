@@ -40,8 +40,9 @@ layout: default
       <b>{{ v.id }}{%- if v.date -%}&nbsp;({{ v.date }}){%- endif -%}</b>
     </summary>
     <p>
-      <code>pkg install <a href="{{ v.url }}">{{ v.url }}</a></code>
-      <button type="button" onclick="doCopy('pkg install {{ v.url }}')">
+      <code>pkg install "<a href="{{ v.url }}">{{ v.url }}</a>"</code>
+      <button type="button"
+              onclick="doCopy('pkg install &quot;{{ v.url }}&quot;')">
         <img src="{{ '/assets/copy.svg' | relative_url }}"
               alt="copy" class="copy">
       </button>
