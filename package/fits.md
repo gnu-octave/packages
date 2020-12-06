@@ -1,8 +1,9 @@
 ---
 layout: "package"
 description: >-
-  Performs an n-dimensional variational analysis (interpolation) of arbitrarily
-  located observations.
+  The Octave-FITS package provides functions for reading, and writing FITS
+  (Flexible Image Transport System) files.  This package uses the libcfitsio
+  library.
 homepage: "https://octave.sourceforge.io/fits"
 icon: "https://octave.sourceforge.io/pkg_icon/fits.png"
 license: "GPLv3+"
