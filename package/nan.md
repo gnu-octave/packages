@@ -10,6 +10,14 @@ maintainers:
 - name: "Alois Schloegl"
   contact: "alois.schloegl@gmail.com"
 versions:
+- id: "3.5.3"
+  date: "2021-02-15"
+  sha256: "fdd69a518f9898064f0c0523e39b2e965c8a8c5df1eb5d0e3a04c1bca0a251c9"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/nan-3.5.3.tar.gz"
+  depends:
+  - name: "octave"
+    min: "4.4.1"
+    max:
 - id: "3.5.2"
   date: "2020-10-31"
   sha256: "ea70b6debe00d617f6c0d18d1129d96580ca75931321baa32e1223070afde82e"
