@@ -3,16 +3,24 @@
   <head>
     <link rel="stylesheet" type="text/css" href="{{ '/assets/style.css' | relative_url }}">
     {%- if page.layout == "package_index" -%}
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.7/css/fixedHeader.dataTables.min.css">
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
-    <script
-      src="https://cdn.datatables.net/fixedheader/3.1.7/js/dataTables.fixedHeader.min.js"></script>
+    <!--
+    https://datatables.net/download/index
+
+    Styling framework
+      [x] DataTables
+    Packages
+      [x] jQuery3
+      [x] DataTables
+    Extensions
+      [x] FixedHeader
+    Download method: CDN
+      [x] Minify
+      [x] Concatenate
+    -->
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.23/fh-3.1.8/datatables.min.css">
+    <script type="text/javascript"
+            src="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.23/fh-3.1.8/datatables.min.js"></script>
     {%- endif -%}
     <title>{{ page.title | default: site.title }}</title>
 
@@ -79,7 +87,7 @@
       $('#package-index').DataTable( {
         fixedHeader: true,
         lengthMenu: [[25, 50, 100, -1], [25, 50, 100, "All"]],
-        order: [[ 1, "asc" ]],
+        order: [[ 3, "desc" ]],
         columnDefs: [
             {
                 targets: [0, 3, 4],
