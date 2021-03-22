@@ -6,7 +6,7 @@ icon: "https://octave.sourceforge.io/pkg_icon/vibes.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0+, MIT"
-  url: 
+  url:
 - icon: "fas fa-code-branch"
   label: "repository"
   url: "https://sourceforge.net/p/octave/vibes/ci/octave-api/tree/"
