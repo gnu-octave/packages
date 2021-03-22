@@ -2,9 +2,17 @@
 layout: "package"
 description: >-
   A Drift-Diffusion simulator for 3d semiconductor devices.
-homepage: "https://octave.sourceforge.io/secs3d"
 icon:
-license: "GPLv2+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv2+"
+  url:
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/secs3d/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(secs1d)"
 maintainers:
 - name: "Carlo de Falco"
   contact:
@@ -14,13 +22,7 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/secs3d-0.0.1.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.2.4"
-    max:
-  - name: "bim"
-    min:
-    max:
-  - name: "fpl"
-    min:
-    max:
+  - "octave (>= 3.2.4)"
+  - "bim"
+  - "fpl"
 ---

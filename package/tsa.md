@@ -2,9 +2,23 @@
 layout: "package"
 description: >-
   Stochastic concepts and maximum entropy methods for time series analysis.
-homepage: "https://octave.sourceforge.io/tsa"
 icon: "https://octave.sourceforge.io/pkg_icon/tsa.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/tsa/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/tsa/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/tsa/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/tsa/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(tsa)"
 maintainers:
 - name: "Alois Schloegl"
   contact: "alois.schloegl@ist.ac.at"
@@ -14,10 +28,6 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/tsa-4.6.2.tar.gz"
   depends:
-  - name: "octave"
-    min: "2.9.7"
-    max:
-  - name: "nan"
-    min: "3.0.0"
-    max:
+  - "octave (>= 2.9.7)"
+  - "nan (>= 3.0.0)"
 ---

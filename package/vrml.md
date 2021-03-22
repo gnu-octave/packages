@@ -2,9 +2,23 @@
 layout: "package"
 description: >-
   3D graphics using VRML.
-homepage: "https://octave.sourceforge.io/vrml"
 icon: "https://octave.sourceforge.io/pkg_icon/vrml.png"
-license: "GPLv3+, GFDL"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+, GFDL"
+  url: "https://sourceforge.net/p/octave/vrml/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/vrml/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/vrml/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/vrml/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(vrml)"
 maintainers:
 - name: "Etienne Grossmann"
   contact: "etienne@egdn.net"
@@ -14,19 +28,9 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/vrml-1.0.13.tar.gz"
   depends:
-  - name: "octave"
-    min: "2.9.7"
-    max:
-  - name: "linear-algebra"
-    min:
-    max:
-  - name: "micellaneous"
-    min:
-    max:
-  - name: "struct"
-    min:
-    max:
-  - name: "statistics"
-    min:
-    max:
+  - "octave (>= 2.9.7)"
+  - "linear-algebra"
+  - "micellaneous"
+  - "struct"
+  - "statistics"
 ---

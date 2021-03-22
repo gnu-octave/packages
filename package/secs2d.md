@@ -2,9 +2,17 @@
 layout: "package"
 description: >-
   A Drift-Diffusion simulator for 2d semiconductor devices.
-homepage: "https://octave.sourceforge.io/secs2d"
 icon:
-license: "GPLv2+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv2+"
+  url:
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/secs2d/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(secs2d)"
 maintainers:
 - name: "Carlo de Falco"
   contact:
@@ -14,7 +22,5 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/secs2d-0.0.8.tar.gz"
   depends:
-  - name: "octave"
-    min: "2.9.17"
-    max:
+  - "octave (>= 2.9.17)"
 ---

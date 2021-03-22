@@ -2,9 +2,23 @@
 layout: "package"
 description: >-
   A wrapper for OpenCV's CvCapture_FFMPEG and CvVideoWriter_FFMPEG.
-homepage: "https://octave.sourceforge.io/video"
 icon: "https://octave.sourceforge.io/pkg_icon/video.png"
-license: "GPLv3+ and 3-clause BSD"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+ and 3-clause BSD"
+  url: "https://sourceforge.net/p/octave/video/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/video/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/video/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/video/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(video)"
 maintainers:
 - name: "Andreas Weber"
   contact: "octave@josoansi.de"
@@ -14,7 +28,5 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/video-2.0.0.tar.gz"
   depends:
-  - name: "octave"
-    min: "4.4.0"
-    max:
+  - "octave (>= 4.4.0)"
 ---

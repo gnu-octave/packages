@@ -3,9 +3,26 @@ layout: "package"
 description: >-
   Interface to the librsb package implementing the RSB sparse matrix format for
   fast shared-memory sparse matrix computations.
-homepage: "https://octave.sourceforge.io/sparsersb"
 icon: "https://octave.sourceforge.io/pkg_icon/sparsersb.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/sparsersb/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/sparsersb/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/sparsersb/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/sparsersb/overview.html"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "http://librsb.sourceforge.net/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://sourceforge.net/p/librsb/mailman/"
 maintainers:
 - name: "Michele Martone"
   contact: "michelemartone@users.sourceforge.net"
@@ -15,7 +32,5 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/sparsersb-1.0.8.tar.gz"
   depends:
-  - name: "octave"
-    min: "4.4.0"
-    max:
+  - "octave (>= 4.4.0)"
 ---

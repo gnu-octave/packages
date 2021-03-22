@@ -8,9 +8,23 @@ description: >-
   transient and steady-state performance measures for Markov chains can be
   computed, such as state occupancy probabilities, mean time to absorption,
   time-averaged sojourn times and so forth.
-homepage: "https://octave.sourceforge.io/queueing"
 icon: "https://octave.sourceforge.io/pkg_icon/queueing.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/queueing/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/queueing/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/queueing/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/queueing/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(queueing)"
 maintainers:
 - name: "Moreno Marzolla"
   contact: "moreno.marzolla@unibo.it"
@@ -20,7 +34,5 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/queueing-1.2.7.tar.gz"
   depends:
-  - name: "octave"
-    min: "4.0.0"
-    max:
+  - "octave (>= 4.0.0)"
 ---

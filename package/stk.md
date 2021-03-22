@@ -10,9 +10,23 @@ description: >-
   and Analysis of Computer Experiments (DACE), the STK can be useful for other
   applications areas (such as Geostatistics, Machine Learning, Non-parametric
   Regression, etc.).
-homepage: "https://octave.sourceforge.io/stk"
 icon: "https://octave.sourceforge.io/pkg_icon/stk.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/stk/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/stk/ci/default/tree/ChangeLog"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/stk/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/stk/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(stk)"
 maintainers:
 - name: "Julien Bect"
   contact: "julien.bect@centralesupelec.fr"
@@ -24,7 +38,5 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/stk-2.6.1.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.8.0"
-    max:
+  - "octave (>= 3.8.0)"
 ---

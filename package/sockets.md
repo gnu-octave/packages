@@ -2,9 +2,23 @@
 layout: "package"
 description: >-
   Socket functions for networking from within Octave.
-homepage: "https://octave.sourceforge.io/sockets"
 icon: "https://octave.sourceforge.io/pkg_icon/sockets.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/sockets/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/sockets/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/sockets/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/sockets/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(sockets)"
 maintainers:
 - name: "Octave-Forge community"
   contact:
@@ -14,15 +28,11 @@ versions:
   sha256: "0f6f84a9cc1452fb52433ab84042906fd7c1b62d4c74b01c59091ac7f0fdc1a1"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/sockets-1.2.1.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.6.0"
-    max:
+  - "octave (>= 3.6.0)"
 - id: "1.2.0"
   date: "2014-12-03"
   sha256: "02bbdb055faddc7e4067a51a940742d04fa79c8ea22f12d1a8e875460dc38fa8"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/sockets-1.2.0.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.2.0"
-    max:
+  - "octave (>= 3.2.0)"
 ---

@@ -2,9 +2,23 @@
 layout: "package"
 description: >-
   Additional structure manipulation functions.
-homepage: "https://octave.sourceforge.io/struct"
 icon: "https://octave.sourceforge.io/pkg_icon/struct.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/struct/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/struct/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/struct/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/struct/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(struct)"
 maintainers:
 - name: "Etienne Grossmann"
   contact: "etienne@egdn.net"
@@ -16,15 +30,11 @@ versions:
   sha256: "0137bbb5df650f29104f6243502f3a2302aaaa5e42ea9f02d8a3943aaf668433"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/struct-1.0.17.tar.gz"
   depends:
-  - name: "octave"
-    min: "4.0.0"
-    max:
+  - "octave (>= 4.0.0)"
 - id: "1.0.16"
   date: "2019-03-12"
   sha256: "f56dc248aff469562bd82e74a60874e89e13fb10e852e709650c38234206a23f"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/struct-1.0.16.tar.gz"
   depends:
-  - name: "octave"
-    min: "4.0.0"
-    max:
+  - "octave (>= 4.0.0)"
 ---

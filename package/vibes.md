@@ -2,9 +2,20 @@
 layout: "package"
 description: >-
   Interface to VIBes, Visualizer for Intervals and Boxes.
-homepage: "https://octave.sourceforge.io/vibes"
 icon: "https://octave.sourceforge.io/pkg_icon/vibes.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0+, MIT"
+  url: 
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/vibes/ci/octave-api/tree/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://sourceforge.net/p/octave/vibes/ci/octave-api/tree/README.md"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/ENSTABretagneRobotics/VIBES/issues"
 maintainers:
 - name: "Oliver Heimlich"
   contact: "oheim@posteo.de"
@@ -16,7 +27,5 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/vibes-0.2.0.tar.gz"
   depends:
-  - name: "octave"
-    min: "4.0.0"
-    max:
+  - "octave (>= 4.0.0)"
 ---

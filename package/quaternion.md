@@ -3,9 +3,23 @@ layout: "package"
 description: >-
   Quaternion package for GNU Octave, includes a quaternion class with
   overloaded operators.
-homepage: "https://octave.sourceforge.io/quaternion"
 icon: "https://octave.sourceforge.io/pkg_icon/quaternion.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/quaternion/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/quaternion/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/quaternion/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/quaternion/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(quaternion)"
 maintainers:
 - name: "Lukas Reichlin"
   contact: "lukas.reichlin@gmail.com"
@@ -15,7 +29,5 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/quaternion-2.4.0.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.8.0"
-    max:
+  - "octave (>= 3.8.0)"
 ---
