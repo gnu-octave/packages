@@ -2,93 +2,129 @@
 layout: default
 ---
 
-<p>
-  <a href="{{ '/' | relative_url }}">&lt;&nbsp; Back to the index</a>
-</p>
+<a href="{{ '/' | relative_url }}" role="button" class="btn btn-info mb-4">
+  <i class="fas fa-arrow-left"></i> Back to Index
+</a>
+
 
 {%- assign pkg_name = page.name | remove: '.md' -%}
 
-<div class="package">
-  <img src="{{ page.icon | default: site.pkg_icon | relative_url }}" alt="{{ pkg_name }}">
-  <div>
-  <h3>
-    <a href="{{ page.homepage }}">{{ pkg_name }}</a>
-  </h3>
-  <p class="indent">
-    <b>Description:</b>
-    {{ page.description | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | escape }}
-  </p>
-  <p><b>Homepage:</b> <a href="{{ page.homepage }}">{{ page.homepage }}</a></p>
-  <p><b>License:</b> {{ page.license }}</p>
-  <p><b>Maintainer{%- if page.maintainers.size > 1 -%}s{%- endif -%}:</b></p>
-  <ul>
-    {%- for m in page.maintainers -%}
-      <li>
-        {{ m.name | escape }} &nbsp;
-        &lt;{{ m.contact | escape | default: '<a href="https://octave.discourse.group/">https://octave.discourse.group/</a>' }}&gt;</li>
-    {%- endfor -%}
-  </ul>
-  <p>
-    <b>Versions:</b>
-  </p>
-  {%- assign details_open = ' open' -%}
-  {%- for v in page.versions -%}
+<div class="card rounded">
+  <div class="card-header card-header-mod">
+    <div class="row d-flex flex-wrap align-items-center">
+      <div class="col-sm-3 col-md-2">
+        <img src="{{ page.icon | default: site.pkg_icon | relative_url }}"
+             class="d-block m-auto" alt="{{ pkg_name }}">
+      </div>
+      <div class="col-sm-9 col-md-10">
+        <h3 class="d-inline-block mr-2">{{ pkg_name }}</h3>
+        <b>
+          {{ page.versions.first.id }}
+          {%- if page.versions.first.date -%}
+            &nbsp;({{ page.versions.first.date }})
+          {%- endif -%}
+        </b>
 
-  <details{{ details_open }}>
-  {%- assign details_open = '' -%}
-    <summary>
-      <b>{{ v.id }}{%- if v.date -%}&nbsp;({{ v.date }}){%- endif -%}</b>
-    </summary>
-    <p>
-      <code>pkg install "<a href="{{ v.url }}">{{ v.url }}</a>"</code>
-      <button type="button"
-              onclick="doCopy('pkg install &quot;{{ v.url }}&quot;')">
-        <img src="{{ '/assets/copy.svg' | relative_url }}"
-              alt="copy" class="copy">
-      </button>
-    </p>
-    <ul>
-      <li>
-        <b>SHA256:</b> {{ v.sha256 | default: '-' }}
-      </li>
-      <li>
-        <b>Dependencies:</b>
-        <ul>
-        {%- for dep in v.depends -%}
-          {%- for pkg in site.pages -%}
-            {%- if pkg.layout == "package" -%}
-              {%- assign other_pkg_name = pkg.name | remove: '.md' -%}
-              {%- if other_pkg_name == dep.name -%}
-                {%- assign link_other_pkg = true -%}
+        <p class="indent">
+          {{ page.description | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | escape }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    {%- assign first_version = true -%}
+    {%- for v in page.versions -%}
+    {%- if first_version == true -%}
+    <div class="mb-4">
+    {%- else -%}
+    <div class="my-5">
+      <h4>{{ v.id }}{%- if v.date -%}&nbsp;({{ v.date }}){%- endif -%}</h4>
+    {%- endif -%}
+      <div class="input-group input-group-mod">
+        <div class="input-group-prepend">
+          <a href="{{ v.url }}" role="button"
+            class="btn btn-primary">
+            <i class="fas fa-download"></i>
+          </a>
+          <button type="button"
+                  class="btn btn-outline-primary"
+                  onclick="doCopy('pkg install &quot;{{ v.url }}&quot;')">
+            <i class="far fa-clipboard"></i>
+          </button>
+        </div>
+        <input type="text" class="form-control border-primary" disabled
+               value="pkg install &quot;{{ v.url }}&quot;">
+      </div>
+
+      <ul>
+        <li>
+          <b>SHA256:</b>&nbsp;&nbsp;&nbsp;&nbsp;{{ v.sha256 | default: '-' }}
+        </li>
+        <li>
+          <b>Dependencies:</b>
+          {%- for dep in v.depends -%}
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            {%- assign dep_name = dep | split: " " | first -%}
+            {%- assign dep_ver  = dep | split: " " | shift | join: " " -%}
+            {%- for pkg in site.pages -%}
+              {%- if pkg.layout == "package" -%}
+                {%- assign other_pkg_name = pkg.name | remove: '.md' -%}
+                {%- if other_pkg_name == dep_name -%}
+                  {%- assign link_other_pkg = true -%}
+                {%- endif -%}
               {%- endif -%}
-            {%- endif -%}
-          {%- endfor -%}
-          <li>
+            {%- endfor -%}
             {%- if link_other_pkg == true -%}
-              <a href="{{ '/package/' | relative_url }}{{ dep.name }}">{{ dep.name }}</a>
+              <a href="{{ '/package/' | relative_url }}{{ dep_name }}">{{ dep_name }}</a>
             {%- else -%}
-              {{ dep.name }}
+              {{ dep_name }}
             {%- endif -%}
-            {%- if dep.min or dep.max -%}
-            &nbsp;(
-              {%- if dep.min -%}
-              &geq; {{ dep.min }}
-              {%- endif -%}
-              {%- if dep.min and dep.max -%}
-                &nbsp;and&nbsp;
-              {%- endif -%}
-              {%- if dep.max -%}
-              &leq; {{ dep.max }}
-              {%- endif -%}
-            )
-            {%- endif -%}
+            &nbsp;{{ dep_ver | replace: ">=", "&geq;"
+                            | replace: "<=", "&leq;"
+                            | replace: ">", "&gt;"
+                            | replace: "<", "&lt;" }}
+          {%- endfor -%}
+        </li>
+      </ul>
+    </div>
+
+    {%- if first_version == true and page.versions.size > 1 -%}
+    {%- assign first_version = false -%}
+    <details class="p-2 mb-2">
+      <summary><i class="fas fa-history"></i> Version History</summary>
+    {%- endif -%}
+    {%- endfor -%}
+    {%- if page.versions.size > 1 -%}
+    </details>
+    {%- endif -%}
+
+    <div class="row">
+      <div class="col-sm">
+        <ul>
+          {%- for l in page.links -%}
+          <li>
+            <a href="{{ l.url }}"><span class="fixed-width">
+              <i class="{{ l.icon }}"></i>
+              </span>{{ l.label | escape | default: l.url }}
+            </a>
           </li>
-        {%- endfor -%}
+          {%- endfor -%}
         </ul>
-      </li>
-    </ul>
-  </details>
-  {%- endfor -%}
+      </div>
+      <div class="col-sm">
+        <p>
+          <i class="fas fa-tools"></i>
+          <b>Maintainer{%- if page.maintainers.size > 1 -%}s{%- endif -%}:</b>
+        </p>
+        <ul>
+          {%- for m in page.maintainers -%}
+            <li>
+              {{ m.name | escape }} &nbsp;
+              &lt;{{ m.contact | escape | default: '<a href="https://octave.discourse.group/">https://octave.discourse.group/</a>' }}&gt;</li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -105,9 +141,13 @@ function doCopy(txt) {
 
 <!--PKG
 __pkg__.("{{ pkg_name }}").description = "{{ page.description | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | escape }}";
-__pkg__.("{{ pkg_name }}").homepage = "{{ page.homepage }}";
 __pkg__.("{{ pkg_name }}").icon = "{{ page.icon }}";
-__pkg__.("{{ pkg_name }}").license = "{{ page.license }}";
+{% for l in page.links %}
+{%- assign i = forloop.index -%}
+__pkg__.("{{ pkg_name }}").links({{ i }}).icon = "{{ l.icon }}";
+__pkg__.("{{ pkg_name }}").links({{ i }}).label = "{{ l.label | escape }}";
+__pkg__.("{{ pkg_name }}").links({{ i }}).url = "{{ l.url }}";
+{% endfor %}
 {% for m in page.maintainers %}
 {%- assign i = forloop.index -%}
 __pkg__.("{{ pkg_name }}").maintainers({{ i }}).name = "{{ m.name | escape }}";
@@ -121,9 +161,7 @@ __pkg__.("{{ pkg_name }}").versions({{ i }}).sha256 = "{{ v.sha256 }}";
 __pkg__.("{{ pkg_name }}").versions({{ i }}).url = "{{ v.url }}";
 {% for dep in v.depends %}
 {%- assign j = forloop.index -%}
-__pkg__.("{{ pkg_name }}").versions({{ i }}).depends({{ j }}).name = "{{ dep.name }}";
-__pkg__.("{{ pkg_name }}").versions({{ i }}).depends({{ j }}).min = "{{ dep.min }}";
-__pkg__.("{{ pkg_name }}").versions({{ i }}).depends({{ j }}).max = "{{ dep.max }}";
+__pkg__.("{{ pkg_name }}").versions({{ i }}).depends({{ j }}).name = "{{ dep }}";
 {% endfor %}
 {% endfor %}
 -->
