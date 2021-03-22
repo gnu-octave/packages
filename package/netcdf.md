@@ -2,9 +2,23 @@
 layout: "package"
 description: >-
   A NetCDF interface for Octave.
-homepage: "https://octave.sourceforge.io/netcdf"
 icon: "https://octave.sourceforge.io/pkg_icon/netcdf.png"
-license: "GPLv2+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv2+"
+  url: "https://sourceforge.net/p/octave/netcdf/ci/master/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/netcdf/ci/master/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/netcdf/ci/master/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/netcdf/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(netcdf)"
 maintainers:
 - name: "Alexander Barth"
   contact: "barth.alexander@gmail.com"
@@ -16,15 +30,11 @@ versions:
   sha256: "8ea6ea25330f10eaa9772e52e71be9607dea87704f3ad9db9ce7b1f7cda1bcf1"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/netcdf-1.0.14.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.8.0"
-    max:
+  - "octave (>= 3.8.0)"
 - id: "1.0.13"
   date: "2020-03-13"
   sha256: "56a07016aab6af5e597ea4b9e06dcc878283b4ee8d3a605235ae19dd829dd9e2"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/netcdf-1.0.13.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.8.0"
-    max:
+  - "octave (>= 3.8.0)"
 ---

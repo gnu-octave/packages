@@ -2,9 +2,26 @@
 layout: "package"
 description: >-
   Miscellaneous tools that don't fit somewhere else.
-homepage: "https://octave.sourceforge.io/miscellaneous"
 icon: "https://octave.sourceforge.io/pkg_icon/miscellaneous.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/miscellaneous/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/miscellaneous/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/miscellaneous/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/miscellaneous/overview.html"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://octave.sourceforge.io/miscellaneous/package_doc/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(miscellaneous)"
 maintainers:
 - name: "Octave Forge Community"
   contact: "https://octave.discourse.group/"
@@ -14,7 +31,5 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/miscellaneous-1.3.0.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.8.0"
-    max:
+  - "octave (>= 3.8.0)"
 ---

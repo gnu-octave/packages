@@ -2,9 +2,23 @@
 layout: "package"
 description: >-
   Access a single or a collection of NetCDF files as a multi-dimensional array.
-homepage: "https://octave.sourceforge.io/ncarray"
 icon: "https://octave.sourceforge.io/pkg_icon/ncarray.png"
-license: "GPLv2+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv2+"
+  url: "https://sourceforge.net/p/octave/ncarray/ci/master/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/ncarray/ci/master/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/ncarray/ci/master/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/ncarray/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(ncarray)"
 maintainers:
 - name: "Alexander Barth"
   contact: "barth.alexander@gmail.com"
@@ -14,13 +28,7 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/ncarray-1.0.4.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.4.0"
-    max:
-  - name: "netcdf"
-    min: "1.0.2"
-    max:
-  - name: "statistics"
-    min: "1.0.6"
-    max:
+  - "octave (>= 3.4.0)"
+  - "netcdf (>= 1.0.2)"
+  - "statistics (>= 1.0.6)"
 ---

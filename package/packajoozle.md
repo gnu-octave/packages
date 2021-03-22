@@ -2,9 +2,23 @@
 layout: "package"
 description: >-
   Enhanced package manager for GNU Octave.
-homepage: "https://github.com/apjanke/octave-packajoozle"
 icon:
-license: "GPL-3.0-or-later"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/apjanke/octave-packajoozle/blob/master/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/apjanke/octave-packajoozle/blob/master/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/apjanke/octave-packajoozle/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://github.com/apjanke/octave-packajoozle/blob/master/README.md"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/apjanke/octave-packajoozle/issues"
 maintainers:
 - name: "Andrew Janke"
   contact: "andrew@apjanke.net"
@@ -14,7 +28,5 @@ versions:
   sha256:
   url: "https://github.com/apjanke/octave-packajoozle/archive/master.zip"
   depends:
-  - name: "octave"
-    min: "4.4.1"
-    max:
+  - "octave (>= 4.4.1)"
 ---

@@ -2,9 +2,23 @@
 layout: "package"
 description: >-
   Multivariate normal distribution clustering and utility functions.
-homepage: "https://octave.sourceforge.io/mvn"
 icon: "https://octave.sourceforge.io/pkg_icon/mvn.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/mvn/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/mvn/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/mvn/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/mvn/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(mvn)"
 maintainers:
 - name: "Dominik Schnitzer"
   contact:
@@ -16,7 +30,5 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/mvn-1.1.0.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.6.0"
-    max:
+  - "octave (>= 3.6.0)"
 ---

@@ -2,9 +2,23 @@
 layout: "package"
 description: >-
   Solving DC and transient electrical circuit equations.
-homepage: "https://octave.sourceforge.io/ocs"
 icon: "https://octave.sourceforge.io/pkg_icon/ocs.png"
-license: "GPLv2+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv2+"
+  url: "https://sourceforge.net/p/octave/ocs/ci/master/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/ocs/ci/master/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/ocs/ci/master/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/ocs/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(ocs)"
 maintainers:
 - name: "Carlo de Falco"
   contact:
@@ -18,10 +32,6 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/ocs-0.1.5.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.0.0"
-    max:
-  - name: "odepkg"
-    min:
-    max:
+  - "octave (>= 3.0.0)"
+  - "odepkg"
 ---

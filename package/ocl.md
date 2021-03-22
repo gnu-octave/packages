@@ -4,9 +4,24 @@ description: >-
   Package using OpenCL for parallelization, mostly suitable to
   Single-Instruction-Multiple-Data (SIMD) computations, selectively using
   available OpenCL hardware and drivers.
-homepage: "https://octave.sourceforge.io/ocl"
 icon:
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/ocl/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/ocl/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/ocl/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/ocl/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(ocl)"
+
 maintainers:
 - name: "Matthias W. Klein"
   contact: "mattwklein AT users.sf.net"
@@ -16,7 +31,5 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/ocl-1.1.1.tar.gz"
   depends:
-  - name: "octave"
-    min: "4.2.0"
-    max:
+  - "octave (>= 4.2.0)"
 ---

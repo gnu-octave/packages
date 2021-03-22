@@ -4,9 +4,23 @@ description: >-
   Create and manage triangular and tetrahedral meshes for Finite Element or
   Finite Volume PDE solvers.  Use a mesh data structure compatible with
   PDEtool.  Rely on gmsh for unstructured mesh generation.
-homepage: "https://octave.sourceforge.io/msh"
 icon: "https://octave.sourceforge.io/pkg_icon/msh.png"
-license: "GPLv2+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv2+"
+  url: "https://sourceforge.net/p/octave/msh/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/msh/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/msh/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/msh/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(msh)"
 maintainers:
 - name: "Carlo de Falco"
   contact:
@@ -18,10 +32,6 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/msh-1.0.10.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.0.0"
-    max:
-  - name: "splines"
-    min:
-    max:
+  - "octave (>= 3.0.0)"
+  - "splines"
 ---

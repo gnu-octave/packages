@@ -2,9 +2,23 @@
 layout: "package"
 description: >-
   Boolean operations with polygons using the Greiner-Hormann algorithm.
-homepage: "https://octave.sourceforge.io/octclip"
 icon: "https://octave.sourceforge.io/pkg_icon/octclip.png"
-license: "GPLv3+, modified BSD"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+, modified BSD"
+  url: "https://sourceforge.net/p/octave/octclip/ci/master/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/octclip/ci/master/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/octclip/ci/master/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/octclip/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(octclip)"
 maintainers:
 - name: "José Luis García Pallero"
   contact: "jgpallero@gmail.com"
@@ -14,7 +28,5 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/octclip-2.0.1.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.6.0"
-    max:
+  - "octave (>= 3.6.0)"
 ---
