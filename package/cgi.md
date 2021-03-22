@@ -2,9 +2,23 @@
 layout: "package"
 description: >-
   Common Gateway Interface for Octave.
-homepage: "https://octave.sourceforge.io/cgi"
 icon: "https://octave.sourceforge.io/pkg_icon/cgi.png"
-license: "GPLv2+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv2+"
+  url: "https://sourceforge.net/p/octave/cgi/ci/master/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/cgi/ci/master/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/cgi/ci/master/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/cgi/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(cgi)"
 maintainers:
 - name: "Alexander Barth"
   contact: "barth.alexander@gmail.com"
@@ -14,7 +28,5 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/cgi-0.1.2.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.8.0"
-    max:
+  - "octave (>= 3.8.0)"
 ---

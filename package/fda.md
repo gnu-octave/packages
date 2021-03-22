@@ -2,9 +2,20 @@
 layout: "package"
 description: >-
   Functional Data Analysis.
-homepage: "https://gitlab.com/kakila/fda"
 icon:
-license: "GPL-3.0-or-later"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://gitlab.com/kakila/fda/-/blob/master/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://gitlab.com/kakila/fda/-/blob/master/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://gitlab.com/kakila/fda"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://gitlab.com/kakila/fda/-/issues"
 maintainers:
 - name: "Juan Pablo Carbajal"
   contact: "ajuanpi+dev@gmail.com"
@@ -14,15 +25,11 @@ versions:
   sha256:
   url: "https://gitlab.com/kakila/fda/-/archive/master/fda-master.tar.gz"
   depends:
-  - name: "octave"
-    min: "4.2.0"
-    max:
+  - "octave (>= 4.2.0)"
 - id: "dev"
   date:
   sha256:
   url: "https://gitlab.com/kakila/fda/-/archive/master/fda-master.tar.gz"
   depends:
-  - name: "octave"
-    min: "4.2.0"
-    max:
+  - "octave (>= 4.2.0)"
 ---

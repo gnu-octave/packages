@@ -7,9 +7,23 @@ description: >-
   provides a large number of linear transforms including Gabor and wavelet
   transforms along with routines for constructing windows (filter prototypes)
   and routines for manipulating coefficients.
-homepage: "https://octave.sourceforge.io/ltfat"
 icon: "https://octave.sourceforge.io/pkg_icon/ltfat.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/ltfat/ci/master/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/ltfat/ci/master/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/ltfat/ci/master/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/ltfat/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(ltfat)"
 maintainers:
 - name: "Peter L. Soendergaard"
   contact: "peter@sonderport.dk"
@@ -21,7 +35,5 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/ltfat-2.3.1.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.8.0"
-    max:
+  - "octave (>= 3.8.0)"
 ---

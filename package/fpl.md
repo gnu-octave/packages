@@ -3,9 +3,23 @@ layout: "package"
 description: >-
   Collection of routines to export data produced by Finite Elements or Finite
   Volume Simulations in formats used by some visualization programs.
-homepage: "https://octave.sourceforge.io/fpl"
 icon: "https://octave.sourceforge.io/pkg_icon/fpl.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/fpl/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/fpl/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/fpl/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/fpl/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(fpl)"
 maintainers:
 - name: "Carlo de Falco"
   contact:
@@ -17,7 +31,5 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/fpl-1.3.5.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.2.3"
-    max:
+  - "octave (>= 3.2.3)"
 ---

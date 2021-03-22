@@ -2,9 +2,23 @@
 layout: "package"
 description: >-
   Octave bindings to the GNU Scientific Library.
-homepage: "https://octave.sourceforge.io/gsl"
 icon:
-license: "GPLv2+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv2+"
+  url: "https://sourceforge.net/p/octave/gsl/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/gsl/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/gsl/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/gsl/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(gsl)"
 maintainers:
 - name: "Teemu Ikonen"
   contact: "https://octave.discourse.group/"
@@ -14,7 +28,5 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/gsl-2.1.1.tar.gz"
   depends:
-  - name: "octave"
-    min: "2.9.7"
-    max:
+  - "octave (>= 2.9.7)"
 ---

@@ -2,9 +2,26 @@
 layout: "package"
 description: >-
   Parallel execution package.
-homepage: "https://octave.sourceforge.io/parallel"
 icon: "https://octave.sourceforge.io/pkg_icon/parallel.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/parallel/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/parallel/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/parallel/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/parallel/overview.html"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://octave.sourceforge.io/parallel/package_doc/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(parallel)"
 maintainers:
 - name: "Hayato Fujiwara"
   contact:
@@ -18,21 +35,13 @@ versions:
   sha256: "ea86535e167351f3214feea4d0524626d07e211d1e84d94cbf230d41b2e01bc1"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/parallel-4.0.1.tar.gz"
   depends:
-  - name: "octave"
-    min: "4.0.0"
-    max:
-  - name: "struct"
-    min: "1.0.12"
-    max:
+  - "octave (>= 4.0.0)"
+  - "struct (>= 1.0.12)"
 - id: "4.0.0"
   date: "2020-04-11"
   sha256: "28eeeaa6f726e4a59cd0c979ac4f0925f04e9bd4eee88896cd8ce91cc054b772"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/parallel-4.0.0.tar.gz"
   depends:
-  - name: "octave"
-    min: "4.0.0"
-    max:
-  - name: "struct"
-    min: "1.0.12"
-    max:
+  - "octave (>= 4.0.0)"
+  - "struct (>= 1.0.12)"
 ---

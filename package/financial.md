@@ -3,9 +3,23 @@ layout: "package"
 description: >-
   Monte Carlo simulation, options pricing routines, financial manipulation,
   plotting functions and additional date manipulation tools.
-homepage: "https://octave.sourceforge.io/financial"
 icon: "https://octave.sourceforge.io/pkg_icon/financial.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/financial/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/financial/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/financial/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/financial/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(financial)"
 maintainers:
 - name: "Bill Denney"
   contact:
@@ -19,13 +33,7 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/financial-0.5.3.tar.gz"
   depends:
-  - name: "octave"
-    min: "4.4.0"
-    max:
-  - name: "io"
-    min: "2.4.11"
-    max:
-  - name: "statistics"
-    min: "1.4.0"
-    max:
+  - "octave (>= 4.4.0)"
+  - "io (>= 2.4.11)"
+  - "statistics (>= 1.4.0)"
 ---

@@ -4,9 +4,26 @@ description: >-
   Real-valued interval arithmetic. Handle uncertainties, estimate arithmetic
   errors, computer-assisted proofs, constraint programming, and verified
   computing.
-homepage: "https://octave.sourceforge.io/interval"
 icon: "https://octave.sourceforge.io/pkg_icon/interval.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/interval/ci/default/tree/doc/COPYING.texinfo"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/interval/ci/default/tree/doc/NEWS.texinfo"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/interval/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/interval/overview.html"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://octave.sourceforge.io/interval/package_doc/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(interval)"
 maintainers:
 - name: "Oliver Heimlich"
   contact: "oheim@posteo.de"
@@ -16,7 +33,5 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/interval-3.2.0.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.8.0"
-    max:
+  - "octave (>= 3.8.0)"
 ---

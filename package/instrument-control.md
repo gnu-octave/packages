@@ -3,9 +3,26 @@ layout: "package"
 description: >-
   Low level I/O functions for serial, i2c, parallel, tcp, gpib, vxi11, udp and
   usbtmc interfaces.
-homepage: "https://octave.sourceforge.io/instrument-control"
 icon: "https://octave.sourceforge.io/pkg_icon/instrument-control.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/instrument-control/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/instrument-control/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/instrument-control/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/instrument-control/overview.html"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://octave.sourceforge.io/instrument-control/package_doc/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(instrument-control)"
 maintainers:
 - name: "Andrius Sutas"
   contact: "andrius.sutas@gmail.com"
@@ -19,23 +36,17 @@ versions:
   sha256: "7e7503958a4a9e7f84412873aad21f44c6b9af21feb1096783ec7c18fbb2b631"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.7.0.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.8.0"
-    max:
+  - "octave (>= 3.8.0)"
 - id: "0.6.0"
   date: "2020-10-24"
   sha256: "73daf2e6f4ab2306a9ac9b934e444c5afda2d2b0664d230b7663979e4d57936d"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.6.0.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.8.0"
-    max:
+  - "octave (>= 3.8.0)"
 - id: "0.5.0"
   date: "2020-02-29"
   sha256: "195b1fd4edee8103bfe9a9d619e5734b5a18f2f8c9e5d88bf37ee5c1ae2d1995"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.5.0.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.8.0"
-    max:
+  - "octave (>= 3.8.0)"
 ---

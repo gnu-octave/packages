@@ -2,9 +2,23 @@
 layout: "package"
 description: >-
   Econometrics.
-homepage: "https://octave.sourceforge.io/econometrics"
 icon: "https://octave.sourceforge.io/pkg_icon/econometrics.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/econometrics/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/econometrics/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/econometrics/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/econometrics/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(econometrics)"
 maintainers:
 - name: "Michael Creel"
   contact: "michael.creel@uab.es"
@@ -16,10 +30,6 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/econometrics-1.1.2.tar.gz"
   depends:
-  - name: "octave"
-    min: "4.4.0"
-    max:
-  - name: "optim"
-    min:
-    max:
+  - "octave (>= 4.4.0)"
+  - "optim"
 ---

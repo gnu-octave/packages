@@ -3,9 +3,23 @@ layout: "package"
 description: >-
   Routines for calculating the time-evolution of the level-set equation and
   extracting geometric information from the level-set function.
-homepage: "https://octave.sourceforge.io/level-set"
 icon: "https://octave.sourceforge.io/pkg_icon/level-set.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/level-set/ci/master/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/level-set/ci/master/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/level-set/ci/master/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/level-set/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(level-set)"
 maintainers:
 - name: "Daniel Kraft"
   contact: "d@domob.eu"
@@ -15,7 +29,5 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/level-set-0.3.0.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.6.0"
-    max:
+  - "octave (>= 3.6.0)"
 ---

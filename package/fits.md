@@ -4,9 +4,23 @@ description: >-
   The Octave-FITS package provides functions for reading, and writing FITS
   (Flexible Image Transport System) files.  This package uses the libcfitsio
   library.
-homepage: "https://octave.sourceforge.io/fits"
 icon: "https://octave.sourceforge.io/pkg_icon/fits.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/fits/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/fits/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/fits/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/fits/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(fits)"
 maintainers:
 - name: "Dirk Schmidt"
   contact:
@@ -16,7 +30,5 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/fits-1.0.7.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.0.0"
-    max:
+  - "octave (>= 3.0.0)"
 ---

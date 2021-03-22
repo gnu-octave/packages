@@ -3,9 +3,23 @@ layout: "package"
 description: >-
   Digital Communications, Error Correcting Codes (Channel Code), Source Code
   functions, Modulation and Galois Fields.
-homepage: "https://octave.sourceforge.io/communications"
 icon: "https://octave.sourceforge.io/pkg_icon/communications.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/communications/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/communications/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/communications/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/communications/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(communications)"
 maintainers:
 - name: "Nir Krakauer"
   contact: "mail@nirkrakauer.net"
@@ -15,10 +29,6 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/communications-1.2.2.tar.gz"
   depends:
-  - name: "octave"
-    min: "4.4.0"
-    max:
-  - name: "signal"
-    min: "1.1.3"
-    max:
+  - "octave (>= 4.4.0)"
+  - "signal (>= 1.1.3)"
 ---

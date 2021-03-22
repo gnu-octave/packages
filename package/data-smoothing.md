@@ -2,9 +2,24 @@
 layout: "package"
 description: >-
   Algorithms for smoothing noisy data.
-homepage: "https://octave.sourceforge.io/data-smoothing"
 icon: "https://octave.sourceforge.io/pkg_icon/data-smoothing.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/data-smoothing/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/data-smoothing/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/data-smoothing/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/data-smoothing/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(data-smoothing)"
+
 maintainers:
 - name: "Jonathan Stickel"
   contact: "jonathan.stickel@nrel.gov"
@@ -14,10 +29,6 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/data-smoothing-1.3.0.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.6.0"
-    max:
-  - name: "optim"
-    min: "1.0.3"
-    max:
+  - "octave (>= 3.6.0)"
+  - "optim (>= 1.0.3)"
 ---

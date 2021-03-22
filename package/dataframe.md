@@ -2,9 +2,24 @@
 layout: "package"
 description: >-
   Data manipulation toolbox similar to R data.frame.
-homepage: "https://octave.sourceforge.io/dataframe"
 icon: "https://octave.sourceforge.io/pkg_icon/dataframe.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/dataframe/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/dataframe/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/dataframe/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/dataframe/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(dataframe)"
+
 maintainers:
 - name: "Pascal Dupuis"
   contact: "pascal.dupuis@uclouvain.be"
@@ -14,7 +29,5 @@ versions:
   sha256:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dataframe-1.2.0.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.4.0"
-    max:
+  - "octave (>= 3.4.0)"
 ---

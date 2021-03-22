@@ -3,9 +3,27 @@ layout: "package"
 description: >-
   File io for medical images and other data using Grassroots DICOM (GDCM)
   library.
-homepage: "https://octave.sourceforge.io/dicom"
 icon: "https://octave.sourceforge.io/pkg_icon/dicom.png"
-license: "GPLv3+"
+links:
+- icon: "far fa-copyright"
+  label: "GPLv3+"
+  url: "https://sourceforge.net/p/octave/dicom/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/dicom/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/dicom/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/dicom/overview.html"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://octave.sourceforge.io/dicom/package_doc/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(dicom)"
+
 maintainers:
 - name: "Andy Buckle"
   contact:
@@ -17,15 +35,11 @@ versions:
   sha256: "eadb366e49f950cf85ad7544acc01bffd28654c43b477a41b816889dabb13c8c"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dicom-0.4.0.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.8.0"
-    max:
+  - "octave (>= 3.8.0)"
 - id: "0.3.0"
   date: "2020-02-27"
   sha256: "d5ca71710332973ff3a68c0001d9e9bb44b2a90e6b887aeb450c532024b1417d"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dicom-0.3.0.tar.gz"
   depends:
-  - name: "octave"
-    min: "3.8.0"
-    max:
+  - "octave (>= 3.8.0)"
 ---
