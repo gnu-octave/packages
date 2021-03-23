@@ -4,34 +4,25 @@
 
 ## Quick info
 
-1. Your package management tool must implement a single routine only:
-
-   ```
-   function __pkg__ = pkg_index_resolve (__pkg__, url)
-     data = urlread (url);
-     data = regexp (data, "<!--PKG(.*)-->", "tokens"){1}{1};
-     eval (data);
-   endfunction
-   ```
-
-2. Read the **package index** with:
-
-   ```
-   url = "https://gnu-octave.github.io/pkg-index/";
-   __pkg__ = pkg_index_resolve (struct (), url);
-   ```
-
-3. Read **package details** with:
-
-   ```
-   __pkg__ = pkg_index_resolve (__pkg__, [url, "package/pkg-example"]);
-   ```
-
+Your package management tool can read the **entire** as array of Octave structs
+into the variable `__pkg__` using the command:
+```
+function __pkg__ = pkg_index_resolve ()
+  data = urlread ("https://gnu-octave.github.io/pkg-index/package/")(6:end);
+  data = strrep (data, "&gt;",  ">");
+  data = strrep (data, "&lt;",  "<");
+  data = strrep (data, "&amp;", "&");
+  data = strrep (data, "&#39;", "'");
+  eval (data);
+endfunction
+```
+Note, the assignment to the returned variable `__pkg__` is done within `eval`.
 
 ## Detailed information for writing a package management tool
 
 This package index is build from the perspective of a package management tool
 written in the GNU Octave language.
+
 
 ### Read the package index
 
@@ -40,15 +31,14 @@ to read the package index (all available packages with a short description)
 from within Octave, run:
 
 ```
-url = "https://gnu-octave.github.io/pkg-index/";
-__pkg__ = pkg_index_resolve (struct (), url);
+__pkg__ = pkg_index_resolve ();
 ```
 
-This routine returns a struct `__pkg__` with the field `index`.
-In the following example we only display three items `1:3` for brevity:
+This routine returns an array of struct `__pkg__` indexed by the package names.
+To get the first three packages names, for example, type:
 
 ```
->> __pkg__.index(1:3,1)
+>> fieldnames (__pkg__)(1:3)
 ans =
 {
   [1,1] = arduino
@@ -57,78 +47,26 @@ ans =
 }
 ```
 
-```
->> __pkg__.index(1:3,2)
-ans =
-{
-  [1,1] = Allow communication to a programmed arduino board to control its hardware.
-  [2,1] = Audio and MIDI Toolbox for GNU Octave.
-  [3,1] = Solving Diffusion Advection Reaction (DAR) Partial Differential Equations.
-}
-```
-
-That is it.  The "magic" is done by embedding literal Octave code inside HTML
-comments within the website.
-
-```
-<!--PKG
-__pkg__.index(1,:) = {"arduino", "Allow communication to a programmed arduino board to control its hardware."};
-
-__pkg__.index(2,:) = {"audio", "Audio and MIDI Toolbox for GNU Octave."};
-
-__pkg__.index(3,:) = {"bim", "Solving Diffusion Advection Reaction (DAR) Partial Differential Equations."};
-
-  ...
-
--->
-```
-
-This strategy avoids error prone parsing of HTML files.  A layout change does
-not mess up the parsing of the package management tool.
-
 
 ### Read package details
 
-Similar to the package index, you can obtain more detailed information about
-individual packages.  For example the following code obtains the details of
-the `pkg-example` package.
+Using `__pkg__ = pkg_index_resolve ();` as above,
+one can obtain more detailed information about individual packages.
+The following code shows all available struct fields for `pkg-example`:
 
 ```
-url = "https://gnu-octave.github.io/pkg-index/";
-__pkg__ = pkg_index_resolve (__pkg__, [url, "package/pkg-example"]);
-```
-
-The struct `__pkg__` gets extended by a field named by the package name.
-For this reason we use a Octave's named indexing with the package name as
-string in brackets.  This avoid invalid identifiers.
-
-```
->> __pkg__.("pkg-example")
+>> fieldnames (__pkg__.("pkg-example"))
 ans =
-
-  scalar structure containing the fields:
-
-    description = Example package to demonstrate the creation process of an Octave package. Keep this description brief.  Describe the major features in the first two lines (160 characters). Multiple lines are allowed.Each line may have maximal 80 characters. Exceptions are URLs.  Paragraphs, blank lines, and line breaks are ignored and replaced by spaces.
-    homepage = https://github.com/gnu-octave/pkg-example
-    icon = https://raw.githubusercontent.com/gnu-octave/pkg-example/master/doc/icon.png
-    license = GPL-3.0-or-later
-    maintainers =
-
-      1x2 struct array containing the fields:
-
-        name
-        contact
-
-    versions =
-
-      1x2 struct array containing the fields:
-
-        id
-        date
-        sha256
-        url
-        depends
+{
+  [1,1] = description
+  [2,1] = icon
+  [3,1] = links
+  [4,1] = maintainers
+  [5,1] = versions
+}
 ```
+
+Similar, one can see all details of the latest `pkg-example` version:
 
 ```
 >> __pkg__.("pkg-example").versions(1)
@@ -144,9 +82,7 @@ ans =
 
       scalar structure containing the fields:
 
-        name = octave
-        min = 4.2.0
-        max =
+        name = octave (>= 4.2.0)
 ```
 
 
@@ -220,9 +156,12 @@ given.
   and copy the content of the generated `_site` directory to the webserver of
   your choice.
 
-- Basically, there are two layouts.  One for the package index
-  `_layouts/package_index.html` and one for the individual packages pages
-  `_layouts/package.html`.
+- Basically, there are two layouts.
+  One for the package index `_layouts/package_index.html` (used by
+  `assets/index.md`) and one for the individual packages pages
+  `_layouts/package.html` (used by all `.md` files in the `package` directory).
+
+- The index read by `pkg_index_resolve()` is generated from `package/index.md`.
 
 - The package index page uses the JavaScript framework
   [DataTables](https://datatables.net/) for a dynamic search feature.
