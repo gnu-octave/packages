@@ -32,18 +32,39 @@ span.fixed-width {
   width: 1.3em;
 }
 
-#package-index img { width: 50px; }
+div.icon {
+  width: 50px;
+  height: 50px;
+}
 
-#package-index_length,
-#package-index_length select,
-#package-index_filter,
-#package-index_filter input { font-size: large; }
+div.icon img {
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+div.description {
+  font-size: 80%;
+  white-space: normal;
+  max-height: 3em;  /* two lines */
+  overflow: hidden;
+}
+
+td.dataTables_empty { height: 50px; }
 
 #package-index_filter
 {
-  width: 50%;
+  float: left !important;
+  text-align: left !important;
   margin-bottom: 1.5em;
+  width: 100%;
 }
-
-#package-index_filter label { width: 100%; }
-#package-index_filter input { width: 80%; }
+#package-index_filter label {
+  width: 100%;
+  font-weight: bold;
+}
+#package-index_filter input {
+  width: 80%;
+  margin-left: 2em;
+}

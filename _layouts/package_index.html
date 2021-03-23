@@ -16,22 +16,13 @@ layout: default
   {%- for pkg in site.pages -%}
   {%- if pkg.layout == "package" -%}
     <tr>
-      <td><img src="{{ pkg.icon | default: site.pkg_icon | relative_url }}" alt="icon"></td>
+      <td><div class="icon"><img src="{{ pkg.icon | default: site.pkg_icon | relative_url }}" alt="icon"></div></td>
       <td><a href="{{ '/package/' | relative_url }}{{ pkg.name | remove: ".md" }}">{{ pkg.name | remove: ".md" }}</a></td>
-      <td>{{ pkg.description | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | escape | truncate: 160 }}</td>
-      <td>{{ pkg.versions[0].date }}</td>
+      <td><div class="description">{{ pkg.description | strip_html | strip | escape | truncate: 180 }}</div></td>
       <td>{{ pkg.versions[0].id }}</td>
+      <td>{{ pkg.versions[0].date }}</td>
     </tr>
   {%- endif -%}
   {%- endfor -%}
   </tbody>
 </table>
-
-<!--PKG
-{%- capture _ -%}{%- increment i -%}{%- endcapture -%}
-{%- for pkg in site.pages -%}
-{% if pkg.layout == "package" %}
-__pkg__.index({% increment i %},:) = {"{{ pkg.name | remove: ".md" }}", "{{ pkg.description | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | escape | truncate: 160 }}"};
-{% endif %}
-{%- endfor -%}
--->

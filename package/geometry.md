@@ -33,5 +33,5 @@ versions:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/geometry-4.0.0.tar.gz"
   depends:
   - "octave (>= 4.2.0)"
-  - name: "matgeom (>= 1.0.0)"
+  - "matgeom (>= 1.0.0)"
 ---
