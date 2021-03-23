@@ -51,6 +51,11 @@ div.description {
   overflow: hidden;
 }
 
+td {
+  padding: 5px;
+  white-space: nowrap;
+}
+
 td.dataTables_empty { height: 50px; }
 
 #package-index_filter
