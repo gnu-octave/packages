@@ -64,6 +64,7 @@ layout: default
           <b>Dependencies:</b>
           {%- for dep in v.depends -%}
             &nbsp;&nbsp;&nbsp;&nbsp;
+            <span style="white-space: nowrap;">
             {%- assign dep_name = dep | split: " " | first -%}
             {%- assign dep_ver  = dep | split: " " | shift | join: " " -%}
             {%- for pkg in site.pages -%}
@@ -83,6 +84,7 @@ layout: default
                             | replace: "<=", "&leq;"
                             | replace: ">", "&gt;"
                             | replace: "<", "&lt;" }}
+            </span>
           {%- endfor -%}
         </li>
       </ul>
