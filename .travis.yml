@@ -1,18 +1,26 @@
-language: shell
+language: ruby
+
+services:
+  - docker
+
 notifications:
   email: false
+
 jobs:
   include:
     - os: linux
-      dist: bionic  # 18.04 LTS, Octave 4.2.2 (native), Octave 5.2.0 (snap)
+      dist: bionic  # 18.04 LTS
+
       before_install:
-      - sudo apt-get -y install snapd python3-pip
-      - sudo snap install octave
+      - sudo apt-get -y install python3-pip
       - pip3 install --upgrade yamllint
+      - docker pull docker.io/gnuoctave/octave:6.2.0
+
       addons:
         apt:
           update: true
+
       script:
-        - 'yamllint -v'
         - 'bash ./assets/ci/run_yamllint.sh'
         - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./assets/ci/run_on_pull_requests.sh; fi'
+        - 'docker run -it gnuoctave/octave:6.2.0 octave -v'
