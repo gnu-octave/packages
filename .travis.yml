@@ -6,7 +6,7 @@ jobs:
     - os: linux
       dist: bionic  # 18.04 LTS, Octave 4.2.2 (native), Octave 5.2.0 (snap)
       before_install:
-      - sudo apt-get -y install snapd
+      - sudo apt-get -y install snapd python3-pip
       - sudo snap install octave
       - pip3 install --upgrade yamllint
       addons:
