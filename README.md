@@ -1,4 +1,4 @@
-# GNU Octave - Package extensions index
+# GNU Octave - Package Extensions Index
 
 Extend [GNU Octave](https://www.octave.org)'s functionality by
 [packages](https://octave.org/doc/v5.2.0/Creating-Packages.html).
@@ -14,10 +14,10 @@ Extend [GNU Octave](https://www.octave.org)'s functionality by
 - **Easily share your code** (Octave, C/C++, or FORTRAN) as package.
 
   > [**Learn how build and add your package**](CONTRIBUTING.md)
-  
+
 - Want to use this index for your **own package manager**?
 
-  > [**Learn more**](assets/DEVELOPMENT.md)
+  > [**Learn more**](doc/development.md)
 
 - This is a **superset of**
   [**Octave Forge**](https://octave.sourceforge.io/).

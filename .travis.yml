@@ -6,11 +6,13 @@ jobs:
     - os: linux
       dist: bionic  # 18.04 LTS, Octave 4.2.2 (native), Octave 5.2.0 (snap)
       before_install:
-      - sudo apt-get -y install snapd yamllint
+      - sudo apt-get -y install snapd
       - sudo snap install octave
+      - pip install --upgrade yamllint
       addons:
         apt:
           update: true
       script:
-        - 'bash ./assets/travis/run_yamllint.sh'
-        - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./assets/travis/run_on_pull_requests.sh; fi'
+        - 'yamllint -v'
+        - 'bash ./assets/ci/run_yamllint.sh'
+        - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./assets/ci/run_on_pull_requests.sh; fi'

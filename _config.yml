@@ -1,4 +1,4 @@
-title: "GNU Octave - Package extensions index"
+title: "GNU Octave - Package Extensions Index"
 description: >-
   Extend GNU Octave's functionality by packages. Find many of them here.
 logo: "/assets/octave-logo-512.png"
@@ -11,5 +11,5 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - assets/DEVELOPMENT.md
-  - assets/travis
+  - doc/
+  - assets/ci/
