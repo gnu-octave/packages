@@ -1,5 +1,8 @@
 ---
 
+ignore: |
+  index.md
+
 rules:
   braces:
     min-spaces-inside: 0
@@ -47,10 +50,9 @@ rules:
   new-line-at-end-of-file: enable
   new-lines:
     type: unix
-# Not supported by yamllint 1.10.0 available in Ubutnu 18.04 LTS
-#  octal-values: disable
-#  quoted-strings:
-#    quote-type: double
-#    required: true
+  octal-values: disable
+  quoted-strings:
+    quote-type: double
+    required: true
   trailing-spaces: enable
   truthy: enable

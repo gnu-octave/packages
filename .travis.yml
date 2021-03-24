@@ -8,7 +8,7 @@ jobs:
       before_install:
       - sudo apt-get -y install snapd
       - sudo snap install octave
-      - pip install --upgrade yamllint
+      - pip3 install --upgrade yamllint
       addons:
         apt:
           update: true
