@@ -1,14 +1,14 @@
 # GNU Octave - Package Extensions Index
 
 Extend [GNU Octave](https://www.octave.org)'s functionality by
-[packages](https://octave.org/doc/v5.2.0/Creating-Packages.html).
+[packages](https://octave.org/doc/v6.2.0/Creating-Packages.html).
 
 > <https://gnu-octave.github.io/pkg-index/>
 
 [![img](assets/screenshot.png)](https://gnu-octave.github.io/pkg-index/)
 
 - All packages can be installed by the
-  [`pkg install`](https://octave.org/doc/v5.2.0/Installing-and-Removing-Packages.html)
+  [`pkg install`](https://octave.org/doc/v6.2.0/Installing-and-Removing-Packages.html)
   command.
 
 - **Easily share your code** (Octave, C/C++, or FORTRAN) as package.

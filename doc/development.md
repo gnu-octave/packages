@@ -1,11 +1,11 @@
-# GNU Octave - Package extensions index
+# GNU Octave - Package Extensions Index
 
 **Development guide**
 
 ## Quick info
 
-Your package management tool can read the **entire** as array of Octave structs
-into the variable `__pkg__` using the command:
+Your package management tool can read the **entire pacakge index**
+as array of Octave structs into the variable `__pkg__` using the command:
 ```
 function __pkg__ = pkg_index_resolve ()
   data = urlread ("https://gnu-octave.github.io/pkg-index/package/")(6:end);
@@ -17,6 +17,12 @@ function __pkg__ = pkg_index_resolve ()
 endfunction
 ```
 Note, the assignment to the returned variable `__pkg__` is done within `eval`.
+```
+>> tic; __pkg__ = pkg_index_resolve (); toc
+Elapsed time is 0.365517 seconds.
+```
+Reading the latest
+
 
 ## Detailed information for writing a package management tool
 
@@ -27,16 +33,9 @@ written in the GNU Octave language.
 ### Read the package index
 
 Using the routine `pkg_index_resolve()` as describe in the quick info above,
-to read the package index (all available packages with a short description)
-from within Octave, run:
+an array of Octave struct `__pkg__` indexed by the package names is returned.
 
-```
-__pkg__ = pkg_index_resolve ();
-```
-
-This routine returns an array of struct `__pkg__` indexed by the package names.
 To get the first three packages names, for example, type:
-
 ```
 >> fieldnames (__pkg__)(1:3)
 ans =
@@ -53,7 +52,6 @@ ans =
 Using `__pkg__ = pkg_index_resolve ();` as above,
 one can obtain more detailed information about individual packages.
 The following code shows all available struct fields for `pkg-example`:
-
 ```
 >> fieldnames (__pkg__.("pkg-example"))
 ans =
@@ -65,9 +63,7 @@ ans =
   [5,1] = versions
 }
 ```
-
 Similar, one can see all details of the latest `pkg-example` version:
-
 ```
 >> __pkg__.("pkg-example").versions(1)
 ans =
@@ -89,7 +85,7 @@ ans =
 ### Compatibility with Octave's `pkg` tool
 
 In case you want to stay compatible with
-[Octave's builtin package management tool `pkg`](https://www.octave.org/doc/v5.2.0/XREFpkg.html)
+[Octave's builtin package management tool `pkg`](https://www.octave.org/doc/v6.2.0/XREFpkg.html)
 you should care about the following default settings:
 
 - `pkg prefix` (default: `~/octave`): directory new packages are installed to.
@@ -115,15 +111,15 @@ you should care about the following default settings:
         title = Minimal example package to demonstrate the Octave package extensions.
         description = Minimal example package to demonstrate the Octave package  extensions.  It shows how to organize Octave, C/C++, and FORTRAN code within  a package and to properly compile it.
         depends =
-        dir = /home/siko1056/.local/share/octave/5.2.0/pkg-example-1.0.0
-        archprefix = /home/siko1056/.local/share/octave/5.2.0/pkg-example-1.0.0
+        dir = /home/siko1056/.local/share/octave/6.2.0/pkg-example-1.0.0
+        archprefix = /home/siko1056/.local/share/octave/6.2.0/pkg-example-1.0.0
         loaded = 0
 
   }
   ```
 
 - `pkg global_list` (default:
-  [`OCTAVE_HOME ()`](https://www.octave.org/doc/v5.2.0/XREFOCTAVE_005fHOME.html)
+  [`OCTAVE_HOME ()`](https://www.octave.org/doc/v6.2.0/XREFOCTAVE_005fHOME.html)
   `/share/octave/octave_packages`):
   analogous list for global packages.
 
