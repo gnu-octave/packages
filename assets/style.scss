@@ -45,9 +45,10 @@ div.icon img {
 }
 
 div.description {
-  font-size: 80%;
   white-space: normal;
-  max-height: 3em;  /* two lines */
+  height: 4.5em;  /* two lines */
+  display: flex;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -56,7 +57,7 @@ td {
   white-space: nowrap;
 }
 
-td.dataTables_empty { height: 50px; }
+td.dataTables_empty { height: 75px; }
 
 #package-index_filter
 {
