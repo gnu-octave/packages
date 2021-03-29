@@ -36,7 +36,7 @@ versions:
   sha256: "6b7e4b6bef5a681cb8026af55c401cee139b088480f0da60143e02ec8880cb51"
   url: "https://github.com/gnu-octave/pkg-example/archive/1.0.0.tar.gz"
   depends:
-  - "octave (>= 4.2.0)"
+  - "octave (>= 5.2.0)"
 - id: "dev"
   date:
   sha256:
