@@ -7,7 +7,7 @@
 Your package management tool can read the **entire pacakge index**
 as array of Octave structs into the variable `__pkg__` using the command:
 ```
-function __pkg__ = pkg_index_resolve ()
+function __pkg__ = package_index_resolve ()
   data = urlread ("https://gnu-octave.github.io/packages/package/")(6:end);
   data = strrep (data, "&gt;",  ">");
   data = strrep (data, "&lt;",  "<");
@@ -18,7 +18,7 @@ endfunction
 ```
 Note, the assignment to the returned variable `__pkg__` is done within `eval`.
 ```
->> tic; __pkg__ = pkg_index_resolve (); toc
+>> tic; __pkg__ = package_index_resolve (); toc
 Elapsed time is 0.365517 seconds.
 ```
 Reading the latest
@@ -32,7 +32,7 @@ written in the GNU Octave language.
 
 ### Read the package index
 
-Using the routine `pkg_index_resolve()` as describe in the quick info above,
+Using the routine `package_index_resolve()` as describe in the quick info above,
 an array of Octave struct `__pkg__` indexed by the package names is returned.
 
 To get the first three packages names, for example, type:
@@ -49,7 +49,7 @@ ans =
 
 ### Read package details
 
-Using `__pkg__ = pkg_index_resolve ();` as above,
+Using `__pkg__ = package_index_resolve ();` as above,
 one can obtain more detailed information about individual packages.
 The following code shows all available struct fields for `pkg-example`:
 ```
@@ -157,7 +157,7 @@ given.
   `assets/index.md`) and one for the individual packages pages
   `_layouts/package.html` (used by all `.md` files in the `package` directory).
 
-- The index read by `pkg_index_resolve()` is generated from `package/index.md`.
+- The index read by `package_index_resolve()` is generated from `package/index.md`.
 
 - The package index page uses the JavaScript framework
   [DataTables](https://datatables.net/) for a dynamic search feature.

@@ -22,5 +22,5 @@ jobs:
 
       script:
         - 'bash ./assets/ci/run_yamllint.sh'
-        - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./assets/ci/run_on_pull_requests.sh; fi'
-        - 'docker run -it gnuoctave/octave:6.2.0 octave -v'
+        - 'bash ./assets/ci/run_bundle.sh'
+        - 'docker run -it --volume="$(pwd):/home/packages:rw" gnuoctave/octave:6.2.0 octave --eval "run /home/packages/assets/ci/run_octave.m"'
