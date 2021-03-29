@@ -242,8 +242,8 @@ versions:
 Automatic reviews happen by TravisCI running the following scripts on a pull
 request:
 
-- `bash` [`./assets/ci/run_yamllint.sh`](https://github.com/gnu-octave/packages/blob/master/assets/ci/run_yamllint.sh)'
-- `bash` [`./assets/ci/run_bundle.sh`](https://github.com/gnu-octave/packages/blob/master/assets/ci/run_bundle.sh)'
+- `bash` [`./assets/ci/run_yamllint.sh`](https://github.com/gnu-octave/packages/blob/master/assets/ci/run_yamllint.sh)
+- `bash` [`./assets/ci/run_bundle.sh`](https://github.com/gnu-octave/packages/blob/master/assets/ci/run_bundle.sh)
 - `docker run -it --volume="$(pwd):/home/packages:rw" gnuoctave/octave:6.2.0 octave --eval "run /home/packages`[`/assets/ci/run_octave.m`](https://github.com/gnu-octave/packages/blob/master/assets/ci/run_octave.m)`"`
 
 You can run these test on Linux before starting a pull request to avoid
