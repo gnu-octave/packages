@@ -1,11 +1,11 @@
-# GNU Octave - Package Extensions Index
+# GNU Octave - Packages
+
+> <https://gnu-octave.github.io/packages/>
 
 Extend [GNU Octave](https://www.octave.org)'s functionality by
-[packages](https://octave.org/doc/v6.2.0/Creating-Packages.html).
+[more than 80 packages](https://gnu-octave.github.io/packages/).
 
-> <https://gnu-octave.github.io/pkg-index/>
-
-[![img](assets/screenshot.png)](https://gnu-octave.github.io/pkg-index/)
+[![img](assets/screenshot.png)](https://gnu-octave.github.io/packages/)
 
 - All packages can be installed by the
   [`pkg install`](https://octave.org/doc/v6.2.0/Installing-and-Removing-Packages.html)
@@ -19,6 +19,6 @@ Extend [GNU Octave](https://www.octave.org)'s functionality by
 
   > [**Learn more**](doc/development.md)
 
-- This is a **superset of**
+- [Packages](https://gnu-octave.github.io/packages/) is a **superset of**
   [**Octave Forge**](https://octave.sourceforge.io/).
   All packages in their latest release are indexed here.

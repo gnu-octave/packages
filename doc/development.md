@@ -8,7 +8,7 @@ Your package management tool can read the **entire pacakge index**
 as array of Octave structs into the variable `__pkg__` using the command:
 ```
 function __pkg__ = pkg_index_resolve ()
-  data = urlread ("https://gnu-octave.github.io/pkg-index/package/")(6:end);
+  data = urlread ("https://gnu-octave.github.io/packages/package/")(6:end);
   data = strrep (data, "&gt;",  ">");
   data = strrep (data, "&lt;",  "<");
   data = strrep (data, "&amp;", "&");
@@ -128,8 +128,8 @@ you should care about the following default settings:
 
 Two important links first:
 
-1. Development repository: <https://github.com/gnu-octave/pkg-index>
-2. Deployment URL: <https://gnu-octave.github.io/pkg-index/>
+1. Development repository: <https://github.com/gnu-octave/packages/>
+2. Deployment URL: <https://gnu-octave.github.io/packages/>
 
 In this section some hints for developing this index from the server site are
 given.
@@ -144,8 +144,8 @@ given.
 
 - Build the static websites with bundler/Jekyll
   ```
-  git clone https://github.com/gnu-octave/pkg-index
-  cd pkg-index
+  git clone https://github.com/gnu-octave/packages
+  cd packages
   bundle install
   bundle exec jekyll build
   ```

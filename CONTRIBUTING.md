@@ -1,7 +1,7 @@
 # Package contribution guidelines
 
 This guide explains how to add a package the
-[GNU Octave - Package extensions index](https://gnu-octave.github.io/pkg-index/).
+[GNU Octave - Package extensions index](https://gnu-octave.github.io/packages/).
 
 
 ## Quick info
@@ -20,7 +20,7 @@ This guide explains how to add a package the
 - Adding or updating your package is done by a
   [**pull request**](https://docs.github.com/en/github/getting-started-with-github/github-glossary#pull-request).
   The pull request is reviewed
-  [automatically by TravisCI](https://travis-ci.org/github/gnu-octave/pkg-index)
+  [automatically by TravisCI](https://travis-ci.org/github/gnu-octave/packages)
   and has to be approved and merged manually by a member of the
   [GitHub "gnu-octave" organization](https://github.com/orgs/gnu-octave/people).
   If the automatic review fails, it is less likely that your contribution will
@@ -32,7 +32,7 @@ This guide explains how to add a package the
 - Copy the *example package index entry* below and adapt it to your package.
 
 - Create file `package/<my package>.md` with the name of your package in the
-  [package](https://github.com/gnu-octave/pkg-index/tree/master/package)
+  [package](https://github.com/gnu-octave/packages/tree/master/package)
   subdirectory.
 
   To do this, either use the "easy" way by following the
@@ -40,8 +40,8 @@ This guide explains how to add a package the
   ...
 
   ... or for experts:
-  - fork <https://github.com/gnu-octave/pkg-index>
-  - clone your fork `https://github.com/<my username>/pkg-index`
+  - fork <https://github.com/gnu-octave/packages>
+  - clone your fork `https://github.com/<my username>/packages`
   - add `package/<my package>.md`
   - commit and push the changes to your fork
   - finally [create a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
@@ -52,7 +52,7 @@ This guide explains how to add a package the
 - For example after a new release of your package you can update the index
   entry by editing the file `package/<my package>.md` with the name of your
   package in the
-  [package](https://github.com/gnu-octave/pkg-index/tree/master/package)
+  [package](https://github.com/gnu-octave/packages/tree/master/package)
   subdirectory.
 
   To do this, either use the "easy" way by following the
@@ -67,7 +67,7 @@ This guide explains how to add a package the
 ## Example package index entry
 
 An example package index entry `package/pkg-example.md`
-(see [output](https://gnu-octave.github.io/pkg-index/package/pkg-example)):
+(see [output](https://gnu-octave.github.io/packages/package/pkg-example)):
 
 ```yaml
 ---
@@ -135,9 +135,9 @@ versions:
   repository or some descriptive page containing documentation.
 
 - `icon`: URL string to a publicly accessible image.  It will be displayed with
-  `50px` width in the [package index](https://gnu-octave.github.io/pkg-index/)
+  `50px` width in the [package index](https://gnu-octave.github.io/packages/)
   and with `150px` with in the
-  [individual package page](https://gnu-octave.github.io/pkg-index/package/pkg-example).
+  [individual package page](https://gnu-octave.github.io/packages/package/pkg-example).
 
 - `license`: license identifier string, see <https://spdx.org/licenses/>.
 
@@ -210,10 +210,10 @@ versions:
 Automatic reviews happen by TravisCI running the following scripts on a pull
 request:
 
-- [`assets/travis/run_yamllint.sh`](https://github.com/gnu-octave/pkg-index/blob/master/assets/travis/run_yamllint.sh):
+- [`assets/travis/run_yamllint.sh`](https://github.com/gnu-octave/packages/blob/master/assets/travis/run_yamllint.sh):
   lint the package file using the `yamllint` tool with
-  [this configuration](https://github.com/gnu-octave/pkg-index/blob/master/assets/travis/yamllint.yaml).
-- [`assets/travis/run_on_pull_request.sh`](https://github.com/gnu-octave/pkg-index/blob/master/assets/travis/run_on_pull_requests.sh):
+  [this configuration](https://github.com/gnu-octave/packages/blob/master/assets/travis/yamllint.yaml).
+- [`assets/travis/run_on_pull_request.sh`](https://github.com/gnu-octave/packages/blob/master/assets/travis/run_on_pull_requests.sh):
   empty test, not yet implemented.  In future updates minimal installation
   checks will be performed.
 
