@@ -20,7 +20,7 @@ This guide explains how to add a package the
 - Adding or updating your package is done by a
   [**pull request**](https://docs.github.com/en/github/getting-started-with-github/github-glossary#pull-request).
   The pull request is reviewed
-  [automatically by TravisCI](https://travis-ci.org/github/gnu-octave/packages)
+  [automatically by TravisCI](https://travis-ci.com/github/gnu-octave/packages/)
   and has to be approved and merged manually by a member of the
   [GitHub "gnu-octave" organization](https://github.com/orgs/gnu-octave/people).
   If the automatic review fails, it is less likely that your contribution will
@@ -80,9 +80,23 @@ description: >-
   Multiple lines are allowed.  Each line may have maximal 80 characters.
   Exceptions are URLs.  Paragraphs, blank lines, and line breaks are ignored
   and replaced by spaces.
-homepage: "https://github.com/gnu-octave/pkg-example"
 icon: "https://raw.githubusercontent.com/gnu-octave/pkg-example/master/doc/icon.png"
-license: "GPL-3.0-or-later"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/gnu-octave/pkg-example/blob/master/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/gnu-octave/pkg-example/releases/"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/gnu-octave/pkg-example/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://github.com/gnu-octave/pkg-example/blob/master/README.md"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/gnu-octave/pkg-example/issues"
 maintainers:
 - name: "Kai T. Ohlhus"
   contact: "k.ohlhus@gmail.com"
@@ -94,17 +108,13 @@ versions:
   sha256: "6b7e4b6bef5a681cb8026af55c401cee139b088480f0da60143e02ec8880cb51"
   url: "https://github.com/gnu-octave/pkg-example/archive/1.0.0.tar.gz"
   depends:
-  - name: "octave"
-    min: "4.2.0"
-    max:
+  - "octave (>= 5.2.0)"
 - id: "dev"
   date:
   sha256:
   url: "https://github.com/gnu-octave/pkg-example/archive/master.zip"
   depends:
-  - name: "octave"
-    min: "5.2.0"
-    max:
+  - "octave (>= 5.2.0)"
 ---
 ```
 
@@ -131,15 +141,34 @@ versions:
 
 - `description`: see example above.
 
-- `homepage`: URL string of the package homepage.  This can be the development
-  repository or some descriptive page containing documentation.
-
 - `icon`: URL string to a publicly accessible image.  It will be displayed with
   `50px` width in the [package index](https://gnu-octave.github.io/packages/)
   and with `150px` with in the
   [individual package page](https://gnu-octave.github.io/packages/package/pkg-example).
 
-- `license`: license identifier string, see <https://spdx.org/licenses/>.
+- `links`: list containing three fields.
+
+  - `icon`: any [free FontAwesome](tawesome.com/icons?d=gallery&p=2&m=free)
+    class string is permitted.  The icon is part of the hyperlink.
+
+  - `label`: of the hyperlink.
+
+  - `url`: of the hyperlink.
+
+  You are free to choose links describing your project best.
+  However, it has proved useful to give some basic information,
+  as seen in the example above:
+
+  - Link to your **license** or copyright information, e.g. "GPL-3.0-or-later",
+    see <https://spdx.org/licenses/>.
+
+  - Link to release **news**.
+
+  - Link to your development **repository**.
+
+  - Link to your **package documentation** or homepage.
+
+  - Link to **report a problem**.
 
 - `maintainers`: list containing two fields.
 
@@ -189,20 +218,23 @@ versions:
     > "master" branch of the package development repository without creating
     > a release.
 
-  - `depends`: list containing three fields.
+  - `depends`: list of dependency strings.
 
-    - `name`: identifier string for the dependency.  For example `"octave"` or
-      another package in this index.
+    A string looks like `"octave (>= 5.2.0)"`.
 
-      > **Note:** Refrain from adding Linux system libraries here, for example.
-      > The used package tool might not be able to resolve the dependency
-      > and makes this package "uninstallable".
+    It starts with the name of the dependency "octave" followed by a single
+    space and in brackets the operator `>=` separated by a space to the
+    dependent version `5.2.0`.
 
-    - `min`: identifier string for the minimal supported version or blank if not
-      applicable.
+    Permitted names are "octave" and any other Octave package.
 
-    - `max`: identifier string for the maximal supported version or blank if not
-      applicable.
+    > **Note:** Refrain from adding Linux system libraries here, for example.
+    > The used package tool might not be able to resolve the dependency
+    > and makes this package "uninstallable".
+
+    Permitted operators are documented in the
+    [Octave manual](https://octave.org/doc/v6.2.0/The-DESCRIPTION-File.html)
+    "DESCRIPTION"-file "Depends" section.
 
 
 ## Automatic reviews
@@ -210,12 +242,9 @@ versions:
 Automatic reviews happen by TravisCI running the following scripts on a pull
 request:
 
-- [`assets/travis/run_yamllint.sh`](https://github.com/gnu-octave/packages/blob/master/assets/travis/run_yamllint.sh):
-  lint the package file using the `yamllint` tool with
-  [this configuration](https://github.com/gnu-octave/packages/blob/master/assets/travis/yamllint.yaml).
-- [`assets/travis/run_on_pull_request.sh`](https://github.com/gnu-octave/packages/blob/master/assets/travis/run_on_pull_requests.sh):
-  empty test, not yet implemented.  In future updates minimal installation
-  checks will be performed.
+- `bash` [`./assets/ci/run_yamllint.sh`](https://github.com/gnu-octave/packages/blob/master/assets/ci/run_yamllint.sh)'
+- `bash` [`./assets/ci/run_bundle.sh`](https://github.com/gnu-octave/packages/blob/master/assets/ci/run_bundle.sh)'
+- `docker run -it --volume="$(pwd):/home/packages:rw" gnuoctave/octave:6.2.0 octave --eval "run /home/packages`[`/assets/ci/run_octave.m`](https://github.com/gnu-octave/packages/blob/master/assets/ci/run_octave.m)`"`
 
 You can run these test on Linux before starting a pull request to avoid
 failures.

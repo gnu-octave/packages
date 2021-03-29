@@ -1,33 +1,32 @@
 function run_octave ()
   # Set package paths Octave version specific
-  step_disp ("Set package install directory");
+  step_disp_h1 ("Set package install directory");
   tmp = "/home/packages";
   tmp = pkg ("prefix", tmp, tmp);
   pkg ("local_list", [tmp, "/.octave_packages"]);
   disp (["    dir: ", tmp, "/.octave_packages"]);
-  disp ("    done.");
+  dstep_disp_h2 ("done.");
 
   ## Resolve locally build package index from (assets/ci/run_bundle.sh).
-  step_disp ("Resolve locally build package index");
+  step_disp_h1 ("Resolve locally build package index");
   __pkg__ = package_index_local_resolve ();
-  disp ("    done.");
+  step_disp_h2 ("done.");
 
   ## Try to install and test the default (first) version of the changed
   ## packages.
-  step_disp ("Install and test changed packages");
+  step_disp_h1 ("Install and test changed packages");
   pList = get_changed_packages ();
   printf ("    %d package(s) found: %s\n", length (pList), ...
     strjoin (pList, " "));
   for p = pList
     try
-      disp (" ");
-      disp (["    Install '", p{1}, "@", __pkg__.(p{1}).versions(1).id, "'."]);
-      disp (" ");
+      pkg_name_version = [p{1}, "@", __pkg__.(p{1}).versions(1).id];
+      step_disp_h2 (["Run: pkg install -verbose ", pkg_name_version]);
       pkg ("install", "-verbose",  __pkg__.(p{1}).versions(1).url);
-      disp ("    done.");
-      disp ("    Test");
+      step_disp_h2 ("done.");
+      step_disp_h2 (["Run: pkg test ", pkg_name_version]);
       pkg ("test", p{1});
-      disp ("    done.");
+      step_disp_h2 ("done.");
     catch e
       ## Note that the installation is likely to fail for packages with
       ## dependencies:
@@ -68,10 +67,16 @@ function __pkg__ = package_index_local_resolve ()
 endfunction
 
 
-function step_disp (str)
+function step_disp_h1 (str)
   persistent i = 1;
   disp (" ");
   disp ("--------------------------------------------------");
   printf ("--- Step %2d: %s\n", i++, str);
   disp ("--------------------------------------------------");
+endfunction
+
+function step_disp_h2 (str)
+  disp (" ");
+  printf ("    %s\n", str);
+  disp (" ");
 endfunction
