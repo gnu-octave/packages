@@ -9,6 +9,7 @@ exclude:
   - CONTRIBUTING.md
   - Gemfile
   - Gemfile.lock
+  - vendor/bundle/
   - LICENSE
   - README.md
   - doc/
