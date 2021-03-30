@@ -35,7 +35,7 @@ versions:
   sha256: "a74666a1e204b9feda22c9792b87939239221fd816383bc39f75db72b62a209b"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/nurbs-1.4.3.tar.gz"
   depends:
-  - "octave (>= 5.1.0)"
+  - "octave (>= 5.2.0)"
 - id: "1.3.13"
   date: "2017-03-28"
   sha256: "dbbfe7072750330e61040e3a9cf6967733229c3272fb4115bb83dd616aa37e7e"
