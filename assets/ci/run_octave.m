@@ -1,5 +1,5 @@
 function run_octave ()
-  # Set package paths Octave version specific
+  ## Set package paths Octave version specific
   step_disp_h1 ("Set package install directory");
   tmp = "/home/packages";
   tmp = pkg ("prefix", tmp, tmp);
@@ -21,19 +21,34 @@ function run_octave ()
   for p = pList
     try
       pkg_name_version = [p{1}, "@", __pkg__.(p{1}).versions(1).id];
-      step_disp_h2 (["Run: pkg install -verbose ", pkg_name_version]);
-      pkg ("install", "-verbose",  __pkg__.(p{1}).versions(1).url);
+      step_disp_h2 (["Run: pkg install   ", pkg_name_version]);
+      pkg ("install",  __pkg__.(p{1}).versions(1).url);
       step_disp_h2 ("done.");
-      step_disp_h2 (["Run: pkg test ", pkg_name_version]);
+      step_disp_h2 (["Run: pkg load      ", pkg_name_version]);
+      pkg ("load", p{1});
+      step_disp_h2 ("done.");
+      step_disp_h2 (["Run: pkg unload    ", pkg_name_version]);
+      pkg ("unload", p{1});
+      step_disp_h2 ("done.");
+      step_disp_h2 (["Run: pkg test      ", pkg_name_version]);
       pkg ("test", p{1});
       step_disp_h2 ("done.");
+      step_disp_h2 (["Run: pkg uninstall ", pkg_name_version]);
+      pkg ("uninstall", p{1});
+      step_disp_h2 ("done.");
     catch e
+      ## In case of error try to get as much information as possible.
+      ##
       ## Note that the installation is likely to fail for packages with
       ## dependencies:
       ##
       ## Dependency resolution and installation is not supported
       ## in old pkg versions.
+
       disp (e);
+
+      step_disp_h2 (["Run: pkg install -verbose ", pkg_name_version]);
+      pkg ("install", "-verbose",  __pkg__.(p{1}).versions(1).url);
     end
   endfor
 endfunction
