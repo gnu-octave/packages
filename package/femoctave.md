@@ -1,0 +1,32 @@
+---
+layout: "package"
+description: >-
+  Use FEM for solving boundary value problems in two space dimensions.
+icon:
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/AndreasStahel/FEMoctave/blob/master/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/AndreasStahel/FEMoctave/releases"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/AndreasStahel/FEMoctave/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://github.com/AndreasStahel/FEMoctave/blob/master/doc/FEMdoc.pdf"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/AndreasStahel/FEMoctave/issues"
+maintainers:
+- name: "Andreas Stahel"
+  contact:
+versions:
+- id: "2.0.1"
+  date: "2020-04-08"
+  sha256:
+  url: "https://github.com/AndreasStahel/FEMoctave/archive/v2.0.3.tar.gz"
+  depends:
+  - "octave (>= 5.2.0)"
+---
