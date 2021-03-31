@@ -6,6 +6,7 @@ layout: null
 {%- for pkg in site.pages -%}
 {% if pkg.layout == "package" %}
 {%- assign pkg_name = pkg.name | remove: ".md" -%}
+__pkg__.("{{ pkg_name }}").name = "{{ pkg.permalink }}";
 __pkg__.("{{ pkg_name }}").description = "{{ pkg.description | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | escape }}";
 __pkg__.("{{ pkg_name }}").icon = "{{ pkg.icon }}";
 {% for l in pkg.links %}

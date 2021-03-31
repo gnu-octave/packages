@@ -1,4 +1,4 @@
 ---
-layout: package_index
-permalink: /index
+layout: "package_index"
+permalink: "/index"
 ---
