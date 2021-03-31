@@ -55,7 +55,7 @@ endfunction
 
 
 function changed_packages = get_changed_packages ()
-  ## Return a cell array of strings of changed "package/*" files (packages)
+  ## Return a cell array of strings of changed "packages/*" files (packages)
   ## from the last git commit.
   changed_packages = cell(0,1);
   git_command = "git --no-pager diff --name-only HEAD HEAD~1";
@@ -63,7 +63,7 @@ function changed_packages = get_changed_packages ()
   output = (strsplit (output))(1:end-1);
   for i = 1:length (output)
     [directory, name, ext] = fileparts (output{i});
-    if (strcmp (directory, "package") && ! strcmp (name, "index"))
+    if (strcmp (directory, "packages") && ! strcmp (name, "index"))
       changed_packages{end + 1, 1} = name;
     endif
   endfor
@@ -72,8 +72,8 @@ endfunction
 
 function __pkg__ = package_index_local_resolve ()
   # Normally
-  # data = urlread ("https://gnu-octave.github.io/packages/package/")(6:end);
-  data = fileread ("../../test/package/index.html")(6:end);
+  # data = urlread ("https://gnu-octave.github.io/packages/packages/")(6:end);
+  data = fileread ("../../test/packages/index.html")(6:end);
   data = strrep (data, "&gt;",  ">");
   data = strrep (data, "&lt;",  "<");
   data = strrep (data, "&amp;", "&");

@@ -7,12 +7,12 @@ This guide explains how to add a package the
 ## Quick info
 
 - Your package must follow the
-  [Octave package format](https://octave.org/doc/v5.2.0/Creating-Packages.html).
+  [Octave package format](https://octave.org/doc/v6.2.0/Creating-Packages.html).
   For a minimal example demonstrating **Octave/C/C++/FORTRAN code** see
   <https://github.com/gnu-octave/pkg-example>.
 
 - A package entry in this index is managed by a single file,
-  [`package/pkg-example.md`](#example-package-index-entry),
+  [`packages/pkg-example.md`](#example-package-index-entry),
   for an example package called "pkg-example".
   The content is [Markdown](https://en.wikipedia.org/wiki/Markdown)
   embedding [YAML](https://en.wikipedia.org/wiki/YAML) data.
@@ -31,7 +31,7 @@ This guide explains how to add a package the
 
 - Copy the *example package index entry* below and adapt it to your package.
 
-- Create file `package/<my package>.md` with the name of your package in the
+- Create file `packages/<my package>.md` with the name of your package in the
   [package](https://github.com/gnu-octave/packages/tree/master/package)
   subdirectory.
 
@@ -42,7 +42,7 @@ This guide explains how to add a package the
   ... or for experts:
   - fork <https://github.com/gnu-octave/packages>
   - clone your fork `https://github.com/<my username>/packages`
-  - add `package/<my package>.md`
+  - add `packages/<my package>.md`
   - commit and push the changes to your fork
   - finally [create a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
@@ -50,7 +50,7 @@ This guide explains how to add a package the
 ## Update your package
 
 - For example after a new release of your package you can update the index
-  entry by editing the file `package/<my package>.md` with the name of your
+  entry by editing the file `packages/<my package>.md` with the name of your
   package in the
   [package](https://github.com/gnu-octave/packages/tree/master/package)
   subdirectory.
@@ -66,12 +66,13 @@ This guide explains how to add a package the
 
 ## Example package index entry
 
-An example package index entry `package/pkg-example.md`
-(see [output](https://gnu-octave.github.io/packages/package/pkg-example)):
+An example package index entry `packages/pkg-example.md`
+(see [output](https://gnu-octave.github.io/packages/packages/pkg-example)):
 
 ```yaml
 ---
 layout: "package"
+permalink: "pkg-example"
 description: >-
   Example package to demonstrate the creation process of an Octave package.
   Keep this description brief.  Describe the major features in the first two
@@ -108,7 +109,7 @@ versions:
   sha256: "6b7e4b6bef5a681cb8026af55c401cee139b088480f0da60143e02ec8880cb51"
   url: "https://github.com/gnu-octave/pkg-example/archive/1.0.0.tar.gz"
   depends:
-  - "octave (>= 5.2.0)"
+  - "octave (>= 4.2.0)"
 - id: "dev"
   date:
   sha256:
@@ -139,12 +140,15 @@ versions:
 
 - `layout`: fixed string `"package"` for technical reasons.
 
+- `permalink`: string with the name of the package.
+  **Must** match the file name.
+
 - `description`: see example above.
 
 - `icon`: URL string to a publicly accessible image.  It will be displayed with
   `50px` width in the [package index](https://gnu-octave.github.io/packages/)
   and with `150px` with in the
-  [individual package page](https://gnu-octave.github.io/packages/package/pkg-example).
+  [individual package page](https://gnu-octave.github.io/packages/packages/pkg-example).
 
 - `links`: list containing three fields.
 
@@ -159,8 +163,9 @@ versions:
   However, it has proved useful to give some basic information,
   as seen in the example above:
 
-  - Link to your **license** or copyright information, e.g. "GPL-3.0-or-later",
-    see <https://spdx.org/licenses/>.
+  - Link to your **license** or copyright information.
+    For the label use an [SPDX string](https://spdx.org/licenses/),
+    e.g. "GPL-3.0-or-later".
 
   - Link to release **news**.
 

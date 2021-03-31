@@ -65,22 +65,19 @@ layout: default
             {%- assign dep_name = dep | split: " " | first -%}
             {%- assign dep_ver  = dep | split: " " | shift | join: " " -%}
             {%- for pkg in site.pages -%}
-              {%- if pkg.layout == "package" -%}
-                {%- assign other_pkg_name = pkg.name | remove: '.md' -%}
-                {%- if other_pkg_name == dep_name -%}
-                  {%- assign link_other_pkg = true -%}
-                {%- endif -%}
+              {%- if pkg.layout == "package" and pkg.permalink == dep_name -%}
+                {%- assign link_other_pkg = true -%}
               {%- endif -%}
             {%- endfor -%}
             {%- if link_other_pkg == true -%}
-              <a href="{{ '/package/' | relative_url }}{{ dep_name }}">{{ dep_name }}</a>
+              <a href="{{ dep_name | relative_url }}">{{ dep_name }}</a>
             {%- else -%}
               {{ dep_name }}
             {%- endif -%}
             &nbsp;{{ dep_ver | replace: ">=", "&geq;"
-                            | replace: "<=", "&leq;"
-                            | replace: ">", "&gt;"
-                            | replace: "<", "&lt;" }}
+                             | replace: "<=", "&leq;"
+                             | replace: ">", "&gt;"
+                             | replace: "<", "&lt;" }}
             </span>
           {%- endfor -%}
         </li>

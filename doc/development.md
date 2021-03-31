@@ -8,7 +8,7 @@ Your package management tool can read the **entire pacakge index**
 as array of Octave structs into the variable `__pkg__` using the command:
 ```
 function __pkg__ = package_index_resolve ()
-  data = urlread ("https://gnu-octave.github.io/packages/package/")(6:end);
+  data = urlread ("https://gnu-octave.github.io/packages/packages/")(6:end);
   data = strrep (data, "&gt;",  ">");
   data = strrep (data, "&lt;",  "<");
   data = strrep (data, "&amp;", "&");
@@ -157,7 +157,8 @@ given.
   `assets/index.md`) and one for the individual packages pages
   `_layouts/package.html` (used by all `.md` files in the `package` directory).
 
-- The index read by `package_index_resolve()` is generated from `package/index.md`.
+- The index read by `package_index_resolve()` is generated from
+  `packages/index.md`.
 
 - The package index page uses the JavaScript framework
   [DataTables](https://datatables.net/) for a dynamic search feature.
