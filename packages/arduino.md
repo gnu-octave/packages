@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: arduino
 description: >-
   Allow communication to a programmed arduino board to control its hardware.
 icon: "https://octave.sourceforge.io/pkg_icon/arduino.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/arduino/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"
