@@ -1,5 +1,6 @@
 ---
 layout: "package"
+permalink: "femoctave"
 description: >-
   Use FEM for solving boundary value problems in two space dimensions.
 icon:

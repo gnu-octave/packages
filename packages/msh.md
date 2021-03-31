@@ -1,5 +1,6 @@
 ---
 layout: "package"
+permalink: "msh"
 description: >-
   Create and manage triangular and tetrahedral meshes for Finite Element or
   Finite Volume PDE solvers.  Use a mesh data structure compatible with
@@ -7,7 +8,7 @@ description: >-
 icon: "https://octave.sourceforge.io/pkg_icon/msh.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv2+"
+  label: "GPL-2.0-or-later"
   url: "https://sourceforge.net/p/octave/msh/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

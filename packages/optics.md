@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "optics"
 description: >-
   Functions covering various aspects of optics.
 icon: "https://octave.sourceforge.io/pkg_icon/optics.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/optics/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

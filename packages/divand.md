@@ -1,12 +1,13 @@
 ---
 layout: "package"
+permalink: "divand"
 description: >-
   Performs an n-dimensional variational analysis (interpolation) of arbitrarily
   located observations.
 icon: "https://octave.sourceforge.io/pkg_icon/divand.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv2+"
+  label: "GPL-2.0-or-later"
   url: "https://sourceforge.net/p/octave/divand/ci/master/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

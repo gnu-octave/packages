@@ -1,5 +1,6 @@
 ---
 layout: "package"
+permalink: "fits"
 description: >-
   The Octave-FITS package provides functions for reading, and writing FITS
   (Flexible Image Transport System) files.  This package uses the libcfitsio
@@ -7,7 +8,7 @@ description: >-
 icon: "https://octave.sourceforge.io/pkg_icon/fits.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/fits/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

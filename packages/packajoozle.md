@@ -1,5 +1,6 @@
 ---
 layout: "package"
+permalink: "packajoozle"
 description: >-
   Enhanced package manager for GNU Octave.
 icon:

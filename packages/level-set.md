@@ -1,12 +1,13 @@
 ---
 layout: "package"
+permalink: "level-set"
 description: >-
   Routines for calculating the time-evolution of the level-set equation and
   extracting geometric information from the level-set function.
 icon: "https://octave.sourceforge.io/pkg_icon/level-set.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/level-set/ci/master/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "windows"
 description: >-
   Provides COM interface and additional functionality on Windows.
 icon: "https://octave.sourceforge.io/pkg_icon/windows.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/windows/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

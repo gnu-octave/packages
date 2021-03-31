@@ -1,12 +1,13 @@
 ---
 layout: "package"
+permalink: "quaternion"
 description: >-
   Quaternion package for GNU Octave, includes a quaternion class with
   overloaded operators.
 icon: "https://octave.sourceforge.io/pkg_icon/quaternion.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/quaternion/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

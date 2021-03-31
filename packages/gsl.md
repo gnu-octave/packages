@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "gsl"
 description: >-
   Octave bindings to the GNU Scientific Library.
 icon:
 links:
 - icon: "far fa-copyright"
-  label: "GPLv2+"
+  label: "GPL-2.0-or-later"
   url: "https://sourceforge.net/p/octave/gsl/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

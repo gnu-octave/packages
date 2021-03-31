@@ -1,5 +1,6 @@
 ---
 layout: "package"
+permalink: "raspi"
 description: >-
   Basic Octave implementation of the matlab raspi extension,
   allowing communication to a Raspberry Pi board to control its
@@ -7,7 +8,7 @@ description: >-
 icon: "https://sourceforge.net/p/octave-raspberrypi/code/ci/default/tree/doc/raspi-logo.png?format=raw"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave-raspberrypi/code/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

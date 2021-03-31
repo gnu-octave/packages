@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "octclip"
 description: >-
   Boolean operations with polygons using the Greiner-Hormann algorithm.
 icon: "https://octave.sourceforge.io/pkg_icon/octclip.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+, modified BSD"
+  label: "GPL-3.0-or-later and BSD-3-Clause"
   url: "https://sourceforge.net/p/octave/octclip/ci/master/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

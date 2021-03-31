@@ -1,12 +1,13 @@
 ---
 layout: "package"
+permalink: "fpl"
 description: >-
   Collection of routines to export data produced by Finite Elements or Finite
   Volume Simulations in formats used by some visualization programs.
 icon: "https://octave.sourceforge.io/pkg_icon/fpl.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/fpl/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

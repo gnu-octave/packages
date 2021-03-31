@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "secs1d"
 description: >-
   A Drift-Diffusion simulator for 1d semiconductor devices.
 icon:
 links:
 - icon: "far fa-copyright"
-  label: "GPLv2+"
+  label: "GPL-2.0-or-later"
   url:
 - icon: "fas fa-th-list"
   label: "function reference"

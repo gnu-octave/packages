@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "cgi"
 description: >-
   Common Gateway Interface for Octave.
 icon: "https://octave.sourceforge.io/pkg_icon/cgi.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv2+"
+  label: "GPL-2.0-or-later"
   url: "https://sourceforge.net/p/octave/cgi/ci/master/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

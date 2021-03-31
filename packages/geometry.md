@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "geometry"
 description: >-
   Library for extending MatGeom functionality.
 icon: "https://octave.sourceforge.io/pkg_icon/geometry.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+, Boost v1.0"
+  label: "GPL-3.0-or-later and BSL-1.0"
   url: "https://sourceforge.net/p/octave/geometry/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

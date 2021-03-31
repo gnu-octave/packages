@@ -1,5 +1,6 @@
 ---
 layout: "package"
+permalink: "interval"
 description: >-
   Real-valued interval arithmetic. Handle uncertainties, estimate arithmetic
   errors, computer-assisted proofs, constraint programming, and verified
@@ -7,7 +8,7 @@ description: >-
 icon: "https://octave.sourceforge.io/pkg_icon/interval.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/interval/ci/default/tree/doc/COPYING.texinfo"
 - icon: "fas fa-rss"
   label: "news"

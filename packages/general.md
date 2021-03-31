@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "general"
 description: >-
   General tools for Octave.
 icon: "https://octave.sourceforge.io/pkg_icon/general.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+, modified BSD, public domain"
+  label: "GPL-3.0-or-later and BSD-3-Clause and public domain"
   url: "https://sourceforge.net/p/octave/general/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

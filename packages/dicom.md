@@ -1,12 +1,13 @@
 ---
 layout: "package"
+permalink: "dicom"
 description: >-
   File io for medical images and other data using Grassroots DICOM (GDCM)
   library.
 icon: "https://octave.sourceforge.io/pkg_icon/dicom.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/dicom/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

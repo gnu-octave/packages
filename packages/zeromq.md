@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "zeromq"
 description: >-
   ZeroMQ bindings for GNU Octave.
 icon:
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/zeromq/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

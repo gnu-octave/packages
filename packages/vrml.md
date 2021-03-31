@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "vrml"
 description: >-
   3D graphics using VRML.
 icon: "https://octave.sourceforge.io/pkg_icon/vrml.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+, GFDL"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/vrml/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

@@ -1,5 +1,6 @@
 ---
 layout: "package"
+permalink: "tablicious"
 description: >-
   Matlab-compatible Octave table class for storing tabular/relational data.
   Similar to R and Python Pandas DataFrames.

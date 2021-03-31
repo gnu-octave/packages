@@ -1,5 +1,6 @@
 ---
 layout: "package"
+permalink: "pkg-json"
 description: >-
   JSON support by Matlab compatible (jsondecode / jsonencode) functions.
 icon: "https://raw.githubusercontent.com/gnu-octave/pkg-json/master/doc/JSON.png"

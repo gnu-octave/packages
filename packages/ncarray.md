@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "ncarray"
 description: >-
   Access a single or a collection of NetCDF files as a multi-dimensional array.
 icon: "https://octave.sourceforge.io/pkg_icon/ncarray.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv2+"
+  label: "GPL-2.0-or-later"
   url: "https://sourceforge.net/p/octave/ncarray/ci/master/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

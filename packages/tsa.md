@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "tsa"
 description: >-
   Stochastic concepts and maximum entropy methods for time series analysis.
 icon: "https://octave.sourceforge.io/pkg_icon/tsa.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/tsa/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

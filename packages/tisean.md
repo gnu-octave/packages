@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "tisean"
 description: >-
   Nonlinear Time Series Analysis.  Port of TISEAN 3.0.1.
 icon: "https://octave.sourceforge.io/pkg_icon/tisean.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/tisean/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

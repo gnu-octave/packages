@@ -1,12 +1,13 @@
 ---
 layout: "package"
+permalink: "instrument-control"
 description: >-
   Low level I/O functions for serial, i2c, parallel, tcp, gpib, vxi11, udp and
   usbtmc interfaces.
 icon: "https://octave.sourceforge.io/pkg_icon/instrument-control.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/instrument-control/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

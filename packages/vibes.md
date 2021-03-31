@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "vibes"
 description: >-
   Interface to VIBes, Visualizer for Intervals and Boxes.
 icon: "https://octave.sourceforge.io/pkg_icon/vibes.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPL-3.0+, MIT"
+  label: "GPL-3.0-or-later and MIT"
   url:
 - icon: "fas fa-code-branch"
   label: "repository"

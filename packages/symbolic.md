@@ -1,5 +1,6 @@
 ---
 layout: "package"
+permalink: "symbolic"
 description: >-
   Symbolic calculation features, including common Computer Algebra System
   tools such as algebraic operations, calculus, equation solving, Fourier and
@@ -8,7 +9,7 @@ description: >-
 icon: "https://octave.sourceforge.io/pkg_icon/symbolic.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://github.com/cbm755/octsympy/blob/master/COPYING"
 - icon: "fas fa-rss"
   label: "news"

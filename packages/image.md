@@ -1,5 +1,6 @@
 ---
 layout: "package"
+permalink: "image"
 description: >-
   Functions for image processing, feature extraction, image statistics, spatial
   and geometric transformations, morphological operations, linear filtering,
@@ -7,7 +8,7 @@ description: >-
 icon: "https://octave.sourceforge.io/pkg_icon/image.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/image/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

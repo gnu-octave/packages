@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "statistics"
 description: >-
   Additional statistics functions for Octave.
 icon: "https://octave.sourceforge.io/pkg_icon/statistics.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+, public domain"
+  label: "GPL-3.0-or-later and public domain"
   url: "https://sourceforge.net/p/octave/statistics/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

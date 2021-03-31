@@ -1,5 +1,6 @@
 ---
 layout: "package"
+permalink: "stk"
 description: >-
   The STK is a (not so) Small Toolbox for Kriging.  Its primary focus is on
   the interpolation/regression technique known as kriging, which is very
@@ -13,7 +14,7 @@ description: >-
 icon: "https://octave.sourceforge.io/pkg_icon/stk.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/stk/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

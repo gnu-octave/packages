@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "data-smoothing"
 description: >-
   Algorithms for smoothing noisy data.
 icon: "https://octave.sourceforge.io/pkg_icon/data-smoothing.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/data-smoothing/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

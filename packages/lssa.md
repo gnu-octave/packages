@@ -1,5 +1,6 @@
 ---
 layout: "package"
+permalink: "lssa"
 description: >-
   Tools to compute spectral decompositions of irregularly-spaced time series.
   Functions based on the Lomb-Scargle periodogram and Adolf Mathias'
@@ -7,7 +8,7 @@ description: >-
 icon: "https://octave.sourceforge.io/pkg_icon/lssa.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/lssa/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

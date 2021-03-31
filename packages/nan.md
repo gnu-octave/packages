@@ -1,12 +1,13 @@
 ---
 layout: "package"
+permalink: "nan"
 description: >-
   A statistics and machine learning toolbox for data with and w/o missing
   values.
 icon: "https://octave.sourceforge.io/pkg_icon/nan.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/NaN/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"
@@ -23,7 +24,6 @@ links:
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(nan)"
-
 maintainers:
 - name: "Alois Schloegl"
   contact: "alois.schloegl@gmail.com"

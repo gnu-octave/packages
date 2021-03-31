@@ -1,18 +1,19 @@
 ---
 layout: "package"
+permalink: "secs3d"
 description: >-
   A Drift-Diffusion simulator for 3d semiconductor devices.
 icon:
 links:
 - icon: "far fa-copyright"
-  label: "GPLv2+"
+  label: "GPL-2.0-or-later"
   url:
 - icon: "fas fa-th-list"
   label: "function reference"
   url: "https://octave.sourceforge.io/secs3d/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(secs1d)"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(secs3d)"
 maintainers:
 - name: "Carlo de Falco"
   contact:

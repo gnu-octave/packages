@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "linear-algebra"
 description: >-
   Additional linear algebra code, including matrix functions.
 icon: "https://octave.sourceforge.io/pkg_icon/linear-algebra.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+, LGPLv3+, FreeBSD"
+  label: "GPL-3.0-or-later and LGPL-3.0-or-later and BSD-2-Clause-FreeBSD"
   url: "https://sourceforge.net/p/octave/linear-algebra/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

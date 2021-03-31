@@ -1,5 +1,6 @@
 ---
 layout: "package"
+permalink: "websockets"
 description: >-
   Simple implementation of the Websockets protocol for GNU Octave.
 icon:

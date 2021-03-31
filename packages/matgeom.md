@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "matgeom"
 description: >-
   Geometry toolbox for 2D/3D geometric computing.
 icon:
 links:
 - icon: "far fa-copyright"
-  label: "FreeBSD"
+  label: "BSD-2-Clause-FreeBSD"
   url: "https://sourceforge.net/p/octave/matgeom/ci/master/tree/LICENSE.txt"
 - icon: "fas fa-rss"
   label: "news"

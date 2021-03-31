@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "mapping"
 description: >-
   Simple mapping and GIS .shp .dxf and raster file functions.
 icon: "https://octave.sourceforge.io/pkg_icon/mapping.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/mapping/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

@@ -1,12 +1,13 @@
 ---
 layout: "package"
+permalink: "octproj"
 description: >-
   Call PROJ library functions for cartographic projections and CRS
   transformations.
 icon: "https://octave.sourceforge.io/pkg_icon/octproj.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/octproj/ci/master/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

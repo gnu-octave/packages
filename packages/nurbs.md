@@ -1,12 +1,13 @@
 ---
 layout: "package"
+permalink: "nurbs"
 description: >-
   Collection of routines for the creation, and manipulation of Non-Uniform
   Rational B-Splines (NURBS), based on the NURBS toolbox.
 icon: "https://octave.sourceforge.io/pkg_icon/nurbs.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/nurbs/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

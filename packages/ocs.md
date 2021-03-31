@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "ocs"
 description: >-
   Solving DC and transient electrical circuit equations.
 icon: "https://octave.sourceforge.io/pkg_icon/ocs.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv2+"
+  label: "GPL-2.0-or-later"
   url: "https://sourceforge.net/p/octave/ocs/ci/master/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

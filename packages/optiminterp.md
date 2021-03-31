@@ -1,12 +1,13 @@
 ---
 layout: "package"
+permalink: "optiminterp"
 description: >-
   An optimal interpolation toolbox providing functions to perform a
   n-dimensional optimal interpolations of arbitrarily distributed data points.
 icon: "https://octave.sourceforge.io/pkg_icon/optiminterp.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/optiminterp/ci/master/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

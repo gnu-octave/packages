@@ -5,7 +5,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 # If no file is given, check all packages.
 
 if [ -z "$1" ]; then
-  files="`cd "$DIR/../../package" && pwd`/*"
+  files="`cd "$DIR/../../packages" && pwd`/*"
 else
   files=$1
 fi

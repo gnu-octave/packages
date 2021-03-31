@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "generate_html"
 description: >-
   Generating HTML pages with help texts for a set of package functions.
 icon: "https://octave.sourceforge.io/pkg_icon/generate_html.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/generate_html/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

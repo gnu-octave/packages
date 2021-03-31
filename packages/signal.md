@@ -1,12 +1,13 @@
 ---
 layout: "package"
+permalink: "signal"
 description: >-
   Signal processing tools, including filtering, windowing and display
   functions.
 icon: "https://octave.sourceforge.io/pkg_icon/signal.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+, public domain"
+  label: "GPL-3.0-or-later and public domain"
   url: "https://sourceforge.net/p/octave/signal/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

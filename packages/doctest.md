@@ -1,5 +1,6 @@
 ---
 layout: "package"
+permalink: "doctest"
 description: >-
   Documentation tests.
 icon: "https://octave.sourceforge.io/pkg_icon/doctest.png"

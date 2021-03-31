@@ -1,5 +1,6 @@
 ---
 layout: "package"
+permalink: "ocl"
 description: >-
   Package using OpenCL for parallelization, mostly suitable to
   Single-Instruction-Multiple-Data (SIMD) computations, selectively using
@@ -7,7 +8,7 @@ description: >-
 icon:
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/ocl/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

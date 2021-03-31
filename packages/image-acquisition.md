@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "image-acquisition"
 description: >-
   Functions to capture images from connected devices using Video4Linux (v4l).
 icon: "https://octave.sourceforge.io/pkg_icon/image-acquisition.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/image-acquisition/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

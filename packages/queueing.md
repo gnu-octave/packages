@@ -1,5 +1,6 @@
 ---
 layout: "package"
+permalink: "queueing"
 description: >-
   Functions for queueing networks, discrete- and continuous-time Markov chains
   analysis.  Compute steady-state performance measures for open, closed and
@@ -11,7 +12,7 @@ description: >-
 icon: "https://octave.sourceforge.io/pkg_icon/queueing.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/queueing/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

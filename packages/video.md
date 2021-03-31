@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "video"
 description: >-
   A wrapper for OpenCV's CvCapture_FFMPEG and CvVideoWriter_FFMPEG.
 icon: "https://octave.sourceforge.io/pkg_icon/video.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+ and 3-clause BSD"
+  label: "GPL-3.0-or-later and BSD-3-Clause"
   url: "https://sourceforge.net/p/octave/video/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

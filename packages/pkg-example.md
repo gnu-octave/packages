@@ -1,5 +1,6 @@
 ---
 layout: "package"
+permalink: "pkg-example"
 description: >-
   Example package to demonstrate the creation process of an Octave package.
   Keep this description brief.  Describe the major features in the first two

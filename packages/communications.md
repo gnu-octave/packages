@@ -1,12 +1,13 @@
 ---
 layout: "package"
+permalink: "communications"
 description: >-
   Digital Communications, Error Correcting Codes (Channel Code), Source Code
   functions, Modulation and Galois Fields.
 icon: "https://octave.sourceforge.io/pkg_icon/communications.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/communications/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

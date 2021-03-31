@@ -1,5 +1,6 @@
 ---
 layout: "package"
+permalink: "mpi"
 description: >-
   Octave bindings for basic Message Passing Interface (MPI) functions for
   parallel computing.

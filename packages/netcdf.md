@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "netcdf"
 description: >-
   A NetCDF interface for Octave.
 icon: "https://octave.sourceforge.io/pkg_icon/netcdf.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv2+"
+  label: "GPL-2.0-or-later"
   url: "https://sourceforge.net/p/octave/netcdf/ci/master/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

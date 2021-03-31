@@ -1,5 +1,6 @@
 ---
 layout: "package"
+permalink: "pythonic"
 description: >-
   The Pythonic package provides a Python language binding for Octave, to allow
   any Python package to be loaded and used directly, with automatic translation

@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "strings"
 description: >-
   Additional functions for manipulation and analysis of strings.
 icon: "https://octave.sourceforge.io/pkg_icon/strings.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+, FreeBSD"
+  label: "GPL-3.0-or-later and FreeBSD"
   url: "https://sourceforge.net/p/octave/strings/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

@@ -1,12 +1,13 @@
 ---
 layout: "package"
+permalink: "bsltl"
 description: >-
   Free collection of Octave/MATLAB routines for working with the biospeckle
   laser technique.
 icon: "https://octave.sourceforge.io/pkg_icon/bsltl.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/bsltl/ci/master/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

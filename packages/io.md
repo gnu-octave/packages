@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "io"
 description: >-
   Input/Output in external formats.
 icon: "https://octave.sourceforge.io/pkg_icon/io.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+, simplified BSD"
+  label: "GPL-3.0-or-later and BSD-2-Clause"
   url: "https://sourceforge.net/p/octave/io/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

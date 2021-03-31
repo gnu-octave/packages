@@ -1,12 +1,13 @@
 ---
 layout: "package"
+permalink: "sparsersb"
 description: >-
   Interface to the librsb package implementing the RSB sparse matrix format for
   fast shared-memory sparse matrix computations.
 icon: "https://octave.sourceforge.io/pkg_icon/sparsersb.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/sparsersb/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

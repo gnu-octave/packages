@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "bim"
 description: >-
   Solving Diffusion Advection Reaction (DAR) Partial Differential Equations.
 icon: "https://octave.sourceforge.io/pkg_icon/bim.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv2+"
+  label: "GPL-2.0-or-later"
   url: "https://sourceforge.net/p/octave/bim/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

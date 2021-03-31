@@ -1,11 +1,12 @@
 ---
 layout: "package"
+permalink: "fem-fenics"
 description: >-
   Resolution of partial differential equations based on fenics.
 icon: "https://octave.sourceforge.io/pkg_icon/fem-fenics.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/fem-fenics/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"

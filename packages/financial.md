@@ -1,12 +1,13 @@
 ---
 layout: "package"
+permalink: "financial"
 description: >-
   Monte Carlo simulation, options pricing routines, financial manipulation,
   plotting functions and additional date manipulation tools.
 icon: "https://octave.sourceforge.io/pkg_icon/financial.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPLv3+"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/financial/ci/default/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"
