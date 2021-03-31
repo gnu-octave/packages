@@ -1,11 +1,11 @@
-# GNU Octave - Package Extensions Index
+# GNU Octave - Packages
 
 **Development guide**
 
 ## Quick info
 
-Your package management tool can read the **entire pacakge index**
-as array of Octave structs into the variable `__pkg__` using the command:
+Your package management tool can read the **entire package index at once**
+as Octave array of struct into the variable `__pkg__` using the command:
 ```
 function __pkg__ = package_index_resolve ()
   data = urlread ("https://gnu-octave.github.io/packages/packages/")(6:end);
@@ -16,12 +16,13 @@ function __pkg__ = package_index_resolve ()
   eval (data);
 endfunction
 ```
-Note, the assignment to the returned variable `__pkg__` is done within `eval`.
+Note, the assignment to the returned variable `__pkg__` is done within `eval`
+and depending on your internet connection, this is an inexpensive operation,
+thus a caching strategy is probably not necessary.
 ```
 >> tic; __pkg__ = package_index_resolve (); toc
 Elapsed time is 0.365517 seconds.
 ```
-Reading the latest
 
 
 ## Detailed information for writing a package management tool
@@ -33,7 +34,7 @@ written in the GNU Octave language.
 ### Read the package index
 
 Using the routine `package_index_resolve()` as describe in the quick info above,
-an array of Octave struct `__pkg__` indexed by the package names is returned.
+an Octave array of struct `__pkg__` indexed by the package names is returned.
 
 To get the first three packages names, for example, type:
 ```
@@ -47,20 +48,21 @@ ans =
 ```
 
 
-### Read package details
+### Extract package details
 
-Using `__pkg__ = package_index_resolve ();` as above,
+After reading the package index to the variable `__pkg__` as shown above,
 one can obtain more detailed information about individual packages.
 The following code shows all available struct fields for `pkg-example`:
 ```
 >> fieldnames (__pkg__.("pkg-example"))
 ans =
 {
-  [1,1] = description
-  [2,1] = icon
-  [3,1] = links
-  [4,1] = maintainers
-  [5,1] = versions
+  [1,1] = name
+  [2,1] = description
+  [3,1] = icon
+  [4,1] = links
+  [5,1] = maintainers
+  [6,1] = versions
 }
 ```
 Similar, one can see all details of the latest `pkg-example` version:
@@ -85,19 +87,30 @@ ans =
 ### Compatibility with Octave's `pkg` tool
 
 In case you want to stay compatible with
-[Octave's builtin package management tool `pkg`](https://www.octave.org/doc/v6.2.0/XREFpkg.html)
+[Octaves builtin package management tool `pkg`](https://www.octave.org/doc/v6.2.0/XREFpkg.html)
 you should care about the following default settings:
 
-- `pkg prefix` (default: `~/octave`): directory new packages are installed to.
-- `pkg local_list` (default: `~/.octave_packages`): file listing installed
-  local packages.  The file is simply created by saving an array of structs
-  using Octave's default `save` command.
-  When loading the content of this file (`load ~/.octave_packages`) an entry
-  looks like this:
-
+- `pkg prefix`: directory new packages are installed to.
   ```
-  >> local_packages (1)
-  ans =
+  >> pkg prefix -global
+  Installation prefix:             /usr/share/octave/packages
+  Architecture dependent prefix:   /usr/lib/octave/packages
+
+  >> pkg prefix -local
+  Installation prefix:             /home/username/octave
+  Architecture dependent prefix:   /home/username/octave
+  ```
+
+- `pkg local_list`  (default: `/home/username/.octave_packages`):
+- `pkg global_list` (default: `/usr/share/octave/octave_packages`):
+  File listing installed local or global packages.
+
+  The file is simply created by saving an array of struct
+  using Octave's default `save` command:
+  ```
+  >> load /home/username/.octave_packages
+  >> local_packages
+  local_packages =
   {
     [1,1] =
 
@@ -111,20 +124,14 @@ you should care about the following default settings:
         title = Minimal example package to demonstrate the Octave package extensions.
         description = Minimal example package to demonstrate the Octave package  extensions.  It shows how to organize Octave, C/C++, and FORTRAN code within  a package and to properly compile it.
         depends =
-        dir = /home/siko1056/.local/share/octave/6.2.0/pkg-example-1.0.0
-        archprefix = /home/siko1056/.local/share/octave/6.2.0/pkg-example-1.0.0
-        loaded = 0
+        dir = /home/siko1056/octave/pkg-example-1.0.0
+        archprefix = /home/siko1056/octave/pkg-example-1.0.0
 
   }
   ```
 
-- `pkg global_list` (default:
-  [`OCTAVE_HOME ()`](https://www.octave.org/doc/v6.2.0/XREFOCTAVE_005fHOME.html)
-  `/share/octave/octave_packages`):
-  analogous list for global packages.
 
-
-## Developing the websites of package extensions index
+## Developing the websites of GNU Octave packages
 
 Two important links first:
 
@@ -139,7 +146,7 @@ given.
   and hosted on
   [GitHub pages](https://pages.github.com/).
 
-- There is **no limitation** to host the generated static pages on an
+- There is **no limitation** to host the generated static pages on any other
   **arbitrary webserver**.
 
 - Build the static websites with bundler/Jekyll
@@ -160,9 +167,25 @@ given.
 - The index read by `package_index_resolve()` is generated from
   `packages/index.md`.
 
-- The package index page uses the JavaScript framework
-  [DataTables](https://datatables.net/) for a dynamic search feature.
-  If no JavaScript is available, a static HTML table is displayed.
+- The package index page uses following JavaScript/CSS frameworks:
+  - [FontAwesome](https://fontawesome.com/) for awesome fonts.
+  - [bootstrap](https://getbootstrap.com/): for simply good-looking design.
+  - [DataTables](https://datatables.net/) for a dynamic search feature.
+    Configuration at <https://datatables.net/download/index>:
+    ```
+    Styling framework
+      [x] DataTables
+    Packages
+      [x] DataTables
+    Extensions
+      [x] Scroller
+    Download method: CDN
+      [x] Minify
+      [x] Concatenate
+    ```
+    If no JavaScript is available, a static HTML table is displayed.
+  - [jQuery](https://jquery.com/): needed by bootstrap and DataTables.
 
 - The individual package pages are generated by filling the layout with the
-  metadata given in YAML format.
+  metadata given in YAML format,
+  as described in [CONTRIBUTING.md](/CONTRIBUTING.md).

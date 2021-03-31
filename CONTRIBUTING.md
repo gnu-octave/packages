@@ -1,7 +1,7 @@
 # Package contribution guidelines
 
-This guide explains how to add a package the
-[GNU Octave - Package extensions index](https://gnu-octave.github.io/packages/).
+This guide explains how to add your Octave package to
+<https://gnu-octave.github.io/packages/>.
 
 
 ## Quick info
@@ -11,11 +11,10 @@ This guide explains how to add a package the
   For a minimal example demonstrating **Octave/C/C++/FORTRAN code** see
   <https://github.com/gnu-octave/pkg-example>.
 
-- A package entry in this index is managed by a single file,
-  [`packages/pkg-example.md`](#example-package-index-entry),
+- A package entry in this index is managed by a single
+  [YAML](https://en.wikipedia.org/wiki/YAML) file,
+  [`packages/pkg-example.md`](#example-package-entry),
   for an example package called "pkg-example".
-  The content is [Markdown](https://en.wikipedia.org/wiki/Markdown)
-  embedding [YAML](https://en.wikipedia.org/wiki/YAML) data.
 
 - Adding or updating your package is done by a
   [**pull request**](https://docs.github.com/en/github/getting-started-with-github/github-glossary#pull-request).
@@ -23,16 +22,21 @@ This guide explains how to add a package the
   [automatically by TravisCI](https://travis-ci.com/github/gnu-octave/packages/)
   and has to be approved and merged manually by a member of the
   [GitHub "gnu-octave" organization](https://github.com/orgs/gnu-octave/people).
-  If the automatic review fails, it is less likely that your contribution will
-  be accepted.  See below for more information on automatic reviews.
+
+  > If the automatic TravisCI review fails,
+  > please [create an issue](https://github.com/gnu-octave/packages/issues)
+  > to resolve the problem.
+
+  See below for more information on automatic reviews.
 
 
 ## Add your package
 
-- Copy the *example package index entry* below and adapt it to your package.
+- Copy the [example package entry](#example-package-entry) below
+  and adapt it to your package.
 
 - Create file `packages/<my package>.md` with the name of your package in the
-  [package](https://github.com/gnu-octave/packages/tree/master/package)
+  [packages](https://github.com/gnu-octave/packages/tree/master/packages)
   subdirectory.
 
   To do this, either use the "easy" way by following the
@@ -52,7 +56,7 @@ This guide explains how to add a package the
 - For example after a new release of your package you can update the index
   entry by editing the file `packages/<my package>.md` with the name of your
   package in the
-  [package](https://github.com/gnu-octave/packages/tree/master/package)
+  [packages](https://github.com/gnu-octave/packages/tree/master/packages)
   subdirectory.
 
   To do this, either use the "easy" way by following the
@@ -64,9 +68,9 @@ This guide explains how to add a package the
   ... or expert users can work in a fork as described above.
 
 
-## Example package index entry
+## Example package entry
 
-An example package index entry `packages/pkg-example.md`
+An example package entry `packages/pkg-example.md`
 (see [output](https://gnu-octave.github.io/packages/packages/pkg-example)):
 
 ```yaml
@@ -155,11 +159,11 @@ versions:
   - `icon`: any [free FontAwesome](tawesome.com/icons?d=gallery&p=2&m=free)
     class string is permitted.  The icon is part of the hyperlink.
 
-  - `label`: of the hyperlink.
+  - `label`: string of the hyperlink.
 
-  - `url`: of the hyperlink.
+  - `url`: string of the hyperlink.
 
-  You are free to choose links describing your project best.
+  You are free to choose any links in any order describing your package best.
   However, it has proved useful to give some basic information,
   as seen in the example above:
 
@@ -177,7 +181,7 @@ versions:
 
 - `maintainers`: list containing two fields.
 
-  - `name`: name string.
+  - `name`: maintainer name string.
 
   - `contact`: email address, homepage, phone number, ...
     If blank, <https://octave.discourse.group/> is displayed.
@@ -219,13 +223,12 @@ versions:
     > archive generation feature of many source code hosting services, such as
     > GitHub, GitLab, ...
     >
-    > See the *example package index* entry above for installing the current
-    > "master" branch of the package development repository without creating
-    > a release.
+    > See the *example package entry* above for installing the current "master"
+    > branch of the package development repository without creating a release.
 
   - `depends`: list of dependency strings.
 
-    A string looks like `"octave (>= 5.2.0)"`.
+    A dependency string looks like `"octave (>= 5.2.0)"`.
 
     It starts with the name of the dependency "octave" followed by a single
     space and in brackets the operator `>=` separated by a space to the
@@ -233,7 +236,7 @@ versions:
 
     Permitted names are "octave" and any other Octave package.
 
-    > **Note:** Refrain from adding Linux system libraries here, for example.
+    > **Note:** Refrain from adding system libraries here, for example.
     > The used package tool might not be able to resolve the dependency
     > and makes this package "uninstallable".
 
@@ -244,12 +247,14 @@ versions:
 
 ## Automatic reviews
 
-Automatic reviews happen by TravisCI running the following scripts on a pull
-request:
+Automatic reviews are performed by
+[TravisCI](https://travis-ci.com/github/gnu-octave/packages/)
+running the following scripts on a pull request:
 
 - `bash` [`./assets/ci/run_yamllint.sh`](https://github.com/gnu-octave/packages/blob/master/assets/ci/run_yamllint.sh)
 - `bash` [`./assets/ci/run_bundle.sh`](https://github.com/gnu-octave/packages/blob/master/assets/ci/run_bundle.sh)
 - `docker run -it --volume="$(pwd):/home/packages:rw" gnuoctave/octave:6.2.0 octave --eval "run /home/packages`[`/assets/ci/run_octave.m`](https://github.com/gnu-octave/packages/blob/master/assets/ci/run_octave.m)`"`
 
-You can run these test on Linux before starting a pull request to avoid
-failures.
+On Linux systems,
+you can run these test before a pull request to avoid failures
+or to resolve issues on your local machine.
