@@ -25,9 +25,16 @@ maintainers:
 - name: "Nir Krakauer"
   contact: "mail@nirkrakauer.net"
 versions:
+- id: "1.2.3"
+  date: "2021-04-02"
+  sha256: "e30d6195e4b69bb37873c226b0de8f1661c31a0e0c1d1bac55aed0a2220399e4"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/communications-1.2.3.tar.gz"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "signal (>= 1.1.3)"
 - id: "1.2.2"
   date: "2019-12-22"
-  sha256:
+  sha256: "93f9ad5e807d502f58c07688dfe2ce40231da1a81fe3da90926337e5e5165ef5"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/communications-1.2.2.tar.gz"
   depends:
   - "octave (>= 4.4.0)"
