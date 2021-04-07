@@ -32,12 +32,18 @@ maintainers:
 - name: "Another Contactless Developer"
   contact:
 versions:
+- id: "1.1.0"
+  date: "2021-04-06"
+  sha256: "bff441755f0d68596f2efd027fe637b5b6c52b722ffd6255bdb8a5f34ab4ef2a"
+  url: "https://github.com/gnu-octave/pkg-example/archive/1.1.0.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
 - id: "1.0.0"
   date: "2020-09-02"
   sha256: "6b7e4b6bef5a681cb8026af55c401cee139b088480f0da60143e02ec8880cb51"
   url: "https://github.com/gnu-octave/pkg-example/archive/1.0.0.tar.gz"
   depends:
-  - "octave (>= 4.2.0)"
+  - "octave (>= 4.0.0)"
 - id: "dev"
   date:
   sha256:
