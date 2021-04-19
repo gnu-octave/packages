@@ -12,7 +12,7 @@ description: >-
 icon: "https://raw.githubusercontent.com/gnu-octave/pkg-example/master/doc/icon.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPL-3.0-or-later"
+  label: "GPL-4.0-or-later"
   url: "https://github.com/gnu-octave/pkg-example/blob/master/COPYING"
 - icon: "fas fa-rss"
   label: "news"

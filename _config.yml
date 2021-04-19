@@ -5,6 +5,8 @@ logo: "/assets/octave-logo-512.png"
 
 pkg_icon: "/assets/pkg.png"
 
+markdown_ext: "markdown,md,yaml"
+
 exclude:
   - CONTRIBUTING.md
   - Gemfile
