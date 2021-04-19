@@ -12,7 +12,7 @@ description: >-
 icon: "https://raw.githubusercontent.com/gnu-octave/pkg-example/master/doc/icon.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPL-4.0-or-later"
+  label: "GPL-3.0-or-later"
   url: "https://github.com/gnu-octave/pkg-example/blob/master/COPYING"
 - icon: "fas fa-rss"
   label: "news"
@@ -37,6 +37,7 @@ versions:
   sha256: "bff441755f0d68596f2efd027fe637b5b6c52b722ffd6255bdb8a5f34ab4ef2a"
   url: "https://github.com/gnu-octave/pkg-example/archive/1.1.0.tar.gz"
   depends:
+  - "pkg"
   - "octave (>= 4.0.0)"
 - id: "1.0.0"
   date: "2020-09-02"
