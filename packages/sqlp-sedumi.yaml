@@ -1,0 +1,41 @@
+---
+layout: "package"
+permalink: "sqlp-sedumi"
+description: >-
+  SeDuMi (Self-Dual-Minimization) is solving convex optimization problems
+  involving linear equations and inequalities, second-order cone constraints,
+  and semidefinite constraints (linear matrix inequalities).
+icon:
+links:
+- icon: "far fa-copyright"
+  label: "GPL-2.0-or-later"
+  url: "https://github.com/sqlp/sedumi/blob/master/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/sqlp/sedumi/releases"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/sqlp/sedumi/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://github.com/sqlp/sedumi/tree/master/doc"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/sqlp/sedumi/issues"
+maintainers:
+- name: "GitHub SQLP organization"
+  contact: "https://github.com/orgs/sqlp/people"
+versions:
+- id: "1.3.4"
+  date: "2020-01-10"
+  sha256: "8280b6f0508cba17e611c9a3474f52c01df93c342c5d45fe0faf9af841a8b2bf"
+  url: "https://github.com/sqlp/sedumi/archive/v1.3.4.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+- id: "dev"
+  date:
+  sha256:
+  url: "https://github.com/sqlp/sedumi/archive/master.zip"
+  depends:
+  - "octave (>= 4.0.0)"
+---
