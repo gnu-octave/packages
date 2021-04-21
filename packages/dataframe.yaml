@@ -20,7 +20,6 @@ links:
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(dataframe)"
-
 maintainers:
 - name: "Pascal Dupuis"
   contact: "pascal.dupuis@uclouvain.be"
@@ -31,4 +30,5 @@ versions:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dataframe-1.2.0.tar.gz"
   depends:
   - "octave (>= 3.4.0)"
+  - "pkg"
 ---

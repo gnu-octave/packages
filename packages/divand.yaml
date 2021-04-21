@@ -21,7 +21,6 @@ links:
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(divand)"
-
 maintainers:
 - name: "Alexander Barth"
   contact: "barth.alexander@gmail.com"
@@ -32,4 +31,5 @@ versions:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/divand-1.1.2.tar.gz"
   depends:
   - "octave (>= 3.4.0)"
+  - "pkg"
 ---

@@ -30,4 +30,5 @@ versions:
   url: "https://github.com/apjanke/octave-packajoozle/archive/master.zip"
   depends:
   - "octave (>= 4.4.1)"
+  - "pkg"
 ---

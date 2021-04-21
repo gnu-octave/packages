@@ -27,10 +27,12 @@ versions:
   url: "https://gitlab.com/kakila/fda/-/archive/master/fda-master.tar.gz"
   depends:
   - "octave (>= 4.2.0)"
+  - "pkg"
 - id: "dev"
   date:
   sha256:
   url: "https://gitlab.com/kakila/fda/-/archive/master/fda-master.tar.gz"
   depends:
   - "octave (>= 4.2.0)"
+  - "pkg"
 ---

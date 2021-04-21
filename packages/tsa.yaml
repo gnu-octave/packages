@@ -31,4 +31,5 @@ versions:
   depends:
   - "octave (>= 2.9.7)"
   - "nan (>= 3.0.0)"
+  - "pkg"
 ---

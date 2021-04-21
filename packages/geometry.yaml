@@ -35,4 +35,5 @@ versions:
   depends:
   - "octave (>= 4.2.0)"
   - "matgeom (>= 1.0.0)"
+  - "pkg"
 ---

@@ -32,4 +32,5 @@ versions:
   - "octave (>= 3.4.0)"
   - "netcdf (>= 1.0.2)"
   - "statistics (>= 1.0.6)"
+  - "pkg"
 ---

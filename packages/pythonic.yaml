@@ -32,10 +32,12 @@ versions:
   url: "https://gitlab.com/mtmiller/octave-pythonic/-/archive/v0.0.1/octave-pythonic-v0.0.1.tar.gz"
   depends:
   - "octave (>= 4.4.0)"
+  - "pkg"
 - id: "dev"
   date:
   sha256:
   url: "https://gitlab.com/mtmiller/octave-pythonic/-/archive/master/octave-pythonic-master.tar.gz"
   depends:
   - "octave (>= 4.4.0)"
+  - "pkg"
 ---

@@ -32,4 +32,5 @@ versions:
   depends:
   - "octave (>= 3.8.0)"
   - "control (>= 2.4.0)"
+  - "pkg"
 ---

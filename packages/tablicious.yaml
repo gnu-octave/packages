@@ -31,10 +31,12 @@ versions:
   url: "https://github.com/apjanke/octave-tablicious/archive/v0.3.5.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "dev"
   date:
   sha256:
   url: "https://github.com/apjanke/octave-tablicious/archive/master.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
+  - "pkg"
 ---

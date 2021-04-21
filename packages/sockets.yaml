@@ -30,10 +30,12 @@ versions:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/sockets-1.2.1.tar.gz"
   depends:
   - "octave (>= 3.6.0)"
+  - "pkg"
 - id: "1.2.0"
   date: "2014-12-03"
   sha256: "02bbdb055faddc7e4067a51a940742d04fa79c8ea22f12d1a8e875460dc38fa8"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/sockets-1.2.0.tar.gz"
   depends:
   - "octave (>= 3.2.0)"
+  - "pkg"
 ---

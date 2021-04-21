@@ -37,18 +37,20 @@ versions:
   sha256: "bff441755f0d68596f2efd027fe637b5b6c52b722ffd6255bdb8a5f34ab4ef2a"
   url: "https://github.com/gnu-octave/pkg-example/archive/1.1.0.tar.gz"
   depends:
-  - "pkg"
   - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "1.0.0"
   date: "2020-09-02"
   sha256: "6b7e4b6bef5a681cb8026af55c401cee139b088480f0da60143e02ec8880cb51"
   url: "https://github.com/gnu-octave/pkg-example/archive/1.0.0.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "dev"
   date:
   sha256:
   url: "https://github.com/gnu-octave/pkg-example/archive/master.zip"
   depends:
   - "octave (>= 5.2.0)"
+  - "pkg"
 ---

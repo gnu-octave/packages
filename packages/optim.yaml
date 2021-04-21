@@ -35,6 +35,7 @@ versions:
   - "octave (>= 4.0.0)"
   - "statistics (>= 1.4.0)"
   - "struct (>= 1.0.12)"
+  - "pkg"
 - id: "1.6.0"
   date: "2019-03-12"
   sha256: "f910c8d5992af42c51269d023ce95c34c7b6455542e41171819dbe94fc4350fc"
@@ -43,4 +44,5 @@ versions:
   - "octave (>= 4.0.0)"
   - "statistics (>= 1.4.0)"
   - "struct (>= 1.0.12)"
+  - "pkg"
 ---

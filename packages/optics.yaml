@@ -20,7 +20,6 @@ links:
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(optics)"
-
 maintainers:
 - name: "Martin Vogel"
   contact: "octave@martin-vogel.info"
@@ -35,4 +34,5 @@ versions:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/optics-0.1.4.tar.gz"
   depends:
   - "octave (>= 3.2.0)"
+  - "pkg"
 ---

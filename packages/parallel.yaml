@@ -38,6 +38,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "struct (>= 1.0.12)"
+  - "pkg"
 - id: "4.0.0"
   date: "2020-04-11"
   sha256: "28eeeaa6f726e4a59cd0c979ac4f0925f04e9bd4eee88896cd8ce91cc054b772"
@@ -45,4 +46,5 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "struct (>= 1.0.12)"
+  - "pkg"
 ---

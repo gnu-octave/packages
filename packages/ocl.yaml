@@ -22,7 +22,6 @@ links:
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(ocl)"
-
 maintainers:
 - name: "Matthias W. Klein"
   contact: "mattwklein AT users.sf.net"
@@ -33,4 +32,5 @@ versions:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/ocl-1.1.1.tar.gz"
   depends:
   - "octave (>= 4.2.0)"
+  - "pkg"
 ---

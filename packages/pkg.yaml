@@ -30,4 +30,5 @@ versions:
   url: "https://github.com/gnu-octave/pkg/archive/master.zip"
   depends:
   - "octave (>= 4.0.0)"
+  - "pkg"
 ---

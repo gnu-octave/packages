@@ -37,4 +37,5 @@ versions:
   - "octave (>= 4.4.0)"
   - "io (>= 2.4.11)"
   - "statistics (>= 1.4.0)"
+  - "pkg"
 ---

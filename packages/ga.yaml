@@ -30,10 +30,12 @@ versions:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/ga-0.10.2.tar.gz"
   depends:
   - "octave (>= 3.4.0)"
+  - "pkg"
 - id: "0.10.1"
   date: "2019-06-04"
   sha256: "6d6ca5fece43958e4ad5a5c88dccebf5976d5b29f21b7bab1608bcd8af0e7202"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/ga-0.10.1.tar.gz"
   depends:
   - "octave (>= 3.4.0)"
+  - "pkg"
 ---

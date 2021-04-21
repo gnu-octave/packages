@@ -31,4 +31,5 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "io (>= 1.0.18)"
+  - "pkg"
 ---

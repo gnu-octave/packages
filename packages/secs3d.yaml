@@ -26,4 +26,5 @@ versions:
   - "octave (>= 3.2.4)"
   - "bim"
   - "fpl"
+  - "pkg"
 ---

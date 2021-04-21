@@ -30,4 +30,5 @@ versions:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/gsl-2.1.1.tar.gz"
   depends:
   - "octave (>= 2.9.7)"
+  - "pkg"
 ---

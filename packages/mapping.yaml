@@ -32,6 +32,7 @@ versions:
   - "octave (>= 3.8.0)"
   - "io (>= 2.2.7)"
   - "geometry (>= 4.0.0)"
+  - "pkg"
 - id: "1.4.0"
   date: "2020-01-20"
   sha256: "93ceb9d286bfa2c6183096e580917e0db01bc25ff4ebb37ebab43225a059cb54"
@@ -40,4 +41,5 @@ versions:
   - "octave (>= 3.8.0)"
   - "io (>= 2.2.7)"
   - "geometry (>= 4.0.0)"
+  - "pkg"
 ---

@@ -34,4 +34,5 @@ versions:
   - "micellaneous"
   - "struct"
   - "statistics"
+  - "pkg"
 ---

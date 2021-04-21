@@ -34,4 +34,5 @@ versions:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/sparsersb-1.0.8.tar.gz"
   depends:
   - "octave (>= 4.4.0)"
+  - "pkg"
 ---

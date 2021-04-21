@@ -31,4 +31,5 @@ versions:
   depends:
   - "octave (>= 3.2.0)"
   - "sockets (>= 1.2.0)"
+  - "pkg"
 ---

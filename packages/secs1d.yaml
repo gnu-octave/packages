@@ -25,4 +25,5 @@ versions:
   depends:
   - "octave (>= 3.0.0)"
   - "bim"
+  - "pkg"
 ---

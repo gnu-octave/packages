@@ -24,4 +24,5 @@ versions:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/secs2d-0.0.8.tar.gz"
   depends:
   - "octave (>= 2.9.17)"
+  - "pkg"
 ---

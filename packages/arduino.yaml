@@ -34,6 +34,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "instrument-control (>= 0.3.0)"
+  - "pkg"
 - id: "0.5.0"
   date: "2020-02-06"
   sha256: "e9d8651acadd6b1a0761275b04cbfa028a29234345c634dde405554072c754fe"
@@ -41,4 +42,5 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "instrument-control (>= 0.3.0)"
+  - "pkg"
 ---

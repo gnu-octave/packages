@@ -32,4 +32,5 @@ versions:
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/fits-1.0.7.tar.gz"
   depends:
   - "octave (>= 3.0.0)"
+  - "pkg"
 ---

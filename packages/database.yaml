@@ -23,7 +23,6 @@ links:
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(database)"
-
 maintainers:
 - name: "Olaf Till"
   contact: "i7tiol@t-online.de"
@@ -35,4 +34,5 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "struct (>= 1.0.12)"
+  - "pkg"
 ---
