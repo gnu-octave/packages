@@ -5,7 +5,7 @@ layout: null
 {%- capture _ -%}{%- increment j -%}{%- endcapture -%}
 {%- for pkg in site.pages -%}
 {% if pkg.layout == "package" %}
-{%- assign pkg_name = pkg.name | remove: ".md" -%}
+{%- assign pkg_name = pkg.name | remove: ".yaml" -%}
 __pkg__.("{{ pkg_name }}").name = "{{ pkg.permalink }}";
 __pkg__.("{{ pkg_name }}").description = "{{ pkg.description | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | escape }}";
 __pkg__.("{{ pkg_name }}").icon = "{{ pkg.icon }}";
