@@ -31,6 +31,13 @@ layout: default
   <div class="card-body">
     {%- assign first_version = true -%}
     {%- for v in page.versions -%}
+    {%- assign pkg_installable = false -%}
+    {%- for dep in v.depends -%}
+      {%- assign dep_name = dep | split: " " | first -%}
+      {%- if dep_name == "pkg" -%}
+        {%- assign pkg_installable = true -%}
+      {%- endif -%}
+    {%- endfor -%}
     {%- if first_version == true -%}
     <div class="mb-4">
     {%- else -%}
@@ -43,14 +50,18 @@ layout: default
             class="btn btn-primary">
             <i class="fas fa-download"></i>
           </a>
-          <button type="button"
-                  class="btn btn-outline-primary"
-                  onclick="doCopy('pkg install &quot;{{ v.url }}&quot;')">
+          {%- if pkg_installable == true -%}
+            {%- capture url_value -%}pkg install &quot;{{ v.url }}&quot;{%- endcapture -%}
+          <button type="button" class="btn btn-outline-primary"
+                  onclick="doCopy('{{ url_value }}')">
             <i class="far fa-clipboard"></i>
           </button>
+          {%- else -%}
+            {%- assign url_value = v.url -%}
+          {%- endif -%}
         </div>
         <input type="text" class="form-control border-primary" disabled
-               value="pkg install &quot;{{ v.url }}&quot;">
+               value="{{ url_value }}">
       </div>
 
       <ul>
