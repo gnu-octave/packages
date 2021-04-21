@@ -1,19 +1,14 @@
 # Package contribution guidelines
 
-This guide explains how to add your Octave package to
+This guide explains how to add your Octave package or toolbox to
 <https://gnu-octave.github.io/packages/>.
 
 
 ## Quick info
 
-- Your package must follow the
-  [Octave package format](https://octave.org/doc/v6.2.0/Creating-Packages.html).
-  For a minimal example demonstrating **Octave/C/C++/FORTRAN code** see
-  <https://github.com/gnu-octave/pkg-example>.
-
-- A package entry in this index is managed by a single
-  [YAML](https://en.wikipedia.org/wiki/YAML) file,
-  [`packages/pkg-example.md`](#example-package-entry),
+- A package entry in the "Octave Packages" index is managed by a single
+  [YAML](https://en.wikipedia.org/wiki/YAML) file.
+  [See below `packages/pkg-example.yaml`](#example-package-entry),
   for an example package called "pkg-example".
 
 - Adding or updating your package is done by a
@@ -29,13 +24,23 @@ This guide explains how to add your Octave package to
 
   See below for more information on automatic reviews.
 
+- If your package does not follow the
+  [Octave package format](https://octave.org/doc/v6.2.0/Creating-Packages.html)
+  it cannot be installed automatically by the Octave
+  [`pkg`](https://octave.org/doc/v6.2.0/Installing-and-Removing-Packages.html)-tool.
+  In this case,
+  please provide and link custom installation instructions to help your users.
+
+  For a minimal example how to organize **Octave/C/C++/FORTRAN code**
+  in the Octave package format,
+  see <https://github.com/gnu-octave/pkg-example>.
 
 ## Add your package
 
 - Copy the [example package entry](#example-package-entry) below
   and adapt it to your package.
 
-- Create file `packages/<my package>.md` with the name of your package in the
+- Create file `packages/<my package>.yaml` with the name of your package in the
   [packages](https://github.com/gnu-octave/packages/tree/master/packages)
   subdirectory.
 
@@ -46,7 +51,7 @@ This guide explains how to add your Octave package to
   ... or for experts:
   - fork <https://github.com/gnu-octave/packages>
   - clone your fork `https://github.com/<my username>/packages`
-  - add `packages/<my package>.md`
+  - add `packages/<my package>.yaml`
   - commit and push the changes to your fork
   - finally [create a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
@@ -54,7 +59,7 @@ This guide explains how to add your Octave package to
 ## Update your package
 
 - For example after a new release of your package you can update the index
-  entry by editing the file `packages/<my package>.md` with the name of your
+  entry by editing the file `packages/<my package>.yaml` with the name of your
   package in the
   [packages](https://github.com/gnu-octave/packages/tree/master/packages)
   subdirectory.
@@ -70,8 +75,9 @@ This guide explains how to add your Octave package to
 
 ## Example package entry
 
-An example package entry `packages/pkg-example.md`
-(see [output](https://gnu-octave.github.io/packages/packages/pkg-example)):
+An example package entry
+[`packages/pkg-example.yaml`](https://github.com/gnu-octave/packages/blob/master/packages/pkg-example.yaml)
+(see [output](https://gnu-octave.github.io/packages/pkg-example)):
 
 ```yaml
 ---
@@ -108,18 +114,27 @@ maintainers:
 - name: "Another Contactless Developer"
   contact:
 versions:
+- id: "1.1.0"
+  date: "2021-04-06"
+  sha256: "bff441755f0d68596f2efd027fe637b5b6c52b722ffd6255bdb8a5f34ab4ef2a"
+  url: "https://github.com/gnu-octave/pkg-example/archive/1.1.0.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "1.0.0"
   date: "2020-09-02"
   sha256: "6b7e4b6bef5a681cb8026af55c401cee139b088480f0da60143e02ec8880cb51"
   url: "https://github.com/gnu-octave/pkg-example/archive/1.0.0.tar.gz"
   depends:
-  - "octave (>= 4.2.0)"
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "dev"
   date:
   sha256:
   url: "https://github.com/gnu-octave/pkg-example/archive/master.zip"
   depends:
   - "octave (>= 5.2.0)"
+  - "pkg"
 ---
 ```
 
@@ -228,13 +243,17 @@ versions:
 
   - `depends`: list of dependency strings.
 
-    A dependency string looks like `"octave (>= 5.2.0)"`.
+    A dependency string looks like `"pkg"` or `"octave (>= 5.2.0)"`.
 
-    It starts with the name of the dependency "octave" followed by a single
-    space and in brackets the operator `>=` separated by a space to the
-    dependent version `5.2.0`.
+    > The dependency "pkg" with any or no version marks this package as
+    > installable by the Octave `pkg`-tool.
 
-    Permitted names are "octave" and any other Octave package.
+    A dependency starts with the name (e.g. "pkg" or "octave"), optionally
+    followed by the version in round brackets (parentheses) separated by a
+    single space.  The optional version starts with an operator (e.g. `>=`)
+    separated by a space to the dependent version `5.2.0`.
+
+    Permitted names are "pkg", "octave", and any other package.
 
     > **Note:** Refrain from adding system libraries here, for example.
     > The used package tool might not be able to resolve the dependency
