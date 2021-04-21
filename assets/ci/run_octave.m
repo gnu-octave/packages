@@ -21,6 +21,22 @@ function run_octave ()
   for p = pList
     try
       pkg_name_version = [p{1}, "@", __pkg__.(p{1}).versions(1).id];
+
+      ## Check if package can be installed by "pkg", otherwise skip.
+      pkg_installable = false;
+      dependencies = {__pkg__.(p{1}).versions(1).depends.name};
+      for i = 1:length (dependencies)
+        if (strcmp (strsplit (dependencies{i}){1}, "pkg"))
+          pkg_installable = true;
+          break;
+        endif
+      endfor
+      if (! pkg_installable)
+        step_disp_h2 (["Skip '", pkg_name_version, "', no 'pkg' dependency."]);
+        continue;
+      endif
+
+      ## Test basic package installation.
       step_disp_h2 (["Run: pkg install   ", pkg_name_version]);
       pkg ("install",  __pkg__.(p{1}).versions(1).url);
       step_disp_h2 ("done.");
