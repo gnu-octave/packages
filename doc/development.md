@@ -1,6 +1,4 @@
-# GNU Octave - Packages
-
-**Development guide**
+# Octave Packages development guide
 
 ## Quick info
 

@@ -1,4 +1,4 @@
-# Package contribution guidelines
+# Octave Packages contribution guidelines
 
 This guide explains how to add your Octave package or toolbox to
 <https://gnu-octave.github.io/packages/>.
