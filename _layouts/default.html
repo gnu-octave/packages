@@ -108,10 +108,14 @@
 
     {%- if page.layout == "package_index" -%}
     <script>
+    var tabHeight = Math.round(window.innerHeight / 100) * 100 - 320;
+    if (tabHeight < 200) {
+      tabHeight = 200;
+    }
     $(document).ready( function () {
       $('#package-index').DataTable( {
         scrollX:        true,
-        scrollY:        700,
+        scrollY:        tabHeight,
         scrollCollapse: true,
         scroller:       true,
         order: [[ 4, "desc" ]],
