@@ -31,7 +31,7 @@
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:title" content="
       {%- if page.layout == "package" -%}
-        {{ page.name | remove: '.md' }} package
+        {{ page.name | remove: '.yaml' }} package
       {%- else -%}
         {{ site.title }}
       {%- endif -%}
@@ -49,7 +49,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="
       {%- if page.layout == "package" -%}
-        {{ page.name | remove: '.md' }} package
+        {{ page.name | remove: '.yaml' }} package
       {%- else -%}
         {{ site.title }}
       {%- endif -%}
