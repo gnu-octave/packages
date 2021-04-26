@@ -23,9 +23,11 @@ a.nav-link:hover {
 }
 
 div.card-header img { width: 100px; }
-div.card-header-mod { background-color: aliceblue; }
+div.card-header-mod { background-color: #dbeeff; }
 div.input-group-mod,
 div.input-group-mod input[disabled] { background-color: white; }
+
+div.alert-warning-mod { color: #212529; }
 
 span.fixed-width {
   display: inline-block;

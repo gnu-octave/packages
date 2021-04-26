@@ -98,6 +98,14 @@ layout: default
           {%- endfor -%}
         </li>
       </ul>
+      {%- if first_version == true and pkg_installable == false -%}
+      <div class="alert alert-warning alert-warning-mod ml-3" role="alert">
+        <b>Please note:</b>
+        this package cannot be installed via the Octave <b>pkg</b> tool.
+        Follow the custom installation instructions given
+        in the package documentation below.
+      </div>
+      {%- endif -%}
     </div>
 
     {%- if first_version == true and page.versions.size > 1 -%}
