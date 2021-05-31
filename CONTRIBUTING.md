@@ -41,7 +41,7 @@ This guide explains how to add your Octave package or toolbox to
   and adapt it to your package.
 
 - Create file `packages/<my package>.yaml` with the name of your package in the
-  [packages](https://github.com/gnu-octave/packages/tree/master/packages)
+  [packages](https://github.com/gnu-octave/packages/tree/main/packages)
   subdirectory.
 
   To do this, either use the "easy" way by following the
@@ -61,7 +61,7 @@ This guide explains how to add your Octave package or toolbox to
 - For example after a new release of your package you can update the index
   entry by editing the file `packages/<my package>.yaml` with the name of your
   package in the
-  [packages](https://github.com/gnu-octave/packages/tree/master/packages)
+  [packages](https://github.com/gnu-octave/packages/tree/main/packages)
   subdirectory.
 
   To do this, either use the "easy" way by following the
@@ -76,7 +76,7 @@ This guide explains how to add your Octave package or toolbox to
 ## Example package entry
 
 An example package entry
-[`packages/pkg-example.yaml`](https://github.com/gnu-octave/packages/blob/master/packages/pkg-example.yaml)
+[`packages/pkg-example.yaml`](https://github.com/gnu-octave/packages/blob/main/packages/pkg-example.yaml)
 (see [output](https://gnu-octave.github.io/packages/pkg-example)):
 
 ```yaml
@@ -91,11 +91,11 @@ description: >-
   Multiple lines are allowed.  Each line may have maximal 80 characters.
   Exceptions are URLs.  Paragraphs, blank lines, and line breaks are ignored
   and replaced by spaces.
-icon: "https://raw.githubusercontent.com/gnu-octave/pkg-example/master/doc/icon.png"
+icon: "https://raw.githubusercontent.com/gnu-octave/pkg-example/main/doc/icon.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
-  url: "https://github.com/gnu-octave/pkg-example/blob/master/COPYING"
+  url: "https://github.com/gnu-octave/pkg-example/blob/main/COPYING"
 - icon: "fas fa-rss"
   label: "news"
   url: "https://github.com/gnu-octave/pkg-example/releases/"
@@ -104,7 +104,7 @@ links:
   url: "https://github.com/gnu-octave/pkg-example/"
 - icon: "fas fa-book"
   label: "package documentation"
-  url: "https://github.com/gnu-octave/pkg-example/blob/master/README.md"
+  url: "https://github.com/gnu-octave/pkg-example/blob/main/README.md"
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://github.com/gnu-octave/pkg-example/issues"
@@ -131,7 +131,7 @@ versions:
 - id: "dev"
   date:
   sha256:
-  url: "https://github.com/gnu-octave/pkg-example/archive/master.zip"
+  url: "https://github.com/gnu-octave/pkg-example/archive/main.zip"
   depends:
   - "octave (>= 5.2.0)"
   - "pkg"
@@ -238,7 +238,7 @@ versions:
     > archive generation feature of many source code hosting services, such as
     > GitHub, GitLab, ...
     >
-    > See the *example package entry* above for installing the current "master"
+    > See the *example package entry* above for installing the current "main"
     > branch of the package development repository without creating a release.
 
   - `depends`: list of dependency strings.
@@ -270,9 +270,9 @@ Automatic reviews are performed by
 [TravisCI](https://travis-ci.com/github/gnu-octave/packages/)
 running the following scripts on a pull request:
 
-- `bash` [`./assets/ci/run_yamllint.sh`](https://github.com/gnu-octave/packages/blob/master/assets/ci/run_yamllint.sh)
-- `bash` [`./assets/ci/run_bundle.sh`](https://github.com/gnu-octave/packages/blob/master/assets/ci/run_bundle.sh)
-- `docker run -it --volume="$(pwd):/home/packages:rw" gnuoctave/octave:6.2.0 octave --eval "run /home/packages`[`/assets/ci/run_octave.m`](https://github.com/gnu-octave/packages/blob/master/assets/ci/run_octave.m)`"`
+- `bash` [`./assets/ci/run_yamllint.sh`](https://github.com/gnu-octave/packages/blob/main/assets/ci/run_yamllint.sh)
+- `bash` [`./assets/ci/run_bundle.sh`](https://github.com/gnu-octave/packages/blob/main/assets/ci/run_bundle.sh)
+- `docker run -it --volume="$(pwd):/home/packages:rw" gnuoctave/octave:6.2.0 octave --eval "run /home/packages`[`/assets/ci/run_octave.m`](https://github.com/gnu-octave/packages/blob/main/assets/ci/run_octave.m)`"`
 
 On Linux systems,
 you can run these test before a pull request to avoid failures

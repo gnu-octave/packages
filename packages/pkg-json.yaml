@@ -3,11 +3,11 @@ layout: "package"
 permalink: "pkg-json"
 description: >-
   JSON support by Matlab compatible (jsondecode / jsonencode) functions.
-icon: "https://raw.githubusercontent.com/gnu-octave/pkg-json/master/doc/JSON.png"
+icon: "https://raw.githubusercontent.com/gnu-octave/pkg-json/main/doc/JSON.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
-  url: "https://github.com/gnu-octave/pkg-json/blob/master/COPYING"
+  url: "https://github.com/gnu-octave/pkg-json/blob/main/COPYING"
 - icon: "fas fa-rss"
   label: "news"
   url: "https://github.com/gnu-octave/pkg-json/releases/"
@@ -16,7 +16,7 @@ links:
   url: "https://github.com/gnu-octave/pkg-json/"
 - icon: "fas fa-book"
   label: "package documentation"
-  url: "https://github.com/gnu-octave/pkg-json/blob/master/README.md"
+  url: "https://github.com/gnu-octave/pkg-json/blob/main/README.md"
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://github.com/gnu-octave/pkg-json/issues"
@@ -51,7 +51,7 @@ versions:
 - id: "dev"
   date:
   sha256:
-  url: "https://github.com/gnu-octave/pkg-json/archive/master.zip"
+  url: "https://github.com/gnu-octave/pkg-json/archive/main.zip"
   depends:
   - "octave (>= 5.1.0)"
   - "octave (< 7.0.0)"

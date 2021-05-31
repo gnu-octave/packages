@@ -3,11 +3,11 @@ layout: "package"
 permalink: "pkg"
 description: >-
   The GNU Octave package management tool.
-icon: "https://raw.githubusercontent.com/gnu-octave/pkg/master/doc/icon.png"
+icon: "https://raw.githubusercontent.com/gnu-octave/pkg/main/doc/icon.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
-  url: "https://github.com/gnu-octave/pkg/blob/master/COPYING"
+  url: "https://github.com/gnu-octave/pkg/blob/main/COPYING"
 - icon: "fas fa-rss"
   label: "news"
   url: "https://github.com/gnu-octave/pkg/releases/"
@@ -16,7 +16,7 @@ links:
   url: "https://github.com/gnu-octave/pkg/"
 - icon: "fas fa-book"
   label: "package documentation"
-  url: "https://github.com/gnu-octave/pkg/blob/master/README.md"
+  url: "https://github.com/gnu-octave/pkg/blob/main/README.md"
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://github.com/gnu-octave/pkg/issues"
@@ -27,7 +27,7 @@ versions:
 - id: "dev"
   date:
   sha256:
-  url: "https://github.com/gnu-octave/pkg/archive/master.zip"
+  url: "https://github.com/gnu-octave/pkg/archive/main.zip"
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
