@@ -1,6 +1,6 @@
 name: CI
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
@@ -14,46 +14,47 @@ on:
 jobs:
 
   check-package:
-  
+
     runs-on: ubuntu-latest
-    
+
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.6
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-      
+
       - name: Pull Octave Docker image
         run: docker pull docker.io/gnuoctave/octave:6.2.0
-      
+
       - name: Create local package repository
         run: bundle exec jekyll build -d test
-      
+
       - name: Test package
         run: |
           docker run \
             --volume="$(pwd)/assets/ci/run_octave.m:/home/jovyan/run_octave.m:ro" \
+            --volume="$(pwd)/test:/home/jovyan/test:ro" \
             gnuoctave/octave:6.2.0 \
             octave --eval "run run_octave.m"
 
   check-yaml:
-    
+
     runs-on: ubuntu-latest
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
+
       - name: Set up Python 3
         uses: actions/setup-python@v2
         with:
           # Semantic version range syntax or exact version of a Python version
           python-version: '3.x'
-      
+
       - name: Install dependencies
         run: python -m pip install --upgrade pip setuptools wheel yamllint
 
