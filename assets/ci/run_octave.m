@@ -1,12 +1,4 @@
 function run_octave ()
-  ## Set package paths Octave version specific
-  step_disp_h1 ("Set package install directory");
-  tmp = "/home/packages";
-  tmp = pkg ("prefix", tmp, tmp);
-  pkg ("local_list", [tmp, "/.octave_packages"]);
-  disp (["    dir: ", tmp, "/.octave_packages"]);
-  step_disp_h2 ("done.");
-
   ## Resolve locally build package index from (assets/ci/run_bundle.sh).
   step_disp_h1 ("Resolve locally build package index");
   __pkg__ = package_index_local_resolve ();
