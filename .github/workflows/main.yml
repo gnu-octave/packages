@@ -36,10 +36,9 @@ jobs:
       - name: Test package
         run: |
           docker run \
-            --volume="$(pwd)/assets/ci/run_octave.m:/home/jovyan/run_octave.m:ro" \
-            --volume="$(pwd)/test:/home/jovyan/test:ro" \
+            --volume="$(pwd):/home/jovyan/packages:rw" \
             gnuoctave/octave:6.2.0 \
-            octave --eval "run run_octave.m"
+            octave --eval "cd packages; run assets/ci/run_octave.m"
 
   check-yaml:
 

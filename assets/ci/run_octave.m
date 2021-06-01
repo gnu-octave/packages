@@ -81,7 +81,7 @@ endfunction
 function __pkg__ = package_index_local_resolve ()
   # Normally
   # data = urlread ("https://gnu-octave.github.io/packages/packages/")(6:end);
-  data = fileread ("test/packages/index.html")(6:end);
+  data = fileread ("../../test/packages/index.html")(6:end);
   data = strrep (data, "&gt;",  ">");
   data = strrep (data, "&lt;",  "<");
   data = strrep (data, "&amp;", "&");
