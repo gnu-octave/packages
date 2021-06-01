@@ -20,20 +20,20 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      # FIXME: reattach HEAD https://github.com/actions/checkout/issues/6
-      - run: git switch -c "pull-request"
+        with:
+          fetch-depth: 2  # https://github.com/actions/checkout/issues/124
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.6
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-
-      - name: Pull Octave Docker image
-        run: docker pull docker.io/gnuoctave/octave:6.2.0
+          bundler-cache: true  # runs 'bundle install' and caches installed gems automatically
 
       - name: Create local package repository
         run: bundle exec jekyll build -d test
+
+      - name: Pull Octave Docker image
+        run: docker pull docker.io/gnuoctave/octave:6.2.0
 
       - name: Test package
         run: |

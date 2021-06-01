@@ -1,16 +1,20 @@
-function run_octave ()
-  ## Resolve locally build package index from (assets/ci/run_bundle.sh).
+function run_octave (package_list)
+
+  ## Resolve locally build package index.
   step_disp_h1 ("Resolve locally build package index");
-  __pkg__ = package_index_local_resolve ();
+  pkg_index_file = "../../test/packages/index.html";
+  __pkg__ = package_index_local_resolve (pkg_index_file);
   step_disp_h2 ("done.");
 
   ## Try to install and test the default (first) version of the changed
   ## packages.
   step_disp_h1 ("Install and test changed packages");
-  pList = get_changed_packages ();
-  printf ("    %d package(s) found: %s\n", length (pList), ...
-    strjoin (pList, " "));
-  for p = pList
+  if (nargin == 0)
+    package_list = get_changed_packages ();
+  endif
+  printf ("    %d package(s) found: %s\n", length (package_list), ...
+    strjoin (package_list, " "));
+  for p = package_list
     try
       pkg_name_version = [p{1}, "@", __pkg__.(p{1}).versions(1).id];
 
@@ -78,10 +82,10 @@ function changed_packages = get_changed_packages ()
 endfunction
 
 
-function __pkg__ = package_index_local_resolve ()
+function __pkg__ = package_index_local_resolve (pkg_index_file)
   # Normally
   # data = urlread ("https://gnu-octave.github.io/packages/packages/")(6:end);
-  data = fileread ("../../test/packages/index.html")(6:end);
+  data = fileread (pkg_index_file)(6:end);
   data = strrep (data, "&gt;",  ">");
   data = strrep (data, "&lt;",  "<");
   data = strrep (data, "&amp;", "&");
@@ -97,6 +101,7 @@ function step_disp_h1 (str)
   printf ("--- Step %2d: %s\n", i++, str);
   disp ("--------------------------------------------------");
 endfunction
+
 
 function step_disp_h2 (str)
   disp (" ");
