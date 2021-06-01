@@ -20,6 +20,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      # FIXME: reattach HEAD https://github.com/actions/checkout/issues/6
+      - run: git switch -c "pull-request"
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
