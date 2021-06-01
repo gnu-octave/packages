@@ -21,13 +21,17 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      
       - name: Pull Octave Docker image
         run: docker pull docker.io/gnuoctave/octave:6.2.0
       
       - name: Create local package repository
-        run: |
-          bundle install
-          bundle exec jekyll build -d test
+        run: bundle exec jekyll build -d test
       
       - name: Test package
         run: |
@@ -54,5 +58,5 @@ jobs:
         run: python -m pip install --upgrade pip setuptools wheel yamllint
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Run yamllint
         run: bash ./assets/ci/run_yamllint.sh
