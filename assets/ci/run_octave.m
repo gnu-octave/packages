@@ -66,7 +66,7 @@ function changed_packages = get_changed_packages ()
   ## Return a cell array of strings of changed "packages/*" files (packages)
   ## from the last git commit.
   changed_packages = cell(0,1);
-  git_command = "git --no-pager log -1 --name-only --oneline";
+  git_command = "git --no-pager diff-tree --no-commit-id --name-only -r HEAD";
   [~, output] = system (git_command);
   disp(output)
   output = (strsplit (output))(1:end-1);
