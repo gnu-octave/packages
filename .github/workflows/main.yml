@@ -13,11 +13,33 @@ on:
 
 jobs:
 
+  check-package:
+  
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      
+      - name: Pull Octave Docker image
+        run: docker pull docker.io/gnuoctave/octave:6.2.0
+      
+      - name: Create local package repository
+        run: |
+          bundle install
+          bundle exec jekyll build -d test
+      
+      - name: Test package
+        run: |
+          docker run -it \
+            --volume="$(pwd)/assets/ci/run_octave.m:/home/jovyan/run_octave.m:ro" \
+            gnuoctave/octave:6.2.0 \
+            octave --eval "run run_octave.m"
+
   check-yaml:
     
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
