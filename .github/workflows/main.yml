@@ -57,6 +57,9 @@ jobs:
       - name: Install dependencies
         run: python -m pip install --upgrade pip setuptools wheel yamllint
 
-      # Runs a single command using the runners shell
+      # FIXME: Remove first line, once the affected file and line number is
+      #        visible by default.
       - name: Run yamllint
-        run: bash ./assets/ci/run_yamllint.sh
+        run: |
+          yamllint --format standard -c ./assets/ci/yamllint.yaml packages
+          yamllint -c ./assets/ci/yamllint.yaml packages
