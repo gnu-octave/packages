@@ -14,15 +14,13 @@ This guide explains how to add your Octave package or toolbox to
 - Adding or updating your package is done by a
   [**pull request**](https://docs.github.com/en/github/getting-started-with-github/github-glossary#pull-request).
   The pull request is reviewed
-  [automatically by TravisCI](https://travis-ci.com/github/gnu-octave/packages/)
+  [automatically via GitHub Actions](https://github.com/gnu-octave/packages/actions)
   and has to be approved and merged manually by a member of the
   [GitHub "gnu-octave" organization](https://github.com/orgs/gnu-octave/people).
 
-  > If the automatic TravisCI review fails,
+  > If the automatic GitHub Actions review fails,
   > please [create an issue](https://github.com/gnu-octave/packages/issues)
   > to resolve the problem.
-
-  See below for more information on automatic reviews.
 
 - If your package does not follow the
   [Octave package format](https://octave.org/doc/v6.2.0/Creating-Packages.html)
@@ -262,18 +260,3 @@ versions:
     Permitted operators are documented in the
     [Octave manual](https://octave.org/doc/v6.2.0/The-DESCRIPTION-File.html)
     "DESCRIPTION"-file "Depends" section.
-
-
-## Automatic reviews
-
-Automatic reviews are performed by
-[TravisCI](https://travis-ci.com/github/gnu-octave/packages/)
-running the following scripts on a pull request:
-
-- `bash` [`./assets/ci/run_yamllint.sh`](https://github.com/gnu-octave/packages/blob/main/assets/ci/run_yamllint.sh)
-- `bash` [`./assets/ci/run_bundle.sh`](https://github.com/gnu-octave/packages/blob/main/assets/ci/run_bundle.sh)
-- `docker run -it --volume="$(pwd):/home/packages:rw" gnuoctave/octave:6.2.0 octave --eval "run /home/packages`[`/assets/ci/run_octave.m`](https://github.com/gnu-octave/packages/blob/main/assets/ci/run_octave.m)`"`
-
-On Linux systems,
-you can run these test before a pull request to avoid failures
-or to resolve issues on your local machine.
