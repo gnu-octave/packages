@@ -30,22 +30,21 @@ jobs:
           bundler-cache: true  # runs 'bundle install' and caches installed gems automatically
 
       - name: Create local package repository
-        run: bundle exec jekyll build -d test
+        run: |
+          bundle exec jekyll build -d test
+          echo "PKG_INDEX_FILE=\"$GITHUB_WORKSPACE/test/packages/index.html\"" \
+            >> $GITHUB_ENV
 
       - name: Check for changed packages
         run: |
           for f in $(git --no-pager diff --name-only HEAD HEAD~20)
           do
-            dir="$(dirname $f)"
-            ext="${f##*.}"
-            name="$(basename $f)"
-            name="${name%.*}"
-            if [ "$dir" == "packages" ] && [ "$ext" == "yaml" ]
+            if [ "$(dirname $f)" == "packages" ] && [ "${f##*.}" == "yaml" ]
             then
-              CHANGED_PACKAGES+=" $name "
+              name="$(basename $f)"
+              CHANGED_PACKAGES+=" ${name%.*} "
             fi
           done
-
           if [ -n "$CHANGED_PACKAGES" ]
           then
             echo "Changed packages:  $CHANGED_PACKAGES"
@@ -56,23 +55,24 @@ jobs:
         env:
           CHANGED_PACKAGES:
 
+      - name: Pull Octave Docker image
+        if: ${{ env.CHANGED_PACKAGES != '' }}
+        run: docker pull docker.io/gnuoctave/octave:6.2.0
+
       - name: Test packages
+        if: ${{ env.CHANGED_PACKAGES != '' }}
         run: |
           pkgs=${{ env.CHANGED_PACKAGES }}
           for p in $pkgs
           do
-            echo "check $p"
+            echo "Test package '$p'"
+            docker run \
+              --volume="$(pwd):/home/jovyan/packages:rw" \
+              gnuoctave/octave:6.2.0 \
+              octave --eval "cd packages/assets/ci; \
+                octave_ci('$p', '${{ env.PKG_INDEX_FILE }}')"
           done
 
-      #- name: Pull Octave Docker image
-      #  run: docker pull docker.io/gnuoctave/octave:6.2.0
-
-      #- name: Test packages
-      #  run: |
-      #    docker run \
-      #      --volume="$(pwd):/home/jovyan/packages:rw" \
-      #      gnuoctave/octave:6.2.0 \
-      #      octave --eval "cd packages; run assets/ci/run_octave.m"
 
   check-yaml:
 
