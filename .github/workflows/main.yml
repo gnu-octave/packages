@@ -70,11 +70,11 @@ jobs:
           pkgs=${{ env.CHANGED_PACKAGES }}
           for p in $pkgs
           do
-            echo "Test package '$p'"
+            echo -e "\n\n## Test package '$p'\n\n"
             docker run \
               --volume="$(pwd):/home/jovyan/packages:rw" \
               gnuoctave/octave:6.2.0 \
-              octave --eval "cd packages/assets/ci; \
+              octave-cli --eval "cd packages/assets/ci; \
                 octave_ci('$p', '/home/jovyan/packages/${{ env.PKG_INDEX_FILE }}')"
           done
 

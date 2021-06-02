@@ -55,19 +55,19 @@ function octave_ci (package_name, pkg_index_file)
     ## Test basic package installation.
     mkdir ("~/octave");  # Avoids pkg warning.
     cd (tempdir ());
-    step_disp_h2 (["Run: pkg install   ", pkg_name_version]);
+    step_disp_h1 (["Run: pkg install   ", pkg_name_version]);
     pkg ("install",  __pkg__.(package_name).versions(1).url);
     step_disp_h2 ("done.");
-    step_disp_h2 (["Run: pkg load      ", pkg_name_version]);
+    step_disp_h1 (["Run: pkg load      ", pkg_name_version]);
     pkg ("load", package_name);
     step_disp_h2 ("done.");
-    step_disp_h2 (["Run: pkg unload    ", pkg_name_version]);
+    step_disp_h1 (["Run: pkg unload    ", pkg_name_version]);
     pkg ("unload", package_name);
     step_disp_h2 ("done.");
-    step_disp_h2 (["Run: pkg test      ", pkg_name_version]);
+    step_disp_h1 (["Run: pkg test      ", pkg_name_version]);
     pkg ("test", package_name);
     step_disp_h2 ("done.");
-    step_disp_h2 (["Run: pkg uninstall ", pkg_name_version]);
+    step_disp_h1 (["Run: pkg uninstall ", pkg_name_version]);
     pkg ("uninstall", package_name);
     step_disp_h2 ("done.");
     step_disp_h1 ("Show: fntests.log");

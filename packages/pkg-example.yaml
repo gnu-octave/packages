@@ -33,7 +33,7 @@ maintainers:
   contact:
 versions:
 - id: "1.1.0"
-  date: "2021-04-06 "
+  date: "2021-04-06"
   sha256: "bff441755f0d68596f2efd027fe637b5b6c52b722ffd6255bdb8a5f34ab4ef2a"
   url: "https://github.com/gnu-octave/pkg-example/archive/1.1.0.tar.gz"
   depends:
