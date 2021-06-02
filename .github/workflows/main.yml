@@ -32,10 +32,8 @@ jobs:
       - name: Create local package repository
         run: |
           bundle exec jekyll build -d test
-          pwd
-          ls -al
-          echo "PKG_INDEX_FILE=\"$GITHUB_WORKSPACE/test/packages/index.html\"" \
-            >> $GITHUB_ENV
+          ##    PKG_INDEX_FILE is relative path
+          echo "PKG_INDEX_FILE=\"test/packages/index.html\"" >> $GITHUB_ENV
 
       - name: Check for changed packages
         run: |
@@ -72,7 +70,7 @@ jobs:
               --volume="$(pwd):/home/jovyan/packages:rw" \
               gnuoctave/octave:6.2.0 \
               octave --eval "cd packages/assets/ci; \
-                octave_ci('$p', '${{ env.PKG_INDEX_FILE }}')"
+                octave_ci('$p', '/home/jovyan/packages/${{ env.PKG_INDEX_FILE }}')"
           done
 
 
