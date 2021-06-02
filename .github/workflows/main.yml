@@ -50,7 +50,7 @@ jobs:
           mkdir -p    /home/runner/.cache
           if [ -f $OCTAVE_TAR ]; then
             echo "Load cached image"
-            docker load < $OCTAVE_TAR
+            docker load < $OCTAVE_TAR || rm -f $OCTAVE_TAR
           else
             echo "Pull from DockerHub"
             docker pull docker.io/gnuoctave/octave:6.2.0
