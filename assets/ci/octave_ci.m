@@ -32,8 +32,6 @@ function octave_ci (package_name, pkg_index_file)
 
   ## Try to install and test the default (first) version of the changed
   ## packages.
-  step_disp_h1 ("Install and test changed packages");
-
   try
     pkg_name_version = [package_name, "@", ...
       __pkg__.(package_name).versions(1).id];
@@ -109,11 +107,10 @@ function step_disp_h1 (str)
   disp ("--------------------------------------------------");
   printf ("--- Step %2d: %s\n", i++, str);
   disp ("--------------------------------------------------");
+  disp (" ");
 endfunction
 
 
 function step_disp_h2 (str)
-  disp (" ");
-  printf ("    %s\n", str);
-  disp (" ");
+  printf ("\n    %s\n\n", str);
 endfunction
