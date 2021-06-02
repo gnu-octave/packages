@@ -21,7 +21,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 2  # https://github.com/actions/checkout/issues/124
+          fetch-depth: 20  # https://github.com/actions/checkout/issues/124
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
