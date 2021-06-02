@@ -34,26 +34,27 @@ jobs:
 
       - name: Check for changed packages
         run: |
-          for f in $(git --no-pager diff --name-only HEAD HEAD~1)
+          for f in $(git --no-pager diff --name-only HEAD HEAD~10)
           do
             dir="$(dirname $f)"
             ext="${f##*.}"
             name="$(basename $f)"
             name="${name%.*}"
-            echo "$dir   $name   $ext"
             if [ "$dir" == "packages" ] && [ "$ext" == "yaml" ]
             then
               CHANGED_PACKAGES+=" $name "
             fi
           done
 
-          if [ -n "CHANGED_PACKAGES" ]
+          if [ -n "$CHANGED_PACKAGES" ]
           then
             echo "Testing packages:  $CHANGED_PACKAGES"
             echo "CHANGED_PACKAGES=\"$CHANGED_PACKAGES\"" >> $GITHUB_ENV
+          else
+            echo "No packages changed."
           fi
         env:
-          CHANGED_PACKAGES: ""
+          CHANGED_PACKAGES:
 
       - name: Test packages
         run: echo "${{ env.CHANGED_PACKAGES }}"
