@@ -32,15 +32,42 @@ jobs:
       - name: Create local package repository
         run: bundle exec jekyll build -d test
 
-      - name: Pull Octave Docker image
-        run: docker pull docker.io/gnuoctave/octave:6.2.0
+      - name: Docker cache (1/2)
+        uses: actions/cache@v2
+        env:
+          cache-name: octave-docker-image
+        with:
+          path: $GITHUB_WORKSPACE/.cache
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/octave_6.2.0.tar') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
 
-      - name: Test package
+      - name: Docker cache (2/2)
         run: |
-          docker run \
-            --volume="$(pwd):/home/jovyan/packages:rw" \
-            gnuoctave/octave:6.2.0 \
-            octave --eval "cd packages; run assets/ci/run_octave.m"
+          OCTAVE_TAR="$GITHUB_WORKSPACE/.cache/octave_6.2.0.tar"
+          echo "$OCTAVE_TAR"
+          ls -al $GITHUB_WORKSPACE/.cache
+          if [ -f $OCTAVE_TAR ]; then
+            echo "Use cache $(date -u)"
+            cat $OCTAVE_TAR
+            #docker load < "$OCTAVE_TAR"
+          else
+            echo "Pull from DockerHub"
+            mkdir -p $GITHUB_WORKSPACE/.cache
+            echo "Use cache $(date -u)" > $OCTAVE_TAR
+            #docker pull docker.io/gnuoctave/octave:6.2.0
+            #docker save docker.io/gnuoctave/octave:6.2.0 > $OCTAVE_TAR
+          fi
+
+      - name: Test packages
+        run: |
+          echo "docker run"
+          #docker run \
+          #  --volume="$(pwd):/home/jovyan/packages:rw" \
+          #  gnuoctave/octave:6.2.0 \
+          #  octave --eval "cd packages; run assets/ci/run_octave.m"
 
   check-yaml:
 
