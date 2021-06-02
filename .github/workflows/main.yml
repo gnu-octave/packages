@@ -23,17 +23,20 @@ jobs:
         with:
           fetch-depth: 2  # https://github.com/actions/checkout/issues/124
 
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.6
           bundler-cache: true  # runs 'bundle install' and caches installed gems automatically
 
+
       - name: Create local package repository
         run: |
           bundle exec jekyll build -d test
           ##    PKG_INDEX_FILE is relative path
           echo "PKG_INDEX_FILE=\"test/packages/index.html\"" >> $GITHUB_ENV
+
 
       - name: Check for changed packages
         run: |
@@ -55,9 +58,11 @@ jobs:
         env:
           CHANGED_PACKAGES:
 
+
       - name: Pull Octave Docker image
         if: ${{ env.CHANGED_PACKAGES != '' }}
         run: docker pull docker.io/gnuoctave/octave:6.2.0
+
 
       - name: Test packages
         if: ${{ env.CHANGED_PACKAGES != '' }}

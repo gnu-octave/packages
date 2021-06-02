@@ -53,6 +53,7 @@ function octave_ci (package_name, pkg_index_file)
     endif
 
     ## Test basic package installation.
+    mkdir ("~/octave");  # Avoids pkg warning.
     cd (tempdir ());
     step_disp_h2 (["Run: pkg install   ", pkg_name_version]);
     pkg ("install",  __pkg__.(package_name).versions(1).url);
@@ -69,6 +70,10 @@ function octave_ci (package_name, pkg_index_file)
     step_disp_h2 (["Run: pkg uninstall ", pkg_name_version]);
     pkg ("uninstall", package_name);
     step_disp_h2 ("done.");
+    step_disp_h1 ("Show: fntests.log");
+    disp ("------------------------------------------------------------")
+    type (fullfile (tempdir (), "fntests.log"))
+    disp ("------------------------------------------------------------")
   catch e
     ## In case of error try to get as much information as possible.
     ##
