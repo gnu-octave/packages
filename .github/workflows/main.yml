@@ -21,7 +21,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 20  # https://github.com/actions/checkout/issues/124
+          fetch-depth: 22  # https://github.com/actions/checkout/issues/124
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -34,7 +34,7 @@ jobs:
 
       - name: Check for changed packages
         run: |
-          for f in $(git --no-pager diff --name-only HEAD HEAD~10)
+          for f in $(git --no-pager diff --name-only HEAD HEAD~20)
           do
             dir="$(dirname $f)"
             ext="${f##*.}"
@@ -58,7 +58,7 @@ jobs:
 
       - name: Test packages
         run: |
-          for $p in ${{ env.CHANGED_PACKAGES }}
+          for p in ${{ env.CHANGED_PACKAGES }}
           do
             echo "check $p"
           done
