@@ -48,14 +48,14 @@ jobs:
         run: |
           OCTAVE_TAR="$GITHUB_WORKSPACE/.cache/octave_6.2.0.tar"
           echo "$OCTAVE_TAR"
-          ls -al $GITHUB_WORKSPACE/.cache
+          mkdir -p $GITHUB_WORKSPACE/.cache
+          ls -al   $GITHUB_WORKSPACE/.cache
           if [ -f $OCTAVE_TAR ]; then
             echo "Use cache $(date -u)"
             cat $OCTAVE_TAR
             #docker load < "$OCTAVE_TAR"
           else
             echo "Pull from DockerHub"
-            mkdir -p $GITHUB_WORKSPACE/.cache
             echo "Use cache $(date -u)" > $OCTAVE_TAR
             #docker pull docker.io/gnuoctave/octave:6.2.0
             #docker save docker.io/gnuoctave/octave:6.2.0 > $OCTAVE_TAR
