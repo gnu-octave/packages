@@ -32,13 +32,41 @@ jobs:
       - name: Create local package repository
         run: bundle exec jekyll build -d test
 
-      - name: Test packages
+      - name: Check for changed packages
         run: |
-          docker pull docker.io/gnuoctave/octave:6.2.0
-          docker run \
-            --volume="$(pwd):/home/jovyan/packages:rw" \
-            gnuoctave/octave:6.2.0 \
-            octave --eval "cd packages; run assets/ci/run_octave.m"
+          for f in $(git --no-pager diff --name-only HEAD HEAD~1)
+          do
+            dir="$(dirname $f)"
+            ext="${f##*.}"
+            name="$(basename $f)"
+            name="${name%.*}"
+            echo "$dir   $name   $ext"
+            if [ "$dir" == "packages" ] && [ "$ext" == "yaml" ]
+            then
+              CHANGED_PACKAGES+=" $name "
+            fi
+          done
+
+          if [ -n "CHANGED_PACKAGES" ]
+          then
+            echo "Testing packages:  $CHANGED_PACKAGES"
+            echo "CHANGED_PACKAGES=\"$CHANGED_PACKAGES\"" >> $GITHUB_ENV
+          fi
+        env:
+          CHANGED_PACKAGES: ""
+
+      - name: Test packages
+        run: echo "${{ env.CHANGED_PACKAGES }}"
+
+      #- name: Pull Octave Docker image
+      #  run: docker pull docker.io/gnuoctave/octave:6.2.0
+
+      #- name: Test packages
+      #  run: |
+      #    docker run \
+      #      --volume="$(pwd):/home/jovyan/packages:rw" \
+      #      gnuoctave/octave:6.2.0 \
+      #      octave --eval "cd packages; run assets/ci/run_octave.m"
 
   check-yaml:
 
