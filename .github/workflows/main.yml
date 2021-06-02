@@ -37,7 +37,7 @@ jobs:
         env:
           cache-name: octave-docker-image
         with:
-          path: ~/.cache
+          path: /home/runner/.cache
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/octave_6.2.0.tar') }}
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-
@@ -46,10 +46,10 @@ jobs:
 
       - name: Docker cache (2/2)
         run: |
-          OCTAVE_TAR="~/.cache/octave_6.2.0.tar"
+          OCTAVE_TAR="/home/runner/.cache/octave_6.2.0.tar"
           echo "$OCTAVE_TAR"
-          mkdir -p ~/.cache
-          ls -al   ~/.cache
+          mkdir -p /home/runner/.cache
+          ls -al   /home/runner/.cache
           if [ -f $OCTAVE_TAR ]; then
             echo "Use cache $(date -u)"
             cat $OCTAVE_TAR
@@ -57,7 +57,7 @@ jobs:
           else
             echo "Pull from DockerHub"
             echo "Use cache $(date -u)" > $OCTAVE_TAR
-            ls -al   ~/.cache
+            ls -al   /home/runner/.cache
             #docker pull docker.io/gnuoctave/octave:6.2.0
             #docker save docker.io/gnuoctave/octave:6.2.0 > $OCTAVE_TAR
           fi
