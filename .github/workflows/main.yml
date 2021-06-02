@@ -32,33 +32,9 @@ jobs:
       - name: Create local package repository
         run: bundle exec jekyll build -d test
 
-      - name: Cache setup
-        uses: actions/cache@v2
-        env:
-          cache-name: octave-docker-image
-        with:
-          path: /home/runner/.cache
-          key: v1-${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/octave_6.2.0.tar') }}
-          restore-keys: |
-            v1-${{ runner.os }}-build-${{ env.cache-name }}-
-            v1-${{ runner.os }}-build-
-            v1-${{ runner.os }}-
-
-      - name: Prepare Docker Octave image
-        run: |
-          OCTAVE_TAR="/home/runner/.cache/octave_6.2.0.tar"
-          mkdir -p    /home/runner/.cache
-          if [ -f $OCTAVE_TAR ]; then
-            echo "Load cached image"
-            docker load < $OCTAVE_TAR || rm -f $OCTAVE_TAR
-          else
-            echo "Pull from DockerHub"
-            docker pull docker.io/gnuoctave/octave:6.2.0
-            docker save docker.io/gnuoctave/octave:6.2.0 > $OCTAVE_TAR
-          fi
-
       - name: Test packages
         run: |
+          docker pull docker.io/gnuoctave/octave:6.2.0
           docker run \
             --volume="$(pwd):/home/jovyan/packages:rw" \
             gnuoctave/octave:6.2.0 \
