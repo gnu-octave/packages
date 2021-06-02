@@ -48,7 +48,7 @@ jobs:
 
           if [ -n "$CHANGED_PACKAGES" ]
           then
-            echo "Testing packages:  $CHANGED_PACKAGES"
+            echo "Changed packages:  $CHANGED_PACKAGES"
             echo "CHANGED_PACKAGES=\"$CHANGED_PACKAGES\"" >> $GITHUB_ENV
           else
             echo "No packages changed."
@@ -57,7 +57,11 @@ jobs:
           CHANGED_PACKAGES:
 
       - name: Test packages
-        run: echo "${{ env.CHANGED_PACKAGES }}"
+        run: |
+          for $p in ${{ env.CHANGED_PACKAGES }}
+          do
+            echo "check $p"
+          done
 
       #- name: Pull Octave Docker image
       #  run: docker pull docker.io/gnuoctave/octave:6.2.0
