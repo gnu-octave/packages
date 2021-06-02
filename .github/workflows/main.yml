@@ -38,11 +38,11 @@ jobs:
           cache-name: octave-docker-image
         with:
           path: /home/runner/.cache
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/octave_6.2.0.tar') }}
+          key: v1-${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/octave_6.2.0.tar') }}
           restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
+            v1-${{ runner.os }}-build-${{ env.cache-name }}-
+            v1-${{ runner.os }}-build-
+            v1-${{ runner.os }}-
 
       - name: Prepare Docker Octave image
         run: |
