@@ -58,7 +58,8 @@ jobs:
 
       - name: Test packages
         run: |
-          for p in ${{ env.CHANGED_PACKAGES }}
+          pkgs=${{ env.CHANGED_PACKAGES }}
+          for p in $pkgs
           do
             echo "check $p"
           done
