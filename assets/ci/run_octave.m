@@ -33,6 +33,7 @@ function run_octave (package_list)
       endif
 
       ## Test basic package installation.
+      cd (tempdir ());
       step_disp_h2 (["Run: pkg install   ", pkg_name_version]);
       pkg ("install",  __pkg__.(p{1}).versions(1).url);
       step_disp_h2 ("done.");
