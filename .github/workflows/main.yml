@@ -23,22 +23,61 @@ jobs:
         with:
           fetch-depth: 2  # https://github.com/actions/checkout/issues/124
 
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.6
           bundler-cache: true  # runs 'bundle install' and caches installed gems automatically
 
+
       - name: Create local package repository
-        run: bundle exec jekyll build -d test
+        run: |
+          bundle exec jekyll build -d test
+          ##    PKG_INDEX_FILE is relative path
+          echo "PKG_INDEX_FILE=\"test/packages/index.html\"" >> $GITHUB_ENV
+
+
+      - name: Check for changed packages
+        run: |
+          for f in $(git --no-pager diff --name-only HEAD HEAD~1)
+          do
+            if [ "$(dirname $f)" == "packages" ] && [ "${f##*.}" == "yaml" ]
+            then
+              name="$(basename $f)"
+              CHANGED_PACKAGES+=" ${name%.*} "
+            fi
+          done
+          if [ -n "$CHANGED_PACKAGES" ]
+          then
+            echo "Changed packages:  $CHANGED_PACKAGES"
+            echo "CHANGED_PACKAGES=\"$CHANGED_PACKAGES\"" >> $GITHUB_ENV
+          else
+            echo "No packages changed."
+          fi
+        env:
+          CHANGED_PACKAGES:
+
+
+      - name: Pull Octave Docker image
+        if: ${{ env.CHANGED_PACKAGES != '' }}
+        run: docker pull docker.io/gnuoctave/octave:6.2.0
+
 
       - name: Test packages
+        if: ${{ env.CHANGED_PACKAGES != '' }}
         run: |
-          docker pull docker.io/gnuoctave/octave:6.2.0
-          docker run \
-            --volume="$(pwd):/home/jovyan/packages:rw" \
-            gnuoctave/octave:6.2.0 \
-            octave --eval "cd packages; run assets/ci/run_octave.m"
+          pkgs=${{ env.CHANGED_PACKAGES }}
+          for p in $pkgs
+          do
+            echo -e "\n\n## Test package '$p'\n\n"
+            docker run \
+              --volume="$(pwd):/home/jovyan/packages:rw" \
+              gnuoctave/octave:6.2.0 \
+              octave-cli --eval "cd packages/assets/ci; \
+                octave_ci('$p', '/home/jovyan/packages/${{ env.PKG_INDEX_FILE }}')"
+          done
+
 
   check-yaml:
 
