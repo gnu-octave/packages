@@ -21,7 +21,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 22  # https://github.com/actions/checkout/issues/124
+          fetch-depth: 2  # https://github.com/actions/checkout/issues/124
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -32,12 +32,14 @@ jobs:
       - name: Create local package repository
         run: |
           bundle exec jekyll build -d test
+          pwd
+          ls -al
           echo "PKG_INDEX_FILE=\"$GITHUB_WORKSPACE/test/packages/index.html\"" \
             >> $GITHUB_ENV
 
       - name: Check for changed packages
         run: |
-          for f in $(git --no-pager diff --name-only HEAD HEAD~20)
+          for f in $(git --no-pager diff --name-only HEAD HEAD~1)
           do
             if [ "$(dirname $f)" == "packages" ] && [ "${f##*.}" == "yaml" ]
             then
