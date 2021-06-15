@@ -29,6 +29,12 @@ maintainers:
 - name: "GitHub SQLP organization"
   contact: "https://github.com/orgs/sqlp/people"
 versions:
+- id: "1.3.5"
+  date: "2021-06-15"
+  sha256: "72aa803c87d79f350f06dd0c20edd4c6f00a80b911b9e2ce06c28ffea3cd49c4"
+  url: "https://github.com/sqlp/sedumi/archive/v1.3.5.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
 - id: "1.3.4"
   date: "2020-01-10"
   sha256: "8280b6f0508cba17e611c9a3474f52c01df93c342c5d45fe0faf9af841a8b2bf"
