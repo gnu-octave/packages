@@ -29,10 +29,19 @@ maintainers:
   contact: "f.alexander.wilms@gmail.com"
 - name: "Doug Stewart"
   contact: "doug.dastew@gmail.com"
+- name: "Torsten Lilge"
+  contact: "ttl-octave@mailbox.org"
 versions:
+- id: "3.3.0"
+  date: "2021-06-19"
+  sha256: "7ed3dc0873c6b1e6ab5b827036ed3dd2bee6058e011c8ea31e5fe017a98b7afa"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/control-3.3.0.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "3.2.0"
   date: "2019-04-01"
-  sha256:
+  sha256: "faf1d510d16ab46e4fa91a1288f4a7839ee05469c33e4698b7a007a0bb965e3e"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/control-3.2.0.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
