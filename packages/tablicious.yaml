@@ -25,6 +25,13 @@ maintainers:
 - name: "Andrew Janke"
   contact: "andrew@apjanke.net"
 versions:
+- id: "0.3.6"
+  date: "2021-07-05"
+  sha256: "967331996a9a5f65706e8788923606e3d8978446f73a727fa94c00f8926a2fcd"
+  url: "https://github.com/apjanke/octave-tablicious/archive/v0.3.6.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "0.3.5"
   date: "2020-01-31"
   sha256: "e7e0c081536119255fa36a00a32e700d47e45f0bff86b27636b579bfc256a119"
