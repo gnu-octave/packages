@@ -61,7 +61,7 @@ jobs:
 
       - name: Pull Octave Docker image
         if: ${{ env.CHANGED_PACKAGES != '' }}
-        run: docker pull docker.io/gnuoctave/octave:6.2.0
+        run: docker pull docker.io/gnuoctave/octave:6.3.0
 
 
       - name: Test packages
@@ -73,7 +73,7 @@ jobs:
             echo -e "\n\n## Test package '$p'\n\n"
             docker run \
               --volume="$(pwd):/home/jovyan/packages:rw" \
-              gnuoctave/octave:6.2.0 \
+              gnuoctave/octave:6.3.0 \
               octave-cli --eval "cd packages/assets/ci; \
                 octave_ci('$p', '/home/jovyan/packages/${{ env.PKG_INDEX_FILE }}')"
           done
