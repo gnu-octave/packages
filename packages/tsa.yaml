@@ -24,9 +24,17 @@ maintainers:
 - name: "Alois Schloegl"
   contact: "alois.schloegl@ist.ac.at"
 versions:
+- id: "4.6.3"
+  date: "2021-07-26"
+  sha256: "54f3bce33dd439fea60e7d36252c04d6c6b313a632de6ce204f61ed6cfc17ddd"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/tsa-4.6.3.tar.gz"
+  depends:
+  - "octave (>= 2.9.7)"
+  - "nan (>= 3.0.0)"
+  - "pkg"
 - id: "4.6.2"
   date: "2019-10-24"
-  sha256:
+  sha256: "b6820005febb2d79c4195704d6b903acbf192d3e260f3c60241772f9bf964c5c"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/tsa-4.6.2.tar.gz"
   depends:
   - "octave (>= 2.9.7)"
