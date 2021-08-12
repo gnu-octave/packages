@@ -29,6 +29,7 @@ maintainers:
 versions:
 - id: "2021.1"
   date: "2021-08-05"
+  sha256: "099015813cbd7ae811487950647fba1327f9fe6b8ead7ddfc2ffa0a59390cbf6"
   url: "https://sccn.ucsd.edu/eeglab/currentversion/eeglab2021.1.zip"
   depends:
   - "octave (>= 6.1.0)"
