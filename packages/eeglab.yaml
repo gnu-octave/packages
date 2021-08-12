@@ -3,10 +3,10 @@ layout: "package"
 permalink: "EEGLAB"
 description: >-
   An interactive toolbox for processing continuous and event-related EEG,
-  MEG and other electrophysiological data incorporating independent component analysis (ICA),
-  time/frequency analysis, artifact rejection, event-related statistics, and several useful modes
-  of visualization of the averaged and single-trial data.
-  
+  MEG and other electrophysiological data incorporating independent component
+  analysis (ICA), time/frequency analysis, artifact rejection, event-related
+  statistics, and several useful modes of visualization of the averaged and
+  single-trial data.
 icon: "https://sccn.ucsd.edu/images/sccn.png"
 links:
 - icon: "far fa-copyright"
@@ -32,5 +32,4 @@ versions:
   url: "https://sccn.ucsd.edu/eeglab/currentversion/eeglab2021.1.zip"
   depends:
   - "octave (>= 6.1.0)"
-  - "pkg"
 ---
