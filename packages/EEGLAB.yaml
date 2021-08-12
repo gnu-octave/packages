@@ -2,8 +2,8 @@
 layout: "package"
 permalink: "EEGLAB"
 description: >-
-  An interactive toolbox for processing continuous and event-related EEG,
-  MEG and other electrophysiological data incorporating independent component
+  An interactive toolbox for processing continuous and event-related EEG, MEG
+  and other electrophysiological data incorporating independent component
   analysis (ICA), time/frequency analysis, artifact rejection, event-related
   statistics, and several useful modes of visualization of the averaged and
   single-trial data.
