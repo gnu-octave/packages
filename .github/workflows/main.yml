@@ -40,7 +40,7 @@ jobs:
 
       - name: Check for changed packages
         run: |
-          for f in $(git --no-pager diff --name-only HEAD HEAD~1)
+          for f in $(git --no-pager diff --name-only HEAD~1 HEAD)
           do
             if [ "$(dirname $f)" == "packages" ] && [ "${f##*.}" == "yaml" ]
             then
