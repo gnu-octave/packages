@@ -26,6 +26,14 @@ maintainers:
 - name: "Abdallah Elshamy"
   contact: "abdallah.k.elshamy@gmail.com"
 versions:
+- id: "1.5.0"
+  date: "2021-08-18"
+  sha256: "4128d2e025165c49a8f7faa1c75a02a5616e3f9204ed7d7a497c09f9b292e55c"
+  url: "https://github.com/gnu-octave/pkg-json/archive/v1.5.0.tar.gz"
+  depends:
+  - "octave (>= 5.1.0)"
+  - "octave (< 7.0.0)"
+  - "pkg"
 - id: "1.4.0"
   date: "2021-08-17"
   sha256: "e7e41ffeb1fab19cadb9856470e70aebc7f3e00b44d8f65e96e115dce5b4dd20"
