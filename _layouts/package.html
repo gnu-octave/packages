@@ -2,12 +2,12 @@
 layout: default
 ---
 
-<a href="{{ '/' | relative_url }}" role="button" class="btn btn-info mb-4">
+<a href="{{ '/' | relative_url }}" role="button" class="btn btn-primary mb-4">
   <i class="fas fa-arrow-left"></i> Back to Index
 </a>
 
 <a href="https://github.com/gnu-octave/packages/blob/main/packages/{{ page.permalink }}.yaml"
-   role="button" class="btn btn-warning mb-4 float-right">
+   role="button" class="btn btn-warning mb-4 float-end">
   <i class="fas fa-edit"></i> Edit
 </a>
 
@@ -50,21 +50,19 @@ layout: default
       <h4>{{ v.id }}{%- if v.date -%}&nbsp;({{ v.date }}){%- endif -%}</h4>
     {%- endif -%}
       <div class="input-group input-group-mod">
-        <div class="input-group-prepend">
-          <a href="{{ v.url }}" role="button"
-            class="btn btn-primary">
-            <i class="fas fa-download"></i>
-          </a>
-          {%- if pkg_installable == true -%}
-            {%- capture url_value -%}pkg install &quot;{{ v.url }}&quot;{%- endcapture -%}
-          <button type="button" class="btn btn-outline-primary"
-                  onclick="doCopy('{{ url_value }}')">
-            <i class="far fa-clipboard"></i>
-          </button>
-          {%- else -%}
-            {%- assign url_value = v.url -%}
-          {%- endif -%}
-        </div>
+        <a href="{{ v.url }}" role="button"
+          class="btn btn-primary">
+          <i class="fas fa-download"></i>
+        </a>
+        {%- if pkg_installable == true -%}
+          {%- capture url_value -%}pkg install &quot;{{ v.url }}&quot;{%- endcapture -%}
+        <button type="button" class="btn btn-outline-primary"
+                onclick="doCopy('{{ url_value }}')">
+          <i class="far fa-clipboard"></i>
+        </button>
+        {%- else -%}
+          {%- assign url_value = v.url -%}
+        {%- endif -%}
         <input type="text" class="form-control border-primary" disabled
                value="{{ url_value }}">
       </div>

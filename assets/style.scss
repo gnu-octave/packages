@@ -1,20 +1,18 @@
 ---
 ---
 
-ul { padding-inline-start: 1em; }
-li {
+a { text-decoration: none; }
+
+div.card-body a:hover { text-decoration: underline; }
+div.card-body ul { padding-inline-start: 1em; }
+div.card-body li {
   list-style-type: none;
   margin-top: 0.7em;
 }
 
 details[open] { background-color: aliceblue; }
 
-nav {
-  max-width: 1110px;
-  margin: auto;
-}
-
-li.nav-item { margin-left: 2rem; }
+li.nav-item { margin-left: 3rem; }
 
 a.nav-link { color: #FFF !important; }
 a.nav-link:hover {
@@ -59,18 +57,8 @@ td {
 
 td.dataTables_empty { height: 75px; }
 
-#package-index_filter
-{
-  float: left !important;
-  text-align: left !important;
-  margin-bottom: 1em;
-  width: 100%;
-}
-#package-index_filter label {
-  width: 100%;
-  font-weight: bold;
-}
-#package-index_filter input {
-  width: 80%;
-  margin-left: 1em;
-}
+#package-index_filter { margin-bottom: 2em; }
+#package-index_filter,
+#package-index_filter input,
+#package-index_filter label { width: 100%; }
+#package-index_filter label { color: transparent; }
