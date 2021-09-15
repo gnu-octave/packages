@@ -169,7 +169,7 @@ versions:
 
 - `links`: list containing three fields.
 
-  - `icon`: any [free FontAwesome](tawesome.com/icons?d=gallery&p=2&m=free)
+  - `icon`: any [free FontAwesome](https://fontawesome.com/icons?d=gallery&p=2&m=free)
     class string is permitted.  The icon is part of the hyperlink.
 
   - `label`: string of the hyperlink.
