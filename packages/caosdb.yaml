@@ -1,0 +1,47 @@
+---
+layout: "package"
+permalink: "caosdb"
+description: >-
+  This package contains utility functions to interact with CaosDB, the open
+  scientific data management toolkit.
+
+  It makes use of libcaosdb,  which must be installed on the
+  system.  libcaosdb can be obtained at https://gitlab.com/caosdb/caosdb-cpplib
+# TODO: Check icon URL
+icon: "https://gitlab.com/caosdb/caosdb-octavelib/-/raw/main/doc/img/caosdb_icon.png"
+links:
+- icon: "far fa-copyright"
+  label: "AGPL-3.0-or-later"
+  url: "https://gitlab.com/caosdb/caosdb-octavelib/-/blob/main/LICENSE.md"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://gitlab.com/caosdb/caosdb-octavelib/-/blob/main/CHANGELOG.md"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://gitlab.com/caosdb/caosdb-octavelib"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://docs.indiscale.com/caosdb-octavelib"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://gitlab.com/caosdb/caosdb-octavelib/-/issues"
+maintainers:
+- name: "Daniel Hornung"
+  contact: "d.hornung@indiscale.com"
+versions:
+# TODO Update release data
+- id: "0.0.2"
+  date: "2021-xx-xx"
+  sha256: "bff441755f0d68596f2efd027fe637b5b6c52b722ffd6255bdb8a5f34ab4ef2a"
+  url: "https://github.com/gnu-octave/pkg-example/archive/1.1.0.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+- id: "dev"
+  date:
+  sha256:
+  url: "https://gitlab.com/caosdb/caosdb-octavelib/-/archive/dev/caosdb-octavelib-dev.zip"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+---
