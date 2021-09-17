@@ -1,0 +1,43 @@
+---
+layout: "package"
+permalink: "jupyter-notebook"
+description: >-
+  A package to run and fill Jupyter Notebooks within GNU Octave.
+  Evaluate long-running Octave Jupyter Notebooks on a computing server without
+  permanent browser connection.
+icon: "https://raw.githubusercontent.com/gnu-octave/pkg-jupyter-notebook/main/doc/icon.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/gnu-octave/pkg-jupyter-notebook/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/gnu-octave/pkg-jupyter-notebook/releases/"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/gnu-octave/pkg-jupyter-notebook/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://github.com/gnu-octave/pkg-jupyter-notebook/blob/main/README.md"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/gnu-octave/pkg-jupyter-notebook/issues"
+maintainers:
+- name: "Kai T. Ohlhus"
+  contact: "k.ohlhus@gmail.com"
+- name: "Abdallah Elshamy"
+  contact: "abdallah.k.elshamy@gmail.com"
+versions:
+- id: "1.0.0"
+  date: "2021-09-14"
+  sha256: "bb4e550e202a0b6dd7c6c0c9fe347cb6a856cb81"
+  url: "https://github.com/gnu-octave/pkg-jupyter-notebook/archive/v1.0.0.tar.gz"
+  depends:
+  - "json (>= 1.5.0)"
+- id: "dev"
+  date:
+  sha256:
+  url: "https://github.com/gnu-octave/pkg-jupyter-notebook/archive/main.zip"
+  depends:
+  - "json (>= 1.5.0)"
+---
