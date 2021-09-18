@@ -28,9 +28,16 @@ maintainers:
 - name: "Michele Martone"
   contact: "michelemartone@users.sourceforge.net"
 versions:
+- id: "1.0.9"
+  date: "2021-09-17"
+  sha256: "b98bffc26fc031988106a24e05122d8ca7b6203fe960ac68112f93f0699fdcff"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/sparsersb-1.0.9.tar.gz"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
 - id: "1.0.8"
   date: "2020-08-06"
-  sha256:
+  sha256: "bc0bd3d6040ffc036271609fef83af30c148b9760b62885008a5b2a0eec5875a"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/sparsersb-1.0.8.tar.gz"
   depends:
   - "octave (>= 4.4.0)"
