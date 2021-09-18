@@ -34,10 +34,12 @@ versions:
   url: "https://github.com/gnu-octave/pkg-jupyter-notebook/archive/v1.0.0.tar.gz"
   depends:
   - "json (>= 1.5.0)"
+  - "pkg"
 - id: "dev"
   date:
   sha256:
   url: "https://github.com/gnu-octave/pkg-jupyter-notebook/archive/main.zip"
   depends:
   - "json (>= 1.5.0)"
+  - "pkg"
 ---
