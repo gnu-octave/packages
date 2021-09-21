@@ -29,8 +29,8 @@ maintainers:
   contact: "michelemartone@users.sourceforge.net"
 versions:
 - id: "1.0.9"
-  date: "2021-09-17"
-  sha256: "b98bffc26fc031988106a24e05122d8ca7b6203fe960ac68112f93f0699fdcff"
+  date: "2021-09-21"
+  sha256: "0dce0048c09dd99a69bbe689da6d47983120e18fb21a9b2496fe53cf4f15de4b"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/sparsersb-1.0.9.tar.gz"
   depends:
   - "octave (>= 4.4.0)"
