@@ -25,8 +25,15 @@ links:
   url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(audio)"
 maintainers:
 - name: "John Donoghue"
-  contact: "<john.donoghue@ieee.org>"
+  contact: "john.donoghue@ieee.org"
 versions:
+- id: "2.0.3"
+  date: "2021-10-22"
+  sha256: "1968580486dd73f8b2b8f545aaa03c0ace338ad77064d4f3b75977588fbb6190"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/audio-2.0.3.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "2.0.2"
   date: "2020-10-13"
   sha256: "b361c3989199b84995660e71d586c062e838ec09ef545d36bb6911df2adf9ea2"
