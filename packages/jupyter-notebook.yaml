@@ -28,9 +28,16 @@ maintainers:
 - name: "Abdallah Elshamy"
   contact: "abdallah.k.elshamy@gmail.com"
 versions:
+- id: "1.1.0"
+  date: "2021-11-24"
+  sha256: "8ace5ad2b5e976e6f1d71915e0a2d4ae4bd410a70d79e3a3d980874e911f63c6"
+  url: "https://github.com/gnu-octave/pkg-jupyter-notebook/archive/v1.1.0.tar.gz"
+  depends:
+  - "json (>= 1.5.0)"
+  - "pkg"
 - id: "1.0.0"
   date: "2021-09-14"
-  sha256: "bb4e550e202a0b6dd7c6c0c9fe347cb6a856cb81"
+  sha256: "2bd1f8bc72521f65d000039e94136cd3eb4c1d8440bbb6367f3b1f4fd60e5010"
   url: "https://github.com/gnu-octave/pkg-jupyter-notebook/archive/v1.0.0.tar.gz"
   depends:
   - "json (>= 1.5.0)"
