@@ -27,7 +27,7 @@ versions:
 - id: "1.4.3"
   date: "2021-12-03"
   sha256: "7976814f837508e70367548bfb0a6d30aa9e447d4e3a66914d069efb07876247"
-  url: "https://sourceforge.net/p/octave/package-releases/_discuss/thread/e032c3914c/7f38/attachment/statistics-1.4.3.tar.gz"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/statistics-1.4.3.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
   - "io (>= 1.0.18)"
