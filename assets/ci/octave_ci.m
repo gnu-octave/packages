@@ -77,7 +77,7 @@ function octave_ci (package_name, pkg_index_file)
     endfor
 
     step_disp_h1 (["Run: pkg install   ", pkg_name_version]);
-    pkg ("install",  __pkg__.(package_name).versions(1).url);
+    pkg_install_sha256_check (__pkg__.(package_name).versions(1));
     step_disp_h2 ("done.");
 
     step_disp_h1 (["Run: pkg load      ", pkg_name_version]);
