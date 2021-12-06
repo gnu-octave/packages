@@ -28,7 +28,7 @@ maintainers:
 versions:
 - id: "0.7.0"
   date: "2018-03-23"
-  sha256:
+  sha256: "c44d2378d6241c87a88e878102c738e713169a3341d6ba735dc9e896e48f0942"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/doctest-0.7.0.tar.gz"
   depends:
   - "octave (>= 4.2.0)"
