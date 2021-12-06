@@ -31,6 +31,10 @@ versions:
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
+  ubuntu2004:
+  - "libavcodec-dev"
+  - "libavformat-dev"
+  - "libswscale-dev"
 - id: "2.0.1"
   date: "2021-11-22"
   sha256: "c3447273f850f6f86fefe15cad0a59adf364d3c377853ad9b1816436bb71638d"
@@ -38,6 +42,10 @@ versions:
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
+  ubuntu2004:
+  - "libavcodec-dev"
+  - "libavformat-dev"
+  - "libswscale-dev"
 - id: "2.0.0"
   date: "2020-02-24"
   sha256: "3b5724281f9059cfb2678eac03ec0bde2b269568761f4d105cda16d8081bd268"
@@ -45,4 +53,8 @@ versions:
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
+  ubuntu2004:
+  - "libavcodec-dev"
+  - "libavformat-dev"
+  - "libswscale-dev"
 ---
