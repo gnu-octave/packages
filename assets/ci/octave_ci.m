@@ -163,6 +163,8 @@ function pkg_install_sha256_check (pkg_version)
       "\n\tFile: %s", ...
       "\n\tExpected: '%s'", ...
       "\n\tBut got:  '%s'\n"], pkg_file, pkg_version.sha256, sha256_sum);
+  else
+    disp (["sha256 checksum ok: '", sha256_sum, "'"]);
   endif
   pkg ("install",  pkg_file);
 endfunction
