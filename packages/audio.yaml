@@ -27,6 +27,15 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "2.0.4"
+  date: "2021-12-05"
+  sha256: "301e342c12a4706f97a521bc2ac861892203eccb3f1f94112c88818b11682eea"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/audio-2.0.4.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+  ubuntu2004:
+  - "librtmidi-dev"
 - id: "2.0.3"
   date: "2021-10-22"
   sha256: "1968580486dd73f8b2b8f545aaa03c0ace338ad77064d4f3b75977588fbb6190"
@@ -34,6 +43,8 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
+  ubuntu2004:
+  - "librtmidi-dev"
 - id: "2.0.2"
   date: "2020-10-13"
   sha256: "b361c3989199b84995660e71d586c062e838ec09ef545d36bb6911df2adf9ea2"
@@ -41,6 +52,8 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
+  ubuntu2004:
+  - "librtmidi-dev"
 - id: "2.0.1"
   date: "2020-05-08"
   sha256: "485973d617309c5b7d8d3392deffdd97e3411f5f7c181a89cf63dd3749d3458c"
@@ -48,4 +61,6 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
+  ubuntu2004:
+  - "librtmidi-dev"
 ---
