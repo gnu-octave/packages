@@ -72,6 +72,8 @@ jobs:
           do
             echo -e "\n\n## Test package '$p'\n\n"
             docker run \
+              --user root \
+              --env="GRANT_SUDO=yes" \
               --volume="$(pwd):/home/jovyan/packages:rw" \
               gnuoctave/octave:6.4.0 \
               octave-cli --eval "cd packages/assets/ci; \
