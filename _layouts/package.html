@@ -78,6 +78,7 @@ layout: default
             <span style="white-space: nowrap;">
             {%- assign dep_name = dep | split: " " | first -%}
             {%- assign dep_ver  = dep | split: " " | shift | join: " " -%}
+            {%- assign link_other_pkg = false -%}
             {%- for pkg in site.pages -%}
               {%- if pkg.layout == "package" and pkg.permalink == dep_name -%}
                 {%- assign link_other_pkg = true -%}
