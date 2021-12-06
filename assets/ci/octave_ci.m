@@ -60,8 +60,8 @@ function octave_ci (package_name, pkg_index_file)
 
     if (! isempty (ubuntu2004))
       step_disp_h1 ("Install Ubuntu 20.04 dependencies");
-      system ("sudo apt-get -qq update");
-      system (["sudo apt-get -qq install --yes ", strjoin(ubuntu2004)]);
+      [~,~] = system ("sudo apt-get -qq update");
+      [~,~] = system (["sudo apt-get -qq install --yes ", strjoin(ubuntu2004)]);
       step_disp_h2 ("done.");
     endif
 
@@ -205,7 +205,7 @@ function [ubuntu2004, pkgs] = resolve_deps (__pkg__, stack);
       ## Ubuntu/Debian package name must consist only of lower case letters
       ## (a-z), digits (0-9), plus (+) and minus (-) signs, and periods (.).
       m = regexp (new_ubuntu2004{i}, '[a-z0-9\+\-\.]*', "match");
-      if (length (m) ~= 1)
+      if ((length (m) ~= 1) || ~strcmp (m{1}, new_ubuntu2004{i}))
         error ("resolve_deps: invalid Ubuntu 20.04 package %s.", ...
           new_ubuntu2004{i});
       endif
