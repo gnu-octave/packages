@@ -4,7 +4,7 @@ This guide explains how to add your Octave package or toolbox to
 <https://gnu-octave.github.io/packages/>.
 
 
-## Quick info
+## 🚀 Quick info
 
 - A package entry in the "Octave Packages" index is managed by a single
   [YAML](https://en.wikipedia.org/wiki/YAML) file.
@@ -33,7 +33,7 @@ This guide explains how to add your Octave package or toolbox to
   in the Octave package format,
   see <https://github.com/gnu-octave/pkg-example>.
 
-## Add your package
+## ✅ Add your package
 
 - Copy the [example package entry](#example-package-entry) below
   and adapt it to your package.
@@ -54,7 +54,7 @@ This guide explains how to add your Octave package or toolbox to
   - finally [create a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
 
-## Update your package
+## 🔄 Update your package
 
 - For example after a new release of your package you can update the index
   entry by editing the file `packages/<my package>.yaml` with the name of your
@@ -71,7 +71,7 @@ This guide explains how to add your Octave package or toolbox to
   ... or expert users can work in a fork as described above.
 
 
-## Example package entry
+## 🔰 Example package entry
 
 An example package entry
 [`packages/pkg-example.yaml`](https://github.com/gnu-octave/packages/blob/main/packages/pkg-example.yaml)
@@ -137,9 +137,9 @@ versions:
 ```
 
 
-## Details
+## 📚 Details
 
-### General specifications
+### ✏️ General specifications
 
 - For technical reasons, the first and last line `---` of the file are
   fixed and may not be altered.
@@ -153,7 +153,7 @@ versions:
   breaks) and `-` chopped by the final newline.
 
 
-### Individual field explanations
+### 📑 Individual field explanations
 
 - `layout`: fixed string `"package"` for technical reasons.
 
