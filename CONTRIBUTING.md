@@ -260,3 +260,15 @@ versions:
     Permitted operators are documented in the
     [Octave manual](https://octave.org/doc/v6.2.0/The-DESCRIPTION-File.html)
     "DESCRIPTION"-file "Depends" section.
+
+  - `ubuntu2004`: list of Ubuntu 20.04 (LTS) dependency strings.
+
+    A dependency string looks like `"libopenblas-dev"`.
+    The corresponding Ubuntu package must be available at
+    <https://packages.ubuntu.com/focal/libopenblas-dev>, for example.
+
+    The Ubuntu package dependencies are installed during the automatic
+    GitHub Actions review via the default `apt-get install`-mechanism.
+    It is not necessary to list packages available in the
+    [Octave Docker image](https://github.com/gnu-octave/docker/blob/main/build-octave-6.docker).
+    Try to keep the list as short as possible.
