@@ -96,6 +96,17 @@ layout: default
             </span>
           {%- endfor -%}
         </li>
+        {%- if v.ubuntu2004 -%}
+        <li>
+          <b>Ubuntu 20.04:</b>
+          {%- for dep in v.ubuntu2004 -%}
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span style="white-space: nowrap;">
+              <a href="https://packages.ubuntu.com/focal/{{ dep }}">{{ dep }}</a>
+            </span>
+          {%- endfor -%}
+        </li>
+        {%- endif -%}
       </ul>
       {%- if first_version == true and pkg_installable == false -%}
       <div class="alert alert-warning alert-warning-mod ml-3" role="alert">
