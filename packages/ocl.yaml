@@ -28,7 +28,7 @@ maintainers:
 versions:
 - id: "1.1.1"
   date: "2020-03-01"
-  sha256:
+  sha256: ""
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/ocl-1.1.1.tar.gz"
   depends:
   - "octave (>= 4.2.0)"
