@@ -29,7 +29,7 @@ maintainers:
 versions:
 - id: "2.9.0"
   date: "2021-12-20"
-  sha256:
+  sha256: "3f15b316dc0b8008d1dc821464ad83c3ad028ba5252d575c43876fb0fd9a3058"
   url: "https://github.com/gnu-octave/statistics-bootstrap/archive/refs/tags/v2.9.tar.gz"
   depends:
   - "octave (>= 3.6.0)"
