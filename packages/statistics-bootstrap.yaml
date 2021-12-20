@@ -2,11 +2,11 @@
 layout: "package"
 permalink: "statistics-bootstrap"
 description: >-
-  This package of functions can be used to estimate uncertainty (confidence 
-  intervals) and test hypotheses (p-values) using bootstrap. Variations of 
-  the bootstrap are included that improve the accuracy of bootstrap statistics 
+  This package of functions can be used to estimate uncertainty (confidence
+  intervals) and test hypotheses (p-values) using bootstrap. Variations of
+  the bootstrap are included that improve the accuracy of bootstrap statistics
   for small samples and samples with complex dependence structures.
-icon: "https://github.com/gnu-octave/statistics-bootstrap/blob/master/doc/boot.png"
+icon: "https://raw.githubusercontent.com/gnu-octave/statistics-bootstrap/master/doc/boot.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
@@ -33,10 +33,12 @@ versions:
   url: "https://github.com/gnu-octave/statistics-bootstrap/archive/refs/tags/v2.9.tar.gz"
   depends:
   - "octave (>= 3.6.0)"
+  - "pkg"
 - id: "dev"
   date:
   sha256:
   url: "https://github.com/gnu-octave/statistics-bootstrap/archive/refs/heads/master.zip"
   depends:
   - "octave (>= 3.6.0)"
+  - "pkg"
 ---
