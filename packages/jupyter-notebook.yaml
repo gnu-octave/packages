@@ -30,7 +30,7 @@ maintainers:
 versions:
 - id: "1.2.0"
   date: "2021-12-24"
-  sha256: "8ace5ad2b5e976e6f1d71915e0a2d4ae4bd410a70d79e3a3d980874e911f63c6"
+  sha256: "fba19e4f68313c64298dc5b3d525df9008d43c28bcac3abb472e37ea93285be4"
   url: "https://github.com/gnu-octave/pkg-jupyter-notebook/archive/v1.2.0.tar.gz"
   depends:
   - "json (>= 1.5.0)"
