@@ -24,6 +24,13 @@ maintainers:
 - name: "Philip Nienhuis"
   contact: "prnienhuis@users.sf.net"
 versions:
+- id: "2.6.4"
+  date: "2021-12-30"
+  sha256: "a74a400bbd19227f6c07c585892de879cd7ae52d820da1f69f1a3e3e89452f5a"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/io-2.6.4.tar.gz"
+  depends:
+  - "octave (>= 4.2.0)"
+  - "pkg"
 - id: "2.6.3"
   date: "2020-11-02"
   sha256: "6bc63c6498d79cada01a6c4446f793536e0bb416ddec2a5201dd8d741d459e10"
