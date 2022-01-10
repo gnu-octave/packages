@@ -24,6 +24,13 @@ maintainers:
 - name: "Octave Forge"
   contact: "https://octave.discourse.group/"
 versions:
+- id: "2.1.2"
+  date: "2022-01-11"
+  sha256: "fbd09409950c8b95e02ccb3895ec78f52cc8589a08a65d8c512a7cacf567bb4a"
+  url: "https://sourceforge.net/p/octave/package-releases/463/attachment/general-2.1.2.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "2.1.1"
   date: "2020-02-25"
   sha256: "fbd09409950c8b95e02ccb3895ec78f52cc8589a08a65d8c512a7cacf567bb4a"
