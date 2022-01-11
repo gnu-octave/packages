@@ -27,7 +27,7 @@ versions:
 - id: "2.1.2"
   date: "2022-01-11"
   sha256: "a30cd1a79743c62528dae46ebd4a83f848ae46a1c1dac3eaabc36662d42294cf"
-  url: "https://sourceforge.net/p/octave/package-releases/463/attachment/general-2.1.2.tar.gz"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/general-2.1.2.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
