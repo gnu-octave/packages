@@ -27,7 +27,7 @@ versions:
 - id: "0.10.3"
   date: "2022-01-14"
   sha256: "71b3fbb9cb9aec37712cbe36d883718d9c73ff1d691e822afa3923aed7da69b1"
-  url: "https://sourceforge.net/p/octave/package-releases/465/attachment/ga-0.10.3.tar.gz"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/ga-0.10.3.tar.gz"
   depends:
   - "octave (>= 3.4.0)"
   - "pkg"
