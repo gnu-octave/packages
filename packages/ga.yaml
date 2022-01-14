@@ -24,6 +24,13 @@ maintainers:
 - name: "Luca Favatella"
   contact: "slackydeb@gmail.com"
 versions:
+- id: "0.10.3"
+  date: "2022-01-14"
+  sha256: "3bc73a5e6df46cae132538814dec9fdd4f87dd0f82bf022bdd8a9c6089fdaa68"
+  url: "https://sourceforge.net/p/octave/package-releases/465/attachment/ga-0.10.3.tar.gz"
+  depends:
+  - "octave (>= 3.4.0)"
+  - "pkg"
 - id: "0.10.2"
   date: "2020-12-02"
   sha256: "3bc73a5e6df46cae132538814dec9fdd4f87dd0f82bf022bdd8a9c6089fdaa68"
