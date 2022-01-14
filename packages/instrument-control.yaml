@@ -35,7 +35,7 @@ versions:
 - id: "0.7.1"
   date: "2022-01-13"
   sha256: "915dd8cb43f5306f4888f0523bef583f29d6d068360b6f0061637ee938fcd6d7"
-  url: "https://sourceforge.net/p/octave/package-releases/464/attachment/instrument-control-0.7.1.tar.gz"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.7.1.tar.gz"
   depends:
   - "octave (>= 3.8.0)"
   - "pkg"
