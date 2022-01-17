@@ -17,6 +17,11 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        version:
+        - 6.4.0
+
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
@@ -61,7 +66,8 @@ jobs:
 
       - name: Pull Octave Docker image
         if: ${{ env.CHANGED_PACKAGES != '' }}
-        run: docker pull docker.io/gnuoctave/octave:6.4.0
+        ## DockerHub:  docker.io/gnuoctave/octave:${{ matrix.version }}
+        run: docker pull ghcr.io/gnu-octave/octave:${{ matrix.version }}
 
 
       - name: Test packages
@@ -75,7 +81,7 @@ jobs:
               --user root \
               --env="GRANT_SUDO=yes" \
               --volume="$(pwd):/home/jovyan/packages:rw" \
-              gnuoctave/octave:6.4.0 \
+              gnuoctave/octave:${{ matrix.version }} \
               octave-cli --eval "cd packages/assets/ci; \
                 octave_ci('$p', '/home/jovyan/packages/${{ env.PKG_INDEX_FILE }}')"
           done
