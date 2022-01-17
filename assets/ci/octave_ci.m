@@ -114,6 +114,8 @@ function octave_ci (package_name, pkg_index_file)
   end
   step_group_end ("done.");
 
+  cd (test_dir);  # To this directory "fntests.log" is written.
+
   step_group_start (["Run: pkg test      ", pkg_name_version]);
   pkg ("test", package_name);
   step_group_end ("done.");
