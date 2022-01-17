@@ -32,6 +32,13 @@ maintainers:
 - name: "Torsten Lilge"
   contact: "ttl-octave@mailbox.org"
 versions:
+- id: "3.4.0"
+  date: "2022-01-16"
+  sha256: "6ec6a06e13ad288afad8631cc41f7247e47096fa1e8d04240d4ed01efbe4a77a"
+  url: "https://sourceforge.net/p/octave/package-releases/466/attachment/control-3.4.0.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "3.3.1"
   date: "2021-07-05"
   sha256: "7c472dff5fe558cc32bfe93968f6245a85f1fc7ceb94af69fb6e93d1e35fcd6e"
