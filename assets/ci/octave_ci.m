@@ -22,105 +22,109 @@ function octave_ci (package_name, pkg_index_file)
   endif
 
   ## Resolve locally build package index.
-  step_disp_h1 ("Resolve locally build package index");
+  step_group_start ("Resolve locally build package index");
   if (exist (pkg_index_file, "file") != 2)
     step_disp_h2 (["STOP.  Cannot find '", pkg_index_file, "'."]);
-    return;
+    step_group_end ();
+    exit (1);
   endif
   __pkg__ = package_index_local_resolve (pkg_index_file);
+  step_group_end ("done.");
+
+  pkg_name_version = [package_name, "@", ...
+    __pkg__.(package_name).versions(1).id];
+
+  ## Check if package can be installed by "pkg", otherwise skip.
+  pkg_installable = false;
+  dependencies = {__pkg__.(package_name).versions(1).depends.name};
+  for i = 1:length (dependencies)
+    if (strcmp (strsplit (dependencies{i}){1}, "pkg"))
+      pkg_installable = true;
+      break;
+    endif
+  endfor
+  if (! pkg_installable)
+    step_disp_h2 (["STOP.  '", pkg_name_version, "', no 'pkg' dependency."]);
+    return;
+  endif
+
+  ## Test basic package installation.
+  mkdir ("~/octave");  # Avoids pkg warning.
+  cd (tempdir ());
+
+  step_disp_h1 ("Resolve package dependencies");
+  [ubuntu2004, pkgs] = resolve_deps (__pkg__, {package_name});
   step_disp_h2 ("done.");
+
+  if (! isempty (ubuntu2004))
+    step_disp_h1 ("Install Ubuntu 20.04 dependencies");
+    [~,~] = system ("sudo apt-get -qq update");
+    [~,~] = system (["sudo apt-get -qq install --yes ", strjoin(ubuntu2004)]);
+    step_disp_h2 ("done.");
+  endif
+
+  ## Install package dependencies and "doctest" package.
+  pkgs = [pkgs, {"doctest"}];
+  for i = length (pkgs):-1:1
+    pkg_dep_name = pkgs{i};
+    pkg_dep_name_version = [pkg_dep_name, "@", ...
+      __pkg__.(pkg_dep_name).versions(1).id];
+    step_disp_h1 (["Install dependency:  ", pkg_dep_name_version]);
+    pkg_install_sha256_check (__pkg__.(pkg_dep_name).versions(1));
+    step_disp_h2 ("done.");
+  endfor
 
   ## Try to install and test the default (first) version of the changed
   ## packages.
   try
-    pkg_name_version = [package_name, "@", ...
-      __pkg__.(package_name).versions(1).id];
-
-    ## Check if package can be installed by "pkg", otherwise skip.
-    pkg_installable = false;
-    dependencies = {__pkg__.(package_name).versions(1).depends.name};
-    for i = 1:length (dependencies)
-      if (strcmp (strsplit (dependencies{i}){1}, "pkg"))
-        pkg_installable = true;
-        break;
-      endif
-    endfor
-    if (! pkg_installable)
-      step_disp_h2 (["STOP.  '", pkg_name_version, "', no 'pkg' dependency."]);
-      return;
-    endif
-
-    ## Test basic package installation.
-    mkdir ("~/octave");  # Avoids pkg warning.
-    cd (tempdir ());
-
-    step_disp_h1 ("Resolve package dependencies");
-    [ubuntu2004, pkgs] = resolve_deps (__pkg__, {package_name});
-    step_disp_h2 ("done.");
-
-    if (! isempty (ubuntu2004))
-      step_disp_h1 ("Install Ubuntu 20.04 dependencies");
-      [~,~] = system ("sudo apt-get -qq update");
-      [~,~] = system (["sudo apt-get -qq install --yes ", strjoin(ubuntu2004)]);
-      step_disp_h2 ("done.");
-    endif
-
-    ## Install package dependencies and "doctest" package.
-    pkgs = [pkgs, {"doctest"}];
-    for i = length (pkgs):-1:1
-      pkg_dep_name = pkgs{i};
-      pkg_dep_name_version = [pkg_dep_name, "@", ...
-        __pkg__.(pkg_dep_name).versions(1).id];
-      step_disp_h1 (["Install dependency:  ", pkg_dep_name_version]);
-      pkg_install_sha256_check (__pkg__.(pkg_dep_name).versions(1));
-      step_disp_h2 ("done.");
-    endfor
-
     step_disp_h1 (["Run: pkg install   ", pkg_name_version]);
     pkg_install_sha256_check (__pkg__.(package_name).versions(1));
     step_disp_h2 ("done.");
-
-    step_disp_h1 (["Run: pkg load      ", pkg_name_version]);
-    pkg ("load", package_name);
-    step_disp_h2 ("done.");
-
-    step_disp_h1 (["Run: pkg unload    ", pkg_name_version]);
-    pkg ("unload", package_name);
-    step_disp_h2 ("done.");
-
-    step_disp_h1 (["Run: doctest       ", pkg_name_version]);
-    pkg ("load", "doctest");
-    doctest_dir = pkg ("list", package_name);
-    doctest_dir = doctest_dir{1}.dir;
-    doctest (doctest_dir);
-    step_disp_h2 ("done.");
-
-    step_disp_h1 (["Run: pkg test      ", pkg_name_version]);
-    pkg ("test", package_name);
-    step_disp_h2 ("done.");
-
-    step_disp_h1 (["Run: pkg uninstall ", pkg_name_version]);
-    pkg ("uninstall", package_name);
-    step_disp_h2 ("done.");
-
-    step_disp_h1 ("Show: fntests.log");
-    type (fullfile (tempdir (), "fntests.log"))
-
-    step_disp_h1 ("FINISHING");
   catch e
-    ## In case of error try to get as much information as possible.
+    ## In case of install error, try to get as much information as possible.
     ##
     ## Note that the installation is likely to fail for packages with
-    ## dependencies:
-    ##
-    ## Dependency resolution and installation is not supported
-    ## in old pkg versions.
+    ## "exotic" dependencies.
 
+    step_disp_h1 (["ERROR: pkg install -verbose ", pkg_name_version]);
+    pkg ("install", "-verbose",  __pkg__.(package_name).versions(1).url);
+
+    exit (1);  # Return test failed.
+  end
+
+  step_disp_h1 (["Run: pkg load      ", pkg_name_version]);
+  pkg ("load", package_name);
+  step_disp_h2 ("done.");
+
+  step_disp_h1 (["Run: pkg unload    ", pkg_name_version]);
+  pkg ("unload", package_name);
+  step_disp_h2 ("done.");
+
+  step_disp_h1 (["Run: doctest       ", pkg_name_version]);
+  pkg ("load", "doctest");
+  doctest_dir = pkg ("list", package_name);
+  doctest_dir = doctest_dir{1}.dir;
+  try
+    doctest (doctest_dir);
+  catch e
     disp (e);
 
-    step_disp_h2 (["Run: pkg install -verbose ", pkg_name_version]);
-    pkg ("install", "-verbose",  __pkg__.(package_name).versions(1).url);
+    ## Ingore further doctest, not mandatory.
   end
+  step_disp_h2 ("done.");
+
+  step_disp_h1 (["Run: pkg test      ", pkg_name_version]);
+  pkg ("test", package_name);
+  step_disp_h2 ("done.");
+
+  step_disp_h1 (["Run: pkg uninstall ", pkg_name_version]);
+  pkg ("uninstall", package_name);
+  step_disp_h2 ("done.");
+
+  step_disp_h1 ("Show: fntests.log");
+  type (fullfile (tempdir (), "fntests.log"))
+
+  step_disp_h1 ("FINISHING");
 
 endfunction
 
@@ -149,6 +153,17 @@ endfunction
 
 function step_disp_h2 (str)
   printf ("\n    %s\n\n", str);
+endfunction
+
+
+function step_group_start (str)
+  printf ("::group::{%s}\n", str);
+endfunction
+
+
+function step_group_end (str)
+  printf ("\n    %s\n\n", str);
+  disp ("::endgroup::");
 endfunction
 
 
