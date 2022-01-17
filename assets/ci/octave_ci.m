@@ -17,15 +17,14 @@
 function octave_ci (package_name, pkg_index_file)
 
   if (nargin < 1)
-    step_disp_h2 ("STOP.  No package provided.");
+    step_warning ("STOP.  No package provided.");
     return;
   endif
 
   ## Resolve locally build package index.
   step_group_start ("Resolve locally build package index");
   if (exist (pkg_index_file, "file") != 2)
-    step_disp_h2 (["STOP.  Cannot find '", pkg_index_file, "'."]);
-    step_group_end ();
+    step_group_end (["STOP.  Cannot find '", pkg_index_file, "'."]);
     exit (1);
   endif
   __pkg__ = package_index_local_resolve (pkg_index_file);
@@ -44,23 +43,24 @@ function octave_ci (package_name, pkg_index_file)
     endif
   endfor
   if (! pkg_installable)
-    step_disp_h2 (["STOP.  '", pkg_name_version, "', no 'pkg' dependency."]);
+    step_warning (["STOP.  '", pkg_name_version, "', no 'pkg' dependency."]);
     return;
   endif
 
   ## Test basic package installation.
   mkdir ("~/octave");  # Avoids pkg warning.
-  cd (tempdir ());
+  test_dir = tempdir ();
+  cd (test_dir);
 
-  step_disp_h1 ("Resolve package dependencies");
+  step_group_start ("Resolve package dependencies");
   [ubuntu2004, pkgs] = resolve_deps (__pkg__, {package_name});
-  step_disp_h2 ("done.");
+  step_group_end ("done.");
 
   if (! isempty (ubuntu2004))
-    step_disp_h1 ("Install Ubuntu 20.04 dependencies");
-    [~,~] = system ("sudo apt-get -qq update");
-    [~,~] = system (["sudo apt-get -qq install --yes ", strjoin(ubuntu2004)]);
-    step_disp_h2 ("done.");
+    step_group_start ("Install Ubuntu 20.04 dependencies");
+    [~,~] = system ("sudo apt-get update");
+    [~,~] = system (["sudo apt-get install --yes ", strjoin(ubuntu2004)]);
+    step_group_end ("done.");
   endif
 
   ## Install package dependencies and "doctest" package.
@@ -69,38 +69,39 @@ function octave_ci (package_name, pkg_index_file)
     pkg_dep_name = pkgs{i};
     pkg_dep_name_version = [pkg_dep_name, "@", ...
       __pkg__.(pkg_dep_name).versions(1).id];
-    step_disp_h1 (["Install dependency:  ", pkg_dep_name_version]);
-    pkg_install_sha256_check (__pkg__.(pkg_dep_name).versions(1));
-    step_disp_h2 ("done.");
+    step_group_start (["Install dependency:  ", pkg_dep_name_version]);
+    pkg_install_sha256_check (__pkg__.(pkg_dep_name).versions(1), test_dir);
+    step_group_end ("done.");
   endfor
 
   ## Try to install and test the default (first) version of the changed
   ## packages.
   try
-    step_disp_h1 (["Run: pkg install   ", pkg_name_version]);
-    pkg_install_sha256_check (__pkg__.(package_name).versions(1));
-    step_disp_h2 ("done.");
+    step_group_start (["Run: pkg install   ", pkg_name_version]);
+    pkg_install_sha256_check (__pkg__.(package_name).versions(1), test_dir);
+    step_group_end ("done.");
   catch e
     ## In case of install error, try to get as much information as possible.
     ##
     ## Note that the installation is likely to fail for packages with
     ## "exotic" dependencies.
 
-    step_disp_h1 (["ERROR: pkg install -verbose ", pkg_name_version]);
+    step_group_start (["ERROR: pkg install -verbose ", pkg_name_version]);
     pkg ("install", "-verbose",  __pkg__.(package_name).versions(1).url);
+    step_group_end ("done.");
 
     exit (1);  # Return test failed.
   end
 
-  step_disp_h1 (["Run: pkg load      ", pkg_name_version]);
+  step_group_start (["Run: pkg load      ", pkg_name_version]);
   pkg ("load", package_name);
-  step_disp_h2 ("done.");
+  step_group_end ("done.");
 
-  step_disp_h1 (["Run: pkg unload    ", pkg_name_version]);
+  step_group_start (["Run: pkg unload    ", pkg_name_version]);
   pkg ("unload", package_name);
-  step_disp_h2 ("done.");
+  step_group_end ("done.");
 
-  step_disp_h1 (["Run: doctest       ", pkg_name_version]);
+  step_group_start (["Run: doctest       ", pkg_name_version]);
   pkg ("load", "doctest");
   doctest_dir = pkg ("list", package_name);
   doctest_dir = doctest_dir{1}.dir;
@@ -111,20 +112,19 @@ function octave_ci (package_name, pkg_index_file)
 
     ## Ingore further doctest, not mandatory.
   end
-  step_disp_h2 ("done.");
+  step_group_end ("done.");
 
-  step_disp_h1 (["Run: pkg test      ", pkg_name_version]);
+  step_group_start (["Run: pkg test      ", pkg_name_version]);
   pkg ("test", package_name);
-  step_disp_h2 ("done.");
+  step_group_end ("done.");
 
-  step_disp_h1 (["Run: pkg uninstall ", pkg_name_version]);
+  step_group_start (["Run: pkg uninstall ", pkg_name_version]);
   pkg ("uninstall", package_name);
-  step_disp_h2 ("done.");
+  step_group_end ("done.");
 
-  step_disp_h1 ("Show: fntests.log");
-  type (fullfile (tempdir (), "fntests.log"))
-
-  step_disp_h1 ("FINISHING");
+  step_group_start ("Show: fntests.log");
+  type (fullfile (test_dir, "fntests.log"));
+  step_group_end ("done.");
 
 endfunction
 
@@ -141,23 +141,13 @@ function __pkg__ = package_index_local_resolve (pkg_index_file)
 endfunction
 
 
-function step_disp_h1 (str)
-  persistent i = 1;
-  disp (" ");
-  disp ("--------------------------------------------------");
-  printf ("--- Step %2d: %s\n", i++, str);
-  disp ("--------------------------------------------------");
-  disp (" ");
-endfunction
-
-
-function step_disp_h2 (str)
-  printf ("\n    %s\n\n", str);
+function step_warning (str)
+  printf ("::warning::%s\n", str);
 endfunction
 
 
 function step_group_start (str)
-  printf ("::group::{%s}\n", str);
+  printf ("::group::%s\n", str);
 endfunction
 
 
@@ -167,8 +157,8 @@ function step_group_end (str)
 endfunction
 
 
-function pkg_install_sha256_check (pkg_version)
-  cd (tempdir ());
+function pkg_install_sha256_check (pkg_version, test_dir)
+  cd (test_dir);
   [~, pkg_file, pkg_ext] = fileparts (pkg_version.url);
   pkg_file = [pkg_file, pkg_ext];
   urlwrite (pkg_version.url, pkg_file);
@@ -181,7 +171,7 @@ function pkg_install_sha256_check (pkg_version)
   else
     disp (["sha256 checksum ok: '", sha256_sum, "'"]);
   endif
-  pkg ("install",  pkg_file);
+  pkg ("install", pkg_file);
 endfunction
 
 
