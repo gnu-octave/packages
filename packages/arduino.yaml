@@ -30,7 +30,7 @@ versions:
 - id: "0.8.0"
   date: "2022-01-16"
   sha256: "a3df842bf8da56178277cdf271ebd690ca7372cf5dc58f8673efcb0721e93402"
-  url: "https://sourceforge.net/p/octave/package-releases/467/attachment/arduino-0.8.0.tar.gz"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/arduino-0.8.0.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
   - "instrument-control (>= 0.3.0)"
