@@ -19,6 +19,9 @@ jobs:
 
     strategy:
       matrix:
+        image:
+        # - docker.io/gnuoctave/octave
+        - ghcr.io/gnu-octave/octave
         version:
         - 6.4.0
 
@@ -64,13 +67,12 @@ jobs:
           CHANGED_PACKAGES:
 
 
-      - name: Pull Octave Docker image
+      - name: Pull Octave image
         if: ${{ env.CHANGED_PACKAGES != '' }}
-        ## DockerHub:  docker.io/gnuoctave/octave:${{ matrix.version }}
-        run: docker pull ghcr.io/gnu-octave/octave:${{ matrix.version }}
+        run: docker pull ${{ matrix.image }}:${{ matrix.version }}
 
 
-      - name: Test packages
+      - name: Octave package test
         if: ${{ env.CHANGED_PACKAGES != '' }}
         run: |
           pkgs=${{ env.CHANGED_PACKAGES }}
@@ -81,7 +83,7 @@ jobs:
               --user root \
               --env="GRANT_SUDO=yes" \
               --volume="$(pwd):/home/jovyan/packages:rw" \
-              gnuoctave/octave:${{ matrix.version }} \
+              ${{ matrix.image }}:${{ matrix.version }} \
               octave-cli --eval "cd packages/assets/ci; \
                 octave_ci('$p', '/home/jovyan/packages/${{ env.PKG_INDEX_FILE }}')"
           done
