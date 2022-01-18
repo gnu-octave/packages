@@ -35,7 +35,7 @@ versions:
 - id: "3.4.0"
   date: "2022-01-16"
   sha256: "6ec6a06e13ad288afad8631cc41f7247e47096fa1e8d04240d4ed01efbe4a77a"
-  url: "https://sourceforge.net/p/octave/package-releases/466/attachment/control-3.4.0.tar.gz"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/control-3.4.0.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
