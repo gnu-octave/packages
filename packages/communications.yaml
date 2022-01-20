@@ -28,7 +28,7 @@ versions:
 - id: "1.2.4"
   date: "2022-01-19"
   sha256: "49f03cd543f473b560ae8c5203f459555299e1aae5f148697f7db817bc86153a"
-  url: "https://sourceforge.net/p/octave/package-releases/468/attachment/communications-1.2.4.tar.gz"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/communications-1.2.4.tar.gz"
   depends:
   - "octave (>= 4.4.0)"
   - "signal (>= 1.1.3)"
