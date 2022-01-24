@@ -34,6 +34,7 @@ versions:
   depends:
   - "octave (>= 3.6.0)"
   - "statistics (>= 1.0.0)"
+  - "pkg"
 - id: "3.2.2"
   date: "2022-01-23"
   sha256: "1bdb1e529648d517778d1bf4b53fe3a46c8214eac53832717ca36f8a28f40149"
