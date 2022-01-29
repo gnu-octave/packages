@@ -31,7 +31,7 @@ maintainers:
 versions:
 - id: "3.2.1"
   date: "2022-01-28"
-  sha256: "40dca588e32167484a3e9d1c77858db11f4eacb5ea92dcc37c78144fd6f91a28"
+  sha256: "38e526427375713229ab3d86a5fe3f5a08550747d8420541706fdea9093fdce8"
   url: "https://sourceforge.net/p/octave/package-releases/469/attachment/interval-3.2.1.tar.gz"
   depends:
   - "octave (>= 3.8.0)"
