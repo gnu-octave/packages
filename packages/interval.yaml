@@ -32,7 +32,7 @@ versions:
 - id: "3.2.1"
   date: "2022-01-28"
   sha256: "38e526427375713229ab3d86a5fe3f5a08550747d8420541706fdea9093fdce8"
-  url: "https://sourceforge.net/p/octave/package-releases/469/attachment/interval-3.2.1.tar.gz"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/interval-3.2.1.tar.gz"
   depends:
   - "octave (>= 4.2.0)"
   - "pkg"
