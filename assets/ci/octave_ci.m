@@ -143,6 +143,9 @@ function __pkg__ = package_index_local_resolve (pkg_index_file)
   eval (data);
 endfunction
 
+function step_error (str)
+  printf ("::error::%s\n", str);
+endfunction
 
 function step_warning (str)
   printf ("::warning::%s\n", str);
@@ -167,7 +170,7 @@ function pkg_install_sha256_check (pkg_version, test_dir)
   urlwrite (pkg_version.url, pkg_file);
   sha256_sum = hash ("sha256", fileread (pkg_file));
   if (! strcmp (sha256_sum, pkg_version.sha256))
-    error (["Package checksum error:\n", ...
+    step_error (["Package checksum error:\n", ...
       "\n\tFile: %s", ...
       "\n\tExpected: '%s'", ...
       "\n\tBut got:  '%s'\n"], pkg_file, pkg_version.sha256, sha256_sum);
