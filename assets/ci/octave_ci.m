@@ -81,6 +81,7 @@ function octave_ci (package_name, pkg_index_file)
     pkg_install_sha256_check (__pkg__.(package_name).versions(1), test_dir);
     step_group_end ("done.");
   catch e
+    step_group_end ("ERROR: package installation failed");
     ## In case of install error, try to get as much information as possible.
     ##
     ## Note that the installation is likely to fail for packages with
