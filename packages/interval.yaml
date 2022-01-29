@@ -31,7 +31,7 @@ maintainers:
 versions:
 - id: "3.2.0"
   date: "2018-07-01"
-  sha256:
+  sha256: ""
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/interval-3.2.0.tar.gz"
   depends:
   - "octave (>= 3.8.0)"
