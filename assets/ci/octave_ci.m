@@ -98,10 +98,6 @@ function octave_ci (package_name, pkg_index_file)
   pkg ("load", package_name);
   step_group_end ("done.");
 
-  step_group_start (["Run: pkg unload    ", pkg_name_version]);
-  pkg ("unload", package_name);
-  step_group_end ("done.");
-
   step_group_start (["Run: doctest       ", pkg_name_version]);
   pkg ("load", "doctest");
   doctest_dir = pkg ("list", package_name);
@@ -113,6 +109,10 @@ function octave_ci (package_name, pkg_index_file)
 
     ## Ingore further doctest, not mandatory.
   end
+  step_group_end ("done.");
+
+  step_group_start (["Run: pkg unload    ", pkg_name_version]);
+  pkg ("unload", package_name);
   step_group_end ("done.");
 
   cd (test_dir);  # To this directory "fntests.log" is written.
