@@ -44,6 +44,7 @@ This guide explains how to add your Octave package or toolbox to
 
   To do this, either use the "easy" way by following the
   [GitHub guide how to create a new file](https://docs.github.com/en/github/managing-files-in-a-repository/creating-new-files)
+  and finally [create a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
   ...
 
   ... or for experts:
