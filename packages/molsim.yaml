@@ -6,7 +6,7 @@ description: >-
 icon: "https://github.com/jesperschmidthansen/molsim/doc/logo.png"
 links:
 - icon: "far fa-copyright"
-  label: GPL-3.0-or-later"
+  label: "GPL-3.0-or-later"
   url: "https://github.com/jesperschmidthansen/molsim/COPYING"
 - icon: "fas fa-code-branch"
   label: "repository"
