@@ -2,7 +2,7 @@
 layout: "package"
 permalink: "molsim"
 description: >-
-  molecular dynamics simulations. 
+  molecular dynamics simulations.
 icon: "https://github.com/jesperschmidthansen/molsim/doc/logo.png"
 links:
 - icon: "far fa-copyright"
