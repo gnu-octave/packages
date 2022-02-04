@@ -29,14 +29,6 @@ maintainers:
 - name: "Daniel Hornung"
   contact: "d.hornung@indiscale.com"
 versions:
-# TODO Update data after release
-# - id: "0.0.2"
-#   date: "2021-xx-xx"
-#   sha256: "bff441755f0d68596f2efd027fe637b5b6c52b722ffd6255bdb8a5f34ab4ef2a"
-#   url: "https://github.com/gnu-octave/pkg-example/archive/1.1.0.tar.gz"
-#   depends:
-#   - "octave (>= 4.4.0)"
-#   - "pkg"
 - id: "dev"
   date:
   sha256:
@@ -44,10 +36,10 @@ versions:
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
-- id: "0.0.1"
-  date: "2021-09-17"
-  sha256: "56a221d83f363c94e667b610b309a2903532e358357e5ff7602e0314fea3ad4c"
-  url: "https://gitlab.indiscale.com/caosdb/src/caosdb-octavelib/-/archive/v0.0.1/caosdb-octavelib-v0.0.1.tar.bz2"
+- id: "0.1.0"
+  date: "2022-02-04"
+  sha256: "37859c7a7b09c0aa5481c4da7940d281afee99a75398cd0e188059bb3cb0e331"
+  url: "https://gitlab.indiscale.com/caosdb/src/caosdb-octavelib/-/archive/v0.1.0/caosdb-octavelib-v0.1.0.tar.bz2"
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
