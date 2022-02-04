@@ -36,10 +36,10 @@ versions:
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
-- id: "0.1.0"
+- id: "0.1.1"
   date: "2022-02-04"
-  sha256: "37859c7a7b09c0aa5481c4da7940d281afee99a75398cd0e188059bb3cb0e331"
-  url: "https://gitlab.indiscale.com/caosdb/src/caosdb-octavelib/-/archive/v0.1.0/caosdb-octavelib-v0.1.0.tar.bz2"
+  sha256: "229593f74387da9ae9c28b769adce9c0d520e4dd99157d814f56b93f3c144e74"
+  url: "https://gitlab.indiscale.com/caosdb/src/caosdb-octavelib/-/archive/v0.1.1/caosdb-octavelib-v0.1.1.tar.bz2"
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
