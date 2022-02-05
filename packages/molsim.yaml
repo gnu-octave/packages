@@ -9,7 +9,7 @@ icon: "https://raw.githubusercontent.com/jesperschmidthansen/molsim/main/doc/log
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
-  url: "https://github.com/jesperschmidthansen/molsim/COPYING"
+  url: "https://github.com/jesperschmidthansen/molsim/blob/main/COPYING"
 - icon: "fas fa-code-branch"
   label: "repository"
   url: "https://github.com/jesperschmidthansen/molsim/"
