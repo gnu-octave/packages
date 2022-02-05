@@ -2,7 +2,9 @@
 layout: "package"
 permalink: "molsim"
 description: >-
-  molecular dynamics simulations.
+  molsim is a wrapper for the seplib molecular dynamics library.  It allows
+  you to perform molecular simulations of simple atomistic systems, confined
+  fluids, molecular mixtures, polymers and more.
 icon: "https://github.com/jesperschmidthansen/molsim/doc/logo.png"
 links:
 - icon: "far fa-copyright"
@@ -20,7 +22,7 @@ maintainers:
 versions:
 - id: "1.0.0"
   date: "2022-01-23"
-  sha256:
+  sha256: "3cca1861fb67eb4e7411594c2e5f14b678a2f66d9c65dc1f0ff24d1986baabdf"
   url: "https://github.com/jesperschmidthansen/molsim/archive/refs/tags/v0.9.0.tar.gz"
   depends:
   - "octave (>= 6.0.0)"
