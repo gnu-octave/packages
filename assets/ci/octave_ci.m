@@ -81,6 +81,7 @@ function octave_ci (package_name, pkg_index_file)
     pkg_install_sha256_check (__pkg__.(package_name).versions(1), test_dir);
     step_group_end ("done.");
   catch e
+    step_group_end ("ERROR: package installation failed");
     ## In case of install error, try to get as much information as possible.
     ##
     ## Note that the installation is likely to fail for packages with
@@ -97,10 +98,6 @@ function octave_ci (package_name, pkg_index_file)
   pkg ("load", package_name);
   step_group_end ("done.");
 
-  step_group_start (["Run: pkg unload    ", pkg_name_version]);
-  pkg ("unload", package_name);
-  step_group_end ("done.");
-
   step_group_start (["Run: doctest       ", pkg_name_version]);
   pkg ("load", "doctest");
   doctest_dir = pkg ("list", package_name);
@@ -112,6 +109,10 @@ function octave_ci (package_name, pkg_index_file)
 
     ## Ingore further doctest, not mandatory.
   end
+  step_group_end ("done.");
+
+  step_group_start (["Run: pkg unload    ", pkg_name_version]);
+  pkg ("unload", package_name);
   step_group_end ("done.");
 
   cd (test_dir);  # To this directory "fntests.log" is written.
@@ -142,6 +143,9 @@ function __pkg__ = package_index_local_resolve (pkg_index_file)
   eval (data);
 endfunction
 
+function step_error (str)
+  printf ("::error::%s\n", str);
+endfunction
 
 function step_warning (str)
   printf ("::warning::%s\n", str);
@@ -166,10 +170,10 @@ function pkg_install_sha256_check (pkg_version, test_dir)
   urlwrite (pkg_version.url, pkg_file);
   sha256_sum = hash ("sha256", fileread (pkg_file));
   if (! strcmp (sha256_sum, pkg_version.sha256))
-    error (["Package checksum error:\n", ...
+    step_error (sprintf (["Package checksum error:\n", ...
       "\n\tFile: %s", ...
       "\n\tExpected: '%s'", ...
-      "\n\tBut got:  '%s'\n"], pkg_file, pkg_version.sha256, sha256_sum);
+      "\n\tBut got:  '%s'\n"], pkg_file, pkg_version.sha256, sha256_sum));
   else
     disp (["sha256 checksum ok: '", sha256_sum, "'"]);
   endif

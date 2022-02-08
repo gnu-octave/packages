@@ -11,23 +11,23 @@ description: >-
   and Analysis of Computer Experiments (DACE), the STK can be useful for other
   applications areas (such as Geostatistics, Machine Learning, Non-parametric
   Regression, etc.).
-icon: "https://octave.sourceforge.io/pkg_icon/stk.png"
+icon: "https://raw.githubusercontent.com/stk-kriging/stk/master/admin/htmldoc/stk_logo.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
-  url: "https://sourceforge.net/p/octave/stk/ci/default/tree/COPYING"
+  url: "https://github.com/stk-kriging/stk/blob/master/COPYING"
 - icon: "fas fa-rss"
   label: "news"
-  url: "https://sourceforge.net/p/octave/stk/ci/default/tree/ChangeLog"
+  url: "https://github.com/stk-kriging/stk/blob/master/ChangeLog"
 - icon: "fas fa-code-branch"
   label: "repository"
-  url: "https://sourceforge.net/p/octave/stk/ci/default/tree/"
+  url: "https://github.com/stk-kriging/stk"
 - icon: "fas fa-th-list"
   label: "function reference"
   url: "https://octave.sourceforge.io/stk/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(stk)"
+  url: "https://github.com/stk-kriging/stk/issues"
 maintainers:
 - name: "Julien Bect"
   contact: "julien.bect@centralesupelec.fr"
@@ -36,8 +36,8 @@ maintainers:
 versions:
 - id: "2.6.1"
   date: "2019-10-12"
-  sha256:
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/stk-2.6.1.tar.gz"
+  sha256: "2a859a798f475bb770805fded2c2ff891c9ab3bdb80ffe22a99cf269956b16e7"
+  url: "https://github.com/stk-kriging/stk/releases/download/2.6.1/stk-2.6.1-octpkg.tar.gz"
   depends:
   - "octave (>= 3.8.0)"
   - "pkg"
