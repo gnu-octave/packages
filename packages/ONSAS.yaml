@@ -2,7 +2,9 @@
 layout: "ONSAS"
 permalink: "onsas"
 description: >-
-  ONSAS is an Open Nonlinear Structural Analysis Solver. It is a GNU-Octave code for static/dynamic and linear/non-linear analysis of structures including, solids, beams, truss or plane structures.
+  ONSAS is an Open Nonlinear Structural Analysis Solver. It is a GNU-Octave
+  code for static/dynamic and linear/non-linear analysis of structures
+  formed by solid, beam, truss or plane components.
 icon: "https://github.com/ONSAS/ONSAS.m/blob/master/docs/src/assets/logo.png"
 links:
 - icon: "far fa-copyright"
