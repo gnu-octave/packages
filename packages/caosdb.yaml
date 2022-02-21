@@ -29,6 +29,13 @@ maintainers:
 - name: "Daniel Hornung"
   contact: "d.hornung@indiscale.com"
 versions:
+- id: "0.1.2"
+  date: "2022-02-21"
+  sha256: "976d152a05e45ee03238e4ee80c2468b7ec212ffeb5b8f1f9b65a4044d4da119"
+  url: "https://gitlab.indiscale.com/caosdb/src/caosdb-octavelib/-/archive/v0.1.2/caosdb-octavelib-v0.1.2.tar.bz2"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
 - id: "0.1.1"
   date: "2022-02-04"
   sha256: "229593f74387da9ae9c28b769adce9c0d520e4dd99157d814f56b93f3c144e74"
