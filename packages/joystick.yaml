@@ -30,6 +30,6 @@ versions:
   url: "https://downloads.sourceforge.net/project/octave-joystick/v0.0.1/joystick-0.0.1.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
-  - "SDL (>= 1.2)"
+  - "libsdl-dev (>= 1.2)"
   - "pkg"
 ---
