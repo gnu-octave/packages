@@ -1,0 +1,35 @@
+---
+layout: "package"
+permalink: "joystick"
+description: >-
+   Provides basic joystick functions for GNU Octave.
+icon: "https://sourceforge.net/p/octave-joystick/code/ci/default/tree/doc/joystick-logo.png?format=raw"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://sourceforge.net/p/octave-joystick/code/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave-joystick/code/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave-joystick/code/ci/default/tree"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://sourceforge.net/p/octave-joystick/code/ci/default/tree/README.md"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://sourceforge.net/p/octave-raspberrypi/tickets/"
+maintainers:
+- name: "John Donoghue"
+  contact: "john.donoghue@ieee.org"
+versions:
+- id: "0.0.1"
+  date: "2022-02-22"
+  sha256: "40b3bbb0ef5ef3346d73b8bf2b311f82573f166ffc21680bd5054b57a511419e"
+  url: "https://downloads.sourceforge.net/project/octave-joystick/v0.0.1/joystick-0.0.1.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "SDL (>= 1.2)"
+  - "pkg"
+---
