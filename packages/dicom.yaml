@@ -30,6 +30,13 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "0.4.1"
+  date: "2022-02-22"
+  sha256: "af7360237a277d7cf25bb396cad165e46481a639893891c689e930f551d1d0e1"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dicom-0.4.1.tar.gz"
+  depends:
+  - "octave (>= 3.8.0)"
+  - "pkg"
 - id: "0.4.0"
   date: "2020-09-04"
   sha256: "eadb366e49f950cf85ad7544acc01bffd28654c43b477a41b816889dabb13c8c"
