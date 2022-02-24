@@ -21,9 +21,16 @@ links:
   label: "report a problem"
   url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(sockets)"
 maintainers:
-- name: "Octave-Forge community"
+- name: "Octave Forge community"
   contact:
 versions:
+- id: "1.3.0"
+  date: "2022-02-22"
+  sha256: "0a49f76ed56a65d39b8636eea7352a5a27c650683bd175b9e507ded3194035f2"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/sockets-1.3.0.tar.gz"
+  depends:
+  - "octave (>= 3.6.0)"
+  - "pkg"
 - id: "1.2.1"
   date: "2020-11-10"
   sha256: "0f6f84a9cc1452fb52433ab84042906fd7c1b62d4c74b01c59091ac7f0fdc1a1"
