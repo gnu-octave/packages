@@ -46,6 +46,8 @@ versions:
   depends:
   - "octave (>= 3.8.0)"
   - "pkg"
+  ubuntu2004:
+  - "libgdcm-dev"
 - id: "0.3.0"
   date: "2020-02-27"
   sha256: "d5ca71710332973ff3a68c0001d9e9bb44b2a90e6b887aeb450c532024b1417d"
@@ -53,4 +55,6 @@ versions:
   depends:
   - "octave (>= 3.8.0)"
   - "pkg"
+  ubuntu2004:
+  - "libgdcm-dev"
 ---
