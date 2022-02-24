@@ -34,6 +34,13 @@ maintainers:
 - name: "Emmanuel Vazquez"
   contact: "emmanuel.vazquez@centralesupelec.fr"
 versions:
+- id: "2.7.0"
+  date: "2022-02-23"
+  sha256: "bc87fe5c32ef2cd38cc29b450a08aa7e5fa8dcf210f8a2e9b0984e02b77b80c3"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/stk-2.7.0.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "2.6.1"
   date: "2019-10-12"
   sha256: "2a859a798f475bb770805fded2c2ff891c9ab3bdb80ffe22a99cf269956b16e7"
