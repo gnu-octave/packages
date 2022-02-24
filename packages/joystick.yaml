@@ -31,4 +31,6 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
+  ubuntu2004:
+  - "libsdl2-dev"
 ---
