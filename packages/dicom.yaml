@@ -32,7 +32,7 @@ maintainers:
 versions:
 - id: "0.4.1"
   date: "2022-02-22"
-  sha256: "af7360237a277d7cf25bb396cad165e46481a639893891c689e930f551d1d0e1"
+  sha256: "cd9250f4f3f83d5a1bb49ad9d0ee7e6e668e3d00f4a309e572abc44798c806fd"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dicom-0.4.1.tar.gz"
   depends:
   - "octave (>= 3.8.0)"
