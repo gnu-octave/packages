@@ -9,7 +9,7 @@ layout: none
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>{{ page.url | absolute_url | xml_escape }}</id>
 
-  <title type="html">{{ site.title | smartify | xml_escape }} b</title>
+  <title type="html">{{ site.title | smartify | xml_escape }}</title>
   <subtitle>{{ site.description | xml_escape }}</subtitle>
   <author>
     <name>Octave community</name>
