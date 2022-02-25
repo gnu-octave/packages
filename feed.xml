@@ -1,0 +1,48 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ site.lang }}">
+  <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
+  <link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml" />
+  <link href="{{ '/' | absolute_url }}" rel="alternate" type="text/html" {% if site.lang %}hreflang="{{ site.lang }}" {% endif %}/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>{{ page.url | absolute_url | xml_escape }}</id>
+
+  <title type="html">{{ site.title | smartify | xml_escape }} b</title>
+  <subtitle>{{ site.description | xml_escape }}</subtitle>
+  <author>
+    <name>Octave community</name>
+  </author>
+
+  {%- assign pkgs = site.pages | where: "layout", "package" -%}
+  {% assign i = 0 %}
+  {%- for pkg in pkgs -%}
+    {%- assign t = pkg.versions[0].date | date_to_xmlschema | append: "$" | append: i | append: ", " -%}
+    {%- if t.size > 5 -%}
+      {%- assign timesort = timesort | append: t -%}
+    {%- endif -%}
+    {% assign i = i | plus:1 %}
+  {%- endfor -%}
+  {%- assign timesort = timesort | split: ", " | sort | reverse | slice: 0, 10 -%}
+  {%- for t in timesort -%}
+    {%- assign tt = t | split: "$" | shift | join: ", " -%}
+    {%- assign times = times | append: tt | append: ", " -%}
+  {%- endfor -%}
+  {%- assign times = times | split: ", " -%}
+
+  {%- for t in times -%}
+    {%- assign tt = t | to_integer -%}
+    {%- assign pkg = pkgs[tt] -%}
+    <entry xml:lang="{{ site.lang }}">
+      <id>{{ pkg.permalink | absolute_url }}</id>
+      <title type="html">{{ pkg.permalink }} {{ pkg.versions[0].id }} released</title>
+      <link href="{{ pkg.permalink | absolute_url }}" rel="alternate" type="text/html" title="{{ pkg.permalink }}" />
+      <published>{{ pkg.versions[0].date | date_to_xmlschema }}</published>
+      <updated>{{ pkg.versions[0].date | date_to_xmlschema }}</updated>
+      <content>{{ pkg.description | strip_html | strip | escape }}</content>
+      <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{{ pkg.icon | default: site.pkg_icon | absolute_url }}"/>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="{{ pkg.icon | default: site.pkg_icon | absolute_url }}"/>
+    </entry>
+  {%- endfor -%}
+</feed>
