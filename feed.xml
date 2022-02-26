@@ -51,6 +51,7 @@ layout: none
         <img src="{{ pkg.icon | default: site.pkg_icon | absolute_url }}" alt="{{ pkg.permalink }}" />
         </a>
         {{ pkg.description | strip_html | strip | escape }}
+        <br/><br/>
         Install {{ pkg.permalink }} {{ pkg.versions[0].id }} ({{ pkg.versions[0].date }})
         from the Octave command-line with:
         <pre><code>pkg install "{{ pkg.versions[0].url }}"</code></pre>
