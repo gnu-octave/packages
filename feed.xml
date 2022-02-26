@@ -42,9 +42,10 @@ layout: none
       <updated>{{ pkg.versions[0].date | date_to_xmlschema }}</updated>
       <summary type="html">{{ pkg.description | strip_html | strip | escape }}</summary>
       <content type="html">
+        {%- capture content -%}
         {{ pkg.description | strip_html | strip | escape }}
         <a  href="{{ pkg.icon | default: site.pkg_icon | absolute_url }}">
-        <img src="{{ pkg.icon | default: site.pkg_icon | absolute_url }}" alt="{{ pkg.permalink }}" /></a>
+        <img src="{{ pkg.icon | default: site.pkg_icon | absolute_url }}" alt="{{ pkg.permalink }}"></a>
         Install {{ pkg.permalink }} {{ pkg.versions[0].id }} ({{ pkg.versions[0].date }})
         from the Octave command-line with:
         <pre><code>pkg install "{{ pkg.versions[0].url }}"</code></pre>
@@ -53,6 +54,8 @@ layout: none
         See what has changed in this release in the
         <a href="{{ news[0].url }}">NEWS</a> file.
         {%- endif -%}
+        {%- endcapture -%}
+        {{ content | xml_escape }}
       </content>
       <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{{ pkg.icon | default: site.pkg_icon | absolute_url }}"/>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="{{ pkg.icon | default: site.pkg_icon | absolute_url }}"/>
