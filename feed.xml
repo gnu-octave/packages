@@ -59,7 +59,6 @@ layout: none
         See what has changed in this release in the
         <a href="{{ news[0].url }}">NEWS</a> file.
         {%- endif -%}
-        ]]>
       </content>
       <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{{ pkg.icon | default: site.pkg_icon | absolute_url }}"/>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="{{ pkg.icon | default: site.pkg_icon | absolute_url }}"/>
