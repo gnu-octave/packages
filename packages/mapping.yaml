@@ -24,6 +24,15 @@ maintainers:
 - name: "Philip Nienhuis"
   contact: "prnienhuis@users.sf.net"
 versions:
+- id: "1.4.2"
+  date: "2022-02-20"
+  sha256: "9ab5105aa0b5e549790070ef84c94d4ada88306d99c5afa1076bc3c9e8b32da2"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/mapping-1.4.1.tar.gz"
+  depends:
+  - "octave (>= 5.2.0)"
+  - "io (>= 2.2.7)"
+  - "geometry (>= 4.0.0)"
+  - "pkg"
 - id: "1.4.1"
   date: "2020-10-18"
   sha256: "80a12dfd41777299d90e4c926df2bf24c176d94c761328efc344e33c73c04072"

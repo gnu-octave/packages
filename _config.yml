@@ -2,10 +2,14 @@ title: "GNU Octave - Packages"
 description: >-
   Extend GNU Octave's functionality by packages. Find many of them here.
 logo: "/assets/octave-logo-512.png"
+lang: en
 
 pkg_icon: "/assets/pkg.png"
 
 markdown_ext: "markdown,md,yaml"
+
+plugins:
+  - jekyll-feed
 
 exclude:
   - CONTRIBUTING.md

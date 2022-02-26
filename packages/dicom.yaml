@@ -30,6 +30,15 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "0.4.1"
+  date: "2022-02-22"
+  sha256: "cd9250f4f3f83d5a1bb49ad9d0ee7e6e668e3d00f4a309e572abc44798c806fd"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dicom-0.4.1.tar.gz"
+  depends:
+  - "octave (>= 3.8.0)"
+  - "pkg"
+  ubuntu2004:
+  - "libgdcm-dev"
 - id: "0.4.0"
   date: "2020-09-04"
   sha256: "eadb366e49f950cf85ad7544acc01bffd28654c43b477a41b816889dabb13c8c"
@@ -37,6 +46,8 @@ versions:
   depends:
   - "octave (>= 3.8.0)"
   - "pkg"
+  ubuntu2004:
+  - "libgdcm-dev"
 - id: "0.3.0"
   date: "2020-02-27"
   sha256: "d5ca71710332973ff3a68c0001d9e9bb44b2a90e6b887aeb450c532024b1417d"
@@ -44,4 +55,6 @@ versions:
   depends:
   - "octave (>= 3.8.0)"
   - "pkg"
+  ubuntu2004:
+  - "libgdcm-dev"
 ---
