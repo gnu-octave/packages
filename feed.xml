@@ -48,7 +48,7 @@ layout: none
       </summary>
       <content type="html">
         <a  href="{{ pkg.icon | default: site.pkg_icon | absolute_url }}">
-        <img src="{{ pkg.icon | default: site.pkg_icon | absolute_url }}" alt="{{ pkg.permalink }}">
+        <img src="{{ pkg.icon | default: site.pkg_icon | absolute_url }}" alt="{{ pkg.permalink }}" />
         </a>
         {{ pkg.description | strip_html | strip | escape }}
         Install {{ pkg.permalink }} {{ pkg.versions[0].id }} ({{ pkg.versions[0].date }})
