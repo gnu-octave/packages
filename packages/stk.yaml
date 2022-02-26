@@ -18,7 +18,7 @@ links:
   url: "https://github.com/stk-kriging/stk/blob/master/COPYING"
 - icon: "fas fa-rss"
   label: "news"
-  url: "https://github.com/stk-kriging/stk/blob/master/ChangeLog"
+  url: "https://github.com/stk-kriging/stk/blob/master/NEWS.md"
 - icon: "fas fa-code-branch"
   label: "repository"
   url: "https://github.com/stk-kriging/stk"
