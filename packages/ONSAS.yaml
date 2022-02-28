@@ -24,7 +24,7 @@ maintainers:
   contact: "jorgepz@fing.edu.uy"
 versions:
 - id: "0.2.5"
-  date: "2022-26-02"
+  date: "2022-02-26"
   sha256: "8759eb3c2a591bdd381c35966d725148db57436cc761abb07a06cf3052257106"
   url: "https://github.com/ONSAS/ONSAS.m/archive/refs/tags/v0.2.5.tar.gz"
   depends:
