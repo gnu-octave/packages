@@ -15,14 +15,14 @@ layout: none
     <name>Octave community</name>
   </author>
 
-  {%- assign pkgs = site.pages | where: "layout", "package" -%}
-  {% assign i = 0 %}
-  {%- for pkg in pkgs -%}
+  {%- assign packages = site.pages | where: "layout", "package" -%}
+  {%- assign i = 0 -%}
+  {%- for pkg in packages -%}
     {%- assign t = pkg.versions[0].date | date_to_xmlschema | append: "$" | append: i | append: ", " -%}
-    {%- if t.size > 5 -%}
+    {%- if t.size > 10 -%}
       {%- assign timesort = timesort | append: t -%}
     {%- endif -%}
-    {% assign i = i | plus:1 %}
+    {%- assign i = i | plus:1 -%}
   {%- endfor -%}
   {%- assign timesort = timesort | split: ", " | sort | reverse | slice: 0, 10 -%}
   {%- for t in timesort -%}
@@ -33,7 +33,7 @@ layout: none
 
   {%- for t in times -%}
     {%- assign tt = t | to_integer -%}
-    {%- assign pkg = pkgs[tt] -%}
+    {%- assign pkg = packages[tt] -%}
     <entry xml:lang="{{ site.lang }}">
       <id>{{ pkg.permalink | absolute_url }}#{{ pkg.versions[0].id }}</id>
       <title type="html">{{ pkg.permalink }} {{ pkg.versions[0].id }} released</title>
