@@ -159,7 +159,8 @@ versions:
 - `layout`: fixed string `"package"` for technical reasons.
 
 - `permalink`: string with the name of the package.
-  **Must** match the file name.
+  **Must** match the file name
+  and [**must** be lower case](https://hg.savannah.gnu.org/hgweb/octave/file/290e7e3f859f/scripts/pkg/private/get_description.m#l94).
 
 - `description`: see example above.
 
@@ -210,8 +211,9 @@ versions:
   - `id`: unique identifier string for this version, e.g. `"1.0.1"`, `"dev"`,
     ...
 
-  - `date`: date string in the format `"YYYY-MM-DD"` or blank if a date does
-    not apply for the release type.
+  - `date`: date string in the format `"YYYY-MM-DD"`
+    ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601))
+    or blank if a date does not apply for the release type.
 
   - `sha256`: [hash string](https://en.wikipedia.org/wiki/SHA-2) to verify
     integrity of your package archive or blank if integrity validation is not
