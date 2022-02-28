@@ -3,7 +3,7 @@
 > <https://gnu-octave.github.io/packages/>
 
 Extend [GNU Octave](https://www.octave.org)'s functionality by
-[more than 80 packages](https://gnu-octave.github.io/packages/).
+[more than 90 packages](https://gnu-octave.github.io/packages/).
 
 [![img](assets/screenshot.png)](https://gnu-octave.github.io/packages/)
 
