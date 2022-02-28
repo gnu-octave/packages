@@ -1,11 +1,11 @@
 ---
-layout: "ONSAS"
+layout: "package"
 permalink: "onsas"
 description: >-
   ONSAS is an Open Nonlinear Structural Analysis Solver. It is a GNU-Octave
   code for static/dynamic and linear/non-linear analysis of structures
   formed by solid, beam, truss or plane components.
-icon: "https://github.com/ONSAS/ONSAS.m/blob/master/docs/src/assets/logo.png"
+icon: "https://raw.githubusercontent.com/ONSAS/ONSAS.m/master/docs/src/assets/logo.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
@@ -25,8 +25,8 @@ maintainers:
 versions:
 - id: "0.2.5"
   date: "2022-26-02"
-  sha256: "bff441755f0d68596f2efd027fe637b5b6c52b722ffd6255bdb8a5f34ab4ef2a"
-  url: "https://github.com/gnu-octave/pkg-example/archive/1.1.0.tar.gz"
+  sha256: "8759eb3c2a591bdd381c35966d725148db57436cc761abb07a06cf3052257106"
+  url: "https://github.com/ONSAS/ONSAS.m/archive/refs/tags/v0.2.5.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
