@@ -23,7 +23,7 @@ links:
   url: "https://octave.sourceforge.io/instrument-control/package_doc/"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(instrument-control)"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(instrument-control)"
 maintainers:
 - name: "Andrius Sutas"
   contact: "andrius.sutas@gmail.com"

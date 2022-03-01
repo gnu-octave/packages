@@ -19,7 +19,7 @@ links:
   url: "https://octave.sourceforge.io/io/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(io)"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(io)"
 maintainers:
 - name: "Philip Nienhuis"
   contact: "prnienhuis@users.sf.net"

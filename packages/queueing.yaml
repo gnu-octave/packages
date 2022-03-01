@@ -25,7 +25,7 @@ links:
   url: "https://octave.sourceforge.io/queueing/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(queueing)"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(queueing)"
 maintainers:
 - name: "Moreno Marzolla"
   contact: "moreno.marzolla@unibo.it"

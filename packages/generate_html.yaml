@@ -19,7 +19,7 @@ links:
   url: "https://octave.sourceforge.io/generate_html/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(generate_html)"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(generate_html)"
 maintainers:
 - name: "Søren Hauberg"
   contact: "soren@hauberg.org"

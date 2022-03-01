@@ -13,7 +13,7 @@ links:
   url: "https://octave.sourceforge.io/secs3d/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(secs3d)"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(secs3d)"
 maintainers:
 - name: "Carlo de Falco"
   contact:

@@ -20,7 +20,7 @@ links:
   url: "https://octave.sourceforge.io/quaternion/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(quaternion)"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(quaternion)"
 maintainers:
 - name: "Lukas Reichlin"
   contact: "lukas.reichlin@gmail.com"

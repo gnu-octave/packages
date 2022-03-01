@@ -19,7 +19,7 @@ links:
   url: "https://octave.sourceforge.io/fuzzy-logic-toolkit/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(fuzzy-logic-toolkit)"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(fuzzy-logic-toolkit)"
 maintainers:
 - name: "L. Markowsky"
   contact: "lmarkov@users.sourceforge.net"

@@ -19,7 +19,7 @@ links:
   url: "https://octave.sourceforge.io/sockets/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&OpenClosed=open&Title=[octave%20forge]%20(sockets)"
+  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(sockets)"
 maintainers:
 - name: "Octave Forge community"
   contact:
