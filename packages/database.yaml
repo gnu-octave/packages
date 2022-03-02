@@ -29,10 +29,12 @@ maintainers:
 versions:
 - id: "2.4.4"
   date: "2019-03-13"
-  sha256:
+  sha256: "3761962f08beed41aadae27f8a14336b1ad5bcdc046861fa325c82d8943916b0"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/database-2.4.4.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
   - "struct (>= 1.0.12)"
   - "pkg"
+  ubuntu2004:
+  - "libpq-dev"
 ---
