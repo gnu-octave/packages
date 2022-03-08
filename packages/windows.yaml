@@ -29,6 +29,13 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "1.6.2"
+  date: "2022-03-07"
+  sha256: "789605b6187fb664dfca144d03cbac68f3bbfe3efd55bcaab43831e7eb2b4b86"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/windows-1.6.2.tar.gz"
+  depends:
+  - "octave (>= 3.8.0)"
+  - "pkg"
 - id: "1.6.1"
   date: "2021-03-25"
   sha256: "66f5410595ebccdb49ef5bb199473eb48115dd4c87bf74bb230c21f0a5810d84"
