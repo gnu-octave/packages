@@ -1,0 +1,36 @@
+---
+layout: "package"
+permalink: "coder"
+description: >-
+  Coder is an Octave code generator and build system that, given a function
+  name translates the function and all of its dependencies to C++ and builds
+  a .oct shared module.
+icon: "https://raw.githubusercontent.com/shsajjadi/OctaveCoder/dev/doc/icon.png"
+links:
+- icon: "far fa-copyright"
+  label: "AGPL-3.0-or-later"
+  url: "https://github.com/shsajjadi/OctaveCoder/blob/dev/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/shsajjadi/OctaveCoder/blob/dev/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/shsajjadi/OctaveCoder"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://github.com/shsajjadi/OctaveCoder/blob/dev/README.md"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/shsajjadi/OctaveCoder/issues"
+maintainers:
+- name: "Seyyed Hossein Sajjadi"
+  contact: "https://github.com/shsajjadi"
+versions:
+- id: "1.6.8"
+  date: "2021-12-07"
+  sha256: "5b12475750603abbfbc35059f7a79c92a82f73acc87e3053b5470f514f52c216"
+  url: "https://github.com/shsajjadi/OctaveCoder/archive/refs/tags/coder-1.6.8.tar.gz"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
+---
