@@ -1,8 +1,8 @@
 ---
 layout: "package"
-permalink: "octavecoder"
+permalink: "coder"
 description: >-
-  Octave Coder is a code generator and build system that, given a function
+  Coder is an Octave code generator and build system that, given a function
   name translates the function and all of its dependencies to C++ and builds
   a .oct shared module.
 icon: "https://raw.githubusercontent.com/shsajjadi/OctaveCoder/dev/doc/icon.png"
