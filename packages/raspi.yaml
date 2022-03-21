@@ -26,6 +26,14 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "0.0.3"
+  date: "2022-03-21"
+  sha256: "b27374c93c9d7f4248b8028c37756171c13c317a9e05e7b9a7b062cfde1c683f"
+  url: "https://downloads.sourceforge.net/project/octave-raspberrypi/v0.0.3/raspi-0.0.3.tar.gz"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "instrument-control (>= 0.4.0)"
+  - "pkg
 - id: "0.0.2"
   date: "2021-12-06"
   sha256: "7c93c374f9980cfbf4d047d8cc998cf97521c2340545fc95ebcb18c58d4c7cef"
