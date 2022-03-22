@@ -33,7 +33,7 @@ versions:
   depends:
   - "octave (>= 4.4.0)"
   - "instrument-control (>= 0.4.0)"
-  - "pkg
+  - "pkg"
 - id: "0.0.2"
   date: "2021-12-06"
   sha256: "7c93c374f9980cfbf4d047d8cc998cf97521c2340545fc95ebcb18c58d4c7cef"
