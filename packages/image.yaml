@@ -25,10 +25,21 @@ links:
 maintainers:
 - name: "Carnë Draug"
   contact: "carandraug@octave.org"
+- name: "Hartmut Gimpel"
+  contact: "hg_code@gmx.de"
+- name: "Avinoam Kalma"
+  contact:
 versions:
+- id: "2.14.0"
+  date: "2022-03-23"
+  sha256: "7515ea211a8cb8ef5d9d3bab85a36e9df5475e8b05a919a078e0d52746077133"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/image-2.14.0.tar.gz"
+  depends:
+  - "octave (>= 4.2.0)"
+  - "pkg"
 - id: "2.12.0"
   date: "2020-01-30"
-  sha256:
+  sha256: "e7d58ced612bc6420d99bb06313250694e5f1d8dcc093293604c253c17c473b4"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/image-2.12.0.tar.gz"
   depends:
   - "octave (>= 4.2.0)"
