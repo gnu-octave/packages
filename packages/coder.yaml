@@ -26,10 +26,10 @@ maintainers:
 - name: "Seyyed Hossein Sajjadi"
   contact: "https://github.com/shsajjadi"
 versions:
-- id: "1.6.8"
-  date: "2021-12-07"
-  sha256: "5b12475750603abbfbc35059f7a79c92a82f73acc87e3053b5470f514f52c216"
-  url: "https://github.com/shsajjadi/OctaveCoder/archive/refs/tags/coder-1.6.8.tar.gz"
+- id: "1.7.0"
+  date: "2022-03-26"
+  sha256: "e373808593dcc813b5063d3d1898c854757d42e379376b7225d25f70923cf5dc"
+  url: "https://github.com/shsajjadi/OctaveCoder/archive/refs/tags/coder-1.7.0.tar.gz"
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
