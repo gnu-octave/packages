@@ -1,0 +1,40 @@
+---
+layout: "package"
+permalink: "biosig"
+description: >-
+  Biomedical signal processing tools.
+icon: "http://biosig.sourceforge.net/B.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://sourceforge.net/p/biosig/code/ci/master/tree/COPYING?format=raw"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/gnu-octave/packages.git"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://git.code.sf.net/p/biosig/code"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://sourceforge.net/p/biosig/bugs/new/"
+maintainers:
+- name: "Alois Schloegl"
+  contact: "alois.schloegl@gmail.com"
+versions:
+- id: "2.4.0"
+  date: "2022-03-19"
+  sha256:
+  url: "https://pub.ist.ac.at/~schloegl/biosig/prereleases/biosig4octave-2.4.0.src.tar.gz"
+  depends:
+  - "octave (>= 3.0.0)"
+  - "pkg"
+  ubuntu2004:
+  - "libbiosig-dev"
+- id: "dev"
+  date:
+  sha256:
+  url: "https://sourceforge.net/p/biosig/code/ci/master/tarball"
+  depends:
+  - "octave (>= 3.0.0)"
+  - "pkg"
+---
