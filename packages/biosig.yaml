@@ -28,6 +28,8 @@ versions:
   depends:
   - "octave (>= 3.0.0)"
   - "pkg"
+  ubuntu2004:
+  - "libbiosig-dev"
 - id: "dev"
   date:
   sha256:
