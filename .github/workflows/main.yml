@@ -23,7 +23,7 @@ jobs:
         # - docker.io/gnuoctave/octave
         - ghcr.io/gnu-octave/octave
         version:
-        - 6.4.0
+        - 7.1.0
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
