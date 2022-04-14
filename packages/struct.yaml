@@ -26,6 +26,13 @@ maintainers:
 - name: "Olaf Till"
   contact: "i7tiol@t-online.de"
 versions:
+- id: "1.0.18"
+  date: "2022-04-10"
+  sha256: "fccea7dd84c1104ed3babb47a28f05e0012a89c284f39ab094090450915294ce"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/struct-1.0.18.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "1.0.17"
   date: "2021-02-16"
   sha256: "0137bbb5df650f29104f6243502f3a2302aaaa5e42ea9f02d8a3943aaf668433"
