@@ -27,6 +27,15 @@ maintainers:
 - name: "Olaf Till"
   contact: "i7tiol@t-online.de"
 versions:
+- id: "1.6.2"
+  date: "2022-04-10"
+  sha256: "7150cdfac7e9da31ec7ac1cfe8619d9c0e9c8b3f787f54bf89e0fb1c275be584"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/optim-1.6.2.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "statistics (>= 1.4.0)"
+  - "struct (>= 1.0.12)"
+  - "pkg"
 - id: "1.6.1"
   date: "2021-02-16"
   sha256: "7150cdfac7e9da31ec7ac1cfe8619d9c0e9c8b3f787f54bf89e0fb1c275be584"
