@@ -26,8 +26,15 @@ maintainers:
 versions:
 - id: "2.0.4"
   date: "2022-04-14"
-  sha256: "5dc477d2d7690142e1aeaa0818e796afbbf69f527901a5a86ac6b2dc4779323d"
+  sha256: "1e7a8e5dbd05ad3822538eb27dea0cfaef35431c44ded55f91022f2b5bff8d20"
   url: "https://github.com/AndreasStahel/FEMoctave/archive/v2.0.4.tar.gz"
+  depends:
+  - "octave (>= 5.2.0)"
+  - "pkg"
+- id: "2.0.3"
+  date: "2020-04-08"
+  sha256: "5dc477d2d7690142e1aeaa0818e796afbbf69f527901a5a86ac6b2dc4779323d"
+  url: "https://github.com/AndreasStahel/FEMoctave/archive/v2.0.3.tar.gz"
   depends:
   - "octave (>= 5.2.0)"
   - "pkg"
