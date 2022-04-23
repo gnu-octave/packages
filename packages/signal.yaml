@@ -27,7 +27,7 @@ maintainers:
 versions:
 - id: "1.4.2"
   date: "2022-04-22"
-  sha256: "d978600f8b8f61339b986136c9862cad3e8f7015f84132f214bf63e9e281aeaa"
+  sha256: "62a4e06117dcc43c36169905f8255d015481ca982aeae9013b0d9df3e48e7062"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/signal-1.4.2.tar.gz"
   depends:
   - "octave (>= 3.8.0)"
