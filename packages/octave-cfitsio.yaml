@@ -1,0 +1,36 @@
+---
+layout: "package"
+permalink: "octave-cfitsio"
+description: >-
+  I/O routines to read and write FITS (Flexible Image Transport System) files.
+icon: "https://sourceforge.net/p/octave-cfitsio/code/ci/default/tree/doc/octave-cfitsio.png?format=raw"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://sourceforge.net/p/octave-cfitsio/code/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave-cfitsio/code/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave-cfitsio/code/ci/default/tree"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://sourceforge.net/p/octave-cfitsio/code/ci/default/tree/README.md"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://sourceforge.net/p/octave-cfitsio/tickets/"
+maintainers:
+- name: "John Donoghue"
+  contact: "john.donoghue@ieee.org"
+versions:
+- id: "0.0.3"
+  date: "2022-03-21"
+  sha256: "9716ae93a7dd9a8877ac0b029c323bbeda718febf587099f139ed163c2b2946b"
+  url: "https://downloads.sourceforge.net/project/octave-cfitsio/v0.0.1/octave-cfitsio-0.0.1.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+  ubuntu2004:
+  - "libcfitsio-dev"
+---
