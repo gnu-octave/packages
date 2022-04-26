@@ -24,8 +24,8 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
-- id: "0.0.3"
-  date: "2022-03-21"
+- id: "0.0.1"
+  date: "2022-04-26"
   sha256: "9716ae93a7dd9a8877ac0b029c323bbeda718febf587099f139ed163c2b2946b"
   url: "https://downloads.sourceforge.net/project/octave-cfitsio/v0.0.1/octave-cfitsio-0.0.1.tar.gz"
   depends:
