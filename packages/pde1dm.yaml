@@ -2,10 +2,10 @@
 layout: "package"
 permalink: "pde1dm"
 description: >-
- Solve systems of partial differential equations (PDE) in a single spatial variable and time. 
- The input is mostly compatible with the MATLAB function pdepe. 
+ Solve systems of partial differential equations (PDE) in a single spatial variable and time.
+ The input is mostly compatible with the MATLAB function pdepe.
  Many pdepe examples will work with pde1dm with only small changes.
-icon: 
+icon:
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
@@ -24,7 +24,7 @@ links:
   url: "https://github.com/wgreene310/pde1dm/issues"
 maintainers:
 - name: "Bill Greene"
-  contact: 
+  contact:
 versions:
 - id: "1.3.0"
   date: "2022-05-02"
