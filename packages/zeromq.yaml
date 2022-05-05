@@ -43,6 +43,8 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
+  ubuntu2004:
+  - "libzmq3-dev"
 - id: "1.5.2"
   date: "2020-10-13"
   sha256: "47265bf1b2b1c747f78210a896b33b651d0e77919b01b1e519b99d98d30001a2"
@@ -50,6 +52,8 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
+  ubuntu2004:
+  - "libzmq3-dev"
 - id: "1.5.1"
   date: "2020-04-28"
   sha256: "14d16880ea048eae93763950f56e6212be37169fcb3851d66d799c80aeb6287b"
@@ -57,4 +61,6 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
+  ubuntu2004:
+  - "libzmq3-dev"
 ---
