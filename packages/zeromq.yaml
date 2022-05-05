@@ -34,6 +34,8 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
+  ubuntu2004:
+  - "libzmq3-dev"
 - id: "1.5.3"
   date: "2021-07-15"
   sha256: "943bab8e38dd524b0e83882c65c2f71a35dcf142b2807cdc56d1db85af5817c0"
