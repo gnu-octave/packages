@@ -27,6 +27,15 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "1.5.4"
+  date: "2022-05-02"
+  sha256: "c46a72fe0117b13a9f24fd48ffbbce65422fcb80b95ce09b78f1d0b086a9ded4"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/zeromq-1.5.4.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+  ubuntu2004:
+  - "libzmq3-dev"
 - id: "1.5.3"
   date: "2021-07-15"
   sha256: "943bab8e38dd524b0e83882c65c2f71a35dcf142b2807cdc56d1db85af5817c0"
@@ -34,6 +43,8 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
+  ubuntu2004:
+  - "libzmq3-dev"
 - id: "1.5.2"
   date: "2020-10-13"
   sha256: "47265bf1b2b1c747f78210a896b33b651d0e77919b01b1e519b99d98d30001a2"
@@ -41,6 +52,8 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
+  ubuntu2004:
+  - "libzmq3-dev"
 - id: "1.5.1"
   date: "2020-04-28"
   sha256: "14d16880ea048eae93763950f56e6212be37169fcb3851d66d799c80aeb6287b"
@@ -48,4 +61,6 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
+  ubuntu2004:
+  - "libzmq3-dev"
 ---
