@@ -35,6 +35,6 @@ versions:
   - "octave (>= 4.0.0)"
   - "struct (>= 1.0.12)"
   - "pkg"
-  ubuntu2004:
+  ubuntu2204:
   - "libpq-dev"
 ---

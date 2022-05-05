@@ -264,7 +264,7 @@ versions:
     [Octave manual](https://octave.org/doc/v6.2.0/The-DESCRIPTION-File.html)
     "DESCRIPTION"-file "Depends" section.
 
-  - `ubuntu2004`: list of Ubuntu 20.04 (LTS) dependency strings.
+  - `ubuntu2204`: list of Ubuntu 22.04 (LTS) dependency strings.
 
     A dependency string looks like `"libopenblas-dev"`.
     The corresponding Ubuntu package must be available at

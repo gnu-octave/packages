@@ -96,13 +96,13 @@ layout: default
             </span>
           {%- endfor -%}
         </li>
-        {%- if v.ubuntu2004 -%}
+        {%- if v.ubuntu2204 -%}
         <li>
-          <b>Ubuntu 20.04:</b>
-          {%- for dep in v.ubuntu2004 -%}
+          <b>Ubuntu 22.04:</b>
+          {%- for dep in v.ubuntu2204 -%}
             &nbsp;&nbsp;&nbsp;&nbsp;
             <span style="white-space: nowrap;">
-              <a href="https://packages.ubuntu.com/focal/{{ dep }}">{{ dep }}</a>
+              <a href="https://packages.ubuntu.com/jammy/{{ dep }}">{{ dep }}</a>
             </span>
           {%- endfor -%}
         </li>

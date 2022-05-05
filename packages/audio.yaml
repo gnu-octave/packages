@@ -34,7 +34,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2004:
+  ubuntu2204:
   - "librtmidi-dev"
 - id: "2.0.3"
   date: "2021-10-22"
@@ -43,7 +43,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2004:
+  ubuntu2204:
   - "librtmidi-dev"
 - id: "2.0.2"
   date: "2020-10-13"
@@ -52,7 +52,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2004:
+  ubuntu2204:
   - "librtmidi-dev"
 - id: "2.0.1"
   date: "2020-05-08"
@@ -61,6 +61,6 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2004:
+  ubuntu2204:
   - "librtmidi-dev"
 ---

@@ -31,7 +31,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2004:
+  ubuntu2204:
   - "libcfitsio-dev"
 - id: "0.0.1"
   date: "2022-04-26"
@@ -40,6 +40,6 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2004:
+  ubuntu2204:
   - "libcfitsio-dev"
 ---

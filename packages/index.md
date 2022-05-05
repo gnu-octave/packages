@@ -30,9 +30,9 @@ __pkg__.("{{ pkg_name }}").versions({{ i }}).url = "{{ v.url }}";
 {%- assign j = forloop.index -%}
 __pkg__.("{{ pkg_name }}").versions({{ i }}).depends({{ j }}).name = "{{ dep }}";
 {% endfor %}
-{% for dep in v.ubuntu2004 %}
+{% for dep in v.ubuntu2204 %}
 {%- assign j = forloop.index -%}
-__pkg__.("{{ pkg_name }}").versions({{ i }}).ubuntu2004({{ j }}).name = "{{ dep }}";
+__pkg__.("{{ pkg_name }}").versions({{ i }}).ubuntu2204({{ j }}).name = "{{ dep }}";
 {% endfor %}
 {% endfor %}
 {% endif %}
