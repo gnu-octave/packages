@@ -27,6 +27,13 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "1.5.4"
+  date: "2022-05-02"
+  sha256: "c46a72fe0117b13a9f24fd48ffbbce65422fcb80b95ce09b78f1d0b086a9ded4"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/zeromq-1.5.4.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "1.5.3"
   date: "2021-07-15"
   sha256: "943bab8e38dd524b0e83882c65c2f71a35dcf142b2807cdc56d1db85af5817c0"
