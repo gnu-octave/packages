@@ -1,0 +1,43 @@
+---
+layout: "package"
+permalink: "geographiclib"
+description: >-
+  Native Octave/MATLAB implementations of a subset of the C++ library,
+  GeographicLib.
+
+  Key components of this toolbox are:
+  (a) Geodesics, direct, inverse, area calculations;
+  (b) Projections, transverse Mercator, polar stereographic, etc;
+  (c) Grid systems, UTM, UPS, MGRS;
+  (d) Geoid lookup, egm84, egm96, egm2008 geoids supported;
+  (e) Geometric transformations, geocentric, local cartesian;
+  (f) Great ellipse, direct, inverse, area calculations.
+icon: "https://avatars.githubusercontent.com/u/86781918"
+links:
+- icon: "far fa-copyright"
+  label: "MIT"
+  url: "https://github.com/geographiclib/geographiclib-octave/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/geographiclib/geographiclib-octave/blob/main/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/geographiclib/geographiclib-octave"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://github.com/geographiclib/geographiclib-octave#readme"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/geographiclib/geographiclib-octave/issues"
+maintainers:
+- name: "Charles Karney"
+  contact: "charles@karney.com"
+versions:
+- id: "2.0"
+  date: "2022-04-21"
+  sha256: "3ca60b9a566c89a6c0e4a30876948939ad561c112adea86b9f0e6f02dc59cb32"
+  url: "https://sourceforge.net/projects/geographiclib/files/distrib-Octave/geographiclib-octave-2.0.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+---
