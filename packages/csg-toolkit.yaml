@@ -3,9 +3,9 @@ layout: "package"
 permalink: "csg-toolkit"
 description: >-
   The present set of GNU Octave functions provides a novel and robust algorithm
-  for analyzing the diaphyseal cross-sectional geometric properties of long bones,
-  which can be applied to any 3D digital model of a humerus, ulna, femur or tibia
-  bone represented as a triangular mesh in a Wavefront OBJ file format.
+  for analyzing the diaphyseal cross-sectional geometric properties of long
+  bones, which can be applied to any 3D digital model of a humerus, ulna, femur
+  or tibia bone represented as a triangular mesh in a Wavefront OBJ file format.
 icon: "https://github.com/pr0m1th3as/long-bone-diaphyseal-CSG-Toolkit/raw/master/csg-toolkit.png"
 links:
 - icon: "far fa-copyright"
