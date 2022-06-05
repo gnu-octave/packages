@@ -1,0 +1,45 @@
+---
+layout: "package"
+permalink: "csg-toolkit"
+description: >-
+  The present set of GNU Octave functions provides a novel and robust algorithm
+  for analyzing the diaphyseal cross-sectional geometric properties of long bones,
+  which can be applied to any 3D digital model of a humerus, ulna, femur or tibia
+  bone represented as a triangular mesh in a Wavefront OBJ file format.
+icon: "https://github.com/pr0m1th3as/long-bone-diaphyseal-CSG-Toolkit/blob/master/csg-toolkit.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/pr0m1th3as/long-bone-diaphyseal-CSG-Toolkit/raw/master/LICENSE"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/pr0m1th3as/long-bone-diaphyseal-CSG-Toolkit"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/pr0m1th3as/long-bone-diaphyseal-CSG-Toolkit/issues"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://www.physicalanthropology.gr/software.php"
+maintainers:
+- name: "Andreas Bertsatos"
+  contact: "abertsatos@biol.uoa.gr"
+versions:
+- id: "1.2.2"
+  date: "2022-06-05"
+  sha256: "8df01123ef5b2ca6c3cd15dfba0094ce9a343e03fec1963b9f71a7114f7190f6"
+  url: "https://github.com/pr0m1th3as/long-bone-diaphyseal-CSG-Toolkit/raw/master/csg-toolkit-1.2.2.tar.gz"
+  depends:
+  - "octave (>= 5.2.0)"
+  - "pkg"
+  - "io (>= 2.6.3)"
+- id: "1.2.1"
+  date: "2021-04-18"
+  sha256: "68212e2bfe2527f2a4f5c79889d6fabb4a14660198d9a275d03702c6089635e1"
+  url: "https://github.com/pr0m1th3as/long-bone-diaphyseal-CSG-Toolkit/raw/master/csg-toolkit-1.2.1.tar.gz"
+  depends:
+  - "octave (>= 5.2.0)"
+  - "pkg"
+  - "io (>= 2.6.3)"
+  - "matgeom (>= 1.2.2)"
+  - "statistics (>= 1.4.2)"
+---
