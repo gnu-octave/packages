@@ -6,11 +6,11 @@ description: >-
   for analyzing the diaphyseal cross-sectional geometric properties of long
   bones, which can be applied to any 3D digital model of a humerus, ulna, femur
   or tibia bone represented as a triangular mesh in a Wavefront OBJ file format.
-icon: "https://github.com/pr0m1th3as/csg-toolkit/raw/master/csg-toolkit.png"
+icon: "https://github.com/pr0m1th3as/csg-toolkit/raw/master/doc/csg-toolkit.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
-  url: "https://github.com/pr0m1th3as/csg-toolkit/raw/master/LICENSE"
+  url: "https://github.com/pr0m1th3as/csg-toolkit/blob/master/LICENSE"
 - icon: "fas fa-code-branch"
   label: "repository"
   url: "https://github.com/pr0m1th3as/csg-toolkit"
