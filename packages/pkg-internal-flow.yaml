@@ -1,0 +1,42 @@
+---
+layout: "package"
+permalink: "pkg-internal-flow"
+description: >-
+  This package provides a set of functions 
+  suited to deal with problems on internal fluid flow.
+icon: "https://raw.githubusercontent.com/gnu-octave/pkg-internal-flow/main/doc/icon.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/gnu-octave/pkg-internal-flow/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/gnu-octave/pkg-internal-flow/releases/"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/gnu-octave/pkg-internal-flow/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://github.com/gnu-octave/pkg-internal-flow/blob/main/README.md"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/gnu-octave/pkg-internal-flow/issues"
+maintainers:
+- name: "Alexandre Umpierre"
+  contact: "aumpierre@gmail.com"
+versions:
+- id: "1.0.0"
+  date: "2022-06-10"
+  sha256: "6b7e4b6bef5a681cb8026af55c401cee139b088480f0da60143e02ec8880cb51"
+  url: "https://github.com/gnu-octave/pkg-internal-flow/archive/1.0.0.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+- id: "dev"
+  date:
+  sha256:
+  url: "https://github.com/gnu-octave/pkg-internal-flow/archive/main.zip"
+  depends:
+  - "octave (>= 5.2.0)"
+  - "pkg"
+---
