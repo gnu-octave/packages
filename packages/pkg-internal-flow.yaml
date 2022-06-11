@@ -2,7 +2,7 @@
 layout: "package"
 permalink: "pkg-internal-flow"
 description: >-
-  This package provides a set of functions 
+  This package provides a set of functions
   suited to deal with problems on internal fluid flow.
 icon: "https://raw.githubusercontent.com/gnu-octave/pkg-internal-flow/main/doc/icon.png"
 links:
