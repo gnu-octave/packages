@@ -28,7 +28,7 @@ maintainers:
   contact: "andy.c.penn@gmail.com"
 versions:
 - id: "3.9.1"
-  date: "2022-06-20"
+  date: "2022-06-020"
   sha256: "f4e1fd836cb3d93ce6832fc4f69acce2a2198c10b741193de2b1d308ad2f45b3"
   url: "https://github.com/gnu-octave/statistics-bootstrap/archive/refs/tags/v3.9.1.tar.gz"
   depends:
