@@ -1,5 +1,6 @@
 ---
 layout: null
+permalink: /packages/index
 ---
 <pre>
 {%- capture _ -%}{%- increment j -%}{%- endcapture -%}
