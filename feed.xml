@@ -34,11 +34,12 @@ layout: none
   {%- for t in times -%}
     {%- assign tt = t | to_integer -%}
     {%- assign pkg = packages[tt] -%}
+    {%- assign pkg_name = pkg.permalink | remove: "/" -%}
     <entry xml:lang="{{ site.lang }}">
-      <id>{{ pkg.permalink | absolute_url }}#{{ pkg.versions[0].id }}</id>
-      <title type="html">{{ pkg.permalink }} {{ pkg.versions[0].id }} released</title>
-      <link href="{{ pkg.permalink | absolute_url }}#{{ pkg.versions[0].id }}"
-            rel="alternate" type="text/html" title="{{ pkg.permalink }}" />
+      <id>{{ pkg_name | absolute_url }}#{{ pkg.versions[0].id }}</id>
+      <title type="html">{{ pkg_name }} {{ pkg.versions[0].id }} released</title>
+      <link href="{{ pkg_name | absolute_url }}#{{ pkg.versions[0].id }}"
+            rel="alternate" type="text/html" title="{{ pkg_name }}" />
       <published>{{ pkg.versions[0].date | date_to_xmlschema }}</published>
       <updated>{{ pkg.versions[0].date | date_to_xmlschema }}</updated>
       <summary type="html">{{ pkg.description | strip_html | strip | escape }}</summary>
@@ -46,9 +47,9 @@ layout: none
         {%- capture content -%}
         <p><a  href="{{ pkg.icon | default: site.pkg_icon | absolute_url }}">
         <img src="{{ pkg.icon | default: site.pkg_icon | absolute_url }}"
-             alt="{{ pkg.permalink }}"></a></p>
+             alt="{{ pkg_name }}"></a></p>
         <p>{{ pkg.description | strip_html | strip | escape }}</p>
-        <p>Install {{ pkg.permalink }} {{ pkg.versions[0].id }} ({{ pkg.versions[0].date }})
+        <p>Install {{ pkg_name }} {{ pkg.versions[0].id }} ({{ pkg.versions[0].date }})
         from the Octave command-line with:</p>
         <pre><code>pkg install "{{ pkg.versions[0].url }}"</code></pre>
         {%- assign news = pkg.links | where: "label", "news" -%}
