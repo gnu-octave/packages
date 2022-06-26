@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "instrument-control"
+permalink: "instrument-control/"
 description: >-
   Low level I/O functions for serial, i2c, parallel, tcp, gpib, vxi11, udp and
   usbtmc interfaces.

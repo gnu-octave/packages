@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "pde1dm"
+permalink: "pde1dm/"
 description: >-
  Solve systems of partial differential equations (PDE)
  in a single spatial variable and time.

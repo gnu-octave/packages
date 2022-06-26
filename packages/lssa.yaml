@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "lssa"
+permalink: "lssa/"
 description: >-
   Tools to compute spectral decompositions of irregularly-spaced time series.
   Functions based on the Lomb-Scargle periodogram and Adolf Mathias'

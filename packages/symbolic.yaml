@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "symbolic"
+permalink: "symbolic/"
 description: >-
   Symbolic calculation features, including common Computer Algebra System
   tools such as algebraic operations, calculus, equation solving, Fourier and

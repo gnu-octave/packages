@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "strings"
+permalink: "strings/"
 description: >-
   Additional functions for manipulation and analysis of strings.
 icon: "https://octave.sourceforge.io/pkg_icon/strings.png"

@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "cfitsio"
+permalink: "cfitsio/"
 description: >-
   I/O routines to read and write FITS (Flexible Image Transport System) files.
 icon: "https://sourceforge.net/p/octave-cfitsio/code/ci/default/tree/doc/octave-cfitsio.png?format=raw"

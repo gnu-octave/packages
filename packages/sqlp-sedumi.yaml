@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "sqlp-sedumi"
+permalink: "sqlp-sedumi/"
 description: >-
   SeDuMi (Self-Dual-Minimization) is solving convex optimization problems
   involving linear equations and inequalities, second-order cone constraints,

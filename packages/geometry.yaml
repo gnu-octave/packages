@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "geometry"
+permalink: "geometry/"
 description: >-
   Library for extending MatGeom functionality.
 icon: "https://octave.sourceforge.io/pkg_icon/geometry.png"

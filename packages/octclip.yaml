@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "octclip"
+permalink: "octclip/"
 description: >-
   Boolean operations with polygons using the Greiner-Hormann algorithm.
 icon: "https://octave.sourceforge.io/pkg_icon/octclip.png"

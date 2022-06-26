@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "ltfat"
+permalink: "ltfat/"
 description: >-
   The Large Time/Frequency Analysis Toolbox (LTFAT) is a Matlab/Octave toolbox
   for working with time-frequency analysis, wavelets and signal processing.

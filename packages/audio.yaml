@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "audio"
+permalink: "audio/"
 description: >-
   Audio and MIDI Toolbox for GNU Octave.
 icon: "https://octave.sourceforge.io/pkg_icon/audio.png"

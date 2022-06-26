@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "dicom"
+permalink: "dicom/"
 description: >-
   File io for medical images and other data using Grassroots DICOM (GDCM)
   library.

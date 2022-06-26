@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "interval"
+permalink: "interval/"
 description: >-
   Real-valued interval arithmetic. Handle uncertainties, estimate arithmetic
   errors, computer-assisted proofs, constraint programming, and verified

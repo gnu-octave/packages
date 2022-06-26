@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "geographiclib"
+permalink: "geographiclib/"
 description: >-
   Native Octave/MATLAB implementations of a subset of the C++ library,
   GeographicLib.

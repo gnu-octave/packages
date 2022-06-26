@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "parallel"
+permalink: "parallel/"
 description: >-
   Parallel execution package.
 icon: "https://octave.sourceforge.io/pkg_icon/parallel.png"

@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "statistics-bootstrap"
+permalink: "statistics-bootstrap/"
 description: >-
   This package of functions can be used to estimate uncertainty (confidence
   intervals) and test hypotheses (p-values) using bootstrap. Variations of

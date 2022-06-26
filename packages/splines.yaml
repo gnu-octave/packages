@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "splines"
+permalink: "splines/"
 description: >-
   Additional spline functions
 icon: "https://octave.sourceforge.io/pkg_icon/splines.png"

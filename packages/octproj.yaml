@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "octproj"
+permalink: "octproj/"
 description: >-
   Call PROJ library functions for cartographic projections and CRS
   transformations.

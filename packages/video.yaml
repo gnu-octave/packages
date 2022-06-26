@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "video"
+permalink: "video/"
 description: >-
   A wrapper for OpenCV's CvCapture_FFMPEG and CvVideoWriter_FFMPEG.
 icon: "https://octave.sourceforge.io/pkg_icon/video.png"

@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "raspi"
+permalink: "raspi/"
 description: >-
   Basic Octave implementation of the matlab raspi extension,
   allowing communication to a Raspberry Pi board to control its

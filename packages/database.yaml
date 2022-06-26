@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "database"
+permalink: "database/"
 description: >-
   Interface to SQL databases, currently only postgresql using libpq.
 icon: "https://octave.sourceforge.io/pkg_icon/database.png"

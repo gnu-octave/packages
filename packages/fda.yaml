@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "fda"
+permalink: "fda/"
 description: >-
   Functional Data Analysis.
 icon:

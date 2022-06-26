@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "generate_html"
+permalink: "generate_html/"
 description: >-
   Generating HTML pages with help texts for a set of package functions.
 icon: "https://octave.sourceforge.io/pkg_icon/generate_html.png"

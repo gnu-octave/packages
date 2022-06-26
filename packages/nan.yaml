@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "nan"
+permalink: "nan/"
 description: >-
   A statistics and machine learning toolbox for data with and w/o missing
   values.

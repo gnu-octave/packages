@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "zeromq"
+permalink: "zeromq/"
 description: >-
   ZeroMQ bindings for GNU Octave.
 icon:

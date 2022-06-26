@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "matgeom"
+permalink: "matgeom/"
 description: >-
   Geometry toolbox for 2D/3D geometric computing.
 icon:

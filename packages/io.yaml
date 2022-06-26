@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "io"
+permalink: "io/"
 description: >-
   Input/Output in external formats.
 icon: "https://octave.sourceforge.io/pkg_icon/io.png"

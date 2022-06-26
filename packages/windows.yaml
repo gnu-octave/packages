@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "windows"
+permalink: "windows/"
 description: >-
   Provides COM interface and additional functionality on Windows.
 icon: "https://octave.sourceforge.io/pkg_icon/windows.png"

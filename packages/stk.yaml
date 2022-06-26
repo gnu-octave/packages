@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "stk"
+permalink: "stk/"
 description: >-
   The STK is a (not so) Small Toolbox for Kriging.  Its primary focus is on
   the interpolation/regression technique known as kriging, which is very

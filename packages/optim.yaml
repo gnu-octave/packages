@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "optim"
+permalink: "optim/"
 description: >-
   Non-linear optimization toolkit.
 icon: "https://octave.sourceforge.io/pkg_icon/optim.png"

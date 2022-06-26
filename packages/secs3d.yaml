@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "secs3d"
+permalink: "secs3d/"
 description: >-
   A Drift-Diffusion simulator for 3d semiconductor devices.
 icon:

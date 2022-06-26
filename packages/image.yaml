@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "image"
+permalink: "image/"
 description: >-
   Functions for image processing, feature extraction, image statistics, spatial
   and geometric transformations, morphological operations, linear filtering,

@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "arduino"
+permalink: "arduino/"
 description: >-
   Allow communication to a programmed arduino board to control its hardware.
 icon: "https://octave.sourceforge.io/pkg_icon/arduino.png"

@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "csg-toolkit"
+permalink: "csg-toolkit/"
 description: >-
   The present set of GNU Octave functions provides a novel and robust algorithm
   for analyzing the diaphyseal cross-sectional geometric properties of long

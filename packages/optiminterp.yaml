@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "optiminterp"
+permalink: "optiminterp/"
 description: >-
   An optimal interpolation toolbox providing functions to perform a
   n-dimensional optimal interpolations of arbitrarily distributed data points.

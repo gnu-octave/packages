@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "tsa"
+permalink: "tsa/"
 description: >-
   Stochastic concepts and maximum entropy methods for time series analysis.
 icon: "https://octave.sourceforge.io/pkg_icon/tsa.png"

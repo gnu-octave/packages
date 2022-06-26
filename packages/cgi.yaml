@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "cgi"
+permalink: "cgi/"
 description: >-
   Common Gateway Interface for Octave.
 icon: "https://octave.sourceforge.io/pkg_icon/cgi.png"

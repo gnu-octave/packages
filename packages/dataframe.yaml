@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "dataframe"
+permalink: "dataframe/"
 description: >-
   Data manipulation toolbox similar to R data.frame.
 icon: "https://octave.sourceforge.io/pkg_icon/dataframe.png"

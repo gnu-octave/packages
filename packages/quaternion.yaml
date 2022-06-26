@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "quaternion"
+permalink: "quaternion/"
 description: >-
   Quaternion package for GNU Octave, includes a quaternion class with
   overloaded operators.

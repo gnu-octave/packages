@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "biosig"
+permalink: "biosig/"
 description: >-
   Biomedical signal processing tools.
 icon: "https://a.fsdn.com/allura/p/biosig/icon?1595856948&w=90"

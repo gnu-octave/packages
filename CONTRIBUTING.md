@@ -23,9 +23,9 @@ This guide explains how to add your Octave package or toolbox to
   > to resolve the problem.
 
 - If your package does not follow the
-  [Octave package format](https://octave.org/doc/v6.2.0/Creating-Packages.html)
+  [Octave package format](https://octave.org/doc/v7.1.0/Creating-Packages.html)
   it cannot be installed automatically by the Octave
-  [`pkg`](https://octave.org/doc/v6.2.0/Installing-and-Removing-Packages.html)-tool.
+  [`pkg`](https://octave.org/doc/v7.1.0/Installing-and-Removing-Packages.html)-tool.
   In this case,
   please provide and link custom installation instructions to help your users.
 
@@ -81,7 +81,7 @@ An example package entry
 ```yaml
 ---
 layout: "package"
-permalink: "pkg-example"
+permalink: "pkg-example/"
 description: >-
   Example package to demonstrate the creation process of an Octave package.
   Keep this description brief.  Describe the major features in the first two
@@ -158,9 +158,11 @@ versions:
 
 - `layout`: fixed string `"package"` for technical reasons.
 
-- `permalink`: string with the name of the package.
+- `permalink`: string with the name of the package followed by a slash "`/`".
   **Must** match the file name
   and [**must** be lower case](https://hg.savannah.gnu.org/hgweb/octave/file/290e7e3f859f/scripts/pkg/private/get_description.m#l94).
+
+  > **Note:** The prefix "pkg-" is not necessary.
 
 - `description`: see example above.
 
@@ -261,7 +263,7 @@ versions:
     > and makes this package "uninstallable".
 
     Permitted operators are documented in the
-    [Octave manual](https://octave.org/doc/v6.2.0/The-DESCRIPTION-File.html)
+    [Octave manual](https://octave.org/doc/v7.1.0/The-DESCRIPTION-File.html)
     "DESCRIPTION"-file "Depends" section.
 
   - `ubuntu2204`: list of Ubuntu 22.04 (LTS) dependency strings.

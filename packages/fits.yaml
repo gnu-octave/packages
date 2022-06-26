@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "fits"
+permalink: "fits/"
 description: >-
   The Octave-FITS package provides functions for reading, and writing FITS
   (Flexible Image Transport System) files.  This package uses the libcfitsio

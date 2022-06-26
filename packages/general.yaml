@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "general"
+permalink: "general/"
 description: >-
   General tools for Octave.
 icon: "https://octave.sourceforge.io/pkg_icon/general.png"

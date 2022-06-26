@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "netcdf"
+permalink: "netcdf/"
 description: >-
   A NetCDF interface for Octave.
 icon: "https://octave.sourceforge.io/pkg_icon/netcdf.png"

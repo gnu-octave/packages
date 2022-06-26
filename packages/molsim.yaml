@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "molsim"
+permalink: "molsim/"
 description: >-
   molsim is a wrapper for the seplib molecular dynamics library.  It allows
   you to perform molecular simulations of simple atomistic systems, confined

@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "ga"
+permalink: "ga/"
 description: >-
   Genetic optimization code.
 icon: "https://octave.sourceforge.io/pkg_icon/ga.png"
