@@ -32,7 +32,7 @@ versions:
   - "octave (>= 4.0.0)"
   - "pkg"
   ubuntu2204:
-  - "libcfitsio-dev
+  - "libcfitsio-dev"
 - id: "0.0.2"
   date: "2022-04-27"
   sha256: "25858f35789e998445cf990b4c6cd08c7869e18d6f3b1eaca25be72676095ffb"
