@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "ocl"
+permalink: "ocl/"
 description: >-
   Package using OpenCL for parallelization, mostly suitable to
   Single-Instruction-Multiple-Data (SIMD) computations, selectively using

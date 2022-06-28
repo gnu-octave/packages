@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "onsas"
+permalink: "onsas/"
 description: >-
   ONSAS is an Open Nonlinear Structural Analysis Solver. It is a GNU-Octave
   code for static/dynamic and linear/non-linear analysis of structures

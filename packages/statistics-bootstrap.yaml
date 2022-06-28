@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "statistics-bootstrap"
+permalink: "statistics-bootstrap/"
 description: >-
   This package of functions can be used to estimate uncertainty (confidence
   intervals) and test hypotheses (p-values) using bootstrap. Variations of
@@ -27,6 +27,30 @@ maintainers:
 - name: "Andrew C. Penn"
   contact: "andy.c.penn@gmail.com"
 versions:
+- id: "3.9.3"
+  date: "2022-06-21"
+  sha256: "1af66174cc39cd8f92d57f395f74e0f11f526e138e44bc0a743e02f8f876b7dc"
+  url: "https://github.com/gnu-octave/statistics-bootstrap/archive/refs/tags/v3.9.3.tar.gz"
+  depends:
+  - "octave (>= 3.6.0)"
+  - "statistics (>= 1.0.0)"
+  - "pkg"
+- id: "3.8.1"
+  date: "2022-06-07"
+  sha256: "592b8ff25e981374903bafb88571bd5802e09bc66ba380814c9314f7d57528fd"
+  url: "https://github.com/gnu-octave/statistics-bootstrap/archive/refs/tags/v3.8.1.tar.gz"
+  depends:
+  - "octave (>= 3.6.0)"
+  - "statistics (>= 1.0.0)"
+  - "pkg"
+- id: "3.7.16"
+  date: "2022-06-05"
+  sha256: "b73fe3193dc6ad86f976546a33f432d35ed100a533d43e510a78429efc0c950c"
+  url: "https://github.com/gnu-octave/statistics-bootstrap/archive/refs/tags/v3.7.16.tar.gz"
+  depends:
+  - "octave (>= 3.6.0)"
+  - "statistics (>= 1.0.0)"
+  - "pkg"
 - id: "3.6.10"
   date: "2022-04-08"
   sha256: "8d06f581cee2e4223039ce97dbe2ec843ce01ba30115a681dd64e89a76f4a97e"

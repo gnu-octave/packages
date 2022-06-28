@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "msh"
+permalink: "msh/"
 description: >-
   Create and manage triangular and tetrahedral meshes for Finite Element or
   Finite Volume PDE solvers.  Use a mesh data structure compatible with

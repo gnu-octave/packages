@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "mapping"
+permalink: "mapping/"
 description: >-
   Simple mapping and GIS .shp .dxf and raster file functions.
 icon: "https://octave.sourceforge.io/pkg_icon/mapping.png"

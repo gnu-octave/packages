@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "gsl"
+permalink: "gsl/"
 description: >-
   Octave bindings to the GNU Scientific Library.
 icon:

@@ -53,13 +53,13 @@ function octave_ci (package_name, pkg_index_file)
   cd (test_dir);
 
   step_group_start ("Resolve package dependencies");
-  [ubuntu2004, pkgs] = resolve_deps (__pkg__, {package_name});
+  [ubuntu2204, pkgs] = resolve_deps (__pkg__, {package_name});
   step_group_end ("done.");
 
-  if (! isempty (ubuntu2004))
-    step_group_start ("Install Ubuntu 20.04 dependencies");
+  if (! isempty (ubuntu2204))
+    step_group_start ("Install Ubuntu 22.04 dependencies");
     [~,~] = system ("sudo apt-get update");
-    [~,~] = system (["sudo apt-get install --yes ", strjoin(ubuntu2004)]);
+    [~,~] = system (["sudo apt-get install --yes ", strjoin(ubuntu2204)]);
     step_group_end ("done.");
   endif
 
@@ -181,7 +181,7 @@ function pkg_install_sha256_check (pkg_version, test_dir)
 endfunction
 
 
-function [ubuntu2004, pkgs] = resolve_deps (__pkg__, stack);
+function [ubuntu2204, pkgs] = resolve_deps (__pkg__, stack);
 ## Simple resolver function.
 ##
 ## Only considers the newest version of a package.
@@ -190,7 +190,7 @@ function [ubuntu2004, pkgs] = resolve_deps (__pkg__, stack);
 ##
 
   pkgs = {};
-  ubuntu2004 = {};
+  ubuntu2204 = {};
   p = __pkg__.(stack{end}).versions(1);
 
   if (isfield (p, "depends"))
@@ -204,24 +204,24 @@ function [ubuntu2004, pkgs] = resolve_deps (__pkg__, stack);
       if (any (strcmp (pkgs{i}, stack)))
         error ("resolve_deps: circular dependency detected.");
       endif
-      [new_ubuntu2004, new_pkgs] = resolve_deps (__pkg__, [stack, pkgs(i)]);
-      ubuntu2004 = [ubuntu2004, new_ubuntu2004];
+      [new_ubuntu2204, new_pkgs] = resolve_deps (__pkg__, [stack, pkgs(i)]);
+      ubuntu2204 = [ubuntu2204, new_ubuntu2204];
       pkgs = [pkgs, new_pkgs];
     endfor
   endif
 
-  if (isfield (p, "ubuntu2004"))
-    new_ubuntu2004 = {p.ubuntu2004.name};
-    for i = 1:length (new_ubuntu2004)
+  if (isfield (p, "ubuntu2204"))
+    new_ubuntu2204 = {p.ubuntu2204.name};
+    for i = 1:length (new_ubuntu2204)
       ## Ubuntu/Debian package name must consist only of lower case letters
       ## (a-z), digits (0-9), plus (+) and minus (-) signs, and periods (.).
-      m = regexp (new_ubuntu2004{i}, '[a-z0-9\+\-\.]*', "match");
-      if ((length (m) ~= 1) || ~strcmp (m{1}, new_ubuntu2004{i}))
-        error ("resolve_deps: invalid Ubuntu 20.04 package %s.", ...
-          new_ubuntu2004{i});
+      m = regexp (new_ubuntu2204{i}, '[a-z0-9\+\-\.]*', "match");
+      if ((length (m) ~= 1) || ~strcmp (m{1}, new_ubuntu2204{i}))
+        error ("resolve_deps: invalid Ubuntu 22.04 package %s.", ...
+          new_ubuntu2204{i});
       endif
     endfor
-    ubuntu2004 = [ubuntu2004, new_ubuntu2004];
+    ubuntu2204 = [ubuntu2204, new_ubuntu2204];
   endif
 
 endfunction

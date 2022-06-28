@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "vrml"
+permalink: "vrml/"
 description: >-
   3D graphics using VRML.
 icon: "https://octave.sourceforge.io/pkg_icon/vrml.png"

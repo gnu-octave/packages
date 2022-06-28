@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "optics"
+permalink: "optics/"
 description: >-
   Functions covering various aspects of optics.
 icon: "https://octave.sourceforge.io/pkg_icon/optics.png"

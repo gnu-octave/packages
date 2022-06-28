@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "sockets"
+permalink: "sockets/"
 description: >-
   Socket functions for networking from within Octave.
 icon: "https://octave.sourceforge.io/pkg_icon/sockets.png"

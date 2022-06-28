@@ -1,12 +1,13 @@
 ---
 layout: null
+permalink: /packages/index
 ---
 <pre>
 {%- capture _ -%}{%- increment j -%}{%- endcapture -%}
 {%- for pkg in site.pages -%}
 {% if pkg.layout == "package" %}
 {%- assign pkg_name = pkg.name | remove: ".yaml" -%}
-__pkg__.("{{ pkg_name }}").name = "{{ pkg.permalink }}";
+__pkg__.("{{ pkg_name }}").name = "{{ pkg.permalink | remove: "/" }}";
 __pkg__.("{{ pkg_name }}").description = "{{ pkg.description | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | escape }}";
 __pkg__.("{{ pkg_name }}").icon = "{{ pkg.icon }}";
 {% for l in pkg.links %}
@@ -30,9 +31,9 @@ __pkg__.("{{ pkg_name }}").versions({{ i }}).url = "{{ v.url }}";
 {%- assign j = forloop.index -%}
 __pkg__.("{{ pkg_name }}").versions({{ i }}).depends({{ j }}).name = "{{ dep }}";
 {% endfor %}
-{% for dep in v.ubuntu2004 %}
+{% for dep in v.ubuntu2204 %}
 {%- assign j = forloop.index -%}
-__pkg__.("{{ pkg_name }}").versions({{ i }}).ubuntu2004({{ j }}).name = "{{ dep }}";
+__pkg__.("{{ pkg_name }}").versions({{ i }}).ubuntu2204({{ j }}).name = "{{ dep }}";
 {% endfor %}
 {% endfor %}
 {% endif %}

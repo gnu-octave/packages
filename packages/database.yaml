@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "database"
+permalink: "database/"
 description: >-
   Interface to SQL databases, currently only postgresql using libpq.
 icon: "https://octave.sourceforge.io/pkg_icon/database.png"
@@ -35,6 +35,6 @@ versions:
   - "octave (>= 4.0.0)"
   - "struct (>= 1.0.12)"
   - "pkg"
-  ubuntu2004:
+  ubuntu2204:
   - "libpq-dev"
 ---

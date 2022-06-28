@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "ocs"
+permalink: "ocs/"
 description: >-
   Solving DC and transient electrical circuit equations.
 icon: "https://octave.sourceforge.io/pkg_icon/ocs.png"

@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "struct"
+permalink: "struct/"
 description: >-
   Additional structure manipulation functions.
 icon: "https://octave.sourceforge.io/pkg_icon/struct.png"

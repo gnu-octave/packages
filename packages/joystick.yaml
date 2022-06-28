@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "joystick"
+permalink: "joystick/"
 description: >-
    Provides basic joystick functions for GNU Octave.
 icon: "https://sourceforge.net/p/octave-joystick/code/ci/default/tree/doc/joystick-logo.png?format=raw"
@@ -31,6 +31,6 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2004:
+  ubuntu2204:
   - "libsdl2-dev"
 ---

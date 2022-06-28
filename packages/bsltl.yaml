@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "bsltl"
+permalink: "bsltl/"
 description: >-
   Free collection of Octave/MATLAB routines for working with the biospeckle
   laser technique.

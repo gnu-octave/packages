@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "eeglab"
+permalink: "eeglab/"
 description: >-
   An interactive toolbox for processing continuous and event-related EEG, MEG
   and other electrophysiological data incorporating independent component

@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "ncarray"
+permalink: "ncarray/"
 description: >-
   Access a single or a collection of NetCDF files as a multi-dimensional array.
 icon: "https://octave.sourceforge.io/pkg_icon/ncarray.png"

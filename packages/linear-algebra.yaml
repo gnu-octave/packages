@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "linear-algebra"
+permalink: "linear-algebra/"
 description: >-
   Additional linear algebra code, including matrix functions.
 icon: "https://octave.sourceforge.io/pkg_icon/linear-algebra.png"

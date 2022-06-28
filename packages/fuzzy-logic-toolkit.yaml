@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "fuzzy-logic-toolkit"
+permalink: "fuzzy-logic-toolkit/"
 description: >-
   A mostly MATLAB-compatible fuzzy logic toolkit for Octave.
 icon: "https://octave.sourceforge.io/pkg_icon/fuzzy-logic-toolkit.png"

@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "level-set"
+permalink: "level-set/"
 description: >-
   Routines for calculating the time-evolution of the level-set equation and
   extracting geometric information from the level-set function.

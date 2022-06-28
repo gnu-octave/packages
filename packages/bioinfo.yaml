@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "bioinfo"
+permalink: "bioinfo/"
 description: >-
   Bioinformatics tools.
 icon:

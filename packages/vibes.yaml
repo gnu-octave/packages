@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "vibes"
+permalink: "vibes/"
 description: >-
   Interface to VIBes, Visualizer for Intervals and Boxes.
 icon: "https://octave.sourceforge.io/pkg_icon/vibes.png"

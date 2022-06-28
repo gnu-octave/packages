@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "queueing"
+permalink: "queueing/"
 description: >-
   Functions for queueing networks, discrete- and continuous-time Markov chains
   analysis.  Compute steady-state performance measures for open, closed and

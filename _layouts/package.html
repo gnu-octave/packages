@@ -4,15 +4,25 @@ layout: default
 
 {%- assign packages = site.pages | where: "layout", "package" -%}
 {%- for pkg in packages -%}
-  {%- assign pkgs = pkgs | append: pkg.permalink | append: ", " -%}
+  {%- assign pkg_name = pkg.permalink | remove: "/" -%}
+  {%- assign pkgs = pkgs | append: pkg_name | append: ", " -%}
 {%- endfor -%}
 {%- assign packages = pkgs | split: ", " -%}
+
+{%- assign pkg_name = page.permalink | remove: "/" -%}
+
+<!--
+  This is used by Octave's pkg-command to get the latest package version
+  <td class="package_table">Package Version:</td>
+  <td>{{ page.versions.first.id }}</td>
+  {{ pkg_name }}-{{ page.versions.first.id }}.tar.gz
+-->
 
 <a href="{{ '/' | relative_url }}" role="button" class="btn btn-primary mb-4">
   <i class="fas fa-arrow-left"></i> Back to Index
 </a>
 
-<a href="https://github.com/gnu-octave/packages/blob/main/packages/{{ page.permalink }}.yaml"
+<a href="https://github.com/gnu-octave/packages/blob/main/packages/{{ pkg_name }}.yaml"
    role="button" class="btn btn-warning mb-4 float-end">
   <i class="fas fa-edit"></i> Edit
 </a>
@@ -22,10 +32,10 @@ layout: default
     <div class="row d-flex flex-wrap align-items-center">
       <div class="col-sm-3 col-md-2 mb-2 mb-sm-0">
         <img src="{{ page.icon | default: site.pkg_icon | relative_url }}"
-             class="d-block m-auto" alt="{{ page.permalink }}">
+             class="d-block m-auto" alt="{{ pkg_name }}">
       </div>
       <div class="col-sm-9 col-md-10">
-        <h3 class="d-inline-block mr-2">{{ page.permalink }}</h3>
+        <h3 class="d-inline-block mr-2">{{ pkg_name }}</h3>
         <b>
           {{ page.versions.first.id }}
           {%- if page.versions.first.date -%}
@@ -96,13 +106,13 @@ layout: default
             </span>
           {%- endfor -%}
         </li>
-        {%- if v.ubuntu2004 -%}
+        {%- if v.ubuntu2204 -%}
         <li>
-          <b>Ubuntu 20.04:</b>
-          {%- for dep in v.ubuntu2004 -%}
+          <b>Ubuntu 22.04:</b>
+          {%- for dep in v.ubuntu2204 -%}
             &nbsp;&nbsp;&nbsp;&nbsp;
             <span style="white-space: nowrap;">
-              <a href="https://packages.ubuntu.com/focal/{{ dep }}">{{ dep }}</a>
+              <a href="https://packages.ubuntu.com/jammy/{{ dep }}">{{ dep }}</a>
             </span>
           {%- endfor -%}
         </li>

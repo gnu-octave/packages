@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "miscellaneous"
+permalink: "miscellaneous/"
 description: >-
   Miscellaneous tools that don't fit somewhere else.
 icon: "https://octave.sourceforge.io/pkg_icon/miscellaneous.png"

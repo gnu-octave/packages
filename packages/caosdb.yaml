@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "caosdb"
+permalink: "caosdb/"
 description: >-
   This package contains utility functions to interact with CaosDB, the open
   scientific data management toolkit.

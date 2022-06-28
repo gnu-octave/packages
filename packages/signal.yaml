@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "signal"
+permalink: "signal/"
 description: >-
   Signal processing tools, including filtering, windowing and display
   functions.

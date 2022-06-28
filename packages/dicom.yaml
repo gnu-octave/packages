@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "dicom"
+permalink: "dicom/"
 description: >-
   File io for medical images and other data using Grassroots DICOM (GDCM)
   library.
@@ -37,7 +37,7 @@ versions:
   depends:
   - "octave (>= 3.8.0)"
   - "pkg"
-  ubuntu2004:
+  ubuntu2204:
   - "libgdcm-dev"
 - id: "0.4.0"
   date: "2020-09-04"
@@ -46,7 +46,7 @@ versions:
   depends:
   - "octave (>= 3.8.0)"
   - "pkg"
-  ubuntu2004:
+  ubuntu2204:
   - "libgdcm-dev"
 - id: "0.3.0"
   date: "2020-02-27"
@@ -55,6 +55,6 @@ versions:
   depends:
   - "octave (>= 3.8.0)"
   - "pkg"
-  ubuntu2004:
+  ubuntu2204:
   - "libgdcm-dev"
 ---

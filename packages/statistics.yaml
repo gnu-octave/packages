@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "statistics"
+permalink: "statistics/"
 description: >-
   Additional statistics functions for Octave.
 icon: "https://octave.sourceforge.io/pkg_icon/statistics.png"

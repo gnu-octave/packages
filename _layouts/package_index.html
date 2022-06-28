@@ -15,9 +15,10 @@ layout: default
   <tbody>
   {%- for pkg in site.pages -%}
   {%- if pkg.layout == "package" -%}
+    {%- assign pkg_name = pkg.permalink | remove: "/" -%}
     <tr>
       <td><div class="icon"><img src="{{ pkg.icon | default: site.pkg_icon | relative_url }}" alt="icon"></div></td>
-      <td><a href="{{ pkg.permalink | relative_url }}">{{ pkg.permalink }}</a></td>
+      <td><a href="{{ pkg_name | relative_url }}">{{ pkg_name }}</a></td>
       <td><div class="description">{{ pkg.description | strip_html | strip | escape }}</div></td>
       <td>{{ pkg.versions[0].id }}</td>
       <td>{{ pkg.versions[0].date }}</td>

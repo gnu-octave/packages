@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "mvn"
+permalink: "mvn/"
 description: >-
   Multivariate normal distribution clustering and utility functions.
 icon: "https://octave.sourceforge.io/pkg_icon/mvn.png"

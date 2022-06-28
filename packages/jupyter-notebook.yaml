@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "jupyter-notebook"
+permalink: "jupyter-notebook/"
 description: >-
   A package to run and fill Jupyter Notebooks within GNU Octave.
   Evaluate long-running Octave Jupyter Notebooks on a computing server without

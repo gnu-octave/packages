@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "data-smoothing"
+permalink: "data-smoothing/"
 description: >-
   Algorithms for smoothing noisy data.
 icon: "https://octave.sourceforge.io/pkg_icon/data-smoothing.png"

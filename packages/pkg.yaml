@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "pkg"
+permalink: "pkg/"
 description: >-
   The GNU Octave package management tool.
 icon: "https://raw.githubusercontent.com/gnu-octave/pkg/main/doc/icon.png"

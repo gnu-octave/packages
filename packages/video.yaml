@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "video"
+permalink: "video/"
 description: >-
   A wrapper for OpenCV's CvCapture_FFMPEG and CvVideoWriter_FFMPEG.
 icon: "https://octave.sourceforge.io/pkg_icon/video.png"
@@ -31,7 +31,7 @@ versions:
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
-  ubuntu2004:
+  ubuntu2204:
   - "libavcodec-dev"
   - "libavformat-dev"
   - "libswscale-dev"
@@ -42,7 +42,7 @@ versions:
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
-  ubuntu2004:
+  ubuntu2204:
   - "libavcodec-dev"
   - "libavformat-dev"
   - "libswscale-dev"
@@ -53,7 +53,7 @@ versions:
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
-  ubuntu2004:
+  ubuntu2204:
   - "libavcodec-dev"
   - "libavformat-dev"
   - "libswscale-dev"

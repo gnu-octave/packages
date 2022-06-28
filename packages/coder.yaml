@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "coder"
+permalink: "coder/"
 description: >-
   Coder is an Octave code generator and build system that, given a function
   name translates the function and all of its dependencies to C++ and builds

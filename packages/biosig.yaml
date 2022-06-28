@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "biosig"
+permalink: "biosig/"
 description: >-
   Biomedical signal processing tools.
 icon: "https://a.fsdn.com/allura/p/biosig/icon?1595856948&w=90"
@@ -28,7 +28,7 @@ versions:
   depends:
   - "octave (>= 3.0.0)"
   - "pkg"
-  ubuntu2004:
+  ubuntu2204:
   - "libbiosig-dev"
 - id: "2.4.0"
   date: "2022-03-19"
@@ -37,7 +37,7 @@ versions:
   depends:
   - "octave (>= 3.0.0)"
   - "pkg"
-  ubuntu2004:
+  ubuntu2204:
   - "libbiosig-dev"
 - id: "dev"
   date:
@@ -46,6 +46,6 @@ versions:
   depends:
   - "octave (>= 3.0.0)"
   - "pkg"
-  ubuntu2004:
+  ubuntu2204:
   - "libbiosig-dev"
 ---
