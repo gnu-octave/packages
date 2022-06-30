@@ -30,6 +30,15 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "0.5.0"
+  date: "2022-06-30"
+  sha256: "19d7d6ee4b3f7292164039444fbd9fdeae957321c82d34bb7118197a5a2a7de8"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dicom-0.5.0.tar.gz"
+  depends:
+  - "octave (>= 3.8.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libgdcm-dev"
 - id: "0.4.1"
   date: "2022-02-22"
   sha256: "cd9250f4f3f83d5a1bb49ad9d0ee7e6e668e3d00f4a309e572abc44798c806fd"
