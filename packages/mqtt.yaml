@@ -3,7 +3,7 @@ layout: "package"
 permalink: "mqtt/"
 description: >-
   Basic Octave implementation of mqtt toolkit
-icon: 
+icon:
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
