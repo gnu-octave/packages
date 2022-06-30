@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "octave-mqtt/"
+permalink: "mqtt/"
 description: >-
   Basic Octave implementation of mqtt toolkit
 icon:
@@ -27,7 +27,7 @@ versions:
 - id: "0.0.1"
   date: "2022-06-30"
   sha256: "c372891b1d32b9774b74ff3ccbac5c85f2f8ca63de6c60633cca5873e1014cf6"
-  url: "https://downloads.sourceforge.net/project/octave-mqtt/v0.0.q/octave-mqtt-0.0.1.tar.gz"
+  url: "https://downloads.sourceforge.net/project/octave-mqtt/v0.0.1/octave-mqtt-0.0.1.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
