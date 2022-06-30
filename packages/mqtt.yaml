@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "mqtt/"
+permalink: "octave-mqtt/"
 description: >-
   Basic Octave implementation of mqtt toolkit
 icon:
