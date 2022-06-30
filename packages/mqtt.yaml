@@ -1,0 +1,36 @@
+---
+layout: "package"
+permalink: "mqtt/"
+description: >-
+  Basic Octave implementation of mqtt toolkit
+icon:
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://sourceforge.net/p/octave-mqtt/code/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave-mqtt/code/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave-mqtt/code/ci/default/tree"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://sourceforge.net/p/octave-mqtt/code/ci/default/tree/README.md"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://sourceforge.net/p/octave-mqtt/tickets/"
+maintainers:
+- name: "John Donoghue"
+  contact: "john.donoghue@ieee.org"
+versions:
+- id: "0.0.1"
+  date: "2022-06-30"
+  sha256: "c372891b1d32b9774b74ff3ccbac5c85f2f8ca63de6c60633cca5873e1014cf6"
+  url: "https://downloads.sourceforge.net/project/octave-mqtt/v0.0.1/octave-mqtt-0.0.1.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libpaho-mqtt-dev"
+---
