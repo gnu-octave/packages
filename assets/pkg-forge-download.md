@@ -8,5 +8,5 @@ permalink: /packages/forge-download
 {% assign pkg_name = pkg.name | remove: ".yaml" %}
 {{ pkg_name }}-{{ pkg.versions[0].id }}.tar.gz,{{ pkg.versions[0].url }}
 {%- endif -%}
-{%- endfor -%}
-%</pre>
+{% endfor %}
+</pre>
