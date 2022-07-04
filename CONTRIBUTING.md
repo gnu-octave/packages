@@ -275,5 +275,5 @@ versions:
     The Ubuntu package dependencies are installed during the automatic
     GitHub Actions review via the default `apt-get install`-mechanism.
     It is not necessary to list packages available in the
-    [Octave Docker image](https://github.com/gnu-octave/docker/blob/main/build-octave-6.docker).
+    [Octave Docker image](https://github.com/gnu-octave/docker/blob/main/build-octave-7.docker).
     Try to keep the list as short as possible.
