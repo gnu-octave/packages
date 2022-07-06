@@ -29,6 +29,8 @@ links:
 maintainers:
 - name: "Colin B. Macdonald"
   contact: "cbm@m.fsf.org"
+- name: "Mike Miller"
+  contact:
 versions:
 - id: "2.9.0"
   date: "2020-03-04"
