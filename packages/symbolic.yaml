@@ -17,8 +17,11 @@ links:
 - icon: "fas fa-code-branch"
   label: "repository"
   url: "https://github.com/cbm755/octsympy/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/symbolic/overview.html"
 - icon: "fas fa-book"
-  label: "package documentation"
+  label: "package wiki"
   url: "https://github.com/cbm755/octsympy/wiki"
 - icon: "fas fa-bug"
   label: "report a problem"
@@ -26,7 +29,18 @@ links:
 maintainers:
 - name: "Colin B. Macdonald"
   contact: "cbm@m.fsf.org"
+- name: "Mike Miller"
+  contact:
 versions:
+- id: "3.0.0"
+  date: "2022-07-05"
+  sha256: "d0181ec356a87091c7fa88ab52a3430ea69e97f9eab90e28c937f2ee5fcb27a9"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/symbolic-3.0.0.tar.gz"
+  depends:
+  - "octave (>= 5.1.0)"
+  - "pkg"
+  ubuntu2204:
+  - "python3-sympy"
 - id: "2.9.0"
   date: "2020-03-04"
   sha256:
