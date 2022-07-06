@@ -32,6 +32,15 @@ maintainers:
 - name: "Mike Miller"
   contact:
 versions:
+- id: "3.0.0"
+  date: "2020-07-05"
+  sha256: d0181ec356a87091c7fa88ab52a3430ea69e97f9eab90e28c937f2ee5fcb27a9
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/symbolic-3.0.0.tar.gz"
+  depends:
+  - "octave (>= 5.1.0)"
+  - "pkg"
+  ubuntu2204:
+  - "python3-sympy"
 - id: "2.9.0"
   date: "2020-03-04"
   sha256:
