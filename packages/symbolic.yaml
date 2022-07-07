@@ -31,6 +31,8 @@ maintainers:
   contact: "cbm@m.fsf.org"
 - name: "Mike Miller"
   contact:
+- name: "Alex Vong"
+  contact:
 versions:
 - id: "3.0.0"
   date: "2022-07-05"
