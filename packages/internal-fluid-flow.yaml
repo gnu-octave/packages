@@ -1,0 +1,35 @@
+---
+layout: "package"
+permalink: "internal-fluid-flow/"
+description: >-
+  This package provides a set of functions
+  designed to solve problems of internal fluid flow.
+icon: "https://raw.githubusercontent.com/aumpierre-unb/Internal-Fluid-Flow-for-GNU-Octave/main/doc/icon.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/aumpierre-unb/Internal-Fluid-Flow-for-GNU-Octave/blob/main/LICENSE"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/aumpierre-unb/Internal-Fluid-Flow-for-GNU-Octave/releases/"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/aumpierre-unb/Internal-Fluid-Flow-for-GNU-Octave/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://github.com/aumpierre-unb/Internal-Fluid-Flow-for-GNU-Octave/blob/main/README.md"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/aumpierre-unb/Internal-Fluid-Flow-for-GNU-Octave/issues"
+maintainers:
+- name: "Alexandre Umpierre"
+  contact: "aumpierre@gmail.com"
+versions:
+- id: "dev"
+  date:
+  sha256: 
+  url: "https://github.com/aumpierre-unb/Internal-Fluid-Flow-for-GNU-Octave/archive/refs/heads/main.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+---
