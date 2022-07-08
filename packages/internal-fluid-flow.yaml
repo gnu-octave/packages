@@ -27,7 +27,7 @@ maintainers:
 versions:
 - id: "dev"
   date:
-  sha256: 
+  sha256:
   url: "https://github.com/aumpierre-unb/Internal-Fluid-Flow-for-GNU-Octave/archive/refs/heads/main.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
