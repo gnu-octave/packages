@@ -31,7 +31,7 @@ versions:
   depends:
   - "octave (>= 2.9.7)"
   - "linear-algebra"
-  - "micellaneous"
+  - "miscellaneous"
   - "struct"
   - "statistics"
   - "pkg"
