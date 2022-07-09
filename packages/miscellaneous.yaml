@@ -34,4 +34,6 @@ versions:
   depends:
   - "octave (>= 3.8.0)"
   - "pkg"
+  ubuntu2204:
+  - "units"
 ---
