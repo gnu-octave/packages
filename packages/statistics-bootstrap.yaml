@@ -151,6 +151,5 @@ versions:
   depends:
   - "octave (>= 3.6.0)"
   - "statistics (>= 1.0.0)"
-  - "parallel (>= 2.2.0)"
   - "pkg"
 ---
