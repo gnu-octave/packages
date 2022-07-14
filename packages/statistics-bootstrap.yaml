@@ -34,7 +34,6 @@ versions:
   depends:
   - "octave (>= 3.6.0)"
   - "statistics (>= 1.0.0)"
-  - "parallel (>= 2.2.0)"
   - "pkg"
 - id: "4.0.0"
   date: "2022-07-02"
@@ -43,7 +42,6 @@ versions:
   depends:
   - "octave (>= 3.6.0)"
   - "statistics (>= 1.0.0)"
-  - "parallel (>= 2.2.0)"
   - "pkg"
 - id: "3.10.2"
   date: "2022-06-28"
@@ -52,7 +50,6 @@ versions:
   depends:
   - "octave (>= 3.6.0)"
   - "statistics (>= 1.0.0)"
-  - "parallel (>= 2.2.0)"
   - "pkg"
 - id: "3.9.3"
   date: "2022-06-21"
