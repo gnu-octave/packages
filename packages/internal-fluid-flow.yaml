@@ -11,7 +11,7 @@ links:
   url: "https://github.com/aumpierre-unb/Internal-Fluid-Flow-for-GNU-Octave/blob/main/COPYING"
 - icon: "fas fa-rss"
   label: "news"
-  url: "https://github.com/aumpierre-unb/Internal-Fluid-Flow-for-GNU-Octave/releases/"
+  url: "https://github.com/aumpierre-unb/Internal-Fluid-Flow-for-GNU-Octave/blob/main/NEWS"
 - icon: "fas fa-code-branch"
   label: "repository"
   url: "https://github.com/aumpierre-unb/Internal-Fluid-Flow-for-GNU-Octave/"
@@ -25,9 +25,9 @@ maintainers:
 - name: "Alexandre Umpierre"
   contact: "aumpierre@gmail.com"
 versions:
-- id: "0.0.1"
-  date: "2022-07-05"
-  sha256: "8308e300c17fb984ad9cda5705b7e8bfa6547285f61b484b5c6ba048abe9fc3e"
+- id: "0.0.2"
+  date: "2022-07-14"
+  sha256: "88282626e94e9858d5139210e74bdd0a39f1d81dca7bc0e2395801f44a2a2547"
   url: "https://github.com/aumpierre-unb/Internal-Fluid-Flow-for-GNU-Octave/archive/refs/tags/v0.0.1.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
