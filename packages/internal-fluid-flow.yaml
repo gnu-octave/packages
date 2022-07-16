@@ -32,4 +32,11 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
+- id: "0.0.1"
+  date: "2022-07-05"
+  sha256: "8308e300c17fb984ad9cda5705b7e8bfa6547285f61b484b5c6ba048abe9fc3e"
+  url: "https://github.com/aumpierre-unb/Internal-Fluid-Flow-for-GNU-Octave/archive/refs/tags/v0.0.1.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 ---
