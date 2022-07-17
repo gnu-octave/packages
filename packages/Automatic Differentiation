@@ -23,15 +23,15 @@ maintainers:
 versions:
 - id: "1.0.0"
   date: "2022-07-17"
-  sha256: 
-  url: "https://github.com/StevenWaldrip/Automatic-Differentiation/archive/refs/tags/1.0.0.zip"
+  sha256: "12e578cd4daedd31537ba5f541db20e85754ab356c3c28cb75da78442beb10e5"
+  url: "https://github.com/StevenWaldrip/Automatic-Differentiation/archive/refs/tags/1.0.0.tar.gz"
   depends:
   - "octave (>= 5.1.0)"
   - "pkg"
 - id: "dev"
   date:
   sha256:
-  url: "https://github.com/StevenWaldrip/Automatic-Differentiation/archive/refs/heads/main.zip"
+  url: "https://github.com/StevenWaldrip/Automatic-Differentiation/archive/refs/heads/main.tar.gz"
   depends:
   - "octave (>= 5.1.0)"
   - "pkg"
