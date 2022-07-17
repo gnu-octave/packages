@@ -3,11 +3,11 @@ layout: "package"
 permalink: "https://github.com/StevenWaldrip/Automatic-Differentiation"
 description: >-
   Automatic-Differentiation for Octave.
-icon: "https://raw.githubusercontent.com/gnu-octave/pkg-example/main/doc/icon.png"
+icon: "https://raw.githubusercontent.com/StevenWaldrip/Automatic-Differentiation/main/doc/Automatic%20Differentiation%20for%20Octave.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
-  url: "https://github.com/StevenWaldrip/Automatic-Differentiation/blob/main/LICENSE"
+  url: "https://github.com/StevenWaldrip/Automatic-Differentiation/blob/main/COPYING"
 - icon: "fas fa-code-branch"
   label: "repository"
   url: "https://github.com/StevenWaldrip/Automatic-Differentiation"
@@ -21,25 +21,18 @@ maintainers:
 - name: "Steven Waldrip"
   contact: "steven.waldrip@gmail.com"
 versions:
-- id: "1"
-  date: "2022-07-15"
-  sha256: "bff441755f0d68596f2efd027fe637b5b6c52b722ffd6255bdb8a5f34ab4ef2a"
-  url: "https://github.com/gnu-octave/pkg-example/archive/1.1.0.tar.gz"
-  depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
 - id: "1.0.0"
-  date: "2020-09-02"
+  date: "2022-07-17"
   sha256: 
-  url: "https://github.com/StevenWaldrip/Automatic-Differentiation"
+  url: "https://github.com/StevenWaldrip/Automatic-Differentiation/archive/refs/tags/1.0.0.zip"
   depends:
-  - "octave (>= 4.0.0)"
+  - "octave (>= 5.1.0)"
   - "pkg"
 - id: "dev"
   date:
   sha256:
-  url: "https://github.com/StevenWaldrip/Automatic-Differentiation"
+  url: "https://github.com/StevenWaldrip/Automatic-Differentiation/archive/refs/heads/main.zip"
   depends:
-  - "octave (>= 4.0.0)"
+  - "octave (>= 5.1.0)"
   - "pkg"
 ---
