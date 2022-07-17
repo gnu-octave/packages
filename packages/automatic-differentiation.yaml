@@ -1,6 +1,6 @@
 ---
 layout: "package"
-permalink: "https://github.com/StevenWaldrip/Automatic-Differentiation"
+permalink: "automatic-differentiation/"
 description: >-
   Automatic-Differentiation for Octave.
 icon: "https://raw.githubusercontent.com/StevenWaldrip/Automatic-Differentiation/main/doc/Automatic%20Differentiation%20for%20Octave.png"
