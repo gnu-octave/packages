@@ -1,0 +1,38 @@
+---
+layout: "package"
+permalink: "automatic-differentiation/"
+description: >-
+  Automatic-Differentiation for Octave.
+icon: "https://raw.githubusercontent.com/StevenWaldrip/Automatic-Differentiation/main/doc/Automatic%20Differentiation%20for%20Octave.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/StevenWaldrip/Automatic-Differentiation/blob/main/COPYING"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/StevenWaldrip/Automatic-Differentiation"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://mathsfromnothing.cf/scalar-functions-vector-matrix-and-tensor-functions/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://mathsfromnothing.cf/contact-2/"
+maintainers:
+- name: "Steven Waldrip"
+  contact: "steven.waldrip@gmail.com"
+versions:
+- id: "1.0.0"
+  date: "2022-07-17"
+  sha256: "12e578cd4daedd31537ba5f541db20e85754ab356c3c28cb75da78442beb10e5"
+  url: "https://github.com/StevenWaldrip/Automatic-Differentiation/archive/refs/tags/1.0.0.tar.gz"
+  depends:
+  - "octave (>= 5.1.0)"
+  - "pkg"
+- id: "dev"
+  date:
+  sha256:
+  url: "https://github.com/StevenWaldrip/Automatic-Differentiation/archive/refs/heads/main.tar.gz"
+  depends:
+  - "octave (>= 5.1.0)"
+  - "pkg"
+---
