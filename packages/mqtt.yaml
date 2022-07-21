@@ -24,6 +24,15 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "0.0.2"
+  date: "2022-07-21"
+  sha256: "d976faf7f10d407d3d6c1b8e00917c2329bd7ee3b51952fb5418d64cefa0adee"
+  url: "https://downloads.sourceforge.net/project/octave-mqtt/v0.0.2/octave-mqtt-0.0.2.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libpaho-mqtt-dev"
 - id: "0.0.1"
   date: "2022-06-30"
   sha256: "c372891b1d32b9774b74ff3ccbac5c85f2f8ca63de6c60633cca5873e1014cf6"
