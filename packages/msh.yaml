@@ -36,4 +36,16 @@ versions:
   - "octave (>= 3.0.0)"
   - "splines"
   - "pkg"
+  ubuntu2204:
+  - "gmsh"
+- id: "1.0.10"
+  date: "2014-02-21"
+  sha256: "dfbdd5bdef17b3f5b2bdda0f82143bc5370a062168a796ff6281079f6ec665d5"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/msh-1.0.10.tar.gz"
+  depends:
+  - "octave (>= 3.0.0)"
+  - "splines"
+  - "pkg"
+  ubuntu2204:
+  - "gmsh"
 ---
