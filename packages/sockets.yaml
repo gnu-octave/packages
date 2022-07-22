@@ -24,6 +24,13 @@ maintainers:
 - name: "Octave Forge community"
   contact:
 versions:
+- id: "1.4.0"
+  date: "2022-07-22"
+  sha256: "18dc052cd575bb750a269f6584bb427250f6552282f4c928d610684a7e5d4e92"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/sockets-1.4.0.tar.gz"
+  depends:
+  - "octave (>= 3.6.0)"
+  - "pkg"
 - id: "1.3.0"
   date: "2022-02-22"
   sha256: "0a49f76ed56a65d39b8636eea7352a5a27c650683bd175b9e507ded3194035f2"
