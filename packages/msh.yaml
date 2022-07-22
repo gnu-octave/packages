@@ -28,6 +28,16 @@ maintainers:
 - name: "Massimiliano Culpo"
   contact:
 versions:
+- id: "1.0.12"
+  date: "2022-07-22"
+  sha256: "b4e121f61173e7759edd7c957ebf37dcc913e0bffad63cbbc1f147855da3b035"
+  url: "https://github.com/carlodefalco/msh/archive/refs/tags/v1.0.12.tar.gz"
+  depends:
+  - "octave (>= 3.0.0)"
+  - "splines"
+  - "pkg"
+  ubuntu2204:
+  - "gmsh"
 - id: "1.0.11"
   date: "2022-07-22"
   sha256: "4c1746751e42a23c1ef6a8e075738ab44dec6dcf163a21682ec0a02f3aab5739"
