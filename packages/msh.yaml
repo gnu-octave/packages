@@ -29,8 +29,8 @@ maintainers:
   contact:
 versions:
 - id: "1.0.12"
-  date: "2022-07-22"
-  sha256: "b4e121f61173e7759edd7c957ebf37dcc913e0bffad63cbbc1f147855da3b035"
+  date: "2022-07-22" 
+  sha256: "ef16c1f915eae5213b29ee6b3704a8fe6a9d4994f308b5d1852e3375f1b3e79b"
   url: "https://github.com/carlodefalco/msh/archive/refs/tags/v1.0.12.tar.gz"
   depends:
   - "octave (>= 3.0.0)"
