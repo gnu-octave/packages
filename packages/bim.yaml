@@ -19,7 +19,7 @@ links:
   url: "https://octave.sourceforge.io/bim/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(bim)"
+  url: "https://github.com/carlodefalco/bim/issues"
 maintainers:
 - name: "Carlo de Falco"
   contact: "carlo.defalco@polimi.it"
@@ -34,6 +34,15 @@ versions:
   date: "2022-07-22"
   sha256: "a6feb8b30acf960a29065b9ba4095fa03f4a265392805f7075b81d1c74dcafd7"
   url: "https://github.com/carlodefalco/bim/archive/refs/tags/v1.1.6.tar.gz"
+  depends:
+  - "octave (>= 3.8.0)"
+  - "fpl"
+  - "msh"
+  - "pkg"
+- id: "1.1.5"
+  date: "2014-10-17"
+  sha256: "e899c65e6c7fb0babdb0e2fb7990bae1f6ccf9b3dc1e19b4f58501242be2e078"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/bim-1.1.5.tar.gz"
   depends:
   - "octave (>= 3.8.0)"
   - "fpl"
