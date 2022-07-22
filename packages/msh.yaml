@@ -9,13 +9,13 @@ icon: "https://octave.sourceforge.io/pkg_icon/msh.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-2.0-or-later"
-  url: "https://sourceforge.net/p/octave/msh/ci/default/tree/COPYING"
+  url: "https://github.com/carlodefalco/msh/blob/master/COPYING"
 - icon: "fas fa-rss"
   label: "news"
-  url: "https://sourceforge.net/p/octave/msh/ci/default/tree/NEWS"
+  url: "https://github.com/carlodefalco/msh/blob/master/NEWS"
 - icon: "fas fa-code-branch"
   label: "repository"
-  url: "https://sourceforge.net/p/octave/msh/ci/default/tree/"
+  url: "https://github.com/carlodefalco/msh"
 - icon: "fas fa-th-list"
   label: "function reference"
   url: "https://octave.sourceforge.io/msh/overview.html"
@@ -28,10 +28,10 @@ maintainers:
 - name: "Massimiliano Culpo"
   contact:
 versions:
-- id: "1.0.10"
-  date: "2014-02-21"
-  sha256:
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/msh-1.0.10.tar.gz"
+- id: "1.0.11"
+  date: "2022-07-22"
+  sha256: "4c1746751e42a23c1ef6a8e075738ab44dec6dcf163a21682ec0a02f3aab5739"
+  url: "https://github.com/carlodefalco/msh/archive/refs/tags/v1.0.11.tar.gz"
   depends:
   - "octave (>= 3.0.0)"
   - "splines"
