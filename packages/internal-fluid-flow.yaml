@@ -25,6 +25,13 @@ maintainers:
 - name: "Alexandre Umpierre"
   contact: "aumpierre@gmail.com"
 versions:
+- id: "0.1.0"
+  date: "2022-08-20"
+  sha256: "246a173d2c9d40a3dc0d5c3937c971f08f7d079eb7073f35fa2952dc53817be6"
+  url: "https://github.com/aumpierre-unb/Internal-Fluid-Flow-for-GNU-Octave/archive/refs/tags/v0.1.0.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "0.0.3"
   date: "2022-07-23"
   sha256: "305aac7144a6ee45e016f4149d3dc2bf952b0f9e5538e1ab2aa0ae06e97abf9f"
