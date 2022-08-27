@@ -27,7 +27,7 @@ maintainers:
 versions:
 - id: "0.1.1"
   date: "2022-08-27"
-  sha256: ""
+  sha256: "3746ec0465154d1a46009a0db1feb943f9d391d38dbbabd57a84b378def6f660"
   url: "https://github.com/aumpierre-unb/Internal-Fluid-Flow-for-GNU-Octave/archive/refs/tags/v0.1.0.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
