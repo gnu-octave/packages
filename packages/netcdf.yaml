@@ -6,7 +6,7 @@ description: >-
 icon: "https://octave.sourceforge.io/pkg_icon/netcdf.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPL-2.0-or-later"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/netcdf/ci/master/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"
@@ -26,6 +26,15 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "1.0.15"
+  date: "2022-09-12"
+  sha256: "8474051b853272778aecb757d502e4e59e4283b2e47b0a30647837a4da799c5c"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/netcdf-1.0.15.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libnetcdf-dev"
 - id: "1.0.14"
   date: "2020-10-14"
   sha256: "8ea6ea25330f10eaa9772e52e71be9607dea87704f3ad9db9ce7b1f7cda1bcf1"
