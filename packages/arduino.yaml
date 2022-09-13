@@ -27,6 +27,14 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "0.10.0"
+  date: "2022-09-13"
+  sha256: "a7d4834d7908c27ae435779587300792cec42f835dc01a24ac7da3f61a8026a4"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/arduino-0.10.0.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "instrument-control (>= 0.5.0)"
+  - "pkg"
 - id: "0.9.1"
   date: "2022-07-13"
   sha256: "fb93277f730df1c9e150a769ec92c6eacc3ef98018db6d99e918e171f4d14bd6"
