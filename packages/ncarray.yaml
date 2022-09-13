@@ -6,7 +6,7 @@ description: >-
 icon: "https://octave.sourceforge.io/pkg_icon/ncarray.png"
 links:
 - icon: "far fa-copyright"
-  label: "GPL-2.0-or-later"
+  label: "GPL-3.0-or-later"
   url: "https://sourceforge.net/p/octave/ncarray/ci/master/tree/COPYING"
 - icon: "fas fa-rss"
   label: "news"
@@ -23,7 +23,18 @@ links:
 maintainers:
 - name: "Alexander Barth"
   contact: "barth.alexander@gmail.com"
+- name: "John Donoghue"
+  contact: "john.donoghue@ieee.org"
 versions:
+- id: "1.0.5"
+  date: "2022-09-13"
+  sha256: "1e14162d403feb0a988ba4cfdcf0be376ce08b85288c3c5b1bda6043315a43c7"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/ncarray-1.0.5.tar.gz"
+  depends:
+  - "octave (>= 3.4.0)"
+  - "netcdf (>= 1.0.2)"
+  - "statistics (>= 1.0.6)"
+  - "pkg"
 - id: "1.0.4"
   date: "2016-11-29"
   sha256:
