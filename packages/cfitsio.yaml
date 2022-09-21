@@ -24,6 +24,15 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "0.0.4"
+  date: "2022-09-21"
+  sha256: "cc76307f99a3b7755a4ea72d1c4d40758329f20807e48d5df59da74e6bfee88e"
+  url: "https://downloads.sourceforge.net/project/octave-cfitsio/v0.0.4/octave-cfitsio-0.0.4.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libcfitsio-dev"
 - id: "0.0.3"
   date: "2022-06-28"
   sha256: "d285348ee88788ee0c26387b1a34d332831a9782b797ac7c3187477e7ffecec4"
