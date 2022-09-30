@@ -3,7 +3,7 @@ layout: "package"
 permalink: "statistics/"
 description: >-
   The Statistics package for GNU Octave.
-icon: "https://https://raw.githubusercontent.com/gnu-octave/statistics/main/doc/statistics.png"
+icon: "https://raw.githubusercontent.com/gnu-octave/statistics/main/doc/statistics.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later and public domain"
