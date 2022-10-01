@@ -10,7 +10,7 @@ links:
   url: "https://github.com/gnu-octave/statistics/blob/master/COPYING"
 - icon: "fas fa-rss"
   label: "news"
-  url: "github.com/gnu-octave/statistics/releases"
+  url: "https://github.com/gnu-octave/statistics/releases"
 - icon: "fas fa-code-branch"
   label: "repository"
   url: "https://github.com/gnu-octave/statistics/"
