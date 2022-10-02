@@ -3,7 +3,7 @@ layout: "package"
 permalink: "mccabe-thiele/"
 description: >-
   A toolbox for the McCabe-Thiele method.
-icon: "https://raw.githubusercontent.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/main/doc/icon.png"
+icon: "https://github.com/aumpierre-unb/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/main/doc/icon.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
