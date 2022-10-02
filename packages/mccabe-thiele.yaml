@@ -1,5 +1,8 @@
 ---
 layout: "package"
+permalink: "mccabe-thiele/"
+description: >-
+  A toolbox for the McCabe-Thiele method.
 icon: "https://raw.githubusercontent.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/main/doc/icon.png"
 links:
 - icon: "far fa-copyright"
