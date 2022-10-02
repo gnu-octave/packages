@@ -1,0 +1,34 @@
+---
+layout: "package"
+permalink: "mccabe-thiele/"
+description: >-
+  A toolbox for the McCabe-Thiele method.
+icon: "https://raw.githubusercontent.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/main/doc/icon.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/blob/main/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/blob/main/README.md"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/issues"
+maintainers:
+- name: "Alexandre Umpierre"
+  contact: "aumpierre@gmail.com"
+versions:
+- id: "0.1.1"
+  date: "2022-10-01"
+  sha256: "7d20d47df4e7cbab34cc8bdae71ae432a565dbee5d8943bf8311dcdba9ed14c7"
+  url: "https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.1.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+---
