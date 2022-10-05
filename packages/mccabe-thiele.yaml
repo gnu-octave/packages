@@ -24,6 +24,13 @@ maintainers:
 - name: "Alexandre Umpierre"
   contact: "aumpierre@gmail.com"
 versions:
+- id: "0.1.2"
+  date: "2022-10-05"
+  sha256: "e6016fbd6b9c99eab45d2be3e0a7e6f1de2b5795958eb83b3699fa7109f2cde0"
+  url: "https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.2.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "0.1.1"
   date: "2022-10-01"
   sha256: "7d20d47df4e7cbab34cc8bdae71ae432a565dbee5d8943bf8311dcdba9ed14c7"
