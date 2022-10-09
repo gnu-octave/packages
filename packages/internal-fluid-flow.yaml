@@ -2,8 +2,7 @@
 layout: "package"
 permalink: "internal-fluid-flow/"
 description: >-
-  This package provides a set of functions
-  designed to solve problems of internal fluid flow.
+  A toolbox for the McCabe-Thiele method.
 icon: "https://raw.githubusercontent.com/aumpierre-unb/Internal-Fluid-Flow-for-GNU-Octave/main/doc/icon.png"
 links:
 - icon: "far fa-copyright"
