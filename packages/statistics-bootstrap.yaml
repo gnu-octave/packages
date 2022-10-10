@@ -2,7 +2,8 @@
 layout: "package"
 permalink: "statistics-bootstrap/"
 description: >-
-  Estimate uncertainty (confidence intervals) and test hypotheses (p-values) using bootstrap resampling methods.
+  Estimate uncertainty (confidence intervals) and test hypotheses (p-values) using
+  bootstrap resampling methods.
 icon: "https://raw.githubusercontent.com/gnu-octave/statistics-bootstrap/master/doc/icon.png"
 links:
 - icon: "far fa-copyright"
