@@ -2,10 +2,7 @@
 layout: "package"
 permalink: "statistics-bootstrap/"
 description: >-
-  This package of functions can be used to estimate uncertainty (confidence
-  intervals) and test hypotheses (p-values) using bootstrap. Variations of
-  the bootstrap are included that improve the accuracy of bootstrap statistics
-  for small samples and samples with complex dependence structures.
+  Estimate uncertainty (confidence intervals) and test hypotheses (p-values) using bootstrap resampling methods.
 icon: "https://raw.githubusercontent.com/gnu-octave/statistics-bootstrap/master/doc/icon.png"
 links:
 - icon: "far fa-copyright"
