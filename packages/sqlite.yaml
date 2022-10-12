@@ -1,0 +1,36 @@
+---
+layout: "package"
+permalink: "sqlite/"
+description: >-
+  Basic Octave implementation of the sqlite toolkit
+icon:
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/gnu-octave/octave-sqlite/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/gnu-octave/octave-sqlite/blob/main/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/gnu-octave/octave-sqlite/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://github.com/gnu-octave/octave-sqlite/wiki/Octave-SQLITE-Toolkit"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/gnu-octave/octave-sqlite/issues"
+maintainers:
+- name: "John Donoghue"
+  contact: "john.donoghue@ieee.org"
+versions:
+- id: "0.0.1"
+  date: "2022-10-12"
+  sha256: "eaffe0c12b7a32e470468ceab037a828954b4044d26f010bb47259cdc0b70696"
+  url: "https://github.com/gnu-octave/octave-sqlite/releases/download/v0.0.1/octave-sqlite-0.0.1.tar.gz"
+  depends:
+  - "octave (>= 6.0.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libsqlite3-dev"
+---
