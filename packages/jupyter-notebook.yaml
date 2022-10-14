@@ -4,7 +4,7 @@ permalink: "jupyter-notebook/"
 description: >-
   A package to run and fill Jupyter Notebooks within GNU Octave.
   Evaluate long-running Octave Jupyter Notebooks on a computing server without
-  permanent browser connection.
+  permanent browser connections.
 icon: "https://raw.githubusercontent.com/gnu-octave/pkg-jupyter-notebook/main/doc/icon.png"
 links:
 - icon: "far fa-copyright"
