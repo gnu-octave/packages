@@ -76,7 +76,7 @@ jobs:
             docker run \
               --volume="$(pwd):/workdir:rw" \
               ${{ matrix.image }}:${{ matrix.version }} \
-              octave-cli --eval "cd packages/assets/ci; \
+              octave-cli --eval "pwd; ls; cd packages/assets/ci; \
                 octave_ci('$p', '/workdir/test/packages/index.html')"
           done
 
