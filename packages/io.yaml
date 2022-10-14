@@ -2,7 +2,7 @@
 layout: "package"
 permalink: "io/"
 description: >-
-  Input/Output in external formats.
+  Input/Output in external format.
 icon: "https://octave.sourceforge.io/pkg_icon/io.png"
 links:
 - icon: "far fa-copyright"
