@@ -2,7 +2,7 @@
 layout: "package"
 permalink: "netcdf/"
 description: >-
-  A NetCDF interface for Octave.
+  A NetCDF interface for cool Octave.
 icon: "https://octave.sourceforge.io/pkg_icon/netcdf.png"
 links:
 - icon: "far fa-copyright"
