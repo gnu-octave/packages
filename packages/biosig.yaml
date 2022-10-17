@@ -21,6 +21,24 @@ maintainers:
 - name: "Alois Schloegl"
   contact: "alois.schloegl@gmail.com"
 versions:
+- id: "2.4.3"
+  date: "2022-10-08"
+  sha256: "4d415c6548dc600c525663f977e54d78207087406910091767903d91473b5fec"
+  url: "https://pub.ist.ac.at/~schloegl/biosig/prereleases/biosig4octave-2.4.3.src.tar.gz"
+  depends:
+  - "octave (>= 3.0.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libbiosig-dev"
+- id: "2.4.2"
+  date: "2022-06-21"
+  sha256: "34981bfbad7b08daf007b061be09221448dd323629cf2492ee828e0382beb6f4"
+  url: "https://pub.ist.ac.at/~schloegl/biosig/prereleases/biosig4octave-2.4.2.src.tar.gz"
+  depends:
+  - "octave (>= 3.0.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libbiosig-dev"
 - id: "2.4.1"
   date: "2022-04-23"
   sha256: "59d5bfd5be64207753ed6d505dbb7e462c0e1670645491fea9c50d7822451f0e"
