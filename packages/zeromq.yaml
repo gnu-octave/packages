@@ -27,6 +27,15 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "1.5.5"
+  date: "2022-10-17"
+  sha256: "300644a5b56eada815b97acc27cab9fe3539713721a2c02dac047a1252f07ecb"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/zeromq-1.5.5.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libzmq3-dev"
 - id: "1.5.4"
   date: "2022-05-02"
   sha256: "c46a72fe0117b13a9f24fd48ffbbce65422fcb80b95ce09b78f1d0b086a9ded4"
