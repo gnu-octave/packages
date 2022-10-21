@@ -2,7 +2,7 @@
 layout: "package"
 permalink: "ponchon-savarit/"
 description: >-
-  A toolbox for the Ponchon-Savarit method for GNU Octave.
+  A toolbox for the Ponchón-Savarit method for GNU Octave.
 icon: "https://raw.githubusercontent.com/aumpierre-unb/Ponchon-Savarit-for-GNU-Octave/main/doc/icon.png"
 links:
 - icon: "far fa-copyright"
@@ -24,6 +24,13 @@ maintainers:
 - name: "Alexandre Umpierre"
   contact: "aumpierre@gmail.com"
 versions:
+- id: "0.1.1"
+  date: "2022-10-21"
+  sha256: "a33b16463352ffeaf35f53cb6ccc5781b413085c6027f27113d4cb58693abdc1"
+  url: "https://github.com/aumpierre-unb/Ponchon-Savarit-for-GNU-Octave/archive/refs/tags/v0.1.1.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "0.1.0"
   date: "2022-10-16"
   sha256: "3a1dd359d63c67e9fc0b927c5e30a5b55422636d8b08dbeaa050dc2dade4e7d4"
