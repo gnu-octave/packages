@@ -2,7 +2,8 @@
 layout: "package"
 permalink: "octclip/"
 description: >-
-  This package allows to do boolean operations with polygons using the Greiner-Hormann algorithm
+  This package allows to do boolean operations with polygons using the
+  Greiner-Hormann algorithm
 icon: "https://bitbucket.org/jgpallero/octclip/src/master/doc/octclip.png"
 links:
 - icon: "far fa-copyright"
