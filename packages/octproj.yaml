@@ -4,7 +4,7 @@ permalink: "octproj/"
 description: >-
   This package allows to call functions of PROJ library for
   cartographic projections and CRS transformations.
-icon: "https://bitbucket.org/jgpallero/octproj/src/master/doc/octproj.png"
+icon: "https://bitbucket.org/jgpallero/octproj/raw/2308e7a409431323da692dcff4532d02a973cac4/doc/octproj.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
