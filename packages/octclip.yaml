@@ -25,8 +25,8 @@ maintainers:
 - name: "José Luis García Pallero"
   contact: "jgpallero@gmail.com"
 versions:
-- id: "2.0.2"
-  date: "2022-03-25"
+- id: "2.0.3"
+  date: "2022-11-07"
   sha256:
   url: "https://bitbucket.org/jgpallero/octclip/downloads/octclip-2.0.3.tar.gz"
   depends:
