@@ -17,7 +17,7 @@ links:
   url: "https://bitbucket.org/jgpallero/octclip/src/master/"
 - icon: "fas fa-th-list"
   label: "function reference"
-  url: "https://bitbucket.org/jgpallero/octclip/src/master/help/octclip/overview.html"
+  url: "https://jgpallero.bitbucket.io/octclip/octclip/"
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(octclip)"
