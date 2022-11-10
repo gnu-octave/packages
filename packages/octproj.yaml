@@ -27,9 +27,11 @@ maintainers:
 versions:
 - id: "3.0.2"
   date: "2022-11-07"
-  sha256:
+  sha256: "1b60239ede0a19aabd85d5c72c72fee9df6519bf37c2430766ab303628f04b3b"
   url: "https://bitbucket.org/jgpallero/octproj/downloads/octproj-3.0.2.tar.gz"
   depends:
   - "octave (>= 3.0.0)"
   - "pkg"
+  ubuntu2204:
+  - "libproj-dev"
 ---
