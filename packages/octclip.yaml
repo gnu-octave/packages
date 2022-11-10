@@ -27,7 +27,7 @@ maintainers:
 versions:
 - id: "2.0.3"
   date: "2022-11-07"
-  sha256: "54b67516378d3b9b6e02fccda07cff0ad7920d95183574ba817ee8100ba8ece7"
+  sha256: "bbac2f0a26dd90b8260bc4362e5a552df5d1dcb62db2c6253b6711a983e6991f"
   url: "https://bitbucket.org/jgpallero/octclip/downloads/octclip-2.0.3.tar.gz"
   depends:
   - "octave (>= 3.6.0)"
