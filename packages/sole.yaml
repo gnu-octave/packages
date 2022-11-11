@@ -2,9 +2,7 @@
 layout: "package"
 permalink: "sole/"
 description: >-
-  Create and manage triangular and tetrahedral meshes for Finite Element or
-  Finite Volume PDE solvers.  Use a mesh data structure compatible with
-  PDEtool.  Rely on gmsh for unstructured mesh generation.
+   A package for transient and steady state simulation of organic solar cells.
 icon: "https://sourceforge.net/p/sole/screenshot/sole_icn.png"
 links:
 - icon: "far fa-copyright"
