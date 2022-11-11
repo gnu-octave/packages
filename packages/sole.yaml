@@ -13,7 +13,7 @@ links:
   url: "https://sourceforge.net/p/sole/git/ci/master/tree/README"
 - icon: "fas fa-code-branch"
   label: "repository"
-  url: "https://git.code.sf.net/p/sole/git"
+  url: "https://sourceforge.net/p/sole/git/ci/master/tree/"
 - icon: "fas fa-th-list"
   label: "function reference"
   url: "https://sole.sourceforge.net/functions/sole/overview.html"
