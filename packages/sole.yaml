@@ -1,0 +1,37 @@
+---
+layout: "package"
+permalink: "sole/"
+description: >-
+  Create and manage triangular and tetrahedral meshes for Finite Element or
+  Finite Volume PDE solvers.  Use a mesh data structure compatible with
+  PDEtool.  Rely on gmsh for unstructured mesh generation.
+icon: "https://sourceforge.net/p/sole/screenshot/sole_icn.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-2.0-or-later"
+  url: "https://sourceforge.net/p/sole/git/ci/master/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/sole/git/ci/master/tree/README"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://git.code.sf.net/p/sole/git"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://sole.sourceforge.net/functions/sole/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://sourceforge.net/p/sole/tickets/"
+maintainers:
+- name: "Carlo de Falco"
+  contact:
+versions:
+- id: "0.1.1"
+  date: "2022-11-11"
+  sha256: "e4b52464e46e0f15a9589fc58047e02452fb7e67690d7df86abde4510efeb2c7"
+  url: "https://sourceforge.net/projects/sole/files/latest/download"
+  depends:
+  - "octave (>= 7.3.0)"
+  - "bim (>= 1.0.0)"
+  - "pkg"
+---
