@@ -28,8 +28,8 @@ maintainers:
 versions:
 - id: "0.1.1"
   date: "2022-11-11"
-  sha256: "ef16c1f915eae5213b29ee6b3704a8fe6a9d4994f308b5d1852e3375f1b3e79b"
-  url: "https://github.com/carlodefalco/msh/archive/refs/tags/v1.0.12.tar.gz"
+  sha256: "e4b52464e46e0f15a9589fc58047e02452fb7e67690d7df86abde4510efeb2c7"
+  url: "https://sourceforge.net/projects/sole/files/latest/download"
   depends:
   - "octave (>= 7.3.0)"
   - "bim (>= 1.0.0)"
