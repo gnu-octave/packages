@@ -29,7 +29,8 @@ versions:
   sha256: "ab6390e55cdea7eee38c88ba05b7525270a7304ce70469fae4d132bf2a9e0714"
   url: "https://github.com/aumpierre-unb/Psychrometrics-for-GNU-Octave/archive/refs/tags/v0.1.2.tar.gz"
   depends:
-  - "octave (>= 4.0.0), optim (>= 1.6.2)"
+  - "octave (>= 4.0.0)"
+  - "optim (>= 1.6.2)"
   - "pkg"
 - id: "0.1.1"
   date: "2022-11-17"
