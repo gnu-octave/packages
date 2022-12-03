@@ -24,6 +24,13 @@ maintainers:
 - name: "Alexandre Umpierre"
   contact: "aumpierre@gmail.com"
 versions:
+- id: "0.2.0"
+  date: "2022-12-03"
+  sha256: "685e5831295b5742cd44cec12e8fdbed98ed4cbfaf69d78afc0c9b4bfac41ca2"
+  url: "https://github.com/aumpierre-unb/Psychrometrics-for-GNU-Octave/archive/refs/tags/v0.2.0.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "0.1.2"
   date: "2022-11-18"
   sha256: "ab6390e55cdea7eee38c88ba05b7525270a7304ce70469fae4d132bf2a9e0714"
