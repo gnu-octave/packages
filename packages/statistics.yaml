@@ -26,7 +26,7 @@ maintainers:
 versions:
 - id: "1.5.2"
   date: "2022-12-15"
-  sha256: "42392a20586125c756b8f715f2c81efd92af5982eba2e25bb5c5fb2bdf008130"
+  sha256: "26d5f047b6df15c46eeb3443d601981b4e93c6672ee36c360beccc5c48857ff5"
   url: "https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.5.2.tar.gz"
   depends:
   - "octave (>= 6.1.0)"
