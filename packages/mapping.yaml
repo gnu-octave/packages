@@ -27,7 +27,7 @@ versions:
 - id: "1.4.2"
   date: "2022-02-20"
   sha256: "9ab5105aa0b5e549790070ef84c94d4ada88306d99c5afa1076bc3c9e8b32da2"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/mapping-1.4.1.tar.gz"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/mapping-1.4.2.tar.gz"
   depends:
   - "octave (>= 5.2.0)"
   - "io (>= 2.2.7)"
