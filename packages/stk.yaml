@@ -24,7 +24,7 @@ links:
   url: "https://github.com/stk-kriging/stk"
 - icon: "fas fa-th-list"
   label: "function reference"
-  url: "https://octave.sourceforge.io/stk/overview.html"
+  url: "https://stk-kriging.github.io/release/latest/doc/html/"
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://github.com/stk-kriging/stk/issues"
