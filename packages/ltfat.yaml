@@ -33,7 +33,7 @@ maintainers:
 versions:
 - id: "2.5.0"
   date: "2022-06-09"
-  sha256: "0852EA947AD3C10CC2BE93C0B508A00952F716CF15D394E687A9E412C9DA5762"
+  sha256: "0852ea947ad3c10cc2be93c0b508a00952f716cf15d394e687a9e412c9da5762"
   url: "https://github.com/ltfat/ltfat/releases/download/v2.5.0/ltfat-2.5.0-src.tgz"
   depends:
   - "octave (>= 5.0.0)"
