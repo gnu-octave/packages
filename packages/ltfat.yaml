@@ -2,40 +2,40 @@
 layout: "package"
 permalink: "ltfat/"
 description: >-
-  The Large Time/Frequency Analysis Toolbox (LTFAT) is a Matlab/Octave toolbox
-  for working with time-frequency analysis, wavelets and signal processing.
-  It is intended both as an educational and a computational tool.  The toolbox
-  provides a large number of linear transforms including Gabor and wavelet
-  transforms along with routines for constructing windows (filter prototypes)
-  and routines for manipulating coefficients.
+ The Large Time/Frequency Analysis Toolbox (LTFAT) is a Matlab/Octave 
+ toolbox for working with time-frequency analysis and synthesis. 
+ It is intended both as an educational and a computational tool. 
+ The toolbox provides a large number of linear transforms including
+ Gabor and wavelet transforms along with routines for constructing windows 
+ (filter prototypes) and routines for manipulating coefficients
 icon: "https://octave.sourceforge.io/pkg_icon/ltfat.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
-  url: "https://sourceforge.net/p/octave/ltfat/ci/master/tree/COPYING"
+  url: "https://github.com/ltfat/ltfat/blob/master/COPYING"
 - icon: "fas fa-rss"
-  label: "news"
-  url: "https://sourceforge.net/p/octave/ltfat/ci/master/tree/NEWS"
+  label: "changelog"
+  url: "https://github.com/ltfat/ltfat/blob/master/ChangeLog"
 - icon: "fas fa-code-branch"
   label: "repository"
-  url: "https://sourceforge.net/p/octave/ltfat/ci/master/tree/"
+  url: "https://github.com/ltfat/ltfat/"
 - icon: "fas fa-th-list"
-  label: "function reference"
-  url: "https://octave.sourceforge.io/ltfat/overview.html"
+  label: "documentation"
+  url: "https://ltfat.org/doc/"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(ltfat)"
+  url: "https://github.com/ltfat/ltfat/issues"
 maintainers:
 - name: "Peter L. Soendergaard"
   contact: "peter@sonderport.dk"
 - name: "Zdenek Prusa"
   contact:
 versions:
-- id: "2.3.1"
-  date: "2018-06-21"
-  sha256:
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/ltfat-2.3.1.tar.gz"
+- id: "2.5.0"
+  date: "2022-06-09"
+  sha256: "0852EA947AD3C10CC2BE93C0B508A00952F716CF15D394E687A9E412C9DA5762"
+  url: "https://github.com/ltfat/ltfat/releases/download/v2.5.0/ltfat-2.5.0-src.tgz"
   depends:
-  - "octave (>= 3.8.0)"
+  - "octave (>= 5.0.0)"
   - "pkg"
 ---
