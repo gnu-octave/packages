@@ -20,6 +20,9 @@ function octave_ci (package_name, pkg_index_file)
     step_warning ("STOP.  No package provided.");
     return;
   endif
+  
+  ## Package name should be lower case, but do not be pedantic.
+  package_name = tolower (package_name);
 
   ## Resolve locally build package index.
   step_group_start ("Resolve locally build package index");
