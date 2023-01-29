@@ -34,15 +34,7 @@ versions:
 - id: "2.5.0"
   date: "2022-06-09"
   sha256: "0852ea947ad3c10cc2be93c0b508a00952f716cf15d394e687a9e412c9da5762"
-  url: "https://github.com/ltfat/ltfat/releases/download/v2.5.0/ltfat-2.5.0-src.tgz"
+  url: "https://github.com/ltfat/ltfat/releases/download/v2.5.0/ltfat-2.5.0-of.tar.gz"
   depends:
   - "octave (>= 5.0.0)"
   - "pkg"
-- id: "2.3.1"
-  date: "2018-06-21"
-  sha256: "3063eced0aa185162f3049e37c2ca8076985b76b7173738e7389184e5481f03d"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/ltfat-2.3.1.tar.gz"
-  depends:
-  - "octave (>= 3.8.0)"
-  - "pkg"
----
