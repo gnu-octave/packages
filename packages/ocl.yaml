@@ -2,9 +2,8 @@
 layout: "package"
 permalink: "ocl/"
 description: >-
-  Package using OpenCL for parallelization, mostly suitable to
-  Single-Instruction-Multiple-Data (SIMD) computations, selectively using
-  available OpenCL hardware and drivers.
+  Package using OpenCL for parallelization of (SIMD) computations,
+  selectively using available OpenCL hardware.
 icon:
 links:
 - icon: "far fa-copyright"
@@ -26,6 +25,13 @@ maintainers:
 - name: "Matthias W. Klein"
   contact: "mattwklein AT users.sf.net"
 versions:
+- id: "1.2.1"
+  date: "2022-12-15"
+  sha256: "35551e7d21afe7f97507bb044bb346d6053c32cda07e66fc386c50ae1cd696eb"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/ocl-1.2.1.tar.gz"
+  depends:
+  - "octave (>= 4.2.0)"
+  - "pkg"
 - id: "1.2.0"
   date: "2021-12-07"
   sha256: "8d077067040d5373d96456b7969d2122bd060edfd71472c9a2ae3068b238812f"
