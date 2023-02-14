@@ -1,0 +1,34 @@
+---
+layout: "package"
+permalink: "pkg-octave-doc/"
+description: >-
+  Octave Package Documentation
+icon: "https://raw.githubusercontent.com/gnu-octave/pkg-octave-doc/main/doc/icon.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/gnu-octave/pkg-octave-doc/blob/master/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/gnu-octave/pkg-octave-doc/releases"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/gnu-octave/pkg-octave-doc/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://gnu-octave.github.io/pkg-octave-doc/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/gnu-octave/pkg-octave-doc/issues"
+maintainers:
+- name: "Andreas Bertsatos"
+  contact: "abertsatos@biol.uoa.gr"
+versions:
+- id: "0.4.0"
+  date: "2023-02-14"
+  sha256: "72e53c773a5aaaeed539509ef3599eb8daf8903ffb92112f4bb11acb66b117e2"
+  url: "https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.0.tar.gz"
+  depends:
+  - "octave (>= 6.1.0)"
+  - "pkg"
+---
