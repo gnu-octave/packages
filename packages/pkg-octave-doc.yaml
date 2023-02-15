@@ -3,7 +3,7 @@ layout: "package"
 permalink: "pkg-octave-doc/"
 description: >-
   Octave Package Documentation
-icon: "https://raw.githubusercontent.com/gnu-octave/pkg-octave-doc/main/doc/pkd-octave-doc.png"
+icon: "https://raw.githubusercontent.com/gnu-octave/pkg-octave-doc/main/doc/pkg-octave-doc.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
