@@ -32,6 +32,13 @@ maintainers:
 - name: "Torsten Lilge"
   contact: "ttl-octave@mailbox.org"
 versions:
+- id: "3.5.0"
+  date: "2023-02-04"
+  sha256: "507d14ea3ea80bdc55b67c146a9dc88229229714fe33febe983393a67dec714a"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/control-3.5.0.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "3.4.0"
   date: "2022-01-16"
   sha256: "6ec6a06e13ad288afad8631cc41f7247e47096fa1e8d04240d4ed01efbe4a77a"
