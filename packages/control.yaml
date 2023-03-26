@@ -4,7 +4,7 @@ permalink: "control/"
 description: >-
   Computer-Aided Control System Design (CACSD) Tools for GNU Octave, based on
   the proven SLICOT Library.
-icon: "https://octave.sourceforge.io/pkg_icon/control.png"
+icon: "https://raw.githubusercontent.com/gnu-octave/pkg-control/main/docs/assets/control.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
