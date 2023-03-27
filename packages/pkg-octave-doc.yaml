@@ -24,6 +24,13 @@ maintainers:
 - name: "Andreas Bertsatos"
   contact: "abertsatos@biol.uoa.gr"
 versions:
+- id: "0.4.8"
+  date: "2023-03-27"
+  sha256: "c1bad2d14db4f78017d1ce9a914931f9833ad2a3a9e4798eebb8a8d614da0fa0"
+  url: "https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.8.tar.gz"
+  depends:
+  - "octave (>= 7.2.0)"
+  - "pkg"
 - id: "0.4.7"
   date: "2023-02-26"
   sha256: "b8159c36da1d5d00e2cefc86bf04d1070f3fa8415e8001add3d225070489e028"
