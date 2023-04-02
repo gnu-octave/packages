@@ -6,24 +6,35 @@ description: >-
   for analyzing the diaphyseal cross-sectional geometric properties of long
   bones, which can be applied to any 3D digital model of a humerus, ulna, femur
   or tibia bone represented as a triangular mesh in a Wavefront OBJ file format.
-icon: "https://github.com/pr0m1th3as/csg-toolkit/raw/main/doc/csg-toolkit.png"
+icon: "https://raw.githubusercontent.com/pr0m1th3as/csg-toolkit/main/doc/csg-toolkit.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
   url: "https://github.com/pr0m1th3as/csg-toolkit/blob/main/LICENSE"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/pr0m1th3as/csg-toolkit/releases"
 - icon: "fas fa-code-branch"
   label: "repository"
   url: "https://github.com/pr0m1th3as/csg-toolkit"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://pr0m1th3as.github.io/csg-toolkit/"
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://github.com/pr0m1th3as/csg-toolkit/issues"
-- icon: "fas fa-book"
-  label: "package documentation"
-  url: "https://github.com/pr0m1th3as/csg-toolkit"
 maintainers:
 - name: "Andreas Bertsatos"
   contact: "abertsatos@biol.uoa.gr"
 versions:
+- id: "1.3.0"
+  date: "2022-04-02"
+  sha256: "24b23e97ced970f058dd303bbd55e4a6176e802a6d160e535958c134758563b6"
+  url: "https://github.com/pr0m1th3as/csg-toolkit/archive/refs/tags/v1.3.0.tar.gz"
+  depends:
+  - "octave (>= 7.2.0)"
+  - "io (>= 2.6.4)"
+  - "pkg"
 - id: "1.2.3"
   date: "2022-06-06"
   sha256: "08792f464caa1f9b5ef7f0db4517eb21495d446fab871021b29f51f72b595074"
