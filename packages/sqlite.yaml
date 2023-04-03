@@ -3,7 +3,7 @@ layout: "package"
 permalink: "sqlite/"
 description: >-
   Basic Octave implementation of the sqlite toolkit
-icon:
+icon: "https://github.com/gnu-octave/octave-sqlite/raw/main/doc/octave-sqlite.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
@@ -24,6 +24,15 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "0.0.3"
+  date: "2023-03-27"
+  sha256: "c2b31838fb32a81344bc9cb0596d285cc717956924f798a31a414ea5a96d4093"
+  url: "https://github.com/gnu-octave/octave-sqlite/releases/download/v0.0.3/octave-sqlite-0.0.3.tar.gz"
+  depends:
+  - "octave (>= 6.0.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libsqlite3-dev"
 - id: "0.0.2"
   date: "2022-10-21"
   sha256: "1a200efc289b019adbc2f88de25d3fed7fd22618db79e347c3db3f313a83012e"
