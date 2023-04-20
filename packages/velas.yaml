@@ -2,9 +2,9 @@
 layout: "package"
 permalink: "velas/"
 description: >-
-  VELAS is a user-friendly open-source toolbox for the visualization and analysis 
-  of elastic anisotropy written in GNU Octave that can be used for any crystal 
-  symmetry.
+  VELAS is a user-friendly open-source toolbox for the visualization and
+  analysis  of elastic anisotropy written in GNU Octave that can be used
+  for any crystal symmetry.
 icon: "https://github.com/ranzhengcode/VELAS/blob/main/doc/velasLogo.png"
 links:
 - icon: "far fa-copyright"
