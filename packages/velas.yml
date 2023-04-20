@@ -1,0 +1,43 @@
+---
+layout: "package"
+permalink: "velas/"
+description: >-
+  VELAS is a user-friendly open-source toolbox for the visualization and analysis 
+  of elastic anisotropy written in GNU Octave that can be used for any crystal 
+  symmetry.
+icon: "https://octave.sourceforge.io/pkg_icon/bim.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/ranzhengcode/VELAS/blob/main/LICENSE"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/ranzhengcode/VELAS/blob/main/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/ranzhengcode/VELAS"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://github.com/ranzhengcode/VELAS/tree/main/doc"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/ranzhengcode/VELAS/issues"
+maintainers:
+- name: "Ran Zheng"
+  contact: "ranzheng@outlook.com"
+versions:
+- id: "1.0.4"
+  date: "2022-10-18"
+  sha256: "8774319dd6100ca2a242cd0656286e90c3a745b288c3ff4ab040c2d0b33c5f21"
+  url: "https://github.com/ranzhengcode/VELAS/archive/refs/tags/v1.0.4.tar.gz"
+  depends:
+  - "octave (>= 5.2.0)"
+  - "pkg"
+- id: "1.0.3"
+  date: "2022-08-31"
+  sha256: "8b9f4258d1135a4f147ea5e2bd6639b745a43cf76a522913140e874c5f500cf4"
+  url: "https://github.com/ranzhengcode/VELAS/archive/refs/tags/v1.0.3.tar.gz"
+  depends:
+  - "octave (>= 5.2.0)"
+  - "pkg"
+---
