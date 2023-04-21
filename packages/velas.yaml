@@ -27,8 +27,8 @@ maintainers:
   contact: "ranzheng@outlook.com"
 versions:
 - id: "1.0.5"
-  date: "2023-04-20"
-  sha256: "1d08f363ccc248007432fd37133b6bd805a36bbaaae00cb3addf1af30b96f175"
+  date: "2023-04-21"
+  sha256: "a54e8492cadd5f83e015c1c4f3b59e23fc4fafb6ff510337042d104d948fdf4a"
   url: "https://github.com/ranzhengcode/VELAS/archive/refs/tags/v1.0.5.tar.gz"
   depends:
   - "octave (>= 5.2.0)"
