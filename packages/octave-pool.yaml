@@ -20,8 +20,8 @@ maintainers:
 versions:
 - id: "1.0.0"
   date: "2023-05-02"
-  sha256: "7a2fb3fecbfbb49c72e4a9a2a3bfdaebb52cbc10007c4c936eba67af309337e0"
-  url: "https://github.com/reprostat/octave-pool/archive/refs/tags/1.0.0.tar.gz"
+  sha256: "006e69238570f3d2fcfb3c1221ca46fc5328484b59caf029bde92aaf0c9070a8"
+  url: "https://github.com/reprostat/octave-pool/archive/refs/tags/1.0.1.tar.gz"
   depends:
   - "octave (>= 7.2.0)"
   - "fileio"
