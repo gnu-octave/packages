@@ -1,0 +1,29 @@
+---
+layout: "package"
+permalink: "octave-pool/"
+description: >-
+  Parallel computing with independent job submission for Octave.
+icon:
+links:
+- icon: "far fa-copyright"
+  label: "MIT"
+  url: "https://github.com/reprostat/octave-pool/blob/master/COPYING"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/reprostat/octave-pool"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/reprostat/octave-pool/issues"
+maintainers:
+- name: "Tibor Auer"
+  contact: "tibor.auer@gmail.com"
+versions:
+- id: "1.0.0"
+  date: "2023-05-02"
+  sha256: "006e69238570f3d2fcfb3c1221ca46fc5328484b59caf029bde92aaf0c9070a8"
+  url: "https://github.com/reprostat/octave-pool/archive/refs/tags/1.0.1.tar.gz"
+  depends:
+  - "octave (>= 7.2.0)"
+  - "fileio"
+  - "pkg"
+---
