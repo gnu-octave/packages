@@ -26,9 +26,9 @@ maintainers:
   contact: "mail@nirkrakauer.net"
 versions:
 - id: "1.2.6"
-  date: "2023-05-10"
+  date: "2023-05-08"
   sha256: "a6c42e881388d665d765a1f811eb153bdd6bd958827342ab2b128ced7c3e82db"
-  url: "https://sourceforge.net/p/octave/package-releases/_discuss/thread/633c94ef3b/03a6/attachment/communications-1.2.6.tar.gz"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/communications-1.2.6.tar.gz"
   depends:
   - "octave (>= 4.4.0)"
   - "signal (>= 1.1.3)"
