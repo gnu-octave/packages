@@ -23,8 +23,8 @@ maintainers:
 versions:
 - id: "1.0.0"
   date: "2018-02-23"
-  sha256:
-  url: "https://gitlab.com/kakila/fda/-/archive/master/fda-master.tar.gz"
+  sha256: "bc06c351b4cd1426288e0ce00f80009261fab843cb859a5c4f3f2f0507003e60"
+  url: "https://gitlab.com/kakila/fda/-/archive/v1.0.0/fda-v1.0.0.tar.gz"
   depends:
   - "octave (>= 4.2.0)"
   - "pkg"
