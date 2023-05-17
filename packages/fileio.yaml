@@ -20,7 +20,7 @@ maintainers:
 versions:
 - id: "1.1.1"
   date: "2023-05-16"
-  sha256: "006e69238570f3d2fcfb3c1221ca46fc5328484b59caf029bde92aaf0c9070a8"
+  sha256: "659cba2499ed570be31b5b18e76baafeca540562c1ee2da2a79becd95a712222"
   url: "https://github.com/reprostat/fileio/archive/refs/tags/1.1.1.tar.gz"
   depends:
   - "octave (>= 7.2.0)"
