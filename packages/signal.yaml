@@ -25,6 +25,14 @@ maintainers:
 - name: "Mike Miller"
   contact: "mtmiller@octave.org"
 versions:
+- id: "1.4.4"
+  date: "2023-05-17"
+  sha256: "119df4b3a177834d6dd9c3124a2167c05aff5e6582fd0d32a7f9f306d302293a"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/signal-1.4.4.tar.gz"
+  depends:
+  - "octave (>= 3.8.0)"
+  - "control (>= 2.4.0)"
+  - "pkg"
 - id: "1.4.3"
   date: "2022-10-28"
   sha256: "545b97540ebeba3b420f08906fdd3977fc293b3bc8fc36f6ba8b094cea88f339"
