@@ -25,10 +25,10 @@ maintainers:
 - name: "Andrew C. Penn"
   contact: "andy.c.penn@gmail.com"
 versions:
-- id: "5.2.6"
-  date: "2023-05-18"
-  sha256: "443e8f2250cc9ea2b596828fbce5d1c8eec9d3c211ea6d9fc09efc1523693406"
-  url: "https://github.com/gnu-octave/statistics-bootstrap/archive/refs/tags/v5.2.6.tar.gz"
+- id: "5.2.7"
+  date: "2023-05-20"
+  sha256: "3e0ec9a8b38d7cc736eb13af15089d3bf5c32aeca61e72c0476ef6672e2b87a2"
+  url: "https://github.com/gnu-octave/statistics-bootstrap/archive/refs/tags/v5.2.7.tar.gz"
   depends:
   - "octave (>= 6.1.0)"
   - "statistics (>= 1.5.0)"
