@@ -3,7 +3,7 @@ layout: "package"
 permalink: "control/"
 description: >-
   Computer-Aided Control System Design (CACSD) Tools for GNU Octave, based on
-  the proven SLICOT Library.
+  the SLICOT Library.
 icon: "https://raw.githubusercontent.com/gnu-octave/pkg-control/main/docs/assets/control.png"
 links:
 - icon: "far fa-copyright"
@@ -32,6 +32,13 @@ maintainers:
 - name: "Torsten Lilge"
   contact: "ttl-octave@mailbox.org"
 versions:
+- id: "3.6.0"
+  date: "2023-05-20"
+  sha256: "53bcd7e3581f3e9b0417b212d7c8817920a03854a1d0819dd77ce650e1a28e20"
+  url: "https://github.com/gnu-octave/pkg-control/releases/download/control-3.6.0/control-3.6.0.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "3.5.2"
   date: "2023-04-05"
   sha256: "74d94f95552520c5553a5ba18423721661eca6e22b4cb8190391b654b77c34a2"
