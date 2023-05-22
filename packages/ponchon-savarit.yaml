@@ -25,7 +25,7 @@ maintainers:
   contact: "aumpierre@gmail.com"
 versions:
 - id: "1.0.0"
-  date: "2022-05-21"
+  date: "2023-05-21"
   sha256: "839120e368c438228be224c41dac0216c54fff20c34c827ccc2af94d9e279759"
   url: "https://github.com/aumpierre-unb/Ponchon-Savarit-for-GNU-Octave/archive/refs/tags/v1.0.0.tar.gz"
   depends:
