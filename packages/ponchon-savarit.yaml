@@ -26,7 +26,7 @@ maintainers:
 versions:
 - id: "1.0.0"
   date: "2023-05-21"
-  sha256: "839120e368c438228be224c41dac0216c54fff20c34c827ccc2af94d9e279759"
+  sha256: "26a48a8677a74bd9ec2c4e683450680484f8eb073704486fbc46b189fc6cc15e"
   url: "https://github.com/aumpierre-unb/Ponchon-Savarit-for-GNU-Octave/archive/refs/tags/v1.0.0.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
