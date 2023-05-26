@@ -26,7 +26,7 @@ maintainers:
 - name: "Mike Miller"
   contact: "mike@mtmxr.com"
 versions:
-- id: "0.1.0"
+- id: "0.0.1"
   date: "2019-05-22"
   sha256: "81985ba2f705d8f452b37a42f473acfbb2102a0eadb143d75d461b04f1ab6272"
   url: "https://gitlab.com/mtmiller/octave-pythonic/-/archive/v0.0.1/octave-pythonic-v0.0.1.tar.gz"
