@@ -18,10 +18,24 @@ maintainers:
 - name: "Tibor Auer"
   contact: "tibor.auer@gmail.com"
 versions:
+- id: "1.2.0"
+  date: "2023-05-26"
+  sha256: "f621280accdad3412d0732ed7e7d845c04b3f80ee209db8871bb28da1f0aa7b6"
+  url: "https://github.com/reprostat/fileio/archive/refs/tags/1.2.0.tar.gz"
+  depends:
+  - "octave (>= 7.2.0)"
+  - "pkg"
 - id: "1.1.1"
   date: "2023-05-16"
   sha256: "659cba2499ed570be31b5b18e76baafeca540562c1ee2da2a79becd95a712222"
   url: "https://github.com/reprostat/fileio/archive/refs/tags/1.1.1.tar.gz"
+  depends:
+  - "octave (>= 7.2.0)"
+  - "pkg"
+- id: "1.1.0"
+  date: "2023-05-01"
+  sha256: "c984e160b15858f061d60bfaa72fa0b4bd80d0c34799ef0ac900e7b5f4a226cd"
+  url: "https://github.com/reprostat/fileio/archive/refs/tags/1.1.0.tar.gz"
   depends:
   - "octave (>= 7.2.0)"
   - "pkg"
