@@ -35,6 +35,8 @@ versions:
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
+  ubuntu2204:
+  - "python3-sympy"
 - id: "dev"
   date:
   sha256:
@@ -42,4 +44,6 @@ versions:
   depends:
   - "octave (>= 6.1.0)"
   - "pkg"
+  buntu2204:
+  - "python3-sympy"
 ---
