@@ -44,6 +44,6 @@ versions:
   depends:
   - "octave (>= 6.1.0)"
   - "pkg"
-  buntu2204:
+  ubuntu2204:
   - "python3-sympy"
 ---
