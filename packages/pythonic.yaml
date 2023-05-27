@@ -9,24 +9,26 @@ icon: "https://assets.gitlab-static.net/uploads/-/system/project/avatar/11728647
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
-  url: "https://gitlab.com/mtmiller/octave-pythonic/-/blob/master/COPYING"
+  url: "https://gitlab.com/gnu-octave/octave-pythonic/-/blob/main/COPYING"
 - icon: "fas fa-rss"
   label: "news"
-  url: "https://gitlab.com/mtmiller/octave-pythonic/-/releases"
+  url: "https://gitlab.com/gnu-octave/octave-pythonic/-/releases"
 - icon: "fas fa-code-branch"
   label: "repository"
-  url: "https://gitlab.com/mtmiller/octave-pythonic/"
+  url: "https://gitlab.com/gnu-octave/octave-pythonic/"
 - icon: "fas fa-book"
   label: "package documentation"
-  url: "https://gitlab.com/mtmiller/octave-pythonic/-/blob/master/README.md"
+  url: "https://gitlab.com/gnu-octave/octave-pythonic/-/blob/main/README.md"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://gitlab.com/mtmiller/octave-pythonic/-/issues"
+  url: "https://gitlab.com/gnu-octave/octave-pythonic/-/issues"
 maintainers:
 - name: "Mike Miller"
-  contact: "mike@mtmxr.com"
+  contact:
+- name: "Colin B. Macdonald"
+  contact:
 versions:
-- id: "0.1.0"
+- id: "0.0.1"
   date: "2019-05-22"
   sha256: "81985ba2f705d8f452b37a42f473acfbb2102a0eadb143d75d461b04f1ab6272"
   url: "https://gitlab.com/mtmiller/octave-pythonic/-/archive/v0.0.1/octave-pythonic-v0.0.1.tar.gz"
@@ -36,8 +38,8 @@ versions:
 - id: "dev"
   date:
   sha256:
-  url: "https://gitlab.com/mtmiller/octave-pythonic/-/archive/master/octave-pythonic-master.tar.gz"
+  url: "https://gitlab.com/gnu-octave/octave-pythonic/-/archive/main/octave-pythonic-main.tar.gz"
   depends:
-  - "octave (>= 4.4.0)"
+  - "octave (>= 6.1.0)"
   - "pkg"
 ---
