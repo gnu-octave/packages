@@ -32,6 +32,13 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "0.9.1"
+  date: "2023-06-09"
+  sha256: "0b2362c7e5001a28a882803adcd3f236d6b3f73ecb4eca723b0d95f680c08f64"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.9.1.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "0.9.0"
   date: "2023-05-30"
   sha256: "6cf6236c25d9db19aca62ae79494234425a821b992091fafa47b724a53f9e453"
