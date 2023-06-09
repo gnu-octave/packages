@@ -24,6 +24,13 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "1.3.1"
+  date: "2023-06-09"
+  sha256: "f65e5e620cf0e4af39b6b440256f5e318671bdfd110cdc43943d0cb70ad208b7"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/strings-1.3.1.tar.gz"
+  depends:
+  - "octave (>= 3.8.0)"
+  - "pkg"
 - id: "1.3.0"
   date: "2022-06-28"
   sha256: "6a0a530fd14dd6a769f8161d5b97fe199574cea64c37378e77299da36ee64ce2"
