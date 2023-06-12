@@ -3,7 +3,7 @@ layout: "package"
 permalink: "cfitsio/"
 description: >-
   I/O routines to read and write FITS (Flexible Image Transport System) files.
-icon: "https://github.com/gnu-octave/octave-sqlite/raw/main/doc/octave-cfitsio.png"
+icon: "https://gnu-octave.github.io/octave-cfitsio/assets/octave-cfitsio.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
