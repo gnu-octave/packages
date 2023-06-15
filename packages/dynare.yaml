@@ -47,4 +47,7 @@ links:
 maintainers:
 - name: "Dynare Team"
   contact: "dev@dynare.org"
+versions:
+- id: "5.4.0"
+  date: "2023-03-22"
 ---
