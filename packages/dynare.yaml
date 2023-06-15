@@ -50,4 +50,6 @@ maintainers:
 versions:
 - id: "5.4.0"
   date: "2023-03-22"
+  depends:
+  - "octave (>= 6.4.0)"
 ---
