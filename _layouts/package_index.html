@@ -8,6 +8,7 @@ layout: default
       <th>Icon</th>
       <th>Name</th>
       <th>Description</th>
+      <th>Stars ⭐ </th>
       <th>Latest version</th>
       <th>Latest update</th>
     </tr>
@@ -20,6 +21,17 @@ layout: default
       <td><div class="icon"><img src="{{ pkg.icon | default: site.pkg_icon | relative_url }}" alt="icon"></div></td>
       <td><a href="{{ pkg_name | relative_url }}">{{ pkg_name }}</a></td>
       <td><div class="description">{{ pkg.description | strip_html | strip | escape }}</div></td>
+      <td>
+        {%- if pkg.stars >= 0 -%}
+          <a href="
+          {%- for link in pkg.links -%}
+            {%- if link.label == "repository" -%}
+              {{ link.url }}
+            {%- endif -%}
+          {%- endfor -%}
+          ">{{ pkg.stars }}</a>
+        {%- endif -%}
+      </td>
       <td>{{ pkg.versions[0].id }}</td>
       <td>{{ pkg.versions[0].date }}</td>
     </tr>
