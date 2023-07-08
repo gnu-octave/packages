@@ -26,7 +26,7 @@ maintainers:
 versions:
 - id: "2.1.1"
   date: "2023-07-08"
-  sha256: "e89cf8f1a238fa1386e026a804ee51aa9283046cc8ed71527352a2de86f2ddc9"
+  sha256: "6435b83e36cdb9ac50f2b64bcd721fdd42544ada6e2bac6987513b5364dc955a"
   url: "https://github.com/Andy1978/octave-video/releases/download/2.1.1/video-2.1.1.tar.gz"
   depends:
   - "octave (>= 4.4.1)"
