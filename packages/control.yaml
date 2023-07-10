@@ -32,6 +32,13 @@ maintainers:
 - name: "Torsten Lilge"
   contact: "ttl-octave@mailbox.org"
 versions:
+- id: "3.6.1"
+  date: "2023-07-10"
+  sha256: "585636fe086ea033f050386ee5a2591daf5bfc82561a7d5f91f8db556406cc02"
+  url: "https://github.com/gnu-octave/pkg-control/releases/download/control-3.6.1/control-3.6.1.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "3.6.0"
   date: "2023-05-20"
   sha256: "53bcd7e3581f3e9b0417b212d7c8817920a03854a1d0819dd77ce650e1a28e20"
