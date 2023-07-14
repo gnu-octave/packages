@@ -13,7 +13,7 @@ links:
   url: "https://github.com/Andy1978/octave-video/blob/main/NEWS"
 - icon: "fas fa-code-branch"
   label: "repository"
-  url: "https://github.com/Andy1978/octave-video/tree/main"
+  url: "https://github.com/Andy1978/octave-video"
 - icon: "fas fa-th-list"
   label: "function reference"
   url: "https://octave.sourceforge.io/video/overview.html"
