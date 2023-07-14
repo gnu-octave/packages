@@ -21,35 +21,40 @@ def get_gitlab_stars (url)
   return doc.css('a.star-count').text.to_i
 end
 
+def get_star_count_from_url (url)
+  stars = -1  # Means no star count was found.
+  begin
+    if url.include? 'github.com'
+      stars = get_github_stars(url)
+      puts '  --> Found %d GitHub stars' % [stars]
+    elsif url.include? 'gitlab.com'
+      stars = get_gitlab_stars(url)
+      puts '  --> Found %d GitLab stars' % [stars]
+    else
+      puts '  --> No stars'
+    end
+  rescue OpenURI::HTTPError
+    puts '  --> No stars, bad URL "%s"' % [url]
+  end
+  return stars
+end
+
 # Patch all package YAML-files with star count if possible.
 Dir.glob('packages/*.yaml') do |filename|
   puts filename
-  yaml_string = File.read(filename)
-  data = YAML.load(yaml_string)
+  data = YAML.load(File.read(filename))
 
-  # Find URL
+  # Find repository URL
   data['links'].each do |link|
     if link['label'] == 'repository'
-      url = link['url']
+      stars = get_star_count_from_url (link['url'])
 
-      # Find stars
-      if url.include? 'github.com'
-        data['stars'] = get_github_stars(url)
-        puts '  --> Found %d GitHub stars' % [data['stars']]
-      elsif url.include? 'gitlab.com'
-        data['stars'] = get_gitlab_stars(url)
-        puts '  --> Found %d GitLab stars' % [data['stars']]
-      else
-        data['stars'] = -1
-        puts '  --> No stars'
-      end
-      
       # Append star count to package YAML-file.
       open(filename, 'r+') { |f|
         last_line = 0
         f.each { last_line = f.pos unless f.eof? }
         f.seek(last_line, IO::SEEK_SET)
-        f.puts 'stars: %d' % [data['stars']]
+        f.puts 'stars: %d' % [stars]
         f.puts '---'
       }
     end
