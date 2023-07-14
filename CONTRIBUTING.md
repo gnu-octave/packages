@@ -191,6 +191,13 @@ versions:
   - Link to release **news**.
 
   - Link to your development **repository**.
+  
+    > **Note:** The star count ⭐ relies on this particular URL.
+    > Keep it as short and genuine as possible,
+    > e.g. "https://github.com/gnu-octave/pkg-example/",
+    > without branch or tree information.
+    > 
+    > Only GitLab and GitHub are currently supported.
 
   - Link to your **package documentation** or homepage.
 
