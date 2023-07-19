@@ -26,10 +26,12 @@ links:
   label: "report a problem"
   url: "https://github.com/ltfat/ltfat/issues"
 maintainers:
-- name: "Peter L. Soendergaard"
-  contact: "peter@sonderport.dk"
+- name: "Clara Hollomey"
+  contact: "clara.hollomey@allthatsounds.com"
 - name: "Zdenek Prusa"
   contact:
+- name: "Peter L. Soendergaard"
+  contact: "peter@sonderport.dk"
 versions:
 - id: "2.5.0"
   date: "2022-06-09"
