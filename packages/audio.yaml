@@ -13,7 +13,7 @@ links:
   url: "https://gnu-octave.github.io/octave-audio/news/"
 - icon: "fas fa-code-branch"
   label: "repository"
-  url: "https://github.com/gnu-octave/octave-audio/tree/main"
+  url: "https://github.com/gnu-octave/octave-audio"
 - icon: "fas fa-th-list"
   label: "function reference"
   url: "https://gnu-octave.github.io/octave-audio/functions/"
@@ -31,15 +31,6 @@ versions:
   date: "2023-07-20"
   sha256: "391ab69c604335968d546214d7a42ccd61d55b515bbfc3175ce67adf29e58b49"
   url: "https://github.com/gnu-octave/octave-audio/releases/download/release-2.0.6/audio-2.0.6.tar.gz"
-  depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
-  ubuntu2204:
-  - "librtmidi-dev"
-- id: "2.0.4"
-  date: "2021-12-05"
-  sha256: "301e342c12a4706f97a521bc2ac861892203eccb3f1f94112c88818b11682eea"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/audio-2.0.4.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
