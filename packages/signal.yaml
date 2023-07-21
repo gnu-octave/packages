@@ -40,7 +40,7 @@ versions:
   depends:
   - "octave (>= 3.8.0)"
   - "control (>= 2.4.0)"
-  - "pkg"  
+  - "pkg"
 - id: "1.4.3"
   date: "2022-10-28"
   sha256: "545b97540ebeba3b420f08906fdd3977fc293b3bc8fc36f6ba8b094cea88f339"
