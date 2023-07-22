@@ -26,15 +26,17 @@ links:
   label: "report a problem"
   url: "https://github.com/ltfat/ltfat/issues"
 maintainers:
-- name: "Peter L. Soendergaard"
-  contact: "peter@sonderport.dk"
+- name: "Clara Hollomey"
+  contact: "clara.hollomey@allthatsounds.com"
 - name: "Zdenek Prusa"
   contact:
+- name: "Peter L. Soendergaard"
+  contact: "peter@sonderport.dk"
 versions:
 - id: "2.5.0"
   date: "2022-06-09"
   url: "https://github.com/ltfat/ltfat/releases/download/v2.5.0/ltfat-2.5.0-of.tar.gz"
-  sha256: "0852ea947ad3c10cc2be93c0b508a00952f716cf15d394e687a9e412c9da5762"
+  sha256: "f00a840c47e06307ed2948fcca7150cc16b71b7cd376136db19d9b5b5e8357b4"
   depends:
   - "octave (>= 5.0.0)"
   - "pkg"
