@@ -35,7 +35,7 @@ versions:
   sha256: "fb14e079577e997fb1d9f3c2aaeef7ded4eec70aee417da28c5d89bd11a69ef6"
   url: "https://gitlab.com/gnu-octave/octave-pythonic/-/releases/v0.1.2/downloads/octave-pythonic-0.1.2.tar.gz"
   depends:
-  - "octave (>= 4.4.0)"
+  - "octave (>= 6.1.0)"
   - "pkg"
 - id: "0.0.1"
   date: "2019-05-22"
