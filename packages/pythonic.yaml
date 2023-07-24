@@ -37,6 +37,8 @@ versions:
   depends:
   - "octave (>= 6.1.0)"
   - "pkg"
+  ubuntu2204:
+  - "python3-dev"
 - id: "0.0.1"
   date: "2019-05-22"
   sha256: "81985ba2f705d8f452b37a42f473acfbb2102a0eadb143d75d461b04f1ab6272"
