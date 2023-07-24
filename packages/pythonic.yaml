@@ -27,11 +27,22 @@ maintainers:
   contact:
 - name: "Colin B. Macdonald"
   contact:
+- name: "Vipul Cariappa"
+  contact:
 versions:
+- id: "0.1.2"
+  date: "2023-07-23"
+  sha256: "fb14e079577e997fb1d9f3c2aaeef7ded4eec70aee417da28c5d89bd11a69ef6"
+  url: "https://gitlab.com/gnu-octave/octave-pythonic/-/releases/v0.1.2/downloads/octave-pythonic-0.1.2.tar.gz"
+  depends:
+  - "octave (>= 6.1.0)"
+  - "pkg"
+  ubuntu2204:
+  - "python3-dev"
 - id: "0.0.1"
   date: "2019-05-22"
   sha256: "81985ba2f705d8f452b37a42f473acfbb2102a0eadb143d75d461b04f1ab6272"
-  url: "https://gitlab.com/mtmiller/octave-pythonic/-/archive/v0.0.1/octave-pythonic-v0.0.1.tar.gz"
+  url: "https://gitlab.com/gnu-octave/octave-pythonic/-/archive/v0.0.1/octave-pythonic-v0.0.1.tar.gz"
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
