@@ -15,7 +15,7 @@ links:
   label: "repository"
   url: "https://github.com/gnu-octave/octave-mqtt"
 - icon: "fas fa-th-list"
-  label: "function reference"  
+  label: "function reference"
   url: "https://gnu-octave.github.io/octave-mqtt/functions/"
 - icon: "fas fa-book"
   label: "package documentation"
