@@ -2,28 +2,40 @@
 layout: "package"
 permalink: "mqtt/"
 description: >-
-  Basic Octave implementation of mqtt toolkit
-icon:
+  Octave implementation of mqtt toolkit
+icon: "https://gnu-octave.github.io/octave-mqtt/assets/octave-mqtt.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
-  url: "https://sourceforge.net/p/octave-mqtt/code/ci/default/tree/COPYING"
+  url: "https://raw.githubusercontent.com/gnu-octave/octave-mqtt/main/COPYING"
 - icon: "fas fa-rss"
   label: "news"
-  url: "https://sourceforge.net/p/octave-mqtt/code/ci/default/tree/NEWS"
+  url: "https://gnu-octave.github.io/octave-mqtt/news/"
 - icon: "fas fa-code-branch"
   label: "repository"
-  url: "https://sourceforge.net/p/octave-mqtt/code/ci/default/tree"
+  url: "https://github.com/gnu-octave/octave-mqtt"
+- icon: "fas fa-th-list"
+  label: "function reference"  
+  url: "https://gnu-octave.github.io/octave-mqtt/functions/"
 - icon: "fas fa-book"
   label: "package documentation"
-  url: "https://sourceforge.net/p/octave-mqtt/code/ci/default/tree/README.md"
+  url: "https://gnu-octave.github.io/octave-mqtt/manual/"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://sourceforge.net/p/octave-mqtt/tickets/"
+  url: "https://github.com/gnu-octave/octave-mqtt/issues"
 maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "0.0.4"
+  date: "2023-07-25"
+  sha256: "484c6e889329d8ef7b1e2878766680dc070ebc3014aaf2a92339164ebfe4d73e"
+  url: "https://github.com/gnu-octave/octave-mqtt/releases/download/release-0.0.4/octave-mqtt-0.0.4.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libpaho-mqtt-dev"
 - id: "0.0.3"
   date: "2022-08-18"
   sha256: "9aff75a326ee50b63bacfddf4c9318c72a1c2a39e558ed5d347d43f17009da64"
