@@ -30,6 +30,15 @@ maintainers:
 - name: "Vipul Cariappa"
   contact:
 versions:
+- id: "0.1.3"
+  date: "2023-08-19"
+  sha256: "b0fd4a24e28d1614ee49a92e023eb7b750e5af149352b586cc7209e3a2a92d01"
+  url: "https://gitlab.com/gnu-octave/octave-pythonic/-/releases/v0.1.3/downloads/octave-pythonic-0.1.3.tar.gz"
+  depends:
+  - "octave (>= 6.1.0)"
+  - "pkg"
+  ubuntu2204:
+  - "python3-dev"
 - id: "0.1.2"
   date: "2023-07-23"
   sha256: "fb14e079577e997fb1d9f3c2aaeef7ded4eec70aee417da28c5d89bd11a69ef6"
