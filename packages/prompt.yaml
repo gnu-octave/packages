@@ -1,0 +1,32 @@
+---
+layout: "package"
+premalink: "prompt"
+description: >-
+  A powerlevel10k-like prompt for octave.
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/gnu-octave/prompt/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/gnu-octave/prompt/releases"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/gnu-octave/prompt"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://github.com/gnu-octave/prompt/blob/main/README.md"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/gnu-octave/prompt/issues"
+maintainers:
+- name: "Wu Zhenyu"
+  contact: "wuzhenyu@ustc.edu"
+versions:
+- id: "0.0.1"
+  date: "2023-08-28"
+  sha256: "c8b3b471d177ebb5e078e69518ca832f55e5c0b5661f798d31e985f40a81966a"
+  url: "https://github.com/gnu-octave/prompt/archive/0.0.1.tar.gz"
+  depends:
+  - "pkg"
+---
