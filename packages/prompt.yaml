@@ -1,6 +1,6 @@
 ---
 layout: "package"
-premalink: "prompt/"
+permalink: "prompt/"
 description: >-
   A powerlevel10k-like prompt for octave.
 links:
