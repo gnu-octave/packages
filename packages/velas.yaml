@@ -28,7 +28,7 @@ maintainers:
 versions:
 - id: "1.0.6"
   date: "2023-09-05"
-  sha256: "8284810dc32638d920a7d29cdcbb71d4272e5ea760fdd0b250366a8e23090598"
+  sha256: "f9ffe416518188bda27b2b31f86eb47f4c90327bdaab0fe7578a33a4dfa7fa5f"
   url: "https://github.com/ranzhengcode/VELAS/archive/refs/tags/v1.0.6.tar.gz"
   depends:
   - "octave (>= 5.2.0)"
