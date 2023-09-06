@@ -5,7 +5,7 @@ description: >-
   The Pythonic package provides a Python language binding for Octave, to allow
   any Python package to be loaded and used directly, with automatic translation
   from Octave to Python data types.
-icon: "https://assets.gitlab-static.net/uploads/-/system/project/avatar/11728647/octave-pythonic-256.png"
+icon: "https://gitlab.com/uploads/-/system/project/avatar/11728647/octave-pythonic-256.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
