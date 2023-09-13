@@ -33,8 +33,15 @@ maintainers:
 - name: "Peter L. Soendergaard"
   contact: "peter@sonderport.dk"
 versions:
+- id: "2.6.0"
+  date: "2023-09-06"
+  url: "https://github.com/ltfat/ltfat/releases/download/v2.6.0/ltfat-2.6.0-of.tar.gz"
+  sha256: "14c0d9f171612c6eca0e8523b57bda7de920ead4a5b7005a3b4fbffe3333263e"
+  depends:
+  - "octave (>= 5.0.0)"
+  - "pkg"
 - id: "2.5.0"
-  date: "2022-06-09"
+  date: "2022-05-24"
   url: "https://github.com/ltfat/ltfat/releases/download/v2.5.0/ltfat-2.5.0-of.tar.gz"
   sha256: "f00a840c47e06307ed2948fcca7150cc16b71b7cd376136db19d9b5b5e8357b4"
   depends:
