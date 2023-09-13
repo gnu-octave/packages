@@ -41,7 +41,7 @@ versions:
   - "octave (>= 5.0.0)"
   - "pkg"
 - id: "2.5.0"
-  date: "2023-06-09"
+  date: "2022-05-24"
   url: "https://github.com/ltfat/ltfat/releases/download/v2.5.0/ltfat-2.5.0-of.tar.gz"
   sha256: "f00a840c47e06307ed2948fcca7150cc16b71b7cd376136db19d9b5b5e8357b4"
   depends:
