@@ -27,6 +27,15 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "2.0.8"
+  date: "2023-10-02"
+  sha256: "b0a72e744ab56079a0489a60caba76d68642bf2ce15ab55c7df01792479524cc"
+  url: "https://github.com/gnu-octave/octave-audio/releases/download/release-2.0.8/audio-2.0.8.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+  ubuntu2204:
+  - "librtmidi-dev"
 - id: "2.0.7"
   date: "2023-07-26"
   sha256: "26e0a6bf95d93d7c9cc40cdf8194210a1ee886afe4f026c3966d68c093e6f6d6"
