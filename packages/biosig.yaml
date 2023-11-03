@@ -22,7 +22,7 @@ maintainers:
   contact: "alois.schloegl@gmail.com"
 versions:
 - id: "2.5.2"
-  date: "2023-17-18"
+  date: "2023-07-18"
   sha256: "c03a35fd3359d342ad0105aa3b12ca1345185a909e60fcc927c6625bdb58e61e"
   url: "https://sourceforge.net/projects/biosig/files/Biosig%20for%20Octave/biosig4octave-2.5.2.src.tar.gz"
   depends:
@@ -31,7 +31,7 @@ versions:
   ubuntu2204:
   - "libbiosig-dev (> 1.3.0)"
 - id: "2.5.1"
-  date: "2023-17-18"
+  date: "2023-07-18"
   sha256: "d52cde114b8d00f4448079774ac89b57651c0786d5843f936b8ad6d372c69246"
   url: "https://sourceforge.net/projects/biosig/files/Biosig%20for%20Octave/biosig4octave-2.5.1.src.tar.gz"
   depends:
