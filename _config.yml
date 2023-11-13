@@ -4,6 +4,9 @@ description: >-
 logo: "/assets/octave-logo-512.png"
 lang: en
 
+repository: gnu-octave/packages
+url: https://gnu-octave.github.io
+
 pkg_icon: "/assets/pkg.png"
 
 markdown_ext: "markdown,md,yaml"

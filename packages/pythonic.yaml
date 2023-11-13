@@ -5,39 +5,61 @@ description: >-
   The Pythonic package provides a Python language binding for Octave, to allow
   any Python package to be loaded and used directly, with automatic translation
   from Octave to Python data types.
-icon: "https://assets.gitlab-static.net/uploads/-/system/project/avatar/11728647/octave-pythonic-256.png"
+icon: "https://gitlab.com/uploads/-/system/project/avatar/11728647/octave-pythonic-256.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
-  url: "https://gitlab.com/mtmiller/octave-pythonic/-/blob/master/COPYING"
+  url: "https://gitlab.com/gnu-octave/octave-pythonic/-/blob/main/COPYING"
 - icon: "fas fa-rss"
   label: "news"
-  url: "https://gitlab.com/mtmiller/octave-pythonic/-/releases"
+  url: "https://gitlab.com/gnu-octave/octave-pythonic/-/releases"
 - icon: "fas fa-code-branch"
   label: "repository"
-  url: "https://gitlab.com/mtmiller/octave-pythonic/"
+  url: "https://gitlab.com/gnu-octave/octave-pythonic/"
 - icon: "fas fa-book"
   label: "package documentation"
-  url: "https://gitlab.com/mtmiller/octave-pythonic/-/blob/master/README.md"
+  url: "https://gitlab.com/gnu-octave/octave-pythonic/-/blob/main/README.md"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://gitlab.com/mtmiller/octave-pythonic/-/issues"
+  url: "https://gitlab.com/gnu-octave/octave-pythonic/-/issues"
 maintainers:
 - name: "Mike Miller"
-  contact: "mike@mtmxr.com"
+  contact:
+- name: "Colin B. Macdonald"
+  contact:
+- name: "Vipul Cariappa"
+  contact:
 versions:
-- id: "0.1.0"
+- id: "0.1.3"
+  date: "2023-08-19"
+  sha256: "b0fd4a24e28d1614ee49a92e023eb7b750e5af149352b586cc7209e3a2a92d01"
+  url: "https://gitlab.com/gnu-octave/octave-pythonic/-/releases/v0.1.3/downloads/octave-pythonic-0.1.3.tar.gz"
+  depends:
+  - "octave (>= 6.1.0)"
+  - "pkg"
+  ubuntu2204:
+  - "python3-dev"
+- id: "0.1.2"
+  date: "2023-07-23"
+  sha256: "fb14e079577e997fb1d9f3c2aaeef7ded4eec70aee417da28c5d89bd11a69ef6"
+  url: "https://gitlab.com/gnu-octave/octave-pythonic/-/releases/v0.1.2/downloads/octave-pythonic-0.1.2.tar.gz"
+  depends:
+  - "octave (>= 6.1.0)"
+  - "pkg"
+  ubuntu2204:
+  - "python3-dev"
+- id: "0.0.1"
   date: "2019-05-22"
   sha256: "81985ba2f705d8f452b37a42f473acfbb2102a0eadb143d75d461b04f1ab6272"
-  url: "https://gitlab.com/mtmiller/octave-pythonic/-/archive/v0.0.1/octave-pythonic-v0.0.1.tar.gz"
+  url: "https://gitlab.com/gnu-octave/octave-pythonic/-/archive/v0.0.1/octave-pythonic-v0.0.1.tar.gz"
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
 - id: "dev"
   date:
   sha256:
-  url: "https://gitlab.com/mtmiller/octave-pythonic/-/archive/master/octave-pythonic-master.tar.gz"
+  url: "https://gitlab.com/gnu-octave/octave-pythonic/-/archive/main/octave-pythonic-main.tar.gz"
   depends:
-  - "octave (>= 4.4.0)"
+  - "octave (>= 6.1.0)"
   - "pkg"
 ---

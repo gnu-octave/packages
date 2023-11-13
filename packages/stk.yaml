@@ -34,6 +34,13 @@ maintainers:
 - name: "Emmanuel Vazquez"
   contact: "emmanuel.vazquez@centralesupelec.fr"
 versions:
+- id: "2.8.1"
+  date: "2023-07-01"
+  sha256: "c138ccf4b51c0bc0448f74cdc40cfcefb2ea26fba8c5652c7bd3c86685869c85"
+  url: "https://github.com/stk-kriging/stk/releases/download/2.8.1/stk-2.8.1-octpkg.tar.gz"
+  depends:
+  - "octave (>= 4.0.1)"
+  - "pkg"
 - id: "2.8.0"
   date: "2023-01-06"
   sha256: "760c69c362fb7bda3fce29ac2cfa2a5bb7448a1aeb36c92ceb65edb97b78cd32"
