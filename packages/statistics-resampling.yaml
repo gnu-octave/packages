@@ -3,7 +3,8 @@ layout: "package"
 permalink: "statistics-resampling/"
 description: >-
   Estimate bias, uncertainty (standard errors and confidence intervals)
-  and test hypotheses (p-values) using resampling methods.
+  and test hypotheses (p-values) using resampling methods. (Note that
+  this package used to be called the statistics-bootstrap package).
 icon: "https://raw.githubusercontent.com/gnu-octave/statistics-resampling/master/doc/icon.png"
 links:
 - icon: "far fa-copyright"
