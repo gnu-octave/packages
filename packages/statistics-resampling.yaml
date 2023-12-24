@@ -1,0 +1,42 @@
+---
+layout: "package"
+permalink: "statistics-resampling/"
+description: >-
+  Estimate bias, uncertainty (standard errors and confidence intervals)
+  and test hypotheses (p-values) using resampling methods.
+icon: "https://raw.githubusercontent.com/gnu-octave/statistics-resampling/master/doc/icon.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/gnu-octave/statistics-resampling/blob/master/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/gnu-octave/statistics-resampling/releases"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/gnu-octave/statistics-resampling/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://github.com/gnu-octave/statistics-resampling/blob/master/README.md"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/gnu-octave/statistics-resampling/pulls"
+maintainers:
+- name: "Andrew C. Penn"
+  contact: "andy.c.penn@gmail.com"
+versions:
+- id: "5.4.4"
+  date: "2023-12-24"
+  sha256: "47ce0bc5f1f70e45d9be14f7fe1dd4aa3ab36b92709358cdec1c1369c32e81af"
+  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/v5.4.4.tar.gz"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
+- id: "dev"
+  date:
+  sha256:
+  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/heads/master.zip"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
+---
