@@ -3,7 +3,7 @@ layout: "package"
 permalink: "control/"
 description: >-
   Control package for GNU Octave including system analysis and
- control synthesis. The package uses routines of the SLICOT-Reference library.
+  control synthesis. The package uses routines of the SLICOT-Reference library.
 icon: "https://raw.githubusercontent.com/gnu-octave/pkg-control/main/docs/assets/control.png"
 links:
 - icon: "far fa-copyright"
