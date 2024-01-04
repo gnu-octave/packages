@@ -19,7 +19,7 @@ links:
   url: "https://github.com/gnu-octave/statistics-resampling/"
 - icon: "fas fa-book"
   label: "package documentation"
-  url: "https://github.com/gnu-octave/statistics-resampling/blob/master/README.md"
+  url: "https://gnu-octave.github.io/statistics-resampling/"
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://github.com/gnu-octave/statistics-resampling/pulls"
