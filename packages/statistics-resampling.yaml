@@ -27,10 +27,10 @@ maintainers:
 - name: "Andrew C. Penn"
   contact: "andy.c.penn@gmail.com"
 versions:
-- id: "5.5.3"
-  date: "2024-01-03"
-  sha256: "bd161552548cf0e4c1d332f1557706abd4cb0ab2ff2d7cd281b95e5fc7f7d89c"
-  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/v5.5.3.zip"
+- id: "5.5.4"
+  date: "2024-01-08"
+  sha256: "09b92b306cb2d801ec12d7f0015228d4bb31e55047c5824b9b32f5e2fb4df4d4"
+  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/v5.5.4.zip"
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
@@ -38,6 +38,13 @@ versions:
   date:
   sha256:
   url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/heads/master.zip"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
+- id: "5.5.3"
+  date: "2024-01-03"
+  sha256: "bd161552548cf0e4c1d332f1557706abd4cb0ab2ff2d7cd281b95e5fc7f7d89c"
+  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/v5.5.3.zip"
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
