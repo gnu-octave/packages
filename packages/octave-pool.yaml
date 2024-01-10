@@ -18,10 +18,10 @@ maintainers:
 - name: "Tibor Auer"
   contact: "tibor.auer@gmail.com"
 versions:
-- id: "1.2.1"
+- id: "1.2.2"
   date: "2024-01-10"
-  sha256: "825c13e710ded196f5f48710b78bf5ceb1c7cb74f7675e5265cf3f37a9638d9f"
-  url: "https://github.com/reprostat/octave-pool/archive/refs/tags/1.2.1.tar.gz"
+  sha256: "61fa694771a1ac8d98562df962178b420c7c66b61793e2b521ac28571dc71ed5"
+  url: "https://github.com/reprostat/octave-pool/archive/refs/tags/1.2.2.tar.gz"
   depends:
   - "octave (>= 7.2.0)"
   - "fileio"
