@@ -24,6 +24,15 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "0.1.0"
+  date: "2024-01-11"
+  sha256: "f0660bb4b89f916d911ff53c40c2e61ce2b1bd1f6de70cbb3fde3643e6b0c341"
+  url: "https://github.com/gnu-octave/octave-sqlite/releases/download/v0.1.0/octave-sqlite-0.1.0.tar.gz"
+  depends:
+  - "octave (>= 6.0.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libsqlite3-dev"
 - id: "0.0.3"
   date: "2023-03-27"
   sha256: "c2b31838fb32a81344bc9cb0596d285cc717956924f798a31a414ea5a96d4093"
