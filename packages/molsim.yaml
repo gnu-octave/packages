@@ -26,6 +26,13 @@ maintainers:
 - name: "Jesper Schmidt Hansen"
   contact: "jesperschmidthansen@gmail.com"
 versions:
+- id: "1.0.0"
+  date: "2024-01-18"
+  sha256: "520dff5ceda9bb1703beb57b39021a0768af91ad2bacd97227b4492e6c4a4ba5"
+  url: "https://github.com/jesperschmidthansen/molsim/archive/refs/tags/v1.0.0.tar.gz"
+  depends:
+  - "octave (>= 6.0.0)"
+  - "pkg"
 - id: "0.11.1"
   date: "2023-05-07"
   sha256: "78c6cca4d5a97590f32837067763b1e8635e19320e5ccf7aad8ce74589fbe263"
