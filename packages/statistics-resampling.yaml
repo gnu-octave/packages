@@ -29,8 +29,8 @@ maintainers:
 versions:
 - id: "5.5.4"
   date: "2024-01-08"
-  sha256: "09b92b306cb2d801ec12d7f0015228d4bb31e55047c5824b9b32f5e2fb4df4d4"
-  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/v5.5.4.zip"
+  sha256: "5ef914cb9b05cc4b538a8067d1c67733bd40139055f9fd5b20d70747b2145114"
+  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/5.5.4.zip"
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
