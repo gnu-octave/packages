@@ -1,0 +1,32 @@
+---
+layout: "package"
+permalink: "rtree/"
+description: >-
+  An Octave native extension implementing the R-tree spatial index of
+  Guttman-Green. The code is an embedded version of librtree.
+icon: "https://gitlab.com/jjg/librtree-octave/-/raw/master/src/pkg/template/rtree.png"
+links:
+- icon: "far fa-copyright"
+  label: "MIT"
+  url: "https://gitlab.com/jjg/librtree-octave/-/blob/master/COPYING"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://gitlab.com/jjg/librtree-octave"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://jjg.gitlab.io/librtree-octave/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://gitlab.com/jjg/librtree-octave/-/issues"
+maintainers:
+- name: "J.J. Green"
+  contact: "j.j.green@gmx.co.uk"
+versions:
+- id: "0.8.0"
+  date: "2024-01-23"
+  sha256: "b3210dcf0f12574718b9e117e8b65c418fe01e39b66f446a74dd1bbb8745bb8f"
+  url: "https://gitlab.com/jjg/librtree-octave/-/package_files/110234799/download"
+  depends:
+  - "octave (>= 6.0.0)"
+  - "pkg"
+---
