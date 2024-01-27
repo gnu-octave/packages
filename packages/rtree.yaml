@@ -4,7 +4,7 @@ permalink: "rtree/"
 description: >-
   An Octave native extension implementing the R-tree spatial index of
   Guttman-Green. The code is an embedded version of librtree.
-icon: "https://gitlab.com/jjg/librtree-octave/-/raw/master/src/pkg/template/rtree.png"
+icon: "https://gitlab.com/jjg/librtree-octave/-/raw/master/src/pkg/src/rtree.png"
 links:
 - icon: "far fa-copyright"
   label: "MIT"
