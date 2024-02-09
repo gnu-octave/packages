@@ -32,6 +32,8 @@ versions:
   depends:
   - "octave (>= 7.0.0)"
   - "pkg"
+  ubuntu2204:
+  - "tzdata"
 - id: "0.4.1"
   date: "2024-02-07"
   sha256: "8fdde26d82cfec8960f96cf3f3145f2affcc21d0b57eb8d081a769d1f99f7e96"
@@ -39,6 +41,8 @@ versions:
   depends:
   - "octave (>= 7.0.0)"
   - "pkg"
+  ubuntu2204:
+  - "tzdata"
 - id: "0.4.0"
   date: "2024-02-07"
   sha256: "c668ebceb94570f2fdeb66a89c77b834669f05374081795115260602c642e548"
@@ -46,6 +50,8 @@ versions:
   depends:
   - "octave (>= 7.0.0)"
   - "pkg"
+  ubuntu2204:
+  - "tzdata"
 - id: "0.3.7"
   date: "2023-01-06"
   sha256: "06176105b87848af7ae80cce077754108d3636c6d6196e732ad925e31dea6c5a"
@@ -53,6 +59,8 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
+  ubuntu2204:
+  - "tzdata"
 - id: "0.3.6"
   date: "2021-07-05"
   sha256: "26cbe4ec0d6663041e546de0a81bd9ac923d87ac7c5b0ffb5bfe279c28997f9f"
@@ -60,6 +68,8 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
+  ubuntu2204:
+  - "tzdata"
 - id: "0.3.5"
   date: "2020-01-31"
   sha256: "e7e0c081536119255fa36a00a32e700d47e45f0bff86b27636b579bfc256a119"
