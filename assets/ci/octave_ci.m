@@ -61,8 +61,8 @@ function octave_ci (package_name, pkg_index_file)
 
   if (! isempty (ubuntu2204))
     step_group_start ("Install Ubuntu 22.04 dependencies");
-    [~,~] = system ("sudo apt-get update");
-    [~,~] = system (["sudo apt-get install --yes ", strjoin(ubuntu2204)]);
+    system ("sudo apt-get update");
+    system (["sudo apt-get install --yes ", strjoin(ubuntu2204)]);
     step_group_end ("done.");
   endif
 
