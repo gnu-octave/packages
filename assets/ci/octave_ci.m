@@ -214,7 +214,7 @@ function [ubuntu2204, pkgs] = resolve_deps (__pkg__, stack);
     endfor
   endif
 
-  if (isfield (p, "ubuntu2204"))
+  if (isfield (p, "ubuntu2204") && ! isempty (p.ubuntu2204))
     new_ubuntu2204 = {p.ubuntu2204.name};
     for i = 1:length (new_ubuntu2204)
       ## Ubuntu/Debian package name must consist only of lower case letters
