@@ -24,6 +24,13 @@ maintainers:
 - name: "Andreas Bertsatos"
   contact: "abertsatos@biol.uoa.gr"
 versions:
+- id: "1.6.3"
+  date: "2024-02-09"
+  sha256: "71ea088e23274a3d24cb24a93f9e5d3dae4649951da5ff762caea626983ded95"
+  url: "https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.6.3.tar.gz"
+  depends:
+  - "octave (>= 7.2.0)"
+  - "pkg"
 - id: "1.6.2"
   date: "2024-02-05"
   sha256: "2de5b6c4a8ae27318831bdd114ef68b2267a04433709b0ffda0afd2bf0d3b415"
