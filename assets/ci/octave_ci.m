@@ -61,8 +61,10 @@ function octave_ci (package_name, pkg_index_file)
 
   if (! isempty (ubuntu2204))
     step_group_start ("Install Ubuntu 22.04 dependencies");
-    [~,~] = system ("sudo apt-get update");
-    [~,~] = system (["sudo apt-get install --yes ", strjoin(ubuntu2204)]);
+    system ("sudo apt-get update");
+    ## Avoid input prompts during package installation (e.g., for tzdata)
+    system (["sudo DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC ", ...
+             "apt-get install --yes apt-utils ", strjoin(ubuntu2204)]);
     step_group_end ("done.");
   endif
 
@@ -214,7 +216,7 @@ function [ubuntu2204, pkgs] = resolve_deps (__pkg__, stack);
     endfor
   endif
 
-  if (isfield (p, "ubuntu2204"))
+  if (isfield (p, "ubuntu2204") && ! isempty (p.ubuntu2204))
     new_ubuntu2204 = {p.ubuntu2204.name};
     for i = 1:length (new_ubuntu2204)
       ## Ubuntu/Debian package name must consist only of lower case letters
