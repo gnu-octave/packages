@@ -32,7 +32,7 @@ versions:
 - id: "1.2.4"
   date: "2024-03-19"
   sha256: "6b344f870315bf2742ca88c0feb5c3da8835b4f4cbd2f8a2d793af798405f920"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/matgeom-1.2.3.tar.gz"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/matgeom-1.2.4.tar.gz"
   depends:
   - "octave (>= 4.2.0)"
   - "pkg"
