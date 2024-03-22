@@ -26,6 +26,13 @@ maintainers:
 - name: "Seyyed Hossein Sajjadi"
   contact: "https://github.com/shsajjadi"
 versions:
+- id: "1.9.1"
+  date: "2024-03-22"
+  sha256: "ff0a0a29770fc785f8e528626bfa31b401e249a3c40ebd6b9061d5794a0f23a3"
+  url: "https://github.com/shsajjadi/OctaveCoder/releases/download/coder-1.9.1/coder-1.9.1.tar.gz"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
 - id: "1.8.4"
   date: "2023-11-13"
   sha256: "06ca00f5922127ed3ec34e49d7db308573e3a4fa6e84b65a066aee3523ed9348"
