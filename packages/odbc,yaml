@@ -1,0 +1,37 @@
+---
+layout: "package"
+permalink: "odbc/"
+description: >-
+  Basic Octave implementation of the ODBC toolkit
+icon: "https://github.com/gnu-octave/octave-odbc/raw/main/doc/octave-odbc.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/gnu-octave/octave-odbc/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://gnu-octave.github.io/octave-odbc/news/"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/gnu-octave/octave-odbc/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://gnu-octave.github.io/octave-odbc/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/gnu-octave/octave-odbc/issues"
+maintainers:
+- name: "John Donoghue"
+  contact: "john.donoghue@ieee.org"
+versions:
+- id: "0.0.2"
+  date: "2024-04-03"
+  sha256: "10be713558916b03325a87eab7b4064d8a269541b2b7575610f392d891740ff8"
+  url: "https://github.com/gnu-octave/octave-odbc/releases/download/v0.0.2/octave-odbc-0.0.2.tar.gz"
+  depends:
+  - "octave (>= 6.0.0)"
+  - "pkg"
+  ubuntu2204:
+  - "unixodbc-dev"
+  - "libsqliteodbc"
+---
