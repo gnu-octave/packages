@@ -11,7 +11,8 @@ description: >-
   (c) Grid systems, UTM, UPS, MGRS;
   (d) Geoid lookup, egm84, egm96, egm2008 geoids supported;
   (e) Geometric transformations, geocentric, local cartesian;
-  (f) Great ellipse, direct, inverse, area calculations.
+  (f) Great ellipse, direct, inverse, area calculations;
+  (g) A class to solve problems on a triaxial ellipsoid.
 icon: "https://avatars.githubusercontent.com/u/86781918"
 links:
 - icon: "far fa-copyright"
@@ -33,6 +34,13 @@ maintainers:
 - name: "Charles Karney"
   contact: "karney@alum.mit.edu"
 versions:
+- id: "2.2"
+  date: "2024-04-09"
+  sha256: "807d7eeeb184b3690e86fa4cd5cc956c45a609009458931adb8af1c11a278d02"
+  url: "https://sourceforge.net/projects/geographiclib/files/distrib-Octave/geographiclib-octave-2.2.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "2.1"
   date: "2024-04-06"
   sha256: "1c6bce0826cf8b8df9cf6668bf7dc9e428b2e91359b677dbd4aed05d439d790f"
