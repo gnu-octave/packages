@@ -1,0 +1,34 @@
+---
+layout: "package"
+permalink: "dynamicprops/"
+description: >-
+  Superclass allowing to add new properties dynamically.
+icon:
+links:
+- icon: "far fa-copyright"
+  label: "GPL-2.0-or-later"
+  url: "https://gitlab.com/farhi/octave-dynamicprops/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://gitlab.com/farhi/octave-dynamicprops/-/blob/main/NEWS?ref_type=heads"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://gitlab.com/farhi/octave-dynamicprops/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://gitlab.com/farhi/octave-dynamicprops/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://gitlab.com/farhi/octave-dynamicprops/issues"
+maintainers:
+- name: "Emmanuel Farhi"
+  contact:
+versions:
+- id: "0.1"
+  date: "2019-11-02"
+  sha256:
+  url: "https://gitlab.com/farhi/octave-dynamicprops/-/archive/0.1/octave-dynamicprops-0.1.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+---
