@@ -1,0 +1,34 @@
+---
+layout: "package"
+permalink: "timer/"
+description: >-
+  A class allowing to schedule one or multiple executions of tasks.
+icon:
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://gitlab.com/farhi/octave-timer/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://gitlab.com/farhi/octave-timer/-/blob/main/NEWS?ref_type=heads"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://gitlab.com/farhi/octave-timer/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://gitlab.com/farhi/octave-timer/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://gitlab.com/farhi/octave-timer/issues"
+maintainers:
+- name: "Emmanuel Farhi"
+  contact:
+versions:
+- id: "0.1.1"
+  date: "2024-04-27"
+  sha256:
+  url: "https://gitlab.com/farhi/octave-timer/-/archive/0.1.1/octave-timer-0.1.1.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+---
