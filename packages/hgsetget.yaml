@@ -1,0 +1,41 @@
+---
+layout: "package"
+permalink: "hgsetget/"
+description: >-
+  Matlab-compatible superclass used to derive handle class with set and get methods.
+icon:
+links:
+- icon: "far fa-copyright"
+  label: "GPL-2.0-or-later"
+  url: "https://gitlab.com/farhi/octave-hgsetget/blob/master/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://gitlab.com/farhi/octave-hgsetget/releases"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://gitlab.com/farhi/octave-hgsetget/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://gitlab.com/farhi/octave-hgsetget/blob/master/README.md"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://gitlab.com/farhi/octave-hgsetget/issues"
+maintainers:
+- name: "Emmanuel Farhi"
+  contact: "emmanuel.farhi@synchrotron-soleil.fr"
+versions:
+- id: "0.1"
+  date: "2019-11-02"
+  sha256: 
+  url: "https://gitlab.com/farhi/octave-hgsetget/-/archive/0.1/octave-hgsetget-0.1.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+- id: "dev"
+  date:
+  sha256:
+  url: "https://gitlab.com/farhi/octave-hgsetget/archive/master.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+---
