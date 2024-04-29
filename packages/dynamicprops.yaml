@@ -26,7 +26,7 @@ maintainers:
 versions:
 - id: "0.1"
   date: "2019-11-02"
-  sha256: 
+  sha256: "f140cdd760f5da8d552bb08f9d562199d203e9f8ce4f47e48e94702a6f13a841"
   url: "https://gitlab.com/farhi/octave-dynamicprops/-/archive/0.1/octave-dynamicprops-0.1.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
