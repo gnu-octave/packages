@@ -26,7 +26,7 @@ maintainers:
 versions:
 - id: "0.1"
   date: "2019-11-02"
-  sha256: 
+  sha256: "17e6b203b4dc8b29d3c1cc1c875188fa3048d8db4adcc2b46efed8ddcc25747d"
   url: "https://gitlab.com/farhi/octave-hgsetget/-/archive/0.1/octave-hgsetget-0.1.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
