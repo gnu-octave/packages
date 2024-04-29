@@ -2,7 +2,8 @@
 layout: "package"
 permalink: "hgsetget/"
 description: >-
-  Matlab-compatible superclass used to derive handle class with set and get methods.
+  Matlab-compatible superclass used to derive handle class
+  with set and get methods.
 icon:
 links:
 - icon: "far fa-copyright"
