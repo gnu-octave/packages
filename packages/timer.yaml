@@ -1,0 +1,41 @@
+---
+layout: "package"
+permalink: "timer/"
+description: >-
+  Matlab-compatible superclass allowing to add new properties dynamically.
+icon:
+links:
+- icon: "far fa-copyright"
+  label: "GPL-2.0-or-later"
+  url: "https://gitlab.com/farhi/octave-timer/blob/master/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://gitlab.com/farhi/octave-timer/releases"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://gitlab.com/farhi/octave-timer/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://gitlab.com/farhi/octave-timer/blob/master/README.md"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://gitlab.com/farhi/octave-timer/issues"
+maintainers:
+- name: "Emmanuel Farhi"
+  contact: "emmanuel.farhi@synchrotron-soleil.fr"
+versions:
+- id: "0.1.2"
+  date: "2024-04-28"
+  sha256: "61550c1dc20a6e8542e4719808fa1d7374ba4c970e39d1db2b7406bc1db1cd76"
+  url: "https://gitlab.com/farhi/octave-timer/-/archive/0.1.2/octave-timer-0.1.2.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+- id: "dev"
+  date:
+  sha256:
+  url: "https://gitlab.com/farhi/octave-timer/archive/master.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+---
