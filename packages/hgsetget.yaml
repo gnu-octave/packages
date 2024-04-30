@@ -35,7 +35,7 @@ versions:
 - id: "dev"
   date:
   sha256:
-  url: "https://gitlab.com/farhi/octave-hgsetget/-/archive/master.tar.gz"
+  url: "https://gitlab.com/farhi/octave-hgsetget/-/archive/master/octave-hgsetget-master.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
