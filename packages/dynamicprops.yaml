@@ -34,7 +34,7 @@ versions:
 - id: "dev"
   date:
   sha256:
-  url: "https://gitlab.com/farhi/octave-dynamicprops/-/archive/master.tar.gz"
+  url: "https://gitlab.com/farhi/octave-dynamicprops/-/archive/master/octave-dynamicprops-master.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
