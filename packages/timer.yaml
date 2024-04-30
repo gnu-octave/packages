@@ -16,7 +16,7 @@ links:
   url: "https://gitlab.com/farhi/octave-timer/"
 - icon: "fas fa-book"
   label: "package documentation"
-  url: "hhttps://gitlab.com/farhi/octave-timer/-/blob/main/README.md"
+  url: "https://gitlab.com/farhi/octave-timer/-/blob/main/README.md"
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://gitlab.com/farhi/octave-timer/-/issues"
