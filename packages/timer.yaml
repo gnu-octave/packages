@@ -2,24 +2,24 @@
 layout: "package"
 permalink: "timer/"
 description: >-
-  Matlab-compatible superclass allowing to add new properties dynamically.
+  A Matlab-compatible timer class to execute periodic actions.
 icon:
 links:
 - icon: "far fa-copyright"
   label: "GPL-2.0-or-later"
-  url: "https://gitlab.com/farhi/octave-timer/blob/master/COPYING"
+  url: "https://gitlab.com/farhi/octave-timer/-/blob/main/COPYING"
 - icon: "fas fa-rss"
   label: "news"
-  url: "https://gitlab.com/farhi/octave-timer/releases"
+  url: "https://gitlab.com/farhi/octave-timer/-/releases"
 - icon: "fas fa-code-branch"
   label: "repository"
   url: "https://gitlab.com/farhi/octave-timer/"
 - icon: "fas fa-book"
   label: "package documentation"
-  url: "https://gitlab.com/farhi/octave-timer/blob/master/README.md"
+  url: "https://gitlab.com/farhi/octave-timer/-/blob/main/README.md"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://gitlab.com/farhi/octave-timer/issues"
+  url: "https://gitlab.com/farhi/octave-timer/-/issues"
 maintainers:
 - name: "Emmanuel Farhi"
   contact: "emmanuel.farhi@synchrotron-soleil.fr"
@@ -34,7 +34,7 @@ versions:
 - id: "dev"
   date:
   sha256:
-  url: "https://gitlab.com/farhi/octave-timer/archive/master.tar.gz"
+  url: "https://gitlab.com/farhi/octave-timer/-/archive/main/octave-timer-main.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
