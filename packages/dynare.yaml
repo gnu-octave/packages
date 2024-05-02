@@ -50,7 +50,7 @@ versions:
   sha256: ""
   url: "https://www.dynare.org/download/"
   depends:
-  - "octave (>= 7.1.0)" 
+  - "octave (>= 7.1.0)"
 - id: "6.0"
   date: "2024-02-02"
   sha256: ""
