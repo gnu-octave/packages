@@ -2,38 +2,41 @@
 layout: "package"
 permalink: "queueing/"
 description: >-
-  Functions for queueing networks, discrete- and continuous-time Markov chains
-  analysis.  Compute steady-state performance measures for open, closed and
-  mixed networks with single or multiple job classes, mean Value Analysis
-  (MVA), convolution, and various bounding techniques. Furthermore, several
-  transient and steady-state performance measures for Markov chains can be
-  computed, such as state occupancy probabilities, mean time to absorption,
-  time-averaged sojourn times and so forth.
-icon: "https://octave.sourceforge.io/pkg_icon/queueing.png"
+  The queueing package provides functions for queueing
+  networks and Markov chains analysis. This package can be used to
+  compute steady-state performance measures for open, closed and mixed
+  networks with single or multiple job classes. Mean Value Analysis
+  (MVA), convolution, and various bounding techniques are
+  implemented. Furthermore, several transient and steady-state
+  performance measures for Markov chains can be computed, such as state
+  occupancy probabilities, mean time to absorption, time-averaged
+  sojourn times and so forth. Discrete- and continuous-time Markov
+  chains are supported.
+icon: https://raw.githubusercontent.com/mmarzolla/queueing/master/doc/icon.png
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
-  url: "https://sourceforge.net/p/octave/queueing/ci/default/tree/COPYING"
+  url: "https://github.com/mmarzolla/queueing/blob/master/COPYING"
 - icon: "fas fa-rss"
   label: "news"
-  url: "https://sourceforge.net/p/octave/queueing/ci/default/tree/NEWS"
+  url: "https://github.com/mmarzolla/queueing/releases/"
 - icon: "fas fa-code-branch"
   label: "repository"
-  url: "https://sourceforge.net/p/octave/queueing/ci/default/tree/"
-- icon: "fas fa-th-list"
-  label: "function reference"
-  url: "https://octave.sourceforge.io/queueing/overview.html"
+  url: "https://github.com/mmarzolla/queueing/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://github.com/mmarzolla/queueing/blob/master/README.md"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(queueing)"
+  url: "https://github.com/mmarzolla/queueing/issues"
 maintainers:
 - name: "Moreno Marzolla"
   contact: "moreno.marzolla@unibo.it"
 versions:
-- id: "1.2.7"
-  date: "2020-03-21"
+- id: "1.2.8"
+  date: "2024-05-13"
   sha256:
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/queueing-1.2.7.tar.gz"
+  url: "https://github.com/mmarzolla/queueing/releases/download/1.2.8/queueing-1.2.8.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
