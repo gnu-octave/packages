@@ -22,8 +22,15 @@ links:
   url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(fuzzy-logic-toolkit)"
 maintainers:
 - name: "L. Markowsky"
-  contact: "lmarkov@users.sourceforge.net"
+  contact: "lmarkowsky@gmail.com"
 versions:
+- id: "0.5.0"
+  date: "2024-05-12"
+  sha256: "47911348f21af19f3626e78f330a2165ab28533a184881a9ce94cb7cb1c47e2b"
+  url: "https://github.com/lmarkowsky/fuzzy-logic-toolkit-releases/blob/main/fuzzy-logic-toolkit-0.5.0.tar.gz"
+  depends:
+  - "octave (>= 3.2.4)"
+  - "pkg"
 - id: "0.4.6"
   date: "2021-02-16"
   sha256: "8d15485faea8c41256ec017758a85e85734b7381cdc9a7ad7f9c572c2507dd88"
