@@ -40,4 +40,11 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
+- id: "1.2.7"
+  date: "2020-03-21"
+  sha256: "cd54eb148a9dfc1268c040645727bd1bbafc8932cb2d6e5c6bf5e110cf111cfa"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/queueing-1.2.7.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 ---
