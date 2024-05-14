@@ -12,7 +12,7 @@ description: >-
   occupancy probabilities, mean time to absorption, time-averaged
   sojourn times and so forth. Discrete- and continuous-time Markov
   chains are supported.
-icon: https://raw.githubusercontent.com/mmarzolla/queueing/master/doc/icon.png
+icon: "https://raw.githubusercontent.com/mmarzolla/queueing/master/doc/icon.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
@@ -35,7 +35,7 @@ maintainers:
 versions:
 - id: "1.2.8"
   date: "2024-05-13"
-  sha256:
+  sha256: "90919445362283e6889a78d7bbc95dcaa140243a95f9fa54cd1fa1e8e76fc333"
   url: "https://github.com/mmarzolla/queueing/releases/download/1.2.8/queueing-1.2.8.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
