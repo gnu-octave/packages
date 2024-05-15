@@ -34,6 +34,15 @@ maintainers:
 - name: "Alex Vong"
   contact:
 versions:
+- id: "3.2.1"
+  date: "2024-05-15"
+  sha256: "d1a6ef4d12c48fc4412ceec380f398a6cd5180e518c131ba12683e9eb8f75460"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/symbolic-3.2.1.tar.gz"
+  depends:
+  - "octave (>= 5.1.0)"
+  - "pkg"
+  ubuntu2204:
+  - "python3-sympy"
 - id: "3.2.0"
   date: "2024-05-13"
   sha256: "3fe10d2f868a0bc375d8f3c839f7f89896d5476dc0e49a6802ac4a53d42d7c17"
