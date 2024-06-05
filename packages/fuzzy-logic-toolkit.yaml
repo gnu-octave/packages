@@ -7,7 +7,7 @@ icon: "https://octave.sourceforge.io/pkg_icon/fuzzy-logic-toolkit.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
-  url: "https://github.com/lmarkowsky/fuzzy-logic-toolkit/blob/main/LICENSE"
+  url: "https://github.com/lmarkowsky/fuzzy-logic-toolkit/blob/main/COPYING"
 - icon: "fas fa-rss"
   label: "news"
   url: "https://github.com/lmarkowsky/fuzzy-logic-toolkit/blob/main/NEWS"
@@ -24,6 +24,13 @@ maintainers:
 - name: "L. Markowsky"
   contact: "lmarkowsky@gmail.com"
 versions:
+- id: "0.6.0"
+  date: "2024-06-05"
+  sha256: "f65d66f61bcc7cbc2ad9df8a6c9ae53c0f97894528db012a487f14f09e1fc4fb"
+  url: "https://github.com/lmarkowsky/fuzzy-logic-toolkit/archive/refs/tags/0.6.0.tar.gz"
+  depends:
+  - "octave (>= 3.2.4)"
+  - "pkg"
 - id: "0.5.1"
   date: "2024-05-16"
   sha256: "4d8f1ebd7101c282c154ce59f492be58184b38d48c157812a58b96ea61d38375"
