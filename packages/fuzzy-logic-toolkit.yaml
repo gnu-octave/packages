@@ -26,7 +26,7 @@ maintainers:
 versions:
 - id: "0.6.0"
   date: "2024-06-05"
-  sha256: "f65d66f61bcc7cbc2ad9df8a6c9ae53c0f97894528db012a487f14f09e1fc4fb"
+  sha256: "47fbc34232d87aebdf6d66b9d3a3c445dceeb3a7f1b9f9625160539da12fa63e"
   url: "https://github.com/lmarkowsky/fuzzy-logic-toolkit/archive/refs/tags/0.6.0.tar.gz"
   depends:
   - "octave (>= 3.2.4)"
