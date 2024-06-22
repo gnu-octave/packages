@@ -1,0 +1,42 @@
+---
+layout: "package"
+permalink: "piqp/"
+description: >-
+  PIQP is a Proximal Interior Point Quadratic Programming solver,
+  which can solve dense and sparse quadratic programs.
+icon:
+links:
+- icon: "far fa-copyright"
+  label: "BSD-2-Clause"
+  url: "https://github.com/PREDICT-EPFL/piqp/blob/main/interfaces/octave/package/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/PREDICT-EPFL/piqp/releases"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/PREDICT-EPFL/piqp"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://predict-epfl.github.io/piqp/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/PREDICT-EPFL/piqp/issues"
+maintainers:
+- name: "Roland Schwan"
+  contact: "roland.schwan@epfl.ch"
+versions:
+- id: "0.4.1"
+  date: "2024-06-22"
+  sha256: "ce8e5d3f9a51341062658eb1d48eb4838e3117fa45584d4325466e4b3997d3a4"
+  url: "https://github.com/PREDICT-EPFL/piqp/releases/download/v0.4.1/piqp-octave.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+- id: "0.4.0"
+  date: "2024-06-21"
+  sha256: "9c159251c21ed04da9fd2c7ffac50b8e7f940d109f0548206706d090ab7f38b8"
+  url: "https://github.com/PREDICT-EPFL/piqp/releases/download/v0.4.0/piqp-octave.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+---
