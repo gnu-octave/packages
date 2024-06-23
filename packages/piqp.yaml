@@ -27,14 +27,14 @@ maintainers:
 versions:
 - id: "0.4.1"
   date: "2024-06-22"
-  sha256: "ce8e5d3f9a51341062658eb1d48eb4838e3117fa45584d4325466e4b3997d3a4"
+  sha256: "a88aa7d058d34cfd869e01a5631eeb0ff8ff4382815c186112f66b5382eb27b6"
   url: "https://github.com/PREDICT-EPFL/piqp/releases/download/v0.4.1/piqp-octave.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
 - id: "0.4.0"
   date: "2024-06-21"
-  sha256: "9c159251c21ed04da9fd2c7ffac50b8e7f940d109f0548206706d090ab7f38b8"
+  sha256: "f78ba738645980fcfb086b64cce018388160cae5fa729faef5de412a08309639"
   url: "https://github.com/PREDICT-EPFL/piqp/releases/download/v0.4.0/piqp-octave.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
