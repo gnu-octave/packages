@@ -24,6 +24,13 @@ maintainers:
 - name: "Andreas Bertsatos"
   contact: "abertsatos@biol.uoa.gr"
 versions:
+- id: "0.1.1"
+  date: "2024-06-30"
+  sha256: "8388ad50762e514fd39742d16a3feb9b4924be401781a831f1076df19a211d50"
+  url: "https://github.com/pr0m1th3as/tensorflow/archive/refs/tags/release-0.1.1.tar.gz"
+  depends:
+  - "octave (>= 8.1.0)"
+  - "pkg"
 - id: "0.1.0"
   date: "2024-06-26"
   sha256: "dc9749f014ac89c82db1761c757187cf2873c2611f374955a905d22b5e47c5a2"
