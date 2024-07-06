@@ -91,6 +91,6 @@ versions:
   sha256:
   url: "https://github.com/apjanke/octave-tablicious/archive/master.tar.gz"
   depends:
-  - "octave (>= 4.0.0)"
+  - "octave (>= 7.0.0)"
   - "pkg"
 ---
