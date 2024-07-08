@@ -1,0 +1,41 @@
+---
+layout: "package"
+permalink: "hdf5oct/"
+description: >-
+  MATLAB compatible high-level functions for HDF5 file I/O.
+icon:
+links:
+- icon: "far fa-copyright"
+  label: "BSD-2-Clause"
+  url: "https://github.com/PREDICT-EPFL/piqp/blob/main/interfaces/octave/package/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/PREDICT-EPFL/piqp/releases"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/PREDICT-EPFL/piqp"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://predict-epfl.github.io/piqp/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/PREDICT-EPFL/piqp/issues"
+maintainers:
+- name: "Roland Schwan"
+  contact: "roland.schwan@epfl.ch"
+versions:
+- id: "0.4.1"
+  date: "2024-06-22"
+  sha256: "a88aa7d058d34cfd869e01a5631eeb0ff8ff4382815c186112f66b5382eb27b6"
+  url: "https://github.com/PREDICT-EPFL/piqp/releases/download/v0.4.1/piqp-octave.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+- id: "0.4.0"
+  date: "2024-06-21"
+  sha256: "f78ba738645980fcfb086b64cce018388160cae5fa729faef5de412a08309639"
+  url: "https://github.com/PREDICT-EPFL/piqp/releases/download/v0.4.0/piqp-octave.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+---
