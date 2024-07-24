@@ -20,7 +20,7 @@ links:
   url: "https://octave.sourceforge.io/communications/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(communications)"
+  url: "https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(communications)"
 maintainers:
 - name: "Nir Krakauer"
   contact: "mail@nirkrakauer.net"

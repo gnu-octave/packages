@@ -19,7 +19,7 @@ links:
   url: "https://octave.sourceforge.io/image-acquisition/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(image-acquisition)"
+  url: "https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(image-acquisition)"
 maintainers:
 - name: "Andreas Weber"
   contact: "andy.weber.aw@gmail.com"

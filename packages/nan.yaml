@@ -23,7 +23,7 @@ links:
   url: "https://pub.ist.ac.at/~schloegl/matlab/NaN/"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(nan)"
+  url: "https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(nan)"
 maintainers:
 - name: "Alois Schlögl"
   contact: "alois.schloegl@gmail.com"
