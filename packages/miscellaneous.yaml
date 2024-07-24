@@ -17,16 +17,22 @@ links:
 - icon: "fas fa-th-list"
   label: "function reference"
   url: "https://octave.sourceforge.io/miscellaneous/overview.html"
-- icon: "fas fa-book"
-  label: "package documentation"
-  url: "https://octave.sourceforge.io/miscellaneous/package_doc/"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(miscellaneous)"
+  url: "https://savannah.gnu.org/bugs/?group=octave"
 maintainers:
 - name: "Octave Forge Community"
   contact: "https://octave.discourse.group/"
 versions:
+- id: "1.3.1"
+  date: "2024-07-24"
+  sha256: "5712117a25d31d1266003646a40e81e7d7427433c26366e426dffa9ab8abd648"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/miscellaneous-1.3.1.tar.gz"
+  depends:
+  - "octave (>= 3.8.0)"
+  - "pkg"
+  ubuntu2204:
+  - "units"
 - id: "1.3.0"
   date: "2019-10-27"
   sha256: "335192a3eed471426d90d9c6f538366d1f7de06c830695f6b194882fed01c182"
