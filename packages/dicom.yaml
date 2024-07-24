@@ -23,13 +23,22 @@ links:
   url: "https://octave.sourceforge.io/dicom/package_doc/"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(dicom)"
+  url: "https://savannah.gnu.org/bugs/?group=octave"
 maintainers:
 - name: "Andy Buckle"
   contact:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "0.6.1"
+  date: "2024-07-24"
+  sha256: "7ab519b9d3a49f29a01a9aea52109a4af37f5a5996675aa01fc1c362b34e8362"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dicom-0.6.1.tar.gz"
+  depends:
+  - "octave (>= 3.8.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libgdcm-dev"
 - id: "0.6.0"
   date: "2023-12-22"
   sha256: "085b29a8f243494d4f83ea3a76e6f5ffe83e98f0e9b3db0f96eb3a91e0e3ea1d"
