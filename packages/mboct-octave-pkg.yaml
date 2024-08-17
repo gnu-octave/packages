@@ -1,0 +1,34 @@
+---
+layout: "package"
+permalink: "mboct-octave-pkg/"
+description: >-
+  Resolution of partial differential equations based on fenics.
+icon: "https://octave.sourceforge.io/pkg_icon/fem-fenics.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/octave-user/mboct-octave-pkg/blob/master/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url:
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/octave-user/mboct-octave-pkg"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://gnu-octave.github.io/mboct-octave-pkg/functions/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/octave-user/mboct-octave-pkg/issues"
+maintainers:
+- name: "Reinhard Resch"
+  contact: "octave-user@a1.net"
+versions:
+- id: "master"
+  date:
+  sha256:
+  url: "https://github.com/octave-user/mboct-octave-pkg/archive/refs/heads/master.zip"
+  depends:
+  - "octave (>= 5.1.0)"
+  - "pkg"
+---
