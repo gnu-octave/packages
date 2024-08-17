@@ -1,0 +1,37 @@
+---
+layout: "package"
+permalink: "mboct-numerical-pkg/"
+description: >-
+  This package belongs to a suite of packages which can be used for
+  pre- and postprocessing of flexible bodies in MBDyn (www.mbdyn.org)
+  with GNU-Octave. It contains interfaces to several well known numerical
+  solvers. 
+icon: "https://avatars.githubusercontent.com/u/61900614?v=4"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/octave-user/mboct-numerical-pkg/blob/master/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url:
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/octave-user/mboct-numerical-pkg"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://gnu-octave.github.io/mboct-numerical-pkg/functions/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/octave-user/mboct-numerical-pkg/issues"
+maintainers:
+- name: "Reinhard Resch"
+  contact: "octave-user@a1.net"
+versions:
+- id: "0.1.0"
+  date: "2024-08-17"
+  sha256: "ef9796c69aff863f25f15c39ec79f59ba720b9fb6732f061707864568ed6d293"
+  url: "https://github.com/octave-user/mboct-numerical-pkg/releases/download/0.1.0/mboct-numerical-pkg-0.1.0.tar.gz"
+  depends:
+  - "octave (>= 5.1.0)"
+  - "pkg"
+---
