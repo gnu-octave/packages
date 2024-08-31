@@ -24,10 +24,10 @@ maintainers:
 - name: "Andreas Weber"
   contact: "andy.weber.aw@gmail.com"
 versions:
-- id: "0.2.2"
-  date: "2015-04-19"
+- id: "0.2.6"
+  date: "2024-08-31"
   sha256:
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/image-acquisition-0.2.2.tar.gz"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/image-acquisition-0.2.6.tar.gz"
   depends:
   - "octave (>= 3.8.0)"
   - "pkg"
