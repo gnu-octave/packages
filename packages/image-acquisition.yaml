@@ -26,7 +26,7 @@ maintainers:
 versions:
 - id: "0.2.6"
   date: "2024-08-31"
-  sha256:
+  sha256: "51e87093af0667f33858be4cdc617efa608f520dccd3c63482474edfaff284d2"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/image-acquisition-0.2.6.tar.gz"
   depends:
   - "octave (>= 3.8.0)"
