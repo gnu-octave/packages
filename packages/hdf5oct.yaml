@@ -1,0 +1,34 @@
+---
+layout: "package"
+permalink: "hdf5oct/"
+description: >-
+  MATLAB compatible high-level functions for HDF5 file I/O.
+icon:
+links:
+- icon: "far fa-copyright"
+  label: "LGPL-3.0-or-later"
+  url: "https://github.com/gapost/hdf5oct/blob/master/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/gapost/hdf5oct/releases"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/gapost/hdf5oct"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://gapost.github.io/hdf5oct/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/gapost/hdf5oct/issues"
+maintainers:
+- name: "George Apostolopoulos"
+  contact: "gapost@ipta.demokritos.gr"
+versions:
+- id: "1.0.0"
+  date: "2024-07-08"
+  sha256: "dec661f16b0743d03e5edbe59f2be49df3d10bbd73c0edcbea26e52ad682c4c8"
+  url: "https://github.com/gapost/hdf5oct/archive/refs/tags/1.0.0.tar.gz"
+  depends:
+  - "octave (>= 6.0.0)"
+  - "pkg"
+---

@@ -19,16 +19,19 @@ links:
   url: "https://octave.sourceforge.io/image-acquisition/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(image-acquisition)"
+  url: "https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(image-acquisition)"
 maintainers:
 - name: "Andreas Weber"
   contact: "andy.weber.aw@gmail.com"
 versions:
-- id: "0.2.2"
-  date: "2015-04-19"
-  sha256:
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/image-acquisition-0.2.2.tar.gz"
+- id: "0.2.6"
+  date: "2024-08-31"
+  sha256: "51e87093af0667f33858be4cdc617efa608f520dccd3c63482474edfaff284d2"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/image-acquisition-0.2.6.tar.gz"
   depends:
   - "octave (>= 3.8.0)"
   - "pkg"
+  ubuntu2204:
+  - "libv4l-dev"
+  - "libfltk1.1-dev"
 ---

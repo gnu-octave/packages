@@ -20,7 +20,7 @@ links:
   url: "https://jgpallero.bitbucket.io/octproj/octproj/"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(octproj)"
+  url: "https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(octproj)"
 maintainers:
 - name: "José Luis García Pallero"
   contact: "jgpallero@gmail.com"
