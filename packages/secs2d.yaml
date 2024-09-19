@@ -21,7 +21,7 @@ versions:
 - id: "0.0.8"
   date: "2009-05-06"
   sha256:
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Old%20Monolithic%20Releases/R2009-05-08/secs1d-0.0.8.tar.gz"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Old%20Monolithic%20Releases/R2009-05-08/secs2d-0.0.8.tar.gz"
   depends:
   - "octave (>= 2.9.17)"
   - "pkg"
