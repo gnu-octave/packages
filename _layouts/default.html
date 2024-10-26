@@ -21,18 +21,18 @@
             integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
             crossorigin="anonymous"></script>
 
-    <title>{{ page.title | default: site.title }}</title>
+    {%- if page.layout == "package" -%}
+        {%- assign package_name = page.name | remove: '.yaml' -%}
+        {%- capture page_title -%}GNU Octave - The '{{ package_name }}' package{%- endcapture -%}
+    {%- else -%}
+        {%- assign page_title = site.title -%}
+    {%- endif -%}
+    <title>{{ page_title }}</title>
 
     <!-- Facebook Open Graph -->
     <meta property="og:description" content="{{ page.description | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | escape | truncate: 160 | default: site.description | escape }}">
     <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:title" content="
-      {%- if page.layout == "package" -%}
-        {{ page.name | remove: '.yaml' }} package
-      {%- else -%}
-        {{ site.title }}
-      {%- endif -%}
-      ">
+    <meta property="og:title" content="{{ page_title }}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:type" content="article">
     <meta property="og:image" content="{{ page.icon | default: site.logo | absolute_url }}">
@@ -44,13 +44,7 @@
     {%- endif -%}
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="
-      {%- if page.layout == "package" -%}
-        {{ page.name | remove: '.yaml' }} package
-      {%- else -%}
-        {{ site.title }}
-      {%- endif -%}
-      ">
+    <meta name="twitter:title" content="{{ page_title }}">
     <meta name="twitter:description" content="{{ page.description | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | escape | truncate: 160 | default: site.description | escape }}">
     <meta name="twitter:url" content="{{ page.url | absolute_url }}">
     <meta name="twitter:image" content="{{ page.icon | default: site.logo | absolute_url }}">
