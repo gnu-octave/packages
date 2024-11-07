@@ -1,0 +1,37 @@
+---
+layout: "package"
+permalink: "octave_zstd/"
+description: >-
+  The octave_zstd package provides functions for compress and
+  decompress about ZSTD format.
+icon: "https://avatars.githubusercontent.com/u/184102101?v=4"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/CNOCTAVE/octave_zstd/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/CNOCTAVE/octave_zstd/blob/main/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/CNOCTAVE/octave_zstd"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://cnoctave.github.io/octave_zstd/index.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/CNOCTAVE/octave_zstd/issues"
+maintainers:
+- name: "CNOCTAVE"
+  contact: "cnoctave@qq.com"
+- name: "Yu Hongbo"
+  contact: "yuhongbo@member.fsf.org"
+versions:
+- id: "1.0.2"
+  date: "2024-10-11"
+  sha256: "2c8770cece0b536cdeb6a589916e39e20b4e7de27996f7205609a6794581fc3b"
+  url: "https://github.com/CNOCTAVE/octave_zstd/releases/download/1.0.2/octave_zstd.tar.gz"
+  depends:
+  - "octave (>= 8.0.0)"
+  - "pkg"
+---
