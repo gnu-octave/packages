@@ -28,10 +28,9 @@ maintainers:
   contact: "yuhongbo@member.fsf.org"
 versions:
 - id: "1.0.0"
-  date: "2024-11-7"
+  date: "2024-11-07"
   sha256: "4a0d171c84fec3f05360cd0c5c546ad28f34edd97db19c9682af97c65d764b16"
-  url: "https://github.com/CNOCTAVE/octave_tar/releases/
-download/1.0.0/octave_tar.tar.gz"
+  url: "https://github.com/CNOCTAVE/octave_tar/releases/download/1.0.0/octave_tar.tar.gz"
   depends:
   - "octave (>= 8.0.0)"
   - "pkg"
