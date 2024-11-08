@@ -2,7 +2,8 @@
 layout: "package"
 permalink: "octave_tar/"
 description: >-
-  The octave_tar package provides functions for pack and unpack about tar format.
+  The octave_tar package provides functions for pack and unpack about tar
+  format.
 icon: "https://avatars.githubusercontent.com/u/184102101?v=4"
 links:
 - icon: "far fa-copyright"
