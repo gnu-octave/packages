@@ -29,8 +29,8 @@ maintainers:
 versions:
 - id: "1.0.3"
   date: "2024-10-11"
-  sha256: "efdd05e26b9f649965bdb4a1d5bf44ae15862600e779b640afb91724b84b48d5"
-  url: "https://github.com/CNOCTAVE/octave_zstd/archive/refs/tags/1.0.3.tar.gz"
+  sha256: "4ae3c31d9b5b8185073edf28885716bbd52b45bf2879eab0e35c0ac65d708a4f"
+  url: "https://github.com/CNOCTAVE/octave_zstd/releases/download/1.0.3/octave_zstd.tar.gz"
   depends:
   - "octave (>= 8.0.0)"
   - "pkg"
