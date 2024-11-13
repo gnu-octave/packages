@@ -27,7 +27,7 @@ maintainers:
 - name: "Yu Hongbo"
   contact: "yuhongbo@member.fsf.org"
 versions:
-- id: "1.0.2"
+- id: "1.0.3"
   date: "2024-10-11"
   sha256: "efdd05e26b9f649965bdb4a1d5bf44ae15862600e779b640afb91724b84b48d5"
   url: "https://github.com/CNOCTAVE/octave_zstd/archive/refs/tags/1.0.3.tar.gz"
