@@ -27,10 +27,10 @@ maintainers:
 - name: "Yu Hongbo"
   contact: "yuhongbo@member.fsf.org"
 versions:
-- id: "1.0.0"
-  date: "2024-11-07"
-  sha256: "4a0d171c84fec3f05360cd0c5c546ad28f34edd97db19c9682af97c65d764b16"
-  url: "https://github.com/CNOCTAVE/octave_tar/releases/download/1.0.0/octave_tar.tar.gz"
+- id: "1.0.1"
+  date: "2024-11-13"
+  sha256: "d1afe8759b8f1f925dc4c193fad6152c05d58082263a1cfbd549bebb88cd95f1"
+  url: "https://github.com/CNOCTAVE/octave_tar/releases/download/1.0.1/octave_tar.tar.gz"
   depends:
   - "octave (>= 8.0.0)"
   - "pkg"
