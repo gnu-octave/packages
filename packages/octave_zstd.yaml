@@ -35,4 +35,8 @@ versions:
   - "octave (>= 8.0.0)"
   - "pkg"
   - "octave_tar (>= 1.0.1)"
+  fedora40:
+  - "libzstd"
+  - "libzstd-devel"
+  - "libzstd-static"
 ---
