@@ -284,3 +284,14 @@ versions:
     It is not necessary to list packages available in the
     [Octave Docker image](https://github.com/gnu-octave/docker/blob/main/build-octave-7.docker).
     Try to keep the list as short as possible.
+
+  - `fedora<xxx>`: list of Fedora xxx dependency strings.
+
+    Add a `fedora40` list item for Fedora 40 and
+    add a `fedora41` list item for Fedora 41, for example.
+
+    A dependency string looks like `"libzstd"`.
+    The corresponding Fedora package must be available at
+    <https://repology.org/project/libzstd/versions>, for example.
+
+    To install Fedora package dependencies on your local machine, run `dnf install`-command.
