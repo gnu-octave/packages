@@ -39,4 +39,8 @@ versions:
   - "libzstd"
   - "libzstd-devel"
   - "libzstd-static"
+  fedora41:
+  - "libzstd"
+  - "libzstd-devel"
+  - "libzstd-static"
 ---
