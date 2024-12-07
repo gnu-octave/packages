@@ -37,7 +37,6 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-versions:
 - id: "4.0.1"
   date: "2024-03-24"
   sha256: "632889afe1e5f2e68b7b139e9b487f3ddd13a6f16fe369a4af107e40844d61a4"
