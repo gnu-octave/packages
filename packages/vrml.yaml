@@ -24,6 +24,17 @@ maintainers:
 - name: "Etienne Grossmann"
   contact: "etienne@egdn.net"
 versions:
+- id: "1.0.14"
+  date: "2025-02-10"
+  sha256: "55f8f44360b23a2ec2ae98594a5d745efed0c534af59d1a4d186be4a27b0a95e"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/vrml-1.0.14.tar.gz"
+  depends:
+  - "octave (>= 2.9.7)"
+  - "linear-algebra"
+  - "miscellaneous"
+  - "struct"
+  - "statistics"
+  - "pkg"
 - id: "1.0.13"
   date: "2012-06-18"
   sha256: "c45357d47382b22a37dded72888c34a3839ff608baedbfea11ed2950c21ca9d7"
