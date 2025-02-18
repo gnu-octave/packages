@@ -2,7 +2,7 @@
 layout: "package"
 permalink: "chartjs/"
 description: >-
-  TensorFlow interface for GNU Octave.
+  A ChartJS interface for GNU Octave.
 icon: "https://raw.githubusercontent.com/pr0m1th3as/octave-chartjs/main/doc/octave-chartjs.svg"
 links:
 - icon: "far fa-copyright"
