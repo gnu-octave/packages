@@ -2,18 +2,18 @@
 layout: "package"
 permalink: "image-acquisition/"
 description: >-
-  Functions to capture images from connected devices using Video4Linux (v4l).
+  Functions to capture images from connected devices using Video4Linux2 (v4l2) on GNU/Linux or Media Foundation (MF) on Windows.
 icon: "https://octave.sourceforge.io/pkg_icon/image-acquisition.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
-  url: "https://sourceforge.net/p/octave/image-acquisition/ci/default/tree/COPYING"
+  url: "https://octave.sourceforge.io/image-acquisition/COPYING.html"
 - icon: "fas fa-rss"
   label: "news"
-  url: "https://sourceforge.net/p/octave/image-acquisition/ci/default/tree/NEWS"
+  url: "https://octave.sourceforge.io/image-acquisition/NEWS.html"
 - icon: "fas fa-code-branch"
   label: "repository"
-  url: "https://sourceforge.net/p/octave/image-acquisition/ci/default/tree/"
+  url: "https://github.com/Andy1978/octave-image-acquisition"
 - icon: "fas fa-th-list"
   label: "function reference"
   url: "https://octave.sourceforge.io/image-acquisition/overview.html"
@@ -24,12 +24,12 @@ maintainers:
 - name: "Andreas Weber"
   contact: "andy.weber.aw@gmail.com"
 versions:
-- id: "0.2.6"
-  date: "2024-08-31"
-  sha256: "51e87093af0667f33858be4cdc617efa608f520dccd3c63482474edfaff284d2"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/image-acquisition-0.2.6.tar.gz"
+- id: "0.3.0"
+  date: "2025-03-15"
+  sha256: "c93bb15cca589773535f22004296565717cd0fcda0766b7f643d9bfba8820309"
+  url: "https://github.com/Andy1978/octave-image-acquisition/releases/download/image-acquisition-0.3.0/image-acquisition-0.3.0.tar.gz"
   depends:
-  - "octave (>= 3.8.0)"
+  - "octave (>= 5.1.0)"
   - "pkg"
   ubuntu2204:
   - "libv4l-dev"
