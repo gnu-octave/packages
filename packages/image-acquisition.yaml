@@ -2,7 +2,7 @@
 layout: "package"
 permalink: "image-acquisition/"
 description: >-
-  Functions to capture images from connected devices using Video4Linux2 (v4l2) on GNU/Linux or Media Foundation (MF) on Windows.
+  Capture images using Video4Linux2 or Media Foundation.
 icon: "https://octave.sourceforge.io/pkg_icon/image-acquisition.png"
 links:
 - icon: "far fa-copyright"
