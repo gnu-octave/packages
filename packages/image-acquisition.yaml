@@ -33,5 +33,5 @@ versions:
   - "pkg"
   ubuntu2204:
   - "libv4l-dev"
-  - "libfltk1.1-dev"
+  - "libfltk1.3-dev"
 ---
