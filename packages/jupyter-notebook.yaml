@@ -4,7 +4,8 @@ permalink: "jupyter-notebook/"
 description: >-
   A package to run and fill Jupyter Notebooks within GNU Octave.
   Evaluate long-running Octave Jupyter Notebooks on a computing server without
-  permanent browser connection.
+  permanent browser connection. Included in Octave core since version 7.1.0.
+  No need to install this package in recent Octave versions.
 icon: "https://raw.githubusercontent.com/gnu-octave/pkg-jupyter-notebook/main/doc/icon.png"
 links:
 - icon: "far fa-copyright"
@@ -28,11 +29,20 @@ maintainers:
 - name: "Abdallah Elshamy"
   contact: "abdallah.k.elshamy@gmail.com"
 versions:
+- id: "1.3.0"
+  date: "2025-03-23"
+  sha256: "fba19e4f68313c64298dc5b3d525df9008d43c28bcac3abb472e37ea93285be4"
+  url: "https://github.com/gnu-octave/pkg-jupyter-notebook/archive/v1.3.0.tar.gz"
+  depends:
+  - "octave (< 7.1.0)"
+  - "json (>= 1.5.0)"
+  - "pkg"
 - id: "1.2.0"
   date: "2021-12-24"
   sha256: "fba19e4f68313c64298dc5b3d525df9008d43c28bcac3abb472e37ea93285be4"
   url: "https://github.com/gnu-octave/pkg-jupyter-notebook/archive/v1.2.0.tar.gz"
   depends:
+  - "octave (< 7.1.0)"
   - "json (>= 1.5.0)"
   - "pkg"
 - id: "1.1.0"
@@ -40,6 +50,7 @@ versions:
   sha256: "8ace5ad2b5e976e6f1d71915e0a2d4ae4bd410a70d79e3a3d980874e911f63c6"
   url: "https://github.com/gnu-octave/pkg-jupyter-notebook/archive/v1.1.0.tar.gz"
   depends:
+  - "octave (< 7.1.0)"
   - "json (>= 1.5.0)"
   - "pkg"
 - id: "1.0.0"
@@ -47,13 +58,15 @@ versions:
   sha256: "2bd1f8bc72521f65d000039e94136cd3eb4c1d8440bbb6367f3b1f4fd60e5010"
   url: "https://github.com/gnu-octave/pkg-jupyter-notebook/archive/v1.0.0.tar.gz"
   depends:
+  - "octave (< 7.1.0)"
   - "json (>= 1.5.0)"
   - "pkg"
 - id: "dev"
   date:
   sha256:
-  url: "https://github.com/gnu-octave/pkg-jupyter-notebook/archive/main.zip"
+  url: "https://github.com/gnu-octave/pkg-jupyter-notebook/archive/main.tar.gz"
   depends:
+  - "octave (< 7.1.0)"
   - "json (>= 1.5.0)"
   - "pkg"
 ---
