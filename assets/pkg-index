@@ -1,0 +1,14 @@
+---
+layout: null
+permalink: /packages.json
+---
+{%- assign first_entry = true -%}
+{
+{%- for pkg in site.pages -%}
+{% if pkg.layout == "package" %}
+{%- assign pkg_name = pkg.permalink | remove: "/" | jsonify -%}
+{% if first_entry == false %},{% endif %}{{ pkg_name }}:{"name":{{ pkg_name }},"description":{{ pkg.description | jsonify }},"icon":{{ pkg.icon | jsonify }},"links":{{ pkg.links | jsonify }},"maintainers":{{ pkg.maintainers | jsonify }},"versions":{{ pkg.versions | jsonify }}}
+{%- assign first_entry = false -%}
+{% endif %}
+{%- endfor -%}
+}
