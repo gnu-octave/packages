@@ -6,7 +6,7 @@ Your package management tool can read the **entire package index at once**
 as Octave array of struct into the variable `package_index` using the command:
 ```
 function package_index = package_index_resolve ()
-  package_index = jsondecode (urlread ("https://gnu-octave.github.io/packages/packages.json"));
+  package_index = jsondecode (urlread ("https://packages.octave.org/packages.json"));
 endfunction
 ```
 Depending on your internet connection, this is an inexpensive operation,
