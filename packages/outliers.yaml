@@ -24,8 +24,8 @@ maintainers:
 versions:
 - id: "0.13.9"
   date: "2009-05-06"
-  sha256: "019e02b494ef9fa5d264d705ea219666ce5016e151ef611551681cfb052e4c34"
-  url: "https://sourceforge.net/code-snapshots/hg/o/oc/octave/outliers/octave-outliers-551e891a09a9cdbba83d293841cf4cf89a0a05a1.zip"
+  sha256: "9fd0d4455f5a1c7814e4a61af28a339576521e30da78f03d017a7b15db98a529"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/outliers-0.13.9.tar.gz"
   depends:
   - "octave (>= 2.9.9)"
   - "pkg"
