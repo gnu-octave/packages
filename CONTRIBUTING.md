@@ -170,6 +170,7 @@ versions:
   `50px` width in the [package index](https://gnu-octave.github.io/packages/)
   and with `150px` with in the
   [individual package page](https://gnu-octave.github.io/packages/packages/pkg-example).
+  May be left blank, then a default image is displayed.
 
 - `links`: list containing three fields.
 

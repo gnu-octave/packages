@@ -3,22 +3,16 @@
 ## Quick info
 
 Your package management tool can read the **entire package index at once**
-as Octave array of struct into the variable `__pkg__` using the command:
+as Octave array of struct into the variable `package_index` using the command:
 ```
-function __pkg__ = package_index_resolve ()
-  data = urlread ("https://gnu-octave.github.io/packages/packages/")(6:end);
-  data = strrep (data, "&gt;",  ">");
-  data = strrep (data, "&lt;",  "<");
-  data = strrep (data, "&amp;", "&");
-  data = strrep (data, "&#39;", "'");
-  eval (data);
+function package_index = package_index_resolve ()
+  package_index = jsondecode (urlread ("https://packages.octave.org/packages.json"));
 endfunction
 ```
-Note, the assignment to the returned variable `__pkg__` is done within `eval`
-and depending on your internet connection, this is an inexpensive operation,
+Depending on your internet connection, this is an inexpensive operation,
 thus a caching strategy is probably not necessary.
 ```
->> tic; __pkg__ = package_index_resolve (); toc
+>> tic; package_index = package_index_resolve (); toc
 Elapsed time is 0.365517 seconds.
 ```
 
@@ -32,11 +26,11 @@ written in the GNU Octave language.
 ### Read the package index
 
 Using the routine `package_index_resolve()` as describe in the quick info above,
-an Octave array of struct `__pkg__` indexed by the package names is returned.
+an Octave array of struct `package_index` indexed by the package names is returned.
 
 To get the first three packages names, for example, type:
 ```
->> fieldnames (__pkg__)(1:3)
+>> fieldnames (package_index)(1:3)
 ans =
 {
   [1,1] = arduino
@@ -48,11 +42,11 @@ ans =
 
 ### Extract package details
 
-After reading the package index to the variable `__pkg__` as shown above,
+After reading the package index to the variable `package_index` as shown above,
 one can obtain more detailed information about individual packages.
 The following code shows all available struct fields for `pkg-example`:
 ```
->> fieldnames (__pkg__.("pkg-example"))
+>> fieldnames (package_index.("pkg-example"))
 ans =
 {
   [1,1] = name
@@ -65,7 +59,7 @@ ans =
 ```
 Similar, one can see all details of the latest `pkg-example` version:
 ```
->> __pkg__.("pkg-example").versions(1)
+>> package_index.("pkg-example").versions(1)
 ans =
 
   scalar structure containing the fields:

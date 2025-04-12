@@ -20,7 +20,7 @@ function octave_ci (package_name, pkg_index_file)
     step_warning ("STOP.  No package provided.");
     return;
   endif
-  
+
   ## Package name should be lower case, but do not be pedantic.
   package_name = tolower (package_name);
 
@@ -38,7 +38,7 @@ function octave_ci (package_name, pkg_index_file)
 
   ## Check if package can be installed by "pkg", otherwise skip.
   pkg_installable = false;
-  dependencies = {__pkg__.(package_name).versions(1).depends.name};
+  dependencies = __pkg__.(package_name).versions(1).depends;
   for i = 1:length (dependencies)
     if (strcmp (strsplit (dependencies{i}){1}, "pkg"))
       pkg_installable = true;
@@ -146,20 +146,17 @@ function octave_ci (package_name, pkg_index_file)
 endfunction
 
 
-function __pkg__ = package_index_local_resolve (pkg_index_file)
+function data = package_index_local_resolve (pkg_index_file)
   # Normally
-  # data = urlread ("https://gnu-octave.github.io/packages/packages/")(6:end);
-  data = fileread (pkg_index_file)(6:end);
-  data = strrep (data, "&gt;",  ">");
-  data = strrep (data, "&lt;",  "<");
-  data = strrep (data, "&amp;", "&");
-  data = strrep (data, "&#39;", "'");
-  eval (data);
+  # data = jsondecode (urlread ("https://gnu-octave.github.io/packages/packages/"));
+  data = jsondecode (fileread (pkg_index_file));
 endfunction
+
 
 function step_error (str)
   printf ("::error::%s\n", str);
 endfunction
+
 
 function step_warning (str)
   printf ("::warning::%s\n", str);
@@ -209,7 +206,7 @@ function [ubuntu2204, pkgs] = resolve_deps (__pkg__, stack);
   p = __pkg__.(stack{end}).versions(1);
 
   if (isfield (p, "depends"))
-    pkgs = {p.depends.name};
+    pkgs = p.depends;
     pkgs = cellfun (@strtok, pkgs, "UniformOutput", false);
     pkgs(strcmp (pkgs, "octave")) = [];
     pkgs(strcmp (pkgs, "pkg")) = [];
@@ -226,7 +223,7 @@ function [ubuntu2204, pkgs] = resolve_deps (__pkg__, stack);
   endif
 
   if (isfield (p, "ubuntu2204") && ! isempty (p.ubuntu2204))
-    new_ubuntu2204 = {p.ubuntu2204.name};
+    new_ubuntu2204 = p.ubuntu2204;
     for i = 1:length (new_ubuntu2204)
       ## Ubuntu/Debian package name must consist only of lower case letters
       ## (a-z), digits (0-9), plus (+) and minus (-) signs, and periods (.).
