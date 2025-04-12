@@ -13,7 +13,7 @@ Depending on your internet connection, this is an inexpensive operation,
 thus a caching strategy is probably not necessary.
 ```
 >> tic; package_index = package_index_resolve (); toc
-Elapsed time is 0.365517 seconds.
+Elapsed time is 0.820996 seconds.
 ```
 
 
@@ -44,9 +44,9 @@ ans =
 
 After reading the package index to the variable `package_index` as shown above,
 one can obtain more detailed information about individual packages.
-The following code shows all available struct fields for `pkg-example`:
+The following code shows all available struct fields for `pkg_example`:
 ```
->> fieldnames (package_index.("pkg-example"))
+>> fieldnames (package_index.("pkg_example"))
 ans =
 {
   [1,1] = name
@@ -57,22 +57,22 @@ ans =
   [6,1] = versions
 }
 ```
-Similar, one can see all details of the latest `pkg-example` version:
+Similar, one can see all details of the latest `pkg_example` version:
 ```
->> package_index.("pkg-example").versions(1)
+>> package_index.("pkg_example").versions(1)
 ans =
 
   scalar structure containing the fields:
 
-    id = 1.0.0
-    date = 2020-09-02
-    sha256 = 6b7e4b6bef5a681cb8026af55c401cee139b088480f0da60143e02ec8880cb51
-    url = https://github.com/gnu-octave/pkg-example/archive/1.0.0.tar.gz
+    id = 1.1.0
+    date = 2021-04-06
+    sha256 = bff441755f0d68596f2efd027fe637b5b6c52b722ffd6255bdb8a5f34ab4ef2a
+    url = https://github.com/gnu-octave/pkg-example/archive/1.1.0.tar.gz
     depends =
-
-      scalar structure containing the fields:
-
-        name = octave (>= 4.2.0)
+    {
+      [1,1] = octave (>= 4.0.0)
+      [2,1] = pkg
+    }
 ```
 
 
@@ -108,7 +108,7 @@ you should care about the following default settings:
 
       scalar structure containing the fields:
 
-        name = pkg-example
+        name = pkg_example
         version = 1.0.0
         date = 2020-09-02
         author = Kai T. Ohlhus <k.ohlhus@gmail.com>
@@ -116,8 +116,8 @@ you should care about the following default settings:
         title = Minimal example package to demonstrate the Octave package extensions.
         description = Minimal example package to demonstrate the Octave package  extensions.  It shows how to organize Octave, C/C++, and FORTRAN code within  a package and to properly compile it.
         depends =
-        dir = /home/siko1056/octave/pkg-example-1.0.0
-        archprefix = /home/siko1056/octave/pkg-example-1.0.0
+        dir = /home/siko1056/octave/pkg_example-1.0.0
+        archprefix = /home/siko1056/octave/pkg_example-1.0.0
 
   }
   ```

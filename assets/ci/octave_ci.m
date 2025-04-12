@@ -148,7 +148,7 @@ endfunction
 
 function data = package_index_local_resolve (pkg_index_file)
   # Normally
-  # data = jsondecode (urlread ("https://gnu-octave.github.io/packages/packages/"));
+  # data = jsondecode (urlread ("https://packages.octave.org/packages.json"));
   data = jsondecode (fileread (pkg_index_file));
 endfunction
 

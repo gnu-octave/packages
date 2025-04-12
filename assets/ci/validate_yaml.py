@@ -1,3 +1,6 @@
+# Validate YAML files in the ./packages directory
+# The schema is defined in the CONTRIBUTING.md file
+
 import yaml
 import os
 
