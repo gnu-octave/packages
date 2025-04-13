@@ -22,7 +22,7 @@ function octave_ci (package_name, pkg_index_file)
   endif
 
   ## Package name should be lower case, but do not be pedantic.
-  package_name = matlab.lang.makeValidName (tolower (package_name));
+  package_name = tolower (package_name);
 
   ## Resolve locally build package index.
   step_group_start ("Resolve locally build package index");
@@ -148,8 +148,8 @@ endfunction
 
 function data = package_index_local_resolve (pkg_index_file)
   # Normally
-  # data = jsondecode (urlread ("https://packages.octave.org/packages.json"));
-  data = jsondecode (fileread (pkg_index_file));
+  # data = jsondecode (urlread ("https://packages.octave.org/packages.json"), "makeValidName", false);
+  data = jsondecode (fileread (pkg_index_file), "makeValidName", false);
 endfunction
 
 
