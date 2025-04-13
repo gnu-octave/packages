@@ -22,7 +22,7 @@ function octave_ci (package_name, pkg_index_file)
   endif
 
   ## Package name should be lower case, but do not be pedantic.
-  package_name = tolower (package_name);
+  package_name = matlab.lang.makeValidName (tolower (package_name));
 
   ## Resolve locally build package index.
   step_group_start ("Resolve locally build package index");
