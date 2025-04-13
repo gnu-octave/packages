@@ -6,7 +6,7 @@ Your package management tool can read the **entire package index at once**
 as Octave array of struct into the variable `package_index` using the command:
 ```
 function package_index = package_index_resolve ()
-  package_index = jsondecode (urlread ("https://packages.octave.org/packages.json"));
+  package_index = jsondecode (urlread ("https://packages.octave.org/packages.json"), "makeValidName", false);
 endfunction
 ```
 Depending on your internet connection, this is an inexpensive operation,
@@ -44,9 +44,9 @@ ans =
 
 After reading the package index to the variable `package_index` as shown above,
 one can obtain more detailed information about individual packages.
-The following code shows all available struct fields for `pkg_example`:
+The following code shows all available struct fields for `pkg-example`:
 ```
->> fieldnames (package_index.("pkg_example"))
+>> fieldnames (package_index.("pkg-example"))
 ans =
 {
   [1,1] = name
@@ -57,9 +57,9 @@ ans =
   [6,1] = versions
 }
 ```
-Similar, one can see all details of the latest `pkg_example` version:
+Similar, one can see all details of the latest `pkg-example` version:
 ```
->> package_index.("pkg_example").versions(1)
+>> package_index.("pkg-example").versions(1)
 ans =
 
   scalar structure containing the fields:
