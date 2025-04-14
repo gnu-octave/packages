@@ -24,6 +24,16 @@ maintainers:
 - name: "Andreas Weber"
   contact: "andy.weber.aw@gmail.com"
 versions:
+- id: "0.3.2"
+  date: "2025-04-14"
+  sha256: "6bcb088551549d246d353a2b9fcb94d69c0c0ba59d87fc04b0f585f63d3fc25b"
+  url: "https://github.com/Andy1978/octave-image-acquisition/releases/download/image-acquisition-0.3.2/image-acquisition-0.3.2.tar.gz"
+  depends:
+  - "octave (>= 5.1.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libv4l-dev"
+  - "libfltk1.3-dev"
 - id: "0.3.1"
   date: "2025-04-12"
   sha256: "00e40f6c228e84a6f99f64eb83bf96d6d2951072b01b63bf938d0963dbdb95a0"
