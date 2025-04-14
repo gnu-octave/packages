@@ -27,6 +27,16 @@ maintainers:
 - name: "Andreas Bertsatos"
   contact: "abertsatos@biol.uoa.gr"
 versions:
+- id: "1.4.0"
+  date: "2025-04-14"
+  sha256: "b08c43620a00bccaef7ed48342cea052bdd2ae3e0d0c9fa933653e8ce8ae1162"
+  url: "https://github.com/pr0m1th3as/csg-toolkit/archive/refs/tags/v1.4.0.tar.gz"
+  depends:
+  - "octave (>= 9.1.0)"
+  - "statistics (>= 1.7.4)"
+  - "datatypes (>= 1.0.1)"
+  - "io (>= 2.6.4)"
+  - "pkg"
 - id: "1.3.2"
   date: "2024-03-21"
   sha256: "59a9e139434e3c4268e91b40692d59dec9636ce6e215093d4437ea6a2b01537c"
