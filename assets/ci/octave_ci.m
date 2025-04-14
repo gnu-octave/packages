@@ -69,7 +69,7 @@ function octave_ci (package_name, pkg_index_file)
   endif
 
   ## Install package dependencies and "doctest" package.
-  pkgs = [pkgs, {"doctest"}];
+  pkgs = [pkgs; {"doctest"}];
   for i = length (pkgs):-1:1
     pkg_dep_name = pkgs{i};
     pkg_dep_name_version = [pkg_dep_name, "@", ...
