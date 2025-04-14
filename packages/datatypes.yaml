@@ -1,0 +1,34 @@
+---
+layout: "package"
+permalink: "datatypes/"
+description: >-
+  Extra data types for GNU Octave.
+icon: "https://raw.githubusercontent.com/pr0m1th3as/datatypes/main/doc/datatypes.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/pr0m1th3as/datatypes/blob/master/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/pr0m1th3as/datatypes/releases"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/pr0m1th3as/datatypes/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://pr0m1th3as.github.io/datatypes/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/pr0m1th3as/datatypes/issues"
+maintainers:
+- name: "Andreas Bertsatos"
+  contact: "abertsatos@biol.uoa.gr"
+versions:
+- id: "1.0.1"
+  date: "2025-04-14"
+  sha256: "605df63742dabe7267a78073561e81893bb723bdb2714a8add9eb2633d15b6de"
+  url: "https://github.com/pr0m1th3as/datatypes/archive/refs/tags/release-1.0.1.tar.gz"
+  depends:
+  - "octave (>= 9.1.0)"
+  - "pkg"
+---

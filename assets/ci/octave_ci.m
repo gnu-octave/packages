@@ -69,7 +69,7 @@ function octave_ci (package_name, pkg_index_file)
   endif
 
   ## Install package dependencies and "doctest" package.
-  pkgs = [pkgs, {"doctest"}];
+  pkgs = [pkgs; {"doctest"}];
   for i = length (pkgs):-1:1
     pkg_dep_name = pkgs{i};
     pkg_dep_name_version = [pkg_dep_name, "@", ...
@@ -148,8 +148,8 @@ endfunction
 
 function data = package_index_local_resolve (pkg_index_file)
   # Normally
-  # data = jsondecode (urlread ("https://packages.octave.org/packages.json"));
-  data = jsondecode (fileread (pkg_index_file));
+  # data = jsondecode (urlread ("https://packages.octave.org/packages.json"), "makeValidName", false);
+  data = jsondecode (fileread (pkg_index_file), "makeValidName", false);
 endfunction
 
 
