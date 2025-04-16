@@ -25,7 +25,7 @@ maintainers:
   contact: "abertsatos@biol.uoa.gr"
 versions:
 - id: "0.6.0"
-  date: "2024-05-19"
+  date: "2025-04-16"
   sha256: "18eb90d7a97bfa477b4fee0898d8af85213b710086f6b7a1983561b14da47ebe"
   url: "https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.6.0.tar.gz"
   depends:
