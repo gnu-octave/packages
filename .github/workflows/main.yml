@@ -44,12 +44,17 @@ jobs:
       -
         name: Check for changed packages
         run: |
-          for f in $(git --no-pager diff --name-only HEAD~1 HEAD)
+          IFS=$'\n'
+          for s in $(git --no-pager diff --name-status HEAD~1 HEAD)
           do
-            if [ "$(dirname $f)" == "packages" ] && [ "${f##*.}" == "yaml" ]
+            if [[ ${s:0:1} != "D" ]]
             then
-              name="$(basename $f)"
-              CHANGED_PACKAGES+=" ${name%.*} "
+              f="$(echo "$s" | sed -r -e "s|.\s*(.*)|\1|")"
+              if [ "$(dirname $f)" == "packages" ] && [ "${f##*.}" == "yaml" ]
+              then
+                name="$(basename $f)"
+                CHANGED_PACKAGES+=" ${name%.*} "
+              fi
             fi
           done
           if [ -n "$CHANGED_PACKAGES" ]
