@@ -28,8 +28,8 @@ maintainers:
   contact: "abertsatos@biol.uoa.gr"
 versions:
 - id: "1.4.0"
-  date: "2025-04-14"
-  sha256: "b08c43620a00bccaef7ed48342cea052bdd2ae3e0d0c9fa933653e8ce8ae1162"
+  date: "2025-04-16"
+  sha256: "a3c7c5b605fce7877af2f11c80db57c0c5d852fa86766f6e271d92f77eec93a4"
   url: "https://github.com/pr0m1th3as/csg-toolkit/archive/refs/tags/v1.4.0.tar.gz"
   depends:
   - "octave (>= 9.1.0)"
