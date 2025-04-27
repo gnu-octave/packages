@@ -26,7 +26,7 @@ versions:
 - id: "0.3.3"
   date: "2025-04-27"
   sha256: "4917aa3f11d0da14afb185d61657102d8f79029b9ee3e7b679bc9bc041cf94be"
-  url: "https://github.com/ONSAS/ONSAS.m/archive/refs/tags/v0.3.3.tar.gz"
+  url: "https://github.com/ONSAS/ONSAS/archive/refs/tags/v0.3.3.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
