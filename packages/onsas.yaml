@@ -23,6 +23,13 @@ maintainers:
 - name: "Jorge Pérez Zerpa"
   contact: "jorgepz@fing.edu.uy"
 versions:
+- id: "0.3.3"
+  date: "2025-04-27"
+  sha256: "4917aa3f11d0da14afb185d61657102d8f79029b9ee3e7b679bc9bc041cf94be"
+  url: "https://github.com/ONSAS/ONSAS/archive/refs/tags/v0.3.3.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "0.2.5"
   date: "2022-02-26"
   sha256: "8759eb3c2a591bdd381c35966d725148db57436cc761abb07a06cf3052257106"
