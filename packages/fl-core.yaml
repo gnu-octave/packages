@@ -1,0 +1,34 @@
+---
+layout: "package"
+permalink: "fl-core/"
+description: >-
+  Basic functions in Fuzzy Logic.
+icon: 
+links:
+- icon: "far fa-copyright"
+  label: "LGPL-3.0-only"
+  url: "https://sourceforge.net/p/octave/fl-core/ci/default/tree/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://sourceforge.net/p/octave/fl-core/ci/default/tree/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/fl-core/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/fl-core/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(fl-core)"
+maintainers:
+- name: "Nir Krakauer"
+  contact: "mail@nirkrakauer.net"
+versions:
+- id: "1.0.2"
+  date: "2025-05-02"
+  sha256: "39e8b73ff29d1e8d11c5bafc436c01821c70e0a6ffb1f8906176c8e097751e59"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/fl-core-1.0.2.tar.gz"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
+---
