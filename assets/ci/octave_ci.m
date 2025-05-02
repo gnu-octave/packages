@@ -33,12 +33,18 @@ function octave_ci (package_name, pkg_index_file)
   __pkg__ = package_index_local_resolve (pkg_index_file);
   step_group_end ("done.");
 
-  pkg_name_version = [package_name, "@", ...
-    __pkg__.(package_name).versions(1).id];
+  ## handle cases with non-uniform fields per package version
+  if iscell (__pkg__.(package_name).versions)
+    pkg_info = __pkg__.(package_name).versions{1};
+  else
+    pkg_info = __pkg__.(package_name).versions(1);
+  endif
+
+  pkg_name_version = [package_name, "@", pkg_info.id];
 
   ## Check if package can be installed by "pkg", otherwise skip.
   pkg_installable = false;
-  dependencies = __pkg__.(package_name).versions(1).depends;
+  dependencies = pkg_info.depends;
   for i = 1:length (dependencies)
     if (strcmp (strsplit (dependencies{i}){1}, "pkg"))
       pkg_installable = true;
@@ -203,7 +209,12 @@ function [ubuntu2204, pkgs] = resolve_deps (__pkg__, stack);
 
   pkgs = {};
   ubuntu2204 = {};
-  p = __pkg__.(stack{end}).versions(1);
+  p = __pkg__.(stack{end}).versions;
+  if (iscell (p))
+    p = p{1};
+  else
+    p = p(1);
+  endif
 
   if (isfield (p, "depends"))
     pkgs = p.depends;
