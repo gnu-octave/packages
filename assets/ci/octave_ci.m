@@ -217,8 +217,8 @@ function [ubuntu2204, pkgs] = resolve_deps (__pkg__, stack);
         error ("resolve_deps: circular dependency detected.");
       endif
       [new_ubuntu2204, new_pkgs] = resolve_deps (__pkg__, [stack, pkgs(i)]);
-      ubuntu2204 = [ubuntu2204, new_ubuntu2204];
-      pkgs = [pkgs, new_pkgs];
+      ubuntu2204 = [reshape(ubuntu2204, 1, []), reshape(new_ubuntu2204, 1, [])];
+      pkgs = [reshape(pkgs, 1, []), reshape(new_pkgs, 1, [])];
     endfor
   endif
 
