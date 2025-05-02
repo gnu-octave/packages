@@ -3,7 +3,7 @@ layout: "package"
 permalink: "fl-core/"
 description: >-
   Basic functions in Fuzzy Logic.
-icon: 
+icon:
 links:
 - icon: "far fa-copyright"
   label: "LGPL-3.0-only"
