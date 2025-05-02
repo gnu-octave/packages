@@ -33,6 +33,8 @@ versions:
   - "io (>= 2.2.7)"
   - "geometry (>= 4.0.0)"
   - "pkg"
+ ubuntu2204:
+  - "libgdal-dev"
 - id: "1.4.2"
   date: "2022-02-20"
   sha256: "9ab5105aa0b5e549790070ef84c94d4ada88306d99c5afa1076bc3c9e8b32da2"
