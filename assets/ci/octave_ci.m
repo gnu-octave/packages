@@ -33,13 +33,7 @@ function octave_ci (package_name, pkg_index_file)
   __pkg__ = package_index_local_resolve (pkg_index_file);
   step_group_end ("done.");
 
-  ## handle cases with non-uniform fields per package version
-  if iscell (__pkg__.(package_name).versions)
-    pkg_info = __pkg__.(package_name).versions{1};
-  else
-    pkg_info = __pkg__.(package_name).versions(1);
-  endif
-
+  pkg_info = get_first_version (__pkg__, package_name);
   pkg_name_version = [package_name, "@", pkg_info.id];
 
   ## Check if package can be installed by "pkg", otherwise skip.
@@ -78,10 +72,10 @@ function octave_ci (package_name, pkg_index_file)
   pkgs = [pkgs; {"doctest"}];
   for i = length (pkgs):-1:1
     pkg_dep_name = pkgs{i};
-    pkg_dep_name_version = [pkg_dep_name, "@", ...
-      __pkg__.(pkg_dep_name).versions(1).id];
+    pkg_dep_info = get_first_version (__pkg__, pkg_dep_name);
+    pkg_dep_name_version = [pkg_dep_name, "@", pkg_dep_info.id];
     step_group_start (["Install dependency:  ", pkg_dep_name_version]);
-    pkg_install_sha256_check (__pkg__.(pkg_dep_name).versions(1), test_dir);
+    pkg_install_sha256_check (pkg_dep_info, test_dir);
     step_group_end ("done.");
   endfor
 
@@ -89,7 +83,7 @@ function octave_ci (package_name, pkg_index_file)
   ## packages.
   try
     step_group_start (["Run: pkg install   ", pkg_name_version]);
-    pkg_install_sha256_check (__pkg__.(package_name).versions(1), test_dir);
+    pkg_install_sha256_check (pkg_info, test_dir);
     step_group_end ("done.");
   catch e
     step_group_end ("ERROR: package installation failed");
@@ -99,7 +93,7 @@ function octave_ci (package_name, pkg_index_file)
     ## "exotic" dependencies.
 
     step_group_start (["ERROR: pkg install -verbose ", pkg_name_version]);
-    pkg ("install", "-verbose",  __pkg__.(package_name).versions(1).url);
+    pkg ("install", "-verbose", pkg_info.url);
     step_group_end ("done.");
 
     exit (1);  # Return test failed.
@@ -107,8 +101,7 @@ function octave_ci (package_name, pkg_index_file)
 
   step_group_start (["Check: pkg version ", pkg_name_version]);
   installed_pkg = pkg ("list", package_name);
-  if (! strcmp (__pkg__.(package_name).versions(1).id, ...
-                installed_pkg{1}.version))
+  if (! strcmp (pkg_info.id, installed_pkg{1}.version))
     ## FIXME: Should this fail the CI instead of emitting a warning?
     step_warning ("Version of installed package doesn't match version in package index");
   endif
@@ -180,6 +173,17 @@ function step_group_end (str)
 endfunction
 
 
+function first_version = get_first_version (__pkg__, package_name)
+  ## handle cases with non-uniform fields per package version
+  p = __pkg__.(package_name).versions;
+  if (iscell (p))
+    first_version = p{1};
+  else
+    first_version = p(1);
+  endif
+endfunction
+
+
 function pkg_install_sha256_check (pkg_version, test_dir)
   cd (test_dir);
   [~, pkg_file, pkg_ext] = fileparts (pkg_version.url);
@@ -209,12 +213,7 @@ function [ubuntu2204, pkgs] = resolve_deps (__pkg__, stack);
 
   pkgs = {};
   ubuntu2204 = {};
-  p = __pkg__.(stack{end}).versions;
-  if (iscell (p))
-    p = p{1};
-  else
-    p = p(1);
-  endif
+  p = get_first_version (__pkg__, stack{end});
 
   if (isfield (p, "depends"))
     pkgs = p.depends;
