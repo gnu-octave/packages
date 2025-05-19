@@ -17,7 +17,7 @@ links:
   url: "https://github.com/pr0m1th3as/csg-dataset"
 - icon: "fas fa-book"
   label: "package documentation"
-  url: "https://pr0m1th3as.github.io/csg-dataset/"
+  url: "https://github.com/pr0m1th3as/csg-dataset/blob/main/README.md"
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://github.com/pr0m1th3as/csg-dataset/issues"
