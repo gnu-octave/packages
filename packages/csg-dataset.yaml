@@ -8,7 +8,7 @@ icon: "https://raw.githubusercontent.com/pr0m1th3as/csg-dataset/main/doc/csg-dat
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
-  url: "https://github.com/pr0m1th3as/csg-dataset/blob/main/LICENSE"
+  url: "https://github.com/pr0m1th3as/csg-dataset/blob/main/COPYING"
 - icon: "fas fa-rss"
   label: "news"
   url: "https://github.com/pr0m1th3as/csg-dataset/releases"
