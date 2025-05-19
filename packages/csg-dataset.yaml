@@ -1,0 +1,35 @@
+---
+layout: "package"
+permalink: "csg-dataset/"
+description: >-
+  A large dataset of diaphyseal cross sectional geometric properties
+  and relevant measurements from human long bones.
+icon: "https://raw.githubusercontent.com/pr0m1th3as/csg-dataset/main/doc/csg-dataset.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/pr0m1th3as/csg-dataset/blob/main/LICENSE"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/pr0m1th3as/csg-dataset/releases"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/pr0m1th3as/csg-dataset"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://pr0m1th3as.github.io/csg-dataset/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/pr0m1th3as/csg-dataset/issues"
+maintainers:
+- name: "Andreas Bertsatos"
+  contact: "abertsatos@biol.uoa.gr"
+versions:
+- id: "1.0.0"
+  date: "2025-05-19"
+  sha256: "8db43d39c6c7680762ede9219e2a0f50a48890c16b5c0bd387a37711f0de6135"
+  url: "https://github.com/pr0m1th3as/csg-dataset/archive/refs/tags/v1.0.0.tar.gz"
+  depends:
+  - "octave (>= 6.1.0)"
+  - "pkg"
+---
