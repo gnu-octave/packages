@@ -16,7 +16,7 @@ links:
   url: "https://github.com/carlodefalco/bim"
 - icon: "fas fa-th-list"
   label: "function reference"
-  url: "https://octave.sourceforge.io/bim/overview.html"
+  url: "https://carlodefalco.github.io/bim/"
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://github.com/carlodefalco/bim/issues"
@@ -30,6 +30,15 @@ maintainers:
 - name: "Emanuela Abbate"
   contact:
 versions:
+- id: "1.1.7"
+  date: "2025-05-29"
+  sha256: "f4d5bc7c2633320c91f96cc42c7843097bc2f550008a914ebfb487016b9b9f22"
+  url: "https://github.com/carlodefalco/bim/archive/refs/tags/v1.1.7.tar.gz"
+  depends:
+  - "octave (>= 3.8.0)"
+  - "fpl"
+  - "msh"
+  - "pkg"
 - id: "1.1.6"
   date: "2022-07-22"
   sha256: "a6feb8b30acf960a29065b9ba4095fa03f4a265392805f7075b81d1c74dcafd7"
