@@ -23,12 +23,6 @@ links:
 maintainers:
 - name: "Carlo de Falco"
   contact: "carlo.defalco@polimi.it"
-- name: "Culpo Massimiliano"
-  contact:
-- name: "Matteo Porro"
-  contact:
-- name: "Emanuela Abbate"
-  contact:
 versions:
 - id: "1.1.7"
   date: "2025-05-29"
