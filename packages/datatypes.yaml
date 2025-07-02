@@ -26,7 +26,7 @@ maintainers:
 versions:
 - id: "1.0.4"
   date: "2025-07-02"
-  sha256: "d0499fde896a7fb25e0576aa6c81b4a7163c5f83a50d2f740c301bc81475633d"
+  sha256: "c8c3d2ce0a54b5a7b122628676c665444973fdc088d3a94af74204fd9162ec74"
   url: "https://github.com/pr0m1th3as/datatypes/archive/refs/tags/release-1.0.4.tar.gz"
   depends:
   - "octave (>= 9.1.0)"
