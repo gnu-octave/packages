@@ -115,8 +115,9 @@
         
         if (searchTerm.startsWith('"') && searchTerm.endsWith('"') && searchTerm.length > 2) {
           var exactTerm = searchTerm.slice(1, -1);
+          var phraseRegex = new RegExp(`\\b${exactTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
           return packageName === exactTerm || 
-                description.includes(exactTerm);
+                phraseRegex.test(description);
         }
         return packageName.includes(searchTerm) || 
               description.split(/\s+/).includes(searchTerm);
