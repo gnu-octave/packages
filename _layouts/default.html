@@ -116,10 +116,10 @@
         if (searchTerm.startsWith('"') && searchTerm.endsWith('"') && searchTerm.length > 2) {
           var exactTerm = searchTerm.slice(1, -1);
           return packageName === exactTerm || 
-                description === exactTerm;
+                description.includes(exactTerm);
         }
         return packageName.includes(searchTerm) || 
-              description.includes(searchTerm);
+              description.split(/\s+/).includes(searchTerm);
       });
 
       var table = $('#package-index').DataTable( {
