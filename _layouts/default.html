@@ -112,15 +112,21 @@
         var description = data[2].toLowerCase();
         
         if (!searchTerm) return true;
-        
-        if (searchTerm.startsWith('"') && searchTerm.endsWith('"') && searchTerm.length > 2) {
-          var exactTerm = searchTerm.slice(1, -1);
-          var phraseRegex = new RegExp(`\\b${exactTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
-          return packageName === exactTerm || 
-                phraseRegex.test(description);
+        var tokens = [];
+        var regex = /"([^"]+)"|(\S+)/g;
+        var match;
+        while ((match = regex.exec(searchTerm)) !== null) {
+          tokens.push(match[1] || match[2]);
         }
-        return packageName.includes(searchTerm) || 
-              description.split(/\s+/).includes(searchTerm);
+        return tokens.every(function (token) {
+          var isQuoted = searchTerm.includes(`"${token}"`);
+          if (isQuoted) {
+            var phraseRegex = new RegExp(`\\b${token.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
+            return packageName === token || phraseRegex.test(description);
+          } else {
+            return packageName.includes(token) || description.includes(token);
+          }
+        });
       });
 
       var table = $('#package-index').DataTable( {
@@ -145,7 +151,7 @@
       
       $('.dataTables_filter label').append(
         '<div class="form-text text-muted small mt-1">' + 
-        'Package names: partial match, Descriptions: whole words. Use quotes for exact names.' +
+        'Matches partially by default; use double quotes for exact match.' +
         '</div>'
       );
       
