@@ -106,7 +106,30 @@
       tabHeight = 200;
     }
     $(document).ready( function () {
-      $('#package-index').DataTable( {
+      $.fn.dataTable.ext.search.push(function(settings, data, dataIndex) {
+        var searchTerm = $('#package-index_filter input').val().toLowerCase().trim();
+        var packageName = data[1].toLowerCase();
+        var description = data[2].toLowerCase();
+        
+        if (!searchTerm) return true;
+        var tokens = [];
+        var regex = /"([^"]+)"|(\S+)/g;
+        var match;
+        while ((match = regex.exec(searchTerm)) !== null) {
+          tokens.push(match[1] || match[2]);
+        }
+        return tokens.every(function (token) {
+          var isQuoted = searchTerm.includes(`"${token}"`);
+          if (isQuoted) {
+            var phraseRegex = new RegExp(`\\b${token.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
+            return packageName === token || phraseRegex.test(description);
+          } else {
+            return packageName.includes(token) || description.includes(token);
+          }
+        });
+      });
+
+      var table = $('#package-index').DataTable( {
         scrollY:        tabHeight,
         scrollCollapse: true,
         scroller:       true,
@@ -120,9 +143,31 @@
               targets: 0,
               orderable: false
             }
-          ]
-        } );
-      $('input[type=search]').attr('placeholder', 'Search packages');
+          ],
+        language: {
+          search: "Search:",
+        }
+      } );
+      
+      $('.dataTables_filter label').append(
+        '<div class="form-text text-muted small mt-1">' + 
+        'Matches partially by default; use double quotes for exact match.' +
+        '</div>'
+      );
+      
+      table.on('draw.dt', function() {
+        var searchTerm = $('#package-index_filter input').val().toLowerCase().trim();
+        var cleanTerm = searchTerm.replace(/^"|"$/g, '');
+        
+        $('tbody tr').each(function() {
+          var pkgName = $(this).find('td:eq(1)').text().toLowerCase();
+          $(this).toggleClass('exact-match', 
+            searchTerm && 
+            ((searchTerm.startsWith('"') && searchTerm.endsWith('"') && pkgName === cleanTerm) ||
+            (!searchTerm.includes('"') && pkgName === searchTerm)
+          ))
+        });
+      });
     } );
     </script>
     <noscript>
