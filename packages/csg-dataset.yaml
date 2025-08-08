@@ -28,7 +28,7 @@ versions:
 - id: "1.0.0"
   date: "2025-05-19"
   sha256: "8db43d39c6c7680762ede9219e2a0f50a48890c16b5c0bd387a37711f0de6135"
-  url: "https://github.com/pr0m1th3as/csg-dataset/archive/refs/tags/v1.0.0.tar.gz"
+  url: "https://github.com/pr0m1th3as/csg-dataset/releases/download/v1.0.0/csg-dataset-1.0.0.tar.gz"
   depends:
   - "octave (>= 6.1.0)"
   - "pkg"

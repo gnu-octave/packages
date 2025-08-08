@@ -30,7 +30,7 @@ versions:
 - id: "1.4.3"
   date: "2025-07-18"
   sha256: "cc65e5d6b14f6678739f59119a726dbe0545da8ee662052f6adb3a02ad72ca44"
-  url: "https://github.com/pr0m1th3as/csg-toolkit/archive/refs/tags/v1.4.3.tar.gz"
+  url: "https://github.com/pr0m1th3as/csg-toolkit/releases/download/v1.4.3/csg-toolkit-1.4.3.tar.gz"
   depends:
   - "octave (>= 9.1.0)"
   - "statistics (>= 1.7.4)"

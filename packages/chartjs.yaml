@@ -27,7 +27,7 @@ versions:
 - id: "0.1.0"
   date: "2025-02-17"
   sha256: "36959aa6c75d953b490254468c4df5bbeb3d8482622c0a3cced8949339bb06b5"
-  url: "https://github.com/pr0m1th3as/octave-chartjs/archive/refs/tags/release-0.1.0.tar.gz"
+  url: "https://github.com/pr0m1th3as/octave-chartjs/releases/download/release-0.1.0/octave-chartjs-0.1.0.tar.gz"
   depends:
   - "octave (>= 8.1.0)"
   - "pkg"
