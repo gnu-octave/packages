@@ -1,0 +1,41 @@
+---
+layout: "package"
+permalink: "mboct-fem-pkg/"
+description: >-
+  This package belongs to a suite of packages which can be used for pre- and postprocessing
+  of flexible bodies in MBDyn (www.mbdyn.org) with GNU-Octave.
+  It contains a general purpose structural Finite Element toolkit for linear statics and dynamics,
+  which can be used to generate flexible body data for MBDyn's modal element and also
+  hydrodynamic lubricated journal and slider plain bearings.
+icon: "https://avatars.githubusercontent.com/u/61900614?v=4"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/octave-user/mboct-fem-pkg/blob/master/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url:
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/octave-user/mboct-fem-pkg"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://gnu-octave.github.io/mboct-fem-pkg/functions/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/octave-user/mboct-fem-pkg/issues"
+maintainers:
+- name: "Reinhard Resch"
+  contact: "octave-user@a1.net"
+versions:
+- id: "0.1.0"
+  date: "2025-08-17"
+  sha256: "2a7122a2dd5b4f1d54bafdc370b2b9f54889ea3d3e3585674edbe20aa60ebf03"
+  url: "https://github.com/octave-user/mboct-fem-pkg/releases/download/0.1.0/mboct-fem-pkg-0.1.0.tar.gz"
+  depends:
+  - "octave (>= 5.1.0)"
+  - "pkg"
+  - "mboct-numerical-pkg (>=0.1.0)"
+  - "mboct-mbdyn-pkg (>=0.1.0)"
+  - "mboct-octave-pkg (>=0.1.0)"
+---

@@ -28,8 +28,8 @@ maintainers:
   contact: "octave-user@a1.net"
 versions:
 - id: "0.1.0"
-  date: "2024-08-17"
-  sha256: "ef9796c69aff863f25f15c39ec79f59ba720b9fb6732f061707864568ed6d293"
+  date: "2025-08-17"
+  sha256: "782bdf99a77f79510c151948242b6c52b680bbd926626a3348bdcfe50df7f8ee"
   url: "https://github.com/octave-user/mboct-numerical-pkg/releases/download/0.1.0/mboct-numerical-pkg-0.1.0.tar.gz"
   depends:
   - "octave (>= 5.1.0)"
