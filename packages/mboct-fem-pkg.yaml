@@ -2,11 +2,13 @@
 layout: "package"
 permalink: "mboct-fem-pkg/"
 description: >-
-  This package belongs to a suite of packages which can be used for pre- and postprocessing
-  of flexible bodies in MBDyn (www.mbdyn.org) with GNU-Octave.
-  It contains a general purpose structural Finite Element toolkit for linear statics and dynamics,
-  which can be used to generate flexible body data for MBDyn's modal element and also
-  hydrodynamic lubricated journal and slider plain bearings.
+  This package belongs to a suite of packages which can be used
+  for pre- and postprocessing of flexible bodies in MBDyn (www.mbdyn.org)
+  with GNU-Octave. It contains a general purpose structural
+  Finite Element toolkit for linear statics and dynamics,
+  which can be used to generate flexible body data for
+  MBDyn's modal element and also hydrodynamic lubricated journal
+  and slider plain bearings.
 icon: "https://avatars.githubusercontent.com/u/61900614?v=4"
 links:
 - icon: "far fa-copyright"

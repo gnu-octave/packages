@@ -2,9 +2,10 @@
 layout: "package"
 permalink: "mboct-mbdyn-pkg/"
 description: >-
-  This package belongs to a suite of packages which can be used for pre- and postprocessing
-  of flexible bodies in MBDyn (www.mbdyn.org) with GNU-Octave.
-  It contains interfaces to the multibody dynamics software MBDyn (www.mbdyn.org).
+  This package belongs to a suite of packages which can be used
+  for pre- and postprocessing of flexible bodies in MBDyn (www.mbdyn.org)
+  with GNU-Octave. It contains interfaces to the multibody dynamics
+  software MBDyn (www.mbdyn.org).
 icon: "https://avatars.githubusercontent.com/u/61900614?v=4"
 links:
 - icon: "far fa-copyright"
