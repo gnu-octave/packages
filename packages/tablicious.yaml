@@ -4,11 +4,11 @@ permalink: "tablicious/"
 description: >-
   Matlab-compatible Octave table class for storing tabular/relational data.
   Similar to R and Python Pandas DataFrames.
-icon: "https://raw.githubusercontent.com/apjanke/octave-tablicious/master/assets/Tablicious-640.png"
+icon: "https://raw.githubusercontent.com/apjanke/octave-tablicious/main/assets/Tablicious-640.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
-  url: "https://github.com/apjanke/octave-tablicious/blob/master/COPYING"
+  url: "https://github.com/apjanke/octave-tablicious/blob/main/COPYING"
 - icon: "fas fa-rss"
   label: "news"
   url: "https://github.com/apjanke/octave-tablicious/releases"
@@ -17,7 +17,7 @@ links:
   url: "https://github.com/apjanke/octave-tablicious/"
 - icon: "fas fa-book"
   label: "package documentation"
-  url: "https://github.com/apjanke/octave-tablicious/blob/master/README.md"
+  url: "https://github.com/apjanke/octave-tablicious/blob/main/README.md"
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://github.com/apjanke/octave-tablicious/issues"
@@ -25,6 +25,24 @@ maintainers:
 - name: "Andrew Janke"
   contact: "andrew@apjanke.net"
 versions:
+- id: "0.4.5"
+  date: "2025-07-03"
+  sha256: "60b63a639b52c741c818dccb91d251432680d237c986c84dbdc89f4c54a92f0f"
+  url: "https://github.com/apjanke/octave-tablicious/releases/download/v0.4.5/tablicious-0.4.5.tar.gz"
+  depends:
+  - "octave (>= 7.0.0)"
+  - "pkg"
+  ubuntu2204:
+  - "tzdata"
+- id: "0.4.4"
+  date: "2024-10-23"
+  sha256: "b06b5606fb7ba53874ec3dab0e2bbd0cf5ed536461cd2d3bac851ee2d9655d7e"
+  url: "https://github.com/apjanke/octave-tablicious/releases/download/v0.4.4/tablicious-0.4.4.tar.gz"
+  depends:
+  - "octave (>= 7.0.0)"
+  - "pkg"
+  ubuntu2204:
+  - "tzdata"
 - id: "0.4.3"
   date: "2024-04-06"
   sha256: "7e81d5d87d2e47b80d9a5d7e46ecbf46fc15308f17672fb778472711dfd96231"
@@ -89,7 +107,7 @@ versions:
 - id: "dev"
   date:
   sha256:
-  url: "https://github.com/apjanke/octave-tablicious/archive/master.tar.gz"
+  url: "https://github.com/apjanke/octave-tablicious/archive/main.tar.gz"
   depends:
   - "octave (>= 7.0.0)"
   - "pkg"

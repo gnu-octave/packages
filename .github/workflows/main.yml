@@ -44,12 +44,17 @@ jobs:
       -
         name: Check for changed packages
         run: |
-          for f in $(git --no-pager diff --name-only HEAD~1 HEAD)
+          IFS=$'\n'
+          for s in $(git --no-pager diff --name-status HEAD~1 HEAD)
           do
-            if [ "$(dirname $f)" == "packages" ] && [ "${f##*.}" == "yaml" ]
+            if [[ ${s:0:1} != "D" ]]
             then
-              name="$(basename $f)"
-              CHANGED_PACKAGES+=" ${name%.*} "
+              f="$(echo "$s" | sed -r -e "s|.\s*(.*)|\1|")"
+              if [ "$(dirname $f)" == "packages" ] && [ "${f##*.}" == "yaml" ]
+              then
+                name="$(basename $f)"
+                CHANGED_PACKAGES+=" ${name%.*} "
+              fi
             fi
           done
           if [ -n "$CHANGED_PACKAGES" ]
@@ -77,7 +82,7 @@ jobs:
               --volume="$(pwd):/workdir:rw" \
               ${{ matrix.image }}:${{ matrix.version }} \
               octave-cli --eval "cd /workdir/assets/ci; \
-                octave_ci('$p', '/workdir/test/packages/index.html')"
+                octave_ci('$p', '/workdir/test/packages.json')"
           done
 
 
@@ -90,21 +95,18 @@ jobs:
         name: Checkout repository
         uses: actions/checkout@v4
       -
-        name: Set up Python 3
+        name: Set up Python
         uses: actions/setup-python@v5
         with:
-          # Semantic version range syntax or exact version of a Python version
-          python-version: '3.x'
+          python-version: '3.12'
       -
         name: Install dependencies
         run: |
           python -m pip install --upgrade \
             pip setuptools wheel yamllint
-
-      # FIXME: Remove first line, once the affected file and line number is
-      #        visible by default.
       -
         name: Run yamllint
-        run: |
-          yamllint --format standard -c ./assets/ci/yamllint.yaml packages
-          yamllint -c ./assets/ci/yamllint.yaml packages
+        run: yamllint -c ./assets/ci/yamllint.yaml packages
+      -
+        name: Validate schemas
+        run: python ./assets/ci/validate_yaml.py

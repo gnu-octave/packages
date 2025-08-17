@@ -25,10 +25,10 @@ maintainers:
 - name: "José Luis García Pallero"
   contact: "jgpallero@gmail.com"
 versions:
-- id: "3.0.2"
-  date: "2022-11-07"
-  sha256: "1b60239ede0a19aabd85d5c72c72fee9df6519bf37c2430766ab303628f04b3b"
-  url: "https://bitbucket.org/jgpallero/octproj/downloads/octproj-3.0.2.tar.gz"
+- id: "3.1.0"
+  date: "2025-06-30"
+  sha256: "17586a1125e6c1a1e9e2a5d9add6859ed2f7a7b86e68e93c94327860f4baafe7"
+  url: "https://bitbucket.org/jgpallero/octproj/downloads/octproj-3.1.0.tar.gz"
   depends:
   - "octave (>= 3.0.0)"
   - "pkg"

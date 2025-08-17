@@ -20,7 +20,7 @@ function octave_ci (package_name, pkg_index_file)
     step_warning ("STOP.  No package provided.");
     return;
   endif
-  
+
   ## Package name should be lower case, but do not be pedantic.
   package_name = tolower (package_name);
 
@@ -33,12 +33,12 @@ function octave_ci (package_name, pkg_index_file)
   __pkg__ = package_index_local_resolve (pkg_index_file);
   step_group_end ("done.");
 
-  pkg_name_version = [package_name, "@", ...
-    __pkg__.(package_name).versions(1).id];
+  pkg_info = get_first_version (__pkg__, package_name);
+  pkg_name_version = [package_name, "@", pkg_info.id];
 
   ## Check if package can be installed by "pkg", otherwise skip.
   pkg_installable = false;
-  dependencies = {__pkg__.(package_name).versions(1).depends.name};
+  dependencies = pkg_info.depends;
   for i = 1:length (dependencies)
     if (strcmp (strsplit (dependencies{i}){1}, "pkg"))
       pkg_installable = true;
@@ -69,13 +69,13 @@ function octave_ci (package_name, pkg_index_file)
   endif
 
   ## Install package dependencies and "doctest" package.
-  pkgs = [pkgs, {"doctest"}];
+  pkgs = [pkgs; {"doctest"}];
   for i = length (pkgs):-1:1
     pkg_dep_name = pkgs{i};
-    pkg_dep_name_version = [pkg_dep_name, "@", ...
-      __pkg__.(pkg_dep_name).versions(1).id];
+    pkg_dep_info = get_first_version (__pkg__, pkg_dep_name);
+    pkg_dep_name_version = [pkg_dep_name, "@", pkg_dep_info.id];
     step_group_start (["Install dependency:  ", pkg_dep_name_version]);
-    pkg_install_sha256_check (__pkg__.(pkg_dep_name).versions(1), test_dir);
+    pkg_install_sha256_check (pkg_dep_info, test_dir);
     step_group_end ("done.");
   endfor
 
@@ -83,7 +83,7 @@ function octave_ci (package_name, pkg_index_file)
   ## packages.
   try
     step_group_start (["Run: pkg install   ", pkg_name_version]);
-    pkg_install_sha256_check (__pkg__.(package_name).versions(1), test_dir);
+    pkg_install_sha256_check (pkg_info, test_dir);
     step_group_end ("done.");
   catch e
     step_group_end ("ERROR: package installation failed");
@@ -93,7 +93,7 @@ function octave_ci (package_name, pkg_index_file)
     ## "exotic" dependencies.
 
     step_group_start (["ERROR: pkg install -verbose ", pkg_name_version]);
-    pkg ("install", "-verbose",  __pkg__.(package_name).versions(1).url);
+    pkg ("install", "-verbose", pkg_info.url);
     step_group_end ("done.");
 
     exit (1);  # Return test failed.
@@ -101,8 +101,7 @@ function octave_ci (package_name, pkg_index_file)
 
   step_group_start (["Check: pkg version ", pkg_name_version]);
   installed_pkg = pkg ("list", package_name);
-  if (! strcmp (__pkg__.(package_name).versions(1).id, ...
-                installed_pkg{1}.version))
+  if (! strcmp (pkg_info.id, installed_pkg{1}.version))
     ## FIXME: Should this fail the CI instead of emitting a warning?
     step_warning ("Version of installed package doesn't match version in package index");
   endif
@@ -146,20 +145,17 @@ function octave_ci (package_name, pkg_index_file)
 endfunction
 
 
-function __pkg__ = package_index_local_resolve (pkg_index_file)
+function data = package_index_local_resolve (pkg_index_file)
   # Normally
-  # data = urlread ("https://gnu-octave.github.io/packages/packages/")(6:end);
-  data = fileread (pkg_index_file)(6:end);
-  data = strrep (data, "&gt;",  ">");
-  data = strrep (data, "&lt;",  "<");
-  data = strrep (data, "&amp;", "&");
-  data = strrep (data, "&#39;", "'");
-  eval (data);
+  # data = jsondecode (urlread ("https://packages.octave.org/packages.json"), "makeValidName", false);
+  data = jsondecode (fileread (pkg_index_file), "makeValidName", false);
 endfunction
+
 
 function step_error (str)
   printf ("::error::%s\n", str);
 endfunction
+
 
 function step_warning (str)
   printf ("::warning::%s\n", str);
@@ -174,6 +170,17 @@ endfunction
 function step_group_end (str)
   printf ("\n    %s\n\n", str);
   disp ("::endgroup::");
+endfunction
+
+
+function first_version = get_first_version (__pkg__, package_name)
+  ## handle cases with non-uniform fields per package version
+  p = __pkg__.(package_name).versions;
+  if (iscell (p))
+    first_version = p{1};
+  else
+    first_version = p(1);
+  endif
 endfunction
 
 
@@ -206,10 +213,10 @@ function [ubuntu2204, pkgs] = resolve_deps (__pkg__, stack);
 
   pkgs = {};
   ubuntu2204 = {};
-  p = __pkg__.(stack{end}).versions(1);
+  p = get_first_version (__pkg__, stack{end});
 
   if (isfield (p, "depends"))
-    pkgs = {p.depends.name};
+    pkgs = p.depends;
     pkgs = cellfun (@strtok, pkgs, "UniformOutput", false);
     pkgs(strcmp (pkgs, "octave")) = [];
     pkgs(strcmp (pkgs, "pkg")) = [];
@@ -220,13 +227,13 @@ function [ubuntu2204, pkgs] = resolve_deps (__pkg__, stack);
         error ("resolve_deps: circular dependency detected.");
       endif
       [new_ubuntu2204, new_pkgs] = resolve_deps (__pkg__, [stack, pkgs(i)]);
-      ubuntu2204 = [ubuntu2204, new_ubuntu2204];
-      pkgs = [pkgs, new_pkgs];
+      ubuntu2204 = [reshape(ubuntu2204, [], 1); reshape(new_ubuntu2204, [], 1)];
+      pkgs = [reshape(pkgs, [], 1); reshape(new_pkgs, [], 1)];
     endfor
   endif
 
   if (isfield (p, "ubuntu2204") && ! isempty (p.ubuntu2204))
-    new_ubuntu2204 = {p.ubuntu2204.name};
+    new_ubuntu2204 = p.ubuntu2204;
     for i = 1:length (new_ubuntu2204)
       ## Ubuntu/Debian package name must consist only of lower case letters
       ## (a-z), digits (0-9), plus (+) and minus (-) signs, and periods (.).
@@ -236,7 +243,7 @@ function [ubuntu2204, pkgs] = resolve_deps (__pkg__, stack);
           new_ubuntu2204{i});
       endif
     endfor
-    ubuntu2204 = [ubuntu2204, new_ubuntu2204];
+    ubuntu2204 = [ubuntu2204; reshape(new_ubuntu2204, [], 1)];
   endif
 
 endfunction

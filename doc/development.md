@@ -3,23 +3,17 @@
 ## Quick info
 
 Your package management tool can read the **entire package index at once**
-as Octave array of struct into the variable `__pkg__` using the command:
+as Octave array of struct into the variable `package_index` using the command:
 ```
-function __pkg__ = package_index_resolve ()
-  data = urlread ("https://gnu-octave.github.io/packages/packages/")(6:end);
-  data = strrep (data, "&gt;",  ">");
-  data = strrep (data, "&lt;",  "<");
-  data = strrep (data, "&amp;", "&");
-  data = strrep (data, "&#39;", "'");
-  eval (data);
+function package_index = package_index_resolve ()
+  package_index = jsondecode (urlread ("https://packages.octave.org/packages.json"), "makeValidName", false);
 endfunction
 ```
-Note, the assignment to the returned variable `__pkg__` is done within `eval`
-and depending on your internet connection, this is an inexpensive operation,
+Depending on your internet connection, this is an inexpensive operation,
 thus a caching strategy is probably not necessary.
 ```
->> tic; __pkg__ = package_index_resolve (); toc
-Elapsed time is 0.365517 seconds.
+>> tic; package_index = package_index_resolve (); toc
+Elapsed time is 0.820996 seconds.
 ```
 
 
@@ -32,11 +26,11 @@ written in the GNU Octave language.
 ### Read the package index
 
 Using the routine `package_index_resolve()` as describe in the quick info above,
-an Octave array of struct `__pkg__` indexed by the package names is returned.
+an Octave array of struct `package_index` indexed by the package names is returned.
 
 To get the first three packages names, for example, type:
 ```
->> fieldnames (__pkg__)(1:3)
+>> fieldnames (package_index)(1:3)
 ans =
 {
   [1,1] = arduino
@@ -48,11 +42,11 @@ ans =
 
 ### Extract package details
 
-After reading the package index to the variable `__pkg__` as shown above,
+After reading the package index to the variable `package_index` as shown above,
 one can obtain more detailed information about individual packages.
 The following code shows all available struct fields for `pkg-example`:
 ```
->> fieldnames (__pkg__.("pkg-example"))
+>> fieldnames (package_index.("pkg-example"))
 ans =
 {
   [1,1] = name
@@ -65,20 +59,20 @@ ans =
 ```
 Similar, one can see all details of the latest `pkg-example` version:
 ```
->> __pkg__.("pkg-example").versions(1)
+>> package_index.("pkg-example").versions(1)
 ans =
 
   scalar structure containing the fields:
 
-    id = 1.0.0
-    date = 2020-09-02
-    sha256 = 6b7e4b6bef5a681cb8026af55c401cee139b088480f0da60143e02ec8880cb51
-    url = https://github.com/gnu-octave/pkg-example/archive/1.0.0.tar.gz
+    id = 1.1.0
+    date = 2021-04-06
+    sha256 = bff441755f0d68596f2efd027fe637b5b6c52b722ffd6255bdb8a5f34ab4ef2a
+    url = https://github.com/gnu-octave/pkg-example/archive/1.1.0.tar.gz
     depends =
-
-      scalar structure containing the fields:
-
-        name = octave (>= 4.2.0)
+    {
+      [1,1] = octave (>= 4.0.0)
+      [2,1] = pkg
+    }
 ```
 
 
@@ -114,7 +108,7 @@ you should care about the following default settings:
 
       scalar structure containing the fields:
 
-        name = pkg-example
+        name = pkg_example
         version = 1.0.0
         date = 2020-09-02
         author = Kai T. Ohlhus <k.ohlhus@gmail.com>
@@ -122,8 +116,8 @@ you should care about the following default settings:
         title = Minimal example package to demonstrate the Octave package extensions.
         description = Minimal example package to demonstrate the Octave package  extensions.  It shows how to organize Octave, C/C++, and FORTRAN code within  a package and to properly compile it.
         depends =
-        dir = /home/siko1056/octave/pkg-example-1.0.0
-        archprefix = /home/siko1056/octave/pkg-example-1.0.0
+        dir = /home/siko1056/octave/pkg_example-1.0.0
+        archprefix = /home/siko1056/octave/pkg_example-1.0.0
 
   }
   ```

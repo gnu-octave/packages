@@ -2,18 +2,18 @@
 layout: "package"
 permalink: "image-acquisition/"
 description: >-
-  Functions to capture images from connected devices using Video4Linux (v4l).
+  Capture images using Video4Linux2 or Media Foundation.
 icon: "https://octave.sourceforge.io/pkg_icon/image-acquisition.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
-  url: "https://sourceforge.net/p/octave/image-acquisition/ci/default/tree/COPYING"
+  url: "https://github.com/Andy1978/octave-image-acquisition/blob/master/COPYING.html"
 - icon: "fas fa-rss"
   label: "news"
-  url: "https://sourceforge.net/p/octave/image-acquisition/ci/default/tree/NEWS"
+  url: "https://github.com/Andy1978/octave-image-acquisition/blob/master/NEWS"
 - icon: "fas fa-code-branch"
   label: "repository"
-  url: "https://sourceforge.net/p/octave/image-acquisition/ci/default/tree/"
+  url: "https://github.com/Andy1978/octave-image-acquisition"
 - icon: "fas fa-th-list"
   label: "function reference"
   url: "https://octave.sourceforge.io/image-acquisition/overview.html"
@@ -24,11 +24,44 @@ maintainers:
 - name: "Andreas Weber"
   contact: "andy.weber.aw@gmail.com"
 versions:
-- id: "0.2.2"
-  date: "2015-04-19"
-  sha256:
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/image-acquisition-0.2.2.tar.gz"
+- id: "0.3.3"
+  date: "2025-04-19"
+  sha256: "56e9c0d50dda23d4b2d95ddd3a5d752d67bbd73ad3cf3dcb26b565f69981bdeb"
+  url: "https://github.com/Andy1978/octave-image-acquisition/releases/download/image-acquisition-0.3.3/image-acquisition-0.3.3.tar.gz"
   depends:
-  - "octave (>= 3.8.0)"
+  - "octave (>= 5.1.0)"
   - "pkg"
+  ubuntu2204:
+  - "libv4l-dev"
+  - "libfltk1.3-dev"
+- id: "0.3.2"
+  date: "2025-04-14"
+  sha256: "6bcb088551549d246d353a2b9fcb94d69c0c0ba59d87fc04b0f585f63d3fc25b"
+  url: "https://github.com/Andy1978/octave-image-acquisition/releases/download/image-acquisition-0.3.2/image-acquisition-0.3.2.tar.gz"
+  depends:
+  - "octave (>= 5.1.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libv4l-dev"
+  - "libfltk1.3-dev"
+- id: "0.3.1"
+  date: "2025-04-12"
+  sha256: "00e40f6c228e84a6f99f64eb83bf96d6d2951072b01b63bf938d0963dbdb95a0"
+  url: "https://github.com/Andy1978/octave-image-acquisition/releases/download/image-acquisition-0.3.1/image-acquisition-0.3.1.tar.gz"
+  depends:
+  - "octave (>= 5.1.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libv4l-dev"
+  - "libfltk1.3-dev"
+- id: "0.3.0"
+  date: "2025-03-15"
+  sha256: "c93bb15cca589773535f22004296565717cd0fcda0766b7f643d9bfba8820309"
+  url: "https://github.com/Andy1978/octave-image-acquisition/releases/download/image-acquisition-0.3.0/image-acquisition-0.3.0.tar.gz"
+  depends:
+  - "octave (>= 5.1.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libv4l-dev"
+  - "libfltk1.3-dev"
 ---

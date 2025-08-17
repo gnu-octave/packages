@@ -24,6 +24,28 @@ maintainers:
 - name: "Andreas Weber"
   contact: "octave@josoansi.de"
 versions:
+- id: "2.1.3"
+  date: "2025-04-15"
+  sha256: "7c6e25251929f11c96ba1f66efbca735c45468b7804e5652575d4894cb2833c2"
+  url: "https://github.com/Andy1978/octave-video/releases/download/2.1.3/video-2.1.3.tar.gz"
+  depends:
+  - "octave (>= 4.4.1)"
+  - "pkg"
+  ubuntu2204:
+  - "libavcodec-dev"
+  - "libavformat-dev"
+  - "libswscale-dev"
+- id: "2.1.2"
+  date: "2025-04-15"
+  sha256: "b2dca29fbc5033c0cfca03e97ed603f101292d302708adea44722be1c2e04e9b"
+  url: "https://github.com/Andy1978/octave-video/releases/download/2.1.2/video-2.1.2.tar.gz"
+  depends:
+  - "octave (>= 4.4.1)"
+  - "pkg"
+  ubuntu2204:
+  - "libavcodec-dev"
+  - "libavformat-dev"
+  - "libswscale-dev"
 - id: "2.1.1"
   date: "2023-07-08"
   sha256: "6435b83e36cdb9ac50f2b64bcd721fdd42544ada6e2bac6987513b5364dc955a"

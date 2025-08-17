@@ -21,18 +21,18 @@
             integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
             crossorigin="anonymous"></script>
 
-    <title>{{ page.title | default: site.title }}</title>
+    {%- if page.layout == "package" -%}
+        {%- assign package_name = page.name | remove: '.yaml' -%}
+        {%- capture page_title -%}GNU Octave - The '{{ package_name }}' package{%- endcapture -%}
+    {%- else -%}
+        {%- assign page_title = site.title -%}
+    {%- endif -%}
+    <title>{{ page_title }}</title>
 
     <!-- Facebook Open Graph -->
     <meta property="og:description" content="{{ page.description | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | escape | truncate: 160 | default: site.description | escape }}">
     <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:title" content="
-      {%- if page.layout == "package" -%}
-        {{ page.name | remove: '.yaml' }} package
-      {%- else -%}
-        {{ site.title }}
-      {%- endif -%}
-      ">
+    <meta property="og:title" content="{{ page_title }}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:type" content="article">
     <meta property="og:image" content="{{ page.icon | default: site.logo | absolute_url }}">
@@ -44,13 +44,7 @@
     {%- endif -%}
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="
-      {%- if page.layout == "package" -%}
-        {{ page.name | remove: '.yaml' }} package
-      {%- else -%}
-        {{ site.title }}
-      {%- endif -%}
-      ">
+    <meta name="twitter:title" content="{{ page_title }}">
     <meta name="twitter:description" content="{{ page.description | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | escape | truncate: 160 | default: site.description | escape }}">
     <meta name="twitter:url" content="{{ page.url | absolute_url }}">
     <meta name="twitter:image" content="{{ page.icon | default: site.logo | absolute_url }}">
@@ -112,7 +106,30 @@
       tabHeight = 200;
     }
     $(document).ready( function () {
-      $('#package-index').DataTable( {
+      $.fn.dataTable.ext.search.push(function(settings, data, dataIndex) {
+        var searchTerm = $('#package-index_filter input').val().toLowerCase().trim();
+        var packageName = data[1].toLowerCase();
+        var description = data[2].toLowerCase();
+        
+        if (!searchTerm) return true;
+        var tokens = [];
+        var regex = /"([^"]+)"|(\S+)/g;
+        var match;
+        while ((match = regex.exec(searchTerm)) !== null) {
+          tokens.push(match[1] || match[2]);
+        }
+        return tokens.every(function (token) {
+          var isQuoted = searchTerm.includes(`"${token}"`);
+          if (isQuoted) {
+            var phraseRegex = new RegExp(`\\b${token.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
+            return packageName === token || phraseRegex.test(description);
+          } else {
+            return packageName.includes(token) || description.includes(token);
+          }
+        });
+      });
+
+      var table = $('#package-index').DataTable( {
         scrollY:        tabHeight,
         scrollCollapse: true,
         scroller:       true,
@@ -126,9 +143,31 @@
               targets: 0,
               orderable: false
             }
-          ]
-        } );
-      $('input[type=search]').attr('placeholder', 'Search packages');
+          ],
+        language: {
+          search: "Search:",
+        }
+      } );
+      
+      $('.dataTables_filter label').append(
+        '<div class="form-text text-muted small mt-1">' + 
+        'Matches partially by default; use double quotes for exact match.' +
+        '</div>'
+      );
+      
+      table.on('draw.dt', function() {
+        var searchTerm = $('#package-index_filter input').val().toLowerCase().trim();
+        var cleanTerm = searchTerm.replace(/^"|"$/g, '');
+        
+        $('tbody tr').each(function() {
+          var pkgName = $(this).find('td:eq(1)').text().toLowerCase();
+          $(this).toggleClass('exact-match', 
+            searchTerm && 
+            ((searchTerm.startsWith('"') && searchTerm.endsWith('"') && pkgName === cleanTerm) ||
+            (!searchTerm.includes('"') && pkgName === searchTerm)
+          ))
+        });
+      });
     } );
     </script>
     <noscript>

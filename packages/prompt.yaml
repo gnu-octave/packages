@@ -3,6 +3,7 @@ layout: "package"
 permalink: "prompt/"
 description: >-
   A powerlevel10k-like prompt for octave.
+icon:
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"

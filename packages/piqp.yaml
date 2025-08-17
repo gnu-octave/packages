@@ -25,6 +25,27 @@ maintainers:
 - name: "Roland Schwan"
   contact: "roland.schwan@epfl.ch"
 versions:
+- id: "0.6.0"
+  date: "2025-06-30"
+  sha256: "62344e0e31a95d3aff69408150f4a2a1da34e91a46f6067fc5bef0ca4aecf4ee"
+  url: "https://github.com/PREDICT-EPFL/piqp/releases/download/v0.6.0/piqp-octave.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+- id: "0.5.0"
+  date: "2025-03-17"
+  sha256: "49a9bf3c7c242b7fd7293f5fe234ed321595822ce3fc4189d794c122e07fe88b"
+  url: "https://github.com/PREDICT-EPFL/piqp/releases/download/v0.5.0/piqp-octave.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+- id: "0.4.2"
+  date: "2024-08-02"
+  sha256: "8e695298c08e36ee0f59f3df1e26d6e38e4829293e1b48012b8a68966dd89cb8"
+  url: "https://github.com/PREDICT-EPFL/piqp/releases/download/v0.4.2/piqp-octave.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "0.4.1"
   date: "2024-06-22"
   sha256: "a88aa7d058d34cfd869e01a5631eeb0ff8ff4382815c186112f66b5382eb27b6"
