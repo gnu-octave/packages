@@ -33,7 +33,7 @@ versions:
 - id: "0.1.0"
   date: "2025-08-17"
   sha256: "2a7122a2dd5b4f1d54bafdc370b2b9f54889ea3d3e3585674edbe20aa60ebf03"
-  url: "https://github.com/octave-user/mboct-fem-pkg/releases/download/0.1.0/mboct-fem-pkg-0.1.0.tar.gz"
+  url: "https://github.com/octave-user/mboct-fem-pkg/releases/download/0.1.0/mboct-fem-pkg-0.2.1.tar.gz"
   depends:
   - "octave (>= 5.1.0)"
   - "pkg"
