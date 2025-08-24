@@ -37,4 +37,9 @@ versions:
   - "mboct-octave-pkg (>=0.1.0)"
   - "mboct-numerical-pkg (>=0.1.0)"
   - "nurbs (>=1.3)"
+  ubuntu2204:
+  - "libmkl-full-dev"
+  - "libmetis-dev"
+  - "libgtest-dev"
+  - "libmumps-seq-dev"  
 ---
