@@ -29,10 +29,11 @@ maintainers:
 versions:
 - id: "0.1.0"
   date: "2025-08-17"
-  sha256: "782bdf99a77f79510c151948242b6c52b680bbd926626a3348bdcfe50df7f8ee"
+  sha256: "8da3a95c90fc4f85bae85fd434adcdf0703c3c7ca4c4871c6aecd2989df052fe"
   url: "https://github.com/octave-user/mboct-numerical-pkg/releases/download/0.1.0/mboct-numerical-pkg-0.1.0.tar.gz"
   depends:
   - "octave (>= 5.1.0)"
   - "pkg"
   - "mboct-octave-pkg (>=0.1.0)"
+  - "libmkl-full-dev"
 ---
