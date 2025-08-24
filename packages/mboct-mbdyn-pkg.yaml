@@ -27,10 +27,10 @@ maintainers:
 - name: "Reinhard Resch"
   contact: "octave-user@a1.net"
 versions:
-- id: "0.1.0"
+- id: "0.1.1"
   date: "2025-08-24"
-  sha256: "7c3031cd4d6f23c35ddcae07ff74b5ea6818e937daaab7f166fd71c11db56a7d"
-  url: "https://github.com/octave-user/mboct-mbdyn-pkg/releases/download/0.1.0/mboct-mbdyn-pkg-0.1.0.tar.gz"
+  sha256: "9b24940378e6f36186f1f607b5e2421680e227a3602256445e078ba8c615cca6"
+  url: "https://github.com/octave-user/mboct-mbdyn-pkg/releases/download/0.1.1/mboct-mbdyn-pkg-0.1.1.tar.gz"
   depends:
   - "octave (>= 5.1.0)"
   - "pkg"
@@ -42,10 +42,10 @@ versions:
   - "libmetis-dev"
   - "libgtest-dev"
   - "libmumps-seq-dev"
-- id: "0.1.1"
+- id: "0.1.0"
   date: "2025-08-24"
-  sha256: "9b24940378e6f36186f1f607b5e2421680e227a3602256445e078ba8c615cca6"
-  url: "https://github.com/octave-user/mboct-mbdyn-pkg/releases/download/0.1.1/mboct-mbdyn-pkg-0.1.1.tar.gz"
+  sha256: "7c3031cd4d6f23c35ddcae07ff74b5ea6818e937daaab7f166fd71c11db56a7d"
+  url: "https://github.com/octave-user/mboct-mbdyn-pkg/releases/download/0.1.0/mboct-mbdyn-pkg-0.1.0.tar.gz"
   depends:
   - "octave (>= 5.1.0)"
   - "pkg"

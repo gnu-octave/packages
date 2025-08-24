@@ -30,10 +30,10 @@ maintainers:
 - name: "Reinhard Resch"
   contact: "octave-user@a1.net"
 versions:
-- id: "0.2.1"
+- id: "0.2.2"
   date: "2025-08-24"
-  sha256: "68186a6b2f14eb836261dcb49a96f6f70766a5b97919c928b3b53a64667a1e16"
-  url: "https://github.com/octave-user/mboct-fem-pkg/releases/download/0.1.0/mboct-fem-pkg-0.2.1.tar.gz"
+  sha256: "5d52d55d265dccb1ad1c90b78f914c900214b1e45a5cc9d9be391da64fb7f896"
+  url: "https://github.com/octave-user/mboct-fem-pkg/releases/download/0.2.2/mboct-fem-pkg-0.2.2.tar.gz"
   depends:
   - "octave (>= 5.1.0)"
   - "pkg"
@@ -46,10 +46,10 @@ versions:
   - "libgtest-dev"
   - "libmumps-seq-dev"
   - "libnlopt-dev"
-- id: "0.2.2"
+- id: "0.2.1"
   date: "2025-08-24"
-  sha256: "5d52d55d265dccb1ad1c90b78f914c900214b1e45a5cc9d9be391da64fb7f896"
-  url: "https://github.com/octave-user/mboct-fem-pkg/releases/download/0.2.2/mboct-fem-pkg-0.2.2.tar.gz"
+  sha256: "68186a6b2f14eb836261dcb49a96f6f70766a5b97919c928b3b53a64667a1e16"
+  url: "https://github.com/octave-user/mboct-fem-pkg/releases/download/0.1.0/mboct-fem-pkg-0.2.1.tar.gz"
   depends:
   - "octave (>= 5.1.0)"
   - "pkg"
