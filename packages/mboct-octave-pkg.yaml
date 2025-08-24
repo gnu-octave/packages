@@ -35,5 +35,5 @@ versions:
   - "octave (>= 5.1.0)"
   - "pkg"
   ubuntu2204:
-  - "libgtest-dev"  
+  - "libgtest-dev"
 ---

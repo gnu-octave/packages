@@ -41,5 +41,5 @@ versions:
   - "libmkl-full-dev"
   - "libmetis-dev"
   - "libgtest-dev"
-  - "libmumps-seq-dev"  
+  - "libmumps-seq-dev"
 ---
