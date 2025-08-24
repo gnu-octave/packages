@@ -35,5 +35,4 @@ versions:
   - "octave (>= 5.1.0)"
   - "pkg"
   - "mboct-octave-pkg (>=0.1.0)"
-  - "libmkl-full-dev"
 ---

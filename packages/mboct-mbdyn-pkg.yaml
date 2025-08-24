@@ -36,6 +36,5 @@ versions:
   - "pkg"
   - "mboct-octave-pkg (>=0.1.0)"
   - "mboct-numerical-pkg (>=0.1.0)"
-  - "mboct-fem-pkg (>=0.2.1)"
   - "nurbs (>=1.3)"
 ---
