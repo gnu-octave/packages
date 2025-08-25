@@ -21,7 +21,6 @@ jobs:
       matrix:
         image:
         # - docker.io/gnuoctave/octave
-        # - docker.io/octaveuser/gnuoctave
         - ghcr.io/gnu-octave/octave
         version:
         - latest
