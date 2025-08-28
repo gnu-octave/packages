@@ -19,7 +19,7 @@ links:
   url: "https://github.com/octave-user/mboct-mbdyn-pkg"
 - icon: "fas fa-th-list"
   label: "function reference"
-  url: "https://octave-user.github.io/mboct-mbdyn-pkg/mboct-mbdyn-pkg/overview.html"  
+  url: "https://octave-user.github.io/mboct-mbdyn-pkg/mboct-mbdyn-pkg"
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://github.com/octave-user/mboct-mbdyn-pkg/issues"

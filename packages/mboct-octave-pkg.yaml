@@ -19,7 +19,7 @@ links:
   url: "https://github.com/octave-user/mboct-octave-pkg"
 - icon: "fas fa-th-list"
   label: "function reference"
-  url: "https://octave-user.github.io/mboct-octave-pkg/mboct-octave-pkg/overview.html"
+  url: "https://octave-user.github.io/mboct-octave-pkg/mboct-octave-pkg"
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://github.com/octave-user/mboct-octave-pkg/issues"
