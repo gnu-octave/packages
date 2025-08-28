@@ -22,7 +22,7 @@ links:
   url: "https://github.com/octave-user/mboct-fem-pkg"
 - icon: "fas fa-th-list"
   label: "function reference"
-  url: "https://gnu-octave.github.io/mboct-fem-pkg/functions/"
+  url: "https://octave-user.github.io/mboct-fem-pkg/mboct-fem-pkg/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://github.com/octave-user/mboct-fem-pkg/issues"
