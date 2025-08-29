@@ -27,9 +27,9 @@ maintainers:
   contact:
 versions:
 - id: "dev"
-  date: "2025-08-31"
-  sha256: "TODO"
-  url: "TDDO"
+  date:
+  sha256:
+  url: "https://personal.math.ubc.ca/~cbm/tmp/chebfun/20250828/chebfun-5.7.0+.tar.gz"
   depends:
   - "octave (>= 11.0.0)"
   - "pkg"
