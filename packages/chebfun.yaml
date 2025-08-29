@@ -2,7 +2,7 @@
 layout: "package"
 permalink: "chebfun/"
 description: >-
-  Preview of Chebfun, numerical computing with functions, packaged for GNU Octave.
+  [preview] Chebfun, numerical computing with functions, packaged for Octave.
 icon: "https://www.chebfun.org/images/logo.png"
 links:
 - icon: "far fa-copyright"
