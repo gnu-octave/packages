@@ -28,7 +28,7 @@ maintainers:
 versions:
 - id: "dev"
   date:
-  sha256: 43a4f61c3798e79e15a69580a6d2761581883adc279ed67383e2878bca4d9c7b
+  sha256: "43a4f61c3798e79e15a69580a6d2761581883adc279ed67383e2878bca4d9c7b"
   url: "https://personal.math.ubc.ca/~cbm/tmp/chebfun/20250828/chebfun-5.7.0+.tar.gz"
   depends:
   - "octave (>= 11.0.0)"
