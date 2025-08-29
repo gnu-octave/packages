@@ -19,7 +19,7 @@ links:
   url: "https://github.com/octave-user/mboct-numerical-pkg"
 - icon: "fas fa-th-list"
   label: "function reference"
-  url: "https://gnu-octave.github.io/mboct-numerical-pkg/functions/"
+  url: "https://octave-user.github.io/mboct-numerical-pkg/mboct-numerical-pkg"
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://github.com/octave-user/mboct-numerical-pkg/issues"
