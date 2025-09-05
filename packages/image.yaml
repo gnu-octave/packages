@@ -31,7 +31,7 @@ maintainers:
   contact:
 versions:
 - id: "2.18.1"
-  date: "2025-09-15"
+  date: "2025-09-05"
   sha256: "d4eed0579782c2efaa0818de2f20f13b276eb3d4b4b3d63347c7317d84e29531"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/image-2.18.1.tar.gz"
   depends:
