@@ -24,6 +24,13 @@ maintainers:
 - name: "George Apostolopoulos"
   contact: "gapost@ipta.demokritos.gr"
 versions:
+- id: "1.1.0"
+  date: "2025-10-08"
+  sha256: "ab251912bc2749718188e54e35ac29805872a5ce19518b10f5f4b574f99f8947"
+  url: "https://github.com/gapost/hdf5oct/archive/refs/tags/1.1.0.tar.gz"
+  depends:
+  - "octave (>= 6.0.0)"
+  - "pkg"
 - id: "1.0.0"
   date: "2024-07-08"
   sha256: "dec661f16b0743d03e5edbe59f2be49df3d10bbd73c0edcbea26e52ad682c4c8"
