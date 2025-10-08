@@ -31,4 +31,11 @@ versions:
   depends:
   - "octave (>= 6.0.0)"
   - "pkg"
+- id: "1.0.0"
+  date: "2024-07-08"
+  sha256: "dec661f16b0743d03e5edbe59f2be49df3d10bbd73c0edcbea26e52ad682c4c8"
+  url: "https://github.com/gapost/hdf5oct/archive/refs/tags/1.0.0.tar.gz"
+  depends:
+  - "octave (>= 6.0.0)"
+  - "pkg"
 ---
