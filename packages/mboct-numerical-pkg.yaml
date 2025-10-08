@@ -1,0 +1,43 @@
+---
+layout: "package"
+permalink: "mboct-numerical-pkg/"
+description: >-
+  This package belongs to a suite of packages which can be used for
+  pre- and postprocessing of flexible bodies in MBDyn (www.mbdyn.org)
+  with GNU-Octave. It contains interfaces to several well known numerical
+  solvers.
+icon: "https://avatars.githubusercontent.com/u/61900614?v=4"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/octave-user/mboct-numerical-pkg/blob/master/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url:
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/octave-user/mboct-numerical-pkg"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave-user.github.io/mboct-numerical-pkg/mboct-numerical-pkg"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/octave-user/mboct-numerical-pkg/issues"
+maintainers:
+- name: "Reinhard Resch"
+  contact: "octave-user@a1.net"
+versions:
+- id: "0.1.0"
+  date: "2025-08-24"
+  sha256: "bd575d17ef21a551d946dce08502f06cfc49fedef1e7b55168510a82b588f3dc"
+  url: "https://github.com/octave-user/mboct-numerical-pkg/releases/download/0.1.0/mboct-numerical-pkg-0.1.0.tar.gz"
+  depends:
+  - "octave (>= 5.1.0)"
+  - "pkg"
+  - "mboct-octave-pkg (>=0.1.0)"
+  ubuntu2204:
+  - "libmkl-full-dev"
+  - "libmetis-dev"
+  - "libgtest-dev"
+  - "libmumps-seq-dev"
+---

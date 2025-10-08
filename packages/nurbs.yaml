@@ -20,7 +20,7 @@ links:
   url: "https://octave.sourceforge.io/nurbs/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(nurbs)"
+  url: "https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(nurbs)"
 maintainers:
 - name: "Mark Spink"
   contact:
@@ -31,6 +31,13 @@ maintainers:
 - name: "Rafael Vazquez"
   contact:
 versions:
+- id: "1.4.4"
+  date: "2025-02-10"
+  sha256: "41f175b6ef73fc54163438ab46ce4e3f721124e1a4911da59c710b9f722d9276"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/nurbs-1.4.4.tar.gz"
+  depends:
+  - "octave (>= 5.1.0)"
+  - "pkg"
 - id: "1.4.3"
   date: "2021-03-29"
   sha256: "a74666a1e204b9feda22c9792b87939239221fd816383bc39f75db72b62a209b"

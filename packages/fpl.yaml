@@ -8,19 +8,19 @@ icon: "https://octave.sourceforge.io/pkg_icon/fpl.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
-  url: "https://sourceforge.net/p/octave/fpl/ci/default/tree/COPYING"
+  url: "https://github.com/carlodefalco/fpl/blob/master/COPYING"
 - icon: "fas fa-rss"
   label: "news"
-  url: "https://sourceforge.net/p/octave/fpl/ci/default/tree/NEWS"
+  url: "https://github.com/carlodefalco/fpl/blob/master/NEWS"
 - icon: "fas fa-code-branch"
   label: "repository"
-  url: "https://sourceforge.net/p/octave/fpl/ci/default/tree/"
+  url: "https://github.com/carlodefalco/fpl"
 - icon: "fas fa-th-list"
   label: "function reference"
   url: "https://octave.sourceforge.io/fpl/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(fpl)"
+  url: "https://github.com/carlodefalco/fpl/issues"
 maintainers:
 - name: "Carlo de Falco"
   contact:
@@ -29,7 +29,7 @@ maintainers:
 versions:
 - id: "1.3.5"
   date: "2015-08-17"
-  sha256:
+  sha256: "da13b8044e0ffb91f488427c4d3f3fdefb8d208753f572ef4d3b53972c547731"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/fpl-1.3.5.tar.gz"
   depends:
   - "octave (>= 3.2.3)"

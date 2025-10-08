@@ -20,11 +20,19 @@ links:
   url: "https://octave.sourceforge.io/signal/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(signal)"
+  url: "https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(signal)"
 maintainers:
 - name: "Mike Miller"
   contact: "mtmiller@octave.org"
 versions:
+- id: "1.4.6"
+  date: "2024-09-20"
+  sha256: "94eef8fea78c89609f8ddf6d5ff8bfc2e0dab932b43f86ce911474a58b5c71ee"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/signal-1.4.6.tar.gz"
+  depends:
+  - "octave (>= 3.8.0)"
+  - "control (>= 2.4.0)"
+  - "pkg"
 - id: "1.4.5"
   date: "2023-07-21"
   sha256: "555ade2ff80f7118909395c33405f0a17a4fbcd22bc6d2fb9c3f7f45fef648e7"

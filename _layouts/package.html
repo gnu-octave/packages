@@ -117,6 +117,20 @@ layout: default
           {%- endfor -%}
         </li>
         {%- endif -%}
+        {% for fedora_version in (1..100) %}
+          {% assign fedora_key = 'fedora' | append: fedora_version | string %}
+          {% if v[fedora_key] %} 
+        <li>
+          <b>Fedora {{ fedora_version }}:</b>
+          {%- for dep in v[fedora_key] -%}
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span style="white-space: nowrap;">
+              <a href="https://repology.org/project/{{ dep }}/versions">{{ dep }}</a>
+            </span>
+          {%- endfor -%}
+        </li>
+          {% endif %}
+        {% endfor %}
       </ul>
       {%- if first_version == true and pkg_installable == false -%}
       <div class="alert alert-warning alert-warning-mod ml-3" role="alert">

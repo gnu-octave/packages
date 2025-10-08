@@ -12,7 +12,7 @@ description: >-
   (d) Geoid lookup, egm84, egm96, egm2008 geoids supported;
   (e) Geometric transformations, geocentric, local cartesian;
   (f) Great ellipse, direct, inverse, area calculations;
-  (g) A class to solve problems on a triaxial ellipsoid.
+  (g) Geodesics and coordinate conversions on a triaxial ellipsoid.
 icon: "https://avatars.githubusercontent.com/u/86781918"
 links:
 - icon: "far fa-copyright"
@@ -34,6 +34,41 @@ maintainers:
 - name: "Charles Karney"
   contact: "karney@alum.mit.edu"
 versions:
+- id: "2.4"
+  date: "2025-08-21"
+  sha256: "d35910648f68a918e45c5b0566bfab820df40bed300ada534eeff57761f07952"
+  url: "https://sourceforge.net/projects/geographiclib/files/distrib-Octave/geographiclib-octave-2.4.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+- id: "2.3.3"
+  date: "2025-02-17"
+  sha256: "17e26be19b4aa528539a932043e6eb72e0a72e138478e7f8295bef2dda5db3b6"
+  url: "https://sourceforge.net/projects/geographiclib/files/distrib-Octave/geographiclib-octave-2.3.3.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+- id: "2.3.2"
+  date: "2024-10-05"
+  sha256: "1947ec2b171dccd86e58071653355675ea5c6cd35002a1939ef48e1c3bdda800"
+  url: "https://sourceforge.net/projects/geographiclib/files/distrib-Octave/geographiclib-octave-2.3.2.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+- id: "2.3.1"
+  date: "2024-08-27"
+  sha256: "6c8f01ae4e93a6959c83e4419b0d5b6d6099d4f46f64b7db51b4cd669a9d0b83"
+  url: "https://sourceforge.net/projects/geographiclib/files/distrib-Octave/geographiclib-octave-2.3.1.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+- id: "2.3"
+  date: "2024-07-09"
+  sha256: "af72f05911c0f98076058a6df69734087ecc95f54acd9cbf1e8a1e9cd20d1342"
+  url: "https://sourceforge.net/projects/geographiclib/files/distrib-Octave/geographiclib-octave-2.3.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "2.2"
   date: "2024-04-09"
   sha256: "807d7eeeb184b3690e86fa4cd5cc956c45a609009458931adb8af1c11a278d02"

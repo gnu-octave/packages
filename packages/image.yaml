@@ -21,7 +21,7 @@ links:
   url: "https://octave.sourceforge.io/image/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(image)"
+  url: "https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(image)"
 maintainers:
 - name: "Carnë Draug"
   contact: "carandraug@octave.org"
@@ -30,6 +30,34 @@ maintainers:
 - name: "Avinoam Kalma"
   contact:
 versions:
+- id: "2.18.1"
+  date: "2025-09-05"
+  sha256: "d4eed0579782c2efaa0818de2f20f13b276eb3d4b4b3d63347c7317d84e29531"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/image-2.18.1.tar.gz"
+  depends:
+  - "octave (>= 7.2.0)"
+  - "pkg"
+- id: "2.18.0"
+  date: "2025-08-19"
+  sha256: "d87af2b098a03b3fe78d05fe623cff49765f87251c0090769e214bbbc6569a00"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/image-2.18.0.tar.gz"
+  depends:
+  - "octave (>= 7.2.0)"
+  - "pkg"
+- id: "2.16.1"
+  date: "2025-05-04"
+  sha256: "34a84f755261f6c8d882d08b07567464ea25dc1515072ef6886f2b26ebf6f0a7"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/image-2.16.1.tar.gz"
+  depends:
+  - "octave (>= 7.1.0)"
+  - "pkg"
+- id: "2.16.0"
+  date: "2025-03-03"
+  sha256: "9bb26cca58eb1fbedfb3f84e3d2e7e1eeb5e16d7ebe3235b7c107d94f58d1417"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/image-2.16.0.tar.gz"
+  depends:
+  - "octave (>= 7.1.0)"
+  - "pkg"
 - id: "2.14.0"
   date: "2022-03-23"
   sha256: "7515ea211a8cb8ef5d9d3bab85a36e9df5475e8b05a919a078e0d52746077133"

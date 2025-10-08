@@ -22,7 +22,7 @@ links:
   url: "https://octave.sourceforge.io/optim/package_doc/"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(optim)"
+  url: "https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(optim)"
 maintainers:
 - name: "Olaf Till"
   contact: "i7tiol@t-online.de"

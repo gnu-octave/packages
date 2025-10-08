@@ -24,6 +24,20 @@ maintainers:
 - name: "L. Markowsky"
   contact: "lmarkowsky@gmail.com"
 versions:
+- id: "0.6.2"
+  date: "2025-05-15"
+  sha256: "804aa3501105d6a6391307ace4e4d1f4dd91d0a248cb53ce3b2365377e900132"
+  url: "https://github.com/lmarkowsky/fuzzy-logic-toolkit/archive/refs/tags/0.6.2.tar.gz"
+  depends:
+  - "octave (>= 3.2.4)"
+  - "pkg"
+- id: "0.6.1"
+  date: "2024-08-31"
+  sha256: "24dab9cec77bb63cc94e7c2baa57528eee5c2df5285d77c07a33f1940307e959"
+  url: "https://github.com/lmarkowsky/fuzzy-logic-toolkit/archive/refs/tags/0.6.1.tar.gz"
+  depends:
+  - "octave (>= 3.2.4)"
+  - "pkg"
 - id: "0.6.0"
   date: "2024-06-05"
   sha256: "47fbc34232d87aebdf6d66b9d3a3c445dceeb3a7f1b9f9625160539da12fa63e"

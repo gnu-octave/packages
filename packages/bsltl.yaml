@@ -23,7 +23,7 @@ links:
   url: "https://octave.sourceforge.io/bsltl/package_doc/"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(bsltl)"
+  url: "https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(bsltl)"
 maintainers:
 - name: "Roberto Alves Braga Junior"
   contact: "robertobraga@deg.ufla.br"

@@ -27,6 +27,14 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "0.12.2"
+  date: "2025-04-16"
+  sha256: "37c00bbc9a2615852afbc01250f865b1125f5c5532d88e772313d293feab52b8"
+  url: "https://github.com/gnu-octave/octave-arduino/releases/download/release-0.12.2/arduino-0.12.2.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "instrument-control (>= 0.5.0)"
+  - "pkg"
 - id: "0.12.1"
   date: "2024-01-04"
   sha256: "242a27fef5a3b260c719f3c9198e3412a612784999422d8809921ef4cc07e6f4"

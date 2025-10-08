@@ -45,6 +45,24 @@ maintainers:
 - name: "Dynare Team"
   contact: "dev@dynare.org"
 versions:
+- id: "6.4"
+  date: "2025-06-26"
+  sha256: ""
+  url: "https://www.dynare.org/download/"
+  depends:
+  - "octave (>= 7.1.0)"
+- id: "6.3"
+  date: "2025-02-20"
+  sha256: ""
+  url: "https://www.dynare.org/download/"
+  depends:
+  - "octave (>= 7.1.0)"
+- id: "6.2"
+  date: "2024-09-25"
+  sha256: ""
+  url: "https://www.dynare.org/download/"
+  depends:
+  - "octave (>= 7.1.0)"
 - id: "6.1"
   date: "2024-05-02"
   sha256: ""
