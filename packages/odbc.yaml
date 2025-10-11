@@ -24,6 +24,16 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "0.0.4"
+  date: "2025-10-11"
+  sha256: "098262a4103098772e49b3dc5b73218258d0e4fa3df9e5e24c658b1493fb2e02"
+  url: "https://github.com/gnu-octave/octave-odbc/releases/download/v0.0.4/octave-odbc-0.0.4.tar.gz"
+  depends:
+  - "octave (>= 6.0.0)"
+  - "pkg"
+  ubuntu2204:
+  - "unixodbc-dev"
+  - "libsqliteodbc"
 - id: "0.0.3"
   date: "2024-04-09"
   sha256: "3d2b4b5501208d9c91a7de8ad375d2e543724411f9af03a395c1f1564ef41b9e"
