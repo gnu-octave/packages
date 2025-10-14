@@ -117,12 +117,37 @@ layout: default
           {%- endfor -%}
         </li>
         {%- endif -%}
+        {%- if v.ubuntu2204w -%}
+        <li>
+          <b>Ubuntu 22.04 (Weak Dependency(ies)):</b>
+          {%- for dep in v.ubuntu2204w -%}
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span style="white-space: nowrap;">
+              <a href="https://packages.ubuntu.com/jammy/{{ dep }}">{{ dep }}</a>
+            </span>
+          {%- endfor -%}
+        </li>
+        {%- endif -%}
         {% for fedora_version in (1..100) %}
           {% assign fedora_key = 'fedora' | append: fedora_version | string %}
           {% if v[fedora_key] %} 
         <li>
           <b>Fedora {{ fedora_version }}:</b>
           {%- for dep in v[fedora_key] -%}
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span style="white-space: nowrap;">
+              <a href="https://repology.org/project/{{ dep }}/versions">{{ dep }}</a>
+            </span>
+          {%- endfor -%}
+        </li>
+          {% endif %}
+        {% endfor %}
+        {% for fedora_version in (1..100) %}
+          {% assign fedora_key_w = 'fedora' | append: fedora_version | string | append: 'w' | string %}
+          {% if v[fedora_key_w] %} 
+        <li>
+          <b>Fedora {{ fedora_version }} (Weak Dependency(ies)):</b>
+          {%- for dep in v[fedora_key_w] -%}
             &nbsp;&nbsp;&nbsp;&nbsp;
             <span style="white-space: nowrap;">
               <a href="https://repology.org/project/{{ dep }}/versions">{{ dep }}</a>

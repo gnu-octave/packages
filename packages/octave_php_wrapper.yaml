@@ -35,10 +35,10 @@ versions:
   depends:
   - "octave (>= 5.2.0)"
   - "pkg"
-  fedora41:
+  fedora41w:
   - "php"
   - "octave-cli"
-  fedora42:
+  fedora42w:
   - "php"
   - "octave-cli"
 ---

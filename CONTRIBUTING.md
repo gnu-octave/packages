@@ -286,6 +286,19 @@ versions:
     [Octave Docker image](https://github.com/gnu-octave/docker/blob/main/build-octave-7.docker).
     Try to keep the list as short as possible.
 
+  - `ubuntu2204w`: list of Ubuntu 22.04 (LTS) weak dependency strings.
+
+    There are two sequences about weak dependencies:
+    1. Some OS packages can be installed out of OS repo.
+    For example, users can either install "python3-pillow"
+    or run command "pip install pillow" to solve the same
+    dependency problem. If users don't install "python3-pillow",
+    yet they may get no dependency problem.
+
+    2. Some Octave packages don't depend on some OS packages
+    when calling functions within them, but depend on some
+    OS packages within other operations.
+
   - `fedora<xxx>`: list of Fedora xxx dependency strings.
 
     Add a `fedora40` list item for Fedora 40 and
@@ -296,3 +309,5 @@ versions:
     <https://repology.org/project/libzstd/versions>, for example.
 
     To install Fedora package dependencies on your local machine, run `dnf install`-command.
+
+  - `fedora<xxx>w`: list of Fedora xxx weak dependency strings.
