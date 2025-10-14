@@ -2,8 +2,18 @@
 layout: "package"
 permalink: "octave_mermaid_js/"
 description: >-
-  The octave_mermaid_js package provides functions for process
-  TOML.
+  The octave_mermaid_js package is used to generate,
+  show and save a diagram from a Mermaid graph description 
+  string.  
+  You can use octave_mermaid_js to create flowcharts, 
+  sequence diagrams, class diagrams, state diagrams, 
+  ER diagram, user journey diagrams, Gantt charts, 
+  pie charts, quadrant charts, requirement diagrams, 
+  Git Graphs, C4 Diagrams, Mindmaps, timelines, ZenUML, 
+  Sankey diagrams, XY Charts, Block Diagrams, 
+  packet diagrams, Mermaid’s Kanban diagrams, 
+  architecture diagrams, radar diagrams and
+  treemap diagrams.
 icon: "https://avatars.githubusercontent.com/u/184102101?v=4"
 links:
 - icon: "far fa-copyright"
