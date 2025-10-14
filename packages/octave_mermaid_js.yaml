@@ -48,7 +48,7 @@ versions:
   - "python3-pillow"
   - "python3-matplotlib"
   - "python3-requests"
-  fedora41w:
+  fedora42w:
   - "python3-pillow"
   - "python3-matplotlib"
   - "python3-requests"
