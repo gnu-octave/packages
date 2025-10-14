@@ -44,11 +44,11 @@ versions:
   depends:
   - "octave (>= 8.0.0)"
   - "pkg"
-  fedora41:
+  fedora41w:
   - "python3-pillow"
   - "python3-matplotlib"
   - "python3-requests"
-  fedora42:
+  fedora41w:
   - "python3-pillow"
   - "python3-matplotlib"
   - "python3-requests"
