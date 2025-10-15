@@ -288,6 +288,8 @@ versions:
 
   - `ubuntu2204w`: list of Ubuntu 22.04 (LTS) weak dependency strings.
 
+    [Term explanation of weak dependency](https://docs.fedoraproject.org/en-US/packaging-guidelines/WeakDependencies/#:~:text=Weak%20dependencies%20allow%20smaller%20minimal,or%20community%2Dmysql%20vs%20mariadb.)
+
     There are two sequences about weak dependencies:
     1. Some OS packages can be installed out of OS repo.
     For example, users can either install "python3-pillow"
