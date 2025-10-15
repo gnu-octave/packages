@@ -29,6 +29,7 @@ versions:
   sha256: "59593d29d8cec165f34b630771cbd319e11f0f9c87e3df6925b734a47f29715c"
   url: "https://github.com/pr0m1th3as/octave-llms/releases/download/release-0.1.0/octave-llms-0.1.0.tar.gz"
   depends:
-  - "octave (>= 8.1.0)"
+  - "octave (>= 9.1.0)"
+  - "datatypes (>= 1.1.0)"
   - "pkg"
 ---
