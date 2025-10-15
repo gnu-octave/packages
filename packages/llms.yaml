@@ -1,0 +1,35 @@
+---
+layout: "package"
+permalink: "llms/"
+description: >-
+  Large Language Models for GNU Octave.
+icon: "https://raw.githubusercontent.com/pr0m1th3as/octave-llms/main/doc/octave-llms.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/pr0m1th3as/octave-chartjs/blob/master/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/pr0m1th3as/octave-llms/releases"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/pr0m1th3as/octave-llms/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://pr0m1th3as.github.io/octave-llms/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/pr0m1th3as/octave-llms/issues"
+maintainers:
+- name: "Andreas Bertsatos"
+  contact: "abertsatos@biol.uoa.gr"
+versions:
+- id: "0.1.0"
+  date: "2025-10-15"
+  sha256: "59593d29d8cec165f34b630771cbd319e11f0f9c87e3df6925b734a47f29715c"
+  url: "https://github.com/pr0m1th3as/octave-llms/releases/download/release-0.1.0/octave-llms-0.1.0.tar.gz"
+  depends:
+  - "octave (>= 9.1.0)"
+  - "datatypes (>= 1.1.0)"
+  - "pkg"
+---
