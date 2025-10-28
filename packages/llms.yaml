@@ -24,6 +24,14 @@ maintainers:
 - name: "Andreas Bertsatos"
   contact: "abertsatos@biol.uoa.gr"
 versions:
+- id: "0.1.2"
+  date: "2025-10-28"
+  sha256: "2822c72babfcb47013d4275e536bed6f60c3cd4bfe0956f7e22d8d67e10acfe4"
+  url: "https://github.com/pr0m1th3as/octave-llms/releases/download/release-0.1.2/octave-llms-0.1.2.tar.gz"
+  depends:
+  - "octave (>= 9.1.0)"
+  - "datatypes (>= 1.1.0)"
+  - "pkg"
 - id: "0.1.1"
   date: "2025-10-21"
   sha256: "a3e7f04159ebce1189360852d6800a51bae921c2ce4a36e48848fd4b5fc711f1"
