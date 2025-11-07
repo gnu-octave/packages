@@ -34,6 +34,13 @@ maintainers:
 - name: "Charles Karney"
   contact: "karney@alum.mit.edu"
 versions:
+- id: "2.5"
+  date: "2025-11-07"
+  sha256: "9b9c6c74a42c89e6d183b7e227216f2f78ae0f4086d2a168590ba43bbdf6e6e2"
+  url: "https://sourceforge.net/projects/geographiclib/files/distrib-Octave/geographiclib-octave-2.5.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "2.4"
   date: "2025-08-21"
   sha256: "d35910648f68a918e45c5b0566bfab820df40bed300ada534eeff57761f07952"
