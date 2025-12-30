@@ -25,6 +25,13 @@ maintainers:
 - name: "Matthias W. Klein"
   contact: "mattwklein AT users.sf.net"
 versions:
+- id: "1.2.4"
+  date: "2025-12-05"
+  sha256: "ca66a1b737425f80f7ac13138549a158e636dfcc9c90fd1b98d134c4584ad0da"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/ocl-1.2.4.tar.gz"
+  depends:
+  - "octave (>= 4.2.0)"
+  - "pkg"
 - id: "1.2.3"
   date: "2024-12-16"
   sha256: "83f1cb134aa39f3624ab7b773a1c450692f6e742566d68c72413f44982523995"
