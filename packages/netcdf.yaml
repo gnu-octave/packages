@@ -27,7 +27,7 @@ maintainers:
   contact: "john.donoghue@ieee.org"
 versions:
 - id: "1.0.19"
-  date: "2025-01-03"
+  date: "2026-01-03"
   sha256: "799717e30630caacaf3a079026a5d808022423a543fd2d20e00daa8e341c0acc"
   url: "https://github.com/gnu-octave/octave-netcdf/releases/download/v1.0.19/netcdf-1.0.19.tar.gz"
   depends:
