@@ -32,6 +32,13 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "0.10.0"
+  date: "2026-01-17"
+  sha256: "04715ef60e9f0cad86a82ebe7a623d198a6d2071c0e67d9d921935b1d1f9e854"
+  url: "https://github.com/gnu-octave/instrument-control/releases/download/release-0.10.0/instrument-control-0.10.0.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "0.9.5"
   date: "2025-04-15"
   sha256: "426d5a17e75b870ac351287c56224709921cd03899d63235d7b4e74a49eacd7d"
