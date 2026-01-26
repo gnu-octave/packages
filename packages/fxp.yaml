@@ -1,10 +1,11 @@
+---
 layout: "package"
 permalink: "fxp/"
 description: >-
   Lightweight fixed-point numeric type for GNU Octave.
   Intended for fixed-point modeling, algorithm validation, and education.
-  Supports signed/unsigned formats, quantization, overflow handling, and basic
-  arithmetic.
+  Supports signed and unsigned formats, quantization, overflow handling,
+  and basic arithmetic operations.
 
 icon: >-
   https://raw.githubusercontent.com/ahmedshahein/pkg-fxp/main/doc/fxp_icon.png
@@ -34,6 +35,13 @@ versions:
 - id: "1.0.0"
   date: "2026-01-26"
   sha256: "24cde000249b987bf325b16f73f5c54dc69eb8dd07a19528565efb8d912ceac0"
-  url: "https://github.com/ahmedshahein/pkg-fxp/archive/refs/tags/1.0.0.tar.gz"
+  url: >-
+    https://github.com/ahmedshahein/pkg-fxp/archive/refs/tags/1.0.0.tar.gz
+  depends:
+  - "octave (>= 5.2.0)"
+
+- id: "dev"
+  url: >-
+    https://github.com/ahmedshahein/pkg-fxp/archive/refs/heads/main.zip
   depends:
   - "octave (>= 5.2.0)"
