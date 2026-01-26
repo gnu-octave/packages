@@ -41,7 +41,7 @@ versions:
   - "octave (>= 5.2.0)"
 
 - id: "dev"
-  date:
+  date: "2026-01-26"
   sha256:
   url: >-
     https://github.com/ahmedshahein/pkg-fxp/archive/refs/heads/main.zip
