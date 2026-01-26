@@ -1,4 +1,3 @@
----
 layout: "package"
 permalink: "fxp/"
 description: >-
@@ -38,9 +37,3 @@ versions:
   url: "https://github.com/ahmedshahein/pkg-fxp/archive/refs/tags/1.0.0.tar.gz"
   depends:
   - "octave (>= 5.2.0)"
-
-- id: "dev"
-  url: "https://github.com/ahmedshahein/pkg-fxp/archive/refs/heads/main.zip"
-  depends:
-  - "octave (>= 5.2.0)"
----
