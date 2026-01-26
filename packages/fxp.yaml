@@ -47,3 +47,4 @@ versions:
     https://github.com/ahmedshahein/pkg-fxp/archive/refs/heads/main.zip
   depends:
   - "octave (>= 5.2.0)"
+---
