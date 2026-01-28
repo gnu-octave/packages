@@ -39,7 +39,7 @@ versions:
     https://github.com/ahmedshahein/pkg-fxp/archive/refs/tags/1.0.1.tar.gz
   depends:
   - "octave (>= 5.2.0"
-    "pkg"
+  - "pkg"
 - id: "1.0.0"
   date: "2026-01-26"
   sha256: "24cde000249b987bf325b16f73f5c54dc69eb8dd07a19528565efb8d912ceac0"
@@ -47,7 +47,7 @@ versions:
     https://github.com/ahmedshahein/pkg-fxp/archive/refs/tags/1.0.0.tar.gz
   depends:
   - "octave (>= 5.2.0)"
-    "pkg"
+  - "pkg"
 
 - id: "dev"
   date: "2026-01-26"
@@ -56,5 +56,5 @@ versions:
     https://github.com/ahmedshahein/pkg-fxp/archive/refs/heads/main.zip
   depends:
   - "octave (>= 5.2.0)"
-    "pkg"
+  - "pkg"
 ---
