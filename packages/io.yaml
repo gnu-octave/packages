@@ -25,7 +25,7 @@ maintainers:
   contact: "prnienhuis@users.sf.net"
 versions:
 - id: "2.7.1"
-  date: "2025-05-01"
+  date: "2026-02-05"
   sha256: "1b8f60019fe5ce2af56301003e3046463349dd533123e8979ec4b4c9ebfc7f6b"
   url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/io-2.7.1.tar.gz"
   depends:
