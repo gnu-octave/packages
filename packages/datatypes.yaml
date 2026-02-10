@@ -24,6 +24,27 @@ maintainers:
 - name: "Andreas Bertsatos"
   contact: "abertsatos@biol.uoa.gr"
 versions:
+- id: "1.1.8"
+  date: "2026-02-10"
+  sha256: "83258f0a587f014f2fb7ddb477cdb4fcc25cb92bf6ebdf8c046f64178a0ed4d4"
+  url: "https://github.com/pr0m1th3as/datatypes/releases/download/release-1.1.8/datatypes-1.1.8.tar.gz"
+  depends:
+  - "octave (>= 9.1.0)"
+  - "pkg"
+- id: "1.1.7"
+  date: "2026-02-05"
+  sha256: "2320c964c6f640bc07f553ba12acab602fd20c3ab805b746c419be80eeb53e0b"
+  url: "https://github.com/pr0m1th3as/datatypes/releases/download/release-1.1.7/datatypes-1.1.7.tar.gz"
+  depends:
+  - "octave (>= 9.1.0)"
+  - "pkg"
+- id: "1.1.6"
+  date: "2026-01-17"
+  sha256: "cdd5679b7246d08d3d1e1ff4305c2e87d93b9dfa1ab3a6aebef726b5153620ff"
+  url: "https://github.com/pr0m1th3as/datatypes/releases/download/release-1.1.6/datatypes-1.1.6.tar.gz"
+  depends:
+  - "octave (>= 9.1.0)"
+  - "pkg"
 - id: "1.1.5"
   date: "2025-12-27"
   sha256: "d684b9cab257b6bdaa511525bad2044e7addb0902863183ca9609a74a51cb736"

@@ -4,32 +4,41 @@ permalink: "dicom/"
 description: >-
   File io for medical images and other data using Grassroots DICOM (GDCM)
   library.
-icon: "https://octave.sourceforge.io/pkg_icon/dicom.png"
+icon: "https://gnu-octave.github.io/octave-dicom//assets/pkg.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
-  url: "https://sourceforge.net/p/octave/dicom/ci/default/tree/COPYING"
+  url: "https://github.com/gnu-octave/octave-dicom/blob/main/COPYING"
 - icon: "fas fa-rss"
   label: "news"
-  url: "https://sourceforge.net/p/octave/dicom/ci/default/tree/NEWS"
+  url: "https://gnu-octave.github.io/octave-dicom/news/"
 - icon: "fas fa-code-branch"
   label: "repository"
-  url: "https://sourceforge.net/p/octave/dicom/ci/default/tree/"
+  url: "https://github.com/gnu-octave/octave-dicom/"
 - icon: "fas fa-th-list"
   label: "function reference"
-  url: "https://octave.sourceforge.io/dicom/overview.html"
+  url: "https://gnu-octave.github.io/octave-dicom/functions/"
 - icon: "fas fa-book"
   label: "package documentation"
-  url: "https://octave.sourceforge.io/dicom/package_doc/"
+  url: "https://gnu-octave.github.io/octave-dicom/manual/"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://savannah.gnu.org/bugs/?group=octave"
+  url: "https://github.com/gnu-octave/octave-dicom/issues"
 maintainers:
 - name: "Andy Buckle"
   contact:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "0.7.1"
+  date: "2026-01-06"
+  sha256: "8233ee41002ae427e5a8f36498fb8628a99834f314d70cedc56cc9f6686e0282"
+  url: "https://github.com/gnu-octave/octave-dicom/releases/download/release-0.7.1/dicom-0.7.1.tar.gz"
+  depends:
+  - "octave (>= 3.8.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libgdcm-dev"
 - id: "0.6.1"
   date: "2024-07-24"
   sha256: "7ab519b9d3a49f29a01a9aea52109a4af37f5a5996675aa01fc1c362b34e8362"
