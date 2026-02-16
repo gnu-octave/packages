@@ -25,6 +25,15 @@ maintainers:
 - name: "Andrew Janke"
   contact: "andrew@apjanke.net"
 versions:
+- id: "0.4.6"
+  date: "2026-02-16"
+  sha256: "ecac032bbc1d61e61e657e87437d4f09aa4fd24a2a05f6bb3b7bdbf6db77da82"
+  url: "https://github.com/apjanke/octave-tablicious/releases/download/v0.4.6/tablicious-0.4.6.tar.gz"
+  depends:
+  - "octave (>= 7.0.0)"
+  - "pkg"
+  ubuntu2204:
+  - "tzdata"
 - id: "0.4.5"
   date: "2025-07-03"
   sha256: "60b63a639b52c741c818dccb91d251432680d237c986c84dbdc89f4c54a92f0f"
