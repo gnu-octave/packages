@@ -2,14 +2,20 @@
 layout: "package"
 permalink: "interval/"
 description: >-
-   The interval package provides tools for performing interval arithmetic with real numbers.
-   Instead of working with single values, it lets you evaluate functions over entire ranges of inputs.
-   Because interval arithmetic tracks rounding and approximation errors automatically, all computed results are guaranteed to be correct within their bounds.
-   
-   This approach is useful for handling uncertainties, estimating numerical errors, and ensuring results you can rely on.
-   It is also widely applied in areas such as computer‑assisted proofs, constraint programming, and verified computing.
-   
-   The package represents interval endpoints using binary64 floating‑point numbers and follows the IEEE Std 1788‑2015 standard for interval arithmetic.
+   The interval package provides tools for performing interval arithmetic
+   with real numbers.  Instead of working with single values,
+   it lets you evaluate functions over entire ranges of inputs.
+   Because interval arithmetic tracks rounding and approximation errors
+   automatically, all computed results are guaranteed to be correct within
+   their bounds.
+
+   This approach is useful for handling uncertainties, estimating numerical
+   errors, and ensuring results you can rely on.  It is also widely applied in
+   areas such as computer‑assisted proofs, constraint programming, and verified
+   computing.
+
+   The package represents interval endpoints using binary64 floating‑point
+   numbers and follows the IEEE Std 1788‑2015 standard for interval arithmetic.
 icon: "https://octave.sourceforge.io/pkg_icon/interval.png"
 links:
 - icon: "far fa-copyright"
