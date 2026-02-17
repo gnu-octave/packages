@@ -2,17 +2,22 @@
 layout: "package"
 permalink: "interval/"
 description: >-
-  Real-valued interval arithmetic. Handle uncertainties, estimate arithmetic
-  errors, computer-assisted proofs, constraint programming, and verified
-  computing.
+   The interval package provides tools for performing interval arithmetic with real numbers.
+   Instead of working with single values, it lets you evaluate functions over entire ranges of inputs.
+   Because interval arithmetic tracks rounding and approximation errors automatically, all computed results are guaranteed to be correct within their bounds.
+   
+   This approach is useful for handling uncertainties, estimating numerical errors, and ensuring results you can rely on.
+   It is also widely applied in areas such as computer‑assisted proofs, constraint programming, and verified computing.
+   
+   The package represents interval endpoints using binary64 floating‑point numbers and follows the IEEE Std 1788‑2015 standard for interval arithmetic.
 icon: "https://octave.sourceforge.io/pkg_icon/interval.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
-  url: "https://sourceforge.net/p/octave/interval/ci/default/tree/doc/COPYING.texinfo"
+  url: "https://octave.sourceforge.io/interval/COPYING.html"
 - icon: "fas fa-rss"
   label: "news"
-  url: "https://sourceforge.net/p/octave/interval/ci/default/tree/doc/NEWS.texinfo"
+  url: "https://octave.sourceforge.io/interval/NEWS.html"
 - icon: "fas fa-code-branch"
   label: "repository"
   url: "https://sourceforge.net/p/octave/interval/ci/default/tree/"
@@ -29,6 +34,15 @@ maintainers:
 - name: "Oliver Heimlich"
   contact: "oheim@posteo.de"
 versions:
+- id: "3.2.2"
+  date: "2026-02-16"
+  sha256: "c0131b7add14bdeaa907c168ebcc987b6440f67cb56069849b24bcad2c0ad176"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/interval-3.2.2.tar.gz"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libmpfr-dev"
 - id: "3.2.1"
   date: "2022-01-28"
   sha256: "38e526427375713229ab3d86a5fe3f5a08550747d8420541706fdea9093fdce8"
