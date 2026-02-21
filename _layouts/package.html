@@ -204,6 +204,23 @@ layout: default
         </ul>
       </div>
     </div>
+
+    {%- if page.functions -%}
+    <div class="mt-4">
+      <h4><i class="fas fa-list"></i> Function Reference</h4>
+      {%- for category in page.functions -%}
+      <h6 class="mt-3"><b>{{ category[0] }}</b></h6>
+      <div class="row">
+        {%- for func in category[1] -%}
+        <div class="col-sm-4 col-md-3">
+          <code>{{ func }}</code>
+        </div>
+        {%- endfor -%}
+      </div>
+      {%- endfor -%}
+    </div>
+    {%- endif -%}
+
   </div>
 </div>
 
