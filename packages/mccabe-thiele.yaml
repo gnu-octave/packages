@@ -59,4 +59,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
+functions:
+  McCabe-Thiele:
+  - 'stages refmin qR2S'
 ---

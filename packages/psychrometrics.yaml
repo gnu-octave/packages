@@ -67,4 +67,9 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
+functions:
+  Psychrometrics:
+  - 'psychro adiabSat'
+  - 'humidity satPress'
+  - 'enthalpy volume'
 ---

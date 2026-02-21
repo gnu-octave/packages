@@ -102,4 +102,20 @@ versions:
   - "pkg"
   ubuntu2204:
   - "libgdcm-dev"
+functions:
+  Dicom file I/O for medical images and other data:
+  - 'dicomanon'
+  - 'dicomdict'
+  - 'dicomdisp'
+  - 'dicomfind'
+  - 'dicominfo'
+  - 'dicomlookup'
+  - 'dicomread'
+  - 'dicomuid'
+  - 'dicomupdate'
+  - 'dicomwrite'
+  - 'isdicom'
+  - 'dicomCollection'
+  - 'images.dicom.decodeUID'
+  - 'images.dicom.parseDICOMDIR'
 ---

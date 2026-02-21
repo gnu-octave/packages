@@ -64,4 +64,11 @@ versions:
   - "octave (>= 9.1.0)"
   - "datatypes (>= 1.1.0)"
   - "pkg"
+functions:
+  llms:
+  - 'ollama'
+  - 'toolFunction'
+  - 'toolRegistry'
+  - 'fig2base64'
+  - '__ollama__'
 ---

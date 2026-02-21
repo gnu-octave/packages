@@ -81,4 +81,13 @@ versions:
   - "pkg"
   ubuntu2204:
   - "libpaho-mqtt-dev"
+functions:
+  Octave MQTT Toolkit:
+  - 'mqttclient'
+  - '@octave_mqtt/flush'
+  - '@octave_mqtt/peek'
+  - '@octave_mqtt/read'
+  - '@octave_mqtt/subscribe'
+  - '@octave_mqtt/unsubscribe'
+  - '@octave_mqtt/write'
 ---

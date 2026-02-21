@@ -43,4 +43,12 @@ versions:
   - "libzstd"
   - "libzstd-devel"
   - "libzstd-static"
+functions:
+  Octave Use ZSTD to Compress and Decompress:
+  - 'zstd_compress'
+  - 'tar_zstd_compress'
+  - 'zstd_decompress'
+  - 'tar_zstd_decompress'
+  - 'zstd_compress_string'
+  - 'zstd_decompress_string'
 ---

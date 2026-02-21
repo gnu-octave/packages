@@ -52,4 +52,9 @@ versions:
   - "python3-pillow"
   - "python3-matplotlib"
   - "python3-requests"
+functions:
+  A wrapper for Mermaid.js:
+  - 'mermaid_js_examples'
+  - 'mermaid_js_imshow'
+  - 'mermaid_js_save'
 ---

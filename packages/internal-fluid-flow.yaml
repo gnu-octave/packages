@@ -115,4 +115,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
+functions:
+  Internal Fluid Flow:
+  - 'f2Re Re2f h2fRe'
 ---

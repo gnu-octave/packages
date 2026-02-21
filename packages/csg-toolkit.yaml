@@ -117,4 +117,32 @@ versions:
   - "matgeom (>= 1.2.2)"
   - "io (>= 2.6.3)"
   - "pkg"
+functions:
+  CSG Toolkit:
+  - 'longbone_Analysis'
+  - 'longbone_AnatomicalNormals'
+  - 'longbone_AnatomicalPosition'
+  - 'longbone_CustomGeometry'
+  - 'longbone_FragmentGeometry'
+  - 'longbone_Geometry'
+  - 'longbone_Measurements'
+  - 'longbone_Registration'
+  - 'simple_polygon3D'
+  - 'longbone_maxDistance'
+  - 'longbone_Scaling'
+  - 'meshArea'
+  - 'meshBarycenter'
+  - 'meshRotation'
+  - 'meshSection'
+  - 'read_MeshlabPoints'
+  - 'write_MeshlabPoints'
+  - 'readObj'
+  - 'renameObj'
+  - 'writeObj'
+  - 'LongBone'
+  - 'longbone_Pair'
+  - 'longbone_Sex'
+  - 'inspect_CSG'
+  - 'plot_CrossSections'
+  - 'visualize_CrossSections'
 ---

@@ -409,4 +409,28 @@ versions:
   depends:
   - "octave (>= 3.6.0)"
   - "pkg"
+functions:
+  Statistical analysis using resampling methods:
+  - 'bootstrp'
+  - 'bootci'
+  - 'bootridge'
+  - 'bootknife'
+  - 'bootclust'
+  - 'bootwild'
+  - 'bootbayes'
+  - 'randtest'
+  - 'randtest1'
+  - 'randtest2'
+  - 'bootlm'
+  - 'boot1way'
+  - 'bootmode'
+  - 'boot'
+  - 'bootcdf'
+  - 'bootint'
+  - 'credint'
+  - 'deffcalc'
+  - 'sampszcalc'
+  - 'smoothmedian'
+  - 'smoothmad'
+  - 'cor'
 ---

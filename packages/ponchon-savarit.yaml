@@ -59,4 +59,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
+functions:
+  Ponchón-Savarit:
+  - 'stages refmin qR2S qS2R RS2q'
 ---

@@ -32,4 +32,9 @@ versions:
   - "octave (>= 3.2.0)"
   - "sockets (>= 1.2.0)"
   - "pkg"
+functions:
+  Websockets Package.:
+  - 'ws_connect'
+  - 'ws_receive'
+  - 'ws_send'
 ---

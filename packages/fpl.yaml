@@ -34,4 +34,14 @@ versions:
   depends:
   - "octave (>= 3.2.3)"
   - "pkg"
+functions:
+  FEM Plotting:
+  - 'fpl_vtk_write_field.m'
+  - 'fpl_vtk_b64_write_field.m'
+  - 'fpl_vtk_raw_write_field.m'
+  - 'fpl_vtk_assemble_series.m'
+  - 'savevtk'
+  - 'savevtkvector'
+  - 'pdesurf'
+  - 'pdemesh'
 ---

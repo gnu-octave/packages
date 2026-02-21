@@ -37,4 +37,17 @@ versions:
   depends:
   - "octave (>= 3.0.0)"
   - "pkg"
+functions:
+  Bioinformatics package:
+  - 'fastaread'
+  - 'fastqread'
+  - 'getpdb'
+  - 'pdbread'
+  - 'graphtraverse'
+  - 'aminolookup'
+  - 'cleave'
+  - 'seqreverse'
+  - 'aa2int'
+  - 'int2aa'
+  - 'test_graphtraverse'
 ---

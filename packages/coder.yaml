@@ -82,4 +82,7 @@ versions:
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
+functions:
+  Octave Coder.:
+  - 'octave2oct'
 ---

@@ -38,4 +38,10 @@ versions:
   - "libtoml11-devel"
   fedora42:
   - "libtoml11-devel"
+functions:
+  Octave Use toml11 to Process TOML:
+  - 'toml_format'
+  - 'toml_find_by_idx'
+  - 'toml_find_by_key'
+  - 'toml_isa'
 ---

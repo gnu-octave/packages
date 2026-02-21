@@ -74,4 +74,25 @@ versions:
   ubuntu2204:
   - "unixodbc-dev"
   - "libsqliteodbc"
+functions:
+  Octave ODBC Toolkit:
+  - 'database'
+  - 'odbc'
+  - 'connection'
+  - 'listDataSources'
+  - 'configureODBCDataSource'
+  - 'connection.sqlfind'
+  - 'connection.fetch'
+  - 'connection.sqlinnerjoin'
+  - 'connection.sqlouterjoin'
+  - 'connection.sqlread'
+  - 'connection.select'
+  - 'connection.executeSQLScript'
+  - 'connection.sqlwrite'
+  - 'connection.commit'
+  - 'connection.execute'
+  - 'connection.rollback'
+  - 'connection.sqlupdate'
+  - 'connection.update'
+  - 'rowfilter'
 ---

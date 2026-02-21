@@ -90,4 +90,13 @@ versions:
   - "octave (>= 7.2.0)"
   - "fileio"
   - "pkg"
+functions:
+  octave-pool:
+  - 'batch'
+  - 'poolClass'
+  - 'jobClass'
+  - 'taskClass'
+  - 'workerClass'
+  - 'lookFor'
+  - 'datetime'
 ---

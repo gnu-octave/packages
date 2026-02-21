@@ -31,4 +31,26 @@ versions:
   depends:
   - "octave (>= 8.1.0)"
   - "pkg"
+functions:
+  chartjs:
+  - 'BarData'
+  - 'BubbleData'
+  - 'DoughnutData'
+  - 'LineData'
+  - 'PieData'
+  - 'PolarAreaData'
+  - 'RadarData'
+  - 'ScatterData'
+  - 'BarChart'
+  - 'BubbleChart'
+  - 'DoughnutChart'
+  - 'LineChart'
+  - 'PieChart'
+  - 'PolarAreaChart'
+  - 'RadarChart'
+  - 'ScatterChart'
+  - 'Color'
+  - 'Fill'
+  - 'Html'
+  - 'WebServer'
 ---

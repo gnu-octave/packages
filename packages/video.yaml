@@ -90,4 +90,8 @@ versions:
   - "libavcodec-dev"
   - "libavformat-dev"
   - "libswscale-dev"
+functions:
+  Video functions:
+  - 'VideoReader'
+  - 'VideoWriter'
 ---

@@ -38,4 +38,14 @@ versions:
   depends:
   - "octave (>= 6.0.0)"
   - "pkg"
+functions:
+  MATLAB compatible HDF5 file I/O:
+  - 'h5create'
+  - 'h5write'
+  - 'h5writeatt'
+  - 'h5read'
+  - 'h5readatt'
+  - 'h5load'
+  - 'h5info'
+  - 'h5disp'
 ---

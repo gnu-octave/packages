@@ -206,4 +206,13 @@ versions:
   depends:
   - "octave (>= 6.1.0)"
   - "pkg"
+functions:
+  Octave Package Documentation:
+  - 'build_DEMOS'
+  - 'classdef_texi2html'
+  - 'find_DEMOS'
+  - 'find_GHurls'
+  - 'function_texi2html'
+  - 'list_packages'
+  - 'package_texi2html'
 ---

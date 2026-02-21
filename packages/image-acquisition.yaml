@@ -64,4 +64,14 @@ versions:
   ubuntu2204:
   - "libv4l-dev"
   - "libfltk1.3-dev"
+functions:
+  Image acquisition:
+  - 'imaqhwinfo'
+  - '@videoinput/videoinput'
+  - '@videoinput/get'
+  - '@videoinput/set'
+  - '@videoinput/start'
+  - '@videoinput/preview'
+  - '@videoinput/getsnapshot'
+  - '@videoinput/stop'
 ---

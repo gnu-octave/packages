@@ -36,4 +36,34 @@ versions:
   - "pkg"
   ubuntu2204:
   - "libgtest-dev"
+functions:
+  MBDyn/Octave utility package:
+  - 'shell'
+  - 'spawn'
+  - 'spawn_wait'
+  - 'run_parallel'
+  - 'run_parallel_func'
+  - 'run_parallel_helper'
+  - 'doe_param_dim_to_res_dim'
+  - 'doe_res_idx_to_param_idx'
+  - 'error_report'
+  - 'addpath_full'
+  - 'struct_print'
+  - 'struct_sizeof'
+  - 'figure_export_ascii'
+  - 'figure_hide'
+  - 'figure_list'
+  - 'figure_set_visible'
+  - 'figure_show'
+  - 'pdf_create'
+  - 'pdf_merge'
+  - 'printable_title'
+  - 'griddata_prepared'
+  - 'overwrite_struct'
+  - 'overwrite_struct_add_arg'
+  - 'assert_simple'
+  - 'exec_demo'
+  - 'exec_test'
+  - 'run_tests_parallel'
+  - 'run_tests_parallel_handler'
 ---

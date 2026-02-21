@@ -34,4 +34,8 @@ versions:
   depends:
   - "octave (>= 8.0.0)"
   - "pkg"
+functions:
+  Octave Use tar to Pack and Unpack:
+  - 'tar_pack'
+  - 'tar_unpack'
 ---

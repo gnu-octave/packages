@@ -58,4 +58,27 @@ versions:
   - "pkg"
   ubuntu2204:
   - "gmsh"
+functions:
+  MSH - MeSHing software package for octave:
+  - 'msh2m_structured_mesh'
+  - 'msh3m_structured_mesh'
+  - 'msh2m_mesh_along_spline'
+  - 'msh2m_gmsh'
+  - 'msh3m_gmsh'
+  - 'msh2m_join_structured_mesh'
+  - 'msh3m_join_structured_mesh'
+  - 'msh2m_geometrical_properties'
+  - 'msh3m_geometrical_properties'
+  - 'msh2m_topological_properties'
+  - 'msh2m_nodes_on_sides'
+  - 'msh3m_nodes_on_faces'
+  - 'msh2m_equalize_mesh'
+  - 'msh2m_displacement_smoothing'
+  - 'msh2m_jiggle_mesh'
+  - 'msh3e_surface_mesh'
+  - 'msh2m_submesh'
+  - 'msh3m_submesh'
+  - 'msh2p_mesh'
+  - 'msh2m_gmsh_write'
+  - 'msh3m_gmsh_write'
 ---

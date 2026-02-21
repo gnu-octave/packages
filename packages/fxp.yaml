@@ -57,4 +57,10 @@ versions:
   depends:
   - "octave (>= 5.2.0)"
   - "pkg"
+functions:
+  fxp:
+  - 'fxp'
+  - 'disp'
+  - 'plus minus uminus times mtimes rdivide ldivide power'
+  - 'eq ne lt le gt ge'
 ---

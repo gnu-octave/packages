@@ -60,4 +60,16 @@ versions:
   - "pkg"
   ubuntu2204:
   - "libsdl2-dev"
+functions:
+  Joystick Toolkit:
+  - 'vrjoysticklist'
+  - 'isvrjoystick'
+  - 'vrjoystick'
+  - '@octave_joystick/axis'
+  - '@octave_joystick/button'
+  - '@octave_joystick/caps'
+  - '@octave_joystick/close'
+  - '@octave_joystick/force'
+  - '@octave_joystick/pov'
+  - '@octave_joystick/read'
 ---

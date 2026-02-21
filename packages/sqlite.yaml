@@ -87,4 +87,21 @@ versions:
   - "pkg"
   ubuntu2204:
   - "libsqlite3-dev"
+functions:
+  Octave SQLITE Toolkit:
+  - 'sqlite'
+  - '@octave_sqlite/isopen'
+  - '@octave_sqlite/close'
+  - '@octave_sqlite/sqlfind'
+  - '@octave_sqlite/fetch'
+  - '@octave_sqlite/sqlread'
+  - '@octave_sqlite/sqlwrite'
+  - '@octave_sqlite/commit'
+  - '@octave_sqlite/execute'
+  - '@octave_sqlite/rollback'
+  - '@octave_sqlite/sqlupdate'
+  - 'dbtable'
+  - 'dbrowfilter'
+  - 'struct2dbtable'
+  - 'readdbtable'
 ---

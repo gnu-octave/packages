@@ -38,4 +38,7 @@ versions:
   depends:
   - "octave (>= 8.1.0)"
   - "pkg"
+functions:
+  TensorFlow interface for GNU Octave:
+  - 'tensorflow'
 ---

@@ -117,4 +117,32 @@ versions:
   - "pkg"
   ubuntu2204:
   - "librtmidi-dev"
+functions:
+  Audio and MIDI Toolbox:
+  - 'mididevice'
+  - 'mididevinfo'
+  - 'midiflush'
+  - 'midimsg'
+  - 'midireceive'
+  - 'midisend'
+  - '@octave_midi/hasdata'
+  - 'midiid'
+  - 'midicontrols'
+  - 'midisync'
+  - 'midiread'
+  - 'midicallback'
+  - 'midifileinfo'
+  - 'midifileread'
+  - 'midifilewrite'
+  - 'ismidifile'
+  - 'midimsgtype'
+  - 'audioOscillator'
+  - 'bark2hz'
+  - 'erb2hz'
+  - 'mel2hz'
+  - 'hz2bark'
+  - 'hz2erb'
+  - 'hz2mel'
+  - 'phon2sone'
+  - 'sone2phon'
 ---

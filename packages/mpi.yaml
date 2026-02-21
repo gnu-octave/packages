@@ -39,4 +39,28 @@ versions:
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
+functions:
+  Message Passing Interface:
+  - 'MPI_Barrier'
+  - 'MPI_Comm_Load'
+  - 'MPI_Comm_Test'
+  - 'MPI_Comm_rank'
+  - 'MPI_Comm_size'
+  - 'MPI_Finalize'
+  - 'MPI_Finalized'
+  - 'MPI_Get_processor_name'
+  - 'MPI_Init'
+  - 'MPI_Iprobe'
+  - 'MPI_Initialized'
+  - 'MPI_Probe'
+  - 'MPI_Recv'
+  - 'MPI_Send'
+  - 'Pi'
+  - 'hello2dimmat'
+  - 'hellocell'
+  - 'hellosparsemat'
+  - 'hellostruct'
+  - 'helloworld'
+  - 'mc_example'
+  - 'montecarlo'
 ---

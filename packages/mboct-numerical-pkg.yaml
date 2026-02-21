@@ -40,4 +40,16 @@ versions:
   - "libmetis-dev"
   - "libgtest-dev"
   - "libmumps-seq-dev"
+functions:
+  MBDyn/Octave numerical package:
+  - 'mumps'
+  - 'pastix'
+  - 'umfpack'
+  - 'pardiso'
+  - 'dsbgvx'
+  - 'dspev'
+  - 'eig_sym'
+  - 'ndmetis'
+  - 'skew'
+  - 'sp_sym_mtimes'
 ---
