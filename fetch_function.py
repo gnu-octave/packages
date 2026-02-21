@@ -1,12 +1,20 @@
 import os
 import requests
+import re
 
 PACKAGES_DIR = "packages"
 
 def get_repo_url(content):
-    for line in content.splitlines():
-        if "github.com" in line and "url:" in line and "issues" not in line and "blob" not in line:
-            return line.split("url:")[-1].strip()
+    # Find repository link specifically
+    lines = content.splitlines()
+    for i, line in enumerate(lines):
+        if 'label: repository' in line or 'label: "repository"' in line:
+            # URL is on the next line
+            for j in range(i+1, min(i+3, len(lines))):
+                if 'url:' in lines[j]:
+                    url = lines[j].split('url:')[-1].strip().strip('"')
+                    if 'github.com' in url:
+                        return url
     return None
 
 def fetch_index(repo_url):
@@ -57,7 +65,7 @@ def main():
             continue
 
         repo_url = get_repo_url(content)
-        if not repo_url or "github.com" not in repo_url:
+        if not repo_url:
             continue
 
         print(f"Processing {filename}...")
@@ -69,7 +77,6 @@ def main():
         categories = parse_index(index_content)
         print(f"  Found {sum(len(v) for v in categories.values())} functions")
 
-        # Insert functions before the last ---
         last_separator = content.rfind("---")
         new_content = content[:last_separator] + functions_to_yaml(categories) + content[last_separator:]
 
