@@ -1,170 +1,173 @@
 ---
-layout: package
-permalink: mboct-fem-pkg/
-description: This package belongs to a suite of packages which can be used for pre-
-  and postprocessing of flexible bodies in MBDyn (www.mbdyn.org) with GNU-Octave.
-  It contains a general purpose structural Finite Element toolkit for linear statics
-  and dynamics, which can be used to generate flexible body data for MBDyn's modal
-  element and also hydrodynamic lubricated journal and slider plain bearings.
-icon: https://avatars.githubusercontent.com/u/61900614?v=4
+layout: "package"
+permalink: "mboct-fem-pkg/"
+description: >-
+  This package belongs to a suite of packages which can be used
+  for pre- and postprocessing of flexible bodies in MBDyn (www.mbdyn.org)
+  with GNU-Octave. It contains a general purpose structural
+  Finite Element toolkit for linear statics and dynamics,
+  which can be used to generate flexible body data for
+  MBDyn's modal element and also hydrodynamic lubricated journal
+  and slider plain bearings.
+icon: "https://avatars.githubusercontent.com/u/61900614?v=4"
 links:
-- icon: far fa-copyright
-  label: GPL-3.0-or-later
-  url: https://github.com/octave-user/mboct-fem-pkg/blob/master/COPYING
-- icon: fas fa-rss
-  label: news
-  url: null
-- icon: fas fa-code-branch
-  label: repository
-  url: https://github.com/octave-user/mboct-fem-pkg
-- icon: fas fa-th-list
-  label: function reference
-  url: https://octave-user.github.io/mboct-fem-pkg/mboct-fem-pkg
-- icon: fas fa-bug
-  label: report a problem
-  url: https://github.com/octave-user/mboct-fem-pkg/issues
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/octave-user/mboct-fem-pkg/blob/master/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url:
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/octave-user/mboct-fem-pkg"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave-user.github.io/mboct-fem-pkg/mboct-fem-pkg"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/octave-user/mboct-fem-pkg/issues"
 maintainers:
-- name: Reinhard Resch
-  contact: octave-user@a1.net
+- name: "Reinhard Resch"
+  contact: "octave-user@a1.net"
 versions:
-- id: 0.2.2
-  date: '2025-08-24'
-  sha256: 5d52d55d265dccb1ad1c90b78f914c900214b1e45a5cc9d9be391da64fb7f896
-  url: https://github.com/octave-user/mboct-fem-pkg/releases/download/0.2.2/mboct-fem-pkg-0.2.2.tar.gz
+- id: "0.2.2"
+  date: "2025-08-24"
+  sha256: "5d52d55d265dccb1ad1c90b78f914c900214b1e45a5cc9d9be391da64fb7f896"
+  url: "https://github.com/octave-user/mboct-fem-pkg/releases/download/0.2.2/mboct-fem-pkg-0.2.2.tar.gz"
   depends:
-  - octave (>= 5.1.0)
-  - pkg
-  - mboct-octave-pkg (>=0.1.0)
-  - mboct-numerical-pkg (>=0.1.0)
-  - mboct-mbdyn-pkg (>=0.1.0)
+  - "octave (>= 5.1.0)"
+  - "pkg"
+  - "mboct-octave-pkg (>=0.1.0)"
+  - "mboct-numerical-pkg (>=0.1.0)"
+  - "mboct-mbdyn-pkg (>=0.1.0)"
   ubuntu2204:
-  - libmkl-full-dev
-  - libmetis-dev
-  - libgtest-dev
-  - libmumps-seq-dev
-  - libnlopt-dev
-- id: 0.2.1
-  date: '2025-08-24'
-  sha256: 68186a6b2f14eb836261dcb49a96f6f70766a5b97919c928b3b53a64667a1e16
-  url: https://github.com/octave-user/mboct-fem-pkg/releases/download/0.1.0/mboct-fem-pkg-0.2.1.tar.gz
+  - "libmkl-full-dev"
+  - "libmetis-dev"
+  - "libgtest-dev"
+  - "libmumps-seq-dev"
+  - "libnlopt-dev"
+- id: "0.2.1"
+  date: "2025-08-24"
+  sha256: "68186a6b2f14eb836261dcb49a96f6f70766a5b97919c928b3b53a64667a1e16"
+  url: "https://github.com/octave-user/mboct-fem-pkg/releases/download/0.1.0/mboct-fem-pkg-0.2.1.tar.gz"
   depends:
-  - octave (>= 5.1.0)
-  - pkg
-  - mboct-octave-pkg (>=0.1.0)
-  - mboct-numerical-pkg (>=0.1.0)
-  - mboct-mbdyn-pkg (>=0.1.0)
+  - "octave (>= 5.1.0)"
+  - "pkg"
+  - "mboct-octave-pkg (>=0.1.0)"
+  - "mboct-numerical-pkg (>=0.1.0)"
+  - "mboct-mbdyn-pkg (>=0.1.0)"
   ubuntu2204:
-  - libmkl-full-dev
-  - libmetis-dev
-  - libgtest-dev
-  - libmumps-seq-dev
-  - libnlopt-dev
+  - "libmkl-full-dev"
+  - "libmetis-dev"
+  - "libgtest-dev"
+  - "libmumps-seq-dev"
+  - "libnlopt-dev"
 functions:
   MBDyn/Octave Finite Element package for linear structural, thermal and acoustic analysis:
-  - fem_pre_geo_export
-  - fem_pre_load_case_create_empty
-  - fem_pre_load_case_merge
-  - fem_pre_mat_isotropic
-  - fem_pre_mat_rayleigh_damping
-  - fem_pre_mesh_constr_surf_to_node
-  - fem_pre_mesh_cube_create
-  - fem_pre_mesh_elem_angle
-  - fem_pre_mesh_elem_split
-  - fem_pre_mesh_elem_type
-  - fem_pre_mesh_elem_type_dim
-  - fem_pre_mesh_elem_type_index
-  - fem_pre_mesh_extrude_surf
-  - fem_pre_mesh_groups_create
-  - fem_pre_mesh_import
-  - fem_pre_mesh_merge
-  - fem_pre_mesh_nodal_pressure_load
-  - fem_pre_mesh_rbe2_from_surf
-  - fem_pre_mesh_rbe3_from_surf
-  - fem_pre_mesh_reorder
-  - fem_pre_mesh_solid_to_surf
-  - fem_pre_mesh_struct_create
-  - fem_pre_mesh_unstruct_create
-  - fem_post_cms_expand
-  - fem_post_cms_expand_body
-  - fem_post_cms_sol_export
-  - fem_post_cms_sol_import
-  - fem_post_cms_sol_merge
-  - fem_post_def_import
-  - fem_post_def_nodal
-  - fem_post_mesh_export
-  - fem_post_mesh_merge
-  - fem_post_sol_export
-  - fem_post_sol_external
-  - fem_post_sol_plot
-  - fem_post_sol_script
-  - fem_post_sol_step_export
-  - fem_post_stress_import
-  - FEM_CT_FIXED
-  - FEM_CT_SLIDING
-  - FEM_DO_ACOUSTICS
-  - FEM_DO_FLUID_STRUCT
-  - FEM_DO_STRUCTURAL
-  - FEM_DO_THERMAL
-  - FEM_MAT_DAMPING
-  - FEM_MAT_DAMPING_ACOUSTICS_IM
-  - FEM_MAT_DAMPING_ACOUSTICS_RE
-  - FEM_MAT_DAMPING_FLUID_STRUCT_IM
-  - FEM_MAT_DAMPING_FLUID_STRUCT_RE
-  - FEM_MAT_DAMPING_OMEGA
-  - FEM_MAT_DAMPING_SYM
-  - FEM_MAT_DAMPING_SYM_L
-  - FEM_MAT_HEAT_CAPACITY
-  - FEM_MAT_INERTIA_INV3
-  - FEM_MAT_INERTIA_INV4
-  - FEM_MAT_INERTIA_INV5
-  - FEM_MAT_INERTIA_INV8
-  - FEM_MAT_INERTIA_INV9
-  - FEM_MAT_INERTIA_J
-  - FEM_MAT_MASS
-  - FEM_MAT_MASS_ACOUSTICS_IM
-  - FEM_MAT_MASS_ACOUSTICS_RE
-  - FEM_MAT_MASS_FLUID_STRUCT_IM
-  - FEM_MAT_MASS_FLUID_STRUCT_RE
-  - FEM_MAT_MASS_LUMPED
-  - FEM_MAT_MASS_SYM
-  - FEM_MAT_MASS_SYM_L
-  - FEM_MAT_STIFFNESS
-  - FEM_MAT_STIFFNESS_ACOUSTICS_IM
-  - FEM_MAT_STIFFNESS_ACOUSTICS_RE
-  - FEM_MAT_STIFFNESS_FLUID_STRUCT_IM
-  - FEM_MAT_STIFFNESS_FLUID_STRUCT_RE
-  - FEM_MAT_STIFFNESS_OMEGA
-  - FEM_MAT_STIFFNESS_OMEGA_DOT
-  - FEM_MAT_STIFFNESS_SYM
-  - FEM_MAT_STIFFNESS_SYM_L
-  - FEM_MAT_STIFFNESS_TAU0
-  - FEM_MAT_THERMAL_COND
-  - FEM_SCA_ACOUSTIC_INTENSITY
-  - FEM_SCA_ACOUSTIC_INTENSITY_C
-  - FEM_SCA_STRESS_VMIS
-  - FEM_SCA_TOT_MASS
-  - FEM_VEC_COLL_HEAT_CAPACITY
-  - FEM_VEC_COLL_MASS
-  - FEM_VEC_COLL_MASS_ACOUSTICS
-  - FEM_VEC_COLL_MASS_FLUID_STRUCT
-  - FEM_VEC_COLL_STIFFNESS
-  - FEM_VEC_COLL_STIFF_ACOUSTICS
-  - FEM_VEC_COLL_STIFF_FLUID_STRUCT
-  - FEM_VEC_COLL_THERMAL_COND
-  - FEM_VEC_INERTIA_M1
-  - FEM_VEC_LOAD_ACOUSTICS
-  - FEM_VEC_LOAD_CONSISTENT
-  - FEM_VEC_LOAD_FLUID_STRUCT
-  - FEM_VEC_LOAD_LUMPED
-  - FEM_VEC_LOAD_THERMAL
-  - FEM_VEC_PARTICLE_VELOCITY
-  - FEM_VEC_PARTICLE_VELOCITY_C
-  - FEM_VEC_STRAIN_TOTAL
-  - FEM_VEC_STRESS_CAUCH
-  - FEM_VEC_SURFACE_NORMAL_VECTOR
-  - fem_ass_constraint_matrix
-  - fem_ass_dof_map
-  - fem_ass_matrix
+  - 'fem_pre_geo_export'
+  - 'fem_pre_load_case_create_empty'
+  - 'fem_pre_load_case_merge'
+  - 'fem_pre_mat_isotropic'
+  - 'fem_pre_mat_rayleigh_damping'
+  - 'fem_pre_mesh_constr_surf_to_node'
+  - 'fem_pre_mesh_cube_create'
+  - 'fem_pre_mesh_elem_angle'
+  - 'fem_pre_mesh_elem_split'
+  - 'fem_pre_mesh_elem_type'
+  - 'fem_pre_mesh_elem_type_dim'
+  - 'fem_pre_mesh_elem_type_index'
+  - 'fem_pre_mesh_extrude_surf'
+  - 'fem_pre_mesh_groups_create'
+  - 'fem_pre_mesh_import'
+  - 'fem_pre_mesh_merge'
+  - 'fem_pre_mesh_nodal_pressure_load'
+  - 'fem_pre_mesh_rbe2_from_surf'
+  - 'fem_pre_mesh_rbe3_from_surf'
+  - 'fem_pre_mesh_reorder'
+  - 'fem_pre_mesh_solid_to_surf'
+  - 'fem_pre_mesh_struct_create'
+  - 'fem_pre_mesh_unstruct_create'
+  - 'fem_post_cms_expand'
+  - 'fem_post_cms_expand_body'
+  - 'fem_post_cms_sol_export'
+  - 'fem_post_cms_sol_import'
+  - 'fem_post_cms_sol_merge'
+  - 'fem_post_def_import'
+  - 'fem_post_def_nodal'
+  - 'fem_post_mesh_export'
+  - 'fem_post_mesh_merge'
+  - 'fem_post_sol_export'
+  - 'fem_post_sol_external'
+  - 'fem_post_sol_plot'
+  - 'fem_post_sol_script'
+  - 'fem_post_sol_step_export'
+  - 'fem_post_stress_import'
+  - 'FEM_CT_FIXED'
+  - 'FEM_CT_SLIDING'
+  - 'FEM_DO_ACOUSTICS'
+  - 'FEM_DO_FLUID_STRUCT'
+  - 'FEM_DO_STRUCTURAL'
+  - 'FEM_DO_THERMAL'
+  - 'FEM_MAT_DAMPING'
+  - 'FEM_MAT_DAMPING_ACOUSTICS_IM'
+  - 'FEM_MAT_DAMPING_ACOUSTICS_RE'
+  - 'FEM_MAT_DAMPING_FLUID_STRUCT_IM'
+  - 'FEM_MAT_DAMPING_FLUID_STRUCT_RE'
+  - 'FEM_MAT_DAMPING_OMEGA'
+  - 'FEM_MAT_DAMPING_SYM'
+  - 'FEM_MAT_DAMPING_SYM_L'
+  - 'FEM_MAT_HEAT_CAPACITY'
+  - 'FEM_MAT_INERTIA_INV3'
+  - 'FEM_MAT_INERTIA_INV4'
+  - 'FEM_MAT_INERTIA_INV5'
+  - 'FEM_MAT_INERTIA_INV8'
+  - 'FEM_MAT_INERTIA_INV9'
+  - 'FEM_MAT_INERTIA_J'
+  - 'FEM_MAT_MASS'
+  - 'FEM_MAT_MASS_ACOUSTICS_IM'
+  - 'FEM_MAT_MASS_ACOUSTICS_RE'
+  - 'FEM_MAT_MASS_FLUID_STRUCT_IM'
+  - 'FEM_MAT_MASS_FLUID_STRUCT_RE'
+  - 'FEM_MAT_MASS_LUMPED'
+  - 'FEM_MAT_MASS_SYM'
+  - 'FEM_MAT_MASS_SYM_L'
+  - 'FEM_MAT_STIFFNESS'
+  - 'FEM_MAT_STIFFNESS_ACOUSTICS_IM'
+  - 'FEM_MAT_STIFFNESS_ACOUSTICS_RE'
+  - 'FEM_MAT_STIFFNESS_FLUID_STRUCT_IM'
+  - 'FEM_MAT_STIFFNESS_FLUID_STRUCT_RE'
+  - 'FEM_MAT_STIFFNESS_OMEGA'
+  - 'FEM_MAT_STIFFNESS_OMEGA_DOT'
+  - 'FEM_MAT_STIFFNESS_SYM'
+  - 'FEM_MAT_STIFFNESS_SYM_L'
+  - 'FEM_MAT_STIFFNESS_TAU0'
+  - 'FEM_MAT_THERMAL_COND'
+  - 'FEM_SCA_ACOUSTIC_INTENSITY'
+  - 'FEM_SCA_ACOUSTIC_INTENSITY_C'
+  - 'FEM_SCA_STRESS_VMIS'
+  - 'FEM_SCA_TOT_MASS'
+  - 'FEM_VEC_COLL_HEAT_CAPACITY'
+  - 'FEM_VEC_COLL_MASS'
+  - 'FEM_VEC_COLL_MASS_ACOUSTICS'
+  - 'FEM_VEC_COLL_MASS_FLUID_STRUCT'
+  - 'FEM_VEC_COLL_STIFFNESS'
+  - 'FEM_VEC_COLL_STIFF_ACOUSTICS'
+  - 'FEM_VEC_COLL_STIFF_FLUID_STRUCT'
+  - 'FEM_VEC_COLL_THERMAL_COND'
+  - 'FEM_VEC_INERTIA_M1'
+  - 'FEM_VEC_LOAD_ACOUSTICS'
+  - 'FEM_VEC_LOAD_CONSISTENT'
+  - 'FEM_VEC_LOAD_FLUID_STRUCT'
+  - 'FEM_VEC_LOAD_LUMPED'
+  - 'FEM_VEC_LOAD_THERMAL'
+  - 'FEM_VEC_PARTICLE_VELOCITY'
+  - 'FEM_VEC_PARTICLE_VELOCITY_C'
+  - 'FEM_VEC_STRAIN_TOTAL'
+  - 'FEM_VEC_STRESS_CAUCH'
+  - 'FEM_VEC_SURFACE_NORMAL_VECTOR'
+  - 'fem_ass_constraint_matrix'
+  - 'fem_ass_dof_map'
+  - 'fem_ass_matrix'
   - '@fem_fact/eigs_func'
   - '@fem_fact/eigs_post'
   - '@fem_fact/eigs_sym'
@@ -195,42 +198,41 @@ functions:
   - '@fem_fact_umfpack/eigs_sym'
   - '@fem_fact_umfpack/fem_fact_umfpack'
   - '@fem_fact_umfpack/mldivide'
-  - fem_sol_check_func
-  - fem_sol_eigs
-  - fem_sol_eigsd
-  - fem_sol_eigsd_post_proc
-  - fem_sol_factor
-  - fem_sol_harmonic_gmres
-  - fem_sol_harmonic_modal
-  - fem_sol_harmonic_modal2
-  - fem_sol_linsolve
-  - fem_sol_matrix_scale
-  - fem_sol_modal
-  - fem_sol_modal_damped
-  - fem_sol_modal_fsi
-  - fem_sol_modes_scale
-  - fem_sol_modes_scale2
-  - fem_sol_real_complex
-  - fem_sol_select
-  - fem_sol_static
-  - fem_sol_static_incr
-  - fem_sol_transient_init
-  - fem_sol_transient_step
-  - fem_cms_constr_elim
-  - fem_cms_constr_mat
-  - fem_cms_create
-  - fem_cms_create2
-  - fem_cms_dof_active
-  - fem_cms_export
-  - fem_cms_matrix_trans
-  - fem_cms_red_guyan
-  - fem_cms_rigid_body_trans_mat
-  - fem_ehd_pre_comp_mat_export
-  - fem_ehd_pre_comp_mat_load_case
-  - fem_ehd_pre_comp_mat_load_case2
-  - fem_ehd_pre_comp_mat_plot
-  - fem_ehd_pre_comp_mat_struct
-  - fem_ehd_pre_comp_mat_unstruct
-  - fem_get_software_version
+  - 'fem_sol_check_func'
+  - 'fem_sol_eigs'
+  - 'fem_sol_eigsd'
+  - 'fem_sol_eigsd_post_proc'
+  - 'fem_sol_factor'
+  - 'fem_sol_harmonic_gmres'
+  - 'fem_sol_harmonic_modal'
+  - 'fem_sol_harmonic_modal2'
+  - 'fem_sol_linsolve'
+  - 'fem_sol_matrix_scale'
+  - 'fem_sol_modal'
+  - 'fem_sol_modal_damped'
+  - 'fem_sol_modal_fsi'
+  - 'fem_sol_modes_scale'
+  - 'fem_sol_modes_scale2'
+  - 'fem_sol_real_complex'
+  - 'fem_sol_select'
+  - 'fem_sol_static'
+  - 'fem_sol_static_incr'
+  - 'fem_sol_transient_init'
+  - 'fem_sol_transient_step'
+  - 'fem_cms_constr_elim'
+  - 'fem_cms_constr_mat'
+  - 'fem_cms_create'
+  - 'fem_cms_create2'
+  - 'fem_cms_dof_active'
+  - 'fem_cms_export'
+  - 'fem_cms_matrix_trans'
+  - 'fem_cms_red_guyan'
+  - 'fem_cms_rigid_body_trans_mat'
+  - 'fem_ehd_pre_comp_mat_export'
+  - 'fem_ehd_pre_comp_mat_load_case'
+  - 'fem_ehd_pre_comp_mat_load_case2'
+  - 'fem_ehd_pre_comp_mat_plot'
+  - 'fem_ehd_pre_comp_mat_struct'
+  - 'fem_ehd_pre_comp_mat_unstruct'
+  - 'fem_get_software_version'
 ---
-

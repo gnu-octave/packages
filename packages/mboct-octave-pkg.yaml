@@ -1,68 +1,69 @@
 ---
-layout: package
-permalink: mboct-octave-pkg/
-description: This package belongs to a suite of packages which can be used for pre-
-  and postprocessing of flexible bodies in MBDyn (www.mbdyn.org) with GNU-Octave.
-  It contains general purpose utility functions used in all mboct-* packages.
-icon: https://avatars.githubusercontent.com/u/61900614?v=4
+layout: "package"
+permalink: "mboct-octave-pkg/"
+description: >-
+  This package belongs to a suite of packages which can be used for
+  pre- and postprocessing of flexible bodies in MBDyn (www.mbdyn.org)
+  with GNU-Octave. It contains general purpose utility functions used
+  in all mboct-* packages.
+icon: "https://avatars.githubusercontent.com/u/61900614?v=4"
 links:
-- icon: far fa-copyright
-  label: GPL-3.0-or-later
-  url: https://github.com/octave-user/mboct-octave-pkg/blob/master/COPYING
-- icon: fas fa-rss
-  label: news
-  url: null
-- icon: fas fa-code-branch
-  label: repository
-  url: https://github.com/octave-user/mboct-octave-pkg
-- icon: fas fa-th-list
-  label: function reference
-  url: https://octave-user.github.io/mboct-octave-pkg/mboct-octave-pkg
-- icon: fas fa-bug
-  label: report a problem
-  url: https://github.com/octave-user/mboct-octave-pkg/issues
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/octave-user/mboct-octave-pkg/blob/master/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url:
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/octave-user/mboct-octave-pkg"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave-user.github.io/mboct-octave-pkg/mboct-octave-pkg"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/octave-user/mboct-octave-pkg/issues"
 maintainers:
-- name: Reinhard Resch
-  contact: octave-user@a1.net
+- name: "Reinhard Resch"
+  contact: "octave-user@a1.net"
 versions:
-- id: 0.1.0
-  date: '2025-08-24'
-  sha256: 76256957abe7fda635ae4a5d89d44d3e922bdec122234f2ca0baf878d4d548b9
-  url: https://github.com/octave-user/mboct-octave-pkg/releases/download/0.1.0/mboct-octave-pkg-0.1.0.tar.gz
+- id: "0.1.0"
+  date: "2025-08-24"
+  sha256: "76256957abe7fda635ae4a5d89d44d3e922bdec122234f2ca0baf878d4d548b9"
+  url: "https://github.com/octave-user/mboct-octave-pkg/releases/download/0.1.0/mboct-octave-pkg-0.1.0.tar.gz"
   depends:
-  - octave (>= 5.1.0)
-  - pkg
+  - "octave (>= 5.1.0)"
+  - "pkg"
   ubuntu2204:
-  - libgtest-dev
+  - "libgtest-dev"
 functions:
   MBDyn/Octave utility package:
-  - shell
-  - spawn
-  - spawn_wait
-  - run_parallel
-  - run_parallel_func
-  - run_parallel_helper
-  - doe_param_dim_to_res_dim
-  - doe_res_idx_to_param_idx
-  - error_report
-  - addpath_full
-  - struct_print
-  - struct_sizeof
-  - figure_export_ascii
-  - figure_hide
-  - figure_list
-  - figure_set_visible
-  - figure_show
-  - pdf_create
-  - pdf_merge
-  - printable_title
-  - griddata_prepared
-  - overwrite_struct
-  - overwrite_struct_add_arg
-  - assert_simple
-  - exec_demo
-  - exec_test
-  - run_tests_parallel
-  - run_tests_parallel_handler
+  - 'shell'
+  - 'spawn'
+  - 'spawn_wait'
+  - 'run_parallel'
+  - 'run_parallel_func'
+  - 'run_parallel_helper'
+  - 'doe_param_dim_to_res_dim'
+  - 'doe_res_idx_to_param_idx'
+  - 'error_report'
+  - 'addpath_full'
+  - 'struct_print'
+  - 'struct_sizeof'
+  - 'figure_export_ascii'
+  - 'figure_hide'
+  - 'figure_list'
+  - 'figure_set_visible'
+  - 'figure_show'
+  - 'pdf_create'
+  - 'pdf_merge'
+  - 'printable_title'
+  - 'griddata_prepared'
+  - 'overwrite_struct'
+  - 'overwrite_struct_add_arg'
+  - 'assert_simple'
+  - 'exec_demo'
+  - 'exec_test'
+  - 'run_tests_parallel'
+  - 'run_tests_parallel_handler'
 ---
-

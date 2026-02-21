@@ -1,65 +1,65 @@
 ---
-layout: package
-permalink: mccabe-thiele/
-description: A toolbox for the McCabe-Thiele method for GNU Octave.
-icon: https://raw.githubusercontent.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/main/doc/icon.png
+layout: "package"
+permalink: "mccabe-thiele/"
+description: >-
+  A toolbox for the McCabe-Thiele method for GNU Octave.
+icon: "https://raw.githubusercontent.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/main/doc/icon.png"
 links:
-- icon: far fa-copyright
-  label: GPL-3.0-or-later
-  url: https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/blob/main/COPYING
-- icon: fas fa-rss
-  label: news
-  url: https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/blob/main/NEWS
-- icon: fas fa-code-branch
-  label: repository
-  url: https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/
-- icon: fas fa-book
-  label: package documentation
-  url: https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/blob/main/README.md
-- icon: fas fa-bug
-  label: report a problem
-  url: https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/issues
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/blob/main/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/blob/main/README.md"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/issues"
 maintainers:
-- name: Alexandre Umpierre
-  contact: aumpierre@gmail.com
+- name: "Alexandre Umpierre"
+  contact: "aumpierre@gmail.com"
 versions:
-- id: 0.1.5
-  date: '2022-12-03'
-  sha256: 134dedca4ec23fae717351a3154ecb5e96008af315a1e72f143153d8cd1a603b
-  url: https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.5.tar.gz
+- id: "0.1.5"
+  date: "2022-12-03"
+  sha256: "134dedca4ec23fae717351a3154ecb5e96008af315a1e72f143153d8cd1a603b"
+  url: "https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.5.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - pkg
-- id: 0.1.4
-  date: '2022-10-21'
-  sha256: 8f3266cc279e30cbbb7e1095b1906933453a81d32de14edb401cf4a7f935bd22
-  url: https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.4.tar.gz
+  - "octave (>= 4.0.0)"
+  - "pkg"
+- id: "0.1.4"
+  date: "2022-10-21"
+  sha256: "8f3266cc279e30cbbb7e1095b1906933453a81d32de14edb401cf4a7f935bd22"
+  url: "https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.4.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - pkg
-- id: 0.1.3
-  date: '2022-10-08'
-  sha256: a95fcd8f4c311f352fb387104bae8eadaa276070dc61c55f1611baf4cc377261
-  url: https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.3.tar.gz
+  - "octave (>= 4.0.0)"
+  - "pkg"
+- id: "0.1.3"
+  date: "2022-10-08"
+  sha256: "a95fcd8f4c311f352fb387104bae8eadaa276070dc61c55f1611baf4cc377261"
+  url: "https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.3.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - pkg
-- id: 0.1.2
-  date: '2022-10-05'
-  sha256: e6016fbd6b9c99eab45d2be3e0a7e6f1de2b5795958eb83b3699fa7109f2cde0
-  url: https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.2.tar.gz
+  - "octave (>= 4.0.0)"
+  - "pkg"
+- id: "0.1.2"
+  date: "2022-10-05"
+  sha256: "e6016fbd6b9c99eab45d2be3e0a7e6f1de2b5795958eb83b3699fa7109f2cde0"
+  url: "https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.2.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - pkg
-- id: 0.1.1
-  date: '2022-10-01'
-  sha256: 7d20d47df4e7cbab34cc8bdae71ae432a565dbee5d8943bf8311dcdba9ed14c7
-  url: https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.1.tar.gz
+  - "octave (>= 4.0.0)"
+  - "pkg"
+- id: "0.1.1"
+  date: "2022-10-01"
+  sha256: "7d20d47df4e7cbab34cc8bdae71ae432a565dbee5d8943bf8311dcdba9ed14c7"
+  url: "https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.1.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - pkg
+  - "octave (>= 4.0.0)"
+  - "pkg"
 functions:
   McCabe-Thiele:
-  - stages refmin qR2S
+  - 'stages refmin qR2S'
 ---
-

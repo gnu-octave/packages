@@ -1,517 +1,517 @@
 ---
-layout: package
-permalink: statistics/
-description: The Statistics package for GNU Octave.
-icon: https://raw.githubusercontent.com/gnu-octave/statistics/main/doc/statistics.png
+layout: "package"
+permalink: "statistics/"
+description: >-
+  The Statistics package for GNU Octave.
+icon: "https://raw.githubusercontent.com/gnu-octave/statistics/main/doc/statistics.png"
 links:
-- icon: far fa-copyright
-  label: GPL-3.0-or-later
-  url: https://github.com/gnu-octave/statistics/blob/master/COPYING
-- icon: fas fa-rss
-  label: news
-  url: https://github.com/gnu-octave/statistics/releases
-- icon: fas fa-code-branch
-  label: repository
-  url: https://github.com/gnu-octave/statistics/
-- icon: fas fa-book
-  label: package documentation
-  url: https://gnu-octave.github.io/statistics/
-- icon: fas fa-bug
-  label: report a problem
-  url: https://github.com/gnu-octave/statistics/issues
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/gnu-octave/statistics/blob/master/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/gnu-octave/statistics/releases"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/gnu-octave/statistics/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://gnu-octave.github.io/statistics/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/gnu-octave/statistics/issues"
 maintainers:
-- name: Andreas Bertsatos
-  contact: abertsatos@biol.uoa.gr
+- name: "Andreas Bertsatos"
+  contact: "abertsatos@biol.uoa.gr"
 versions:
-- id: 1.8.1
-  date: '2026-02-10'
-  sha256: 5174f80ddf182674ca06d871d9fbed439f3eaed3e3970892a0716ed480f5545d
-  url: https://github.com/gnu-octave/statistics/releases/download/release-1.8.1/statistics-1.8.1.tar.gz
+- id: "1.8.1"
+  date: "2026-02-10"
+  sha256: "5174f80ddf182674ca06d871d9fbed439f3eaed3e3970892a0716ed480f5545d"
+  url: "https://github.com/gnu-octave/statistics/releases/download/release-1.8.1/statistics-1.8.1.tar.gz"
   depends:
-  - octave (>= 9.1.0)
-  - datatypes (>= 1.1.8)
-  - pkg
-- id: 1.8.0
-  date: '2025-11-30'
-  sha256: 38f45268a509e1a2ce1103b0d192709a4887920776567f761054519873e06b27
-  url: https://github.com/gnu-octave/statistics/releases/download/release-1.8.0/statistics-1.8.0.tar.gz
+  - "octave (>= 9.1.0)"
+  - "datatypes (>= 1.1.8)"
+  - "pkg"
+- id: "1.8.0"
+  date: "2025-11-30"
+  sha256: "38f45268a509e1a2ce1103b0d192709a4887920776567f761054519873e06b27"
+  url: "https://github.com/gnu-octave/statistics/releases/download/release-1.8.0/statistics-1.8.0.tar.gz"
   depends:
-  - octave (>= 9.1.0)
-  - datatypes (>= 1.1.0)
-  - pkg
-- id: 1.7.7
-  date: '2025-11-11'
-  sha256: cef3c090aee13eaad50b4b9beb2f003e8756cbf018d2be7233326de9696cdf7e
-  url: https://github.com/gnu-octave/statistics/releases/download/release-1.7.7/statistics-1.7.7.tar.gz
+  - "octave (>= 9.1.0)"
+  - "datatypes (>= 1.1.0)"
+  - "pkg"
+- id: "1.7.7"
+  date: "2025-11-11"
+  sha256: "cef3c090aee13eaad50b4b9beb2f003e8756cbf018d2be7233326de9696cdf7e"
+  url: "https://github.com/gnu-octave/statistics/releases/download/release-1.7.7/statistics-1.7.7.tar.gz"
   depends:
-  - octave (>= 8.1.0)
-  - pkg
-- id: 1.7.6
-  date: '2025-10-19'
-  sha256: a518c50209e25e59742414c73955060f83c39c07b2d9a20b2fc8d13bd3106af3
-  url: https://github.com/gnu-octave/statistics/releases/download/release-1.7.6/statistics-1.7.6.tar.gz
+  - "octave (>= 8.1.0)"
+  - "pkg"
+- id: "1.7.6"
+  date: "2025-10-19"
+  sha256: "a518c50209e25e59742414c73955060f83c39c07b2d9a20b2fc8d13bd3106af3"
+  url: "https://github.com/gnu-octave/statistics/releases/download/release-1.7.6/statistics-1.7.6.tar.gz"
   depends:
-  - octave (>= 8.1.0)
-  - pkg
-- id: 1.7.5
-  date: '2025-07-22'
-  sha256: 5202b7ddf35014577f4d9ddfd11109789dae29f1febaeab1e19d16cdb7d9753c
-  url: https://github.com/gnu-octave/statistics/releases/download/release-1.7.5/statistics-1.7.5.tar.gz
+  - "octave (>= 8.1.0)"
+  - "pkg"
+- id: "1.7.5"
+  date: "2025-07-22"
+  sha256: "5202b7ddf35014577f4d9ddfd11109789dae29f1febaeab1e19d16cdb7d9753c"
+  url: "https://github.com/gnu-octave/statistics/releases/download/release-1.7.5/statistics-1.7.5.tar.gz"
   depends:
-  - octave (>= 8.1.0)
-  - pkg
-- id: 1.7.4
-  date: '2025-04-13'
-  sha256: 7fdea950102b1cbf008f0e90b3780bab53a9c70dc447113ddd8d7f9431cf1035
-  url: https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.7.4.tar.gz
+  - "octave (>= 8.1.0)"
+  - "pkg"
+- id: "1.7.4"
+  date: "2025-04-13"
+  sha256: "7fdea950102b1cbf008f0e90b3780bab53a9c70dc447113ddd8d7f9431cf1035"
+  url: "https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.7.4.tar.gz"
   depends:
-  - octave (>= 8.1.0)
-  - pkg
-- id: 1.7.3
-  date: '2025-02-10'
-  sha256: 570d52af975ea9861a6fb024c23fc0f403199e4b56d7a883ee6ca17072e26990
-  url: https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.7.3.tar.gz
+  - "octave (>= 8.1.0)"
+  - "pkg"
+- id: "1.7.3"
+  date: "2025-02-10"
+  sha256: "570d52af975ea9861a6fb024c23fc0f403199e4b56d7a883ee6ca17072e26990"
+  url: "https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.7.3.tar.gz"
   depends:
-  - octave (>= 7.2.0)
-  - pkg
-- id: 1.7.2
-  date: '2025-02-04'
-  sha256: 863e46872753c44ce854b1390be4acb187058565421218c8b5978def8e1e32e6
-  url: https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.7.2.tar.gz
+  - "octave (>= 7.2.0)"
+  - "pkg"
+- id: "1.7.2"
+  date: "2025-02-04"
+  sha256: "863e46872753c44ce854b1390be4acb187058565421218c8b5978def8e1e32e6"
+  url: "https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.7.2.tar.gz"
   depends:
-  - octave (>= 7.2.0)
-  - pkg
-- id: 1.7.1
-  date: '2025-02-02'
-  sha256: 53097cbc48912b2ea73e0fd8634e414f2419dbe5aca42d5c5844dd27180bbf03
-  url: https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.7.1.tar.gz
+  - "octave (>= 7.2.0)"
+  - "pkg"
+- id: "1.7.1"
+  date: "2025-02-02"
+  sha256: "53097cbc48912b2ea73e0fd8634e414f2419dbe5aca42d5c5844dd27180bbf03"
+  url: "https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.7.1.tar.gz"
   depends:
-  - octave (>= 7.2.0)
-  - pkg
-- id: 1.7.0
-  date: '2024-08-31'
-  sha256: 1b074d671e7bb0fce41273b999dda1270596272cb5a168d4039462c7830d2d67
-  url: https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.7.0.tar.gz
+  - "octave (>= 7.2.0)"
+  - "pkg"
+- id: "1.7.0"
+  date: "2024-08-31"
+  sha256: "1b074d671e7bb0fce41273b999dda1270596272cb5a168d4039462c7830d2d67"
+  url: "https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.7.0.tar.gz"
   depends:
-  - octave (>= 7.2.0)
-  - pkg
-- id: 1.6.7
-  date: '2024-06-24'
-  sha256: 94bceae33ca35ec68a849cdacb572c91c6c19e7624cfc7c4c9da232de22b4e12
-  url: https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.6.7.tar.gz
+  - "octave (>= 7.2.0)"
+  - "pkg"
+- id: "1.6.7"
+  date: "2024-06-24"
+  sha256: "94bceae33ca35ec68a849cdacb572c91c6c19e7624cfc7c4c9da232de22b4e12"
+  url: "https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.6.7.tar.gz"
   depends:
-  - octave (>= 7.2.0)
-  - pkg
-- id: 1.6.6
-  date: '2024-05-16'
-  sha256: fd8f982fdd219a4232ce85651043adf2f9a0567f6513b9615219c741ac031cb1
-  url: https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.6.6.tar.gz
+  - "octave (>= 7.2.0)"
+  - "pkg"
+- id: "1.6.6"
+  date: "2024-05-16"
+  sha256: "fd8f982fdd219a4232ce85651043adf2f9a0567f6513b9615219c741ac031cb1"
+  url: "https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.6.6.tar.gz"
   depends:
-  - octave (>= 7.2.0)
-  - pkg
-- id: 1.6.5
-  date: '2024-03-07'
-  sha256: 0ea8258c92ce67e1bb75a9813b7ceb56fff1dacf6c47236d3da776e27b684cee
-  url: https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.6.5.tar.gz
+  - "octave (>= 7.2.0)"
+  - "pkg"
+- id: "1.6.5"
+  date: "2024-03-07"
+  sha256: "0ea8258c92ce67e1bb75a9813b7ceb56fff1dacf6c47236d3da776e27b684cee"
+  url: "https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.6.5.tar.gz"
   depends:
-  - octave (>= 7.2.0)
-  - pkg
-- id: 1.6.4
-  date: '2024-03-01'
-  sha256: a966aafd892fd29c3e4ff3b02148f413382c3f3d364893a306428bde3cd6ee27
-  url: https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.6.4.tar.gz
+  - "octave (>= 7.2.0)"
+  - "pkg"
+- id: "1.6.4"
+  date: "2024-03-01"
+  sha256: "a966aafd892fd29c3e4ff3b02148f413382c3f3d364893a306428bde3cd6ee27"
+  url: "https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.6.4.tar.gz"
   depends:
-  - octave (>= 7.2.0)
-  - pkg
-- id: 1.6.3
-  date: '2024-02-09'
-  sha256: 71ea088e23274a3d24cb24a93f9e5d3dae4649951da5ff762caea626983ded95
-  url: https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.6.3.tar.gz
+  - "octave (>= 7.2.0)"
+  - "pkg"
+- id: "1.6.3"
+  date: "2024-02-09"
+  sha256: "71ea088e23274a3d24cb24a93f9e5d3dae4649951da5ff762caea626983ded95"
+  url: "https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.6.3.tar.gz"
   depends:
-  - octave (>= 7.2.0)
-  - pkg
-- id: 1.6.2
-  date: '2024-02-05'
-  sha256: 2de5b6c4a8ae27318831bdd114ef68b2267a04433709b0ffda0afd2bf0d3b415
-  url: https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.6.2.tar.gz
+  - "octave (>= 7.2.0)"
+  - "pkg"
+- id: "1.6.2"
+  date: "2024-02-05"
+  sha256: "2de5b6c4a8ae27318831bdd114ef68b2267a04433709b0ffda0afd2bf0d3b415"
+  url: "https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.6.2.tar.gz"
   depends:
-  - octave (>= 7.2.0)
-  - pkg
-- id: 1.6.1
-  date: '2024-01-10'
-  sha256: a50b3a1a56f32ff0abe7fea05573f62fe368e2642183a3f2ab10ee9b4a9a2eaa
-  url: https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.6.1.tar.gz
+  - "octave (>= 7.2.0)"
+  - "pkg"
+- id: "1.6.1"
+  date: "2024-01-10"
+  sha256: "a50b3a1a56f32ff0abe7fea05573f62fe368e2642183a3f2ab10ee9b4a9a2eaa"
+  url: "https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.6.1.tar.gz"
   depends:
-  - octave (>= 7.2.0)
-  - pkg
-- id: 1.6.0
-  date: '2023-05-28'
-  sha256: c8e7d32e473465d7bcda751a25ce55ed918ac9b7d9740e5ada3d36b7e66b5810
-  url: https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.6.0.tar.gz
+  - "octave (>= 7.2.0)"
+  - "pkg"
+- id: "1.6.0"
+  date: "2023-05-28"
+  sha256: "c8e7d32e473465d7bcda751a25ce55ed918ac9b7d9740e5ada3d36b7e66b5810"
+  url: "https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.6.0.tar.gz"
   depends:
-  - octave (>= 7.2.0)
-  - pkg
-- id: 1.5.4
-  date: '2023-02-28'
-  sha256: 2d143fdf1cbbf013254d90a76209fbc94796af93e46d59528ab8419375672670
-  url: https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.5.4.tar.gz
+  - "octave (>= 7.2.0)"
+  - "pkg"
+- id: "1.5.4"
+  date: "2023-02-28"
+  sha256: "2d143fdf1cbbf013254d90a76209fbc94796af93e46d59528ab8419375672670"
+  url: "https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.5.4.tar.gz"
   depends:
-  - octave (>= 6.1.0)
-  - pkg
-- id: 1.5.3
-  date: '2023-01-31'
-  sha256: f0081d7872ea2eaeafef00a162c78e03e62eb16e98063bc45f8454e4e949c61b
-  url: https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.5.3.tar.gz
+  - "octave (>= 6.1.0)"
+  - "pkg"
+- id: "1.5.3"
+  date: "2023-01-31"
+  sha256: "f0081d7872ea2eaeafef00a162c78e03e62eb16e98063bc45f8454e4e949c61b"
+  url: "https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.5.3.tar.gz"
   depends:
-  - octave (>= 6.1.0)
-  - pkg
-- id: 1.5.2
-  date: '2022-12-15'
-  sha256: 26d5f047b6df15c46eeb3443d601981b4e93c6672ee36c360beccc5c48857ff5
-  url: https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.5.2.tar.gz
+  - "octave (>= 6.1.0)"
+  - "pkg"
+- id: "1.5.2"
+  date: "2022-12-15"
+  sha256: "26d5f047b6df15c46eeb3443d601981b4e93c6672ee36c360beccc5c48857ff5"
+  url: "https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.5.2.tar.gz"
   depends:
-  - octave (>= 6.1.0)
-  - pkg
-- id: 1.5.1
-  date: '2022-11-30'
-  sha256: a98755655bed44e38826c82a4b40927ee468cc333fc1da64547bede019cca6f4
-  url: https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.5.1.tar.gz
+  - "octave (>= 6.1.0)"
+  - "pkg"
+- id: "1.5.1"
+  date: "2022-11-30"
+  sha256: "a98755655bed44e38826c82a4b40927ee468cc333fc1da64547bede019cca6f4"
+  url: "https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.5.1.tar.gz"
   depends:
-  - octave (>= 6.1.0)
-  - pkg
-- id: 1.5.0
-  date: '2022-09-30'
-  sha256: 5f5a67b99eda8550ccc32f68f30361510bce43135c65eebf5d995fd72d4553f7
-  url: https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.5.0.tar.gz
+  - "octave (>= 6.1.0)"
+  - "pkg"
+- id: "1.5.0"
+  date: "2022-09-30"
+  sha256: "5f5a67b99eda8550ccc32f68f30361510bce43135c65eebf5d995fd72d4553f7"
+  url: "https://github.com/gnu-octave/statistics/archive/refs/tags/release-1.5.0.tar.gz"
   depends:
-  - octave (>= 6.1.0)
-  - pkg
-- id: 1.4.3
-  date: '2021-12-03'
-  sha256: 9801b8b4feb26c58407c136a9379aba1e6a10713829701bb3959d9473a67fa05
-  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/statistics-1.4.3.tar.gz
+  - "octave (>= 6.1.0)"
+  - "pkg"
+- id: "1.4.3"
+  date: "2021-12-03"
+  sha256: "9801b8b4feb26c58407c136a9379aba1e6a10713829701bb3959d9473a67fa05"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/statistics-1.4.3.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - io (>= 1.0.18)
-  - pkg
-- id: 1.4.2
-  date: '2020-03-23'
-  sha256: 7976814f837508e70367548bfb0a6d30aa9e447d4e3a66914d069efb07876247
-  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/statistics-1.4.2.tar.gz
+  - "octave (>= 4.0.0)"
+  - "io (>= 1.0.18)"
+  - "pkg"
+- id: "1.4.2"
+  date: "2020-03-23"
+  sha256: "7976814f837508e70367548bfb0a6d30aa9e447d4e3a66914d069efb07876247"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/statistics-1.4.2.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - io (>= 1.0.18)
-  - pkg
+  - "octave (>= 4.0.0)"
+  - "io (>= 1.0.18)"
+  - "pkg"
 functions:
   Statistics:
-  - cluster
-  - clusterdata
-  - cmdscale
-  - confusionmat
-  - cophenet
-  - createns
-  - crossval
-  - editDistance
-  - evalclusters
-  - inconsistent
-  - kmeans
-  - knnsearch
-  - linkage
-  - mahal
-  - mhsample
-  - optimalleaforder
-  - pdist
-  - pdist2
-  - procrustes
-  - rangesearch
-  - slicesample
-  - squareform
-  - ClassificationDiscriminant
-  - ClassificationGAM
-  - ClassificationKNN
-  - ClassificationNeuralNetwork
-  - ClassificationPartitionedModel
-  - ClassificationSVM
-  - CompactClassificationDiscriminant
-  - CompactClassificationGAM
-  - CompactClassificationNeuralNetwork
-  - CompactClassificationSVM
-  - ConfusionMatrixChart
-  - CalinskiHarabaszEvaluation
-  - ClusterCriterion
-  - cvpartition
-  - DaviesBouldinEvaluation
-  - ExhaustiveSearcher
-  - GapEvaluation
-  - hnswSearcher
-  - KDTreeSearcher
-  - SilhouetteEvaluation
-  - RegressionGAM
-  - combnk
-  - crosstab
-  - datasample
-  - dummyvar
-  - fillmissing
-  - grp2idx
-  - ismissing
-  - isoutlier
-  - multiway
-  - normalise_distribution
-  - rmmissing
-  - standardizeMissing
-  - tabulate
-  - cdfcalc
-  - cl_multinom
-  - geomean
-  - grpstats
-  - harmmean
-  - jackknife
-  - nanmax
-  - nanmean
-  - nanmin
-  - nansum
-  - trimmean
-  - BetaDistribution
-  - BinomialDistribution
-  - BirnbaumSaundersDistribution
-  - BurrDistribution
-  - ExponentialDistribution
-  - ExtremeValueDistribution
-  - GammaDistribution
-  - GeneralizedExtremeValueDistribution
-  - GeneralizedParetoDistribution
-  - HalfNormalDistribution
-  - InverseGaussianDistribution
-  - LogisticDistribution
-  - LoglogisticDistribution
-  - LognormalDistribution
-  - LoguniformDistribution
-  - MultinomialDistribution
-  - NakagamiDistribution
-  - NegativeBinomialDistribution
-  - NormalDistribution
-  - PiecewiseLinearDistribution
-  - PoissonDistribution
-  - RayleighDistribution
-  - RicianDistribution
-  - tLocationScaleDistribution
-  - TriangularDistribution
-  - UniformDistribution
-  - WeibullDistribution
-  - betafit betalike
-  - binofit binolike
-  - bisafit bisalike
-  - burrfit burrlike
-  - evfit evlike
-  - expfit explike
-  - gamfit gamlike
-  - geofit
-  - gevfit_lmom
-  - gevfit gevlike
-  - gpfit gplike
-  - gumbelfit gumbellike
-  - hnfit hnlike
-  - invgfit invglike
-  - logifit logilike
-  - loglfit logllike
-  - lognfit lognlike
-  - nakafit nakalike
-  - nbinfit nbinlike
-  - normfit normlike
-  - poissfit poisslike
-  - raylfit rayllike
-  - ricefit ricelike
-  - tlsfit tlslike
-  - unidfit
-  - unifit
-  - wblfit wbllike
-  - betacdf betainv betapdf betarnd
-  - binocdf binoinv binopdf binornd
-  - bisacdf bisainv bisapdf bisarnd
-  - burrcdf burrinv burrpdf burrrnd
-  - bvncdf
-  - bvtcdf
-  - cauchycdf cauchyinv cauchypdf cauchyrnd
-  - chi2cdf chi2inv chi2pdf chi2rnd
-  - copulacdf copulapdf copularnd
-  - evcdf evinv evpdf evrnd
-  - expcdf expinv exppdf exprnd
-  - fcdf finv fpdf frnd
-  - gamcdf gaminv gampdf gamrnd
-  - geocdf geoinv geopdf geornd
-  - gevcdf gevinv gevpdf gevrnd
-  - gpcdf gpinv gppdf gprnd
-  - gumbelcdf gumbelinv gumbelpdf gumbelrnd
-  - hncdf hninv hnpdf hnrnd
-  - hygecdf hygeinv hygepdf hygernd
-  - invgcdf invginv invgpdf invgrnd
-  - iwishpdf iwishrnd
-  - jsucdf jsupdf
-  - laplacecdf laplaceinv laplacepdf laplacernd
-  - logicdf logiinv logipdf logirnd
-  - loglcdf loglinv loglpdf loglrnd
-  - logncdf logninv lognpdf lognrnd
-  - mnpdf mnrnd
-  - mvncdf mvnpdf mvnrnd
-  - mvtcdf mvtpdf mvtrnd
-  - mvtcdfqmc
-  - nakacdf nakainv nakapdf nakarnd
-  - nbincdf nbininv nbinpdf nbinrnd
-  - ncfcdf ncfinv ncfpdf ncfrnd
-  - nctcdf nctinv nctpdf nctrnd
-  - ncx2cdf ncx2inv ncx2pdf ncx2rnd
-  - normcdf norminv normpdf normrnd
-  - plcdf plinv plpdf plrnd
-  - poisscdf poissinv poisspdf poissrnd
-  - raylcdf raylinv raylpdf raylrnd
-  - ricecdf riceinv ricepdf ricernd
-  - tcdf tinv tpdf trnd
-  - tlscdf tlsinv tlspdf tlsrnd
-  - tricdf triinv tripdf trirnd
-  - unidcdf unidinv unidpdf unidrnd
-  - unifcdf unifinv unifpdf unifrnd
-  - vmcdf vminv vmpdf vmrnd
-  - wblcdf wblinv wblpdf wblrnd
-  - wienrnd
-  - wishpdf wishrnd
-  - betastat
-  - binostat
-  - bisastat
-  - burrstat
-  - chi2stat
-  - evstat
-  - expstat
-  - fstat
-  - gamstat
-  - geostat
-  - gevstat
-  - gpstat
-  - hnstat
-  - hygestat
-  - invgstat
-  - logistat
-  - loglstat
-  - lognstat
-  - nakastat
-  - nbinstat
-  - ncfstat
-  - nctstat
-  - ncx2stat
-  - normstat
-  - plstat
-  - poisstat
-  - raylstat
-  - ricestat
-  - tlsstat
-  - tristat
-  - tstat
-  - unidstat
-  - unifstat
-  - wblstat
-  - cdf
-  - fitdist
-  - icdf
-  - makedist
-  - mle
-  - pdf
-  - random
-  - fullfact
-  - ff2n
-  - sigma_pts
-  - x2fx
-  - fcnnpredict
-  - fcnntrain
-  - hmmestimate
-  - hmmgenerate
-  - hmmviterbi
-  - svmpredict
-  - svmtrain
-  - fitcdiscr
-  - fitcgam
-  - fitcknn
-  - fitcnet
-  - fitcsvm
-  - fitgmdist
-  - fitlm
-  - fitrgam
-  - adtest
-  - anova1
-  - anova2
-  - anovan
-  - bartlett_test
-  - barttest
-  - binotest
-  - chi2gof
-  - chi2test
-  - correlation_test
-  - fishertest
-  - friedman
-  - hotelling_t2test
-  - hotelling_t2test2
-  - kruskalwallis
-  - kstest
-  - kstest2
-  - levene_test
-  - manova1
-  - mcnemar_test
-  - multcompare
-  - ranksum
-  - regression_ftest
-  - regression_ttest
-  - runstest
-  - sampsizepwr
-  - signrank
-  - signtest
-  - tiedrank
-  - ttest
-  - ttest2
-  - vartest
-  - vartest2
-  - vartestn
-  - ztest
-  - ztest2
-  - libsvmread
-  - libsvmwrite
-  - loadmodel
-  - makima
-  - bar3
-  - bar3h
-  - boxplot
-  - cdfplot
-  - confusionchart
-  - dendrogram
-  - ecdf
-  - einstein
-  - gscatter
-  - histfit
-  - hist3
-  - manovacluster
-  - normplot
-  - ppplot
-  - qqplot
-  - silhouette
-  - violin
-  - wblplot
-  - canoncorr
-  - cholcov
-  - dcov
-  - factoran
-  - glmfit
-  - glmval
-  - logistic_regression
-  - mnrfit
-  - monotone_smooth
-  - parseWilkinsonFormula
-  - pca
-  - pcacov
-  - pcares
-  - plsregress
-  - princomp
-  - regress
-  - regress_gp
-  - ridge
-  - stepwisefit
-  - logit
-  - probit
+  - 'cluster'
+  - 'clusterdata'
+  - 'cmdscale'
+  - 'confusionmat'
+  - 'cophenet'
+  - 'createns'
+  - 'crossval'
+  - 'editDistance'
+  - 'evalclusters'
+  - 'inconsistent'
+  - 'kmeans'
+  - 'knnsearch'
+  - 'linkage'
+  - 'mahal'
+  - 'mhsample'
+  - 'optimalleaforder'
+  - 'pdist'
+  - 'pdist2'
+  - 'procrustes'
+  - 'rangesearch'
+  - 'slicesample'
+  - 'squareform'
+  - 'ClassificationDiscriminant'
+  - 'ClassificationGAM'
+  - 'ClassificationKNN'
+  - 'ClassificationNeuralNetwork'
+  - 'ClassificationPartitionedModel'
+  - 'ClassificationSVM'
+  - 'CompactClassificationDiscriminant'
+  - 'CompactClassificationGAM'
+  - 'CompactClassificationNeuralNetwork'
+  - 'CompactClassificationSVM'
+  - 'ConfusionMatrixChart'
+  - 'CalinskiHarabaszEvaluation'
+  - 'ClusterCriterion'
+  - 'cvpartition'
+  - 'DaviesBouldinEvaluation'
+  - 'ExhaustiveSearcher'
+  - 'GapEvaluation'
+  - 'hnswSearcher'
+  - 'KDTreeSearcher'
+  - 'SilhouetteEvaluation'
+  - 'RegressionGAM'
+  - 'combnk'
+  - 'crosstab'
+  - 'datasample'
+  - 'dummyvar'
+  - 'fillmissing'
+  - 'grp2idx'
+  - 'ismissing'
+  - 'isoutlier'
+  - 'multiway'
+  - 'normalise_distribution'
+  - 'rmmissing'
+  - 'standardizeMissing'
+  - 'tabulate'
+  - 'cdfcalc'
+  - 'cl_multinom'
+  - 'geomean'
+  - 'grpstats'
+  - 'harmmean'
+  - 'jackknife'
+  - 'nanmax'
+  - 'nanmean'
+  - 'nanmin'
+  - 'nansum'
+  - 'trimmean'
+  - 'BetaDistribution'
+  - 'BinomialDistribution'
+  - 'BirnbaumSaundersDistribution'
+  - 'BurrDistribution'
+  - 'ExponentialDistribution'
+  - 'ExtremeValueDistribution'
+  - 'GammaDistribution'
+  - 'GeneralizedExtremeValueDistribution'
+  - 'GeneralizedParetoDistribution'
+  - 'HalfNormalDistribution'
+  - 'InverseGaussianDistribution'
+  - 'LogisticDistribution'
+  - 'LoglogisticDistribution'
+  - 'LognormalDistribution'
+  - 'LoguniformDistribution'
+  - 'MultinomialDistribution'
+  - 'NakagamiDistribution'
+  - 'NegativeBinomialDistribution'
+  - 'NormalDistribution'
+  - 'PiecewiseLinearDistribution'
+  - 'PoissonDistribution'
+  - 'RayleighDistribution'
+  - 'RicianDistribution'
+  - 'tLocationScaleDistribution'
+  - 'TriangularDistribution'
+  - 'UniformDistribution'
+  - 'WeibullDistribution'
+  - 'betafit betalike'
+  - 'binofit binolike'
+  - 'bisafit bisalike'
+  - 'burrfit burrlike'
+  - 'evfit evlike'
+  - 'expfit explike'
+  - 'gamfit gamlike'
+  - 'geofit'
+  - 'gevfit_lmom'
+  - 'gevfit gevlike'
+  - 'gpfit gplike'
+  - 'gumbelfit gumbellike'
+  - 'hnfit hnlike'
+  - 'invgfit invglike'
+  - 'logifit logilike'
+  - 'loglfit logllike'
+  - 'lognfit lognlike'
+  - 'nakafit nakalike'
+  - 'nbinfit nbinlike'
+  - 'normfit normlike'
+  - 'poissfit poisslike'
+  - 'raylfit rayllike'
+  - 'ricefit ricelike'
+  - 'tlsfit tlslike'
+  - 'unidfit'
+  - 'unifit'
+  - 'wblfit wbllike'
+  - 'betacdf betainv betapdf betarnd'
+  - 'binocdf binoinv binopdf binornd'
+  - 'bisacdf bisainv bisapdf bisarnd'
+  - 'burrcdf burrinv burrpdf burrrnd'
+  - 'bvncdf'
+  - 'bvtcdf'
+  - 'cauchycdf cauchyinv cauchypdf cauchyrnd'
+  - 'chi2cdf chi2inv chi2pdf chi2rnd'
+  - 'copulacdf copulapdf copularnd'
+  - 'evcdf evinv evpdf evrnd'
+  - 'expcdf expinv exppdf exprnd'
+  - 'fcdf finv fpdf frnd'
+  - 'gamcdf gaminv gampdf gamrnd'
+  - 'geocdf geoinv geopdf geornd'
+  - 'gevcdf gevinv gevpdf gevrnd'
+  - 'gpcdf gpinv gppdf gprnd'
+  - 'gumbelcdf gumbelinv gumbelpdf gumbelrnd'
+  - 'hncdf hninv hnpdf hnrnd'
+  - 'hygecdf hygeinv hygepdf hygernd'
+  - 'invgcdf invginv invgpdf invgrnd'
+  - 'iwishpdf iwishrnd'
+  - 'jsucdf jsupdf'
+  - 'laplacecdf laplaceinv laplacepdf laplacernd'
+  - 'logicdf logiinv logipdf logirnd'
+  - 'loglcdf loglinv loglpdf loglrnd'
+  - 'logncdf logninv lognpdf lognrnd'
+  - 'mnpdf mnrnd'
+  - 'mvncdf mvnpdf mvnrnd'
+  - 'mvtcdf mvtpdf mvtrnd'
+  - 'mvtcdfqmc'
+  - 'nakacdf nakainv nakapdf nakarnd'
+  - 'nbincdf nbininv nbinpdf nbinrnd'
+  - 'ncfcdf ncfinv ncfpdf ncfrnd'
+  - 'nctcdf nctinv nctpdf nctrnd'
+  - 'ncx2cdf ncx2inv ncx2pdf ncx2rnd'
+  - 'normcdf norminv normpdf normrnd'
+  - 'plcdf plinv plpdf plrnd'
+  - 'poisscdf poissinv poisspdf poissrnd'
+  - 'raylcdf raylinv raylpdf raylrnd'
+  - 'ricecdf riceinv ricepdf ricernd'
+  - 'tcdf tinv tpdf trnd'
+  - 'tlscdf tlsinv tlspdf tlsrnd'
+  - 'tricdf triinv tripdf trirnd'
+  - 'unidcdf unidinv unidpdf unidrnd'
+  - 'unifcdf unifinv unifpdf unifrnd'
+  - 'vmcdf vminv vmpdf vmrnd'
+  - 'wblcdf wblinv wblpdf wblrnd'
+  - 'wienrnd'
+  - 'wishpdf wishrnd'
+  - 'betastat'
+  - 'binostat'
+  - 'bisastat'
+  - 'burrstat'
+  - 'chi2stat'
+  - 'evstat'
+  - 'expstat'
+  - 'fstat'
+  - 'gamstat'
+  - 'geostat'
+  - 'gevstat'
+  - 'gpstat'
+  - 'hnstat'
+  - 'hygestat'
+  - 'invgstat'
+  - 'logistat'
+  - 'loglstat'
+  - 'lognstat'
+  - 'nakastat'
+  - 'nbinstat'
+  - 'ncfstat'
+  - 'nctstat'
+  - 'ncx2stat'
+  - 'normstat'
+  - 'plstat'
+  - 'poisstat'
+  - 'raylstat'
+  - 'ricestat'
+  - 'tlsstat'
+  - 'tristat'
+  - 'tstat'
+  - 'unidstat'
+  - 'unifstat'
+  - 'wblstat'
+  - 'cdf'
+  - 'fitdist'
+  - 'icdf'
+  - 'makedist'
+  - 'mle'
+  - 'pdf'
+  - 'random'
+  - 'fullfact'
+  - 'ff2n'
+  - 'sigma_pts'
+  - 'x2fx'
+  - 'fcnnpredict'
+  - 'fcnntrain'
+  - 'hmmestimate'
+  - 'hmmgenerate'
+  - 'hmmviterbi'
+  - 'svmpredict'
+  - 'svmtrain'
+  - 'fitcdiscr'
+  - 'fitcgam'
+  - 'fitcknn'
+  - 'fitcnet'
+  - 'fitcsvm'
+  - 'fitgmdist'
+  - 'fitlm'
+  - 'fitrgam'
+  - 'adtest'
+  - 'anova1'
+  - 'anova2'
+  - 'anovan'
+  - 'bartlett_test'
+  - 'barttest'
+  - 'binotest'
+  - 'chi2gof'
+  - 'chi2test'
+  - 'correlation_test'
+  - 'fishertest'
+  - 'friedman'
+  - 'hotelling_t2test'
+  - 'hotelling_t2test2'
+  - 'kruskalwallis'
+  - 'kstest'
+  - 'kstest2'
+  - 'levene_test'
+  - 'manova1'
+  - 'mcnemar_test'
+  - 'multcompare'
+  - 'ranksum'
+  - 'regression_ftest'
+  - 'regression_ttest'
+  - 'runstest'
+  - 'sampsizepwr'
+  - 'signrank'
+  - 'signtest'
+  - 'tiedrank'
+  - 'ttest'
+  - 'ttest2'
+  - 'vartest'
+  - 'vartest2'
+  - 'vartestn'
+  - 'ztest'
+  - 'ztest2'
+  - 'libsvmread'
+  - 'libsvmwrite'
+  - 'loadmodel'
+  - 'makima'
+  - 'bar3'
+  - 'bar3h'
+  - 'boxplot'
+  - 'cdfplot'
+  - 'confusionchart'
+  - 'dendrogram'
+  - 'ecdf'
+  - 'einstein'
+  - 'gscatter'
+  - 'histfit'
+  - 'hist3'
+  - 'manovacluster'
+  - 'normplot'
+  - 'ppplot'
+  - 'qqplot'
+  - 'silhouette'
+  - 'violin'
+  - 'wblplot'
+  - 'canoncorr'
+  - 'cholcov'
+  - 'dcov'
+  - 'factoran'
+  - 'glmfit'
+  - 'glmval'
+  - 'logistic_regression'
+  - 'mnrfit'
+  - 'monotone_smooth'
+  - 'parseWilkinsonFormula'
+  - 'pca'
+  - 'pcacov'
+  - 'pcares'
+  - 'plsregress'
+  - 'princomp'
+  - 'regress'
+  - 'regress_gp'
+  - 'ridge'
+  - 'stepwisefit'
+  - 'logit'
+  - 'probit'
 ---
-

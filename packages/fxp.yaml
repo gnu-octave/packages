@@ -1,56 +1,66 @@
 ---
-layout: package
-permalink: fxp/
-description: Lightweight fixed-point numeric type for GNU Octave. Intended for fixed-point
-  modeling, algorithm validation, and education. Supports signed and unsigned formats,
-  quantization, overflow handling, and basic arithmetic operations.
-icon: https://raw.githubusercontent.com/ahmedshahein/pkg-fxp/main/doc/fxp_icon.png
+layout: "package"
+permalink: "fxp/"
+description: >-
+  Lightweight fixed-point numeric type for GNU Octave.
+  Intended for fixed-point modeling, algorithm validation, and education.
+  Supports signed and unsigned formats, quantization, overflow handling,
+  and basic arithmetic operations.
+
+icon: >-
+  https://raw.githubusercontent.com/ahmedshahein/pkg-fxp/main/doc/fxp_icon.png
+
 links:
-- icon: far fa-copyright
-  label: GPL-3.0-or-later
-  url: https://github.com/ahmedshahein/pkg-fxp/blob/main/COPYING
-- icon: fas fa-rss
-  label: news
-  url: https://github.com/ahmedshahein/pkg-fxp/releases/
-- icon: fas fa-code-branch
-  label: repository
-  url: https://github.com/ahmedshahein/pkg-fxp/
-- icon: fas fa-book
-  label: package documentation
-  url: https://github.com/ahmedshahein/pkg-fxp/blob/main/README.md
-- icon: fas fa-bug
-  label: report a problem
-  url: https://github.com/ahmedshahein/pkg-fxp/issues
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/ahmedshahein/pkg-fxp/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/ahmedshahein/pkg-fxp/releases/"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/ahmedshahein/pkg-fxp/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://github.com/ahmedshahein/pkg-fxp/blob/main/README.md"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/ahmedshahein/pkg-fxp/issues"
+
 maintainers:
-- name: Ahmed H. Shahein
-  contact: ahmed.shahein@vlsi-design.org
+- name: "Ahmed H. Shahein"
+  contact: "ahmed.shahein@vlsi-design.org"
+
 versions:
-- id: 1.0.1
-  date: '2026-01-27'
-  sha256: b02f2a39624b00a626ca119631de7455a028f5e48127c4f4138ba08a72cca982
-  url: https://github.com/ahmedshahein/pkg-fxp/archive/refs/tags/1.0.1.tar.gz
+- id: "1.0.1"
+  date: "2026-01-27"
+  sha256: "b02f2a39624b00a626ca119631de7455a028f5e48127c4f4138ba08a72cca982"
+  url: >-
+    https://github.com/ahmedshahein/pkg-fxp/archive/refs/tags/1.0.1.tar.gz
   depends:
-  - octave (>= 5.2.0
-  - pkg
-- id: 1.0.0
-  date: '2026-01-26'
-  sha256: 24cde000249b987bf325b16f73f5c54dc69eb8dd07a19528565efb8d912ceac0
-  url: https://github.com/ahmedshahein/pkg-fxp/archive/refs/tags/1.0.0.tar.gz
+  - "octave (>= 5.2.0"
+  - "pkg"
+- id: "1.0.0"
+  date: "2026-01-26"
+  sha256: "24cde000249b987bf325b16f73f5c54dc69eb8dd07a19528565efb8d912ceac0"
+  url: >-
+    https://github.com/ahmedshahein/pkg-fxp/archive/refs/tags/1.0.0.tar.gz
   depends:
-  - octave (>= 5.2.0)
-  - pkg
-- id: dev
-  date: '2026-01-26'
-  sha256: null
-  url: https://github.com/ahmedshahein/pkg-fxp/archive/refs/heads/main.zip
+  - "octave (>= 5.2.0)"
+  - "pkg"
+
+- id: "dev"
+  date: "2026-01-26"
+  sha256:
+  url: >-
+    https://github.com/ahmedshahein/pkg-fxp/archive/refs/heads/main.zip
   depends:
-  - octave (>= 5.2.0)
-  - pkg
+  - "octave (>= 5.2.0)"
+  - "pkg"
 functions:
   fxp:
-  - fxp
-  - disp
-  - plus minus uminus times mtimes rdivide ldivide power
-  - eq ne lt le gt ge
+  - 'fxp'
+  - 'disp'
+  - 'plus minus uminus times mtimes rdivide ldivide power'
+  - 'eq ne lt le gt ge'
 ---
-

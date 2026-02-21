@@ -1,195 +1,195 @@
 ---
-layout: package
-permalink: tablicious/
-description: Matlab-compatible Octave table class for storing tabular/relational data.
+layout: "package"
+permalink: "tablicious/"
+description: >-
+  Matlab-compatible Octave table class for storing tabular/relational data.
   Similar to R and Python Pandas DataFrames.
-icon: https://raw.githubusercontent.com/apjanke/octave-tablicious/main/assets/Tablicious-640.png
+icon: "https://raw.githubusercontent.com/apjanke/octave-tablicious/main/assets/Tablicious-640.png"
 links:
-- icon: far fa-copyright
-  label: GPL-3.0-or-later
-  url: https://github.com/apjanke/octave-tablicious/blob/main/COPYING
-- icon: fas fa-rss
-  label: news
-  url: https://github.com/apjanke/octave-tablicious/releases
-- icon: fas fa-code-branch
-  label: repository
-  url: https://github.com/apjanke/octave-tablicious/
-- icon: fas fa-book
-  label: package documentation
-  url: https://github.com/apjanke/octave-tablicious/blob/main/README.md
-- icon: fas fa-bug
-  label: report a problem
-  url: https://github.com/apjanke/octave-tablicious/issues
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/apjanke/octave-tablicious/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/apjanke/octave-tablicious/releases"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/apjanke/octave-tablicious/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://github.com/apjanke/octave-tablicious/blob/main/README.md"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/apjanke/octave-tablicious/issues"
 maintainers:
-- name: Andrew Janke
-  contact: andrew@apjanke.net
+- name: "Andrew Janke"
+  contact: "andrew@apjanke.net"
 versions:
-- id: 0.4.6
-  date: '2026-02-16'
-  sha256: ecac032bbc1d61e61e657e87437d4f09aa4fd24a2a05f6bb3b7bdbf6db77da82
-  url: https://github.com/apjanke/octave-tablicious/releases/download/v0.4.6/tablicious-0.4.6.tar.gz
+- id: "0.4.6"
+  date: "2026-02-16"
+  sha256: "ecac032bbc1d61e61e657e87437d4f09aa4fd24a2a05f6bb3b7bdbf6db77da82"
+  url: "https://github.com/apjanke/octave-tablicious/releases/download/v0.4.6/tablicious-0.4.6.tar.gz"
   depends:
-  - octave (>= 7.0.0)
-  - pkg
+  - "octave (>= 7.0.0)"
+  - "pkg"
   ubuntu2204:
-  - tzdata
-- id: 0.4.5
-  date: '2025-07-03'
-  sha256: 60b63a639b52c741c818dccb91d251432680d237c986c84dbdc89f4c54a92f0f
-  url: https://github.com/apjanke/octave-tablicious/releases/download/v0.4.5/tablicious-0.4.5.tar.gz
+  - "tzdata"
+- id: "0.4.5"
+  date: "2025-07-03"
+  sha256: "60b63a639b52c741c818dccb91d251432680d237c986c84dbdc89f4c54a92f0f"
+  url: "https://github.com/apjanke/octave-tablicious/releases/download/v0.4.5/tablicious-0.4.5.tar.gz"
   depends:
-  - octave (>= 7.0.0)
-  - pkg
+  - "octave (>= 7.0.0)"
+  - "pkg"
   ubuntu2204:
-  - tzdata
-- id: 0.4.4
-  date: '2024-10-23'
-  sha256: b06b5606fb7ba53874ec3dab0e2bbd0cf5ed536461cd2d3bac851ee2d9655d7e
-  url: https://github.com/apjanke/octave-tablicious/releases/download/v0.4.4/tablicious-0.4.4.tar.gz
+  - "tzdata"
+- id: "0.4.4"
+  date: "2024-10-23"
+  sha256: "b06b5606fb7ba53874ec3dab0e2bbd0cf5ed536461cd2d3bac851ee2d9655d7e"
+  url: "https://github.com/apjanke/octave-tablicious/releases/download/v0.4.4/tablicious-0.4.4.tar.gz"
   depends:
-  - octave (>= 7.0.0)
-  - pkg
+  - "octave (>= 7.0.0)"
+  - "pkg"
   ubuntu2204:
-  - tzdata
-- id: 0.4.3
-  date: '2024-04-06'
-  sha256: 7e81d5d87d2e47b80d9a5d7e46ecbf46fc15308f17672fb778472711dfd96231
-  url: https://github.com/apjanke/octave-tablicious/releases/download/v0.4.3/tablicious-0.4.3.tar.gz
+  - "tzdata"
+- id: "0.4.3"
+  date: "2024-04-06"
+  sha256: "7e81d5d87d2e47b80d9a5d7e46ecbf46fc15308f17672fb778472711dfd96231"
+  url: "https://github.com/apjanke/octave-tablicious/releases/download/v0.4.3/tablicious-0.4.3.tar.gz"
   depends:
-  - octave (>= 7.0.0)
-  - pkg
+  - "octave (>= 7.0.0)"
+  - "pkg"
   ubuntu2204:
-  - tzdata
-- id: 0.4.2
-  date: '2024-02-07'
-  sha256: 9bb694db658e2b7b1a267d1a5639fc1fee7d1a70388162ecaff184c0b46cbdd8
-  url: https://github.com/apjanke/octave-tablicious/releases/download/v0.4.2/tablicious-0.4.2.tar.gz
+  - "tzdata"
+- id: "0.4.2"
+  date: "2024-02-07"
+  sha256: "9bb694db658e2b7b1a267d1a5639fc1fee7d1a70388162ecaff184c0b46cbdd8"
+  url: "https://github.com/apjanke/octave-tablicious/releases/download/v0.4.2/tablicious-0.4.2.tar.gz"
   depends:
-  - octave (>= 7.0.0)
-  - pkg
+  - "octave (>= 7.0.0)"
+  - "pkg"
   ubuntu2204:
-  - tzdata
-- id: 0.4.1
-  date: '2024-02-07'
-  sha256: 8fdde26d82cfec8960f96cf3f3145f2affcc21d0b57eb8d081a769d1f99f7e96
-  url: https://github.com/apjanke/octave-tablicious/releases/download/v0.4.1/tablicious-0.4.1.tar.gz
+  - "tzdata"
+- id: "0.4.1"
+  date: "2024-02-07"
+  sha256: "8fdde26d82cfec8960f96cf3f3145f2affcc21d0b57eb8d081a769d1f99f7e96"
+  url: "https://github.com/apjanke/octave-tablicious/releases/download/v0.4.1/tablicious-0.4.1.tar.gz"
   depends:
-  - octave (>= 7.0.0)
-  - pkg
+  - "octave (>= 7.0.0)"
+  - "pkg"
   ubuntu2204:
-  - tzdata
-- id: 0.4.0
-  date: '2024-02-07'
-  sha256: c668ebceb94570f2fdeb66a89c77b834669f05374081795115260602c642e548
-  url: https://github.com/apjanke/octave-tablicious/releases/download/v0.4.0/tablicious-0.4.0.tar.gz
+  - "tzdata"
+- id: "0.4.0"
+  date: "2024-02-07"
+  sha256: "c668ebceb94570f2fdeb66a89c77b834669f05374081795115260602c642e548"
+  url: "https://github.com/apjanke/octave-tablicious/releases/download/v0.4.0/tablicious-0.4.0.tar.gz"
   depends:
-  - octave (>= 7.0.0)
-  - pkg
+  - "octave (>= 7.0.0)"
+  - "pkg"
   ubuntu2204:
-  - tzdata
-- id: 0.3.7
-  date: '2023-01-06'
-  sha256: 06176105b87848af7ae80cce077754108d3636c6d6196e732ad925e31dea6c5a
-  url: https://github.com/apjanke/octave-tablicious/releases/download/v0.3.7/tablicious-0.3.7.tar.gz
+  - "tzdata"
+- id: "0.3.7"
+  date: "2023-01-06"
+  sha256: "06176105b87848af7ae80cce077754108d3636c6d6196e732ad925e31dea6c5a"
+  url: "https://github.com/apjanke/octave-tablicious/releases/download/v0.3.7/tablicious-0.3.7.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - pkg
+  - "octave (>= 4.0.0)"
+  - "pkg"
   ubuntu2204:
-  - tzdata
-- id: 0.3.6
-  date: '2021-07-05'
-  sha256: 26cbe4ec0d6663041e546de0a81bd9ac923d87ac7c5b0ffb5bfe279c28997f9f
-  url: https://github.com/apjanke/octave-tablicious/releases/download/v0.3.6/tablicious-0.3.6.tar.gz
+  - "tzdata"
+- id: "0.3.6"
+  date: "2021-07-05"
+  sha256: "26cbe4ec0d6663041e546de0a81bd9ac923d87ac7c5b0ffb5bfe279c28997f9f"
+  url: "https://github.com/apjanke/octave-tablicious/releases/download/v0.3.6/tablicious-0.3.6.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - pkg
+  - "octave (>= 4.0.0)"
+  - "pkg"
   ubuntu2204:
-  - tzdata
-- id: 0.3.5
-  date: '2020-01-31'
-  sha256: e7e0c081536119255fa36a00a32e700d47e45f0bff86b27636b579bfc256a119
-  url: https://github.com/apjanke/octave-tablicious/archive/v0.3.5.tar.gz
+  - "tzdata"
+- id: "0.3.5"
+  date: "2020-01-31"
+  sha256: "e7e0c081536119255fa36a00a32e700d47e45f0bff86b27636b579bfc256a119"
+  url: "https://github.com/apjanke/octave-tablicious/archive/v0.3.5.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - pkg
-- id: dev
-  date: null
-  sha256: null
-  url: https://github.com/apjanke/octave-tablicious/archive/main.tar.gz
+  - "octave (>= 4.0.0)"
+  - "pkg"
+- id: "dev"
+  date:
+  sha256:
+  url: "https://github.com/apjanke/octave-tablicious/archive/main.tar.gz"
   depends:
-  - octave (>= 7.0.0)
-  - pkg
+  - "octave (>= 7.0.0)"
+  - "pkg"
 functions:
   Tablicious:
-  - table
-  - array2table
-  - cell2table
-  - struct2table
-  - tableOuterFillValue
-  - vartype
-  - istable
-  - istimetable
-  - istabular
-  - tblish.evalWithTableVars
-  - tblish.table.grpstats
-  - string
-  - NaS
-  - contains
-  - dispstrs
-  - categorical
-  - iscategorical
-  - NaC
-  - discretize
-  - datetime
-  - NaT
-  - todatetime
-  - localdate
-  - isdatetime
-  - calendarDuration
-  - iscalendarduration
-  - calmonths
-  - calyears
-  - days
-  - duration
-  - hours
-  - isduration
-  - milliseconds
-  - minutes
-  - seconds
-  - timezones
-  - years
-  - missing
-  - isnanny
-  - eqn
-  - mustBeA
-  - mustBeCellstr
-  - mustBeCharvec
-  - mustBeFinite
-  - mustBeInteger
-  - mustBeMember
-  - mustBeNonempty
-  - mustBeNumeric
-  - mustBeReal
-  - mustBeSameSize
-  - mustBeScalar
-  - mustBeScalarLogical
-  - mustBeVector
-  - colvecfun
-  - dispstrs
-  - head
-  - isfile
-  - isfolder
-  - pp
-  - scalarexpand
-  - size2str
-  - splitapply
-  - tail
-  - vecfun
-  - tblish.sizeof2
-  - tblish.datasets
-  - tblish.dataset
-  - tblish.examples.coplot
-  - tblish.examples.plot_pairs
-  - tblish.examples.SpDb
+  - 'table'
+  - 'array2table'
+  - 'cell2table'
+  - 'struct2table'
+  - 'tableOuterFillValue'
+  - 'vartype'
+  - 'istable'
+  - 'istimetable'
+  - 'istabular'
+  - 'tblish.evalWithTableVars'
+  - 'tblish.table.grpstats'
+  - 'string'
+  - 'NaS'
+  - 'contains'
+  - 'dispstrs'
+  - 'categorical'
+  - 'iscategorical'
+  - 'NaC'
+  - 'discretize'
+  - 'datetime'
+  - 'NaT'
+  - 'todatetime'
+  - 'localdate'
+  - 'isdatetime'
+  - 'calendarDuration'
+  - 'iscalendarduration'
+  - 'calmonths'
+  - 'calyears'
+  - 'days'
+  - 'duration'
+  - 'hours'
+  - 'isduration'
+  - 'milliseconds'
+  - 'minutes'
+  - 'seconds'
+  - 'timezones'
+  - 'years'
+  - 'missing'
+  - 'isnanny'
+  - 'eqn'
+  - 'mustBeA'
+  - 'mustBeCellstr'
+  - 'mustBeCharvec'
+  - 'mustBeFinite'
+  - 'mustBeInteger'
+  - 'mustBeMember'
+  - 'mustBeNonempty'
+  - 'mustBeNumeric'
+  - 'mustBeReal'
+  - 'mustBeSameSize'
+  - 'mustBeScalar'
+  - 'mustBeScalarLogical'
+  - 'mustBeVector'
+  - 'colvecfun'
+  - 'dispstrs'
+  - 'head'
+  - 'isfile'
+  - 'isfolder'
+  - 'pp'
+  - 'scalarexpand'
+  - 'size2str'
+  - 'splitapply'
+  - 'tail'
+  - 'vecfun'
+  - 'tblish.sizeof2'
+  - 'tblish.datasets'
+  - 'tblish.dataset'
+  - 'tblish.examples.coplot'
+  - 'tblish.examples.plot_pairs'
+  - 'tblish.examples.SpDb'
 ---
-

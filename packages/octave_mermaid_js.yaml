@@ -1,55 +1,60 @@
 ---
-layout: package
-permalink: octave_mermaid_js/
-description: The octave_mermaid_js package is used to generate, show and save a diagram
-  from a Mermaid graph description string. You can use octave_mermaid_js to create
-  flowcharts, sequence diagrams, class diagrams, state diagrams, ER diagram, user
-  journey diagrams, Gantt charts, pie charts, quadrant charts, requirement diagrams,
-  Git Graphs, C4 Diagrams, Mindmaps, timelines, ZenUML, Sankey diagrams, XY Charts,
-  Block Diagrams, packet diagrams, Mermaid’s Kanban diagrams, architecture diagrams,
-  radar diagrams and treemap diagrams.
-icon: https://avatars.githubusercontent.com/u/184102101?v=4
+layout: "package"
+permalink: "octave_mermaid_js/"
+description: >-
+  The octave_mermaid_js package is used to generate,
+  show and save a diagram from a Mermaid graph description
+  string.
+  You can use octave_mermaid_js to create flowcharts,
+  sequence diagrams, class diagrams, state diagrams,
+  ER diagram, user journey diagrams, Gantt charts,
+  pie charts, quadrant charts, requirement diagrams,
+  Git Graphs, C4 Diagrams, Mindmaps, timelines, ZenUML,
+  Sankey diagrams, XY Charts, Block Diagrams,
+  packet diagrams, Mermaid’s Kanban diagrams,
+  architecture diagrams, radar diagrams and
+  treemap diagrams.
+icon: "https://avatars.githubusercontent.com/u/184102101?v=4"
 links:
-- icon: far fa-copyright
-  label: GPL-3.0-or-later
-  url: https://github.com/CNOCTAVE/octave_mermaid_js/blob/main/COPYING
-- icon: fas fa-rss
-  label: news
-  url: https://github.com/CNOCTAVE/octave_mermaid_js/blob/main/NEWS
-- icon: fas fa-code-branch
-  label: repository
-  url: https://github.com/CNOCTAVE/octave_mermaid_js
-- icon: fas fa-th-list
-  label: function reference
-  url: https://cnoctave.github.io/octave_mermaid_js/index.html
-- icon: fas fa-bug
-  label: report a problem
-  url: https://github.com/CNOCTAVE/octave_mermaid_js/issues
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/CNOCTAVE/octave_mermaid_js/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/CNOCTAVE/octave_mermaid_js/blob/main/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/CNOCTAVE/octave_mermaid_js"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://cnoctave.github.io/octave_mermaid_js/index.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/CNOCTAVE/octave_mermaid_js/issues"
 maintainers:
-- name: CNOCTAVE
-  contact: cnoctave@qq.com
-- name: Yu Hongbo
-  contact: yuhongbo@member.fsf.org
+- name: "CNOCTAVE"
+  contact: "cnoctave@qq.com"
+- name: "Yu Hongbo"
+  contact: "yuhongbo@member.fsf.org"
 versions:
-- id: 1.0.0
-  date: '2025-10-10'
-  sha256: 047d80365fb454e5afb0f04ff91df8ca6942b18ca668b3b7c1058ff2b5de717a
-  url: https://github.com/CNOCTAVE/octave_mermaid_js/releases/download/1.0.0/octave_mermaid_js.tar.gz
+- id: "1.0.0"
+  date: "2025-10-10"
+  sha256: "047d80365fb454e5afb0f04ff91df8ca6942b18ca668b3b7c1058ff2b5de717a"
+  url: "https://github.com/CNOCTAVE/octave_mermaid_js/releases/download/1.0.0/octave_mermaid_js.tar.gz"
   depends:
-  - octave (>= 8.0.0)
-  - pkg
+  - "octave (>= 8.0.0)"
+  - "pkg"
   fedora41w:
-  - python3-pillow
-  - python3-matplotlib
-  - python3-requests
+  - "python3-pillow"
+  - "python3-matplotlib"
+  - "python3-requests"
   fedora42w:
-  - python3-pillow
-  - python3-matplotlib
-  - python3-requests
+  - "python3-pillow"
+  - "python3-matplotlib"
+  - "python3-requests"
 functions:
   A wrapper for Mermaid.js:
-  - mermaid_js_examples
-  - mermaid_js_imshow
-  - mermaid_js_save
+  - 'mermaid_js_examples'
+  - 'mermaid_js_imshow'
+  - 'mermaid_js_save'
 ---
-

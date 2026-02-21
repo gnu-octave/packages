@@ -1,266 +1,267 @@
 ---
-layout: package
-permalink: signal/
-description: Signal processing tools, including filtering, windowing and display functions.
-icon: https://gnu-octave.github.io/octave-signal/assets/pkg.png
+layout: "package"
+permalink: "signal/"
+description: >-
+  Signal processing tools, including filtering, windowing and display
+  functions.
+icon: "https://gnu-octave.github.io/octave-signal/assets/pkg.png"
 links:
-- icon: far fa-copyright
-  label: GPL-3.0-or-later and public domain
-  url: https://github.com/gnu-octave/octave-signal/blob/main/COPYING
-- icon: fas fa-rss
-  label: news
-  url: https://gnu-octave.github.io/octave-signal/news/
-- icon: fas fa-code-branch
-  label: repository
-  url: https://github.com/gnu-octave/octave-signal
-- icon: fas fa-th-list
-  label: function reference
-  url: https://gnu-octave.github.io/octave-signal/functions/
-- icon: fas fa-bug
-  label: report a problem
-  url: https://github.com/gnu-octave/octave-signal/issues
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later and public domain"
+  url: "https://github.com/gnu-octave/octave-signal/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://gnu-octave.github.io/octave-signal/news/"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/gnu-octave/octave-signal"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://gnu-octave.github.io/octave-signal/functions/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/gnu-octave/octave-signal/issues"
 maintainers:
-- name: Octave-Forge community
-  contact: maintainers@octave.org
+- name: "Octave-Forge community"
+  contact: "maintainers@octave.org"
 versions:
-- id: 1.4.7
-  date: '2026-01-10'
-  sha256: 6a8b4b8cf0b3019d984fde75af947ae73e9a1c509890552cd5e113f7ba89038c
-  url: https://github.com/gnu-octave/octave-signal/releases/download/1.4.7/signal-1.4.7.tar.gz
+- id: "1.4.7"
+  date: "2026-01-10"
+  sha256: "6a8b4b8cf0b3019d984fde75af947ae73e9a1c509890552cd5e113f7ba89038c"
+  url: "https://github.com/gnu-octave/octave-signal/releases/download/1.4.7/signal-1.4.7.tar.gz"
   depends:
-  - octave (>= 3.8.0)
-  - control (>= 2.4.0)
-  - pkg
-- id: 1.4.6
-  date: '2024-09-20'
-  sha256: 94eef8fea78c89609f8ddf6d5ff8bfc2e0dab932b43f86ce911474a58b5c71ee
-  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/signal-1.4.6.tar.gz
+  - "octave (>= 3.8.0)"
+  - "control (>= 2.4.0)"
+  - "pkg"
+- id: "1.4.6"
+  date: "2024-09-20"
+  sha256: "94eef8fea78c89609f8ddf6d5ff8bfc2e0dab932b43f86ce911474a58b5c71ee"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/signal-1.4.6.tar.gz"
   depends:
-  - octave (>= 3.8.0)
-  - control (>= 2.4.0)
-  - pkg
-- id: 1.4.5
-  date: '2023-07-21'
-  sha256: 555ade2ff80f7118909395c33405f0a17a4fbcd22bc6d2fb9c3f7f45fef648e7
-  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/signal-1.4.5.tar.gz
+  - "octave (>= 3.8.0)"
+  - "control (>= 2.4.0)"
+  - "pkg"
+- id: "1.4.5"
+  date: "2023-07-21"
+  sha256: "555ade2ff80f7118909395c33405f0a17a4fbcd22bc6d2fb9c3f7f45fef648e7"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/signal-1.4.5.tar.gz"
   depends:
-  - octave (>= 3.8.0)
-  - control (>= 2.4.0)
-  - pkg
-- id: 1.4.4
-  date: '2023-05-17'
-  sha256: 119df4b3a177834d6dd9c3124a2167c05aff5e6582fd0d32a7f9f306d302293a
-  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/signal-1.4.4.tar.gz
+  - "octave (>= 3.8.0)"
+  - "control (>= 2.4.0)"
+  - "pkg"
+- id: "1.4.4"
+  date: "2023-05-17"
+  sha256: "119df4b3a177834d6dd9c3124a2167c05aff5e6582fd0d32a7f9f306d302293a"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/signal-1.4.4.tar.gz"
   depends:
-  - octave (>= 3.8.0)
-  - control (>= 2.4.0)
-  - pkg
-- id: 1.4.3
-  date: '2022-10-28'
-  sha256: 545b97540ebeba3b420f08906fdd3977fc293b3bc8fc36f6ba8b094cea88f339
-  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/signal-1.4.3.tar.gz
+  - "octave (>= 3.8.0)"
+  - "control (>= 2.4.0)"
+  - "pkg"
+- id: "1.4.3"
+  date: "2022-10-28"
+  sha256: "545b97540ebeba3b420f08906fdd3977fc293b3bc8fc36f6ba8b094cea88f339"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/signal-1.4.3.tar.gz"
   depends:
-  - octave (>= 3.8.0)
-  - control (>= 2.4.0)
-  - pkg
-- id: 1.4.2
-  date: '2022-04-22'
-  sha256: 62a4e06117dcc43c36169905f8255d015481ca982aeae9013b0d9df3e48e7062
-  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/signal-1.4.2.tar.gz
+  - "octave (>= 3.8.0)"
+  - "control (>= 2.4.0)"
+  - "pkg"
+- id: "1.4.2"
+  date: "2022-04-22"
+  sha256: "62a4e06117dcc43c36169905f8255d015481ca982aeae9013b0d9df3e48e7062"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/signal-1.4.2.tar.gz"
   depends:
-  - octave (>= 3.8.0)
-  - control (>= 2.4.0)
-  - pkg
-- id: 1.4.1
-  date: '2019-02-08'
-  sha256: d978600f8b8f61339b986136c9862cad3e8f7015f84132f214bf63e9e281aeaa
-  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/signal-1.4.1.tar.gz
+  - "octave (>= 3.8.0)"
+  - "control (>= 2.4.0)"
+  - "pkg"
+- id: "1.4.1"
+  date: "2019-02-08"
+  sha256: "d978600f8b8f61339b986136c9862cad3e8f7015f84132f214bf63e9e281aeaa"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/signal-1.4.1.tar.gz"
   depends:
-  - octave (>= 3.8.0)
-  - control (>= 2.4.0)
-  - pkg
+  - "octave (>= 3.8.0)"
+  - "control (>= 2.4.0)"
+  - "pkg"
 functions:
   Signal processing:
-  - buffer
-  - chirp
-  - cmorwavf
-  - diric
-  - gauspuls
-  - gmonopuls
-  - mexihat
-  - meyeraux
-  - morlet
-  - pulstran
-  - rectpuls
-  - sawtooth
-  - shanwavf
-  - shiftdata
-  - sigmoid_train
-  - specgram
-  - square
-  - tripuls
-  - udecode
-  - uencode
-  - unshiftdata
-  - vco
-  - findpeaks
-  - peak2peak
-  - peak2rms
-  - rms = rms has moved to the octave core from v11.0.0 onwards
-  - rssq
-  - cconv
-  - convmtx
-  - wconv
-  - xcorr
-  - xcorr2
-  - xcov
-  - filtfilt
-  - filtic
-  - medfilt1
-  - movingrms
-  - sgolayfilt
-  - sosfilt
-  - filternorm
-  - filtord
-  - freqs
-  - freqs_plot
-  - fwhm
-  - grpdelay
-  - impz
-  - isallpass
-  - ismaxphase
-  - isminphase
-  - isstable
-  - phasez
-  - zplane
-  - polystab
-  - residued
-  - residuez
-  - sos2ss
-  - sos2tf
-  - sos2zp
-  - sos2cell
-  - ss2tf
-  - ss2zp
-  - tf2sos
-  - tf2ss
-  - tf2zp
-  - zp2sos
-  - zp2ss
-  - zp2tf
-  - besselap
-  - besself
-  - bilinear
-  - buttap
-  - butter
-  - buttord
-  - cheb
-  - cheb1ap
-  - cheb1ord
-  - cheb2ap
-  - cheb2ord
-  - cheby1
-  - cheby2
-  - ellip
-  - ellipap
-  - ellipord
-  - iirlp2mb
-  - impinvar
-  - invimpinvar
-  - firpm
-  - firpmord
-  - ncauer
-  - pei_tseng_notch
-  - sftrans
-  - cl2bp
-  - fir1
-  - fir2
-  - firls
-  - kaiserord
-  - qp_kaiser
-  - remez
-  - sgolay
-  - bitrevorder
-  - cceps
-  - cplxreal
-  - czt
-  - dct
-  - dct2
-  - dctmtx
-  - dftmtx
-  - digitrevorder
-  - dst
-  - dwt
-  - fht
-  - fwht
-  - hilbert
-  - idct
-  - idct2
-  - idst
-  - ifht
-  - ifwht
-  - rceps
-  - ar_psd
-  - cohere
-  - cpsd
-  - csd
-  - db2pow
-  - mscohere
-  - pburg
-  - pow2db
-  - pwelch
-  - pyulear
-  - tfe
-  - tfestimate
-  - __power
-  - barthannwin
-  - blackmanharris
-  - blackmannuttall
-  - bohmanwin
-  - boxcar
-  - chebwin
-  - expwin
-  - flattopwin
-  - gaussian
-  - gausswin
-  - hann
-  - kaiser
-  - nuttallwin
-  - parzenwin
-  - poisswin
-  - rectwin
-  - taylorwin
-  - triang
-  - tukeywin
-  - ultrwin
-  - welchwin
-  - window
-  - wvtool
-  - arburg
-  - aryule
-  - invfreq
-  - invfreqs
-  - invfreqz
-  - levinson
-  - lpc
-  - data2fun
-  - decimate
-  - downsample
-  - interp
-  - resample
-  - upfirdn
-  - upsample
-  - statelevels
-  - buffer
-  - clustersegment
-  - fracshift
-  - marcumq
-  - primitive
-  - sampled2continuous
-  - schtrig
-  - upsamplefill
-  - wkeep
-  - wrev
-  - zerocrossing
+  - 'buffer'
+  - 'chirp'
+  - 'cmorwavf'
+  - 'diric'
+  - 'gauspuls'
+  - 'gmonopuls'
+  - 'mexihat'
+  - 'meyeraux'
+  - 'morlet'
+  - 'pulstran'
+  - 'rectpuls'
+  - 'sawtooth'
+  - 'shanwavf'
+  - 'shiftdata'
+  - 'sigmoid_train'
+  - 'specgram'
+  - 'square'
+  - 'tripuls'
+  - 'udecode'
+  - 'uencode'
+  - 'unshiftdata'
+  - 'vco'
+  - 'findpeaks'
+  - 'peak2peak'
+  - 'peak2rms'
+  - 'rms = rms has moved to the octave core from v11.0.0 onwards'
+  - 'rssq'
+  - 'cconv'
+  - 'convmtx'
+  - 'wconv'
+  - 'xcorr'
+  - 'xcorr2'
+  - 'xcov'
+  - 'filtfilt'
+  - 'filtic'
+  - 'medfilt1'
+  - 'movingrms'
+  - 'sgolayfilt'
+  - 'sosfilt'
+  - 'filternorm'
+  - 'filtord'
+  - 'freqs'
+  - 'freqs_plot'
+  - 'fwhm'
+  - 'grpdelay'
+  - 'impz'
+  - 'isallpass'
+  - 'ismaxphase'
+  - 'isminphase'
+  - 'isstable'
+  - 'phasez'
+  - 'zplane'
+  - 'polystab'
+  - 'residued'
+  - 'residuez'
+  - 'sos2ss'
+  - 'sos2tf'
+  - 'sos2zp'
+  - 'sos2cell'
+  - 'ss2tf'
+  - 'ss2zp'
+  - 'tf2sos'
+  - 'tf2ss'
+  - 'tf2zp'
+  - 'zp2sos'
+  - 'zp2ss'
+  - 'zp2tf'
+  - 'besselap'
+  - 'besself'
+  - 'bilinear'
+  - 'buttap'
+  - 'butter'
+  - 'buttord'
+  - 'cheb'
+  - 'cheb1ap'
+  - 'cheb1ord'
+  - 'cheb2ap'
+  - 'cheb2ord'
+  - 'cheby1'
+  - 'cheby2'
+  - 'ellip'
+  - 'ellipap'
+  - 'ellipord'
+  - 'iirlp2mb'
+  - 'impinvar'
+  - 'invimpinvar'
+  - 'firpm'
+  - 'firpmord'
+  - 'ncauer'
+  - 'pei_tseng_notch'
+  - 'sftrans'
+  - 'cl2bp'
+  - 'fir1'
+  - 'fir2'
+  - 'firls'
+  - 'kaiserord'
+  - 'qp_kaiser'
+  - 'remez'
+  - 'sgolay'
+  - 'bitrevorder'
+  - 'cceps'
+  - 'cplxreal'
+  - 'czt'
+  - 'dct'
+  - 'dct2'
+  - 'dctmtx'
+  - 'dftmtx'
+  - 'digitrevorder'
+  - 'dst'
+  - 'dwt'
+  - 'fht'
+  - 'fwht'
+  - 'hilbert'
+  - 'idct'
+  - 'idct2'
+  - 'idst'
+  - 'ifht'
+  - 'ifwht'
+  - 'rceps'
+  - 'ar_psd'
+  - 'cohere'
+  - 'cpsd'
+  - 'csd'
+  - 'db2pow'
+  - 'mscohere'
+  - 'pburg'
+  - 'pow2db'
+  - 'pwelch'
+  - 'pyulear'
+  - 'tfe'
+  - 'tfestimate'
+  - '__power'
+  - 'barthannwin'
+  - 'blackmanharris'
+  - 'blackmannuttall'
+  - 'bohmanwin'
+  - 'boxcar'
+  - 'chebwin'
+  - 'expwin'
+  - 'flattopwin'
+  - 'gaussian'
+  - 'gausswin'
+  - 'hann'
+  - 'kaiser'
+  - 'nuttallwin'
+  - 'parzenwin'
+  - 'poisswin'
+  - 'rectwin'
+  - 'taylorwin'
+  - 'triang'
+  - 'tukeywin'
+  - 'ultrwin'
+  - 'welchwin'
+  - 'window'
+  - 'wvtool'
+  - 'arburg'
+  - 'aryule'
+  - 'invfreq'
+  - 'invfreqs'
+  - 'invfreqz'
+  - 'levinson'
+  - 'lpc'
+  - 'data2fun'
+  - 'decimate'
+  - 'downsample'
+  - 'interp'
+  - 'resample'
+  - 'upfirdn'
+  - 'upsample'
+  - 'statelevels'
+  - 'buffer'
+  - 'clustersegment'
+  - 'fracshift'
+  - 'marcumq'
+  - 'primitive'
+  - 'sampled2continuous'
+  - 'schtrig'
+  - 'upsamplefill'
+  - 'wkeep'
+  - 'wrev'
+  - 'zerocrossing'
 ---
-

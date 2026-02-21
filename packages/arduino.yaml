@@ -1,133 +1,134 @@
 ---
-layout: package
-permalink: arduino/
-description: Allow communication to a programmed arduino board to control its hardware.
-icon: https://gnu-octave.github.io/octave-arduino/assets/octave-arduino.png
+layout: "package"
+permalink: "arduino/"
+description: >-
+  Allow communication to a programmed arduino board to control its hardware.
+icon: "https://gnu-octave.github.io/octave-arduino/assets/octave-arduino.png"
 links:
-- icon: far fa-copyright
-  label: GPL-3.0-or-later
-  url: https://github.com/gnu-octave/octave-arduino/blob/main/COPYING
-- icon: fas fa-rss
-  label: news
-  url: https://gnu-octave.github.io/octave-arduino/news/
-- icon: fas fa-code-branch
-  label: repository
-  url: https://github.com/gnu-octave/octave-arduino/
-- icon: fas fa-th-list
-  label: function reference
-  url: https://gnu-octave.github.io/octave-arduino/functions/
-- icon: fas fa-book
-  label: package documentation
-  url: https://gnu-octave.github.io/octave-arduino/
-- icon: fas fa-bug
-  label: report a problem
-  url: https://github.com/gnu-octave/octave-arduino/issues
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/gnu-octave/octave-arduino/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://gnu-octave.github.io/octave-arduino/news/"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/gnu-octave/octave-arduino/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://gnu-octave.github.io/octave-arduino/functions/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://gnu-octave.github.io/octave-arduino/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/gnu-octave/octave-arduino/issues"
 maintainers:
-- name: John Donoghue
-  contact: john.donoghue@ieee.org
+- name: "John Donoghue"
+  contact: "john.donoghue@ieee.org"
 versions:
-- id: 0.12.3
-  date: '2025-12-31'
-  sha256: bdcb46011f0a766fd92da68d6cebcec6e5d0ab9c79599247f331880a33858cd9
-  url: https://github.com/gnu-octave/octave-arduino/releases/download/release-0.12.3/arduino-0.12.3.tar.gz
+- id: "0.12.3"
+  date: "2025-12-31"
+  sha256: "bdcb46011f0a766fd92da68d6cebcec6e5d0ab9c79599247f331880a33858cd9"
+  url: "https://github.com/gnu-octave/octave-arduino/releases/download/release-0.12.3/arduino-0.12.3.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - instrument-control (>= 0.5.0)
-  - pkg
-- id: 0.12.2
-  date: '2025-04-16'
-  sha256: 37c00bbc9a2615852afbc01250f865b1125f5c5532d88e772313d293feab52b8
-  url: https://github.com/gnu-octave/octave-arduino/releases/download/release-0.12.2/arduino-0.12.2.tar.gz
+  - "octave (>= 4.0.0)"
+  - "instrument-control (>= 0.5.0)"
+  - "pkg"
+- id: "0.12.2"
+  date: "2025-04-16"
+  sha256: "37c00bbc9a2615852afbc01250f865b1125f5c5532d88e772313d293feab52b8"
+  url: "https://github.com/gnu-octave/octave-arduino/releases/download/release-0.12.2/arduino-0.12.2.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - instrument-control (>= 0.5.0)
-  - pkg
-- id: 0.12.1
-  date: '2024-01-04'
-  sha256: 242a27fef5a3b260c719f3c9198e3412a612784999422d8809921ef4cc07e6f4
-  url: https://github.com/gnu-octave/octave-arduino/releases/download/release-0.12.1/arduino-0.12.1.tar.gz
+  - "octave (>= 4.0.0)"
+  - "instrument-control (>= 0.5.0)"
+  - "pkg"
+- id: "0.12.1"
+  date: "2024-01-04"
+  sha256: "242a27fef5a3b260c719f3c9198e3412a612784999422d8809921ef4cc07e6f4"
+  url: "https://github.com/gnu-octave/octave-arduino/releases/download/release-0.12.1/arduino-0.12.1.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - instrument-control (>= 0.5.0)
-  - pkg
-- id: 0.12.0
-  date: '2023-12-22'
-  sha256: 3efcf21bd0d5a47ccee2693cf5d87a02a720823c505ae8321ce3b0334c0991a8
-  url: https://github.com/gnu-octave/octave-arduino/releases/download/release-0.12.0/arduino-0.12.0.tar.gz
+  - "octave (>= 4.0.0)"
+  - "instrument-control (>= 0.5.0)"
+  - "pkg"
+- id: "0.12.0"
+  date: "2023-12-22"
+  sha256: "3efcf21bd0d5a47ccee2693cf5d87a02a720823c505ae8321ce3b0334c0991a8"
+  url: "https://github.com/gnu-octave/octave-arduino/releases/download/release-0.12.0/arduino-0.12.0.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - instrument-control (>= 0.5.0)
-  - pkg
-- id: 0.11.0
-  date: '2023-07-19'
-  sha256: 02b0ba7aa146a497b9f5f924b86529b45c7cea7ba8578d6ad3fbd26a20b83c31
-  url: https://github.com/gnu-octave/octave-arduino/releases/download/release-0.11.0/arduino-0.11.0.tar.gz
+  - "octave (>= 4.0.0)"
+  - "instrument-control (>= 0.5.0)"
+  - "pkg"
+- id: "0.11.0"
+  date: "2023-07-19"
+  sha256: "02b0ba7aa146a497b9f5f924b86529b45c7cea7ba8578d6ad3fbd26a20b83c31"
+  url: "https://github.com/gnu-octave/octave-arduino/releases/download/release-0.11.0/arduino-0.11.0.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - instrument-control (>= 0.5.0)
-  - pkg
-- id: 0.10.0
-  date: '2022-09-13'
-  sha256: a7d4834d7908c27ae435779587300792cec42f835dc01a24ac7da3f61a8026a4
-  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/arduino-0.10.0.tar.gz
+  - "octave (>= 4.0.0)"
+  - "instrument-control (>= 0.5.0)"
+  - "pkg"
+- id: "0.10.0"
+  date: "2022-09-13"
+  sha256: "a7d4834d7908c27ae435779587300792cec42f835dc01a24ac7da3f61a8026a4"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/arduino-0.10.0.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - instrument-control (>= 0.5.0)
-  - pkg
-- id: 0.9.1
-  date: '2022-07-13'
-  sha256: fb93277f730df1c9e150a769ec92c6eacc3ef98018db6d99e918e171f4d14bd6
-  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/arduino-0.9.1.tar.gz
+  - "octave (>= 4.0.0)"
+  - "instrument-control (>= 0.5.0)"
+  - "pkg"
+- id: "0.9.1"
+  date: "2022-07-13"
+  sha256: "fb93277f730df1c9e150a769ec92c6eacc3ef98018db6d99e918e171f4d14bd6"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/arduino-0.9.1.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - instrument-control (>= 0.5.0)
-  - pkg
-- id: 0.9.0
-  date: '2022-05-02'
-  sha256: 07e42b0fbf239c21b7d53e5734837cbe7741118df0e32a6c549fe2edb258959b
-  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/arduino-0.9.0.tar.gz
+  - "octave (>= 4.0.0)"
+  - "instrument-control (>= 0.5.0)"
+  - "pkg"
+- id: "0.9.0"
+  date: "2022-05-02"
+  sha256: "07e42b0fbf239c21b7d53e5734837cbe7741118df0e32a6c549fe2edb258959b"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/arduino-0.9.0.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - instrument-control (>= 0.5.0)
-  - pkg
-- id: 0.8.0
-  date: '2022-01-16'
-  sha256: a3df842bf8da56178277cdf271ebd690ca7372cf5dc58f8673efcb0721e93402
-  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/arduino-0.8.0.tar.gz
+  - "octave (>= 4.0.0)"
+  - "instrument-control (>= 0.5.0)"
+  - "pkg"
+- id: "0.8.0"
+  date: "2022-01-16"
+  sha256: "a3df842bf8da56178277cdf271ebd690ca7372cf5dc58f8673efcb0721e93402"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/arduino-0.8.0.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - instrument-control (>= 0.3.0)
-  - pkg
-- id: 0.7.0
-  date: '2021-04-28'
-  sha256: 5b72f3f06480c0d4d8ffb5bf976aaa4d1199e1facc446f96326af1f905660b64
-  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/arduino-0.7.0.tar.gz
+  - "octave (>= 4.0.0)"
+  - "instrument-control (>= 0.3.0)"
+  - "pkg"
+- id: "0.7.0"
+  date: "2021-04-28"
+  sha256: "5b72f3f06480c0d4d8ffb5bf976aaa4d1199e1facc446f96326af1f905660b64"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/arduino-0.7.0.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - instrument-control (>= 0.3.0)
-  - pkg
-- id: 0.6.0
-  date: '2020-09-04'
-  sha256: 72da54a94f973df409ee7a0f3aa8f90865db21aed42b19633b3a0c6b8098ce3a
-  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/arduino-0.6.0.tar.gz
+  - "octave (>= 4.0.0)"
+  - "instrument-control (>= 0.3.0)"
+  - "pkg"
+- id: "0.6.0"
+  date: "2020-09-04"
+  sha256: "72da54a94f973df409ee7a0f3aa8f90865db21aed42b19633b3a0c6b8098ce3a"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/arduino-0.6.0.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - instrument-control (>= 0.3.0)
-  - pkg
-- id: 0.5.0
-  date: '2020-02-06'
-  sha256: e9d8651acadd6b1a0761275b04cbfa028a29234345c634dde405554072c754fe
-  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/arduino-0.5.0.tar.gz
+  - "octave (>= 4.0.0)"
+  - "instrument-control (>= 0.3.0)"
+  - "pkg"
+- id: "0.5.0"
+  date: "2020-02-06"
+  sha256: "e9d8651acadd6b1a0761275b04cbfa028a29234345c634dde405554072c754fe"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/arduino-0.5.0.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - instrument-control (>= 0.3.0)
-  - pkg
+  - "octave (>= 4.0.0)"
+  - "instrument-control (>= 0.3.0)"
+  - "pkg"
 functions:
   Arduino Toolkit:
-  - arduinosetup
-  - isarduino
-  - listArduinoLibraries
-  - scanForArduinos
+  - 'arduinosetup'
+  - 'isarduino'
+  - 'listArduinoLibraries'
+  - 'scanForArduinos'
   - '@arduino/configurePin'
   - '@arduino/playTone'
   - '@arduino/readAnalogPin'
@@ -167,7 +168,7 @@ functions:
   - '@arduino/delete'
   - '@arduino/disp'
   - '@arduino/arduino'
-  - scanI2Cbus
+  - 'scanI2Cbus'
   - '@i2cdev/delete'
   - '@i2cdev/disp'
   - '@i2cdev/read'
@@ -237,32 +238,31 @@ functions:
   - '@ultrasonic/readDistance'
   - '@ultrasonic/readEchoTime'
   - '@ultrasonic/ultrasonic'
-  - addon
-  - arduinoioaddons.ExampleAddon.Echo
-  - arduinoioaddons.ExampleLCD.LCD
-  - arduinoioaddons.EEPRomAddon.EEPRom
-  - arduinoioaddons.RTCAddon.DS1307
-  - arduinoioaddons.adafruit.motorshieldv2
-  - arduinoioaddons.adafruit.dcmotorv2
-  - arduinoioaddons.adafruit.stepper
-  - arduinoioaddons.SimpleStepper.SimpleStepper
-  - arduinosensor.DS1307
-  - arduinosensor.MPC3002
-  - arduinosensor.SI7021
-  - arduinosensor.GUVAS12SD
-  - arduinoio.AddonBase
-  - arduinoio.FilePath
-  - arduinoio.LibFiles
-  - arduinoio.LibraryBase
-  - arduinoio.getBoardConfig
-  - matlabshared.addon.LibraryBase
-  - bme280
-  - bno055
-  - lis3dh
-  - lps22hb
-  - lsm6dso
-  - mpu6050
-  - si7021
-  - arduino_bistsetup
+  - 'addon'
+  - 'arduinoioaddons.ExampleAddon.Echo'
+  - 'arduinoioaddons.ExampleLCD.LCD'
+  - 'arduinoioaddons.EEPRomAddon.EEPRom'
+  - 'arduinoioaddons.RTCAddon.DS1307'
+  - 'arduinoioaddons.adafruit.motorshieldv2'
+  - 'arduinoioaddons.adafruit.dcmotorv2'
+  - 'arduinoioaddons.adafruit.stepper'
+  - 'arduinoioaddons.SimpleStepper.SimpleStepper'
+  - 'arduinosensor.DS1307'
+  - 'arduinosensor.MPC3002'
+  - 'arduinosensor.SI7021'
+  - 'arduinosensor.GUVAS12SD'
+  - 'arduinoio.AddonBase'
+  - 'arduinoio.FilePath'
+  - 'arduinoio.LibFiles'
+  - 'arduinoio.LibraryBase'
+  - 'arduinoio.getBoardConfig'
+  - 'matlabshared.addon.LibraryBase'
+  - 'bme280'
+  - 'bno055'
+  - 'lis3dh'
+  - 'lps22hb'
+  - 'lsm6dso'
+  - 'mpu6050'
+  - 'si7021'
+  - 'arduino_bistsetup'
 ---
-

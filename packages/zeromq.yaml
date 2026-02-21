@@ -1,161 +1,161 @@
 ---
-layout: package
-permalink: zeromq/
-description: ZeroMQ bindings for GNU Octave.
-icon: https://gnu-octave.github.io/octave-zeromq/assets/octave-zeromq.png
+layout: "package"
+permalink: "zeromq/"
+description: >-
+  ZeroMQ bindings for GNU Octave.
+icon: "https://gnu-octave.github.io/octave-zeromq/assets/octave-zeromq.png"
 links:
-- icon: far fa-copyright
-  label: GPL-3.0-or-later
-  url: https://github.com/gnu-octave/octave-zeromq/blob/main/COPYING
-- icon: fas fa-rss
-  label: news
-  url: https://gnu-octave.github.io/octave-zeromq/news/
-- icon: fas fa-code-branch
-  label: repository
-  url: https://github.com/gnu-octave/octave-zeromq
-- icon: fas fa-th-list
-  label: function reference
-  url: https://gnu-octave.github.io/octave-zeromq/functions/
-- icon: fas fa-book
-  label: package documentation
-  url: https://gnu-octave.github.io/octave-zeromq/manual/
-- icon: fas fa-bug
-  label: report a problem
-  url: https://github.com/gnu-octave/octave-zeromq/issues
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/gnu-octave/octave-zeromq/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://gnu-octave.github.io/octave-zeromq/news/"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/gnu-octave/octave-zeromq"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://gnu-octave.github.io/octave-zeromq/functions/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://gnu-octave.github.io/octave-zeromq/manual/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/gnu-octave/octave-zeromq/issues"
 maintainers:
-- name: John Donoghue
-  contact: john.donoghue@ieee.org
+- name: "John Donoghue"
+  contact: "john.donoghue@ieee.org"
 versions:
-- id: 1.5.7
-  date: '2026-01-07'
-  sha256: 61ec7df968b533ac599de162f6da9467a3d7fe6c47cc4f789d9f18eef50941ad
-  url: https://github.com/gnu-octave/octave-zeromq/releases/download/release-1.5.7/zeromq-1.5.7.tar.gz
+- id: "1.5.7"
+  date: "2026-01-07"
+  sha256: "61ec7df968b533ac599de162f6da9467a3d7fe6c47cc4f789d9f18eef50941ad"
+  url: "https://github.com/gnu-octave/octave-zeromq/releases/download/release-1.5.7/zeromq-1.5.7.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - pkg
+  - "octave (>= 4.0.0)"
+  - "pkg"
   ubuntu2204:
-  - libzmq3-dev
-- id: 1.5.6
-  date: '2023-08-11'
-  sha256: 2104b725f187472a0163917a1af83fc557f99b8fc986975140f47c146a057ae2
-  url: https://github.com/gnu-octave/octave-zeromq/releases/download/release-1.5.6/zeromq-1.5.6.tar.gz
+  - "libzmq3-dev"
+- id: "1.5.6"
+  date: "2023-08-11"
+  sha256: "2104b725f187472a0163917a1af83fc557f99b8fc986975140f47c146a057ae2"
+  url: "https://github.com/gnu-octave/octave-zeromq/releases/download/release-1.5.6/zeromq-1.5.6.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - pkg
+  - "octave (>= 4.0.0)"
+  - "pkg"
   ubuntu2204:
-  - libzmq3-dev
-- id: 1.5.5
-  date: '2022-10-17'
-  sha256: 300644a5b56eada815b97acc27cab9fe3539713721a2c02dac047a1252f07ecb
-  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/zeromq-1.5.5.tar.gz
+  - "libzmq3-dev"
+- id: "1.5.5"
+  date: "2022-10-17"
+  sha256: "300644a5b56eada815b97acc27cab9fe3539713721a2c02dac047a1252f07ecb"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/zeromq-1.5.5.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - pkg
+  - "octave (>= 4.0.0)"
+  - "pkg"
   ubuntu2204:
-  - libzmq3-dev
-- id: 1.5.4
-  date: '2022-05-02'
-  sha256: c46a72fe0117b13a9f24fd48ffbbce65422fcb80b95ce09b78f1d0b086a9ded4
-  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/zeromq-1.5.4.tar.gz
+  - "libzmq3-dev"
+- id: "1.5.4"
+  date: "2022-05-02"
+  sha256: "c46a72fe0117b13a9f24fd48ffbbce65422fcb80b95ce09b78f1d0b086a9ded4"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/zeromq-1.5.4.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - pkg
+  - "octave (>= 4.0.0)"
+  - "pkg"
   ubuntu2204:
-  - libzmq3-dev
-- id: 1.5.3
-  date: '2021-07-15'
-  sha256: 943bab8e38dd524b0e83882c65c2f71a35dcf142b2807cdc56d1db85af5817c0
-  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/zeromq-1.5.3.tar.gz
+  - "libzmq3-dev"
+- id: "1.5.3"
+  date: "2021-07-15"
+  sha256: "943bab8e38dd524b0e83882c65c2f71a35dcf142b2807cdc56d1db85af5817c0"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/zeromq-1.5.3.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - pkg
+  - "octave (>= 4.0.0)"
+  - "pkg"
   ubuntu2204:
-  - libzmq3-dev
-- id: 1.5.2
-  date: '2020-10-13'
-  sha256: 47265bf1b2b1c747f78210a896b33b651d0e77919b01b1e519b99d98d30001a2
-  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/zeromq-1.5.2.tar.gz
+  - "libzmq3-dev"
+- id: "1.5.2"
+  date: "2020-10-13"
+  sha256: "47265bf1b2b1c747f78210a896b33b651d0e77919b01b1e519b99d98d30001a2"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/zeromq-1.5.2.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - pkg
+  - "octave (>= 4.0.0)"
+  - "pkg"
   ubuntu2204:
-  - libzmq3-dev
-- id: 1.5.1
-  date: '2020-04-28'
-  sha256: 14d16880ea048eae93763950f56e6212be37169fcb3851d66d799c80aeb6287b
-  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/zeromq-1.5.1.tar.gz
+  - "libzmq3-dev"
+- id: "1.5.1"
+  date: "2020-04-28"
+  sha256: "14d16880ea048eae93763950f56e6212be37169fcb3851d66d799c80aeb6287b"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/zeromq-1.5.1.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - pkg
+  - "octave (>= 4.0.0)"
+  - "pkg"
   ubuntu2204:
-  - libzmq3-dev
+  - "libzmq3-dev"
 functions:
   Octave ZeroMQ bindings:
-  - zeromq
-  - iszmq
-  - zmq_bind
-  - zmq_close
-  - zmq_connect
-  - zmq_curve_keypair
-  - zmq_curve_public
-  - zmq_disconnect
-  - zmq_errno
-  - zmq_getsockopt
-  - zmq_has
-  - zmq_poll
-  - zmq_recv
-  - zmq_send
-  - zmq_setsockopt
-  - zmq_socket
-  - zmq_strerror
-  - zmq_unbind
-  - zmq_version
-  - zmq_z85_decode
-  - zmq_z85_encode
-  - ZMQ_DEALER
-  - ZMQ_PAIR
-  - ZMQ_PUB
-  - ZMQ_PULL
-  - ZMQ_PUSH
-  - ZMQ_REP
-  - ZMQ_REQ
-  - ZMQ_ROUTER
-  - ZMQ_STREAM
-  - ZMQ_SUB
-  - ZMQ_XPUB
-  - ZMQ_XSUB
-  - ZMQ_EVENTS
-  - ZMQ_SUBSCRIBE
-  - ZMQ_UNSUBSCRIBE
-  - ZMQ_RCVMORE
-  - ZMQ_TYPE
-  - ZMQ_IDENTITY
-  - ZMQ_LAST_ENDPOINT
-  - ZMQ_CONNECT_TIMEOUT
-  - ZMQ_CURVE_PUBLICKEY
-  - ZMQ_CURVE_SECRETKEY
-  - ZMQ_CURVE_SERVERKEY
-  - ZMQ_CURVE_SERVER
-  - ZMQ_PLAIN_SERVER
-  - ZMQ_PLAIN_USERNAME
-  - ZMQ_PLAIN_PASSWORD
-  - ZMQ_MECHANISM
-  - ZMQ_SOCKS_PROXY
-  - ZMQ_GSSAPI_PLAINTEXT
-  - ZMQ_GSSAPI_PRINCIPAL
-  - ZMQ_GSSAPI_SERVER
-  - ZMQ_GSSAPI_SERVICE_PRINCIPAL
-  - ZMQ_PRIORITY
-  - ZMQ_RATE
-  - ZMQ_ROUTING_ID
-  - ZMQ_BACKLOG
-  - ZMQ_POLLIN
-  - ZMQ_POLLOUT
-  - ZMQ_DONTWAIT
-  - ZMQ_SNDMORE
-  - ZMQ_NULL
-  - ZMQ_PLAIN
-  - ZMQ_CURVE
-  - ZMQ_GSSAPI
+  - 'zeromq'
+  - 'iszmq'
+  - 'zmq_bind'
+  - 'zmq_close'
+  - 'zmq_connect'
+  - 'zmq_curve_keypair'
+  - 'zmq_curve_public'
+  - 'zmq_disconnect'
+  - 'zmq_errno'
+  - 'zmq_getsockopt'
+  - 'zmq_has'
+  - 'zmq_poll'
+  - 'zmq_recv'
+  - 'zmq_send'
+  - 'zmq_setsockopt'
+  - 'zmq_socket'
+  - 'zmq_strerror'
+  - 'zmq_unbind'
+  - 'zmq_version'
+  - 'zmq_z85_decode'
+  - 'zmq_z85_encode'
+  - 'ZMQ_DEALER'
+  - 'ZMQ_PAIR'
+  - 'ZMQ_PUB'
+  - 'ZMQ_PULL'
+  - 'ZMQ_PUSH'
+  - 'ZMQ_REP'
+  - 'ZMQ_REQ'
+  - 'ZMQ_ROUTER'
+  - 'ZMQ_STREAM'
+  - 'ZMQ_SUB'
+  - 'ZMQ_XPUB'
+  - 'ZMQ_XSUB'
+  - 'ZMQ_EVENTS'
+  - 'ZMQ_SUBSCRIBE'
+  - 'ZMQ_UNSUBSCRIBE'
+  - 'ZMQ_RCVMORE'
+  - 'ZMQ_TYPE'
+  - 'ZMQ_IDENTITY'
+  - 'ZMQ_LAST_ENDPOINT'
+  - 'ZMQ_CONNECT_TIMEOUT'
+  - 'ZMQ_CURVE_PUBLICKEY'
+  - 'ZMQ_CURVE_SECRETKEY'
+  - 'ZMQ_CURVE_SERVERKEY'
+  - 'ZMQ_CURVE_SERVER'
+  - 'ZMQ_PLAIN_SERVER'
+  - 'ZMQ_PLAIN_USERNAME'
+  - 'ZMQ_PLAIN_PASSWORD'
+  - 'ZMQ_MECHANISM'
+  - 'ZMQ_SOCKS_PROXY'
+  - 'ZMQ_GSSAPI_PLAINTEXT'
+  - 'ZMQ_GSSAPI_PRINCIPAL'
+  - 'ZMQ_GSSAPI_SERVER'
+  - 'ZMQ_GSSAPI_SERVICE_PRINCIPAL'
+  - 'ZMQ_PRIORITY'
+  - 'ZMQ_RATE'
+  - 'ZMQ_ROUTING_ID'
+  - 'ZMQ_BACKLOG'
+  - 'ZMQ_POLLIN'
+  - 'ZMQ_POLLOUT'
+  - 'ZMQ_DONTWAIT'
+  - 'ZMQ_SNDMORE'
+  - 'ZMQ_NULL'
+  - 'ZMQ_PLAIN'
+  - 'ZMQ_CURVE'
+  - 'ZMQ_GSSAPI'
 ---
-

@@ -1,88 +1,89 @@
 ---
-layout: package
-permalink: mqtt/
-description: Octave implementation of mqtt toolkit
-icon: https://gnu-octave.github.io/octave-mqtt/assets/octave-mqtt.png
+layout: "package"
+permalink: "mqtt/"
+description: >-
+  Octave implementation of mqtt toolkit
+icon: "https://gnu-octave.github.io/octave-mqtt/assets/octave-mqtt.png"
 links:
-- icon: far fa-copyright
-  label: GPL-3.0-or-later
-  url: https://raw.githubusercontent.com/gnu-octave/octave-mqtt/main/COPYING
-- icon: fas fa-rss
-  label: news
-  url: https://gnu-octave.github.io/octave-mqtt/news/
-- icon: fas fa-code-branch
-  label: repository
-  url: https://github.com/gnu-octave/octave-mqtt
-- icon: fas fa-th-list
-  label: function reference
-  url: https://gnu-octave.github.io/octave-mqtt/functions/
-- icon: fas fa-book
-  label: package documentation
-  url: https://gnu-octave.github.io/octave-mqtt/manual/
-- icon: fas fa-bug
-  label: report a problem
-  url: https://github.com/gnu-octave/octave-mqtt/issues
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://raw.githubusercontent.com/gnu-octave/octave-mqtt/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://gnu-octave.github.io/octave-mqtt/news/"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/gnu-octave/octave-mqtt"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://gnu-octave.github.io/octave-mqtt/functions/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://gnu-octave.github.io/octave-mqtt/manual/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/gnu-octave/octave-mqtt/issues"
 maintainers:
-- name: John Donoghue
-  contact: john.donoghue@ieee.org
+- name: "John Donoghue"
+  contact: "john.donoghue@ieee.org"
 versions:
-- id: 0.0.6
-  date: '2025-12-29'
-  sha256: 41d01f43178485d16ff11ad90248507c33d57660b4422160b38941850fee8a91
-  url: https://github.com/gnu-octave/octave-mqtt/releases/download/release-0.0.6/octave-mqtt-0.0.6.tar.gz
+- id: "0.0.6"
+  date: "2025-12-29"
+  sha256: "41d01f43178485d16ff11ad90248507c33d57660b4422160b38941850fee8a91"
+  url: "https://github.com/gnu-octave/octave-mqtt/releases/download/release-0.0.6/octave-mqtt-0.0.6.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - pkg
+  - "octave (>= 4.0.0)"
+  - "pkg"
   ubuntu2204:
-  - libpaho-mqtt-dev
-- id: 0.0.5
-  date: '2024-04-11'
-  sha256: 27a9498697bace234e7f218ced845bbe3369520b493a22e091575c3e13d31cb6
-  url: https://github.com/gnu-octave/octave-mqtt/releases/download/release-0.0.5/octave-mqtt-0.0.5.tar.gz
+  - "libpaho-mqtt-dev"
+- id: "0.0.5"
+  date: "2024-04-11"
+  sha256: "27a9498697bace234e7f218ced845bbe3369520b493a22e091575c3e13d31cb6"
+  url: "https://github.com/gnu-octave/octave-mqtt/releases/download/release-0.0.5/octave-mqtt-0.0.5.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - pkg
+  - "octave (>= 4.0.0)"
+  - "pkg"
   ubuntu2204:
-  - libpaho-mqtt-dev
-- id: 0.0.4
-  date: '2023-07-25'
-  sha256: 484c6e889329d8ef7b1e2878766680dc070ebc3014aaf2a92339164ebfe4d73e
-  url: https://github.com/gnu-octave/octave-mqtt/releases/download/release-0.0.4/octave-mqtt-0.0.4.tar.gz
+  - "libpaho-mqtt-dev"
+- id: "0.0.4"
+  date: "2023-07-25"
+  sha256: "484c6e889329d8ef7b1e2878766680dc070ebc3014aaf2a92339164ebfe4d73e"
+  url: "https://github.com/gnu-octave/octave-mqtt/releases/download/release-0.0.4/octave-mqtt-0.0.4.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - pkg
+  - "octave (>= 4.0.0)"
+  - "pkg"
   ubuntu2204:
-  - libpaho-mqtt-dev
-- id: 0.0.3
-  date: '2022-08-18'
-  sha256: 9aff75a326ee50b63bacfddf4c9318c72a1c2a39e558ed5d347d43f17009da64
-  url: https://downloads.sourceforge.net/project/octave-mqtt/v0.0.3/octave-mqtt-0.0.3.tar.gz
+  - "libpaho-mqtt-dev"
+- id: "0.0.3"
+  date: "2022-08-18"
+  sha256: "9aff75a326ee50b63bacfddf4c9318c72a1c2a39e558ed5d347d43f17009da64"
+  url: "https://downloads.sourceforge.net/project/octave-mqtt/v0.0.3/octave-mqtt-0.0.3.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - pkg
+  - "octave (>= 4.0.0)"
+  - "pkg"
   ubuntu2204:
-  - libpaho-mqtt-dev
-- id: 0.0.2
-  date: '2022-07-21'
-  sha256: d976faf7f10d407d3d6c1b8e00917c2329bd7ee3b51952fb5418d64cefa0adee
-  url: https://downloads.sourceforge.net/project/octave-mqtt/v0.0.2/octave-mqtt-0.0.2.tar.gz
+  - "libpaho-mqtt-dev"
+- id: "0.0.2"
+  date: "2022-07-21"
+  sha256: "d976faf7f10d407d3d6c1b8e00917c2329bd7ee3b51952fb5418d64cefa0adee"
+  url: "https://downloads.sourceforge.net/project/octave-mqtt/v0.0.2/octave-mqtt-0.0.2.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - pkg
+  - "octave (>= 4.0.0)"
+  - "pkg"
   ubuntu2204:
-  - libpaho-mqtt-dev
-- id: 0.0.1
-  date: '2022-06-30'
-  sha256: c372891b1d32b9774b74ff3ccbac5c85f2f8ca63de6c60633cca5873e1014cf6
-  url: https://downloads.sourceforge.net/project/octave-mqtt/v0.0.1/octave-mqtt-0.0.1.tar.gz
+  - "libpaho-mqtt-dev"
+- id: "0.0.1"
+  date: "2022-06-30"
+  sha256: "c372891b1d32b9774b74ff3ccbac5c85f2f8ca63de6c60633cca5873e1014cf6"
+  url: "https://downloads.sourceforge.net/project/octave-mqtt/v0.0.1/octave-mqtt-0.0.1.tar.gz"
   depends:
-  - octave (>= 4.0.0)
-  - pkg
+  - "octave (>= 4.0.0)"
+  - "pkg"
   ubuntu2204:
-  - libpaho-mqtt-dev
+  - "libpaho-mqtt-dev"
 functions:
   Octave MQTT Toolkit:
-  - mqttclient
+  - 'mqttclient'
   - '@octave_mqtt/flush'
   - '@octave_mqtt/peek'
   - '@octave_mqtt/read'
@@ -90,4 +91,3 @@ functions:
   - '@octave_mqtt/unsubscribe'
   - '@octave_mqtt/write'
 ---
-
