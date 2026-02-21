@@ -1,85 +1,88 @@
 ---
-layout: "package"
-permalink: "coder/"
-description: >-
-  Coder is an Octave code generator and build system that, given a function
-  name translates the function and all of its dependencies to C++ and builds
-  a .oct shared module.
-icon: "https://raw.githubusercontent.com/shsajjadi/OctaveCoder/dev/doc/icon.png"
+layout: package
+permalink: coder/
+description: Coder is an Octave code generator and build system that, given a function
+  name translates the function and all of its dependencies to C++ and builds a .oct
+  shared module.
+icon: https://raw.githubusercontent.com/shsajjadi/OctaveCoder/dev/doc/icon.png
 links:
-- icon: "far fa-copyright"
-  label: "AGPL-3.0-or-later"
-  url: "https://github.com/shsajjadi/OctaveCoder/blob/dev/COPYING"
-- icon: "fas fa-rss"
-  label: "news"
-  url: "https://github.com/shsajjadi/OctaveCoder/blob/dev/NEWS"
-- icon: "fas fa-code-branch"
-  label: "repository"
-  url: "https://github.com/shsajjadi/OctaveCoder"
-- icon: "fas fa-book"
-  label: "package documentation"
-  url: "https://github.com/shsajjadi/OctaveCoder/blob/dev/README.md"
-- icon: "fas fa-bug"
-  label: "report a problem"
-  url: "https://github.com/shsajjadi/OctaveCoder/issues"
+- icon: far fa-copyright
+  label: AGPL-3.0-or-later
+  url: https://github.com/shsajjadi/OctaveCoder/blob/dev/COPYING
+- icon: fas fa-rss
+  label: news
+  url: https://github.com/shsajjadi/OctaveCoder/blob/dev/NEWS
+- icon: fas fa-code-branch
+  label: repository
+  url: https://github.com/shsajjadi/OctaveCoder
+- icon: fas fa-book
+  label: package documentation
+  url: https://github.com/shsajjadi/OctaveCoder/blob/dev/README.md
+- icon: fas fa-bug
+  label: report a problem
+  url: https://github.com/shsajjadi/OctaveCoder/issues
 maintainers:
-- name: "Seyyed Hossein Sajjadi"
-  contact: "https://github.com/shsajjadi"
+- name: Seyyed Hossein Sajjadi
+  contact: https://github.com/shsajjadi
 versions:
-- id: "1.11.1"
-  date: "2026-02-15"
-  sha256: "919d82a6b3c63d1e11a533bb287217bbf672c2429f2c4bf6a60b58fa664ab42b"
-  url: "https://github.com/shsajjadi/OctaveCoder/releases/download/coder-1.11.1/coder-1.11.1.tar.gz"
+- id: 1.11.1
+  date: '2026-02-15'
+  sha256: 919d82a6b3c63d1e11a533bb287217bbf672c2429f2c4bf6a60b58fa664ab42b
+  url: https://github.com/shsajjadi/OctaveCoder/releases/download/coder-1.11.1/coder-1.11.1.tar.gz
   depends:
-  - "octave (>= 4.4.0)"
-  - "pkg"
-- id: "1.10.1"
-  date: "2025-03-30"
-  sha256: "737990b495648fbcbeac7efb3d83b0119f474d01fa466b85053be6741c499926"
-  url: "https://github.com/shsajjadi/OctaveCoder/releases/download/coder-1.10.1/coder-1.10.1.tar.gz"
+  - octave (>= 4.4.0)
+  - pkg
+- id: 1.10.1
+  date: '2025-03-30'
+  sha256: 737990b495648fbcbeac7efb3d83b0119f474d01fa466b85053be6741c499926
+  url: https://github.com/shsajjadi/OctaveCoder/releases/download/coder-1.10.1/coder-1.10.1.tar.gz
   depends:
-  - "octave (>= 4.4.0)"
-  - "pkg"
-- id: "1.9.2"
-  date: "2024-03-24"
-  sha256: "3a0629a89b7fa9af3eb7e01ae7e9ac642c8dbba7a8dd502c3db8db0f3d9b3b99"
-  url: "https://github.com/shsajjadi/OctaveCoder/releases/download/coder-1.9.2/coder-1.9.2.tar.gz"
+  - octave (>= 4.4.0)
+  - pkg
+- id: 1.9.2
+  date: '2024-03-24'
+  sha256: 3a0629a89b7fa9af3eb7e01ae7e9ac642c8dbba7a8dd502c3db8db0f3d9b3b99
+  url: https://github.com/shsajjadi/OctaveCoder/releases/download/coder-1.9.2/coder-1.9.2.tar.gz
   depends:
-  - "octave (>= 4.4.0)"
-  - "pkg"
-- id: "1.9.1"
-  date: "2024-03-22"
-  sha256: "ff0a0a29770fc785f8e528626bfa31b401e249a3c40ebd6b9061d5794a0f23a3"
-  url: "https://github.com/shsajjadi/OctaveCoder/releases/download/coder-1.9.1/coder-1.9.1.tar.gz"
+  - octave (>= 4.4.0)
+  - pkg
+- id: 1.9.1
+  date: '2024-03-22'
+  sha256: ff0a0a29770fc785f8e528626bfa31b401e249a3c40ebd6b9061d5794a0f23a3
+  url: https://github.com/shsajjadi/OctaveCoder/releases/download/coder-1.9.1/coder-1.9.1.tar.gz
   depends:
-  - "octave (>= 4.4.0)"
-  - "pkg"
-- id: "1.8.4"
-  date: "2023-11-13"
-  sha256: "06ca00f5922127ed3ec34e49d7db308573e3a4fa6e84b65a066aee3523ed9348"
-  url: "https://github.com/shsajjadi/OctaveCoder/releases/download/coder-1.8.4/coder-1.8.4.tar.gz"
+  - octave (>= 4.4.0)
+  - pkg
+- id: 1.8.4
+  date: '2023-11-13'
+  sha256: 06ca00f5922127ed3ec34e49d7db308573e3a4fa6e84b65a066aee3523ed9348
+  url: https://github.com/shsajjadi/OctaveCoder/releases/download/coder-1.8.4/coder-1.8.4.tar.gz
   depends:
-  - "octave (>= 4.4.0)"
-  - "pkg"
-- id: "1.8.0"
-  date: "2023-02-13"
-  sha256: "fc832bccfb21de928139c0979b5513d347d469841a54d311ecd166a29356c990"
-  url: "https://github.com/shsajjadi/OctaveCoder/archive/refs/tags/coder-1.8.0.tar.gz"
+  - octave (>= 4.4.0)
+  - pkg
+- id: 1.8.0
+  date: '2023-02-13'
+  sha256: fc832bccfb21de928139c0979b5513d347d469841a54d311ecd166a29356c990
+  url: https://github.com/shsajjadi/OctaveCoder/archive/refs/tags/coder-1.8.0.tar.gz
   depends:
-  - "octave (>= 4.4.0)"
-  - "pkg"
-- id: "1.7.0"
-  date: "2022-03-26"
-  sha256: "e373808593dcc813b5063d3d1898c854757d42e379376b7225d25f70923cf5dc"
-  url: "https://github.com/shsajjadi/OctaveCoder/archive/refs/tags/coder-1.7.0.tar.gz"
+  - octave (>= 4.4.0)
+  - pkg
+- id: 1.7.0
+  date: '2022-03-26'
+  sha256: e373808593dcc813b5063d3d1898c854757d42e379376b7225d25f70923cf5dc
+  url: https://github.com/shsajjadi/OctaveCoder/archive/refs/tags/coder-1.7.0.tar.gz
   depends:
-  - "octave (>= 4.4.0)"
-  - "pkg"
-- id: "1.6.8"
-  date: "2021-12-07"
-  sha256: "5b12475750603abbfbc35059f7a79c92a82f73acc87e3053b5470f514f52c216"
-  url: "https://github.com/shsajjadi/OctaveCoder/archive/refs/tags/coder-1.6.8.tar.gz"
+  - octave (>= 4.4.0)
+  - pkg
+- id: 1.6.8
+  date: '2021-12-07'
+  sha256: 5b12475750603abbfbc35059f7a79c92a82f73acc87e3053b5470f514f52c216
+  url: https://github.com/shsajjadi/OctaveCoder/archive/refs/tags/coder-1.6.8.tar.gz
   depends:
-  - "octave (>= 4.4.0)"
-  - "pkg"
+  - octave (>= 4.4.0)
+  - pkg
+functions:
+  Octave Coder.:
+  - octave2oct
 ---
+

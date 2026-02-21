@@ -1,105 +1,121 @@
 ---
-layout: "package"
-permalink: "dicom/"
-description: >-
-  File io for medical images and other data using Grassroots DICOM (GDCM)
+layout: package
+permalink: dicom/
+description: File io for medical images and other data using Grassroots DICOM (GDCM)
   library.
-icon: "https://gnu-octave.github.io/octave-dicom//assets/pkg.png"
+icon: https://gnu-octave.github.io/octave-dicom//assets/pkg.png
 links:
-- icon: "far fa-copyright"
-  label: "GPL-3.0-or-later"
-  url: "https://github.com/gnu-octave/octave-dicom/blob/main/COPYING"
-- icon: "fas fa-rss"
-  label: "news"
-  url: "https://gnu-octave.github.io/octave-dicom/news/"
-- icon: "fas fa-code-branch"
-  label: "repository"
-  url: "https://github.com/gnu-octave/octave-dicom/"
-- icon: "fas fa-th-list"
-  label: "function reference"
-  url: "https://gnu-octave.github.io/octave-dicom/functions/"
-- icon: "fas fa-book"
-  label: "package documentation"
-  url: "https://gnu-octave.github.io/octave-dicom/manual/"
-- icon: "fas fa-bug"
-  label: "report a problem"
-  url: "https://github.com/gnu-octave/octave-dicom/issues"
+- icon: far fa-copyright
+  label: GPL-3.0-or-later
+  url: https://github.com/gnu-octave/octave-dicom/blob/main/COPYING
+- icon: fas fa-rss
+  label: news
+  url: https://gnu-octave.github.io/octave-dicom/news/
+- icon: fas fa-code-branch
+  label: repository
+  url: https://github.com/gnu-octave/octave-dicom/
+- icon: fas fa-th-list
+  label: function reference
+  url: https://gnu-octave.github.io/octave-dicom/functions/
+- icon: fas fa-book
+  label: package documentation
+  url: https://gnu-octave.github.io/octave-dicom/manual/
+- icon: fas fa-bug
+  label: report a problem
+  url: https://github.com/gnu-octave/octave-dicom/issues
 maintainers:
-- name: "Andy Buckle"
-  contact:
-- name: "John Donoghue"
-  contact: "john.donoghue@ieee.org"
+- name: Andy Buckle
+  contact: null
+- name: John Donoghue
+  contact: john.donoghue@ieee.org
 versions:
-- id: "0.7.1"
-  date: "2026-01-06"
-  sha256: "8233ee41002ae427e5a8f36498fb8628a99834f314d70cedc56cc9f6686e0282"
-  url: "https://github.com/gnu-octave/octave-dicom/releases/download/release-0.7.1/dicom-0.7.1.tar.gz"
+- id: 0.7.1
+  date: '2026-01-06'
+  sha256: 8233ee41002ae427e5a8f36498fb8628a99834f314d70cedc56cc9f6686e0282
+  url: https://github.com/gnu-octave/octave-dicom/releases/download/release-0.7.1/dicom-0.7.1.tar.gz
   depends:
-  - "octave (>= 3.8.0)"
-  - "pkg"
+  - octave (>= 3.8.0)
+  - pkg
   ubuntu2204:
-  - "libgdcm-dev"
-- id: "0.6.1"
-  date: "2024-07-24"
-  sha256: "7ab519b9d3a49f29a01a9aea52109a4af37f5a5996675aa01fc1c362b34e8362"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dicom-0.6.1.tar.gz"
+  - libgdcm-dev
+- id: 0.6.1
+  date: '2024-07-24'
+  sha256: 7ab519b9d3a49f29a01a9aea52109a4af37f5a5996675aa01fc1c362b34e8362
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dicom-0.6.1.tar.gz
   depends:
-  - "octave (>= 3.8.0)"
-  - "pkg"
+  - octave (>= 3.8.0)
+  - pkg
   ubuntu2204:
-  - "libgdcm-dev"
-- id: "0.6.0"
-  date: "2023-12-22"
-  sha256: "085b29a8f243494d4f83ea3a76e6f5ffe83e98f0e9b3db0f96eb3a91e0e3ea1d"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dicom-0.6.0.tar.gz"
+  - libgdcm-dev
+- id: 0.6.0
+  date: '2023-12-22'
+  sha256: 085b29a8f243494d4f83ea3a76e6f5ffe83e98f0e9b3db0f96eb3a91e0e3ea1d
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dicom-0.6.0.tar.gz
   depends:
-  - "octave (>= 3.8.0)"
-  - "pkg"
+  - octave (>= 3.8.0)
+  - pkg
   ubuntu2204:
-  - "libgdcm-dev"
-- id: "0.5.1"
-  date: "2022-11-21"
-  sha256: "d2a36a8e92565810343792208d5d1ed123d0942bdbcc8c27220696a3edb02b0d"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dicom-0.5.1.tar.gz"
+  - libgdcm-dev
+- id: 0.5.1
+  date: '2022-11-21'
+  sha256: d2a36a8e92565810343792208d5d1ed123d0942bdbcc8c27220696a3edb02b0d
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dicom-0.5.1.tar.gz
   depends:
-  - "octave (>= 3.8.0)"
-  - "pkg"
+  - octave (>= 3.8.0)
+  - pkg
   ubuntu2204:
-  - "libgdcm-dev"
-- id: "0.5.0"
-  date: "2022-06-30"
-  sha256: "19d7d6ee4b3f7292164039444fbd9fdeae957321c82d34bb7118197a5a2a7de8"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dicom-0.5.0.tar.gz"
+  - libgdcm-dev
+- id: 0.5.0
+  date: '2022-06-30'
+  sha256: 19d7d6ee4b3f7292164039444fbd9fdeae957321c82d34bb7118197a5a2a7de8
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dicom-0.5.0.tar.gz
   depends:
-  - "octave (>= 3.8.0)"
-  - "pkg"
+  - octave (>= 3.8.0)
+  - pkg
   ubuntu2204:
-  - "libgdcm-dev"
-- id: "0.4.1"
-  date: "2022-02-22"
-  sha256: "cd9250f4f3f83d5a1bb49ad9d0ee7e6e668e3d00f4a309e572abc44798c806fd"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dicom-0.4.1.tar.gz"
+  - libgdcm-dev
+- id: 0.4.1
+  date: '2022-02-22'
+  sha256: cd9250f4f3f83d5a1bb49ad9d0ee7e6e668e3d00f4a309e572abc44798c806fd
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dicom-0.4.1.tar.gz
   depends:
-  - "octave (>= 3.8.0)"
-  - "pkg"
+  - octave (>= 3.8.0)
+  - pkg
   ubuntu2204:
-  - "libgdcm-dev"
-- id: "0.4.0"
-  date: "2020-09-04"
-  sha256: "eadb366e49f950cf85ad7544acc01bffd28654c43b477a41b816889dabb13c8c"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dicom-0.4.0.tar.gz"
+  - libgdcm-dev
+- id: 0.4.0
+  date: '2020-09-04'
+  sha256: eadb366e49f950cf85ad7544acc01bffd28654c43b477a41b816889dabb13c8c
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dicom-0.4.0.tar.gz
   depends:
-  - "octave (>= 3.8.0)"
-  - "pkg"
+  - octave (>= 3.8.0)
+  - pkg
   ubuntu2204:
-  - "libgdcm-dev"
-- id: "0.3.0"
-  date: "2020-02-27"
-  sha256: "d5ca71710332973ff3a68c0001d9e9bb44b2a90e6b887aeb450c532024b1417d"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dicom-0.3.0.tar.gz"
+  - libgdcm-dev
+- id: 0.3.0
+  date: '2020-02-27'
+  sha256: d5ca71710332973ff3a68c0001d9e9bb44b2a90e6b887aeb450c532024b1417d
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/dicom-0.3.0.tar.gz
   depends:
-  - "octave (>= 3.8.0)"
-  - "pkg"
+  - octave (>= 3.8.0)
+  - pkg
   ubuntu2204:
-  - "libgdcm-dev"
+  - libgdcm-dev
+functions:
+  Dicom file I/O for medical images and other data:
+  - dicomanon
+  - dicomdict
+  - dicomdisp
+  - dicomfind
+  - dicominfo
+  - dicomlookup
+  - dicomread
+  - dicomuid
+  - dicomupdate
+  - dicomwrite
+  - isdicom
+  - dicomCollection
+  - images.dicom.decodeUID
+  - images.dicom.parseDICOMDIR
 ---
+

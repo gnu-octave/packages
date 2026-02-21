@@ -1,40 +1,53 @@
 ---
-layout: "package"
-permalink: "bioinfo/"
-description: >-
-  Bioinformatics tools.
-icon:
+layout: package
+permalink: bioinfo/
+description: Bioinformatics tools.
+icon: null
 links:
-- icon: "far fa-copyright"
-  label: "GPL-3.0-or-later"
-  url: "https://github.com/schloegl/octmat-bioinfo/blob/master/COPYING"
-- icon: "fas fa-rss"
-  label: "news"
-  url: "https://github.com/schloegl/octmat-bioinfo/blob/master/NEWS"
-- icon: "fas fa-code-branch"
-  label: "repository"
-  url: "https://github.com/schloegl/octmat-bioinfo"
-- icon: "fas fa-bug"
-  label: "report a problem"
-  url: "https://github.com/schloegl/octmat-bioinfo/issues"
+- icon: far fa-copyright
+  label: GPL-3.0-or-later
+  url: https://github.com/schloegl/octmat-bioinfo/blob/master/COPYING
+- icon: fas fa-rss
+  label: news
+  url: https://github.com/schloegl/octmat-bioinfo/blob/master/NEWS
+- icon: fas fa-code-branch
+  label: repository
+  url: https://github.com/schloegl/octmat-bioinfo
+- icon: fas fa-bug
+  label: report a problem
+  url: https://github.com/schloegl/octmat-bioinfo/issues
 maintainers:
-- name: "Bill Denney"
-  contact: "bill@denney.ws"
-- name: "Alois Schloegl"
-  contact: "alois.schloegl@gmail.com"
+- name: Bill Denney
+  contact: bill@denney.ws
+- name: Alois Schloegl
+  contact: alois.schloegl@gmail.com
 versions:
-- id: "0.2.2"
-  date: "2021-07-28"
-  sha256:
-  url: "https://github.com/schloegl/octmat-bioinfo/archive/refs/heads/master.tar.gz"
+- id: 0.2.2
+  date: '2021-07-28'
+  sha256: null
+  url: https://github.com/schloegl/octmat-bioinfo/archive/refs/heads/master.tar.gz
   depends:
-  - "octave (>= 3.0.0)"
-  - "pkg"
-- id: "dev"
-  date:
-  sha256:
-  url: "https://github.com/schloegl/octmat-bioinfo/archive/refs/heads/master.tar.gz"
+  - octave (>= 3.0.0)
+  - pkg
+- id: dev
+  date: null
+  sha256: null
+  url: https://github.com/schloegl/octmat-bioinfo/archive/refs/heads/master.tar.gz
   depends:
-  - "octave (>= 3.0.0)"
-  - "pkg"
+  - octave (>= 3.0.0)
+  - pkg
+functions:
+  Bioinformatics package:
+  - fastaread
+  - fastqread
+  - getpdb
+  - pdbread
+  - graphtraverse
+  - aminolookup
+  - cleave
+  - seqreverse
+  - aa2int
+  - int2aa
+  - test_graphtraverse
 ---
+

@@ -1,61 +1,84 @@
 ---
-layout: "package"
-permalink: "msh/"
-description: >-
-  Create and manage triangular and tetrahedral meshes for Finite Element or
-  Finite Volume PDE solvers.  Use a mesh data structure compatible with
-  PDEtool.  Rely on gmsh for unstructured mesh generation.
-icon: "https://octave.sourceforge.io/pkg_icon/msh.png"
+layout: package
+permalink: msh/
+description: Create and manage triangular and tetrahedral meshes for Finite Element
+  or Finite Volume PDE solvers.  Use a mesh data structure compatible with PDEtool.  Rely
+  on gmsh for unstructured mesh generation.
+icon: https://octave.sourceforge.io/pkg_icon/msh.png
 links:
-- icon: "far fa-copyright"
-  label: "GPL-2.0-or-later"
-  url: "https://github.com/carlodefalco/msh/blob/master/COPYING"
-- icon: "fas fa-rss"
-  label: "news"
-  url: "https://github.com/carlodefalco/msh/blob/master/NEWS"
-- icon: "fas fa-code-branch"
-  label: "repository"
-  url: "https://github.com/carlodefalco/msh"
-- icon: "fas fa-th-list"
-  label: "function reference"
-  url: "https://octave.sourceforge.io/msh/overview.html"
-- icon: "fas fa-bug"
-  label: "report a problem"
-  url: "https://github.com/carlodefalco/msh/issues"
+- icon: far fa-copyright
+  label: GPL-2.0-or-later
+  url: https://github.com/carlodefalco/msh/blob/master/COPYING
+- icon: fas fa-rss
+  label: news
+  url: https://github.com/carlodefalco/msh/blob/master/NEWS
+- icon: fas fa-code-branch
+  label: repository
+  url: https://github.com/carlodefalco/msh
+- icon: fas fa-th-list
+  label: function reference
+  url: https://octave.sourceforge.io/msh/overview.html
+- icon: fas fa-bug
+  label: report a problem
+  url: https://github.com/carlodefalco/msh/issues
 maintainers:
-- name: "Carlo de Falco"
-  contact:
-- name: "Massimiliano Culpo"
-  contact:
+- name: Carlo de Falco
+  contact: null
+- name: Massimiliano Culpo
+  contact: null
 versions:
-- id: "1.0.12"
-  date: "2022-07-22"
-  sha256: "ef16c1f915eae5213b29ee6b3704a8fe6a9d4994f308b5d1852e3375f1b3e79b"
-  url: "https://github.com/carlodefalco/msh/archive/refs/tags/v1.0.12.tar.gz"
+- id: 1.0.12
+  date: '2022-07-22'
+  sha256: ef16c1f915eae5213b29ee6b3704a8fe6a9d4994f308b5d1852e3375f1b3e79b
+  url: https://github.com/carlodefalco/msh/archive/refs/tags/v1.0.12.tar.gz
   depends:
-  - "octave (>= 3.0.0)"
-  - "splines"
-  - "pkg"
+  - octave (>= 3.0.0)
+  - splines
+  - pkg
   ubuntu2204:
-  - "gmsh"
-- id: "1.0.11"
-  date: "2022-07-22"
-  sha256: "4c1746751e42a23c1ef6a8e075738ab44dec6dcf163a21682ec0a02f3aab5739"
-  url: "https://github.com/carlodefalco/msh/archive/refs/tags/v1.0.11.tar.gz"
+  - gmsh
+- id: 1.0.11
+  date: '2022-07-22'
+  sha256: 4c1746751e42a23c1ef6a8e075738ab44dec6dcf163a21682ec0a02f3aab5739
+  url: https://github.com/carlodefalco/msh/archive/refs/tags/v1.0.11.tar.gz
   depends:
-  - "octave (>= 3.0.0)"
-  - "splines"
-  - "pkg"
+  - octave (>= 3.0.0)
+  - splines
+  - pkg
   ubuntu2204:
-  - "gmsh"
-- id: "1.0.10"
-  date: "2014-02-21"
-  sha256: "dfbdd5bdef17b3f5b2bdda0f82143bc5370a062168a796ff6281079f6ec665d5"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/msh-1.0.10.tar.gz"
+  - gmsh
+- id: 1.0.10
+  date: '2014-02-21'
+  sha256: dfbdd5bdef17b3f5b2bdda0f82143bc5370a062168a796ff6281079f6ec665d5
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/msh-1.0.10.tar.gz
   depends:
-  - "octave (>= 3.0.0)"
-  - "splines"
-  - "pkg"
+  - octave (>= 3.0.0)
+  - splines
+  - pkg
   ubuntu2204:
-  - "gmsh"
+  - gmsh
+functions:
+  MSH - MeSHing software package for octave:
+  - msh2m_structured_mesh
+  - msh3m_structured_mesh
+  - msh2m_mesh_along_spline
+  - msh2m_gmsh
+  - msh3m_gmsh
+  - msh2m_join_structured_mesh
+  - msh3m_join_structured_mesh
+  - msh2m_geometrical_properties
+  - msh3m_geometrical_properties
+  - msh2m_topological_properties
+  - msh2m_nodes_on_sides
+  - msh3m_nodes_on_faces
+  - msh2m_equalize_mesh
+  - msh2m_displacement_smoothing
+  - msh2m_jiggle_mesh
+  - msh3e_surface_mesh
+  - msh2m_submesh
+  - msh3m_submesh
+  - msh2p_mesh
+  - msh2m_gmsh_write
+  - msh3m_gmsh_write
 ---
+

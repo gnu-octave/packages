@@ -1,209 +1,218 @@
 ---
-layout: "package"
-permalink: "pkg-octave-doc/"
-description: >-
-  Octave Package Documentation
-icon: "https://raw.githubusercontent.com/gnu-octave/pkg-octave-doc/main/doc/pkg-octave-doc.png"
+layout: package
+permalink: pkg-octave-doc/
+description: Octave Package Documentation
+icon: https://raw.githubusercontent.com/gnu-octave/pkg-octave-doc/main/doc/pkg-octave-doc.png
 links:
-- icon: "far fa-copyright"
-  label: "GPL-3.0-or-later"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/blob/master/COPYING"
-- icon: "fas fa-rss"
-  label: "news"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/releases"
-- icon: "fas fa-code-branch"
-  label: "repository"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/"
-- icon: "fas fa-book"
-  label: "package documentation"
-  url: "https://gnu-octave.github.io/pkg-octave-doc/"
-- icon: "fas fa-bug"
-  label: "report a problem"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/issues"
+- icon: far fa-copyright
+  label: GPL-3.0-or-later
+  url: https://github.com/gnu-octave/pkg-octave-doc/blob/master/COPYING
+- icon: fas fa-rss
+  label: news
+  url: https://github.com/gnu-octave/pkg-octave-doc/releases
+- icon: fas fa-code-branch
+  label: repository
+  url: https://github.com/gnu-octave/pkg-octave-doc/
+- icon: fas fa-book
+  label: package documentation
+  url: https://gnu-octave.github.io/pkg-octave-doc/
+- icon: fas fa-bug
+  label: report a problem
+  url: https://github.com/gnu-octave/pkg-octave-doc/issues
 maintainers:
-- name: "Andreas Bertsatos"
-  contact: "abertsatos@biol.uoa.gr"
+- name: Andreas Bertsatos
+  contact: abertsatos@biol.uoa.gr
 versions:
-- id: "0.6.9"
-  date: "2025-12-09"
-  sha256: "cdbf953ba0ef5cfefe9bb57bc832772ceb1034059346997597a7e33ac05e5fad"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/releases/download/release-0.6.9/pkg-octave-doc-0.6.9.tar.gz"
+- id: 0.6.9
+  date: '2025-12-09'
+  sha256: cdbf953ba0ef5cfefe9bb57bc832772ceb1034059346997597a7e33ac05e5fad
+  url: https://github.com/gnu-octave/pkg-octave-doc/releases/download/release-0.6.9/pkg-octave-doc-0.6.9.tar.gz
   depends:
-  - "octave (>= 9.1.0)"
-  - "pkg"
-- id: "0.6.8"
-  date: "2025-10-15"
-  sha256: "3aef12b6c4cc5019236eed4d7d05bed6be021bb4f6912ef3d0190b57fb68ded6"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/releases/download/release-0.6.8/pkg-octave-doc-0.6.8.tar.gz"
+  - octave (>= 9.1.0)
+  - pkg
+- id: 0.6.8
+  date: '2025-10-15'
+  sha256: 3aef12b6c4cc5019236eed4d7d05bed6be021bb4f6912ef3d0190b57fb68ded6
+  url: https://github.com/gnu-octave/pkg-octave-doc/releases/download/release-0.6.8/pkg-octave-doc-0.6.8.tar.gz
   depends:
-  - "octave (>= 9.1.0)"
-  - "pkg"
-- id: "0.6.7"
-  date: "2025-09-28"
-  sha256: "3aa52b681b7bbfea65d3999ee92e8bacbef26938b1ce64324590f75b89fb53fb"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/releases/download/release-0.6.7/pkg-octave-doc-0.6.7.tar.gz"
+  - octave (>= 9.1.0)
+  - pkg
+- id: 0.6.7
+  date: '2025-09-28'
+  sha256: 3aa52b681b7bbfea65d3999ee92e8bacbef26938b1ce64324590f75b89fb53fb
+  url: https://github.com/gnu-octave/pkg-octave-doc/releases/download/release-0.6.7/pkg-octave-doc-0.6.7.tar.gz
   depends:
-  - "octave (>= 9.1.0)"
-  - "pkg"
-- id: "0.6.6"
-  date: "2025-09-27"
-  sha256: "e649b7676ddc956ede4bf26f571b07f9fa67217e3e7b3a2e089c53cad2058756"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/releases/download/release-0.6.6/pkg-octave-doc-0.6.6.tar.gz"
+  - octave (>= 9.1.0)
+  - pkg
+- id: 0.6.6
+  date: '2025-09-27'
+  sha256: e649b7676ddc956ede4bf26f571b07f9fa67217e3e7b3a2e089c53cad2058756
+  url: https://github.com/gnu-octave/pkg-octave-doc/releases/download/release-0.6.6/pkg-octave-doc-0.6.6.tar.gz
   depends:
-  - "octave (>= 9.1.0)"
-  - "pkg"
-- id: "0.6.5"
-  date: "2025-09-26"
-  sha256: "653641995044ae810372cebe00ca0683a7710d26eceb0d1a91f3b08d8bed5a81"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/releases/download/release-0.6.5/pkg-octave-doc-0.6.5.tar.gz"
+  - octave (>= 9.1.0)
+  - pkg
+- id: 0.6.5
+  date: '2025-09-26'
+  sha256: 653641995044ae810372cebe00ca0683a7710d26eceb0d1a91f3b08d8bed5a81
+  url: https://github.com/gnu-octave/pkg-octave-doc/releases/download/release-0.6.5/pkg-octave-doc-0.6.5.tar.gz
   depends:
-  - "octave (>= 9.1.0)"
-  - "pkg"
-- id: "0.6.4"
-  date: "2025-08-07"
-  sha256: "6f13b269610cb21be00919e552300aed549afd1d457589a0bf3996aba12ab536"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/releases/download/release-0.6.4/pkg-octave-doc-0.6.4.tar.gz"
+  - octave (>= 9.1.0)
+  - pkg
+- id: 0.6.4
+  date: '2025-08-07'
+  sha256: 6f13b269610cb21be00919e552300aed549afd1d457589a0bf3996aba12ab536
+  url: https://github.com/gnu-octave/pkg-octave-doc/releases/download/release-0.6.4/pkg-octave-doc-0.6.4.tar.gz
   depends:
-  - "octave (>= 9.1.0)"
-  - "pkg"
-- id: "0.6.3"
-  date: "2025-07-24"
-  sha256: "5d3a949604b98fbf62b2c561e3522caf35105a8816d140295e6ae8b2a53b244c"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/releases/download/release-0.6.3/pkg-octave-doc-0.6.3.tar.gz"
+  - octave (>= 9.1.0)
+  - pkg
+- id: 0.6.3
+  date: '2025-07-24'
+  sha256: 5d3a949604b98fbf62b2c561e3522caf35105a8816d140295e6ae8b2a53b244c
+  url: https://github.com/gnu-octave/pkg-octave-doc/releases/download/release-0.6.3/pkg-octave-doc-0.6.3.tar.gz
   depends:
-  - "octave (>= 9.1.0)"
-  - "pkg"
-- id: "0.6.2"
-  date: "2025-07-24"
-  sha256: "8aa7f0df74c1f7f25f6152ea61debab2bce48686d7a3bc2451d28f840ed6f140"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/releases/download/release-0.6.2/pkg-octave-doc-0.6.2.tar.gz"
+  - octave (>= 9.1.0)
+  - pkg
+- id: 0.6.2
+  date: '2025-07-24'
+  sha256: 8aa7f0df74c1f7f25f6152ea61debab2bce48686d7a3bc2451d28f840ed6f140
+  url: https://github.com/gnu-octave/pkg-octave-doc/releases/download/release-0.6.2/pkg-octave-doc-0.6.2.tar.gz
   depends:
-  - "octave (>= 9.1.0)"
-  - "pkg"
-- id: "0.6.1"
-  date: "2025-07-02"
-  sha256: "832118658041d0fcd0662a57aaea201c4e857bba20993a67add9b638054e2445"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.6.1.tar.gz"
+  - octave (>= 9.1.0)
+  - pkg
+- id: 0.6.1
+  date: '2025-07-02'
+  sha256: 832118658041d0fcd0662a57aaea201c4e857bba20993a67add9b638054e2445
+  url: https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.6.1.tar.gz
   depends:
-  - "octave (>= 9.1.0)"
-  - "pkg"
-- id: "0.6.0"
-  date: "2025-04-16"
-  sha256: "18eb90d7a97bfa477b4fee0898d8af85213b710086f6b7a1983561b14da47ebe"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.6.0.tar.gz"
+  - octave (>= 9.1.0)
+  - pkg
+- id: 0.6.0
+  date: '2025-04-16'
+  sha256: 18eb90d7a97bfa477b4fee0898d8af85213b710086f6b7a1983561b14da47ebe
+  url: https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.6.0.tar.gz
   depends:
-  - "octave (>= 9.1.0)"
-  - "pkg"
-- id: "0.5.5"
-  date: "2024-05-19"
-  sha256: "cf2b410257b1c28f54481157e62ad61f8d8d94773937b8625ec892685c60d2ff"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.5.5.tar.gz"
+  - octave (>= 9.1.0)
+  - pkg
+- id: 0.5.5
+  date: '2024-05-19'
+  sha256: cf2b410257b1c28f54481157e62ad61f8d8d94773937b8625ec892685c60d2ff
+  url: https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.5.5.tar.gz
   depends:
-  - "octave (>= 7.2.0)"
-  - "pkg"
-- id: "0.5.4"
-  date: "2024-05-17"
-  sha256: "a0390dcc814f96a37fc3bd5b9cd8687bd7a249ad9a1c1877df684bf37c2ed8eb"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.5.4.tar.gz"
+  - octave (>= 7.2.0)
+  - pkg
+- id: 0.5.4
+  date: '2024-05-17'
+  sha256: a0390dcc814f96a37fc3bd5b9cd8687bd7a249ad9a1c1877df684bf37c2ed8eb
+  url: https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.5.4.tar.gz
   depends:
-  - "octave (>= 7.2.0)"
-  - "pkg"
-- id: "0.5.3"
-  date: "2024-01-28"
-  sha256: "b08cd7f172d4209ccc4618c254e7106caa33733167b0788d8e3169b21ffc3a03"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.5.3.tar.gz"
+  - octave (>= 7.2.0)
+  - pkg
+- id: 0.5.3
+  date: '2024-01-28'
+  sha256: b08cd7f172d4209ccc4618c254e7106caa33733167b0788d8e3169b21ffc3a03
+  url: https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.5.3.tar.gz
   depends:
-  - "octave (>= 7.2.0)"
-  - "pkg"
-- id: "0.5.2"
-  date: "2024-01-21"
-  sha256: "c20757f4a40200adb244cfc04f745fcdd58f0599b9316cf54a0115983226ca11"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.5.2.tar.gz"
+  - octave (>= 7.2.0)
+  - pkg
+- id: 0.5.2
+  date: '2024-01-21'
+  sha256: c20757f4a40200adb244cfc04f745fcdd58f0599b9316cf54a0115983226ca11
+  url: https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.5.2.tar.gz
   depends:
-  - "octave (>= 7.2.0)"
-  - "pkg"
-- id: "0.5.1"
-  date: "2024-01-08"
-  sha256: "18fb0b3d5f1f22d5f272e4424293548ff52fc2cafaf633e5607af1900262b7bf"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.5.1.tar.gz"
+  - octave (>= 7.2.0)
+  - pkg
+- id: 0.5.1
+  date: '2024-01-08'
+  sha256: 18fb0b3d5f1f22d5f272e4424293548ff52fc2cafaf633e5607af1900262b7bf
+  url: https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.5.1.tar.gz
   depends:
-  - "octave (>= 7.2.0)"
-  - "pkg"
-- id: "0.5.0"
-  date: "2023-04-25"
-  sha256: "5d5a020bc343fbd97a01b04bb2cc24f413127fcb99e4fdff56be52927a935f16"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.5.0.tar.gz"
+  - octave (>= 7.2.0)
+  - pkg
+- id: 0.5.0
+  date: '2023-04-25'
+  sha256: 5d5a020bc343fbd97a01b04bb2cc24f413127fcb99e4fdff56be52927a935f16
+  url: https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.5.0.tar.gz
   depends:
-  - "octave (>= 7.2.0)"
-  - "pkg"
-- id: "0.4.9"
-  date: "2023-04-01"
-  sha256: "689368c9f095d5bc430ecb3134e44959fce91c1661c5ae79c6050c2bd82a3504"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.9.tar.gz"
+  - octave (>= 7.2.0)
+  - pkg
+- id: 0.4.9
+  date: '2023-04-01'
+  sha256: 689368c9f095d5bc430ecb3134e44959fce91c1661c5ae79c6050c2bd82a3504
+  url: https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.9.tar.gz
   depends:
-  - "octave (>= 7.2.0)"
-  - "pkg"
-- id: "0.4.8"
-  date: "2023-03-27"
-  sha256: "c1bad2d14db4f78017d1ce9a914931f9833ad2a3a9e4798eebb8a8d614da0fa0"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.8.tar.gz"
+  - octave (>= 7.2.0)
+  - pkg
+- id: 0.4.8
+  date: '2023-03-27'
+  sha256: c1bad2d14db4f78017d1ce9a914931f9833ad2a3a9e4798eebb8a8d614da0fa0
+  url: https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.8.tar.gz
   depends:
-  - "octave (>= 7.2.0)"
-  - "pkg"
-- id: "0.4.7"
-  date: "2023-02-26"
-  sha256: "b8159c36da1d5d00e2cefc86bf04d1070f3fa8415e8001add3d225070489e028"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.7.tar.gz"
+  - octave (>= 7.2.0)
+  - pkg
+- id: 0.4.7
+  date: '2023-02-26'
+  sha256: b8159c36da1d5d00e2cefc86bf04d1070f3fa8415e8001add3d225070489e028
+  url: https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.7.tar.gz
   depends:
-  - "octave (>= 7.2.0)"
-  - "pkg"
-- id: "0.4.6"
-  date: "2023-02-22"
-  sha256: "9ca4afd189ee165bdea289277a5422bbd56a0a876d9c9d8a2a76dc4ae341cd13"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.6.tar.gz"
+  - octave (>= 7.2.0)
+  - pkg
+- id: 0.4.6
+  date: '2023-02-22'
+  sha256: 9ca4afd189ee165bdea289277a5422bbd56a0a876d9c9d8a2a76dc4ae341cd13
+  url: https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.6.tar.gz
   depends:
-  - "octave (>= 7.2.0)"
-  - "pkg"
-- id: "0.4.5"
-  date: "2023-02-20"
-  sha256: "59ff52d794baf50c4df4825c7d6d298bd0b1794e1e4b989afba29a36997f053c"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.5.tar.gz"
+  - octave (>= 7.2.0)
+  - pkg
+- id: 0.4.5
+  date: '2023-02-20'
+  sha256: 59ff52d794baf50c4df4825c7d6d298bd0b1794e1e4b989afba29a36997f053c
+  url: https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.5.tar.gz
   depends:
-  - "octave (>= 7.2.0)"
-  - "pkg"
-- id: "0.4.4"
-  date: "2023-02-20"
-  sha256: "443f0d4706919495cc137e00104a296074d584bf40ee7f9e0cc7cadf3cd539b6"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.4.tar.gz"
+  - octave (>= 7.2.0)
+  - pkg
+- id: 0.4.4
+  date: '2023-02-20'
+  sha256: 443f0d4706919495cc137e00104a296074d584bf40ee7f9e0cc7cadf3cd539b6
+  url: https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.4.tar.gz
   depends:
-  - "octave (>= 6.1.0)"
-  - "pkg"
-- id: "0.4.3"
-  date: "2023-02-19"
-  sha256: "71b938a0df92ac48a0bb53688fbfe6dfc57aaba425690e84d24acd57eecfb6b8"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.3.tar.gz"
+  - octave (>= 6.1.0)
+  - pkg
+- id: 0.4.3
+  date: '2023-02-19'
+  sha256: 71b938a0df92ac48a0bb53688fbfe6dfc57aaba425690e84d24acd57eecfb6b8
+  url: https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.3.tar.gz
   depends:
-  - "octave (>= 6.1.0)"
-  - "pkg"
-- id: "0.4.2"
-  date: "2023-02-15"
-  sha256: "92a30cfc7a0d5480a1d93e0974d6760d9fe5a3d055029d0bb718ad52b2129342"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.2.tar.gz"
+  - octave (>= 6.1.0)
+  - pkg
+- id: 0.4.2
+  date: '2023-02-15'
+  sha256: 92a30cfc7a0d5480a1d93e0974d6760d9fe5a3d055029d0bb718ad52b2129342
+  url: https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.2.tar.gz
   depends:
-  - "octave (>= 6.1.0)"
-  - "pkg"
-- id: "0.4.1"
-  date: "2023-02-15"
-  sha256: "9e58f28999f6afc2631728be397565d357898f784f1791b14c38f0071f3fbfff"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.1.tar.gz"
+  - octave (>= 6.1.0)
+  - pkg
+- id: 0.4.1
+  date: '2023-02-15'
+  sha256: 9e58f28999f6afc2631728be397565d357898f784f1791b14c38f0071f3fbfff
+  url: https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.1.tar.gz
   depends:
-  - "octave (>= 6.1.0)"
-  - "pkg"
-- id: "0.4.0"
-  date: "2023-02-14"
-  sha256: "72e53c773a5aaaeed539509ef3599eb8daf8903ffb92112f4bb11acb66b117e2"
-  url: "https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.0.tar.gz"
+  - octave (>= 6.1.0)
+  - pkg
+- id: 0.4.0
+  date: '2023-02-14'
+  sha256: 72e53c773a5aaaeed539509ef3599eb8daf8903ffb92112f4bb11acb66b117e2
+  url: https://github.com/gnu-octave/pkg-octave-doc/archive/refs/tags/release-0.4.0.tar.gz
   depends:
-  - "octave (>= 6.1.0)"
-  - "pkg"
+  - octave (>= 6.1.0)
+  - pkg
+functions:
+  Octave Package Documentation:
+  - build_DEMOS
+  - classdef_texi2html
+  - find_DEMOS
+  - find_GHurls
+  - function_texi2html
+  - list_packages
+  - package_texi2html
 ---
+

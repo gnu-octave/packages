@@ -1,63 +1,75 @@
 ---
-layout: "package"
-permalink: "joystick/"
-description: >-
-   Provides basic joystick functions for GNU Octave.
-icon: "https://gnu-octave.github.io/octave-joystick/assets/octave-joystick.png"
+layout: package
+permalink: joystick/
+description: Provides basic joystick functions for GNU Octave.
+icon: https://gnu-octave.github.io/octave-joystick/assets/octave-joystick.png
 links:
-- icon: "far fa-copyright"
-  label: "GPL-3.0-or-later"
-  url: "https://github.com/gnu-octave/octave-joystick/blob/main/COPYING"
-- icon: "fas fa-rss"
-  label: "news"
-  url: "https://gnu-octave.github.io/octave-joystick/news/"
-- icon: "fas fa-code-branch"
-  label: "repository"
-  url: "https://github.com/gnu-octave/octave-joystick"
-- icon: "fas fa-book"
-  label: "package documentation"
-  url: "https://gnu-octave.github.io/octave-joystick/index"
-- icon: "fas fa-bug"
-  label: "report a problem"
-  url: "https://github.com/gnu-octave/octave-joystick/issues"
+- icon: far fa-copyright
+  label: GPL-3.0-or-later
+  url: https://github.com/gnu-octave/octave-joystick/blob/main/COPYING
+- icon: fas fa-rss
+  label: news
+  url: https://gnu-octave.github.io/octave-joystick/news/
+- icon: fas fa-code-branch
+  label: repository
+  url: https://github.com/gnu-octave/octave-joystick
+- icon: fas fa-book
+  label: package documentation
+  url: https://gnu-octave.github.io/octave-joystick/index
+- icon: fas fa-bug
+  label: report a problem
+  url: https://github.com/gnu-octave/octave-joystick/issues
 maintainers:
-- name: "John Donoghue"
-  contact: "john.donoghue@ieee.org"
+- name: John Donoghue
+  contact: john.donoghue@ieee.org
 versions:
-- id: "0.0.4"
-  date: "2025-10-12"
-  sha256: "c5a2de9f6ee1f51c675220ba6eed8243574c159928e28e2440f954fa77ab041b"
-  url: "https://github.com/gnu-octave/octave-joystick/releases/download/v0.0.4/joystick-0.0.4.tar.gz"
+- id: 0.0.4
+  date: '2025-10-12'
+  sha256: c5a2de9f6ee1f51c675220ba6eed8243574c159928e28e2440f954fa77ab041b
+  url: https://github.com/gnu-octave/octave-joystick/releases/download/v0.0.4/joystick-0.0.4.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
+  - octave (>= 4.0.0)
+  - pkg
   ubuntu2204:
-  - "libsdl2-dev"
-- id: "0.0.3"
-  date: "2023-10-12"
-  sha256: "136c944737f0952e6880c9073f558348645384d8810d83c45da53307dd264da4"
-  url: "https://downloads.sourceforge.net/project/octave-joystick/v0.0.3/joystick-0.0.3.tar.gz"
+  - libsdl2-dev
+- id: 0.0.3
+  date: '2023-10-12'
+  sha256: 136c944737f0952e6880c9073f558348645384d8810d83c45da53307dd264da4
+  url: https://downloads.sourceforge.net/project/octave-joystick/v0.0.3/joystick-0.0.3.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
+  - octave (>= 4.0.0)
+  - pkg
   ubuntu2204:
-  - "libsdl2-dev"
-- id: "0.0.2"
-  date: "2022-09-12"
-  sha256: "968f9e68c1d38a70f890feb2a97cb9f0843275725c6ba9ea3c82968a1074e03b"
-  url: "https://downloads.sourceforge.net/project/octave-joystick/v0.0.2/joystick-0.0.2.tar.gz"
+  - libsdl2-dev
+- id: 0.0.2
+  date: '2022-09-12'
+  sha256: 968f9e68c1d38a70f890feb2a97cb9f0843275725c6ba9ea3c82968a1074e03b
+  url: https://downloads.sourceforge.net/project/octave-joystick/v0.0.2/joystick-0.0.2.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
+  - octave (>= 4.0.0)
+  - pkg
   ubuntu2204:
-  - "libsdl2-dev"
-- id: "0.0.1"
-  date: "2022-02-22"
-  sha256: "40b3bbb0ef5ef3346d73b8bf2b311f82573f166ffc21680bd5054b57a511419e"
-  url: "https://downloads.sourceforge.net/project/octave-joystick/v0.0.1/joystick-0.0.1.tar.gz"
+  - libsdl2-dev
+- id: 0.0.1
+  date: '2022-02-22'
+  sha256: 40b3bbb0ef5ef3346d73b8bf2b311f82573f166ffc21680bd5054b57a511419e
+  url: https://downloads.sourceforge.net/project/octave-joystick/v0.0.1/joystick-0.0.1.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
+  - octave (>= 4.0.0)
+  - pkg
   ubuntu2204:
-  - "libsdl2-dev"
+  - libsdl2-dev
+functions:
+  Joystick Toolkit:
+  - vrjoysticklist
+  - isvrjoystick
+  - vrjoystick
+  - '@octave_joystick/axis'
+  - '@octave_joystick/button'
+  - '@octave_joystick/caps'
+  - '@octave_joystick/close'
+  - '@octave_joystick/force'
+  - '@octave_joystick/pov'
+  - '@octave_joystick/read'
 ---
+

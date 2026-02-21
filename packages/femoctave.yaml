@@ -1,139 +1,286 @@
 ---
-layout: "package"
-permalink: "femoctave/"
-description: >-
-  Use FEM for solving boundary value problems in two space dimensions.
-icon:
+layout: package
+permalink: femoctave/
+description: Use FEM for solving boundary value problems in two space dimensions.
+icon: null
 links:
-- icon: "far fa-copyright"
-  label: "GPL-3.0-or-later"
-  url: "https://github.com/AndreasStahel/FEMoctave/blob/master/COPYING"
-- icon: "fas fa-rss"
-  label: "news"
-  url: "https://github.com/AndreasStahel/FEMoctave/releases"
-- icon: "fas fa-code-branch"
-  label: "repository"
-  url: "https://github.com/AndreasStahel/FEMoctave/"
-- icon: "fas fa-book"
-  label: "package documentation"
-  url: "https://github.com/AndreasStahel/FEMoctave/blob/master/doc/FEMdoc.pdf"
-- icon: "fas fa-bug"
-  label: "report a problem"
-  url: "https://github.com/AndreasStahel/FEMoctave/issues"
+- icon: far fa-copyright
+  label: GPL-3.0-or-later
+  url: https://github.com/AndreasStahel/FEMoctave/blob/master/COPYING
+- icon: fas fa-rss
+  label: news
+  url: https://github.com/AndreasStahel/FEMoctave/releases
+- icon: fas fa-code-branch
+  label: repository
+  url: https://github.com/AndreasStahel/FEMoctave/
+- icon: fas fa-book
+  label: package documentation
+  url: https://github.com/AndreasStahel/FEMoctave/blob/master/doc/FEMdoc.pdf
+- icon: fas fa-bug
+  label: report a problem
+  url: https://github.com/AndreasStahel/FEMoctave/issues
 maintainers:
-- name: "Andreas Stahel"
-  contact:
+- name: Andreas Stahel
+  contact: null
 versions:
-- id: "2.1.8"
-  date: "2025-03-22"
-  sha256: "890346b7c389f9f91c1d9ab3efddab00312cd9621deaf6e7f60d790dbd605bf6"
-  url: "https://github.com/AndreasStahel/FEMoctave/archive/v.2.1.8.tar.gz"
+- id: 2.1.8
+  date: '2025-03-22'
+  sha256: 890346b7c389f9f91c1d9ab3efddab00312cd9621deaf6e7f60d790dbd605bf6
+  url: https://github.com/AndreasStahel/FEMoctave/archive/v.2.1.8.tar.gz
   depends:
-  - "octave (>= 5.2.0)"
-  - "pkg"
-- id: "2.1.7"
-  date: "2025-02-20"
-  sha256: "80078fce2582ddddef0505954194b7648ac824fc23bbd7eb019e8a206adbbc06"
-  url: "https://github.com/AndreasStahel/FEMoctave/archive/v.2.1.7.tar.gz"
+  - octave (>= 5.2.0)
+  - pkg
+- id: 2.1.7
+  date: '2025-02-20'
+  sha256: 80078fce2582ddddef0505954194b7648ac824fc23bbd7eb019e8a206adbbc06
+  url: https://github.com/AndreasStahel/FEMoctave/archive/v.2.1.7.tar.gz
   depends:
-  - "octave (>= 5.2.0)"
-  - "pkg"
-- id: "2.1.5"
-  date: "2024-05-15"
-  sha256: "8b6a2856b970e64157592394d3b54b089e99a0b6e6c850fc010320fba15c4520"
-  url: "https://github.com/AndreasStahel/FEMoctave/archive/v.2.1.5.tar.gz"
+  - octave (>= 5.2.0)
+  - pkg
+- id: 2.1.5
+  date: '2024-05-15'
+  sha256: 8b6a2856b970e64157592394d3b54b089e99a0b6e6c850fc010320fba15c4520
+  url: https://github.com/AndreasStahel/FEMoctave/archive/v.2.1.5.tar.gz
   depends:
-  - "octave (>= 5.2.0)"
-  - "pkg"
-- id: "2.1.4"
-  date: "2023-11-28"
-  sha256: "f03e6f1c7612bdf5a932ae942549b0ce2e25247ed968c302c662156d87e01927"
-  url: "https://github.com/AndreasStahel/FEMoctave/archive/v.2.1.4.tar.gz"
+  - octave (>= 5.2.0)
+  - pkg
+- id: 2.1.4
+  date: '2023-11-28'
+  sha256: f03e6f1c7612bdf5a932ae942549b0ce2e25247ed968c302c662156d87e01927
+  url: https://github.com/AndreasStahel/FEMoctave/archive/v.2.1.4.tar.gz
   depends:
-  - "octave (>= 5.2.0)"
-  - "pkg"
-- id: "2.1.3"
-  date: "2023-10-10"
-  sha256: "664e239d84596ff7583724edc7b54ec595d58929d7fbc56b84f7fe392044ad8b"
-  url: "https://github.com/AndreasStahel/FEMoctave/archive/v.2.1.3.tar.gz"
+  - octave (>= 5.2.0)
+  - pkg
+- id: 2.1.3
+  date: '2023-10-10'
+  sha256: 664e239d84596ff7583724edc7b54ec595d58929d7fbc56b84f7fe392044ad8b
+  url: https://github.com/AndreasStahel/FEMoctave/archive/v.2.1.3.tar.gz
   depends:
-  - "octave (>= 5.2.0)"
-  - "pkg"
-- id: "2.1.2"
-  date: "2023-08-21"
-  sha256: "809a7ad0944ebf1aadd11f71c7529c854afbb41d84c7725e8a0281b6c616391c"
-  url: "https://github.com/AndreasStahel/FEMoctave/archive/v.2.1.2.tar.gz"
+  - octave (>= 5.2.0)
+  - pkg
+- id: 2.1.2
+  date: '2023-08-21'
+  sha256: 809a7ad0944ebf1aadd11f71c7529c854afbb41d84c7725e8a0281b6c616391c
+  url: https://github.com/AndreasStahel/FEMoctave/archive/v.2.1.2.tar.gz
   depends:
-  - "octave (>= 5.2.0)"
-  - "pkg"
-- id: "2.1.1"
-  date: "2023-07-18"
-  sha256: "a0e28fe223213a7ff0023d5be3be51b48f80e537d7f2e76ff3f5fc773e752c65"
-  url: "https://github.com/AndreasStahel/FEMoctave/archive/v2.1.1.tar.gz"
+  - octave (>= 5.2.0)
+  - pkg
+- id: 2.1.1
+  date: '2023-07-18'
+  sha256: a0e28fe223213a7ff0023d5be3be51b48f80e537d7f2e76ff3f5fc773e752c65
+  url: https://github.com/AndreasStahel/FEMoctave/archive/v2.1.1.tar.gz
   depends:
-  - "octave (>= 5.2.0)"
-  - "pkg"
-- id: "2.1.0"
-  date: "2023-06-30"
-  sha256: "6c0ec31329f918c1f82423ef7a51a6b1982c5e59c5d5bc8113c8b1e2e3c576f3"
-  url: "https://github.com/AndreasStahel/FEMoctave/archive/v2.1.0.tar.gz"
+  - octave (>= 5.2.0)
+  - pkg
+- id: 2.1.0
+  date: '2023-06-30'
+  sha256: 6c0ec31329f918c1f82423ef7a51a6b1982c5e59c5d5bc8113c8b1e2e3c576f3
+  url: https://github.com/AndreasStahel/FEMoctave/archive/v2.1.0.tar.gz
   depends:
-  - "octave (>= 5.2.0)"
-  - "pkg"
-- id: "2.0.16"
-  date: "2023-05-19"
-  sha256: "a40f698db02b63fec3f8d68bd120d0d12ee3ed311af0c67ff678fc841d304832"
-  url: "https://github.com/AndreasStahel/FEMoctave/archive/v2.0.16.tar.gz"
+  - octave (>= 5.2.0)
+  - pkg
+- id: 2.0.16
+  date: '2023-05-19'
+  sha256: a40f698db02b63fec3f8d68bd120d0d12ee3ed311af0c67ff678fc841d304832
+  url: https://github.com/AndreasStahel/FEMoctave/archive/v2.0.16.tar.gz
   depends:
-  - "octave (>= 5.2.0)"
-  - "pkg"
-- id: "2.0.13"
-  date: "2023-05-14"
-  sha256: "bd82ee70c3afba52f0cbd1bdb1e51e9cac977f4c576743a52c4e3b3e608ead95"
-  url: "https://github.com/AndreasStahel/FEMoctave/archive/v2.0.13.tar.gz"
+  - octave (>= 5.2.0)
+  - pkg
+- id: 2.0.13
+  date: '2023-05-14'
+  sha256: bd82ee70c3afba52f0cbd1bdb1e51e9cac977f4c576743a52c4e3b3e608ead95
+  url: https://github.com/AndreasStahel/FEMoctave/archive/v2.0.13.tar.gz
   depends:
-  - "octave (>= 5.2.0)"
-  - "pkg"
-- id: "2.0.10"
-  date: "2023-02-15"
-  sha256: "9a61b0fbc1bc7c42480f02fdb970247cb0d5b92d026196ea51ce5effbeedcdc0"
-  url: "https://github.com/AndreasStahel/FEMoctave/archive/v2.0.10.tar.gz"
+  - octave (>= 5.2.0)
+  - pkg
+- id: 2.0.10
+  date: '2023-02-15'
+  sha256: 9a61b0fbc1bc7c42480f02fdb970247cb0d5b92d026196ea51ce5effbeedcdc0
+  url: https://github.com/AndreasStahel/FEMoctave/archive/v2.0.10.tar.gz
   depends:
-  - "octave (>= 5.2.0)"
-  - "pkg"
-- id: "2.0.9"
-  date: "2022-11-17"
-  sha256: "ffa314a6060f1a7f86eec9d16da3c78fa71eb6c1cf916a0ca42a0dd9d69780b3"
-  url: "https://github.com/AndreasStahel/FEMoctave/archive/v2.0.9.tar.gz"
+  - octave (>= 5.2.0)
+  - pkg
+- id: 2.0.9
+  date: '2022-11-17'
+  sha256: ffa314a6060f1a7f86eec9d16da3c78fa71eb6c1cf916a0ca42a0dd9d69780b3
+  url: https://github.com/AndreasStahel/FEMoctave/archive/v2.0.9.tar.gz
   depends:
-  - "octave (>= 5.2.0)"
-  - "pkg"
-- id: "2.0.8"
-  date: "2022-10-13"
-  sha256: "629c5cfe6a12301c2a06684a3c8c145c3725e5f4e725c8390f4c6b661e75b7a6"
-  url: "https://github.com/AndreasStahel/FEMoctave/archive/v2.0.8.tar.gz"
+  - octave (>= 5.2.0)
+  - pkg
+- id: 2.0.8
+  date: '2022-10-13'
+  sha256: 629c5cfe6a12301c2a06684a3c8c145c3725e5f4e725c8390f4c6b661e75b7a6
+  url: https://github.com/AndreasStahel/FEMoctave/archive/v2.0.8.tar.gz
   depends:
-  - "octave (>= 5.2.0)"
-  - "pkg"
-- id: "2.0.5"
-  date: "2022-09-29"
-  sha256: "7445f2b55a291b65b8af04cb4efb7d50886cd866446b9ba2a3ef542e984eca9c"
-  url: "https://github.com/AndreasStahel/FEMoctave/archive/v2.0.5.tar.gz"
+  - octave (>= 5.2.0)
+  - pkg
+- id: 2.0.5
+  date: '2022-09-29'
+  sha256: 7445f2b55a291b65b8af04cb4efb7d50886cd866446b9ba2a3ef542e984eca9c
+  url: https://github.com/AndreasStahel/FEMoctave/archive/v2.0.5.tar.gz
   depends:
-  - "octave (>= 5.2.0)"
-  - "pkg"
-- id: "2.0.4"
-  date: "2022-04-14"
-  sha256: "1e7a8e5dbd05ad3822538eb27dea0cfaef35431c44ded55f91022f2b5bff8d20"
-  url: "https://github.com/AndreasStahel/FEMoctave/archive/v2.0.4.tar.gz"
+  - octave (>= 5.2.0)
+  - pkg
+- id: 2.0.4
+  date: '2022-04-14'
+  sha256: 1e7a8e5dbd05ad3822538eb27dea0cfaef35431c44ded55f91022f2b5bff8d20
+  url: https://github.com/AndreasStahel/FEMoctave/archive/v2.0.4.tar.gz
   depends:
-  - "octave (>= 5.2.0)"
-  - "pkg"
-- id: "2.0.3"
-  date: "2020-04-08"
-  sha256: "5dc477d2d7690142e1aeaa0818e796afbbf69f527901a5a86ac6b2dc4779323d"
-  url: "https://github.com/AndreasStahel/FEMoctave/archive/v2.0.3.tar.gz"
+  - octave (>= 5.2.0)
+  - pkg
+- id: 2.0.3
+  date: '2020-04-08'
+  sha256: 5dc477d2d7690142e1aeaa0818e796afbbf69f527901a5a86ac6b2dc4779323d
+  url: https://github.com/AndreasStahel/FEMoctave/archive/v2.0.3.tar.gz
   depends:
-  - "octave (>= 5.2.0)"
-  - "pkg"
+  - octave (>= 5.2.0)
+  - pkg
+functions:
+  FEM Package.:
+  - BVP2D.m
+  - BVP2Dsym.m
+  - BVP2deig.m
+  - IBVP2D.m
+  - IBVP2Dsym.m
+  - I2BVP2D.m
+  - PlaneStress.m
+  - PlaneStrain.m
+  - PlaneStressDynamic.m
+  - PlaneStrainDynamic.m
+  - PlaneStressEig.m
+  - PlaneStrainEig.m
+  - AxiStress.m
+  - BVP1D.m
+  - IBVP1D.m
+  - I2BVP1D.m
+  - BVP1Deig.m
+  - BVP1DNL.m
+  - IBVP1DNL.m
+  - CreateMeshRect.m
+  - CreateMeshTriangle.m
+  - ReadMeshTriangle.m
+  - MeshDeform.m
+  - MeshUpgrade.m
+  - MeshQuad2Linear.m
+  - MeshCubic2Linear.m
+  - Delaunay2Mesh.m
+  - FEMtrimesh.m
+  - FEMtrisurf.m
+  - FEMtricontour.m
+  - FEMEvaluateGradient.m
+  - FEMEvaluateGP.m
+  - FEMgriddata.m
+  - FEMIntgerate.m
+  - FEM1DIntgerate.m
+  - tricontour.m
+  - EvaluateStress.m
+  - EvaluateStrain.m
+  - EvaluatePrincipalStress.m
+  - EvaluatevonMises.m
+  - EvaluateTresca.m
+  - EvaluateStressAxi.m
+  - EvaluateStrainAxi.m
+  - EvaluatePrincipalStressAxi.m
+  - EvaluateVonMisesAxi.m
+  - EvaluateTrescaAxi.m
+  - EvaluateEnergyDensity.m
+  - EvaluateEnergyDensityAxi.m
+  - FEMEquation.cc
+  - FEMEquationQuad.cc
+  - FEMEquationCubic.cc
+  - FEMEquationComplex.cc
+  - FEMEquationQuadComplex.cc
+  - FEMEquationCubicComplex.cc
+  - FEMEquationM.m
+  - FEMEquationQuadM.m
+  - FEMEquationCubicM.m
+  - PStressEquationM.m
+  - PStressEquationQuadM.m
+  - PStressEquationCubicM.m
+  - AxiStressEquationM.m
+  - AxiStressEquationQuadM.m
+  - AxiStressEquationCubicM.m
+  - GenerateFEM1D.m
+  - pwquadinterp.m
+  - FEM1DEvaluateDu.m
+  - FEM1DGaussPoints.m
+  - GenerateWeight1D.m
+  - LaplaceRectangle.m
+  - LaplaceCylindrical.m
+  - DiffusionLshaped.m
+  - DiffusionConvection.m
+  - EigenvaluesDisc.m
+  - EigenvaluesDisc1D.m
+  - HeatDynamic.m
+  - TestConvergence.m
+  - TestNullSpace.m
+  - WaveDynamic.m
+  - BendingBeam.m
+  - ShearLocking.m
+  - AxiSymmetricExample.m
+  - ODE1.m
+  - HeatBall1D.m
+  - HeatingBallRadial.m
+  - Wave1D.m
+  - FEMInsideElement.m
+  - BVP1DSuperconvergence.m
+  - Test_C1conforming.m
+  - Stability1D_dynamic.m
+  - NL_Newton.m
+  - ShortestConnection.m
+  - WaveAnimation.m
+  - BesselSuperconvergence.m
+  - SingularDisc.m
+  - PotentialFlow.m
+  - PotentialFlowCircular.m
+  - PotentialFlowPolar.m
+  - PotentialFlowCartesian.m
+  - Capacitance.m
+  - capacitance.poly capacitance.1.ele  capacitance.1.node  capacitance.1.poly
+  - MinimalSurface.m
+  - EITforward.m
+  - IBVP2DsymMean.m
+  - PipePressure.m
+  - Crook.m
+  - PipePressure.m
+  - PipePressureAxi.m
+  - Wrench.m
+  - WrenchData.m
+  - RubberBox.m
+  - WasherSpring.m
+  - HeatBallRadial.m
+  - HeatCylinder.m
+  - SoundWaveSpherical1D.m
+  - SoundWaveCylindrical1D.m
+  - MovingString.m
+  - Reflection.m
+  - SchroedingerHarmonic.m
+  - SchroedingerBouncingBall.m
+  - SphericalHarmonics.m
+  - HydrogenCylinder.m
+  - HydrogenEigen.m
+  - BeamStretch.m
+  - BendingBeam1D.m
+  - Keller.m
+  - Keller2.m
+  - SaltLakeCity2Zuerich/SaltLakeCity2Zuerich.m
+  - Pendulum.m
+  - PorousCatalyst.m
+  - Troesch.m
+  - BlackScholesCall.m
+  - BlackScholesPut.m
+  - HertzCylinder.m
+  - HertzSphere.m
+  - HertzSphereDirect.m
+  - RingVibration.m
+  - TuningFork.m
+  - Scattering.m
+  - ScatteringNoHole.m
+  - EigenvaluesComplex.m
+  - Brachistochrone.m
+  - Liouville.m
+  - Bratu.m
+  - Bratu2D.m
+  - BratuParametric.m
 ---
+

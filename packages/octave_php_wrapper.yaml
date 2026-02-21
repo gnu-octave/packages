@@ -1,44 +1,48 @@
 ---
-layout: "package"
-permalink: "octave_php_wrapper/"
-description: >-
-  The octave_php_wrapper package creates a PHP wrapper for Octave
-  script, so that you can run the Octave script by PHP,
-  like modern Internet service.
-icon: "https://avatars.githubusercontent.com/u/184102101?v=4"
+layout: package
+permalink: octave_php_wrapper/
+description: The octave_php_wrapper package creates a PHP wrapper for Octave script,
+  so that you can run the Octave script by PHP, like modern Internet service.
+icon: https://avatars.githubusercontent.com/u/184102101?v=4
 links:
-- icon: "far fa-copyright"
-  label: "GPL-3.0-or-later"
-  url: "https://github.com/CNOCTAVE/octave_php_wrapper/blob/main/COPYING"
-- icon: "fas fa-rss"
-  label: "news"
-  url: "https://github.com/CNOCTAVE/octave_php_wrapper/blob/main/NEWS"
-- icon: "fas fa-code-branch"
-  label: "repository"
-  url: "https://github.com/CNOCTAVE/octave_php_wrapper"
-- icon: "fas fa-th-list"
-  label: "function reference"
-  url: "https://cnoctave.github.io/octave_php_wrapper/index.html"
-- icon: "fas fa-bug"
-  label: "report a problem"
-  url: "https://github.com/CNOCTAVE/octave_php_wrapper/issues"
+- icon: far fa-copyright
+  label: GPL-3.0-or-later
+  url: https://github.com/CNOCTAVE/octave_php_wrapper/blob/main/COPYING
+- icon: fas fa-rss
+  label: news
+  url: https://github.com/CNOCTAVE/octave_php_wrapper/blob/main/NEWS
+- icon: fas fa-code-branch
+  label: repository
+  url: https://github.com/CNOCTAVE/octave_php_wrapper
+- icon: fas fa-th-list
+  label: function reference
+  url: https://cnoctave.github.io/octave_php_wrapper/index.html
+- icon: fas fa-bug
+  label: report a problem
+  url: https://github.com/CNOCTAVE/octave_php_wrapper/issues
 maintainers:
-- name: "CNOCTAVE"
-  contact: "cnoctave@qq.com"
-- name: "Yu Hongbo"
-  contact: "yuhongbo@member.fsf.org"
+- name: CNOCTAVE
+  contact: cnoctave@qq.com
+- name: Yu Hongbo
+  contact: yuhongbo@member.fsf.org
 versions:
-- id: "1.0.0"
-  date: "2025-05-22"
-  sha256: "d9cc4939332c199b1e642d019162441dfc9207fd95d0d8b122bb202138f4074f"
-  url: "https://github.com/CNOCTAVE/octave_php_wrapper/releases/download/1.0.0/octave_php_wrapper.tar.gz"
+- id: 1.0.0
+  date: '2025-05-22'
+  sha256: d9cc4939332c199b1e642d019162441dfc9207fd95d0d8b122bb202138f4074f
+  url: https://github.com/CNOCTAVE/octave_php_wrapper/releases/download/1.0.0/octave_php_wrapper.tar.gz
   depends:
-  - "octave (>= 5.2.0)"
-  - "pkg"
+  - octave (>= 5.2.0)
+  - pkg
   fedora41w:
-  - "php"
-  - "octave-cli"
+  - php
+  - octave-cli
   fedora42w:
-  - "php"
-  - "octave-cli"
+  - php
+  - octave-cli
+functions:
+  Create a PHP wrapper:
+  - create_php_wrapper
+  - gen_php_wrapper_string
+  - octave_php_wrapper_examples
 ---
+

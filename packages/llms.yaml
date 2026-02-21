@@ -1,67 +1,74 @@
 ---
-layout: "package"
-permalink: "llms/"
-description: >-
-  Large Language Models for GNU Octave.
-icon: "https://raw.githubusercontent.com/pr0m1th3as/octave-llms/main/doc/octave-llms.png"
+layout: package
+permalink: llms/
+description: Large Language Models for GNU Octave.
+icon: https://raw.githubusercontent.com/pr0m1th3as/octave-llms/main/doc/octave-llms.png
 links:
-- icon: "far fa-copyright"
-  label: "GPL-3.0-or-later"
-  url: "https://github.com/pr0m1th3as/octave-chartjs/blob/master/COPYING"
-- icon: "fas fa-rss"
-  label: "news"
-  url: "https://github.com/pr0m1th3as/octave-llms/releases"
-- icon: "fas fa-code-branch"
-  label: "repository"
-  url: "https://github.com/pr0m1th3as/octave-llms/"
-- icon: "fas fa-book"
-  label: "package documentation"
-  url: "https://pr0m1th3as.github.io/octave-llms/"
-- icon: "fas fa-bug"
-  label: "report a problem"
-  url: "https://github.com/pr0m1th3as/octave-llms/issues"
+- icon: far fa-copyright
+  label: GPL-3.0-or-later
+  url: https://github.com/pr0m1th3as/octave-chartjs/blob/master/COPYING
+- icon: fas fa-rss
+  label: news
+  url: https://github.com/pr0m1th3as/octave-llms/releases
+- icon: fas fa-code-branch
+  label: repository
+  url: https://github.com/pr0m1th3as/octave-llms/
+- icon: fas fa-book
+  label: package documentation
+  url: https://pr0m1th3as.github.io/octave-llms/
+- icon: fas fa-bug
+  label: report a problem
+  url: https://github.com/pr0m1th3as/octave-llms/issues
 maintainers:
-- name: "Andreas Bertsatos"
-  contact: "abertsatos@biol.uoa.gr"
+- name: Andreas Bertsatos
+  contact: abertsatos@biol.uoa.gr
 versions:
-- id: "0.1.4"
-  date: "2026-02-05"
-  sha256: "4e7b58d5f48b1989eaa06650dfc9b92ac7d77c8d71d4e8ec2c21a1d4e50bae3c"
-  url: "https://github.com/pr0m1th3as/octave-llms/releases/download/release-0.1.4/octave-llms-0.1.4.tar.gz"
+- id: 0.1.4
+  date: '2026-02-05'
+  sha256: 4e7b58d5f48b1989eaa06650dfc9b92ac7d77c8d71d4e8ec2c21a1d4e50bae3c
+  url: https://github.com/pr0m1th3as/octave-llms/releases/download/release-0.1.4/octave-llms-0.1.4.tar.gz
   depends:
-  - "octave (>= 9.1.0)"
-  - "datatypes (>= 1.1.6)"
-  - "pkg"
-- id: "0.1.3"
-  date: "2026-01-26"
-  sha256: "a7f9d7d752a640e543f9bcc34e95e9778646c09b34784d4b49f4eaa8189b56c9"
-  url: "https://github.com/pr0m1th3as/octave-llms/releases/download/release-0.1.3/octave-llms-0.1.3.tar.gz"
+  - octave (>= 9.1.0)
+  - datatypes (>= 1.1.6)
+  - pkg
+- id: 0.1.3
+  date: '2026-01-26'
+  sha256: a7f9d7d752a640e543f9bcc34e95e9778646c09b34784d4b49f4eaa8189b56c9
+  url: https://github.com/pr0m1th3as/octave-llms/releases/download/release-0.1.3/octave-llms-0.1.3.tar.gz
   depends:
-  - "octave (>= 9.1.0)"
-  - "datatypes (>= 1.1.6)"
-  - "pkg"
-- id: "0.1.2"
-  date: "2025-10-28"
-  sha256: "2822c72babfcb47013d4275e536bed6f60c3cd4bfe0956f7e22d8d67e10acfe4"
-  url: "https://github.com/pr0m1th3as/octave-llms/releases/download/release-0.1.2/octave-llms-0.1.2.tar.gz"
+  - octave (>= 9.1.0)
+  - datatypes (>= 1.1.6)
+  - pkg
+- id: 0.1.2
+  date: '2025-10-28'
+  sha256: 2822c72babfcb47013d4275e536bed6f60c3cd4bfe0956f7e22d8d67e10acfe4
+  url: https://github.com/pr0m1th3as/octave-llms/releases/download/release-0.1.2/octave-llms-0.1.2.tar.gz
   depends:
-  - "octave (>= 9.1.0)"
-  - "datatypes (>= 1.1.0)"
-  - "pkg"
-- id: "0.1.1"
-  date: "2025-10-21"
-  sha256: "a3e7f04159ebce1189360852d6800a51bae921c2ce4a36e48848fd4b5fc711f1"
-  url: "https://github.com/pr0m1th3as/octave-llms/releases/download/release-0.1.1/octave-llms-0.1.1.tar.gz"
+  - octave (>= 9.1.0)
+  - datatypes (>= 1.1.0)
+  - pkg
+- id: 0.1.1
+  date: '2025-10-21'
+  sha256: a3e7f04159ebce1189360852d6800a51bae921c2ce4a36e48848fd4b5fc711f1
+  url: https://github.com/pr0m1th3as/octave-llms/releases/download/release-0.1.1/octave-llms-0.1.1.tar.gz
   depends:
-  - "octave (>= 9.1.0)"
-  - "datatypes (>= 1.1.0)"
-  - "pkg"
-- id: "0.1.0"
-  date: "2025-10-15"
-  sha256: "59593d29d8cec165f34b630771cbd319e11f0f9c87e3df6925b734a47f29715c"
-  url: "https://github.com/pr0m1th3as/octave-llms/releases/download/release-0.1.0/octave-llms-0.1.0.tar.gz"
+  - octave (>= 9.1.0)
+  - datatypes (>= 1.1.0)
+  - pkg
+- id: 0.1.0
+  date: '2025-10-15'
+  sha256: 59593d29d8cec165f34b630771cbd319e11f0f9c87e3df6925b734a47f29715c
+  url: https://github.com/pr0m1th3as/octave-llms/releases/download/release-0.1.0/octave-llms-0.1.0.tar.gz
   depends:
-  - "octave (>= 9.1.0)"
-  - "datatypes (>= 1.1.0)"
-  - "pkg"
+  - octave (>= 9.1.0)
+  - datatypes (>= 1.1.0)
+  - pkg
+functions:
+  llms:
+  - ollama
+  - toolFunction
+  - toolRegistry
+  - fig2base64
+  - __ollama__
 ---
+

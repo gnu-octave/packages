@@ -1,54 +1,91 @@
 ---
-layout: "package"
-permalink: "miscellaneous/"
-description: >-
-  Miscellaneous tools that don't fit somewhere else.
-icon: "https://gnu-octave.github.io/octave-miscellaneous/assets/pkg.png"
+layout: package
+permalink: miscellaneous/
+description: Miscellaneous tools that don't fit somewhere else.
+icon: https://gnu-octave.github.io/octave-miscellaneous/assets/pkg.png
 links:
-- icon: "far fa-copyright"
-  label: "GPL-3.0-or-later"
-  url: "https://github.com/gnu-octave/octave-miscellaneous/blob/main/COPYING"
-- icon: "fas fa-rss"
-  label: "news"
-  url: "https://gnu-octave.github.io/octave-miscellaneous/news/"
-- icon: "fas fa-code-branch"
-  label: "repository"
-  url: "https://github.com/gnu-octave/octave-miscellaneous/"
-- icon: "fas fa-th-list"
-  label: "function reference"
-  url: "https://gnu-octave.github.io/octave-miscellaneous/functions/"
-- icon: "fas fa-bug"
-  label: "report a problem"
-  url: "https://github.com/gnu-octave/octave-miscellaneous/issues"
+- icon: far fa-copyright
+  label: GPL-3.0-or-later
+  url: https://github.com/gnu-octave/octave-miscellaneous/blob/main/COPYING
+- icon: fas fa-rss
+  label: news
+  url: https://gnu-octave.github.io/octave-miscellaneous/news/
+- icon: fas fa-code-branch
+  label: repository
+  url: https://github.com/gnu-octave/octave-miscellaneous/
+- icon: fas fa-th-list
+  label: function reference
+  url: https://gnu-octave.github.io/octave-miscellaneous/functions/
+- icon: fas fa-bug
+  label: report a problem
+  url: https://github.com/gnu-octave/octave-miscellaneous/issues
 maintainers:
-- name: "Octave Forge Community"
-  contact: "https://octave.discourse.group/"
+- name: Octave Forge Community
+  contact: https://octave.discourse.group/
 versions:
-- id: "1.3.2"
-  date: "2025-12-23"
-  sha256: "4a8158f395a5a9bf3db978e3b653467d7f4642258e14f1945c3d00e7749ee870"
-  url: "https://github.com/gnu-octave/octave-miscellaneous/releases/download/release-1.3.2/miscellaneous-1.3.2.tar.gz"
+- id: 1.3.2
+  date: '2025-12-23'
+  sha256: 4a8158f395a5a9bf3db978e3b653467d7f4642258e14f1945c3d00e7749ee870
+  url: https://github.com/gnu-octave/octave-miscellaneous/releases/download/release-1.3.2/miscellaneous-1.3.2.tar.gz
   depends:
-  - "octave (>= 3.8.0)"
-  - "pkg"
+  - octave (>= 3.8.0)
+  - pkg
   ubuntu2204:
-  - "units"
-- id: "1.3.1"
-  date: "2024-07-24"
-  sha256: "5712117a25d31d1266003646a40e81e7d7427433c26366e426dffa9ab8abd648"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/miscellaneous-1.3.1.tar.gz"
+  - units
+- id: 1.3.1
+  date: '2024-07-24'
+  sha256: 5712117a25d31d1266003646a40e81e7d7427433c26366e426dffa9ab8abd648
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/miscellaneous-1.3.1.tar.gz
   depends:
-  - "octave (>= 3.8.0)"
-  - "pkg"
+  - octave (>= 3.8.0)
+  - pkg
   ubuntu2204:
-  - "units"
-- id: "1.3.0"
-  date: "2019-10-27"
-  sha256: "335192a3eed471426d90d9c6f538366d1f7de06c830695f6b194882fed01c182"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/miscellaneous-1.3.0.tar.gz"
+  - units
+- id: 1.3.0
+  date: '2019-10-27'
+  sha256: 335192a3eed471426d90d9c6f538366d1f7de06c830695f6b194882fed01c182
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/miscellaneous-1.3.0.tar.gz
   depends:
-  - "octave (>= 3.8.0)"
-  - "pkg"
+  - octave (>= 3.8.0)
+  - pkg
   ubuntu2204:
-  - "units"
+  - units
+functions:
+  Miscellaneous functions:
+  - ascii
+  - cell2cell
+  - chebyshevpoly
+  - clip
+  - colorboard
+  - csv2latex
+  - gameoflife
+  - hermitepoly
+  - hilbert_curve
+  - hc2ind
+  - idxmatrix
+  - infoskeleton
+  - laguerrepoly
+  - legendrepoly
+  - match
+  - normc
+  - normr
+  - nze
+  - partcnt
+  - partint
+  - peano_curve
+  - physical_constant
+  - read_options
+  - reduce
+  - rolldices
+  - sample
+  - slurp_file
+  - solvesudoku
+  - text_waitbar
+  - textable
+  - truncate
+  - units
+  - zagzig
+  - z_curve
+  - zigzag
 ---
+

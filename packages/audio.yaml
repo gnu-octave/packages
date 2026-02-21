@@ -1,120 +1,148 @@
 ---
-layout: "package"
-permalink: "audio/"
-description: >-
-  Audio and MIDI Toolbox for GNU Octave.
-icon: "https://gnu-octave.github.io/octave-audio/assets/octave-audio.png"
+layout: package
+permalink: audio/
+description: Audio and MIDI Toolbox for GNU Octave.
+icon: https://gnu-octave.github.io/octave-audio/assets/octave-audio.png
 links:
-- icon: "far fa-copyright"
-  label: "GPL-3.0-or-later"
-  url: "https://gnu-octave.github.io/octave-audio/manual/#Copying"
-- icon: "fas fa-rss"
-  label: "news"
-  url: "https://gnu-octave.github.io/octave-audio/news/"
-- icon: "fas fa-code-branch"
-  label: "repository"
-  url: "https://github.com/gnu-octave/octave-audio"
-- icon: "fas fa-th-list"
-  label: "function reference"
-  url: "https://gnu-octave.github.io/octave-audio/functions/"
-- icon: "fas fa-book"
-  label: "package documentation"
-  url: "https://gnu-octave.github.io/octave-audio/manual/"
-- icon: "fas fa-bug"
-  label: "report a problem"
-  url: "https://github.com/gnu-octave/octave-audio/issues"
+- icon: far fa-copyright
+  label: GPL-3.0-or-later
+  url: https://gnu-octave.github.io/octave-audio/manual/#Copying
+- icon: fas fa-rss
+  label: news
+  url: https://gnu-octave.github.io/octave-audio/news/
+- icon: fas fa-code-branch
+  label: repository
+  url: https://github.com/gnu-octave/octave-audio
+- icon: fas fa-th-list
+  label: function reference
+  url: https://gnu-octave.github.io/octave-audio/functions/
+- icon: fas fa-book
+  label: package documentation
+  url: https://gnu-octave.github.io/octave-audio/manual/
+- icon: fas fa-bug
+  label: report a problem
+  url: https://github.com/gnu-octave/octave-audio/issues
 maintainers:
-- name: "John Donoghue"
-  contact: "john.donoghue@ieee.org"
+- name: John Donoghue
+  contact: john.donoghue@ieee.org
 versions:
-- id: "2.0.10"
-  date: "2026-01-25"
-  sha256: "a162e4d08e06a33b025ece412a358000cd3ad421d815557b951cb2f79145c691"
-  url: "https://github.com/gnu-octave/octave-audio/releases/download/release-2.0.10/audio-2.0.10.tar.gz"
+- id: 2.0.10
+  date: '2026-01-25'
+  sha256: a162e4d08e06a33b025ece412a358000cd3ad421d815557b951cb2f79145c691
+  url: https://github.com/gnu-octave/octave-audio/releases/download/release-2.0.10/audio-2.0.10.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
+  - octave (>= 4.0.0)
+  - pkg
   ubuntu2204:
-  - "librtmidi-dev"
-- id: "2.0.9"
-  date: "2024-09-23"
-  sha256: "b6a36c060e92b2ca4a7bcc2283cc1bb16486eea7c8acea06fb9e65141c61f240"
-  url: "https://github.com/gnu-octave/octave-audio/releases/download/release-2.0.9/audio-2.0.9.tar.gz"
+  - librtmidi-dev
+- id: 2.0.9
+  date: '2024-09-23'
+  sha256: b6a36c060e92b2ca4a7bcc2283cc1bb16486eea7c8acea06fb9e65141c61f240
+  url: https://github.com/gnu-octave/octave-audio/releases/download/release-2.0.9/audio-2.0.9.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
+  - octave (>= 4.0.0)
+  - pkg
   ubuntu2204:
-  - "librtmidi-dev"
-- id: "2.0.8"
-  date: "2023-10-02"
-  sha256: "b0a72e744ab56079a0489a60caba76d68642bf2ce15ab55c7df01792479524cc"
-  url: "https://github.com/gnu-octave/octave-audio/releases/download/release-2.0.8/audio-2.0.8.tar.gz"
+  - librtmidi-dev
+- id: 2.0.8
+  date: '2023-10-02'
+  sha256: b0a72e744ab56079a0489a60caba76d68642bf2ce15ab55c7df01792479524cc
+  url: https://github.com/gnu-octave/octave-audio/releases/download/release-2.0.8/audio-2.0.8.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
+  - octave (>= 4.0.0)
+  - pkg
   ubuntu2204:
-  - "librtmidi-dev"
-- id: "2.0.7"
-  date: "2023-07-26"
-  sha256: "26e0a6bf95d93d7c9cc40cdf8194210a1ee886afe4f026c3966d68c093e6f6d6"
-  url: "https://github.com/gnu-octave/octave-audio/releases/download/release-2.0.7/audio-2.0.7.tar.gz"
+  - librtmidi-dev
+- id: 2.0.7
+  date: '2023-07-26'
+  sha256: 26e0a6bf95d93d7c9cc40cdf8194210a1ee886afe4f026c3966d68c093e6f6d6
+  url: https://github.com/gnu-octave/octave-audio/releases/download/release-2.0.7/audio-2.0.7.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
+  - octave (>= 4.0.0)
+  - pkg
   ubuntu2204:
-  - "librtmidi-dev"
-- id: "2.0.6"
-  date: "2023-07-20"
-  sha256: "391ab69c604335968d546214d7a42ccd61d55b515bbfc3175ce67adf29e58b49"
-  url: "https://github.com/gnu-octave/octave-audio/releases/download/release-2.0.6/audio-2.0.6.tar.gz"
+  - librtmidi-dev
+- id: 2.0.6
+  date: '2023-07-20'
+  sha256: 391ab69c604335968d546214d7a42ccd61d55b515bbfc3175ce67adf29e58b49
+  url: https://github.com/gnu-octave/octave-audio/releases/download/release-2.0.6/audio-2.0.6.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
+  - octave (>= 4.0.0)
+  - pkg
   ubuntu2204:
-  - "librtmidi-dev"
-- id: "2.0.5"
-  date: "2022-07-20"
-  sha256: "ff86a479e3909ef4e593d6a1f9ef1125fc091b612ad870063827a38622148c5e"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/audio-2.0.5.tar.gz"
+  - librtmidi-dev
+- id: 2.0.5
+  date: '2022-07-20'
+  sha256: ff86a479e3909ef4e593d6a1f9ef1125fc091b612ad870063827a38622148c5e
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/audio-2.0.5.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
+  - octave (>= 4.0.0)
+  - pkg
   ubuntu2204:
-  - "librtmidi-dev"
-- id: "2.0.4"
-  date: "2021-12-05"
-  sha256: "301e342c12a4706f97a521bc2ac861892203eccb3f1f94112c88818b11682eea"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/audio-2.0.4.tar.gz"
+  - librtmidi-dev
+- id: 2.0.4
+  date: '2021-12-05'
+  sha256: 301e342c12a4706f97a521bc2ac861892203eccb3f1f94112c88818b11682eea
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/audio-2.0.4.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
+  - octave (>= 4.0.0)
+  - pkg
   ubuntu2204:
-  - "librtmidi-dev"
-- id: "2.0.3"
-  date: "2021-10-22"
-  sha256: "1968580486dd73f8b2b8f545aaa03c0ace338ad77064d4f3b75977588fbb6190"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/audio-2.0.3.tar.gz"
+  - librtmidi-dev
+- id: 2.0.3
+  date: '2021-10-22'
+  sha256: 1968580486dd73f8b2b8f545aaa03c0ace338ad77064d4f3b75977588fbb6190
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/audio-2.0.3.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
+  - octave (>= 4.0.0)
+  - pkg
   ubuntu2204:
-  - "librtmidi-dev"
-- id: "2.0.2"
-  date: "2020-10-13"
-  sha256: "b361c3989199b84995660e71d586c062e838ec09ef545d36bb6911df2adf9ea2"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/audio-2.0.2.tar.gz"
+  - librtmidi-dev
+- id: 2.0.2
+  date: '2020-10-13'
+  sha256: b361c3989199b84995660e71d586c062e838ec09ef545d36bb6911df2adf9ea2
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/audio-2.0.2.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
+  - octave (>= 4.0.0)
+  - pkg
   ubuntu2204:
-  - "librtmidi-dev"
-- id: "2.0.1"
-  date: "2020-05-08"
-  sha256: "485973d617309c5b7d8d3392deffdd97e3411f5f7c181a89cf63dd3749d3458c"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/audio-2.0.1.tar.gz"
+  - librtmidi-dev
+- id: 2.0.1
+  date: '2020-05-08'
+  sha256: 485973d617309c5b7d8d3392deffdd97e3411f5f7c181a89cf63dd3749d3458c
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/audio-2.0.1.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
+  - octave (>= 4.0.0)
+  - pkg
   ubuntu2204:
-  - "librtmidi-dev"
+  - librtmidi-dev
+functions:
+  Audio and MIDI Toolbox:
+  - mididevice
+  - mididevinfo
+  - midiflush
+  - midimsg
+  - midireceive
+  - midisend
+  - '@octave_midi/hasdata'
+  - midiid
+  - midicontrols
+  - midisync
+  - midiread
+  - midicallback
+  - midifileinfo
+  - midifileread
+  - midifilewrite
+  - ismidifile
+  - midimsgtype
+  - audioOscillator
+  - bark2hz
+  - erb2hz
+  - mel2hz
+  - hz2bark
+  - hz2erb
+  - hz2mel
+  - phon2sone
+  - sone2phon
 ---
+

@@ -1,34 +1,56 @@
 ---
-layout: "package"
-permalink: "chartjs/"
-description: >-
-  A ChartJS interface for GNU Octave.
-icon: "https://raw.githubusercontent.com/pr0m1th3as/octave-chartjs/main/doc/octave-chartjs.svg"
+layout: package
+permalink: chartjs/
+description: A ChartJS interface for GNU Octave.
+icon: https://raw.githubusercontent.com/pr0m1th3as/octave-chartjs/main/doc/octave-chartjs.svg
 links:
-- icon: "far fa-copyright"
-  label: "GPL-3.0-or-later"
-  url: "https://github.com/pr0m1th3as/octave-chartjs/blob/master/COPYING"
-- icon: "fas fa-rss"
-  label: "news"
-  url: "https://github.com/pr0m1th3as/octave-chartjs/releases"
-- icon: "fas fa-code-branch"
-  label: "repository"
-  url: "https://github.com/pr0m1th3as/octave-chartjs/"
-- icon: "fas fa-book"
-  label: "package documentation"
-  url: "https://pr0m1th3as.github.io/octave-chartjs/"
-- icon: "fas fa-bug"
-  label: "report a problem"
-  url: "https://github.com/pr0m1th3as/octave-chartjs/issues"
+- icon: far fa-copyright
+  label: GPL-3.0-or-later
+  url: https://github.com/pr0m1th3as/octave-chartjs/blob/master/COPYING
+- icon: fas fa-rss
+  label: news
+  url: https://github.com/pr0m1th3as/octave-chartjs/releases
+- icon: fas fa-code-branch
+  label: repository
+  url: https://github.com/pr0m1th3as/octave-chartjs/
+- icon: fas fa-book
+  label: package documentation
+  url: https://pr0m1th3as.github.io/octave-chartjs/
+- icon: fas fa-bug
+  label: report a problem
+  url: https://github.com/pr0m1th3as/octave-chartjs/issues
 maintainers:
-- name: "Andreas Bertsatos"
-  contact: "abertsatos@biol.uoa.gr"
+- name: Andreas Bertsatos
+  contact: abertsatos@biol.uoa.gr
 versions:
-- id: "0.1.0"
-  date: "2025-02-17"
-  sha256: "36959aa6c75d953b490254468c4df5bbeb3d8482622c0a3cced8949339bb06b5"
-  url: "https://github.com/pr0m1th3as/octave-chartjs/releases/download/release-0.1.0/octave-chartjs-0.1.0.tar.gz"
+- id: 0.1.0
+  date: '2025-02-17'
+  sha256: 36959aa6c75d953b490254468c4df5bbeb3d8482622c0a3cced8949339bb06b5
+  url: https://github.com/pr0m1th3as/octave-chartjs/releases/download/release-0.1.0/octave-chartjs-0.1.0.tar.gz
   depends:
-  - "octave (>= 8.1.0)"
-  - "pkg"
+  - octave (>= 8.1.0)
+  - pkg
+functions:
+  chartjs:
+  - BarData
+  - BubbleData
+  - DoughnutData
+  - LineData
+  - PieData
+  - PolarAreaData
+  - RadarData
+  - ScatterData
+  - BarChart
+  - BubbleChart
+  - DoughnutChart
+  - LineChart
+  - PieChart
+  - PolarAreaChart
+  - RadarChart
+  - ScatterChart
+  - Color
+  - Fill
+  - Html
+  - WebServer
 ---
+

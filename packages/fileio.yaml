@@ -1,56 +1,63 @@
 ---
-layout: "package"
-permalink: "fileio/"
-description: >-
-  I/O function for files holding structured data, such as JSON and XML files.
-icon:
+layout: package
+permalink: fileio/
+description: I/O function for files holding structured data, such as JSON and XML
+  files.
+icon: null
 links:
-- icon: "far fa-copyright"
-  label: "MIT"
-  url: "https://github.com/reprostat/fileio/blob/master/COPYING"
-- icon: "fas fa-code-branch"
-  label: "repository"
-  url: "https://github.com/reprostat/fileio"
-- icon: "fas fa-bug"
-  label: "report a problem"
-  url: "https://github.com/reprostat/fileio/issues"
+- icon: far fa-copyright
+  label: MIT
+  url: https://github.com/reprostat/fileio/blob/master/COPYING
+- icon: fas fa-code-branch
+  label: repository
+  url: https://github.com/reprostat/fileio
+- icon: fas fa-bug
+  label: report a problem
+  url: https://github.com/reprostat/fileio/issues
 maintainers:
-- name: "Tibor Auer"
-  contact: "tibor.auer@gmail.com"
+- name: Tibor Auer
+  contact: tibor.auer@gmail.com
 versions:
-- id: "1.2.2"
-  date: "2023-06-07"
-  sha256: "ad382d4afb7438013af3de02a4b0f917edd62fc9dbcfd766eb3d8cc0643907cf"
-  url: "https://github.com/reprostat/fileio/archive/refs/tags/1.2.2.tar.gz"
+- id: 1.2.2
+  date: '2023-06-07'
+  sha256: ad382d4afb7438013af3de02a4b0f917edd62fc9dbcfd766eb3d8cc0643907cf
+  url: https://github.com/reprostat/fileio/archive/refs/tags/1.2.2.tar.gz
   depends:
-  - "octave (>= 7.2.0)"
-  - "pkg"
-- id: "1.2.1"
-  date: "2023-05-27"
-  sha256: "008e74ad6289f5feb0294d9960edbe22522ca64ed374513b25602c5a3211e2fb"
-  url: "https://github.com/reprostat/fileio/archive/refs/tags/1.2.1.tar.gz"
+  - octave (>= 7.2.0)
+  - pkg
+- id: 1.2.1
+  date: '2023-05-27'
+  sha256: 008e74ad6289f5feb0294d9960edbe22522ca64ed374513b25602c5a3211e2fb
+  url: https://github.com/reprostat/fileio/archive/refs/tags/1.2.1.tar.gz
   depends:
-  - "octave (>= 7.2.0)"
-  - "pkg"
-- id: "1.2.0"
-  date: "2023-05-26"
-  sha256: "f621280accdad3412d0732ed7e7d845c04b3f80ee209db8871bb28da1f0aa7b6"
-  url: "https://github.com/reprostat/fileio/archive/refs/tags/1.2.0.tar.gz"
+  - octave (>= 7.2.0)
+  - pkg
+- id: 1.2.0
+  date: '2023-05-26'
+  sha256: f621280accdad3412d0732ed7e7d845c04b3f80ee209db8871bb28da1f0aa7b6
+  url: https://github.com/reprostat/fileio/archive/refs/tags/1.2.0.tar.gz
   depends:
-  - "octave (>= 7.2.0)"
-  - "pkg"
-- id: "1.1.1"
-  date: "2023-05-16"
-  sha256: "659cba2499ed570be31b5b18e76baafeca540562c1ee2da2a79becd95a712222"
-  url: "https://github.com/reprostat/fileio/archive/refs/tags/1.1.1.tar.gz"
+  - octave (>= 7.2.0)
+  - pkg
+- id: 1.1.1
+  date: '2023-05-16'
+  sha256: 659cba2499ed570be31b5b18e76baafeca540562c1ee2da2a79becd95a712222
+  url: https://github.com/reprostat/fileio/archive/refs/tags/1.1.1.tar.gz
   depends:
-  - "octave (>= 7.2.0)"
-  - "pkg"
-- id: "1.1.0"
-  date: "2023-05-01"
-  sha256: "c984e160b15858f061d60bfaa72fa0b4bd80d0c34799ef0ac900e7b5f4a226cd"
-  url: "https://github.com/reprostat/fileio/archive/refs/tags/1.1.0.tar.gz"
+  - octave (>= 7.2.0)
+  - pkg
+- id: 1.1.0
+  date: '2023-05-01'
+  sha256: c984e160b15858f061d60bfaa72fa0b4bd80d0c34799ef0ac900e7b5f4a226cd
+  url: https://github.com/reprostat/fileio/archive/refs/tags/1.1.0.tar.gz
   depends:
-  - "octave (>= 7.2.0)"
-  - "pkg"
+  - octave (>= 7.2.0)
+  - pkg
+functions:
+  fileio:
+  - jsonread
+  - jsonwrite
+  - readxml
+  - writexml
 ---
+

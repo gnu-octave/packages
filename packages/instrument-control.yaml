@@ -1,119 +1,312 @@
 ---
-layout: "package"
-permalink: "instrument-control/"
-description: >-
-  Low level I/O functions for serial, i2c, parallel, tcp, gpib, vxi11, udp and
-  usbtmc interfaces.
-icon: "https://gnu-octave.github.io/instrument-control/assets/octave-instrument-control.png"
+layout: package
+permalink: instrument-control/
+description: Low level I/O functions for serial, i2c, parallel, tcp, gpib, vxi11,
+  udp and usbtmc interfaces.
+icon: https://gnu-octave.github.io/instrument-control/assets/octave-instrument-control.png
 links:
-- icon: "far fa-copyright"
-  label: "GPL-3.0-or-later"
-  url: "https://github.com/gnu-octave/instrument-control/blob/main/COPYING"
-- icon: "fas fa-rss"
-  label: "news"
-  url: "https://gnu-octave.github.io/instrument-control/news/"
-- icon: "fas fa-code-branch"
-  label: "repository"
-  url: "https://github.com/gnu-octave/instrument-control"
-- icon: "fas fa-th-list"
-  label: "function reference"
-  url: "https://gnu-octave.github.io/instrument-control/functions/"
-- icon: "fas fa-book"
-  label: "package documentation"
-  url: "https://gnu-octave.github.io/instrument-control/manual/"
-- icon: "fas fa-bug"
-  label: "report a problem"
-  url: "https://github.com/gnu-octave/instrument-control/issues"
+- icon: far fa-copyright
+  label: GPL-3.0-or-later
+  url: https://github.com/gnu-octave/instrument-control/blob/main/COPYING
+- icon: fas fa-rss
+  label: news
+  url: https://gnu-octave.github.io/instrument-control/news/
+- icon: fas fa-code-branch
+  label: repository
+  url: https://github.com/gnu-octave/instrument-control
+- icon: fas fa-th-list
+  label: function reference
+  url: https://gnu-octave.github.io/instrument-control/functions/
+- icon: fas fa-book
+  label: package documentation
+  url: https://gnu-octave.github.io/instrument-control/manual/
+- icon: fas fa-bug
+  label: report a problem
+  url: https://github.com/gnu-octave/instrument-control/issues
 maintainers:
-- name: "Andrius Sutas"
-  contact: "andrius.sutas@gmail.com"
-- name: "Stefan Mahr"
-  contact: "dac922@gmx.de"
-- name: "John Donoghue"
-  contact: "john.donoghue@ieee.org"
+- name: Andrius Sutas
+  contact: andrius.sutas@gmail.com
+- name: Stefan Mahr
+  contact: dac922@gmx.de
+- name: John Donoghue
+  contact: john.donoghue@ieee.org
 versions:
-- id: "0.10.0"
-  date: "2026-01-17"
-  sha256: "04715ef60e9f0cad86a82ebe7a623d198a6d2071c0e67d9d921935b1d1f9e854"
-  url: "https://github.com/gnu-octave/instrument-control/releases/download/release-0.10.0/instrument-control-0.10.0.tar.gz"
+- id: 0.10.0
+  date: '2026-01-17'
+  sha256: 04715ef60e9f0cad86a82ebe7a623d198a6d2071c0e67d9d921935b1d1f9e854
+  url: https://github.com/gnu-octave/instrument-control/releases/download/release-0.10.0/instrument-control-0.10.0.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
-- id: "0.9.5"
-  date: "2025-04-15"
-  sha256: "426d5a17e75b870ac351287c56224709921cd03899d63235d7b4e74a49eacd7d"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.9.5.tar.gz"
+  - octave (>= 4.0.0)
+  - pkg
+- id: 0.9.5
+  date: '2025-04-15'
+  sha256: 426d5a17e75b870ac351287c56224709921cd03899d63235d7b4e74a49eacd7d
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.9.5.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
-- id: "0.9.4"
-  date: "2025-01-19"
-  sha256: "01fad0432d44b8ca4eeaa198cfeb21e045b97988ba7c4e8a691c6ba34a6c48df"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.9.4.tar.gz"
+  - octave (>= 4.0.0)
+  - pkg
+- id: 0.9.4
+  date: '2025-01-19'
+  sha256: 01fad0432d44b8ca4eeaa198cfeb21e045b97988ba7c4e8a691c6ba34a6c48df
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.9.4.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
-- id: "0.9.3"
-  date: "2024-03-31"
-  sha256: "e59b9f12cefad6acf49cab746188a425c72a12d2be42cf5472726546c5bc5423"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.9.3.tar.gz"
+  - octave (>= 4.0.0)
+  - pkg
+- id: 0.9.3
+  date: '2024-03-31'
+  sha256: e59b9f12cefad6acf49cab746188a425c72a12d2be42cf5472726546c5bc5423
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.9.3.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
-- id: "0.9.2"
-  date: "2024-01-04"
-  sha256: "37b95224103e0d17b1da31d68521bb9d4a49685a12cf6e87853b68739feb740d"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.9.2.tar.gz"
+  - octave (>= 4.0.0)
+  - pkg
+- id: 0.9.2
+  date: '2024-01-04'
+  sha256: 37b95224103e0d17b1da31d68521bb9d4a49685a12cf6e87853b68739feb740d
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.9.2.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
-- id: "0.9.1"
-  date: "2023-06-09"
-  sha256: "0b2362c7e5001a28a882803adcd3f236d6b3f73ecb4eca723b0d95f680c08f64"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.9.1.tar.gz"
+  - octave (>= 4.0.0)
+  - pkg
+- id: 0.9.1
+  date: '2023-06-09'
+  sha256: 0b2362c7e5001a28a882803adcd3f236d6b3f73ecb4eca723b0d95f680c08f64
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.9.1.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
-- id: "0.9.0"
-  date: "2023-05-30"
-  sha256: "6cf6236c25d9db19aca62ae79494234425a821b992091fafa47b724a53f9e453"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.9.0.tar.gz"
+  - octave (>= 4.0.0)
+  - pkg
+- id: 0.9.0
+  date: '2023-05-30'
+  sha256: 6cf6236c25d9db19aca62ae79494234425a821b992091fafa47b724a53f9e453
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.9.0.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
-- id: "0.8.0"
-  date: "2022-07-21"
-  sha256: "8373f2cf66fc86f83432414603b71db98a33700776527aa8ac11f336cf94baba"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.8.0.tar.gz"
+  - octave (>= 4.0.0)
+  - pkg
+- id: 0.8.0
+  date: '2022-07-21'
+  sha256: 8373f2cf66fc86f83432414603b71db98a33700776527aa8ac11f336cf94baba
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.8.0.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
-- id: "0.7.1"
-  date: "2022-01-13"
-  sha256: "461a8a8457719e0fd7dea93917adbe876874960e4b4451d26a45807334e040c0"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.7.1.tar.gz"
+  - octave (>= 4.0.0)
+  - pkg
+- id: 0.7.1
+  date: '2022-01-13'
+  sha256: 461a8a8457719e0fd7dea93917adbe876874960e4b4451d26a45807334e040c0
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.7.1.tar.gz
   depends:
-  - "octave (>= 3.8.0)"
-  - "pkg"
-- id: "0.7.0"
-  date: "2021-02-22"
-  sha256: "7e7503958a4a9e7f84412873aad21f44c6b9af21feb1096783ec7c18fbb2b631"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.7.0.tar.gz"
+  - octave (>= 3.8.0)
+  - pkg
+- id: 0.7.0
+  date: '2021-02-22'
+  sha256: 7e7503958a4a9e7f84412873aad21f44c6b9af21feb1096783ec7c18fbb2b631
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.7.0.tar.gz
   depends:
-  - "octave (>= 3.8.0)"
-  - "pkg"
-- id: "0.6.0"
-  date: "2020-10-24"
-  sha256: "73daf2e6f4ab2306a9ac9b934e444c5afda2d2b0664d230b7663979e4d57936d"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.6.0.tar.gz"
+  - octave (>= 3.8.0)
+  - pkg
+- id: 0.6.0
+  date: '2020-10-24'
+  sha256: 73daf2e6f4ab2306a9ac9b934e444c5afda2d2b0664d230b7663979e4d57936d
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.6.0.tar.gz
   depends:
-  - "octave (>= 3.8.0)"
-  - "pkg"
-- id: "0.5.0"
-  date: "2020-02-29"
-  sha256: "195b1fd4edee8103bfe9a9d619e5734b5a18f2f8c9e5d88bf37ee5c1ae2d1995"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.5.0.tar.gz"
+  - octave (>= 3.8.0)
+  - pkg
+- id: 0.5.0
+  date: '2020-02-29'
+  sha256: 195b1fd4edee8103bfe9a9d619e5734b5a18f2f8c9e5d88bf37ee5c1ae2d1995
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/instrument-control-0.5.0.tar.gz
   depends:
-  - "octave (>= 3.8.0)"
-  - "pkg"
+  - octave (>= 3.8.0)
+  - pkg
+functions:
+  Low level I/O functions:
+  - flushinput
+  - flushoutput
+  - readbinblock
+  - readline
+  - writebinblock
+  - writeline
+  - writeread
+  - instrhelp
+  - instrhwinfo
+  - resolvehost
+  - clrdevice
+  - gpib
+  - gpib_read
+  - gpib_write
+  - gpib_timeout
+  - gpib_close
+  - spoll
+  - trigger
+  - '@octave_gpib/fclose'
+  - '@octave_gpib/fopen'
+  - '@octave_gpib/fprintf'
+  - '@octave_gpib/fread'
+  - '@octave_gpib/fscanf'
+  - '@octave_gpib/fwrite'
+  - i2c
+  - i2c_addr
+  - i2c_close
+  - i2c_read
+  - i2c_write
+  - '@octave_i2c/fclose'
+  - '@octave_i2c/fopen'
+  - '@octave_i2c/fread'
+  - '@octave_i2c/fwrite'
+  - '@octave_i2c/get'
+  - '@octave_i2c/set'
+  - modbus
+  - '@octave_modbus/get'
+  - '@octave_modbus/maskWrite'
+  - '@octave_modbus/read'
+  - '@octave_modbus/set'
+  - '@octave_modbus/write'
+  - '@octave_modbus/writeRead'
+  - parallel
+  - pp_close
+  - pp_ctrl
+  - pp_data
+  - pp_datadir
+  - pp_stat
+  - '@octave_parallel/fclose'
+  - '@octave_parallel/fopen'
+  - '@octave_parallel/fread'
+  - '@octave_parallel/fwrite'
+  - serial
+  - seriallist
+  - srl_read
+  - srl_write
+  - '@octave_serial/fopen'
+  - '@octave_serial/fclose'
+  - '@octave_serial/flushinput'
+  - '@octave_serial/flushoutput'
+  - '@octave_serial/fprintf'
+  - '@octave_serial/fread'
+  - '@octave_serial/fwrite'
+  - '@octave_serial/get'
+  - '@octave_serial/serialbreak'
+  - '@octave_serial/set'
+  - '@octave_serial/srl_baudrate'
+  - '@octave_serial/srl_bytesize'
+  - '@octave_serial/srl_close'
+  - '@octave_serial/srl_flush'
+  - '@octave_serial/srl_parity'
+  - '@octave_serial/srl_stopbits'
+  - '@octave_serial/srl_timeout'
+  - serialport
+  - serialportlist
+  - '@octave_serialport/configureTerminator'
+  - '@octave_serialport/flush'
+  - '@octave_serialport/fprintf'
+  - '@octave_serialport/fread'
+  - '@octave_serialport/fwrite'
+  - '@octave_serialport/get'
+  - '@octave_serialport/getpinstatus'
+  - '@octave_serialport/read'
+  - '@octave_serialport/serialbreak'
+  - '@octave_serialport/set'
+  - '@octave_serialport/setDTR'
+  - '@octave_serialport/setRTS'
+  - '@octave_serialport/write'
+  - spi
+  - spi_close
+  - spi_read
+  - spi_write
+  - spi_writeAndRead
+  - '@octave_spi/fclose'
+  - '@octave_spi/fopen'
+  - '@octave_spi/fread'
+  - '@octave_spi/fwrite'
+  - '@octave_spi/get'
+  - '@octave_spi/read'
+  - '@octave_spi/set'
+  - '@octave_spi/write'
+  - '@octave_spi/writeAndRead'
+  - tcp
+  - tcp_close
+  - tcp_read
+  - tcp_write
+  - tcp_timeout
+  - tcpip
+  - '@octave_tcp/fclose'
+  - '@octave_tcp/flush'
+  - '@octave_tcp/flushinput'
+  - '@octave_tcp/flushoutput'
+  - '@octave_tcp/fopen'
+  - '@octave_tcp/fprintf'
+  - '@octave_tcp/fread'
+  - '@octave_tcp/fwrite'
+  - '@octave_tcp/get'
+  - '@octave_tcp/read'
+  - '@octave_tcp/set'
+  - '@octave_tcp/write'
+  - tcpclient
+  - '@octave_tcpclient/configureTerminator'
+  - '@octave_tcpclient/flush'
+  - '@octave_tcpclient/get'
+  - '@octave_tcpclient/read'
+  - '@octave_tcpclient/set'
+  - '@octave_tcpclient/write'
+  - tcpserver
+  - '@octave_tcpserver/configureTerminator'
+  - '@octave_tcpserver/flush'
+  - '@octave_tcpserver/get'
+  - '@octave_tcpserver/read'
+  - '@octave_tcpserver/set'
+  - '@octave_tcpserver/write'
+  - udp
+  - udp_close
+  - udp_demo
+  - udp_read
+  - udp_timeout
+  - udp_write
+  - '@octave_udp/fclose'
+  - '@octave_udp/flush'
+  - '@octave_udp/flushinput'
+  - '@octave_udp/flushoutput'
+  - '@octave_udp/fopen'
+  - '@octave_udp/fprintf'
+  - '@octave_udp/fread'
+  - '@octave_udp/fwrite'
+  - '@octave_udp/get'
+  - '@octave_udp/read'
+  - '@octave_udp/set'
+  - '@octave_udp/write'
+  - udpport
+  - '@octave_udpport/configureMulticast'
+  - '@octave_udpport/configureTerminator'
+  - '@octave_udpport/flush'
+  - '@octave_udpport/fread'
+  - '@octave_udpport/fwrite'
+  - '@octave_udpport/fprintf'
+  - '@octave_udpport/get'
+  - '@octave_udpport/read'
+  - '@octave_udpport/set'
+  - '@octave_udpport/write'
+  - '@octave_udpport/writeline'
+  - usbtmc
+  - usbtmc_read
+  - usbtmc_write
+  - usbtmc_close
+  - '@octave_usbtmc/fclose'
+  - '@octave_usbtmc/fopen'
+  - '@octave_usbtmc/fread'
+  - '@octave_usbtmc/fwrite'
+  - visadev
+  - visadevlist
+  - '@octave_visadev/read'
+  - '@octave_visadev/write'
+  - '@octave_visadev/flush'
+  - '@octave_visadev/getpinstatus'
+  - '@octave_visadev/setRTS'
+  - '@octave_visadev/setDTR'
+  - '@octave_visadev/visastatus'
+  - '@octave_visadev/visatrigger'
+  - '@octave_visadev/configureTerminator'
+  - vxi11
+  - vxi11_close
+  - vxi11_read
+  - vxi11_write
+  - '@octave_vxi11/fclose'
+  - '@octave_vxi11/fopen'
+  - '@octave_vxi11/fread'
+  - '@octave_vxi11/fwrite'
 ---
+

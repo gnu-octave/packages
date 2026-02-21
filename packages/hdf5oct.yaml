@@ -1,41 +1,51 @@
 ---
-layout: "package"
-permalink: "hdf5oct/"
-description: >-
-  MATLAB compatible high-level functions for HDF5 file I/O.
-icon:
+layout: package
+permalink: hdf5oct/
+description: MATLAB compatible high-level functions for HDF5 file I/O.
+icon: null
 links:
-- icon: "far fa-copyright"
-  label: "LGPL-3.0-or-later"
-  url: "https://github.com/gapost/hdf5oct/blob/master/COPYING"
-- icon: "fas fa-rss"
-  label: "news"
-  url: "https://github.com/gapost/hdf5oct/releases"
-- icon: "fas fa-code-branch"
-  label: "repository"
-  url: "https://github.com/gapost/hdf5oct"
-- icon: "fas fa-book"
-  label: "package documentation"
-  url: "https://gapost.github.io/hdf5oct/"
-- icon: "fas fa-bug"
-  label: "report a problem"
-  url: "https://github.com/gapost/hdf5oct/issues"
+- icon: far fa-copyright
+  label: LGPL-3.0-or-later
+  url: https://github.com/gapost/hdf5oct/blob/master/COPYING
+- icon: fas fa-rss
+  label: news
+  url: https://github.com/gapost/hdf5oct/releases
+- icon: fas fa-code-branch
+  label: repository
+  url: https://github.com/gapost/hdf5oct
+- icon: fas fa-book
+  label: package documentation
+  url: https://gapost.github.io/hdf5oct/
+- icon: fas fa-bug
+  label: report a problem
+  url: https://github.com/gapost/hdf5oct/issues
 maintainers:
-- name: "George Apostolopoulos"
-  contact: "gapost@ipta.demokritos.gr"
+- name: George Apostolopoulos
+  contact: gapost@ipta.demokritos.gr
 versions:
-- id: "1.1.0"
-  date: "2025-10-08"
-  sha256: "ab251912bc2749718188e54e35ac29805872a5ce19518b10f5f4b574f99f8947"
-  url: "https://github.com/gapost/hdf5oct/archive/refs/tags/1.1.0.tar.gz"
+- id: 1.1.0
+  date: '2025-10-08'
+  sha256: ab251912bc2749718188e54e35ac29805872a5ce19518b10f5f4b574f99f8947
+  url: https://github.com/gapost/hdf5oct/archive/refs/tags/1.1.0.tar.gz
   depends:
-  - "octave (>= 6.0.0)"
-  - "pkg"
-- id: "1.0.0"
-  date: "2024-07-08"
-  sha256: "dec661f16b0743d03e5edbe59f2be49df3d10bbd73c0edcbea26e52ad682c4c8"
-  url: "https://github.com/gapost/hdf5oct/archive/refs/tags/1.0.0.tar.gz"
+  - octave (>= 6.0.0)
+  - pkg
+- id: 1.0.0
+  date: '2024-07-08'
+  sha256: dec661f16b0743d03e5edbe59f2be49df3d10bbd73c0edcbea26e52ad682c4c8
+  url: https://github.com/gapost/hdf5oct/archive/refs/tags/1.0.0.tar.gz
   depends:
-  - "octave (>= 6.0.0)"
-  - "pkg"
+  - octave (>= 6.0.0)
+  - pkg
+functions:
+  MATLAB compatible HDF5 file I/O:
+  - h5create
+  - h5write
+  - h5writeatt
+  - h5read
+  - h5readatt
+  - h5load
+  - h5info
+  - h5disp
 ---
+

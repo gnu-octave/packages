@@ -1,63 +1,112 @@
 ---
-layout: "package"
-permalink: "bim/"
-description: >-
-  Solving Diffusion Advection Reaction (DAR) Partial Differential Equations.
-icon: "https://octave.sourceforge.io/pkg_icon/bim.png"
+layout: package
+permalink: bim/
+description: Solving Diffusion Advection Reaction (DAR) Partial Differential Equations.
+icon: https://octave.sourceforge.io/pkg_icon/bim.png
 links:
-- icon: "far fa-copyright"
-  label: "GPL-2.0-or-later"
-  url: "https://github.com/carlodefalco/bim/blob/master/COPYING"
-- icon: "fas fa-rss"
-  label: "news"
-  url: "https://github.com/carlodefalco/bim/blob/master/NEWS"
-- icon: "fas fa-code-branch"
-  label: "repository"
-  url: "https://github.com/carlodefalco/bim"
-- icon: "fas fa-th-list"
-  label: "function reference"
-  url: "https://carlodefalco.github.io/bim/"
-- icon: "fas fa-bug"
-  label: "report a problem"
-  url: "https://github.com/carlodefalco/bim/issues"
+- icon: far fa-copyright
+  label: GPL-2.0-or-later
+  url: https://github.com/carlodefalco/bim/blob/master/COPYING
+- icon: fas fa-rss
+  label: news
+  url: https://github.com/carlodefalco/bim/blob/master/NEWS
+- icon: fas fa-code-branch
+  label: repository
+  url: https://github.com/carlodefalco/bim
+- icon: fas fa-th-list
+  label: function reference
+  url: https://carlodefalco.github.io/bim/
+- icon: fas fa-bug
+  label: report a problem
+  url: https://github.com/carlodefalco/bim/issues
 maintainers:
-- name: "Carlo de Falco"
-  contact: "carlo.defalco@polimi.it"
+- name: Carlo de Falco
+  contact: carlo.defalco@polimi.it
 versions:
-- id: "1.1.8"
-  date: "2025-06-28"
-  sha256: "c195c081fbc5b7cc7d3146ed740d8e985a48f3cdca04e06bee385feed4dd55d6"
-  url: "https://github.com/carlodefalco/bim/archive/refs/tags/v1.1.8.tar.gz"
+- id: 1.1.8
+  date: '2025-06-28'
+  sha256: c195c081fbc5b7cc7d3146ed740d8e985a48f3cdca04e06bee385feed4dd55d6
+  url: https://github.com/carlodefalco/bim/archive/refs/tags/v1.1.8.tar.gz
   depends:
-  - "octave (>= 3.8.0)"
-  - "fpl"
-  - "msh"
-  - "pkg"
-- id: "1.1.7"
-  date: "2025-05-29"
-  sha256: "f4d5bc7c2633320c91f96cc42c7843097bc2f550008a914ebfb487016b9b9f22"
-  url: "https://github.com/carlodefalco/bim/archive/refs/tags/v1.1.7.tar.gz"
+  - octave (>= 3.8.0)
+  - fpl
+  - msh
+  - pkg
+- id: 1.1.7
+  date: '2025-05-29'
+  sha256: f4d5bc7c2633320c91f96cc42c7843097bc2f550008a914ebfb487016b9b9f22
+  url: https://github.com/carlodefalco/bim/archive/refs/tags/v1.1.7.tar.gz
   depends:
-  - "octave (>= 3.8.0)"
-  - "fpl"
-  - "msh"
-  - "pkg"
-- id: "1.1.6"
-  date: "2022-07-22"
-  sha256: "a6feb8b30acf960a29065b9ba4095fa03f4a265392805f7075b81d1c74dcafd7"
-  url: "https://github.com/carlodefalco/bim/archive/refs/tags/v1.1.6.tar.gz"
+  - octave (>= 3.8.0)
+  - fpl
+  - msh
+  - pkg
+- id: 1.1.6
+  date: '2022-07-22'
+  sha256: a6feb8b30acf960a29065b9ba4095fa03f4a265392805f7075b81d1c74dcafd7
+  url: https://github.com/carlodefalco/bim/archive/refs/tags/v1.1.6.tar.gz
   depends:
-  - "octave (>= 3.8.0)"
-  - "fpl"
-  - "msh"
-  - "pkg"
-- id: "1.1.5"
-  date: "2014-10-17"
-  sha256: "e899c65e6c7fb0babdb0e2fb7990bae1f6ccf9b3dc1e19b4f58501242be2e078"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/bim-1.1.5.tar.gz"
+  - octave (>= 3.8.0)
+  - fpl
+  - msh
+  - pkg
+- id: 1.1.5
+  date: '2014-10-17'
+  sha256: e899c65e6c7fb0babdb0e2fb7990bae1f6ccf9b3dc1e19b4f58501242be2e078
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/bim-1.1.5.tar.gz
   depends:
-  - "octave (>= 3.8.0)"
-  - "fpl"
-  - "msh"
-  - "pkg"
+  - octave (>= 3.8.0)
+  - fpl
+  - msh
+  - pkg
+functions:
+  BIM - Diffusion Advection Reaction PDE Solver:
+  - bim1a_advection_diffusion
+  - bim1a_advection_upwind
+  - bim1a_axisymmetric_advection_diffusion
+  - bim1a_axisymmetric_advection_upwind
+  - bim2a_advection_diffusion
+  - bim2a_advection_upwind
+  - bim2a_axisymmetric_advection_diffusion
+  - bim2a_axisymmetric_advection_upwind
+  - bim3a_advection_diffusion
+  - bim3a_osc_advection_diffusion
+  - bim1a_laplacian
+  - bim1a_axisymmetric_laplacian
+  - bim2a_laplacian
+  - bim2a_axisymmetric_laplacian
+  - bim3a_laplacian
+  - bim3a_osc_laplacian
+  - bim1a_reaction
+  - bim1a_axisymmetric_reaction
+  - bim2a_reaction
+  - bim2a_axisymmetric_reaction
+  - bim3a_reaction
+  - bim1a_rhs
+  - bim1a_axisymmetric_rhs
+  - bim2a_rhs
+  - bim2a_axisymmetric_rhs
+  - bim3a_rhs
+  - bim2a_boundary_mass
+  - bim2a_axisymmetric_boundary_mass
+  - bim3a_boundary_mass
+  - bim2c_mesh_properties
+  - bim3c_mesh_properties
+  - bim2c_unknowns_on_side
+  - bim3c_unknowns_on_faces
+  - bim2c_pde_gradient
+  - bim3c_pde_gradient
+  - bim2c_global_flux
+  - bim3c_global_flux
+  - bim1c_elem_to_nodes
+  - bim2c_tri_to_nodes
+  - bim3c_tri_to_nodes
+  - bim2c_intrp
+  - bim3c_intrp
+  - bim1c_norm
+  - bim2c_norm
+  - bim3c_norm
+  - bimu_bernoulli
+  - bimu_logm
 ---
+

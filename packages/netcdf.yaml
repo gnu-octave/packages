@@ -1,92 +1,158 @@
 ---
-layout: "package"
-permalink: "netcdf/"
-description: >-
-  A NetCDF interface for Octave.
-icon: "https://gnu-octave.github.io/octave-netcdf/assets/octave-netcdf.png"
+layout: package
+permalink: netcdf/
+description: A NetCDF interface for Octave.
+icon: https://gnu-octave.github.io/octave-netcdf/assets/octave-netcdf.png
 links:
-- icon: "far fa-copyright"
-  label: "GPL-3.0-or-later"
-  url: "https://github.com/gnu-octave/octave-netcdf/blob/main/COPYING"
-- icon: "fas fa-rss"
-  label: "news"
-  url: "https://gnu-octave.github.io/octave-netcdf/news/"
-- icon: "fas fa-code-branch"
-  label: "repository"
-  url: "https://github.com/gnu-octave/octave-netcdf/"
-- icon: "fas fa-th-list"
-  label: "function reference"
-  url: "https://gnu-octave.github.io/octave-netcdf/functions/"
-- icon: "fas fa-bug"
-  label: "report a problem"
-  url: "https://github.com/gnu-octave/octave-netcdf/issues"
+- icon: far fa-copyright
+  label: GPL-3.0-or-later
+  url: https://github.com/gnu-octave/octave-netcdf/blob/main/COPYING
+- icon: fas fa-rss
+  label: news
+  url: https://gnu-octave.github.io/octave-netcdf/news/
+- icon: fas fa-code-branch
+  label: repository
+  url: https://github.com/gnu-octave/octave-netcdf/
+- icon: fas fa-th-list
+  label: function reference
+  url: https://gnu-octave.github.io/octave-netcdf/functions/
+- icon: fas fa-bug
+  label: report a problem
+  url: https://github.com/gnu-octave/octave-netcdf/issues
 maintainers:
-- name: "Alexander Barth"
-  contact: "barth.alexander@gmail.com"
-- name: "John Donoghue"
-  contact: "john.donoghue@ieee.org"
+- name: Alexander Barth
+  contact: barth.alexander@gmail.com
+- name: John Donoghue
+  contact: john.donoghue@ieee.org
 versions:
-- id: "1.0.19"
-  date: "2026-01-03"
-  sha256: "799717e30630caacaf3a079026a5d808022423a543fd2d20e00daa8e341c0acc"
-  url: "https://github.com/gnu-octave/octave-netcdf/releases/download/v1.0.19/netcdf-1.0.19.tar.gz"
+- id: 1.0.19
+  date: '2026-01-03'
+  sha256: 799717e30630caacaf3a079026a5d808022423a543fd2d20e00daa8e341c0acc
+  url: https://github.com/gnu-octave/octave-netcdf/releases/download/v1.0.19/netcdf-1.0.19.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
+  - octave (>= 4.0.0)
+  - pkg
   ubuntu2204:
-  - "libnetcdf-dev"
-- id: "1.0.18"
-  date: "2024-09-24"
-  sha256: "c9d81c285878b96b9296bef3c3e935245512cc69bdb625a6387575216be58309"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/netcdf-1.0.18.tar.gz"
+  - libnetcdf-dev
+- id: 1.0.18
+  date: '2024-09-24'
+  sha256: c9d81c285878b96b9296bef3c3e935245512cc69bdb625a6387575216be58309
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/netcdf-1.0.18.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
+  - octave (>= 4.0.0)
+  - pkg
   ubuntu2204:
-  - "libnetcdf-dev"
-- id: "1.0.17"
-  date: "2023-09-18"
-  sha256: "bae143f1535e59bc8717258c0cccd60ddda7f9d1bd10599cfc99d9536b71f949"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/netcdf-1.0.17.tar.gz"
+  - libnetcdf-dev
+- id: 1.0.17
+  date: '2023-09-18'
+  sha256: bae143f1535e59bc8717258c0cccd60ddda7f9d1bd10599cfc99d9536b71f949
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/netcdf-1.0.17.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
+  - octave (>= 4.0.0)
+  - pkg
   ubuntu2204:
-  - "libnetcdf-dev"
-- id: "1.0.16"
-  date: "2022-09-16"
-  sha256: "d4bafeeb12d15f149e52133df9674250f15165259dc6d010971a62bf808726bb"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/netcdf-1.0.16.tar.gz"
+  - libnetcdf-dev
+- id: 1.0.16
+  date: '2022-09-16'
+  sha256: d4bafeeb12d15f149e52133df9674250f15165259dc6d010971a62bf808726bb
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/netcdf-1.0.16.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
+  - octave (>= 4.0.0)
+  - pkg
   ubuntu2204:
-  - "libnetcdf-dev"
-- id: "1.0.15"
-  date: "2022-09-12"
-  sha256: "8474051b853272778aecb757d502e4e59e4283b2e47b0a30647837a4da799c5c"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/netcdf-1.0.15.tar.gz"
+  - libnetcdf-dev
+- id: 1.0.15
+  date: '2022-09-12'
+  sha256: 8474051b853272778aecb757d502e4e59e4283b2e47b0a30647837a4da799c5c
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/netcdf-1.0.15.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
+  - octave (>= 4.0.0)
+  - pkg
   ubuntu2204:
-  - "libnetcdf-dev"
-- id: "1.0.14"
-  date: "2020-10-14"
-  sha256: "8ea6ea25330f10eaa9772e52e71be9607dea87704f3ad9db9ce7b1f7cda1bcf1"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/netcdf-1.0.14.tar.gz"
+  - libnetcdf-dev
+- id: 1.0.14
+  date: '2020-10-14'
+  sha256: 8ea6ea25330f10eaa9772e52e71be9607dea87704f3ad9db9ce7b1f7cda1bcf1
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/netcdf-1.0.14.tar.gz
   depends:
-  - "octave (>= 3.8.0)"
-  - "pkg"
+  - octave (>= 3.8.0)
+  - pkg
   ubuntu2204:
-  - "libnetcdf-dev"
-- id: "1.0.13"
-  date: "2020-03-13"
-  sha256: "56a07016aab6af5e597ea4b9e06dcc878283b4ee8d3a605235ae19dd829dd9e2"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/netcdf-1.0.13.tar.gz"
+  - libnetcdf-dev
+- id: 1.0.13
+  date: '2020-03-13'
+  sha256: 56a07016aab6af5e597ea4b9e06dcc878283b4ee8d3a605235ae19dd829dd9e2
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/netcdf-1.0.13.tar.gz
   depends:
-  - "octave (>= 3.8.0)"
-  - "pkg"
+  - octave (>= 3.8.0)
+  - pkg
   ubuntu2204:
-  - "libnetcdf-dev"
+  - libnetcdf-dev
+functions:
+  NetCDF interface:
+  - nccreate
+  - ncdisp
+  - ncinfo
+  - ncreadatt
+  - ncread
+  - ncwriteatt
+  - ncwrite
+  - ncwriteschema
+  - netcdf.setDefaultFormat
+  - netcdf.inqLibVers
+  - netcdf.setChunkCache
+  - netcdf.getChunkCache
+  - netcdf.create
+  - netcdf.open
+  - netcdf.abort
+  - netcdf.sync
+  - netcdf.endDef
+  - netcdf.inq
+  - netcdf.inqFormat
+  - netcdf.inqUnlimDims
+  - netcdf.inqGrps
+  - netcdf.reDef
+  - netcdf.setFill
+  - netcdf.close
+  - netcdf.defDim
+  - netcdf.renameDim
+  - netcdf.inqDim
+  - netcdf.inqDimID
+  - netcdf.defGrp
+  - netcdf.inqGrpName
+  - netcdf.inqGrpNameFull
+  - netcdf.inqGrpParent
+  - netcdf.inqGrpFullNcid
+  - netcdf.inqNcid
+  - netcdf.inqVarIDs
+  - netcdf.inqDimIDs
+  - netcdf.defVar
+  - netcdf.renameVar
+  - netcdf.defVarFill
+  - netcdf.inqVarFill
+  - netcdf.defVarDeflate
+  - netcdf.inqVarDeflate
+  - netcdf.defVarChunking
+  - netcdf.inqVarChunking
+  - netcdf.defVarFletcher32
+  - netcdf.inqVarFletcher32
+  - netcdf.putVar
+  - netcdf.getVar
+  - netcdf.inqVarID
+  - netcdf.inqVar
+  - netcdf.inqAttName
+  - netcdf.inqAttID
+  - netcdf.inqAtt
+  - netcdf.getAtt
+  - netcdf.putAtt
+  - netcdf.copyAtt
+  - netcdf.renameAtt
+  - netcdf.delAtt
+  - netcdf.defVlen
+  - netcdf.inqUserType
+  - netcdf.inqVlen
+  - netcdf.getConstant
+  - netcdf.getConstantNames
+  - test_netcdf
 ---
+

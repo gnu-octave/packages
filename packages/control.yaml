@@ -1,152 +1,326 @@
 ---
-layout: "package"
-permalink: "control/"
-description: >-
-  Control package for GNU Octave including system analysis and
-  control synthesis. The package uses routines of the SLICOT-Reference library.
-icon: "https://raw.githubusercontent.com/gnu-octave/pkg-control/main/docs/assets/control.svg"
+layout: package
+permalink: control/
+description: Control package for GNU Octave including system analysis and control
+  synthesis. The package uses routines of the SLICOT-Reference library.
+icon: https://raw.githubusercontent.com/gnu-octave/pkg-control/main/docs/assets/control.svg
 links:
-- icon: "far fa-copyright"
-  label: "GPL-3.0-or-later and BSD-3-Clause"
-  url: "https://github.com/gnu-octave/pkg-control/blob/main/COPYING"
-- icon: "fas fa-rss"
-  label: "news"
-  url: "https://github.com/gnu-octave/pkg-control/blob/main/NEWS"
-- icon: "fas fa-code-branch"
-  label: "repository"
-  url: "https://github.com/gnu-octave/pkg-control"
-- icon: "fas fa-th-list"
-  label: "function reference"
-  url: "https://gnu-octave.github.io/pkg-control/"
-- icon: "fas fa-bug"
-  label: "report a problem"
-  url: "https://github.com/gnu-octave/pkg-control/issues"
-
+- icon: far fa-copyright
+  label: GPL-3.0-or-later and BSD-3-Clause
+  url: https://github.com/gnu-octave/pkg-control/blob/main/COPYING
+- icon: fas fa-rss
+  label: news
+  url: https://github.com/gnu-octave/pkg-control/blob/main/NEWS
+- icon: fas fa-code-branch
+  label: repository
+  url: https://github.com/gnu-octave/pkg-control
+- icon: fas fa-th-list
+  label: function reference
+  url: https://gnu-octave.github.io/pkg-control/
+- icon: fas fa-bug
+  label: report a problem
+  url: https://github.com/gnu-octave/pkg-control/issues
 maintainers:
-- name: "Lukas Reichlin"
-  contact: "lukas.reichlin@gmail.com"
-- name: "Doug Stewart"
-  contact: "doug.dastew@gmail.com"
-- name: "Torsten Lilge"
-  contact: "ttl-octave@mailbox.org"
+- name: Lukas Reichlin
+  contact: lukas.reichlin@gmail.com
+- name: Doug Stewart
+  contact: doug.dastew@gmail.com
+- name: Torsten Lilge
+  contact: ttl-octave@mailbox.org
 versions:
-- id: "4.2.1"
-  date: "2026-01-20"
-  sha256: "abd13286b717c71b420591201255be9c295b77731f94c5eb591cb7d488f5f247"
-  url: "https://github.com/gnu-octave/pkg-control/releases/download/control-4.2.1/control-4.2.1.tar.gz"
+- id: 4.2.1
+  date: '2026-01-20'
+  sha256: abd13286b717c71b420591201255be9c295b77731f94c5eb591cb7d488f5f247
+  url: https://github.com/gnu-octave/pkg-control/releases/download/control-4.2.1/control-4.2.1.tar.gz
   depends:
-  - "octave (>= 5.2.0)"
-  - "pkg"
-- id: "4.2.0"
-  date: "2026-01-16"
-  sha256: "22265e2fa2b6e84d81a4aa5294ef4d37b4e96eb456e4223055c394a2746a28fa"
-  url: "https://github.com/gnu-octave/pkg-control/releases/download/control-4.2.0/control-4.2.0.tar.gz"
+  - octave (>= 5.2.0)
+  - pkg
+- id: 4.2.0
+  date: '2026-01-16'
+  sha256: 22265e2fa2b6e84d81a4aa5294ef4d37b4e96eb456e4223055c394a2746a28fa
+  url: https://github.com/gnu-octave/pkg-control/releases/download/control-4.2.0/control-4.2.0.tar.gz
   depends:
-  - "octave (>= 5.2.0)"
-  - "pkg"
-- id: "4.1.3"
-  date: "2025-09-10"
-  sha256: "07ce19c121778333e409b4fd67d8946ff6fa9d0eb93b00312b331b86ea6954b4"
-  url: "https://github.com/gnu-octave/pkg-control/releases/download/control-4.1.3/control-4.1.3.tar.gz"
+  - octave (>= 5.2.0)
+  - pkg
+- id: 4.1.3
+  date: '2025-09-10'
+  sha256: 07ce19c121778333e409b4fd67d8946ff6fa9d0eb93b00312b331b86ea6954b4
+  url: https://github.com/gnu-octave/pkg-control/releases/download/control-4.1.3/control-4.1.3.tar.gz
   depends:
-  - "octave (>= 5.2.0)"
-  - "pkg"
-- id: "4.1.2"
-  date: "2025-05-18"
-  sha256: "6eb4be4ceec07ced729e63e3dc013e7a1441b90b366c7ff5a0dd2120cf132de3"
-  url: "https://github.com/gnu-octave/pkg-control/releases/download/control-4.1.2/control-4.1.2.tar.gz"
+  - octave (>= 5.2.0)
+  - pkg
+- id: 4.1.2
+  date: '2025-05-18'
+  sha256: 6eb4be4ceec07ced729e63e3dc013e7a1441b90b366c7ff5a0dd2120cf132de3
+  url: https://github.com/gnu-octave/pkg-control/releases/download/control-4.1.2/control-4.1.2.tar.gz
   depends:
-  - "octave (>= 5.2.0)"
-  - "pkg"
-- id: "4.1.1"
-  date: "2025-02-09"
-  sha256: "1bba29d0a7062c9092e2fe1f83c038dc32ff46be307435116f8964308b4ace48"
-  url: "https://github.com/gnu-octave/pkg-control/releases/download/control-4.1.1/control-4.1.1.tar.gz"
+  - octave (>= 5.2.0)
+  - pkg
+- id: 4.1.1
+  date: '2025-02-09'
+  sha256: 1bba29d0a7062c9092e2fe1f83c038dc32ff46be307435116f8964308b4ace48
+  url: https://github.com/gnu-octave/pkg-control/releases/download/control-4.1.1/control-4.1.1.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
-- id: "4.1.0"
-  date: "2024-12-06"
-  sha256: "96bcc2ac7b4e1dec4e9e34d1e8543d7f1827325fdd41ca0ade480fd47c8d9152"
-  url: "https://github.com/gnu-octave/pkg-control/releases/download/control-4.1.0/control-4.1.0.tar.gz"
+  - octave (>= 4.0.0)
+  - pkg
+- id: 4.1.0
+  date: '2024-12-06'
+  sha256: 96bcc2ac7b4e1dec4e9e34d1e8543d7f1827325fdd41ca0ade480fd47c8d9152
+  url: https://github.com/gnu-octave/pkg-control/releases/download/control-4.1.0/control-4.1.0.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
-- id: "4.0.1"
-  date: "2024-03-24"
-  sha256: "632889afe1e5f2e68b7b139e9b487f3ddd13a6f16fe369a4af107e40844d61a4"
-  url: "https://github.com/gnu-octave/pkg-control/releases/download/control-4.0.1/control-4.0.1.tar.gz"
+  - octave (>= 4.0.0)
+  - pkg
+- id: 4.0.1
+  date: '2024-03-24'
+  sha256: 632889afe1e5f2e68b7b139e9b487f3ddd13a6f16fe369a4af107e40844d61a4
+  url: https://github.com/gnu-octave/pkg-control/releases/download/control-4.0.1/control-4.0.1.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
-- id: "4.0.0"
-  date: "2024-01-04"
-  sha256: "3eb214c739f30b2c71cc72c63ec62bdd99fb55fd0cd46a74eba2ebb7ac1e967a"
-  url: "https://github.com/gnu-octave/pkg-control/releases/download/control-4.0.0/control-4.0.0.tar.gz"
+  - octave (>= 4.0.0)
+  - pkg
+- id: 4.0.0
+  date: '2024-01-04'
+  sha256: 3eb214c739f30b2c71cc72c63ec62bdd99fb55fd0cd46a74eba2ebb7ac1e967a
+  url: https://github.com/gnu-octave/pkg-control/releases/download/control-4.0.0/control-4.0.0.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
-- id: "3.6.1"
-  date: "2023-07-10"
-  sha256: "585636fe086ea033f050386ee5a2591daf5bfc82561a7d5f91f8db556406cc02"
-  url: "https://github.com/gnu-octave/pkg-control/releases/download/control-3.6.1/control-3.6.1.tar.gz"
+  - octave (>= 4.0.0)
+  - pkg
+- id: 3.6.1
+  date: '2023-07-10'
+  sha256: 585636fe086ea033f050386ee5a2591daf5bfc82561a7d5f91f8db556406cc02
+  url: https://github.com/gnu-octave/pkg-control/releases/download/control-3.6.1/control-3.6.1.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
-- id: "3.6.0"
-  date: "2023-05-20"
-  sha256: "53bcd7e3581f3e9b0417b212d7c8817920a03854a1d0819dd77ce650e1a28e20"
-  url: "https://github.com/gnu-octave/pkg-control/releases/download/control-3.6.0/control-3.6.0.tar.gz"
+  - octave (>= 4.0.0)
+  - pkg
+- id: 3.6.0
+  date: '2023-05-20'
+  sha256: 53bcd7e3581f3e9b0417b212d7c8817920a03854a1d0819dd77ce650e1a28e20
+  url: https://github.com/gnu-octave/pkg-control/releases/download/control-3.6.0/control-3.6.0.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
-- id: "3.5.2"
-  date: "2023-04-05"
-  sha256: "74d94f95552520c5553a5ba18423721661eca6e22b4cb8190391b654b77c34a2"
-  url: "https://github.com/gnu-octave/pkg-control/releases/download/control-3.5.2/control-3.5.2.tar.gz"
+  - octave (>= 4.0.0)
+  - pkg
+- id: 3.5.2
+  date: '2023-04-05'
+  sha256: 74d94f95552520c5553a5ba18423721661eca6e22b4cb8190391b654b77c34a2
+  url: https://github.com/gnu-octave/pkg-control/releases/download/control-3.5.2/control-3.5.2.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
-- id: "3.5.1"
-  date: "2023-03-26"
-  sha256: "53fa34450a0774384f3f7c6e891f600856fad022ab037d1ba5cfdd1ffa330e98"
-  url: "https://github.com/gnu-octave/pkg-control/releases/download/control-3.5.1/control-3.5.1.tar.gz"
+  - octave (>= 4.0.0)
+  - pkg
+- id: 3.5.1
+  date: '2023-03-26'
+  sha256: 53fa34450a0774384f3f7c6e891f600856fad022ab037d1ba5cfdd1ffa330e98
+  url: https://github.com/gnu-octave/pkg-control/releases/download/control-3.5.1/control-3.5.1.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
-- id: "3.5.0"
-  date: "2023-02-04"
-  sha256: "507d14ea3ea80bdc55b67c146a9dc88229229714fe33febe983393a67dec714a"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/control-3.5.0.tar.gz"
+  - octave (>= 4.0.0)
+  - pkg
+- id: 3.5.0
+  date: '2023-02-04'
+  sha256: 507d14ea3ea80bdc55b67c146a9dc88229229714fe33febe983393a67dec714a
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/control-3.5.0.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
-- id: "3.4.0"
-  date: "2022-01-16"
-  sha256: "6ec6a06e13ad288afad8631cc41f7247e47096fa1e8d04240d4ed01efbe4a77a"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/control-3.4.0.tar.gz"
+  - octave (>= 4.0.0)
+  - pkg
+- id: 3.4.0
+  date: '2022-01-16'
+  sha256: 6ec6a06e13ad288afad8631cc41f7247e47096fa1e8d04240d4ed01efbe4a77a
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/control-3.4.0.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
-- id: "3.3.1"
-  date: "2021-07-05"
-  sha256: "7c472dff5fe558cc32bfe93968f6245a85f1fc7ceb94af69fb6e93d1e35fcd6e"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/control-3.3.1.tar.gz"
+  - octave (>= 4.0.0)
+  - pkg
+- id: 3.3.1
+  date: '2021-07-05'
+  sha256: 7c472dff5fe558cc32bfe93968f6245a85f1fc7ceb94af69fb6e93d1e35fcd6e
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/control-3.3.1.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
-- id: "3.3.0"
-  date: "2021-06-19"
-  sha256: "7ed3dc0873c6b1e6ab5b827036ed3dd2bee6058e011c8ea31e5fe017a98b7afa"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/control-3.3.0.tar.gz"
+  - octave (>= 4.0.0)
+  - pkg
+- id: 3.3.0
+  date: '2021-06-19'
+  sha256: 7ed3dc0873c6b1e6ab5b827036ed3dd2bee6058e011c8ea31e5fe017a98b7afa
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/control-3.3.0.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
-- id: "3.2.0"
-  date: "2019-04-01"
-  sha256: "faf1d510d16ab46e4fa91a1288f4a7839ee05469c33e4698b7a007a0bb965e3e"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/control-3.2.0.tar.gz"
+  - octave (>= 4.0.0)
+  - pkg
+- id: 3.2.0
+  date: '2019-04-01'
+  sha256: faf1d510d16ab46e4fa91a1288f4a7839ee05469c33e4698b7a007a0bb965e3e
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/control-3.2.0.tar.gz
   depends:
-  - "octave (>= 4.0.0)"
-  - "pkg"
+  - octave (>= 4.0.0)
+  - pkg
+functions:
+  Control Theory:
+  - dss
+  - filt
+  - '@frd/frd'
+  - '@ss/ss'
+  - '@tf/tf'
+  - zpk
+  - dssdata
+  - filtdata
+  - frdata
+  - '@lti/get'
+  - '@lti/set'
+  - ssdata
+  - zpkdata
+  - tfdata
+  - bdschur
+  - '@lti/c2d'
+  - '@lti/d2c'
+  - '@lti/d2d'
+  - pade
+  - '@lti/prescale'
+  - '@lti/xperm'
+  - '@ss/ss2ss'
+  - thiran
+  - append
+  - '@lti/blkdiag'
+  - '@lti/connect'
+  - '@lti/feedback'
+  - '@lti/lft'
+  - '@lti/mconnect'
+  - '@lti/parallel'
+  - '@lti/series'
+  - sumblk
+  - ctrb
+  - ctrbf
+  - damp
+  - dsort
+  - esort
+  - '@lti/dcgain'
+  - gram
+  - hsvd
+  - '@lti/isct'
+  - isctrb
+  - isdetectable
+  - '@lti/isdt'
+  - '@lti/isminimumphase'
+  - isobsv
+  - '@lti/issiso'
+  - isstabilizable
+  - '@lti/isstable'
+  - '@lti/norm'
+  - obsv
+  - obsvf
+  - '@lti/pole'
+  - pzmap
+  - '@lti/size'
+  - '@lti/zero'
+  - '@lti/minreal'
+  - '@lti/sminreal'
+  - covar
+  - gensig
+  - impulse
+  - imp_invar
+  - initial
+  - lsim
+  - ramp
+  - step
+  - bode
+  - bodemag
+  - '@lti/freqresp'
+  - margin
+  - nichols
+  - nyquist
+  - sensitivity
+  - sgrid
+  - sigma
+  - zgrid
+  - pid
+  - pidstd
+  - acker
+  - place
+  - reg
+  - rlocus
+  - rlocusx
+  - augstate
+  - dlqe
+  - dlqr
+  - estim
+  - kalman
+  - lqe
+  - lqg
+  - lqgreg
+  - lqgtrack
+  - lqi
+  - lqr
+  - lqry
+  - augw
+  - fitfrd
+  - h2syn
+  - hinfsyn
+  - mixsyn
+  - mktito
+  - ncfsyn
+  - care
+  - dare
+  - dlyap
+  - dlyapchol
+  - lyap
+  - lyapchol
+  - bstmodred
+  - btamodred
+  - hnamodred
+  - spamodred
+  - btaconred
+  - cfconred
+  - fwcfconred
+  - spaconred
+  - '@iddata/iddata'
+  - '@iddata/cat'
+  - '@iddata/detrend'
+  - '@iddata/diff'
+  - '@iddata/fft'
+  - '@iddata/filter'
+  - '@iddata/get'
+  - '@iddata/ifft'
+  - '@iddata/merge'
+  - '@iddata/nkshift'
+  - '@iddata/plot'
+  - '@iddata/resample'
+  - '@iddata/set'
+  - '@iddata/size'
+  - arx
+  - moen4
+  - moesp
+  - n4sid
+  - '@lti/ctranspose'
+  - '@lti/end'
+  - '@lti/horzcat'
+  - '@lti/inv'
+  - '@lti/minus'
+  - '@lti/mldivide'
+  - '@lti/mpower'
+  - '@lti/mrdivide'
+  - '@lti/mtimes'
+  - '@lti/plus'
+  - '@lti/repmat'
+  - '@lti/subsasgn'
+  - '@lti/subsref'
+  - '@lti/times'
+  - '@lti/transpose'
+  - '@lti/uminus'
+  - '@lti/uplus'
+  - '@lti/vertcat'
+  - '@iddata/end'
+  - '@iddata/horzcat'
+  - '@iddata/subsasgn'
+  - '@iddata/subsref'
+  - '@iddata/vertcat'
+  - MDSSystem
+  - optiPID
+  - Anderson
+  - Madievski
+  - VLFamp
+  - BMWengine
+  - Boeing707
+  - WestlandLynx
+  - '@ss/display'
+  - db2mag
+  - doc_control
+  - mag2db
+  - options
+  - repsys
+  - strseq
+  - test_control
 ---
+

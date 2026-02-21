@@ -1,76 +1,128 @@
 ---
-layout: "package"
-permalink: "fuzzy-logic-toolkit/"
-description: >-
-  A mostly MATLAB-compatible fuzzy logic toolkit for Octave.
-icon: "https://octave.sourceforge.io/pkg_icon/fuzzy-logic-toolkit.png"
+layout: package
+permalink: fuzzy-logic-toolkit/
+description: A mostly MATLAB-compatible fuzzy logic toolkit for Octave.
+icon: https://octave.sourceforge.io/pkg_icon/fuzzy-logic-toolkit.png
 links:
-- icon: "far fa-copyright"
-  label: "GPL-3.0-or-later"
-  url: "https://github.com/lmarkowsky/fuzzy-logic-toolkit/blob/main/COPYING"
-- icon: "fas fa-rss"
-  label: "news"
-  url: "https://github.com/lmarkowsky/fuzzy-logic-toolkit/blob/main/NEWS"
-- icon: "fas fa-code-branch"
-  label: "repository"
-  url: "https://github.com/lmarkowsky/fuzzy-logic-toolkit"
-- icon: "fas fa-th-list"
-  label: "function reference"
-  url: "https://lmarkowsky.github.io/fuzzy-logic-toolkit/"
-- icon: "fas fa-bug"
-  label: "report a problem"
-  url: "https://github.com/lmarkowsky/fuzzy-logic-toolkit/issues"
+- icon: far fa-copyright
+  label: GPL-3.0-or-later
+  url: https://github.com/lmarkowsky/fuzzy-logic-toolkit/blob/main/COPYING
+- icon: fas fa-rss
+  label: news
+  url: https://github.com/lmarkowsky/fuzzy-logic-toolkit/blob/main/NEWS
+- icon: fas fa-code-branch
+  label: repository
+  url: https://github.com/lmarkowsky/fuzzy-logic-toolkit
+- icon: fas fa-th-list
+  label: function reference
+  url: https://lmarkowsky.github.io/fuzzy-logic-toolkit/
+- icon: fas fa-bug
+  label: report a problem
+  url: https://github.com/lmarkowsky/fuzzy-logic-toolkit/issues
 maintainers:
-- name: "L. Markowsky"
-  contact: "lmarkowsky@gmail.com"
+- name: L. Markowsky
+  contact: lmarkowsky@gmail.com
 versions:
-- id: "0.6.2"
-  date: "2025-05-15"
-  sha256: "804aa3501105d6a6391307ace4e4d1f4dd91d0a248cb53ce3b2365377e900132"
-  url: "https://github.com/lmarkowsky/fuzzy-logic-toolkit/archive/refs/tags/0.6.2.tar.gz"
+- id: 0.6.2
+  date: '2025-05-15'
+  sha256: 804aa3501105d6a6391307ace4e4d1f4dd91d0a248cb53ce3b2365377e900132
+  url: https://github.com/lmarkowsky/fuzzy-logic-toolkit/archive/refs/tags/0.6.2.tar.gz
   depends:
-  - "octave (>= 3.2.4)"
-  - "pkg"
-- id: "0.6.1"
-  date: "2024-08-31"
-  sha256: "24dab9cec77bb63cc94e7c2baa57528eee5c2df5285d77c07a33f1940307e959"
-  url: "https://github.com/lmarkowsky/fuzzy-logic-toolkit/archive/refs/tags/0.6.1.tar.gz"
+  - octave (>= 3.2.4)
+  - pkg
+- id: 0.6.1
+  date: '2024-08-31'
+  sha256: 24dab9cec77bb63cc94e7c2baa57528eee5c2df5285d77c07a33f1940307e959
+  url: https://github.com/lmarkowsky/fuzzy-logic-toolkit/archive/refs/tags/0.6.1.tar.gz
   depends:
-  - "octave (>= 3.2.4)"
-  - "pkg"
-- id: "0.6.0"
-  date: "2024-06-05"
-  sha256: "47fbc34232d87aebdf6d66b9d3a3c445dceeb3a7f1b9f9625160539da12fa63e"
-  url: "https://github.com/lmarkowsky/fuzzy-logic-toolkit/archive/refs/tags/0.6.0.tar.gz"
+  - octave (>= 3.2.4)
+  - pkg
+- id: 0.6.0
+  date: '2024-06-05'
+  sha256: 47fbc34232d87aebdf6d66b9d3a3c445dceeb3a7f1b9f9625160539da12fa63e
+  url: https://github.com/lmarkowsky/fuzzy-logic-toolkit/archive/refs/tags/0.6.0.tar.gz
   depends:
-  - "octave (>= 3.2.4)"
-  - "pkg"
-- id: "0.5.1"
-  date: "2024-05-16"
-  sha256: "4d8f1ebd7101c282c154ce59f492be58184b38d48c157812a58b96ea61d38375"
-  url: "https://github.com/lmarkowsky/fuzzy-logic-toolkit/archive/refs/tags/0.5.1.tar.gz"
+  - octave (>= 3.2.4)
+  - pkg
+- id: 0.5.1
+  date: '2024-05-16'
+  sha256: 4d8f1ebd7101c282c154ce59f492be58184b38d48c157812a58b96ea61d38375
+  url: https://github.com/lmarkowsky/fuzzy-logic-toolkit/archive/refs/tags/0.5.1.tar.gz
   depends:
-  - "octave (>= 3.2.4)"
-  - "pkg"
-- id: "0.5.0"
-  date: "2024-05-12"
-  sha256: "47911348f21af19f3626e78f330a2165ab28533a184881a9ce94cb7cb1c47e2b"
-  url: "https://sourceforge.net/projects/octave-fuzzy/files/fuzzy-logic-toolkit-0.5.0.tar.gz/download"
+  - octave (>= 3.2.4)
+  - pkg
+- id: 0.5.0
+  date: '2024-05-12'
+  sha256: 47911348f21af19f3626e78f330a2165ab28533a184881a9ce94cb7cb1c47e2b
+  url: https://sourceforge.net/projects/octave-fuzzy/files/fuzzy-logic-toolkit-0.5.0.tar.gz/download
   depends:
-  - "octave (>= 3.2.4)"
-  - "pkg"
-- id: "0.4.6"
-  date: "2021-02-16"
-  sha256: "8d15485faea8c41256ec017758a85e85734b7381cdc9a7ad7f9c572c2507dd88"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/fuzzy-logic-toolkit-0.4.6.tar.gz"
+  - octave (>= 3.2.4)
+  - pkg
+- id: 0.4.6
+  date: '2021-02-16'
+  sha256: 8d15485faea8c41256ec017758a85e85734b7381cdc9a7ad7f9c572c2507dd88
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/fuzzy-logic-toolkit-0.4.6.tar.gz
   depends:
-  - "octave (>= 3.2.4)"
-  - "pkg"
-- id: "0.4.5"
-  date: "2014-07-01"
-  sha256: "b4c24ac48662ce413599721d2565e9eabf23ead6b9b36863d33740920aec4133"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/fuzzy-logic-toolkit-0.4.5.tar.gz"
+  - octave (>= 3.2.4)
+  - pkg
+- id: 0.4.5
+  date: '2014-07-01'
+  sha256: b4c24ac48662ce413599721d2565e9eabf23ead6b9b36863d33740920aec4133
+  url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/fuzzy-logic-toolkit-0.4.5.tar.gz
   depends:
-  - "octave (>= 3.2.4)"
-  - "pkg"
+  - octave (>= 3.2.4)
+  - pkg
+functions:
+  Octave Fuzzy Logic Toolkit:
+  - defuzz
+  - evalfis
+  - evalmf
+  - gensurf
+  - plotmf
+  - readfis
+  - writefis
+  - addmf
+  - addrule
+  - addvar
+  - newfis
+  - rmmf
+  - rmvar
+  - setfis
+  - getfis
+  - showfis
+  - showrule
+  - dsigmf
+  - gauss2mf
+  - gaussmf
+  - gbellmf
+  - pimf
+  - psigmf
+  - sigmf
+  - smf
+  - trapmf
+  - trimf
+  - zmf
+  - algebraic_product
+  - algebraic_sum
+  - bounded_difference
+  - bounded_sum
+  - drastic_product
+  - drastic_sum
+  - einstein_product
+  - einstein_sum
+  - hamacher_product
+  - hamacher_sum
+  - cubic_approx_demo
+  - heart_disease_demo_1
+  - heart_disease_demo_2
+  - investment_portfolio_demo
+  - linear_tip_demo
+  - mamdani_tip_demo
+  - sugeno_tip_demo
+  - fcm
+  - gustafson_kessel
+  - partition_coeff
+  - partition_entropy
+  - xie_beni_index
 ---
+
