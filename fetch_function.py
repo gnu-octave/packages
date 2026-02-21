@@ -1,18 +1,15 @@
 import os
 import requests
-import yaml
 
 PACKAGES_DIR = "packages"
 
-def get_repo_url(links):
-    for link in links:
-        if link.get("label") == "repository":
-            return link.get("url")
+def get_repo_url(content):
+    for line in content.splitlines():
+        if "github.com" in line and "url:" in line and "issues" not in line and "blob" not in line:
+            return line.split("url:")[-1].strip()
     return None
 
 def fetch_index(repo_url):
-    # Convert GitHub repo URL to raw INDEX file URL
-    # Try main and master branches
     for branch in ["main", "master"]:
         raw_url = repo_url.replace(
             "https://github.com/",
@@ -40,6 +37,14 @@ def parse_index(content):
                 categories.setdefault(current_category, []).append(func)
     return categories
 
+def functions_to_yaml(categories):
+    lines = ["functions:"]
+    for cat, funcs in categories.items():
+        lines.append(f"  {cat}:")
+        for func in funcs:
+            lines.append(f"  - '{func}'")
+    return "\n".join(lines) + "\n"
+
 def main():
     for filename in os.listdir(PACKAGES_DIR):
         if not filename.endswith(".yaml"):
@@ -47,27 +52,27 @@ def main():
         filepath = os.path.join(PACKAGES_DIR, filename)
         with open(filepath, "r") as f:
             content = f.read()
-        # Split front matter
-        parts = content.split("---", 2)
-        if len(parts) < 3:
+
+        if "functions:" in content:
             continue
-        data = yaml.safe_load(parts[1])
-        links = data.get("links", [])
-        repo_url = get_repo_url(links)
+
+        repo_url = get_repo_url(content)
         if not repo_url or "github.com" not in repo_url:
             continue
+
         print(f"Processing {filename}...")
         index_content = fetch_index(repo_url)
         if not index_content:
-            print(f"  No INDEX file found for {filename}")
+            print(f"  No INDEX file found")
             continue
+
         categories = parse_index(index_content)
         print(f"  Found {sum(len(v) for v in categories.values())} functions")
-        # Add functions to YAML data
-        data["functions"] = categories
-        # Rewrite file
-        new_front_matter = yaml.dump(data, allow_unicode=True, sort_keys=False)
-        new_content = f"---\n{new_front_matter}---\n{parts[2]}"
+
+        # Insert functions before the last ---
+        last_separator = content.rfind("---")
+        new_content = content[:last_separator] + functions_to_yaml(categories) + content[last_separator:]
+
         with open(filepath, "w") as f:
             f.write(new_content)
         print(f"  Updated {filename}")
