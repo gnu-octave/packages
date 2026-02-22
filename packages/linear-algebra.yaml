@@ -24,6 +24,13 @@ maintainers:
 - name: "Octave Forge Community"
   contact: "https://octave.discourse.group/"
 versions:
+- id: "2.2.4"
+  date: "2026-02-26"
+  sha256: "6c1be86d38b1afb3a27a774290fafabb341188b4b90a12f19464385ea7d593aa"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/linear-algebra-2.2.4.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "2.2.3"
   date: "2019-11-08"
   sha256: "53ee6a534e1327282339cbc0bd335af17e0f897f737c00bfa686c99d6ebf92f3"
