@@ -27,7 +27,7 @@ versions:
 - id: "2.2.4"
   date: "2026-02-22"
   sha256: "49cd85a4d67128aa36c5148eb217143f14e0ebd560350bd0b6d24f906308b28a"
-  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/linear-algebra-2.2.3.tar.gz"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/linear-algebra-2.2.4.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
