@@ -6,7 +6,7 @@ description: >-
 
    This package is a wrapper around the MPFR library,
    which provides arbitrary precision floating-point arithmetic.
-   
+
    The package allows users to perform calculations with a precision
    that can be set at runtime, making it suitable for applications that
    require high precision, such as numerical analysis and scientific computing.
