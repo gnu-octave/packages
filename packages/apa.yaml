@@ -1,0 +1,61 @@
+---
+layout: "package"
+permalink: "apa/"
+description: >-
+   Arbitrary Precision Arithmetic (APA) package for Octave/Matlab.
+
+   This package is a wrapper around the MPFR library,
+   which provides arbitrary precision floating-point arithmetic.
+
+   The package allows users to perform calculations with a precision
+   that can be set at runtime, making it suitable for applications that
+   require high precision, such as numerical analysis and scientific computing.
+icon: "https://raw.githubusercontent.com/gnu-octave/pkg-apa/refs/heads/main/doc/apa.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/gnu-octave/pkg-apa/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/gnu-octave/pkg-apa/releases/"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/gnu-octave/pkg-apa/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://github.com/gnu-octave/pkg-apa/blob/main/README.md"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/gnu-octave/pkg-apa/issues"
+maintainers:
+- name: "Kai T. Ohlhus"
+  contact: "kai.ohlhus@gmail.com"
+versions:
+- id: "1.1.0"
+  date: "2026-03-02"
+  sha256: "e5aa44ab0e7968c3594219a11bd83791797858ea50fba9c23ded7fc459075ded"
+  url: "https://github.com/gnu-octave/pkg-apa/archive/refs/tags/v1.1.0.tar.gz"
+  depends:
+  - "octave (>= 9.1.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libmpfr-dev"
+- id: "1.0.0"
+  date: "2021-11-22"
+  sha256: "0bfb89a81567c1ed5808edf7da458e9c31e4812aecaade3f5ace586a0aef3641"
+  url: "https://github.com/gnu-octave/pkg-apa/releases/download/v1.0.0/apa-1.0.0.zip"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libmpfr-dev"
+- id: "dev"
+  date:
+  sha256:
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/interval-3.2.1.tar.gz"
+  depends:
+  - "octave (>= 9.1.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libmpfr-dev"
+---
