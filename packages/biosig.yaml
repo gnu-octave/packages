@@ -28,7 +28,7 @@ versions:
   depends:
   - "octave (>= 3.2.0)"
   - "pkg"
-  debian13:
+  debian12:
   - "libbiosig-dev"
 - id: "2.5.2"
   date: "2023-07-18"
