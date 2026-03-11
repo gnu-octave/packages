@@ -30,6 +30,13 @@ maintainers:
 - name: "Avinoam Kalma"
   contact:
 versions:
+- id: "2.20.0"
+  date: "2026-03-11"
+  sha256: "5f8d97ed7f7d18ce854a8174bbf819e9e3a703bcd1cb2ca8b1ad15b9ef329522"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/image-2.20.0.tar.gz"
+  depends:
+  - "octave (>= 8.1.0)"
+  - "pkg"
 - id: "2.18.2"
   date: "2026-02-15"
   sha256: "a5863c1392d977ea4f370cc5547e04b1763c2b77d7b3a1f2cf6cd8c1e5e49919"
