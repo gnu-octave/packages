@@ -2,7 +2,7 @@
 layout: "package"
 permalink: "molsim/"
 description: >-
-  molsim is a GNU Octave pacakge for molecular dynamics simulations.  It allows
+  molsim is a GNU Octave package for molecular dynamics simulations.  It allows
   you to perform molecular simulations of simple atomistic systems, confined
   fluids, molecular mixtures, polymers and more.
 icon: "https://raw.githubusercontent.com/jesperschmidthansen/molsim/main/resources/logo_1.png"
