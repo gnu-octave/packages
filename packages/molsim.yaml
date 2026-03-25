@@ -27,7 +27,7 @@ maintainers:
   contact: "jesperschmidthansen@gmail.com"
 versions:
 - id: "2.0.0"
-  date: "2026-22-03"
+  date: "2026-03-22"
   sha256: "4f93b8ac97513b4aac257cabfd6633574696b021192ade2ddfc177aece1c5d54"
   url: "https://github.com/jesperschmidthansen/molsim/archive/refs/tags/v2.0.0.tar.gz"
   depends:
