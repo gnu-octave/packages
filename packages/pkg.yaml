@@ -2,7 +2,9 @@
 layout: "package"
 permalink: "pkg/"
 description: >-
-  The GNU Octave package management tool.
+  The GNU Octave package management tool `pkg` is already installed with
+  GNU Octave itself.  This package is a proof of conecpt and NOT REQUIRED
+  to work with Octave packages.
 icon: "https://raw.githubusercontent.com/gnu-octave/pkg/main/doc/icon.png"
 links:
 - icon: "far fa-copyright"

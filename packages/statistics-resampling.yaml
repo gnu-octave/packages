@@ -4,8 +4,7 @@ permalink: "statistics-resampling/"
 description: >-
   Estimate bias, uncertainty (standard errors and confidence intervals)
   and test hypotheses (p-values) using resampling methods. (Note that
-  versions of this package <= 5.4.3 are named the 'statistics-bootstrap'
-  package).
+  versions of this package <= 5.4.3 are named 'statistics-bootstrap').
 icon: "https://raw.githubusercontent.com/gnu-octave/statistics-resampling/master/doc/icon.png"
 links:
 - icon: "far fa-copyright"
@@ -27,10 +26,10 @@ maintainers:
 - name: "Andrew C. Penn"
   contact: "andy.c.penn@gmail.com"
 versions:
-- id: "5.5.7"
-  date: "2024-02-15"
-  sha256: "01dc19eccfd3ab687d38f9d7e7d63254ec9653df64e057ee95987893b7fe17cc"
-  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/5.5.7.tar.gz"
+- id: "5.6.0"
+  date: "2024-06-17"
+  sha256: "e84fc3e6973230862023a82aaa408608887a4aaf05a172f3ee401dbaa259a765"
+  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/5.6.0.tar.gz"
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
@@ -38,6 +37,90 @@ versions:
   date:
   sha256:
   url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/heads/master.zip"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
+- id: "5.5.18"
+  date: "2024-06-04"
+  sha256: "003bb8316878d4d82bf624f7a64e3f9c5177cbf6175d62a57eed301e647322b3"
+  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/5.5.18.tar.gz"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
+- id: "5.5.17"
+  date: "2024-05-25"
+  sha256: "3d59aceefc2fa068ee3c0c2209274bd4035dbe133c7b4a9a6b64f221aead90e8"
+  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/5.5.17.tar.gz"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
+- id: "5.5.16"
+  date: "2024-05-24"
+  sha256: "37359b8dc498f9466d092f55219fb504b703e27eecd0b140654e015c0a1b433d"
+  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/5.5.16.tar.gz"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
+- id: "5.5.15"
+  date: "2024-05-24"
+  sha256: "0b01d6e8d9c0559db99f5c1959f12eba4311a4ca285fda20e221f984b630c573"
+  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/5.5.15.tar.gz"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
+- id: "5.5.14"
+  date: "2024-05-19"
+  sha256: "691eb20874e6cb4c85e93aa016a208933e5415cd6540326d46ebadd020ef6502"
+  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/5.5.14.tar.gz"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
+- id: "5.5.13"
+  date: "2024-05-17"
+  sha256: "2b2a7c8eda74a61294cfcbcd270d789903f7f5317d69e2659bea4f5ecb5d74f3"
+  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/5.5.13.tar.gz"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
+- id: "5.5.12"
+  date: "2024-05-15"
+  sha256: "76ca5005e01b312c4c2ec486f5e40d4fe5473eacb36a07ed5f4ecc0ca0e0457d"
+  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/5.5.12.tar.gz"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
+- id: "5.5.11"
+  date: "2024-05-13"
+  sha256: "ea74dd39b007d02a25d38d1dbf038e42a98e5104875f5329b484b80626596b05"
+  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/5.5.11.tar.gz"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
+- id: "5.5.10"
+  date: "2024-05-09"
+  sha256: "ba157c8ec9ddc0cc6a87b36e37124def5c8ff454a44271f2bff5991808b25bc0"
+  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/5.5.10.tar.gz"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
+- id: "5.5.9"
+  date: "2024-04-24"
+  sha256: "9c3a6abb6c5ce944aab428482a680db43dc5a79a5cb41cd0408d18a10c851627"
+  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/5.5.9.tar.gz"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
+- id: "5.5.8"
+  date: "2024-04-02"
+  sha256: "f220e8f427c0ff3ce69413001ad721b22e01e0e3eea1648944d3c7b77ef84e7b"
+  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/5.5.8.tar.gz"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
+- id: "5.5.7"
+  date: "2024-02-15"
+  sha256: "01dc19eccfd3ab687d38f9d7e7d63254ec9653df64e057ee95987893b7fe17cc"
+  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/5.5.7.tar.gz"
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"

@@ -20,7 +20,7 @@ links:
   url: "https://octave.sourceforge.io/financial/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(financial)"
+  url: "https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(financial)"
 maintainers:
 - name: "Bill Denney"
   contact:
@@ -29,6 +29,15 @@ maintainers:
 - name: "Parsiad Azimzadeh"
   contact: "parsiad.azimzadeh@gmail.com"
 versions:
+- id: "0.5.4"
+  date: "2025-06-25"
+  sha256: "0b906886b4c754c683ad5f464dba797743af5d1faccd032357986f38d16d3fbb"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/financial-0.5.4.tar.gz"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "io (>= 2.4.11)"
+  - "statistics (>= 1.4.0)"
+  - "pkg"
 - id: "0.5.3"
   date: "2018-10-22"
   sha256:

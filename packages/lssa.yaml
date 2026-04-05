@@ -21,7 +21,7 @@ links:
   url: "https://octave.sourceforge.io/lssa/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(lssa)"
+  url: "https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(lssa)"
 maintainers:
 - name: "Ben Lewis"
   contact: "benjf5@gmail.com"

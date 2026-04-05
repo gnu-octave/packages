@@ -1,0 +1,32 @@
+---
+layout: "package"
+permalink: "outliers/"
+description: >-
+  Grubbs, Dixon and Cochran tests for outlier detection
+  and p-value approximating routines.
+icon:
+links:
+- icon: "far fa-copyright"
+  label: "GPL-2.0-or-later"
+  url: "https://sourceforge.net/p/octave/outliers/ci/default/tree/COPYING"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://sourceforge.net/p/octave/outliers/ci/default/tree/"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://octave.sourceforge.io/outliers/overview.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(outliers)"
+maintainers:
+- name: "Lukasz Komsta"
+  contact: "luke@ulterior.pl"
+versions:
+- id: "0.13.9"
+  date: "2009-05-06"
+  sha256: "9fd0d4455f5a1c7814e4a61af28a339576521e30da78f03d017a7b15db98a529"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/outliers-0.13.9.tar.gz"
+  depends:
+  - "octave (>= 2.9.9)"
+  - "pkg"
+---

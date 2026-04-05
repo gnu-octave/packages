@@ -1,0 +1,37 @@
+---
+layout: "package"
+permalink: "octave_tar/"
+description: >-
+  The octave_tar package provides functions for pack and unpack about tar
+  format.
+icon: "https://avatars.githubusercontent.com/u/184102101?v=4"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/CNOCTAVE/octave_tar/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/CNOCTAVE/octave_tar/blob/main/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/CNOCTAVE/octave_tar"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://cnoctave.github.io/octave_tar/index.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/CNOCTAVE/octave_tar/issues"
+maintainers:
+- name: "CNOCTAVE"
+  contact: "cnoctave@qq.com"
+- name: "Yu Hongbo"
+  contact: "yuhongbo@member.fsf.org"
+versions:
+- id: "1.0.1"
+  date: "2024-11-13"
+  sha256: "d1afe8759b8f1f925dc4c193fad6152c05d58082263a1cfbd549bebb88cd95f1"
+  url: "https://github.com/CNOCTAVE/octave_tar/releases/download/1.0.1/octave_tar.tar.gz"
+  depends:
+  - "octave (>= 8.0.0)"
+  - "pkg"
+---

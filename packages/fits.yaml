@@ -21,7 +21,7 @@ links:
   url: "https://octave.sourceforge.io/fits/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(fits)"
+  url: "https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(fits)"
 maintainers:
 - name: "Dirk Schmidt"
   contact:

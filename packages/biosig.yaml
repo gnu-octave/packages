@@ -21,6 +21,24 @@ maintainers:
 - name: "Alois Schloegl"
   contact: "alois.schloegl@gmail.com"
 versions:
+- id: "3.9.5"
+  date: "2026-04-01"
+  sha256: "ef7546757df44dd8663dc97d8b5931aa824f546c2e62320aadb3245dbe30fbdd"
+  url: "https://sourceforge.net/projects/biosig/files/Biosig%20for%20Octave/biosig4octave-3.9.5.src.tar.gz"
+  depends:
+  - "octave (>= 3.2.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libbiosig-dev"
+- id: "3.9.4"
+  date: "2026-03-06"
+  sha256: "8a08b189585662b40f03d27380fe0dfcc4c5046bdfd29ba74025a44513075826"
+  url: "https://sourceforge.net/projects/biosig/files/Biosig%20for%20Octave/biosig4octave-3.9.4.src.tar.gz"
+  depends:
+  - "octave (>= 3.2.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libbiosig-dev"
 - id: "2.5.2"
   date: "2023-07-18"
   sha256: "c03a35fd3359d342ad0105aa3b12ca1345185a909e60fcc927c6625bdb58e61e"

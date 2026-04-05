@@ -1,0 +1,63 @@
+---
+layout: "package"
+permalink: "piqp/"
+description: >-
+  PIQP is a Proximal Interior Point Quadratic Programming solver,
+  which can solve dense and sparse quadratic programs.
+icon:
+links:
+- icon: "far fa-copyright"
+  label: "BSD-2-Clause"
+  url: "https://github.com/PREDICT-EPFL/piqp/blob/main/interfaces/octave/package/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/PREDICT-EPFL/piqp/releases"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/PREDICT-EPFL/piqp"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://predict-epfl.github.io/piqp/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/PREDICT-EPFL/piqp/issues"
+maintainers:
+- name: "Roland Schwan"
+  contact: "roland.schwan@epfl.ch"
+versions:
+- id: "0.6.0"
+  date: "2025-06-30"
+  sha256: "62344e0e31a95d3aff69408150f4a2a1da34e91a46f6067fc5bef0ca4aecf4ee"
+  url: "https://github.com/PREDICT-EPFL/piqp/releases/download/v0.6.0/piqp-octave.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+- id: "0.5.0"
+  date: "2025-03-17"
+  sha256: "49a9bf3c7c242b7fd7293f5fe234ed321595822ce3fc4189d794c122e07fe88b"
+  url: "https://github.com/PREDICT-EPFL/piqp/releases/download/v0.5.0/piqp-octave.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+- id: "0.4.2"
+  date: "2024-08-02"
+  sha256: "8e695298c08e36ee0f59f3df1e26d6e38e4829293e1b48012b8a68966dd89cb8"
+  url: "https://github.com/PREDICT-EPFL/piqp/releases/download/v0.4.2/piqp-octave.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+- id: "0.4.1"
+  date: "2024-06-22"
+  sha256: "a88aa7d058d34cfd869e01a5631eeb0ff8ff4382815c186112f66b5382eb27b6"
+  url: "https://github.com/PREDICT-EPFL/piqp/releases/download/v0.4.1/piqp-octave.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+- id: "0.4.0"
+  date: "2024-06-21"
+  sha256: "f78ba738645980fcfb086b64cce018388160cae5fa729faef5de412a08309639"
+  url: "https://github.com/PREDICT-EPFL/piqp/releases/download/v0.4.0/piqp-octave.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+---

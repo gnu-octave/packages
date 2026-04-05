@@ -19,7 +19,7 @@ links:
   url: "https://octave.sourceforge.io/parallel/4.0.2/package_doc/"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(parallel)"
+  url: "https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(parallel)"
 maintainers:
 - name: "Hayato Fujiwara"
   contact:

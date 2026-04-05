@@ -3,6 +3,8 @@ layout: "package"
 permalink: "json/"
 description: >-
   JSON support by Matlab compatible (jsondecode / jsonencode) functions.
+  Included in Octave core since version 7.1.0.
+  No need to install this package in recent Octave versions.
 icon: "https://raw.githubusercontent.com/gnu-octave/pkg-json/main/doc/JSON.png"
 links:
 - icon: "far fa-copyright"
@@ -26,6 +28,14 @@ maintainers:
 - name: "Abdallah Elshamy"
   contact: "abdallah.k.elshamy@gmail.com"
 versions:
+- id: "1.6.0"
+  date: "2025-03-23"
+  sha256: "f27e407998f980f7150cbb007da000034bb7c2e381205bae5afe3d2943785482"
+  url: "https://github.com/gnu-octave/pkg-json/archive/v1.6.0.tar.gz"
+  depends:
+  - "octave (>= 5.1.0)"
+  - "octave (< 7.0.0)"
+  - "pkg"
 - id: "1.5.0"
   date: "2021-08-18"
   sha256: "4128d2e025165c49a8f7faa1c75a02a5616e3f9204ed7d7a497c09f9b292e55c"
@@ -77,7 +87,7 @@ versions:
 - id: "dev"
   date:
   sha256:
-  url: "https://github.com/gnu-octave/pkg-json/archive/main.zip"
+  url: "https://github.com/gnu-octave/pkg-json/archive/main.tar.gz"
   depends:
   - "octave (>= 5.1.0)"
   - "octave (< 7.0.0)"

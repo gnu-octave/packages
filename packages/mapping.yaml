@@ -19,11 +19,22 @@ links:
   url: "https://octave.sourceforge.io/mapping/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(mapping)"
+  url: "https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(mapping)"
 maintainers:
 - name: "Philip Nienhuis"
   contact: "prnienhuis@users.sf.net"
 versions:
+- id: "1.4.3"
+  date: "2025-05-02"
+  sha256: "2188b24639c7087840172e6047f75cb8a598d758120ae6e0810ce6300a869a1b"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/mapping-1.4.3.tar.gz"
+  depends:
+  - "octave (>= 5.2.0)"
+  - "io (>= 2.2.7)"
+  - "geometry (>= 4.0.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libgdal-dev"
 - id: "1.4.2"
   date: "2022-02-20"
   sha256: "9ab5105aa0b5e549790070ef84c94d4ada88306d99c5afa1076bc3c9e8b32da2"

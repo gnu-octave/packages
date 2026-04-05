@@ -19,7 +19,7 @@ links:
   url: "https://octave.sourceforge.io/gsl/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(gsl)"
+  url: "https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(gsl)"
 maintainers:
 - name: "Teemu Ikonen"
   contact: "https://octave.discourse.group/"

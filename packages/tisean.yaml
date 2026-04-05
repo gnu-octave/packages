@@ -19,7 +19,7 @@ links:
   url: "https://octave.sourceforge.io/tisean/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(tisean)"
+  url: "https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(tisean)"
 maintainers:
 - name: "Piotr Held"
   contact: "pjheld@gmail.com"

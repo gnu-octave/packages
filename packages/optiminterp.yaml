@@ -20,7 +20,7 @@ links:
   url: "https://octave.sourceforge.io/optiminterp/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(optiminterp)"
+  url: "https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(optiminterp)"
 maintainers:
 - name: "Alexander Barth"
   contact: "barth.alexander@gmail.com"

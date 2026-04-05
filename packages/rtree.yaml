@@ -22,10 +22,10 @@ maintainers:
 - name: "J.J. Green"
   contact: "j.j.green@gmx.co.uk"
 versions:
-- id: "0.8.0"
-  date: "2024-01-23"
-  sha256: "b3210dcf0f12574718b9e117e8b65c418fe01e39b66f446a74dd1bbb8745bb8f"
-  url: "https://gitlab.com/jjg/librtree-octave/-/package_files/110234799/download"
+- id: "0.8.2"
+  date: "2024-04-07"
+  sha256: "40e1e335bbb50fa2aa2d492ea5b30e6d777dbbbf26c9389c68eec07ec9f4b368"
+  url: "https://gitlab.com/jjg/librtree-octave/-/package_files/121124775/download"
   depends:
   - "octave (>= 6.0.0)"
   - "pkg"

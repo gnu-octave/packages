@@ -19,7 +19,7 @@ links:
   url: "https://octave.sourceforge.io/fem-fenics/overview.html"
 - icon: "fas fa-bug"
   label: "report a problem"
-  url: "https://octave.space/savannah/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(fem-fenics)"
+  url: "https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(fem-fenics)"
 maintainers:
 - name: "Marco Vassallo"
   contact: "gedeone-octave@users.sourceforge.net"
