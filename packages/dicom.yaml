@@ -30,6 +30,15 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "0.7.2"
+  date: "2026-04-06"
+  sha256: "a0758030b4872a90bb9a07a08efe52eaf56b0503f9a439db4458df3201c2b847"
+  url: "https://github.com/gnu-octave/octave-dicom/releases/download/release-0.7.2/dicom-0.7.2.tar.gz"
+  depends:
+  - "octave (>= 3.8.0)"
+  - "pkg"
+  ubuntu2204:
+  - "libgdcm-dev"
 - id: "0.7.1"
   date: "2026-01-06"
   sha256: "8233ee41002ae427e5a8f36498fb8628a99834f314d70cedc56cc9f6686e0282"
