@@ -30,7 +30,7 @@ versions:
 - id: "0.0.6"
   date: "2025-12-29"
   sha256: "41d01f43178485d16ff11ad90248507c33d57660b4422160b38941850fee8a91"
-  url: "https://github.com/gnu-octave/octave-mqtt/releases/download/release-0.0.6/octave-mqtt-0.0.6.tar.gz"
+  url: "https://github.com/gnu-octave/octave-mqtt/releases/download/release-0.0.6-main/octave-mqtt-0.0.6.tar.gz"
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
