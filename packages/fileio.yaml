@@ -26,13 +26,6 @@ versions:
   - "octave (>= 7.2.0)"
   - "io"
   - "pkg"
-- id: "1.2.3"
-  date: "2026-03-30"
-  sha256: "22aea3e7c25b15437e7977da8f8fc4a11770e536f102943d4e1a8bb2c921d8ce"
-  url: "https://github.com/reprostat/fileio/archive/refs/tags/1.2.3.tar.gz"
-  depends:
-  - "octave (>= 7.2.0)"
-  - "pkg"
 - id: "1.2.2"
   date: "2023-06-07"
   sha256: "ad382d4afb7438013af3de02a4b0f917edd62fc9dbcfd766eb3d8cc0643907cf"
