@@ -19,8 +19,8 @@ maintainers:
   contact: "tibor.auer@gmail.com"
 versions:
 - id: "1.2.4"
-  date: "2026-04-05"
-  sha256: "ee31f9b0a0fbf80f4f5bc3c35149df261292687d2b66168eda72554034ba95fc"
+  date: "2026-04-08"
+  sha256: "ef365b97195b1fae9503a2aa1d64d52e361947ee5770dafb410ab43eca2ee0ff"
   url: "https://github.com/reprostat/fileio/archive/refs/tags/1.2.4.tar.gz"
   depends:
   - "octave (>= 7.2.0)"
