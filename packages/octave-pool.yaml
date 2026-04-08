@@ -20,7 +20,7 @@ maintainers:
 versions:
 - id: "1.2.4"
   date: "2026-04-08"
-  sha256: "33d5fee23157c8422c0a3c1ca5ba106c0c0ce67e039aa265c4d2af648a62a506"
+  sha256: "f97fa15a91452074fae91fddfeda845e779387f3900863c0242feccca44ef657"
   url: "https://github.com/reprostat/octave-pool/archive/refs/tags/1.2.4.tar.gz"
   depends:
   - "octave (>= 7.2.0)"
