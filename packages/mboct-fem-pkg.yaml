@@ -32,7 +32,7 @@ maintainers:
 versions:
 - id: "0.2.3"
   date: "2026-04-10"
-  sha256: "sha256:32756419465ddaee48a7eacded9c6d51807344d9da723332c8e35c5b0372e478"
+  sha256: "32756419465ddaee48a7eacded9c6d51807344d9da723332c8e35c5b0372e478"
   url: "https://github.com/octave-user/mboct-fem-pkg/releases/download/0.2.3/mboct-fem-pkg-0.2.3.tar.gz"
   depends:
   - "octave (>= 5.1.0)"

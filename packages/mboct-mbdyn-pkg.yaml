@@ -29,7 +29,7 @@ maintainers:
 versions:
 - id: "0.1.2"
   date: "2026-04-10"
-  sha256: "sha256:9a23c3866875035916af6a0e65441c8acb826bfcd8bf7788c8a2f90786fd0e9d"
+  sha256: "9a23c3866875035916af6a0e65441c8acb826bfcd8bf7788c8a2f90786fd0e9d"
   url: "https://github.com/octave-user/mboct-mbdyn-pkg/releases/download/0.1.2/mboct-mbdyn-pkg-0.1.2.tar.gz"
   depends:
   - "octave (>= 5.1.0)"
