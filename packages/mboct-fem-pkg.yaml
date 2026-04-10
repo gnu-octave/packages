@@ -45,7 +45,7 @@ versions:
   - "libmetis-dev"
   - "libgtest-dev"
   - "libmumps-seq-dev"
-  - "libnlopt-dev"  
+  - "libnlopt-dev"
 - id: "0.2.2"
   date: "2025-08-24"
   sha256: "5d52d55d265dccb1ad1c90b78f914c900214b1e45a5cc9d9be391da64fb7f896"

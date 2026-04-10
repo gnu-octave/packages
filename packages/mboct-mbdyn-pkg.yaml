@@ -41,7 +41,7 @@ versions:
   - "libmkl-full-dev"
   - "libmetis-dev"
   - "libgtest-dev"
-  - "libmumps-seq-dev"  
+  - "libmumps-seq-dev"
 - id: "0.1.1"
   date: "2025-08-24"
   sha256: "9b24940378e6f36186f1f607b5e2421680e227a3602256445e078ba8c615cca6"
