@@ -38,7 +38,7 @@ versions:
   url: >-
     https://github.com/ahmedshahein/pkg-fxp/archive/refs/tags/3.0.0.tar.gz
   depends:
-  - "octave (>= 5.2.0, 10.3.0"
+  - "octave (>= 5.2.0)"
   - "pkg"
 - id: "2.0.0"
   date: "2026-03-26"
