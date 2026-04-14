@@ -23,6 +23,13 @@ maintainers:
 - name: "Alois Schloegl"
   contact: "alois.schloegl@gmail.com"
 versions:
+- id: "0.2.3"
+  date: "2021-08-19"
+  sha256:
+  url: "https://github.com/schloegl/octmat-bioinfo/archive/refs/heads/master.tar.gz"
+  depends:
+  - "octave (>= 3.0.0)"
+  - "pkg"
 - id: "0.2.2"
   date: "2021-07-28"
   sha256:
