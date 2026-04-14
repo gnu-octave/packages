@@ -102,8 +102,7 @@ function octave_ci (package_name, pkg_index_file)
   step_group_start (["Check: pkg version ", pkg_name_version]);
   installed_pkg = pkg ("list", package_name);
   if (! strcmp (pkg_info.id, installed_pkg{1}.version))
-    ## FIXME: Should this fail the CI instead of emitting a warning?
-    step_warning ("Version of installed package doesn't match version in package index");
+    step_error ("Version of installed package does not match version in package index");
   endif
   step_group_end ("done.");
 
