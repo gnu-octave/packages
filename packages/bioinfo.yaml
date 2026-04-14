@@ -25,7 +25,7 @@ maintainers:
 versions:
 - id: "0.2.3"
   date: "2021-08-19"
-  sha256: "4a9729e63c19441b78fbaebd05b30af4ff3d499526fa36102de4ef7618aa15b0"
+  sha256: "838fbf9b0ca1073370693532ca10a9ec8dc69ee6ec30da4fbeecbe9d1a0a62cd"
   url: "https://github.com/schloegl/octmat-bioinfo/archive/refs/tags/bioinfo-0.2.3.tar.gz"
   depends:
   - "octave (>= 3.0.0)"
@@ -33,7 +33,7 @@ versions:
 - id: "0.2.2"
   date: "2021-07-28"
   sha256:
-  url: "https://github.com/schloegl/octmat-bioinfo/archive/refs/heads/master.tar.gz"
+  url: "https://github.com/schloegl/octmat-bioinfo/archive/refs/tags/bioinfo-0.2.2.tar.gz"
   depends:
   - "octave (>= 3.0.0)"
   - "pkg"
