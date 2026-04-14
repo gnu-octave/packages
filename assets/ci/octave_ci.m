@@ -21,6 +21,9 @@ function octave_ci (package_name, pkg_index_file)
     return;
   endif
 
+  ## Set to true to indicate that tests failed but still continue.
+  tests_failed = false;
+
   ## Package name should be lower case, but do not be pedantic.
   package_name = tolower (package_name);
 
@@ -103,6 +106,7 @@ function octave_ci (package_name, pkg_index_file)
   installed_pkg = pkg ("list", package_name);
   if (! strcmp (pkg_info.id, installed_pkg{1}.version))
     step_error ("Version of installed package does not match version in package index");
+    tests_failed = true;
   endif
   step_group_end ("done.");
 
@@ -140,6 +144,10 @@ function octave_ci (package_name, pkg_index_file)
   step_group_start ("Show: fntests.log");
   type (fullfile (test_dir, "fntests.log"));
   step_group_end ("done.");
+
+  if (tests_failed)
+    exit (1);
+  endif
 
 endfunction
 
