@@ -1,0 +1,49 @@
+---
+layout: "package"
+permalink: "rf/"
+description: >-
+  RF and microwave network-parameter utilities for GNU Octave.  Provides
+  S-parameter conversions (S<->T, S<->Z, S<->Y, S<->ABCD, S<->H, S<->G),
+  cascading, de-embedding, port reordering, renormalization, mixed-mode
+  conversion for differential pairs, and Touchstone I/O.  Function
+  signatures match the MATLAB RF Toolbox, so the same user code runs
+  in both environments.  Cross-validated against MATLAB R2025b, MATLAB
+  R2020b (backwards-compatibility), and scikit-rf 1.11.0 to
+  floating-point precision — 144/144 pair-wise tests pass across all
+  four comparison pairs.
+icon: "https://raw.githubusercontent.com/Sparamix/octave-rf/main/doc/icon.png"
+links:
+- icon: "far fa-copyright"
+  label: "BSD-3-Clause"
+  url: "https://github.com/Sparamix/octave-rf/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/Sparamix/octave-rf/releases/"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/Sparamix/octave-rf"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://github.com/Sparamix/octave-rf/blob/main/README.md"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/Sparamix/octave-rf/issues"
+maintainers:
+- name: "Giorgi Maghlakelidze"
+  contact: "giorgi.snp@pm.me"
+versions:
+- id: "0.1.0"
+  date: "2026-04-17"
+  sha256: "472e4ee703fb8693d3b7f51b4eeb3cccc78ae977abe11d71b0e4cebb7c46176a"
+  url: "https://github.com/Sparamix/octave-rf/releases/download/v0.1.0/rf-0.1.0.tar.gz"
+  depends:
+  - "octave (>= 6.0.0)"
+  - "pkg"
+- id: "dev"
+  date:
+  sha256:
+  url: "https://github.com/Sparamix/octave-rf/archive/main.zip"
+  depends:
+  - "octave (>= 6.0.0)"
+  - "pkg"
+---
