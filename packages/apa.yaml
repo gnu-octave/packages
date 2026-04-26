@@ -31,6 +31,15 @@ maintainers:
 - name: "Kai T. Ohlhus"
   contact: "kai.ohlhus@gmail.com"
 versions:
+- id: "1.2.0"
+  date: "2026-04-26"
+  sha256: "dcae62ad6118078a301916074d6056b64c6072e4749a5499dd3d456f49a72f70"
+  url: "https://github.com/gnu-octave/pkg-apa/archive/refs/tags/v1.2.0.tar.gz"
+  depends:
+  - "octave (>= 9.1.0)"
+  - "pkg"
+  ubuntu2604:
+  - "libmpfr-dev"
 - id: "1.1.1"
   date: "2026-03-07"
   sha256: "3961d6091fc26ba60e9d46e49d8ae5acf497178255e7d9f5e015bed6d03c3499"
