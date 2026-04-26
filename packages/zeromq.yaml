@@ -34,7 +34,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libzmq3-dev"
 - id: "1.5.6"
   date: "2023-08-11"
@@ -43,7 +43,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libzmq3-dev"
 - id: "1.5.5"
   date: "2022-10-17"
@@ -52,7 +52,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libzmq3-dev"
 - id: "1.5.4"
   date: "2022-05-02"
@@ -61,7 +61,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libzmq3-dev"
 - id: "1.5.3"
   date: "2021-07-15"
@@ -70,7 +70,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libzmq3-dev"
 - id: "1.5.2"
   date: "2020-10-13"
@@ -79,7 +79,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libzmq3-dev"
 - id: "1.5.1"
   date: "2020-04-28"
@@ -88,6 +88,6 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libzmq3-dev"
 ---

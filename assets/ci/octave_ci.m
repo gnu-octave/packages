@@ -59,15 +59,15 @@ function octave_ci (package_name, pkg_index_file)
   cd (test_dir);
 
   step_group_start ("Resolve package dependencies");
-  [ubuntu2204, pkgs] = resolve_deps (__pkg__, {package_name});
+  [ubuntu2604, pkgs] = resolve_deps (__pkg__, {package_name});
   step_group_end ("done.");
 
-  if (! isempty (ubuntu2204))
-    step_group_start ("Install Ubuntu 22.04 dependencies");
+  if (! isempty (ubuntu2604))
+    step_group_start ("Install Ubuntu 26.04 dependencies");
     system ("sudo apt-get update");
     ## Avoid input prompts during package installation (e.g., for tzdata)
     system (["sudo DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC ", ...
-             "apt-get install --yes apt-utils ", strjoin(ubuntu2204)]);
+             "apt-get install --yes apt-utils ", strjoin(ubuntu2604)]);
     step_group_end ("done.");
   endif
 
@@ -210,7 +210,7 @@ function pkg_install_sha256_check (pkg_version, test_dir)
 endfunction
 
 
-function [ubuntu2204, pkgs] = resolve_deps (__pkg__, stack);
+function [ubuntu2604, pkgs] = resolve_deps (__pkg__, stack);
 ## Simple resolver function.
 ##
 ## Only considers the newest version of a package.
@@ -219,7 +219,7 @@ function [ubuntu2204, pkgs] = resolve_deps (__pkg__, stack);
 ##
 
   pkgs = {};
-  ubuntu2204 = {};
+  ubuntu2604 = {};
   p = get_first_version (__pkg__, stack{end});
 
   if (isfield (p, "depends"))
@@ -233,24 +233,24 @@ function [ubuntu2204, pkgs] = resolve_deps (__pkg__, stack);
       if (any (strcmp (pkgs{i}, stack)))
         error ("resolve_deps: circular dependency detected.");
       endif
-      [new_ubuntu2204, new_pkgs] = resolve_deps (__pkg__, [stack, pkgs(i)]);
-      ubuntu2204 = [reshape(ubuntu2204, [], 1); reshape(new_ubuntu2204, [], 1)];
+      [new_ubuntu2604, new_pkgs] = resolve_deps (__pkg__, [stack, pkgs(i)]);
+      ubuntu2604 = [reshape(ubuntu2604, [], 1); reshape(new_ubuntu2604, [], 1)];
       pkgs = [reshape(pkgs, [], 1); reshape(new_pkgs, [], 1)];
     endfor
   endif
 
-  if (isfield (p, "ubuntu2204") && ! isempty (p.ubuntu2204))
-    new_ubuntu2204 = p.ubuntu2204;
-    for i = 1:length (new_ubuntu2204)
+  if (isfield (p, "ubuntu2604") && ! isempty (p.ubuntu2604))
+    new_ubuntu2604 = p.ubuntu2604;
+    for i = 1:length (new_ubuntu2604)
       ## Ubuntu/Debian package name must consist only of lower case letters
       ## (a-z), digits (0-9), plus (+) and minus (-) signs, and periods (.).
-      m = regexp (new_ubuntu2204{i}, '[a-z0-9\+\-\.]*', "match");
-      if ((length (m) ~= 1) || ~strcmp (m{1}, new_ubuntu2204{i}))
-        error ("resolve_deps: invalid Ubuntu 22.04 package %s.", ...
-          new_ubuntu2204{i});
+      m = regexp (new_ubuntu2604{i}, '[a-z0-9\+\-\.]*', "match");
+      if ((length (m) ~= 1) || ~strcmp (m{1}, new_ubuntu2604{i}))
+        error ("resolve_deps: invalid Ubuntu 26.04 package %s.", ...
+          new_ubuntu2604{i});
       endif
     endfor
-    ubuntu2204 = [ubuntu2204; reshape(new_ubuntu2204, [], 1)];
+    ubuntu2604 = [ubuntu2604; reshape(new_ubuntu2604, [], 1)];
   endif
 
 endfunction

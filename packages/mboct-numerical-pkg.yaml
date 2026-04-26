@@ -35,7 +35,7 @@ versions:
   - "octave (>= 5.1.0)"
   - "pkg"
   - "mboct-octave-pkg (>=0.1.0)"
-  ubuntu2204:
+  ubuntu2604:
   - "libmkl-full-dev"
   - "libmetis-dev"
   - "libgtest-dev"

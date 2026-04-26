@@ -34,7 +34,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "librtmidi-dev"
 - id: "2.0.10"
   date: "2026-01-25"
@@ -43,7 +43,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "librtmidi-dev"
 - id: "2.0.9"
   date: "2024-09-23"
@@ -52,7 +52,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "librtmidi-dev"
 - id: "2.0.8"
   date: "2023-10-02"
@@ -61,7 +61,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "librtmidi-dev"
 - id: "2.0.7"
   date: "2023-07-26"
@@ -70,7 +70,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "librtmidi-dev"
 - id: "2.0.6"
   date: "2023-07-20"
@@ -79,7 +79,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "librtmidi-dev"
 - id: "2.0.5"
   date: "2022-07-20"
@@ -88,7 +88,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "librtmidi-dev"
 - id: "2.0.4"
   date: "2021-12-05"
@@ -97,7 +97,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "librtmidi-dev"
 - id: "2.0.3"
   date: "2021-10-22"
@@ -106,7 +106,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "librtmidi-dev"
 - id: "2.0.2"
   date: "2020-10-13"
@@ -115,7 +115,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "librtmidi-dev"
 - id: "2.0.1"
   date: "2020-05-08"
@@ -124,6 +124,6 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "librtmidi-dev"
 ---

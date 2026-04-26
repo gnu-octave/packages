@@ -33,7 +33,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libnetcdf-dev"
 - id: "1.0.18"
   date: "2024-09-24"
@@ -42,7 +42,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libnetcdf-dev"
 - id: "1.0.17"
   date: "2023-09-18"
@@ -51,7 +51,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libnetcdf-dev"
 - id: "1.0.16"
   date: "2022-09-16"
@@ -60,7 +60,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libnetcdf-dev"
 - id: "1.0.15"
   date: "2022-09-12"
@@ -69,7 +69,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libnetcdf-dev"
 - id: "1.0.14"
   date: "2020-10-14"
@@ -78,7 +78,7 @@ versions:
   depends:
   - "octave (>= 3.8.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libnetcdf-dev"
 - id: "1.0.13"
   date: "2020-03-13"
@@ -87,6 +87,6 @@ versions:
   depends:
   - "octave (>= 3.8.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libnetcdf-dev"
 ---

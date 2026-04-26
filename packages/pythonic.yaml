@@ -37,7 +37,7 @@ versions:
   depends:
   - "octave (>= 6.1.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "python3-dev"
 - id: "0.1.2"
   date: "2023-07-23"
@@ -46,7 +46,7 @@ versions:
   depends:
   - "octave (>= 6.1.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "python3-dev"
 - id: "0.0.1"
   date: "2019-05-22"

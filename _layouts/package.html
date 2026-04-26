@@ -106,10 +106,10 @@ layout: default
             </span>
           {%- endfor -%}
         </li>
-        {%- if v.ubuntu2204 -%}
+        {%- if v.ubuntu2604 -%}
         <li>
-          <b>Ubuntu 22.04:</b>
-          {%- for dep in v.ubuntu2204 -%}
+          <b>Ubuntu 26.04:</b>
+          {%- for dep in v.ubuntu2604 -%}
             &nbsp;&nbsp;&nbsp;&nbsp;
             <span style="white-space: nowrap;">
               <a href="https://packages.ubuntu.com/jammy/{{ dep }}">{{ dep }}</a>
@@ -117,10 +117,10 @@ layout: default
           {%- endfor -%}
         </li>
         {%- endif -%}
-        {%- if v.ubuntu2204w -%}
+        {%- if v.ubuntu2604w -%}
         <li>
-          <b>Ubuntu 22.04 (Weak Dependency(ies)):</b>
-          {%- for dep in v.ubuntu2204w -%}
+          <b>Ubuntu 26.04 (Weak Dependency(ies)):</b>
+          {%- for dep in v.ubuntu2604w -%}
             &nbsp;&nbsp;&nbsp;&nbsp;
             <span style="white-space: nowrap;">
               <a href="https://packages.ubuntu.com/jammy/{{ dep }}">{{ dep }}</a>

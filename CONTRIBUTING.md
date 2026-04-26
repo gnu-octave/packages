@@ -274,7 +274,7 @@ versions:
     [Octave manual](https://octave.org/doc/v7.1.0/The-DESCRIPTION-File.html)
     "DESCRIPTION"-file "Depends" section.
 
-  - `ubuntu2204`: list of Ubuntu 22.04 (LTS) dependency strings.
+  - `ubuntu2604`: list of Ubuntu 26.04 (LTS) dependency strings.
 
     A dependency string looks like `"libopenblas-dev"`.
     The corresponding Ubuntu package must be available at
@@ -286,7 +286,7 @@ versions:
     [Octave Docker image](https://github.com/gnu-octave/docker/blob/main/build-octave-7.docker).
     Try to keep the list as short as possible.
 
-  - `ubuntu2204w`: list of Ubuntu 22.04 (LTS) weak dependency strings.
+  - `ubuntu2604w`: list of Ubuntu 26.04 (LTS) weak dependency strings.
 
     [Term explanation of weak dependency](https://docs.fedoraproject.org/en-US/packaging-guidelines/WeakDependencies/#:~:text=Weak%20dependencies%20allow%20smaller%20minimal,or%20community%2Dmysql%20vs%20mariadb.)
 

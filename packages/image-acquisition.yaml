@@ -31,7 +31,7 @@ versions:
   depends:
   - "octave (>= 5.1.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libv4l-dev"
   - "libfltk1.3-dev"
 - id: "0.3.2"
@@ -41,7 +41,7 @@ versions:
   depends:
   - "octave (>= 5.1.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libv4l-dev"
   - "libfltk1.3-dev"
 - id: "0.3.1"
@@ -51,7 +51,7 @@ versions:
   depends:
   - "octave (>= 5.1.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libv4l-dev"
   - "libfltk1.3-dev"
 - id: "0.3.0"
@@ -61,7 +61,7 @@ versions:
   depends:
   - "octave (>= 5.1.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libv4l-dev"
   - "libfltk1.3-dev"
 ---

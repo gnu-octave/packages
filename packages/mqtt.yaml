@@ -34,7 +34,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libpaho-mqtt-dev"
 - id: "0.0.5"
   date: "2024-04-11"
@@ -43,7 +43,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libpaho-mqtt-dev"
 - id: "0.0.4"
   date: "2023-07-25"
@@ -52,7 +52,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libpaho-mqtt-dev"
 - id: "0.0.3"
   date: "2022-08-18"
@@ -61,7 +61,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libpaho-mqtt-dev"
 - id: "0.0.2"
   date: "2022-07-21"
@@ -70,7 +70,7 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libpaho-mqtt-dev"
 - id: "0.0.1"
   date: "2022-06-30"
@@ -79,6 +79,6 @@ versions:
   depends:
   - "octave (>= 4.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libpaho-mqtt-dev"
 ---

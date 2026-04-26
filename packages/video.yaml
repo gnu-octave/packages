@@ -31,7 +31,7 @@ versions:
   depends:
   - "octave (>= 4.4.1)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libavcodec-dev"
   - "libavformat-dev"
   - "libswscale-dev"
@@ -42,7 +42,7 @@ versions:
   depends:
   - "octave (>= 4.4.1)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libavcodec-dev"
   - "libavformat-dev"
   - "libswscale-dev"
@@ -53,7 +53,7 @@ versions:
   depends:
   - "octave (>= 4.4.1)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libavcodec-dev"
   - "libavformat-dev"
   - "libswscale-dev"
@@ -64,7 +64,7 @@ versions:
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libavcodec-dev"
   - "libavformat-dev"
   - "libswscale-dev"
@@ -75,7 +75,7 @@ versions:
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libavcodec-dev"
   - "libavformat-dev"
   - "libswscale-dev"
@@ -86,7 +86,7 @@ versions:
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "libavcodec-dev"
   - "libavformat-dev"
   - "libswscale-dev"

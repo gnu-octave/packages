@@ -31,7 +31,7 @@ versions:
   depends:
   - "octave (>= 6.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "unixodbc-dev"
   - "libsqliteodbc"
 - id: "0.0.5"
@@ -41,7 +41,7 @@ versions:
   depends:
   - "octave (>= 6.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "unixodbc-dev"
   - "libsqliteodbc"
 - id: "0.0.4"
@@ -51,7 +51,7 @@ versions:
   depends:
   - "octave (>= 6.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "unixodbc-dev"
   - "libsqliteodbc"
 - id: "0.0.3"
@@ -61,7 +61,7 @@ versions:
   depends:
   - "octave (>= 6.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "unixodbc-dev"
   - "libsqliteodbc"
 - id: "0.0.2"
@@ -71,7 +71,7 @@ versions:
   depends:
   - "octave (>= 6.0.0)"
   - "pkg"
-  ubuntu2204:
+  ubuntu2604:
   - "unixodbc-dev"
   - "libsqliteodbc"
 ---
