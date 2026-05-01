@@ -32,8 +32,8 @@ maintainers:
   contact: "kai.ohlhus@gmail.com"
 versions:
 - id: "1.2.1"
-  date: "2026-04-26"
-  sha256: "0f657834caaf95e0ca24aa90cfe3fdd9f5bc470d6c74068a44a0342a1c397f1e"
+  date: "2026-05-02"
+  sha256: "0e98494fcfba30514c028630e4698ddee1302280c732900da24d145fc5417234"
   url: "https://github.com/gnu-octave/pkg-apa/archive/refs/tags/v1.2.1.tar.gz"
   depends:
   - "octave (>= 9.1.0)"
