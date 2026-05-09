@@ -26,7 +26,7 @@ maintainers:
 versions:
 - id: "2.1.9"
   date: "2026-05-09"
-  sha256: "300465c2c055dcf32013119230b7978cd0dfb12dcd193207c791986255888dd8"
+  sha256: "d2c6ced2299c4d98df367b0aada0089b3fa925d63c8ed459e28c18d426a4af58"
   url: "https://github.com/AndreasStahel/FEMoctave/archive/v.2.1.9.tar.gz"
   depends:
   - "octave (>= 5.2.0)"
