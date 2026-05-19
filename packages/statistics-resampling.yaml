@@ -3,8 +3,8 @@ layout: "package"
 permalink: "statistics-resampling/"
 description: >-
   Estimate bias, uncertainty (standard errors and confidence intervals)
-  and test hypotheses (p-values) using resampling methods. (Note that
-  versions of this package <= 5.4.3 are named 'statistics-bootstrap').
+  and test hypotheses using resampling methods. (Note that versions
+  of this package <= 5.4.3 are named 'statistics-bootstrap').
 icon: "https://raw.githubusercontent.com/gnu-octave/statistics-resampling/master/doc/icon.png"
 links:
 - icon: "far fa-copyright"
@@ -26,10 +26,10 @@ maintainers:
 - name: "Andrew C. Penn"
   contact: "andy.c.penn@gmail.com"
 versions:
-- id: "5.6.0"
-  date: "2024-06-17"
-  sha256: "e84fc3e6973230862023a82aaa408608887a4aaf05a172f3ee401dbaa259a765"
-  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/5.6.0.tar.gz"
+- id: "5.7.0"
+  date: "2026-04-23"
+  sha256: "3d0d5827b7ef07ae530dacfb8ef00912b42a413733e8f13ef79e9f18271c5294"
+  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/5.7.0.tar.gz"
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
@@ -37,6 +37,13 @@ versions:
   date:
   sha256:
   url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/heads/master.zip"
+  depends:
+  - "octave (>= 4.4.0)"
+  - "pkg"
+- id: "5.6.0"
+  date: "2024-06-17"
+  sha256: "e84fc3e6973230862023a82aaa408608887a4aaf05a172f3ee401dbaa259a765"
+  url: "https://github.com/gnu-octave/statistics-resampling/archive/refs/tags/5.6.0.tar.gz"
   depends:
   - "octave (>= 4.4.0)"
   - "pkg"
