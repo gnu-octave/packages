@@ -1,0 +1,59 @@
+---
+layout: "package"
+permalink: "octave_ffmpeg_free/"
+description: >-
+  The octave_ffmpeg_free package provides a comprehensive multimedia processing
+  toolkit for GNU Octave, based on FFmpeg-free libraries.
+icon: "https://avatars.githubusercontent.com/u/184102101?v=4"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/CNOCTAVE/octave_ffmpeg_free/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/CNOCTAVE/octave_ffmpeg_free/blob/main/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/CNOCTAVE/octave_ffmpeg_free"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://cnoctave.github.io/octave_ffmpeg_free/index.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/CNOCTAVE/octave_ffmpeg_free/issues"
+maintainers:
+- name: "CNOCTAVE"
+  contact: "cnoctave@qq.com"
+- name: "Yu Hongbo"
+  contact: "yuhongbo@member.fsf.org"
+versions:
+- id: "1.0.0"
+  date: "2026-05-21"
+  sha256: "c139d990a3bca3619da6b920a0e239fee136ea8c21f33069cb58709d79ce5b8f"
+  url: "https://github.com/CNOCTAVE/octave_ffmpeg_free/releases/download/1.0.0/octave_ffmpeg_free.tar.gz"
+  depends:
+  - "octave (>= 8.0.0)"
+  - "pkg"
+  fedora43:
+  - "libavutil-free"
+  - "libavutil-free-devel"
+  - "libavformat-free"
+  - "libavformat-free-devel"
+  - "libavcodec-free"
+  - "libavcodec-free-devel"
+  - "libswresample-free"
+  - "libswresample-free-devel"
+  - "libavfilter-free"
+  - "libavfilter-free-devel"
+  fedora44:
+  - "libavutil-free"
+  - "libavutil-free-devel"
+  - "libavformat-free"
+  - "libavformat-free-devel"
+  - "libavcodec-free"
+  - "libavcodec-free-devel"
+  - "libswresample-free"
+  - "libswresample-free-devel"
+  - "libavfilter-free"
+  - "libavfilter-free-devel"
+---
