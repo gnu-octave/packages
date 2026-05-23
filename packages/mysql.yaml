@@ -1,0 +1,36 @@
+---
+layout: "package"
+permalink: "mysql/"
+description: >-
+  Basic Octave implementation of the MySQL toolkit
+icon: "https://github.com/gnu-octave/octave-mysql/raw/main/doc/octave-mysql.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/gnu-octave/octave-mysql/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://gnu-octave.github.io/octave-mysql/news/"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/gnu-octave/octave-mysql/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://gnu-octave.github.io/octave-mysql/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/gnu-octave/octave-mysql/issues"
+maintainers:
+- name: "John Donoghue"
+  contact: "john.donoghue@ieee.org"
+versions:
+- id: "0.0.1"
+  date: "2026-05-23"
+  sha256: "c59ae26728ac6d7c293c1b90ddb1e907b070e79cd82a2d2cd9c8cd92741678ac"
+  url: "https://github.com/gnu-octave/octave-mysql/releases/download/v0.0.1/octave-mysql-0.0.1.tar.gz"
+  depends:
+  - "octave (>= 6.0.0)"
+  - "pkg"
+  ubuntu2604:
+  - "libmysqlclient-dev"
+---
