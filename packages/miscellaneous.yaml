@@ -24,6 +24,15 @@ maintainers:
 - name: "Octave Forge Community"
   contact: "https://octave.discourse.group/"
 versions:
+- id: "1.3.3"
+  date: "2026-05-24"
+  sha256: "da4671ee3661278330c02a59171f78e4df8a3a159a178c7c0727f3c7787118bb"
+  url: "https://github.com/gnu-octave/octave-miscellaneous/releases/download/release-1.3.3/miscellaneous-1.3.3.tar.gz"
+  depends:
+  - "octave (>= 3.8.0)"
+  - "pkg"
+  ubuntu2604:
+  - "units"
 - id: "1.3.2"
   date: "2025-12-23"
   sha256: "4a8158f395a5a9bf3db978e3b653467d7f4642258e14f1945c3d00e7749ee870"
