@@ -2,8 +2,8 @@
 layout: "package"
 permalink: "instrument-control/"
 description: >-
-  Low level I/O functions for serial, i2c, parallel, tcp, gpib, vxi11, udp and
-  usbtmc interfaces.
+  Low level I/O functions for serial, i2c, parallel, tcp, gpib, vxi11, udp,
+  visa and usbtmc interfaces.
 icon: "https://gnu-octave.github.io/instrument-control/assets/octave-instrument-control.png"
 links:
 - icon: "far fa-copyright"
@@ -32,6 +32,13 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "0.10.1"
+  date: "2026-05-24"
+  sha256: "319af4a7c4070a759db025c97c5f568f2c70832072fcb11f76826c837ebfdcb7"
+  url: "https://github.com/gnu-octave/instrument-control/releases/download/release-0.10.1/instrument-control-0.10.1.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
 - id: "0.10.0"
   date: "2026-01-17"
   sha256: "04715ef60e9f0cad86a82ebe7a623d198a6d2071c0e67d9d921935b1d1f9e854"
