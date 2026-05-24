@@ -2,8 +2,8 @@
 layout: "package"
 permalink: "instrument-control/"
 description: >-
-  Low level I/O functions for serial, i2c, parallel, tcp, gpib, vxi11, udp, visa and
-  usbtmc interfaces.
+  Low level I/O functions for serial, i2c, parallel, tcp, gpib, vxi11, udp,
+  visa and usbtmc interfaces.
 icon: "https://gnu-octave.github.io/instrument-control/assets/octave-instrument-control.png"
 links:
 - icon: "far fa-copyright"
