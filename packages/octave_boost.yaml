@@ -29,8 +29,8 @@ maintainers:
 versions:
 - id: "1.0.0"
   date: "2026-05-27"
-  sha256: "608290343b47b867fd48cc6e8443a99bc80c91828bf1305cfa71c8da2cb92d21"
-  url: "https://github.com/CNOCTAVE/octave_boost/actions/runs/26477091470/artifacts/7226918210"
+  sha256: "9cec074f329846d1f29039100f6bcc72c99789238ae1a0fcc107eef1e43e241a"
+  url: "https://github.com/CNOCTAVE/octave_boost/releases/download/1.0.0/octave_boost.tar.gz"
   depends:
   - "octave (>= 10.1.0)"
   - "pkg"
