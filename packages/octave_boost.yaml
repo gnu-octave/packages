@@ -2,15 +2,39 @@
 layout: "package"
 permalink: "octave_boost/"
 description: >-
-  A comprehensive open-source high performance processing package for GNU
-  Octave based on Boost C++ Libraries. Provides direct access to
-  Boost.Accumulators statistical accumulators for online computation of
-  count, covariance, density, error of mean, extended P^2 quantiles,
-  kurtosis, max/min, mean, median, moments, P^2 cumulative distribution,
+  A comprehensive open-source high performance
+  processing package for GNU Octave based on Boost C++
+  Libraries. Built with C++17 standard.
+  Provides direct access to Boost.Accumulators statistical
+  accumulators for online computation of count, covariance,
+  density, error of mean, extended P^2 quantiles, kurtosis,
+  max/min, mean, median, moments, P^2 cumulative distribution,
   P^2 quantile, peaks over threshold, POT quantile, POT tail mean,
-  skewness, sum, and tail statistics, as well as Boost.Chrono for
-  high-resolution timing and Boost.Date_Time for date and time manipulation
-  and Boost.Thread for multithreading support.
+  skewness, sum, tail statistics, coherent/non-coherent tail mean,
+  tail quantile, tail variate, tail variate means, variance,
+  weighted covariance, weighted density, weighted extended P^2 quantiles,
+  and weighted kurtosis.
+  Also provides Boost.Chrono duration operations including 
+  count, add, subtract, multiply, divide, remainder, equality
+  and inequality comparison, clock elapsed time measurement 
+  (system_clock, steady_clock, high_resolution_clock, 
+  process_cpu_clock, thread_clock), and time formatting
+  (time_fmt for duration and system_clock).
+  Also provides Boost.Date_Time Gregorian date handling: get year/month/day,
+  year_month_day, day_of_week, day_of_year, end_of_month (get_end_of_month
+  and end_of_month), is_infinity, is_neg_infinity, is_pos_infinity,
+  is_not_a_date, is_special, modjulian_day, julian_day, week_number,
+  to_simple_string, to_iso_string, to_iso_extended_string, date_eq,
+  date_ne, date_gt, date_lt, date_ge, date_le, add_days, minus_days,
+  minus_date, to_tm, and date_from_tm.
+  Also provides Boost.Thread multi-threading: run Octave files, call
+  functions, eval expressions, and feval expressions in parallel using
+  boost::thread, with per-thread output capture and thread ID labeling.
+  The plural variants (boost_multi_thread_run_octave_files, 
+  boost_multi_thread_call_octave_functions,
+  boost_multi_thread_eval_octave_expressions,
+  boost_multi_thread_feval_octave_expressions)
+  accept cell arrays and launch one thread per element.
 icon: "https://avatars.githubusercontent.com/u/184102101?v=4"
 links:
 - icon: "far fa-copyright"
@@ -34,6 +58,17 @@ maintainers:
 - name: "Yu Hongbo"
   contact: "yuhongbo@member.fsf.org"
 versions:
+- id: "1.1.0"
+  date: "2026-05-27"
+  sha256: "c509048ce4f2cd175d803cea0c11785fac51dd9e914481909c9a2f61d42f814a"
+  url: "https://github.com/CNOCTAVE/octave_boost/releases/download/1.1.0/octave_boost.tar.gz"
+  depends:
+  - "octave (>= 10.1.0)"
+  - "pkg"
+  fedora43:
+  - "boost-devel"
+  fedora44:
+  - "boost-devel"
 - id: "1.0.0"
   date: "2026-05-27"
   sha256: "9cec074f329846d1f29039100f6bcc72c99789238ae1a0fcc107eef1e43e241a"
