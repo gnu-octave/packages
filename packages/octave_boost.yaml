@@ -67,6 +67,8 @@ versions:
   depends:
   - "octave (>= 10.1.0)"
   - "pkg"
+  ubuntu2604:
+  - "libboost-all-dev"
   fedora43:
   - "boost-devel"
   fedora44:
@@ -78,6 +80,8 @@ versions:
   depends:
   - "octave (>= 10.1.0)"
   - "pkg"
+  ubuntu2604:
+  - "libboost-all-dev"
   fedora43:
   - "boost-devel"
   fedora44:
