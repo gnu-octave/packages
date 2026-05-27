@@ -14,10 +14,10 @@ description: >-
   tail quantile, tail variate, tail variate means, variance,
   weighted covariance, weighted density, weighted extended P^2 quantiles,
   and weighted kurtosis.
-  Also provides Boost.Chrono duration operations including 
+  Also provides Boost.Chrono duration operations including
   count, add, subtract, multiply, divide, remainder, equality
-  and inequality comparison, clock elapsed time measurement 
-  (system_clock, steady_clock, high_resolution_clock, 
+  and inequality comparison, clock elapsed time measurement
+  (system_clock, steady_clock, high_resolution_clock,
   process_cpu_clock, thread_clock), and time formatting
   (time_fmt for duration and system_clock).
   Also provides Boost.Date_Time Gregorian date handling: get year/month/day,
@@ -30,7 +30,7 @@ description: >-
   Also provides Boost.Thread multi-threading: run Octave files, call
   functions, eval expressions, and feval expressions in parallel using
   boost::thread, with per-thread output capture and thread ID labeling.
-  The plural variants (boost_multi_thread_run_octave_files, 
+  The plural variants (boost_multi_thread_run_octave_files,
   boost_multi_thread_call_octave_functions,
   boost_multi_thread_eval_octave_expressions,
   boost_multi_thread_feval_octave_expressions)
