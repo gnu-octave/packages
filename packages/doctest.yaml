@@ -26,6 +26,13 @@ maintainers:
 - name: "Michael Walter"
   contact: "michael.walter@gmail.com"
 versions:
+- id: "0.8.2"
+  date: "2026-06-02"
+  sha256: "a2526d8f83f8b2fbabfab35611cff240a88f7fef701387d6924cb53571a3283a"
+  url: "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/doctest-0.8.2.tar.gz"
+  depends:
+  - "octave (>= 4.2.0)"
+  - "pkg"
 - id: "0.8.1"
   date: "2025-09-13"
   sha256: "766669827cf6bcd7750260ca869353656d5412f04d514bfead19f756c9d27ae9"
