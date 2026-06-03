@@ -1,0 +1,31 @@
+---
+layout: "package"
+permalink: "dsppack/"
+description: >-
+  GUI tool for designing and analysing IIR/FIR digital filters: magnitude,
+  phase and pole-zero responses, stability analysis, audio demo, and code
+  export.
+icon: "https://raw.githubusercontent.com/Mihutxxl/dsppack/main/doc/icon.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/Mihutxxl/dsppack/blob/main/COPYING"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/Mihutxxl/dsppack"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/Mihutxxl/dsppack/issues"
+maintainers:
+- name: "Mihut Vlad"
+  contact: "vlad.mihut@student.upt.ro"
+versions:
+- id: "1.0.0"
+  date: "2026-06-02"
+  sha256: "197bca703c87e6478c3a68f4e8e4d6131cb965d08b6b5d3c87df0122553dd972"
+  url: "https://github.com/Mihutxxl/dsppack/releases/download/1.0.0/dsppack-1.0.0.tar.gz"
+  depends:
+  - "octave (>= 6.0.0)"
+  - "signal (>= 1.4.0)"
+  - "pkg"
+---
