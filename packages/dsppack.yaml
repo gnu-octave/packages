@@ -5,6 +5,7 @@ description: >-
   GUI tool for designing and analysing IIR/FIR digital filters: magnitude,
   phase and pole-zero responses, stability analysis, audio demo, and code
   export.
+icon: "https://raw.githubusercontent.com/Mihutxxl/dsppack/main/doc/icon.png"
 links:
 - icon: "far fa-copyright"
   label: "GPL-3.0-or-later"
