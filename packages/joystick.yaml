@@ -24,6 +24,15 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "0.0.5"
+  date: "2026-06-11"
+  sha256: "5fc90432e5906c098153477203951efe412d87d77357372e7449a968faa40226"
+  url: "https://github.com/gnu-octave/octave-joystick/releases/download/v0.0.5/joystick-0.0.5.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+  ubuntu2604:
+  - "libsdl2-dev"
 - id: "0.0.4"
   date: "2025-10-12"
   sha256: "c5a2de9f6ee1f51c675220ba6eed8243574c159928e28e2440f954fa77ab041b"
