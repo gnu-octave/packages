@@ -32,6 +32,13 @@ maintainers:
 - name: "Giorgi Maghlakelidze"
   contact: "giorgi.snp@pm.me"
 versions:
+- id: "0.1.1"
+  date: "2026-07-26"
+  sha256: "e2e7aa007370cc219b3809de61e047ae808dce7f693581d035bff3a9468fc41f"
+  url: "https://github.com/Sparamix/octave-rf/releases/download/v0.1.1/rf-0.1.1.tar.gz"
+  depends:
+  - "octave (>= 6.0.0)"
+  - "pkg"
 - id: "0.1.0"
   date: "2026-04-17"
   sha256: "472e4ee703fb8693d3b7f51b4eeb3cccc78ae977abe11d71b0e4cebb7c46176a"
