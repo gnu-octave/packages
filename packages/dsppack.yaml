@@ -20,6 +20,14 @@ maintainers:
 - name: "Mihut Vlad"
   contact: "vlad.mihut@student.upt.ro"
 versions:
+- id: "1.2.0"
+  date: "2026-08-02"
+  sha256: "393d812fdde9caaa7e2effbf1da6618ac67f22d25f468db3c2b42defc864298f"
+  url: "https://github.com/Mihutxxl/dsppack/releases/download/1.2.0/dsppack-1.2.0.tar.gz"
+  depends:
+  - "octave (>= 6.0.0)"
+  - "signal (>= 1.4.0)"
+  - "pkg"
 - id: "1.1.1"
   date: "2026-07-05"
   sha256: "2c9fc18f67b0b1db7c4b07e4dc31a713fcae514dd4e0e30c090e798cafb83dfa"
