@@ -25,6 +25,14 @@ maintainers:
 - name: "Octave-Forge community"
   contact: "maintainers@octave.org"
 versions:
+- id: "1.4.8"
+  date: "2026-08-17"
+  sha256: "f5989b4f148e6f5b696a7b7ceee8c610140acf6084eb3e7eafbf0eb38df79a33"
+  url: "https://github.com/gnu-octave/octave-signal/releases/download/1.4.8/signal-1.4.8.tar.gz"
+  depends:
+  - "octave (>= 3.8.0)"
+  - "control (>= 2.4.0)"
+  - "pkg"
 - id: "1.4.7"
   date: "2026-01-10"
   sha256: "6a8b4b8cf0b3019d984fde75af947ae73e9a1c509890552cd5e113f7ba89038c"
