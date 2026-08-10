@@ -26,7 +26,7 @@ maintainers:
   contact: "maintainers@octave.org"
 versions:
 - id: "1.4.8"
-  date: "2026-08-17"
+  date: "2026-08-07"
   sha256: "f5989b4f148e6f5b696a7b7ceee8c610140acf6084eb3e7eafbf0eb38df79a33"
   url: "https://github.com/gnu-octave/octave-signal/releases/download/1.4.8/signal-1.4.8.tar.gz"
   depends:
