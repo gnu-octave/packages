@@ -5,14 +5,21 @@
 # NOTE: It is NOT intended to save this changing information to the original
 #       YAML files.  Any star count given in them will be overwritten.
 
+require 'json'
 require 'nokogiri'
 require 'open-uri'
 require 'yaml'
 
 def get_github_stars (url)
-  html = URI.open(url + '/stargazers')
-  doc = Nokogiri::HTML(html)
-  return doc.css('nav.tabnav-tabs span.Counter').text.to_i
+  repo_path = url.sub(%r{^https?://github\.com/}, '').sub(/\.git$/, '').sub(%r{/\z}, '')
+  api_url = "https://api.github.com/repos/#{repo_path}"
+  headers = { 'Accept' => 'application/vnd.github.v3+json' }
+  if ENV['GH_TOKEN_STARCOUNT'] && !ENV['GH_TOKEN_STARCOUNT'].empty?
+    headers['Authorization'] = "token #{ENV['GH_TOKEN_STARCOUNT']}"
+  end
+  response = URI.open(api_url, headers)
+  data = JSON.parse(response.read)
+  return data['stargazers_count'].to_i
 end
 
 def get_gitlab_stars (url)

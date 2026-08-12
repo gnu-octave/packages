@@ -45,6 +45,8 @@ jobs:
         id: pages
         uses: actions/configure-pages@v6
       - name: Get Package Stars
+        env:
+          GH_TOKEN_STARCOUNT: ${{ secrets.GH_TOKEN_STARCOUNT }}
         run: |
           bundle exec ruby ./assets/get_stars.rb
       - name: Build with Jekyll
