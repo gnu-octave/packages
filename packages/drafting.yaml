@@ -1,0 +1,34 @@
+---
+layout: "package"
+permalink: "drafting/"
+description: >-
+  Geometry, CAD Input/Output and Technical Drawing.
+icon: "https://raw.githubusercontent.com/pr0m1th3as/drafting/main/doc/drafting.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/pr0m1th3as/drafting/blob/master/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/pr0m1th3as/drafting/releases"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/pr0m1th3as/drafting/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://pr0m1th3as.github.io/drafting/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/pr0m1th3as/drafting/issues"
+maintainers:
+- name: "Andreas Bertsatos"
+  contact: "abertsatos@biol.uoa.gr"
+versions:
+- id: "0.1.0"
+  date: "2026-08-18"
+  sha256: "bae9e6742c42535978b8dd2cb434244d0358c30032fce1098087b1896ce48e8a"
+  url: "https://github.com/pr0m1th3as/drafting/releases/download/release-0.1.0/drafting-0.1.0.tar.gz"
+  depends:
+  - "octave (>= 11.1.0)"
+  - "pkg"
+---
