@@ -29,7 +29,7 @@ versions:
   sha256: "4cf764c746781d1c0c7d093fe640e12207ba0e79c179cf6e7dc72b4f83209408"
   url: "https://github.com/pr0m1th3as/tensorflow/releases/download/release-0.2.0/tensorflow-0.2.0.tar.gz"
   depends:
-  - "octave (>= 8.1.0)"
+  - "octave (>= 11.1.0)"
   - "pkg"
 - id: "0.1.1"
   date: "2024-06-30"
