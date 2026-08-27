@@ -26,7 +26,7 @@ maintainers:
 versions:
 - id: "0.7.7"
   date: "2026-08-27"
-  sha256: "dff38d69fae90e6b8ab2ea57d020e776764920128d500ad85ac87f9d846662af"
+  sha256: "d31d244ae5fc019acb831282619a789f73ca561a37af44cb0b987023037a2d8e"
   url: "https://github.com/gnu-octave/pkg-octave-doc/releases/download/release-0.7.7/pkg-octave-doc-0.7.7.tar.gz"
   depends:
   - "octave (>= 9.1.0)"
