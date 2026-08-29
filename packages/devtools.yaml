@@ -1,0 +1,34 @@
+---
+layout: "package"
+permalink: "devtools/"
+description: >-
+  Developer Tooling and Model Context Protocol Servers for GNU Octave.
+icon: "https://raw.githubusercontent.com/pr0m1th3as/octave-devtools/main/doc/devtools.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/pr0m1th3as/octave-devtools/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/pr0m1th3as/octave-devtools/releases"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/pr0m1th3as/octave-devtools/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://pr0m1th3as.github.io/octave-devtools/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/pr0m1th3as/octave-devtools/issues"
+maintainers:
+- name: "Andreas Bertsatos"
+  contact: "abertsatos@biol.uoa.gr"
+versions:
+- id: "0.1.0"
+  date: "2026-08-29"
+  sha256: "f0e828960afeacb5a2aa7ff4c2621648c90e56ff2c3a627af90f1da94cebe8f0"
+  url: "https://github.com/pr0m1th3as/octave-devtools/releases/download/release-0.1.0/devtools-0.1.0.tar.gz"
+  depends:
+  - "octave (>= 11.1.0)"
+  - "pkg"
+---
