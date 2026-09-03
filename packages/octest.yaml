@@ -1,0 +1,33 @@
+---
+layout: "package"
+permalink: "octest/"
+description: >-
+  Lightweight test framework for Octave with parameterized tests, performance
+  measurement, and setUp/tearDown support. Discovers Test_*.m files and reports
+  isolated verdicts.
+icon: "https://raw.githubusercontent.com/robertoffmoura/octest/main/docs/icon.png"
+links:
+- icon: "far fa-copyright"
+  label: "MIT"
+  url: "https://github.com/robertoffmoura/octest/blob/main/LICENSE"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/robertoffmoura/octest"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://github.com/robertoffmoura/octest/blob/main/README.md"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/robertoffmoura/octest/issues"
+maintainers:
+- name: "Roberto Moura"
+  contact: "roberto@ffmoura.com"
+versions:
+- id: "0.1.0"
+  date: "2026-08-19"
+  sha256: "cc4a702821543ad419ca08fa743119a5353638ab7321bd41c601fdd7d343d074"
+  url: "https://github.com/robertoffmoura/octest/releases/download/v0.1.0/octest-0.1.0.tar.gz"
+  depends:
+  - "octave (>= 6.0.0)"
+  - "pkg"
+---
