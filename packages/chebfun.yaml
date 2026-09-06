@@ -1,0 +1,36 @@
+---
+layout: "package"
+permalink: "chebfun/"
+description: >-
+  [preview] Chebfun, numerical computing with functions, packaged for Octave.
+icon: "https://www.chebfun.org/images/logo.png"
+links:
+- icon: "far fa-copyright"
+  label: "BSD-3-Clause"
+  url: "https://github.com/gnu-octave/chebfun/blob/octave-dev/LICENSE"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/gnu-octave/chebfun/blob/octave-dev/octave_pkg/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/gnu-octave/chebfun/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://chebfun.org"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/gnu-octave/chebfun/issues"
+maintainers:
+- name: "Colin B. Macdonald"
+  contact:
+- name: "Thomas Kolman"
+  contact:
+versions:
+- id: "dev"
+  date:
+  sha256: "43a4f61c3798e79e15a69580a6d2761581883adc279ed67383e2878bca4d9c7b"
+  url: "https://personal.math.ubc.ca/~cbm/tmp/chebfun/20250828/chebfun-5.7.0+.tar.gz"
+  depends:
+  - "octave (>= 11.0.0)"
+  - "pkg"
+---
