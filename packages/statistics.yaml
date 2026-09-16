@@ -24,6 +24,14 @@ maintainers:
 - name: "Andreas Bertsatos"
   contact: "abertsatos@biol.uoa.gr"
 versions:
+- id: "1.9.3"
+  date: "2026-09-16"
+  sha256: "5c155dc08511b522b1b972d278ae2017c4ae25405e961a62cd29864054f3d1b5"
+  url: "https://github.com/gnu-octave/statistics/releases/download/release-1.9.3/statistics-1.9.3.tar.gz"
+  depends:
+  - "octave (>= 11.1.0)"
+  - "datatypes (>= 1.4.2)"
+  - "pkg"
 - id: "1.9.2"
   date: "2026-09-03"
   sha256: "0d304c9dd642b59f1ac4043a5bd1502913cbafc940b7981e6c20a684beb83a0c"
