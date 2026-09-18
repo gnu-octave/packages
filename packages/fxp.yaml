@@ -32,6 +32,22 @@ maintainers:
   contact: "ahmed.shahein@vlsi-design.org"
 
 versions:
+- id: "3.1.1"
+  date: "2026-09-18"
+  sha256: "1519697f5c27a3d625e9f2008e4520933fd8084579a92d8b4bb946b1435b1a93"
+  url: >-
+    https://github.com/ahmedshahein/pkg-fxp/archive/refs/tags/3.1.1.tar.gz
+  depends:
+  - "octave (>= 5.2.0)"
+  - "pkg"
+- id: "3.1.0"
+  date: "2026-09-18"
+  sha256: "eecdad8265d6fd9bc470ed2303b6bb3d67e7ace643b8086160b283b915fc0f27"
+  url: >-
+    https://github.com/ahmedshahein/pkg-fxp/archive/refs/tags/3.1.0.tar.gz
+  depends:
+  - "octave (>= 5.2.0)"
+  - "pkg"
 - id: "3.0.1"
   date: "2026-04-12"
   sha256: "56c2bc4a25e4d455dd893a3d3b35b0a8c1cdeaf8fc348784706085751ad9d952"
