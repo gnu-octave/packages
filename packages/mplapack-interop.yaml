@@ -9,7 +9,7 @@ icon:
 links:
 - icon: "far fa-copyright"
   label: "BSD-2-Clause"
-  url: "https://github.com/nakatamaho/octave-mplapack/blob/v0.5.0/COPYING"
+  url: "https://github.com/nakatamaho/octave-mplapack/blob/v0.5.1/COPYING"
 - icon: "fas fa-rss"
   label: "news"
   url: "https://github.com/nakatamaho/octave-mplapack/releases/"
@@ -18,7 +18,7 @@ links:
   url: "https://github.com/nakatamaho/octave-mplapack/"
 - icon: "fas fa-book"
   label: "package documentation"
-  url: "https://github.com/nakatamaho/octave-mplapack/blob/v0.5.0/README.md"
+  url: "https://github.com/nakatamaho/octave-mplapack/blob/v0.5.1/README.md"
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://github.com/nakatamaho/octave-mplapack/issues"
@@ -26,6 +26,15 @@ maintainers:
 - name: "Maho NAKATA"
   contact: "maho.nakata@gmail.com"
 versions:
+- id: "0.5.1"
+  date: "2026-09-23"
+  sha256: "50622b177d9e320ad8c02d4c15aae037a0643c27300a5ead529f4e829ad8d080"
+  url: "https://github.com/nakatamaho/octave-mplapack/releases/download/v0.5.1/mplapack-interop-0.5.1.tar.gz"
+  depends:
+  - "octave (>= 11.1.0)"
+  - "pkg"
+  ubuntu2604:
+  - "libmplapack-mpfr-dev"
 - id: "0.5.0"
   date: "2026-09-15"
   sha256: "3c4e992516deb1266918c1c5bf6542cc9e1b7f301aeeb1f354dd64f2558f9e04"
