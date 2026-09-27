@@ -26,6 +26,15 @@ maintainers:
 - name: "John Donoghue"
   contact: "john.donoghue@ieee.org"
 versions:
+- id: "1.0.21"
+  date: "2026-09-26"
+  sha256: "a66f55d8479c1ce86ad47ba5c9494e04543b273332be12f12fbcf642c8b33900"
+  url: "https://github.com/gnu-octave/octave-netcdf/releases/download/v1.0.21/netcdf-1.0.21.tar.gz"
+  depends:
+  - "octave (>= 4.0.0)"
+  - "pkg"
+  ubuntu2604:
+  - "libnetcdf-dev"
 - id: "1.0.20"
   date: "2026-05-25"
   sha256: "ab54b69ceb2b38fff12dd74ff3b33b819428b5c7896e28aebb0216594a032d49"
