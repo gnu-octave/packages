@@ -26,7 +26,7 @@ maintainers:
 versions:
 - id: "1.5.0"
   date: "2026-09-30"
-  sha256: ""
+  sha256: "5d4eb5efe22a1388d7f0a4337539fd4d8a79f33d40fb37a23c4da0bd7d3de32b"
   url: "https://github.com/pr0m1th3as/datatypes/releases/download/release-1.5.0/datatypes-1.5.0.tar.gz"
   depends:
   - "octave (>= 11.1.0)"
