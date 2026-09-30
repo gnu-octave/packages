@@ -26,7 +26,7 @@ maintainers:
 versions:
 - id: "2.0.0"
   date: "2026-09-30"
-  sha256: ""
+  sha256: "e82c1d6957885ee444adc91e35defd00665ec3c3e1eeae0bd39f89b7b28a6490"
   url: "https://github.com/gnu-octave/statistics/releases/download/release-2.0.0/statistics-2.0.0.tar.gz"
   depends:
   - "octave (>= 11.1.0)"
