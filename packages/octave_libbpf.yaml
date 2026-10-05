@@ -40,7 +40,7 @@ maintainers:
 versions:
 - id: "1.0.0"
   date: "2026-10-05"
-  sha256: "df82d8f9d6d7695010e0d966847cbe3be92a18a4524a82c490223dc771d9dbab"
+  sha256: "0088168125153d76ba5d8f07fef22a551737ca75479ca97939b6f75c75c3d347"
   url: "https://github.com/CNOCTAVE/octave_libbpf/releases/download/1.0.0/octave_libbpf.tar.gz"
   depends:
   - "octave (>= 8.0.0)"
