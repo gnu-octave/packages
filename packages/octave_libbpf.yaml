@@ -1,0 +1,54 @@
+---
+layout: "package"
+permalink: "octave_libbpf/"
+description: >-
+  octave_libbpf is a GNU Octave wrapper around libbpf,
+  the reference userspace library for loading and
+  interacting with eBPF programs.  It allows Octave
+  m-code to open, verify, load, attach, pin and introspect
+  eBPF objects, to read and write eBPF maps, to consume
+  BPF ring buffers and perf buffers, and to inspect BTF type
+  information.  On top of that low level binding it ships
+  a pure m-code eBPF toolchain: an instruction encoder/assembler,
+  a BTF type encoder and an ELF64/BPF object writer, so complete
+  eBPF programs and their maps can be authored directly in Octave
+  without a C compiler.  A small object-oriented layer (bpf.Object,
+  bpf.Program, bpf.Map, bpf.Link, ...) makes the common workflows
+  concise.
+icon: "https://avatars.githubusercontent.com/u/184102101?v=4"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/CNOCTAVE/octave_libbpf/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/CNOCTAVE/octave_libbpf/blob/main/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/CNOCTAVE/octave_libbpf"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://cnoctave.github.io/octave_libbpf/index.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/CNOCTAVE/octave_libbpf/issues"
+maintainers:
+- name: "CNOCTAVE"
+  contact: "cnoctave@qq.com"
+- name: "Yu Hongbo"
+  contact: "yuhongbo@member.fsf.org"
+versions:
+- id: "1.0.0"
+  date: "2026-10-05"
+  sha256: "df82d8f9d6d7695010e0d966847cbe3be92a18a4524a82c490223dc771d9dbab"
+  url: "https://github.com/CNOCTAVE/octave_libbpf/releases/download/1.0.0/octave_libbpf.tar.gz"
+  depends:
+  - "octave (>= 8.0.0)"
+  - "pkg"
+  ubuntu2604:
+  - "libbpf-dev"
+  fedora44:
+  - "libbpf-devel"
+  fedora45:
+  - "libbpf-devel"
+---
