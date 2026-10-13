@@ -24,6 +24,20 @@ maintainers:
 - name: "Andreas Bertsatos"
   contact: "abertsatos@biol.uoa.gr"
 versions:
+- id: "0.2.2"
+  date: "2026-10-13"
+  sha256: "f205ea62780ff56ded14b97bbfdfc26df7a2f0a0591f53f9492d305a3114dec1"
+  url: "https://github.com/pr0m1th3as/drafting/releases/download/release-0.2.2/drafting-0.2.2.tar.gz"
+  depends:
+  - "octave (>= 11.1.0)"
+  - "pkg"
+  ubuntu2604:
+  - "libocct-foundation-dev"
+  - "libocct-modeling-data-dev"
+  - "libocct-modeling-algorithms-dev"
+  - "libocct-data-exchange-dev"
+  - "libocct-visualization-dev"
+  - "libx11-dev"
 - id: "0.2.1"
   date: "2026-10-07"
   sha256: "b206ba2d7197f275bc8e660f480eb53b169ead0efb8c89aaaa6bb4b5fe5bce35"
