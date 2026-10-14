@@ -24,6 +24,15 @@ maintainers:
 - name: "Andreas Bertsatos"
   contact: "abertsatos@biol.uoa.gr"
 versions:
+- id: "0.2.0"
+  date: "2026-10-14"
+  sha256: "9ba65d14201034dc5f8d7485f0635a3b36c51a1c969206d710969da41b637e0b"
+  url: "https://github.com/pr0m1th3as/parts/releases/download/release-0.2.0/parts-0.2.0.tar.gz"
+  depends:
+  - "octave (>= 11.1.0)"
+  - "drafting (>= 0.2.2)"
+  - "datatypes (>= 1.5.0)"
+  - "pkg"
 - id: "0.1.0"
   date: "2026-10-14"
   sha256: "19cf3d3923fea0eeb4c0ef4ac512ac0a6b4ddd6b15ea40b860e8622f15369b77"
