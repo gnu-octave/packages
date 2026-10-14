@@ -1,0 +1,35 @@
+---
+layout: "package"
+permalink: "parts/"
+description: >-
+  Catalogue of Standard Machine Parts.
+icon: "https://raw.githubusercontent.com/pr0m1th3as/parts/main/doc/parts.png"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/pr0m1th3as/parts/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/pr0m1th3as/parts/releases"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/pr0m1th3as/parts/"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://pr0m1th3as.github.io/parts/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/pr0m1th3as/parts/issues"
+maintainers:
+- name: "Andreas Bertsatos"
+  contact: "abertsatos@biol.uoa.gr"
+versions:
+- id: "0.1.0"
+  date: "2026-10-14"
+  sha256: "19cf3d3923fea0eeb4c0ef4ac512ac0a6b4ddd6b15ea40b860e8622f15369b77"
+  url: "https://github.com/pr0m1th3as/parts/releases/download/release-0.1.0/parts-0.1.0.tar.gz"
+  depends:
+  - "octave (>= 11.1.0)"
+  - "drafting (>= 0.2.2)"
+  - "pkg"
+---
