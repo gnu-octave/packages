@@ -25,7 +25,7 @@ maintainers:
   contact:
 versions:
 - id: "2.1.11"
-  date: "2026-08-25"
+  date: "2026-10-14"
   sha256: "94e9076ec46a524d3941649ccbb4069409319cd83b3ce8c2f5a187c6555caa6d"
   url: "https://github.com/AndreasStahel/FEMoctave/archive/v.2.1.11.tar.gz"
   depends:
