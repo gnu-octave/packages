@@ -24,6 +24,13 @@ maintainers:
 - name: "Andreas Bertsatos"
   contact: "abertsatos@biol.uoa.gr"
 versions:
+- id: "0.3.2"
+  date: "2026-10-16"
+  sha256: "6663414b4b3973398642c088a7fec3ebcc51494f17168bdcf2ca3d4506540b2a"
+  url: "https://github.com/pr0m1th3as/octave-devtools/releases/download/release-0.3.2/devtools-0.3.2.tar.gz"
+  depends:
+  - "octave (>= 11.1.0)"
+  - "pkg"
 - id: "0.3.1"
   date: "2026-09-28"
   sha256: "cb1e9b0bfe55261ea9d304e83b9061380ede5fac2d64f21287e3ad8628403a93"
