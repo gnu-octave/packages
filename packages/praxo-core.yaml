@@ -29,8 +29,8 @@ maintainers:
 versions:
 - id: "0.2.1"
   date: "2026-11-05"
-  sha256: "0677a5e7fdfd9c9978f1e0b9a4e8cfb5541c8258db536da7a8aae5c111b39a12"
-  url: "https://github.com/axisvela/praxo-core/releases/download/matlab/v0.2.1/praxo-core-0.2.1.tar.gz"
+  sha256: "34f76a1e2c3de72b504fa39a9936255ebe8e172c07abe751c3b298dff37d079c"
+  url: "https://github.com/axisvela/praxo-core/releases/download/octave/v0.2.1/praxo-core-0.2.1.tar.gz"
   depends:
   - "octave (>= 7.0.0)"
   - "pkg"
