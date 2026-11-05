@@ -29,7 +29,7 @@ maintainers:
 versions:
 - id: "0.2.1"
   date: "2026-11-05"
-  sha256: "34f76a1e2c3de72b504fa39a9936255ebe8e172c07abe751c3b298dff37d079c"
+  sha256: "48a41dc3ce73c2815fcf64171a69a0cec870b353dd17b126505ceac319f990b5"
   url: "https://github.com/axisvela/praxo-core/releases/download/octave/v0.2.1/praxo-core-0.2.1.tar.gz"
   depends:
   - "octave (>= 7.0.0)"
