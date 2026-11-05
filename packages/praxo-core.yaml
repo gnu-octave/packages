@@ -6,11 +6,11 @@ description: >-
   framework. Provides tools, policy hooks, events, memory, checkpoints,
   context compaction, middleware, JSON Schema validation, plugin manifest
   parsing, and a native agent loop without a Go or other language runtime.
-icon: "https://raw.githubusercontent.com/axisvela/praxo-core/main/language/matlab/toolbox-image.png"
+icon: "https://raw.githubusercontent.com/axisvela/praxo-core/main/language/octave/toolbox-image.png"
 links:
 - icon: "far fa-copyright"
   label: "MIT"
-  url: "https://github.com/axisvela/praxo-core/blob/main/language/matlab/LICENSE"
+  url: "https://github.com/axisvela/praxo-core/blob/main/language/octave/LICENSE"
 - icon: "fas fa-rss"
   label: "news"
   url: "https://github.com/axisvela/praxo-core/releases/"
@@ -19,7 +19,7 @@ links:
   url: "https://github.com/axisvela/praxo-core"
 - icon: "fas fa-book"
   label: "package documentation"
-  url: "https://axisvela.github.io/praxo-core/languages/matlab/"
+  url: "https://axisvela.github.io/praxo-core/languages/octave/"
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://github.com/axisvela/praxo-core/issues"
