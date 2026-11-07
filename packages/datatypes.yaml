@@ -24,6 +24,13 @@ maintainers:
 - name: "Andreas Bertsatos"
   contact: "abertsatos@biol.uoa.gr"
 versions:
+- id: "1.6.2"
+  date: "2026-11-07"
+  sha256: "7ef7ffa6ecc53740529807a6331ac27c9d9a67cf5bb816fdf0e75ea6ee725b91"
+  url: "https://github.com/pr0m1th3as/datatypes/releases/download/release-1.6.2/datatypes-1.6.2.tar.gz"
+  depends:
+  - "octave (>= 11.1.0)"
+  - "pkg"
 - id: "1.6.1"
   date: "2026-10-29"
   sha256: "98c2e13ed9ae7d62a04f4aa3e7dd47d680394b47ae630230e1b5f7f6c1039b60"
