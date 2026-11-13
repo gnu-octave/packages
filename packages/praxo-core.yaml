@@ -1,0 +1,52 @@
+---
+layout: "package"
+permalink: "praxo-core/"
+description: >-
+  Native Octave Core for PRAXO-CORE, an embeddable MIT-licensed agent
+  framework. Provides tools, policy hooks, events, memory, checkpoints,
+  context compaction, middleware, JSON Schema validation, plugin manifest
+  parsing, OTel, retriever, synchronous delegation, an MCP client boundary, and a native agent loop without a Go or
+  other language runtime.
+icon: "https://raw.githubusercontent.com/axisvela/praxo-core/main/language/octave/toolbox-image.png"
+links:
+- icon: "far fa-copyright"
+  label: "MIT"
+  url: "https://github.com/axisvela/praxo-core/blob/main/language/octave/LICENSE"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/axisvela/praxo-core/releases/"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/axisvela/praxo-core"
+- icon: "fas fa-book"
+  label: "package documentation"
+  url: "https://axisvela.github.io/praxo-core/languages/octave/"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/axisvela/praxo-core/issues"
+maintainers:
+- name: "AxisVela"
+  contact: "releases@axisvela.com"
+versions:
+- id: "0.5.0"
+  date: "2026-11-13"
+  sha256: "8310dd6f790de9c02a3072f87eef6a8a4a8b940795332377c8ec76b426fde240"
+  url: "https://github.com/axisvela/praxo-core/releases/download/octave/v0.5.0/praxo-core-0.5.0.tar.gz"
+  depends:
+  - "octave (>= 7.0.0)"
+  - "pkg"
+- id: "0.4.0"
+  date: "2026-11-12"
+  sha256: "2b507725a6a8fe09325f8af800d9cba90763fb07a96009f5a90288065d9179c0"
+  url: "https://github.com/axisvela/praxo-core/releases/download/octave/v0.4.0/praxo-core-0.4.0.tar.gz"
+  depends:
+  - "octave (>= 7.0.0)"
+  - "pkg"
+- id: "0.2.1"
+  date: "2026-11-05"
+  sha256: "e717979c768efe0362206dc770cceb739e83c9526b58fc3b3e36bd5d7071bba0"
+  url: "https://github.com/axisvela/praxo-core/releases/download/octave/v0.2.1/praxo-core-0.2.1.tar.gz"
+  depends:
+  - "octave (>= 7.0.0)"
+  - "pkg"
+---
