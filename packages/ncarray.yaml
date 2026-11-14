@@ -19,7 +19,7 @@ links:
   url: "https://gnu-octave.github.io/octave-ncarray/functions/"
 - icon: "fas fa-book"
   label: "package documentation"
-  url: "https://gnu-octave.github.io/octave-ncarray/manual/"  
+  url: "https://gnu-octave.github.io/octave-ncarray/manual/"
 - icon: "fas fa-bug"
   label: "report a problem"
   url: "https://github.com/gnu-octave/octave-ncarray/issues"
