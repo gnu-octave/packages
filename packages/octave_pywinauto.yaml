@@ -1,0 +1,36 @@
+---
+layout: "package"
+permalink: "octave_pywinauto/"
+description: >-
+  Windows-only pywinauto wrapper for GNU Octave.
+icon: "https://avatars.githubusercontent.com/u/184102101?v=4"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/CNOCTAVE/octave_pywinauto/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/CNOCTAVE/octave_pywinauto/blob/main/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/CNOCTAVE/octave_pywinauto"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://cnoctave.github.io/octave_pywinauto/index.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/CNOCTAVE/octave_pywinauto/issues"
+maintainers:
+- name: "CNOCTAVE"
+  contact: "cnoctave@qq.com"
+- name: "Yu Hongbo"
+  contact: "yuhongbo@member.fsf.org"
+versions:
+- id: "1.0.0"
+  date: "2026-11-25"
+  sha256: "94c261c7445ba7a060400f9d4e4dd9ec3fd4ab1a17e2668a0f985e3212cce050"
+  url: "https://github.com/CNOCTAVE/octave_pywinauto/releases/download/1.0.0/octave_pywinauto.tar.gz"
+  depends:
+  - "octave (>= 8.0.0)"
+  - "pkg"
+---

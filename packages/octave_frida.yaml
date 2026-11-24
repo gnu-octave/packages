@@ -1,0 +1,40 @@
+---
+layout: "package"
+permalink: "octave_frida/"
+description: >-
+  Run Frida GumJS instrumentation scripts from GNU Octave.
+icon: "https://avatars.githubusercontent.com/u/184102101?v=4"
+links:
+- icon: "far fa-copyright"
+  label: "GPL-3.0-or-later"
+  url: "https://github.com/CNOCTAVE/octave_frida/blob/main/COPYING"
+- icon: "fas fa-rss"
+  label: "news"
+  url: "https://github.com/CNOCTAVE/octave_frida/blob/main/NEWS"
+- icon: "fas fa-code-branch"
+  label: "repository"
+  url: "https://github.com/CNOCTAVE/octave_frida"
+- icon: "fas fa-th-list"
+  label: "function reference"
+  url: "https://cnoctave.github.io/octave_frida/index.html"
+- icon: "fas fa-bug"
+  label: "report a problem"
+  url: "https://github.com/CNOCTAVE/octave_frida/issues"
+maintainers:
+- name: "CNOCTAVE"
+  contact: "cnoctave@qq.com"
+- name: "Yu Hongbo"
+  contact: "yuhongbo@member.fsf.org"
+versions:
+- id: "1.0.0"
+  date: "2026-11-25"
+  sha256: "c1ced0f6cc78ac2cf01583e15de96b79251500991229ba81e759b431ae89fc7d"
+  url: "https://github.com/CNOCTAVE/octave_frida/releases/download/1.0.0/octave_frida.tar.gz"
+  depends:
+  - "octave (>= 8.0.0)"
+  - "pkg"
+  fedora45w:
+  - "python3-frida"
+  fedora46w:
+  - "python3-frida"
+---
